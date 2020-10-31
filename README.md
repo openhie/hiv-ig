@@ -13,7 +13,7 @@ Canonical / permanent URL: __http://somewhere.org/...__
 ### Issues
 Issues and change requests are managed here:  
 
-Issues:  __https://github.com/hl7-be/riziv-inami/issues__  
+Issues:  __https://github.com/{{owner}}/{{repo}}/issues__  
 Kanban board:  __https://github.com/{{owner}}/{{repo}}/projects/1__  
 
 ---
