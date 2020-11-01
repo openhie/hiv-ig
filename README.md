@@ -1,6 +1,6 @@
 {project_name}
 ---
-This is the Implementation Guide for {project_name} by {organization_name}
+This is the Implementation Guide for HIV ImplementationGuide by OpenHIE
 <br> </br>
 ###
 ### Publication
