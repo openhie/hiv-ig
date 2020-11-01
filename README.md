@@ -1,4 +1,4 @@
-{project_name}
+HIV
 ---
 This is the Implementation Guide for HIV ImplementationGuide by OpenHIE
 <br> </br>
