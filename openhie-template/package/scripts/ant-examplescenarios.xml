@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ProcessIg">
+  <import file="ant.xml" as="base"/>
+  <target name="prepareDiagramSource">
+    <property name="dir.lib" value="${ig.template}/scripts"/>
+<!--
+    <property name="dir.scenarios-input" value="${ig.template}/scenarios"/> 
+-->
+    <property name="dir.scenarios-input" value="${dir.input}/images-source"/>
+    <mkdir dir="${dir.scenarios-input}"/>
+    <xslt basedir="${dir.input}/scenarios" includes="*.xml" destdir="${dir.scenarios-input}" extension=".txt" style="${ig.scripts}/diagram.xslt"/>
+  </target>
+  <target name="renderDiagram" depends="prepareDiagramSource">
+    <java jar="${dir.lib}/plantuml.jar" fork="true">
+      <jvmarg line="-Dfile.encoding=UTF-8"/>
+      <arg line="-tsvg -o &quot;${ig.temp}&quot; &quot;${dir.scenarios-input}&quot;"/>
+    </java>
+  </target>
+<!--
+--> 
+   <target name="createExampleScenarioPage" depends="renderDiagram" extensionOf="onGenerate.extend">
+    <xslt basedir="${dir.input}/scenarios" includes="*.xml" destdir="${dir.temp.includes}" extension=".xhtml" style="${ig.scripts}/sequence.xslt"/>
+    <xslt basedir="${dir.input}/scenarios" includes="*.xml" destdir="${dir.temp.includes}" extension="-description.xhtml" style="${ig.scripts}/description.xslt"/>
+    <xslt basedir="${dir.input}/scenarios" includes="*.xml" destdir="${dir.temp.includes}" extension="-resources.xhtml" style="${ig.scripts}/resources.xslt"/>
+<!-- see if this is needed or if we can rely on the resource being addded --> 
+    <fileset id="onGenerate.scenario.id" dir="${ig.root}">
+      <include name="temp/pages/ExampleScenario*.svg"/>
+    </fileset>
+    <property name="onGenerate.scenario.files" refid="onGenerate.scenario.id"/>
+    <appendArtifacts files="${onGenerate.scenario.files}"/>
+  </target>
+</project>
+

@@ -5,6 +5,7 @@
   "license": "CC0-1.0",
   "description": "Template for OpenHIE Implementation Guides",
   "author": "http://openhie.org",
+  "canonical": "http://github.com/openhie/openhie-ig-template",
 	"base":  "fhir.base.template",
   "dependencies": {
     "fhir.base.template": "current"

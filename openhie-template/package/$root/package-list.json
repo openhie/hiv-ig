@@ -1,0 +1,23 @@
+﻿{
+  "package-id" : "opehhie.fhir.template",
+  "title" : "Template for FHIR IGs published by OpenHIE",
+  "name" : "OpenHIE FHIR IG Template",
+  "canonical" : "http://fhir.org/templates/openhie.fhir.template",
+  "introduction" : "This is the template for FHIR guides published by OpenHIE",
+  "list" : [
+    {
+      "version" : "current",
+      "desc" : "Continuous Integration Build (latest in version control)",
+      "path" : "https://build.fhir.org/ig/openhie/openhie-ig-template",
+      "status" : "ci-build",
+      "current" : true
+    },
+    {
+      "version" : "0.0.1",
+      "desc" : "04-11-2020 - first",
+      "path" : "https://build.fhir.org/ig/IHE/ihe-ig-template/0.0.1",
+      "status" : "ci-build",
+      "current" : true
+    }
+  ]
+}
