@@ -64,10 +64,17 @@
 -->    
     <resource>
       <reference>
-        <reference value="StructureDefinition/model-1"/>
+        <reference value="StructureDefinition/model-hiv-case-report"/>
       </reference>
       <name value="Example Logical Model"/>
       <description value="Description of the logical model"/>
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="Questionnaire/case-monitoring"/>
+      </reference>
+      <name value="Questionnaire"/>
+      <description value="Questionnaire"/>
     </resource>    
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->

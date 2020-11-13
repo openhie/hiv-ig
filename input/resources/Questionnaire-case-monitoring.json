@@ -1,0 +1,294 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "case-monitoring",
+    "status": "draft",
+    "url": "https://www.openhie.org/fhir/hiv/case-monitoring",
+    "version": "0.0.1",
+    "name": "HIV case monitoring questionnaire",
+    "date": "2020-09-23T02:57:56+00:00",
+    "item": [
+        {
+            "linkId": "unit_name",
+            "text": "Governing body unit name",
+            "type": "string"
+        },
+        {
+            "linkId": "date",
+            "text": "Date:",
+            "type": "string"
+        },
+        {
+            "linkId": "title",
+            "text": "Care Monitoring Report at Outpatient Clinics",
+            "type": "display"
+        },
+        {
+            "linkId": "intro",
+            "text": "Dear:",
+            "type": "string"
+        },
+        {
+            "linkId": "regulations",
+            "text": "Reporting regulations: Monthly – applicable to each patient during the reporting period",
+            "type": "display"
+        },
+        {
+            "linkId": "questions",
+            "text": "",
+            "type": "group",
+            "item": [
+                {
+                    "linkId": "identifying_information",
+                    "text": "Part I: Identifying Information",
+                    "type": "group",
+                    "item": [
+                        {
+                            "linkId": "code",
+                            "text": "Code",
+                            "type": "group",
+                            "item": [
+                                {
+                                    "linkId": "arv_patient_nr",
+                                    "text": "ARV Patient Number:",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "personal_information",
+                            "text": "Personal Information",
+                            "type": "group",
+                            "item": [
+                                {
+                                    "linkId": "first_last_name",
+                                    "prefix": "1",
+                                    "text": "First and last name:",
+                                    "type": "string"
+                                },
+                                {
+                                    "linkId": "ethnic",
+                                    "prefix": "2",
+                                    "text": "Ethnic:",
+                                    "type": "string"
+                                },
+                                {
+                                    "linkId": "gender",
+                                    "prefix": "3",
+                                    "text": "Gender:",
+                                    "type": "string"
+                                },
+                                {
+                                    "linkId": "birth_year",
+                                    "prefix": "4",
+                                    "text": "Year of Birth:",
+                                    "type": "string"
+                                },
+                                {
+                                    "linkId": "id_cccd",
+                                    "prefix": "5",
+                                    "text": "ID / CCCD :",
+                                    "type": "group",
+                                    "item": [
+                                        {
+                                            "linkId": "health_insurance_code",
+                                            "prefix": "5.1",
+                                            "text": "Health insurance code:",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "linkId": "passport_nr",
+                                            "prefix": "5.2",
+                                            "text": "Passport Number:",
+                                            "type": "string"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "current_residence",
+                                    "prefix": "6",
+                                    "text": "Current residence:",
+                                    "type": "string"
+                                },
+                                {
+                                    "linkId": "permanent_residence",
+                                    "prefix": "7",
+                                    "text": "Place of permanent residence registration:",
+                                    "type": "string"
+                                },
+                                {
+                                    "linkId": "occupation",
+                                    "prefix": "8",
+                                    "text": "Occupation:m(digital):",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "test_results",
+                    "text": "Part II: Test Results",
+                    "type": "group",
+                    "item": [
+                        {
+                            "linkId": "cd4_cell_test",
+                            "prefix": "9",
+                            "text": "CD4 cell test for the first time",
+                            "type": "group",
+                            "item": [
+                                {
+                                    "linkId": "sampling_date",
+                                    "prefix": "9.1",
+                                    "text": "Sampling Date:",
+                                    "type": "date"
+                                },
+                                {
+                                    "linkId": "test_date",
+                                    "prefix": "9.2",
+                                    "text": "Test Date:",
+                                    "type": "date"
+                                },
+                                {
+                                    "linkId": "results",
+                                    "prefix": "9.3",
+                                    "text": "Results:",
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "volume_test",
+                            "prefix": "10",
+                            "text": "Testing for virus volume - Periodically",
+                            "type": "group",
+                            "item": [
+                                {
+                                    "linkId": "sampling_date",
+                                    "prefix": "10.1",
+                                    "text": "Sampling Date:",
+                                    "type": "date"
+                                },
+                                {
+                                    "linkId": "test_date",
+                                    "prefix": "11.2",
+                                    "text": "Test Date:",
+                                    "type": "date"
+                                },
+                                {
+                                    "linkId": "results",
+                                    "prefix": "11.3",
+                                    "text": "Results:",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "arv_status",
+                    "text": "ARV treatment status",
+                    "type": "group",
+                    "item": [
+                        {
+                            "linkId": "course_of_treatment",
+                            "prefix": "11",
+                            "text": "The course of treatment",
+                            "type": "group",
+                            "item": [
+                                {
+                                    "linkId": "arv_start_date",
+                                    "prefix": "11.1",
+                                    "text": "Sampling Date:",
+                                    "type": "date"
+                                },
+                                {
+                                    "linkId": "loss_of_signs",
+                                    "prefix": "11.2",
+                                    "text": "Patients with loss of signs of treatment:",
+                                    "type": "boolean"
+                                },
+                                {
+                                    "linkId": "treatment_date_end",
+                                    "prefix": "11.3",
+                                    "text": "Treatment end date:",
+                                    "type": "date"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "treatment_regimen",
+                            "prefix": "12",
+                            "text": "Treatment regimen:",
+                            "type": "group",
+                            "item": [
+                                {
+                                    "linkId": "tier_1_regimen",
+                                    "prefix": "12.1",
+                                    "text": " Tier 1 regimen start date:",
+                                    "type": "date"
+                                },
+                                {
+                                    "linkId": "tier_2_regimen",
+                                    "prefix": "12.2",
+                                    "text": "Tier 2 regimen start date:",
+                                    "type": "date"
+                                },
+                                {
+                                    "linkId": "results",
+                                    "prefix": "12.3",
+                                    "text": " Tier 3 regimen start date:",
+                                    "type": "date"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "co_infections",
+                    "text": "Co-infections",
+                    "type": "group",
+                    "item": [
+                        {
+                            "linkId": "tuberculosis_prevention",
+                            "prefix": "13.1",
+                            "text": "Tuberculosis prevention:",
+                            "type": "boolean"
+                        },
+                        {
+                            "linkId": "tuberculosis_diagnosis",
+                            "prefix": "13.2",
+                            "text": "Diagnosis of tuberculosis:",
+                            "type": "boolean"
+                        },
+                        {
+                            "linkId": "tuberculosis_treatment",
+                            "prefix": "13.3",
+                            "text": "Treatment of tuberculosis:",
+                            "type": "boolean"
+                        }
+                    ]
+                },
+                {
+                    "linkId": "death",
+                    "prefix": "14",
+                    "text": "Death",
+                    "type": "group",
+                    "item": [
+                        {
+                            "linkId": "death_date",
+                            "prefix": "14.1",
+                            "text": "Date of Death:",
+                            "type": "date"
+                        },
+                        {
+                            "linkId": "death_cause",
+                            "prefix": "14.2",
+                            "text": "Cause of Death:",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

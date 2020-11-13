@@ -1,0 +1,619 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "model-hiv-case-report",
+  "url": "https://www.hl7belgium.org/fhir/StructureDefinition/model-hiv-case-report",
+  "version": "0.2.0",
+  "name": "HIVCaseReport",
+  "status": "draft",
+  "date": "2020-11-12T13:10:28+00:00",
+  "publisher": "HL7 International - [Some] Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "This is the logical model...",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "HIVCaseReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "HIVCaseReport",
+        "path": "HIVCaseReport",
+        "short": "HIV monthly case report",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "HIVCaseReport.identifier",
+        "path": "HIVCaseReport.identifier",
+        "short": "Unique business identifiers for the report",
+        "min": 0,
+        "max": "2",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.reportDate",
+        "path": "HIVCaseReport.reportDate",
+        "short": "Date of the Case Report",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.reportNumber",
+        "path": "HIVCaseReport.reportNumber",
+        "short": "Case Report Number",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.reportIntro",
+        "path": "HIVCaseReport.reportIntro",
+        "short": "Case Report Introduction text",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport",
+        "path": "HIVCaseReport.backbone",
+        "short": "The monthly HIV case report",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.identifyingInformation",
+        "path": "HIVCaseReport.monthlyReport.identifyingInformation",
+        "short": "The patient's identifying information",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.identifyingInformation.ARVPatientNumber",
+        "path": "HIVCaseReport.monthlyReport.identifyingInformation.ARVPatientNumber",
+        "short": "The patient's ARV treatment identifier",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation",
+        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation",
+        "short": "The patient's personal information",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.first_lastName",
+        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.first_lastName",
+        "short": "Patient's first and last name",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.ethnic",
+        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.ethnic",
+        "short": "The patient's ethnicity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.gender",
+        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.gender",
+        "short": "The patient's gender",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.yob",
+        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.yob",
+        "short": "The patient's year of birth",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.id_cccd",
+        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.id_cccd",
+        "short": "The patient's personal identification",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.id_cccd.health_insurance",
+        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.id_cccd.health_insurance",
+        "short": "Health insurance number",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.id_cccd.passport",
+        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.id_cccd.passport",
+        "short": "Passport number",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.currentResidence",
+        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.currentResidence",
+        "short": "Patient's current residence",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.permanentResidence",
+        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.permanentResidence",
+        "short": "Patient's permanent residence",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.occupation",
+        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.occupation",
+        "short": "Patient's occupation or profession",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.testResults",
+        "path": "HIVCaseReport.monthlyReport.testResults",
+        "short": "Patient's Test results",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.testResults.CD4_test_1st_time",
+        "path": "HIVCaseReport.monthlyReport.testResults.CD4_test_1st_time",
+        "short": "First CD4 test results for the patient",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.testResults.CD4_test_1st_time.samplingDate",
+        "path": "HIVCaseReport.monthlyReport.testResults.CD4_test_1st_time.samplingDate",
+        "short": "The date the samples were collected for the patient's first CD4 test",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.testResults.CD4_test_1st_time.testDate",
+        "path": "HIVCaseReport.monthlyReport.testResults.CD4_test_1st_time.testDate",
+        "short": "The date of the patient's first CD4 test",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.testResults.CD4_test_1st_time.results",
+        "path": "HIVCaseReport.monthlyReport.testResults.CD4_test_1st_time.results",
+        "short": "The results of the patient's first CD4 tests",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.testResults.periodicTest",
+        "path": "HIVCaseReport.monthlyReport.testResults.periodicTest",
+        "short": "The patient's test for this month",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.testResults.periodicTest.samplingDate",
+        "path": "HIVCaseReport.monthlyReport.testResults.periodicTest.samplingDate",
+        "short": "The date the samples were collected for the patient's current test",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.testResults.periodicTest.testDate",
+        "path": "HIVCaseReport.monthlyReport.testResults.periodicTest.testDate",
+        "short": "The date of the patient's current test",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.testResults.periodicTest.results",
+        "path": "HIVCaseReport.monthlyReport.testResults.testResults.periodicTest.results",
+        "short": "The results of the patient's current test",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.arvTreatment",
+        "path": "HIVCaseReport.monthlyReport.arvTreatment",
+        "short": "Antiretroviral treatment information",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.arvTreatment.courseofTreatment",
+        "path": "HIVCaseReport.monthlyReport.arvTreatment.courseofTreatment",
+        "short": "The current course of ARV treatment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.arvTreatment.courseofTreatment.startDate",
+        "path": "HIVCaseReport.monthlyReport.arvTreatment.courseofTreatment.startDate",
+        "short": "The starting date of the current course of ARV treatment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.arvTreatment.courseofTreatment.treatment_loss_signs",
+        "path": "HIVCaseReport.monthlyReport.arvTreatment.courseofTreatment.treatment_loss_signs",
+        "short": "??",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.arvTreatment.courseofTreatment.treatment_loss_signs_date",
+        "path": "HIVCaseReport.monthlyReport.arvTreatment.courseofTreatment.treatment_loss_signs_date",
+        "short": "??",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.arvTreatment.courseofTreatment.treatmentEndDate",
+        "path": "HIVCaseReport.monthlyReport.arvTreatment.courseofTreatment.treatmentEndDate",
+        "short": "The end date of the course of ARV treatment if the current treament is ended",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen",
+        "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen",
+        "short": "The ARV treatment regiment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier1",
+        "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier1",
+        "short": "(To do)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier1.startDate",
+        "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier1.startDate",
+        "short": "(To do)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier2",
+        "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier2",
+        "short": "(To do)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier2.startDate",
+        "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier2.startDate",
+        "short": "(To do)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier3",
+        "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier3",
+        "short": "(To do)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier3.startDate",
+        "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier3.startDate",
+        "short": "(To do)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.co-infections",
+        "path": "HIVCaseReport.monthlyReport.co-infections",
+        "short": "Other infections reported for the patient",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.co-infections.tbprevention",
+        "path": "HIVCaseReport.monthlyReport.co-infections.tbprevention",
+        "short": "Whether the patient has any tuberculosis prevention activity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.co-infections.tbdiagnosis",
+        "path": "HIVCaseReport.monthlyReport.co-infections.tbdiagnosis",
+        "short": "Whether the patient has a current diagnosis for tuberculosis",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.co-infections.tbtreatment",
+        "path": "HIVCaseReport.monthlyReport.co-infections.tbtreatment",
+        "short": "Whether the patient has an ongoing treatment for tuberculosis",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.death",
+        "path": "HIVCaseReport.monthlyReport.death",
+        "short": "The death of the patient",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.death.dateofDeath",
+        "path": "HIVCaseReport.monthlyReport.death.dateofDeath",
+        "short": "The date of the patient's death",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.monthlyReport.death.causeofDeath",
+        "path": "HIVCaseReport.monthlyReport.death.causeofDeath",
+        "short": "The cause of the patient's death",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}
