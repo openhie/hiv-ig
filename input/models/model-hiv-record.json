@@ -1,0 +1,344 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "model-hiv-record",
+  "url": "https://www.hl7belgium.org/fhir/StructureDefinition/model-hiv-record",
+  "version": "0.2.0",
+  "name": "HIVRecord",
+  "status": "draft",
+  "date": "2020-11-12T13:10:28+00:00",
+  "publisher": "HL7 International - [Some] Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "This is the logical model...",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "HIVRecord",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "HIVRecord",
+        "path": "HIVRecord",
+        "short": "HIV case record",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "HIVRecord.identifier",
+        "path": "HIVRecord.identifier",
+        "short": "Unique business identifiers for the record",
+        "min": 0,
+        "max": "2",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.patientIdentifier",
+        "path": "HIVRecord.patientIdentifier",
+        "short": "The patient's identifier",
+        "definition": "Note that this may be merged onto patientReference (using logical references and/or contained resource)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.patientReference",
+        "path": "HIVRecord.patientReference",
+        "short": "The patient (as a FHIR Reference)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.testResults",
+        "path": "HIVRecord.testResults",
+        "short": "Patient's Test results",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.testResults.results",
+        "path": "HIVRecord.testResults.results",
+        "short": "The results of the patient's tests",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SimpleQuantity"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.testResults.testDate",
+        "path": "HIVRecord.testResults.testDate",
+        "short": "The date of the patient's test",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.testResults.samplingDate",
+        "path": "HIVRecord.testResults.samplingDate",
+        "short": "The date the samples were collected for the patient's current test",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.arvTreatment",
+        "path": "HIVRecord.arvTreatment",
+        "short": "Antiretroviral treatment information",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.arvTreatment.courseofTreatment",
+        "path": "HIVRecord.arvTreatment.courseofTreatment",
+        "short": "The current course of ARV treatment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.arvTreatment.courseofTreatment.treatmentStartDate",
+        "path": "HIVRecord.arvTreatment.courseofTreatment.treatmentStartDate",
+        "short": "The starting date of the current course of ARV treatment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.arvTreatment.courseofTreatment.treatment_loss_signs",
+        "path": "HIVRecord.arvTreatment.courseofTreatment.treatment_loss_signs",
+        "short": "??",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.arvTreatment.courseofTreatment.treatment_loss_signs_date",
+        "path": "HIVRecord.arvTreatment.courseofTreatment.treatment_loss_signs_date",
+        "short": "??",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.arvTreatment.courseofTreatment.treatmentEndDate",
+        "path": "HIVRecord.arvTreatment.courseofTreatment.treatmentEndDate",
+        "short": "The end date of the course of ARV treatment if the current treament is ended",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.co-infections",
+        "path": "HIVRecord.co-infections",
+        "short": "Other infections reported for the patient",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.co-infections.tbprevention",
+        "path": "HIVRecord.co-infections.tbprevention",
+        "short": "Whether the patient has any tuberculosis prevention activity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.co-infections.tbdiagnosis",
+        "path": "HIVRecord.co-infections.tbdiagnosis",
+        "short": "Whether the patient has a current diagnosis for tuberculosis",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.co-infections.tbdiagnosis.onset",
+        "path": "HIVRecord.co-infections.tbdiagnosis.onset",
+        "short": "The onset for tuberculosis",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.co-infections.tbdiagnosis.abatement",
+        "path": "HIVRecord.co-infections.tbdiagnosis.abatement",
+        "short": "The onset for tuberculosis",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.co-infections.tbtreatment",
+        "path": "HIVRecord.co-infections.tbtreatment",
+        "short": "The patient's treatment for tuberculosis",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.co-infections.tbtreatment.startDate",
+        "path": "HIVRecord.co-infections.tbtreatment.startDate",
+        "short": "The start date fot the patient's treatment for tuberculosis",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.co-infections.tbtreatment.endDate",
+        "path": "HIVRecord.co-infections.tbtreatment.endDate",
+        "short": "The end date for the patient's treatment for tuberculosis",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.death",
+        "path": "HIVRecord.death",
+        "short": "The death of the patient",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.death.dateofDeath",
+        "path": "HIVRecord.death.dateofDeath",
+        "short": "The date of the patient's death",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.death.causeofDeath",
+        "path": "HIVRecord.death.causeofDeath",
+        "short": "The cause of the patient's death",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

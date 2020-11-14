@@ -66,8 +66,15 @@
       <reference>
         <reference value="StructureDefinition/model-hiv-case-report"/>
       </reference>
-      <name value="Example Logical Model"/>
-      <description value="Description of the logical model"/>
+      <name value="Case Report Logical Model"/>
+      <description value="Logical Model for a patient's monthly case report"/>
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/model-hiv-record"/>
+      </reference>
+      <name value="HIV Record Logical Model"/>
+      <description value="HIV Longitudinal record Logical Model"/>
     </resource>    
     <resource>
       <reference>
