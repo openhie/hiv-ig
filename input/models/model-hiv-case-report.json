@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "model-hiv-case-report",
-  "url": "https://www.hl7belgium.org/fhir/StructureDefinition/model-hiv-case-report",
+  "url": "https://www.openhie.org/fhir/hiv/StructureDefinition/model-hiv-case-report",
   "version": "0.2.0",
   "name": "HIVCaseReport",
   "status": "draft",
