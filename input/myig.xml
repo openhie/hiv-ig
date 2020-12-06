@@ -76,13 +76,6 @@
       <name value="HIV Record Logical Model"/>
       <description value="HIV Longitudinal record Logical Model"/>
     </resource>    
-    <resource>
-      <reference>
-        <reference value="Questionnaire/case-monitoring"/>
-      </reference>
-      <name value="Questionnaire"/>
-      <description value="Questionnaire"/>
-    </resource>    
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>

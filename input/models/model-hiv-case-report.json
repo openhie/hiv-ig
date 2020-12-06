@@ -100,7 +100,7 @@
       },
       {
         "id": "HIVCaseReport.monthlyReport",
-        "path": "HIVCaseReport.backbone",
+        "path": "HIVCaseReport.monthlyReport",
         "short": "The monthly HIV case report",
         "min": 0,
         "max": "*",
@@ -413,7 +413,7 @@
       {
         "id": "HIVCaseReport.monthlyReport.arvTreatment.courseofTreatment.treatment_loss_signs",
         "path": "HIVCaseReport.monthlyReport.arvTreatment.courseofTreatment.treatment_loss_signs",
-        "short": "??",
+        "short": "Treatment loss signs",
         "min": 0,
         "max": "1",
         "type": [
@@ -425,7 +425,7 @@
       {
         "id": "HIVCaseReport.monthlyReport.arvTreatment.courseofTreatment.treatment_loss_signs_date",
         "path": "HIVCaseReport.monthlyReport.arvTreatment.courseofTreatment.treatment_loss_signs_date",
-        "short": "??",
+        "short": "Treatment loss signs - date",
         "min": 0,
         "max": "1",
         "type": [
@@ -461,7 +461,7 @@
       {
         "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier1",
         "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier1",
-        "short": "(To do)",
+        "short": "Tier 1",
         "min": 0,
         "max": "1",
         "type": [
@@ -473,7 +473,7 @@
       {
         "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier1.startDate",
         "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier1.startDate",
-        "short": "(To do)",
+        "short": "Tier 1 - Start date",
         "min": 0,
         "max": "1",
         "type": [
@@ -485,7 +485,7 @@
       {
         "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier2",
         "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier2",
-        "short": "(To do)",
+        "short": "Tier 2",
         "min": 0,
         "max": "1",
         "type": [
@@ -497,7 +497,7 @@
       {
         "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier2.startDate",
         "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier2.startDate",
-        "short": "(To do)",
+        "short": "Tier 2 - Start date",
         "min": 0,
         "max": "1",
         "type": [
@@ -509,7 +509,7 @@
       {
         "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier3",
         "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier3",
-        "short": "(To do)",
+        "short": "Tier 3",
         "min": 0,
         "max": "1",
         "type": [
@@ -521,7 +521,7 @@
       {
         "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier3.startDate",
         "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimen.tier3.startDate",
-        "short": "(To do)",
+        "short": "Tier 3 - Start date",
         "min": 0,
         "max": "1",
         "type": [

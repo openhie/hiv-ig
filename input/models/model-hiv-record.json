@@ -6,7 +6,7 @@
   "name": "HIVRecord",
   "status": "draft",
   "date": "2020-11-12T13:10:28+00:00",
-  "publisher": "HL7 International - [Some] Work Group",
+  "publisher": "HL7 International - Work Group",
   "contact": [
     {
       "telecom": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "This is the logical model...",
+  "description": "This is the logical model for the shared record for an HIV patient.",
   "jurisdiction": [
     {
       "coding": [
@@ -55,7 +55,7 @@
         "path": "HIVRecord.identifier",
         "short": "Unique business identifiers for the record",
         "min": 0,
-        "max": "2",
+        "max": "*",
         "type": [
           {
             "code": "Identifier"
@@ -174,7 +174,7 @@
       {
         "id": "HIVRecord.arvTreatment.courseofTreatment.treatment_loss_signs",
         "path": "HIVRecord.arvTreatment.courseofTreatment.treatment_loss_signs",
-        "short": "??",
+        "short": "Treatment loss signs",
         "min": 0,
         "max": "1",
         "type": [
@@ -186,7 +186,7 @@
       {
         "id": "HIVRecord.arvTreatment.courseofTreatment.treatment_loss_signs_date",
         "path": "HIVRecord.arvTreatment.courseofTreatment.treatment_loss_signs_date",
-        "short": "??",
+        "short": "Treatment loss signs - date",
         "min": 0,
         "max": "1",
         "type": [
@@ -220,8 +220,8 @@
         ]
       },
       {
-        "id": "HIVRecord.co-infections.tbprevention",
-        "path": "HIVRecord.co-infections.tbprevention",
+        "id": "HIVRecord.co-infections.prevention",
+        "path": "HIVRecord.co-infections.prevention",
         "short": "Whether the patient has any tuberculosis prevention activity",
         "min": 0,
         "max": "1",
@@ -232,9 +232,9 @@
         ]
       },
       {
-        "id": "HIVRecord.co-infections.tbdiagnosis",
-        "path": "HIVRecord.co-infections.tbdiagnosis",
-        "short": "Whether the patient has a current diagnosis for tuberculosis",
+        "id": "HIVRecord.co-infections.diagnosis",
+        "path": "HIVRecord.co-infections.diagnosis",
+        "short": "The patient's concurrent diagnosis",
         "min": 0,
         "max": "1",
         "type": [
@@ -244,62 +244,50 @@
         ]
       },
       {
-        "id": "HIVRecord.co-infections.tbdiagnosis.onset",
-        "path": "HIVRecord.co-infections.tbdiagnosis.onset",
+        "id": "HIVRecord.co-infections.diagnosis.code",
+        "path": "HIVRecord.co-infections.diagnosis.code",
+        "short": "The patient's concurrent diagnosis",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.co-infections.diagnosis.period",
+        "path": "HIVRecord.co-infections.diagnosis.period",
         "short": "The onset for tuberculosis",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "date"
+            "code": "Period"
           }
         ]
       },
       {
-        "id": "HIVRecord.co-infections.tbdiagnosis.abatement",
-        "path": "HIVRecord.co-infections.tbdiagnosis.abatement",
-        "short": "The onset for tuberculosis",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "date"
-          }
-        ]
-      },
-      {
-        "id": "HIVRecord.co-infections.tbtreatment",
-        "path": "HIVRecord.co-infections.tbtreatment",
-        "short": "The patient's treatment for tuberculosis",
+        "id": "HIVRecord.co-infections.treatment",
+        "path": "HIVRecord.co-infections.treatment",
+        "short": "The patient's treatments  - should perhaps be a different parent element?",
         "min": 0,
         "max": "*",
         "type": [
           {
-            "code": "BackboneElement"
+            "code": "CodeableReference"
           }
         ]
       },
       {
-        "id": "HIVRecord.co-infections.tbtreatment.startDate",
-        "path": "HIVRecord.co-infections.tbtreatment.startDate",
+        "id": "HIVRecord.co-infections.treatment.period",
+        "path": "HIVRecord.co-infections.treatment.period",
         "short": "The start date fot the patient's treatment for tuberculosis",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "date"
-          }
-        ]
-      },
-      {
-        "id": "HIVRecord.co-infections.tbtreatment.endDate",
-        "path": "HIVRecord.co-infections.tbtreatment.endDate",
-        "short": "The end date for the patient's treatment for tuberculosis",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "date"
+            "code": "period"
           }
         ]
       },
