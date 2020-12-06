@@ -3,10 +3,12 @@
 temp
 template
 output
+fsh-generated
 
 # Don't commit this because it's so large #
 ###########################################
 /input-cache/org.hl7.fhir.publisher.jar
+/input-cache/publisher.jar
 
 # Windows generated files #
 ###########################
@@ -21,4 +23,6 @@ Thumbs.db
 ################
 *.bak
 
-/shorthand/build
+# editing files and folders
+input/yaml
+.vscode/settings.json

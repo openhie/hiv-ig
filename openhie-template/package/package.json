@@ -6,8 +6,8 @@
   "description": "Template for OpenHIE Implementation Guides",
   "author": "http://openhie.org",
   "canonical": "http://github.com/openhie/openhie-ig-template",
-	"base":  "fhir.base.template",
+	"base":  "hl7.be.fhir.template",
   "dependencies": {
-    "fhir.base.template": "current"
+    "hl7.be.fhir.template": "current"
   }
 }
