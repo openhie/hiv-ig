@@ -11,13 +11,6 @@
       "path" : "https://build.fhir.org/ig/openhie/openhie-ig-template",
       "status" : "ci-build",
       "current" : true
-    },
-    {
-      "version" : "0.0.1",
-      "desc" : "04-11-2020 - first",
-      "path" : "https://build.fhir.org/ig/IHE/ihe-ig-template/0.0.1",
-      "status" : "ci-build",
-      "current" : true
     }
   ]
 }
