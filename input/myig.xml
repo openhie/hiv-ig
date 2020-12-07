@@ -8,11 +8,11 @@
   <url value="http://openhie.org/fhir/ImplementationGuide/openhie.fhir.hiv"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.2.0"/>
-  <name value="YourComputableMyIGNameHere"/>
-  <title value="Your User Friendly Name for MyIG Here"/>
+  <name value="HIVCaseReporting"/>
+  <title value="HIV Case Reporting and Monitoring"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <publisher value="HL7 International - [Some] Work Group"/>
+  <publisher value="openHIE"/>
   <contact>
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
@@ -20,7 +20,7 @@
       <value value="http://hl7.org/Special/committees/[something]"/>
     </telecom>
   </contact>
-  <description value="A brief description of what MyIG is about (probably the same text as in your readme)"/>
+  <description value="HIV Case Reporting and Monitoring"/>
   <jurisdiction>
     <!-- This will drive SNOMED release used -->
     <coding>
