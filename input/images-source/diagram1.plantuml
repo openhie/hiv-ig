@@ -1,3 +1,140 @@
 @startuml
-Bob -> Alice : hello
+skinparam linetype polyline
+hide circle
+hide stereotype
+'allow_mixing
+
+!include <elastic/common>
+!include <elastic/elasticsearch/elasticsearch>
+!include <elastic/logstash/logstash>
+!include <elastic/kibana/kibana>
+!include kibana.puml
+!include elasticsearch.puml
+
+
+
+skinparam class<<AS>> {
+ BorderColor DarkRed
+ BackgroundColor MistyRose
+ HeaderBackgroundColor #f09090
+}
+skinparam class<<MD>> {
+ BorderColor DarkSlateGray
+ BackgroundColor WhiteSmoke
+ HeaderBackgroundColor #909090
+}
+skinparam class<<FL>> {
+ BorderColor #b07050
+ BackgroundColor BUSINESS
+ HeaderBackgroundColor #f2f295
+}
+
+skinparam class<<TM>> {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor SkyBlue
+}
+
+skinparam class<<TL>> {
+ BorderColor DarkGreen
+ BackgroundColor PHYSICAL
+ HeaderBackgroundColor LimeGreen
+}
+
+
+'ELASTICSEARCH(ElasticSearch, "Search and Analyze",database)
+'LOGSTASH(Logstash, "Parse and Transform",node)
+'KIBANA(Kibana, "Visualize",agent) 
+'Logstash -right-> ElasticSearch: Transformed Data
+'ElasticSearch -right-> Kibana: Data to View
+
+package "Input Data" as InputData {
+  package "Monthly Case Report" as MonthlyReport {
+    class "**       XLS       **" as XLS<<MD>> {
+(Bulk import)
+    }
+    class "**    Online Forms    **" as Frms<<TL>> {
+Report
+|_ Identification
+|_ Demographics
+|_ Test Results
+|_ ARV
+|_ Co-infections
+|_ Death
+--
+}
+XLS -down[hidden]- Frms
+        
+  }
+
+  
+  package "Standard Data Model" as DataModel {
+    class "**Standardized**\n**Report**" as StdReport<<TL>> {
+Report
+|_ Identification
+|_ Demographics  
+|_ Test Results
+|_ ARV
+|_ Co-infections
+|_ Death
+--
+    }
+
+    class "**Longitudinal**\n**Record**" as Long<<TL>> {
+Report
+|_ Identification  
+|_ Demographics  
+|_ Test Results
+|_ ARV
+|_ Co-infections
+|_ Death
+--
+    }
+
+
+}  
+  package "EHR" as EHR {
+    class "**       ARV       **\n** Data **" as ARV<<MD>> {
+    }
+    class "**       LAB       **\n** Data **" as LAB<<MD>> {
+    }
+    class "**       ...       **" as OTH<<MD>> {
+    }
+}  
+  
+ 
+  package "Reporting" as Rep {
+    object "**       Elastic       **" as Elastic<<MD>> {
+    <$elasticsearch{scale=0.6}>
+    }
+    object "**       Kibana       **" as Kibana<<MD>> {
+    <$kibana{scale=0.6}>
+    }
+Elastic -right-> Kibana
+  }
+
+
+XLS -right- StdReport
+Frms -right- StdReport: "                        "
+'MonthlyReport -right- DataModel : "           3              "
+Frms -down[hidden]- EHR
+
+Frms -down[hidden]- ARV
+ARV -down[hidden]- LAB
+LAB -down[hidden]- OTH
+StdReport -down- Long
+ARV .right. Long: "                                    "
+LAB .up. Long
+  
+
+'Rep -left- MonthlyReport
+
+'StdReport -right- Rep:  " a "
+'Long -up- Rep: "b"
+'DataModel -right- Rep
+StdReport .right. Elastic
+Long .right. Elastic: "                             "
+
+  
+}
 @enduml
