@@ -55,10 +55,46 @@
         "path": "HIVCaseReport.identifier",
         "short": "Unique business identifiers for the report",
         "min": 0,
-        "max": "2",
+        "max": "*",
         "type": [
           {
             "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.submitter",
+        "path": "HIVCaseReport.submitter",
+        "short": "Who submitted the report",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.submitter.institution",
+        "path": "HIVCaseReport.submitter.institution",
+        "short": "The institution that submitted the report",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "HIVCaseReport.submitter.recorder",
+        "path": "HIVCaseReport.submitter.recorder",
+        "short": "The person who submitted the report",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
           }
         ]
       },
@@ -99,20 +135,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport",
-        "path": "HIVCaseReport.monthlyReport",
-        "short": "The monthly HIV case report",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "HIVCaseReport.monthlyReport.identifyingInformation",
-        "path": "HIVCaseReport.monthlyReport.identifyingInformation",
+        "id": "HIVCaseReport.identifyingInformation",
+        "path": "HIVCaseReport.identifyingInformation",
         "short": "The patient's identifying information",
         "min": 0,
         "max": "1",
@@ -123,8 +147,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.identifyingInformation.ARVPatientNumber",
-        "path": "HIVCaseReport.monthlyReport.identifyingInformation.ARVPatientNumber",
+        "id": "HIVCaseReport.identifyingInformation.ARVPatientNumber",
+        "path": "HIVCaseReport.identifyingInformation.ARVPatientNumber",
         "short": "The patient's ARV treatment identifier",
         "min": 0,
         "max": "1",
@@ -135,8 +159,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation",
-        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation",
+        "id": "HIVCaseReport.identifyingInformation.personalInformation",
+        "path": "HIVCaseReport.identifyingInformation.personalInformation",
         "short": "The patient's personal information",
         "min": 0,
         "max": "1",
@@ -147,8 +171,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.full_name",
-        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.full_name",
+        "id": "HIVCaseReport.identifyingInformation.personalInformation.full_name",
+        "path": "HIVCaseReport.identifyingInformation.personalInformation.full_name",
         "short": "Patient's first and last name",
         "min": 0,
         "max": "1",
@@ -159,8 +183,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.ethnicity",
-        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.ethnicity",
+        "id": "HIVCaseReport.identifyingInformation.personalInformation.ethnicity",
+        "path": "HIVCaseReport.identifyingInformation.personalInformation.ethnicity",
         "short": "The patient's ethnicity",
         "min": 0,
         "max": "1",
@@ -171,8 +195,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.gender",
-        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.gender",
+        "id": "HIVCaseReport.identifyingInformation.personalInformation.gender",
+        "path": "HIVCaseReport.identifyingInformation.personalInformation.gender",
         "short": "The patient's gender",
         "min": 0,
         "max": "1",
@@ -183,8 +207,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.birth_year",
-        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.birth_year",
+        "id": "HIVCaseReport.identifyingInformation.personalInformation.birth_year",
+        "path": "HIVCaseReport.identifyingInformation.personalInformation.birth_year",
         "short": "The patient's year of birth",
         "min": 0,
         "max": "1",
@@ -195,8 +219,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.identification",
-        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.identification",
+        "id": "HIVCaseReport.identifyingInformation.personalInformation.identification",
+        "path": "HIVCaseReport.identifyingInformation.personalInformation.identification",
         "short": "The patient's personal identification",
         "min": 0,
         "max": "1",
@@ -207,8 +231,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.identification.health_insurance",
-        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.identification.health_insurance",
+        "id": "HIVCaseReport.identifyingInformation.personalInformation.identification.health_insurance",
+        "path": "HIVCaseReport.identifyingInformation.personalInformation.identification.health_insurance",
         "short": "Health insurance number",
         "min": 0,
         "max": "1",
@@ -219,8 +243,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.identification.passport",
-        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.identification.passport",
+        "id": "HIVCaseReport.identifyingInformation.personalInformation.identification.passport",
+        "path": "HIVCaseReport.identifyingInformation.personalInformation.identification.passport",
         "short": "Passport number",
         "min": 0,
         "max": "1",
@@ -231,8 +255,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.currentResidence",
-        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.currentResidence",
+        "id": "HIVCaseReport.identifyingInformation.personalInformation.currentResidence",
+        "path": "HIVCaseReport.identifyingInformation.personalInformation.currentResidence",
         "short": "Patient's current residence",
         "min": 0,
         "max": "1",
@@ -243,8 +267,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.permanentResidence",
-        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.permanentResidence",
+        "id": "HIVCaseReport.identifyingInformation.personalInformation.permanentResidence",
+        "path": "HIVCaseReport.identifyingInformation.personalInformation.permanentResidence",
         "short": "Patient's permanent residence",
         "min": 0,
         "max": "1",
@@ -255,8 +279,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.occupation",
-        "path": "HIVCaseReport.monthlyReport.identifyingInformation.personalInformation.occupation",
+        "id": "HIVCaseReport.identifyingInformation.personalInformation.occupation",
+        "path": "HIVCaseReport.identifyingInformation.personalInformation.occupation",
         "short": "Patient's occupation or profession",
         "min": 0,
         "max": "1",
@@ -267,8 +291,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.riskFactors.riskPopulation",
-        "path": "HIVCaseReport.monthlyReport.riskFactors.riskPopulation",
+        "id": "HIVCaseReport.riskFactors.riskPopulation",
+        "path": "HIVCaseReport.riskFactors.riskPopulation",
         "short": "The risk population",
         "min": 0,
         "max": "1",
@@ -279,8 +303,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.riskFactors.riskBehavior",
-        "path": "HIVCaseReport.monthlyReport.riskFactors.riskBehavior",
+        "id": "HIVCaseReport.riskFactors.riskBehavior",
+        "path": "HIVCaseReport.riskFactors.riskBehavior",
         "short": "The risk population",
         "min": 0,
         "max": "1",
@@ -291,8 +315,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.riskFactors.transmissionRoute",
-        "path": "HIVCaseReport.monthlyReport.riskFactors.transmissionRoute",
+        "id": "HIVCaseReport.riskFactors.transmissionRoute",
+        "path": "HIVCaseReport.riskFactors.transmissionRoute",
         "short": "The risk population",
         "min": 0,
         "max": "1",
@@ -303,8 +327,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.hiv-diagnosis",
-        "path": "HIVCaseReport.monthlyReport.hiv-diagnosis",
+        "id": "HIVCaseReport.hiv-diagnosis",
+        "path": "HIVCaseReport.hiv-diagnosis",
         "short": "Patient's Test results",
         "min": 0,
         "max": "1",
@@ -315,8 +339,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.hiv-diagnosis.dateOfConfirmation",
-        "path": "HIVCaseReport.monthlyReport.hiv-diagnosis.dateOfConfirmation",
+        "id": "HIVCaseReport.hiv-diagnosis.dateOfConfirmation",
+        "path": "HIVCaseReport.hiv-diagnosis.dateOfConfirmation",
         "short": "Date of HIV Infection confirmation",
         "min": 0,
         "max": "1",
@@ -327,8 +351,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.hiv-diagnosis.confirmingLab",
-        "path": "HIVCaseReport.monthlyReport.hiv-diagnosis.confirmingLab",
+        "id": "HIVCaseReport.hiv-diagnosis.confirmingLab",
+        "path": "HIVCaseReport.hiv-diagnosis.confirmingLab",
         "short": "Date of HIV Infection confirmation",
         "min": 0,
         "max": "1",
@@ -339,8 +363,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.hiv-diagnosis.placeOfSpecimenCollection",
-        "path": "HIVCaseReport.monthlyReport.hiv-diagnosis.placeOfSpecimenCollection",
+        "id": "HIVCaseReport.hiv-diagnosis.placeOfSpecimenCollection",
+        "path": "HIVCaseReport.hiv-diagnosis.placeOfSpecimenCollection",
         "short": "Date of HIV Infection confirmation",
         "min": 0,
         "max": "1",
@@ -351,8 +375,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.hiv-diagnosis.dateOfSpecimenCollection",
-        "path": "HIVCaseReport.monthlyReport.hiv-diagnosis.dateOfSpecimenCollection",
+        "id": "HIVCaseReport.hiv-diagnosis.dateOfSpecimenCollection",
+        "path": "HIVCaseReport.hiv-diagnosis.dateOfSpecimenCollection",
         "short": "Date of HIV Infection confirmation",
         "min": 0,
         "max": "1",
@@ -363,8 +387,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.hiv-recencyTest",
-        "path": "HIVCaseReport.monthlyReport.hiv-recencyTest",
+        "id": "HIVCaseReport.hiv-recencyTest",
+        "path": "HIVCaseReport.hiv-recencyTest",
         "short": "HIV recency test",
         "min": 0,
         "max": "1",
@@ -375,8 +399,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.hiv-recencyTest.rapidTest",
-        "path": "HIVCaseReport.monthlyReport.hiv-recencyTest.rapidTest",
+        "id": "HIVCaseReport.hiv-recencyTest.rapidTest",
+        "path": "HIVCaseReport.hiv-recencyTest.rapidTest",
         "short": "HIV recency test",
         "min": 0,
         "max": "1",
@@ -387,8 +411,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.hiv-recencyTest.rapidTest.dateOfSpecimenCollection",
-        "path": "HIVCaseReport.monthlyReport.hiv-recencyTest.rapidTest.dateOfSpecimenCollection",
+        "id": "HIVCaseReport.hiv-recencyTest.rapidTest.dateOfSpecimenCollection",
+        "path": "HIVCaseReport.hiv-recencyTest.rapidTest.dateOfSpecimenCollection",
         "short": "Date of specimen collection for HIV recency test",
         "min": 0,
         "max": "1",
@@ -399,8 +423,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.hiv-recencyTest.rapidTest.dateOfTestPerformance",
-        "path": "HIVCaseReport.monthlyReport.hiv-recencyTest.rapidTest.dateOfTestPerformance",
+        "id": "HIVCaseReport.hiv-recencyTest.rapidTest.dateOfTestPerformance",
+        "path": "HIVCaseReport.hiv-recencyTest.rapidTest.dateOfTestPerformance",
         "short": "Date of HIV recency test",
         "min": 0,
         "max": "1",
@@ -411,8 +435,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.hiv-recencyTest.rapidTest.placeOfSpecimenCollection",
-        "path": "HIVCaseReport.monthlyReport.hiv-recencyTest.rapidTest.placeOfSpecimenCollection",
+        "id": "HIVCaseReport.hiv-recencyTest.rapidTest.placeOfSpecimenCollection",
+        "path": "HIVCaseReport.hiv-recencyTest.rapidTest.placeOfSpecimenCollection",
         "short": "Date of HIV recency test",
         "min": 0,
         "max": "1",
@@ -423,8 +447,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.hiv-recencyTest.rapidTest.testResult",
-        "path": "HIVCaseReport.monthlyReport.hiv-recencyTest.rapidTest.testResult",
+        "id": "HIVCaseReport.hiv-recencyTest.rapidTest.testResult",
+        "path": "HIVCaseReport.hiv-recencyTest.rapidTest.testResult",
         "short": "Date of HIV recency test",
         "min": 0,
         "max": "1",
@@ -436,8 +460,8 @@
       },
 
       {
-        "id": "HIVCaseReport.monthlyReport.hiv-recencyTest.viralLoadTest",
-        "path": "HIVCaseReport.monthlyReport.hiv-recencyTest.viralLoadTest",
+        "id": "HIVCaseReport.hiv-recencyTest.viralLoadTest",
+        "path": "HIVCaseReport.hiv-recencyTest.viralLoadTest",
         "short": "HIV recency test",
         "min": 0,
         "max": "1",
@@ -448,8 +472,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.hiv-recencyTest.viralLoadTest.dateOfTestPerformance",
-        "path": "HIVCaseReport.monthlyReport.hiv-recencyTest.viralLoadTest.dateOfTestPerformance",
+        "id": "HIVCaseReport.hiv-recencyTest.viralLoadTest.dateOfTestPerformance",
+        "path": "HIVCaseReport.hiv-recencyTest.viralLoadTest.dateOfTestPerformance",
         "short": "Date of HIV recency test",
         "min": 0,
         "max": "1",
@@ -460,20 +484,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.hiv-recencyTest.viralLoadTest.testResult",
-        "path": "HIVCaseReport.monthlyReport.hiv-recencyTest.viralLoadTest.testResult",
-        "short": "Date of HIV recency test",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "code"
-          }
-        ]
-      },
-      {
-        "id": "HIVCaseReport.monthlyReport.hiv-recencyTest.recencyConclusion",
-        "path": "HIVCaseReport.monthlyReport.hiv-recencyTest.recencyConclusion",
+        "id": "HIVCaseReport.hiv-recencyTest.viralLoadTest.testResult",
+        "path": "HIVCaseReport.hiv-recencyTest.viralLoadTest.testResult",
         "short": "Date of HIV recency test",
         "min": 0,
         "max": "1",
@@ -483,10 +495,22 @@
           }
         ]
       },
+      {
+        "id": "HIVCaseReport.hiv-recencyTest.recencyConclusion",
+        "path": "HIVCaseReport.hiv-recencyTest.recencyConclusion",
+        "short": "Date of HIV recency test",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
 
       {
-        "id": "HIVCaseReport.monthlyReport.cd4TestBeforeART",
-        "path": "HIVCaseReport.monthlyReport.cd4TestBeforeART",
+        "id": "HIVCaseReport.cd4TestBeforeART",
+        "path": "HIVCaseReport.cd4TestBeforeART",
         "short": "CD4 test before ART initiation",
         "min": 0,
         "max": "1",
@@ -497,8 +521,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.cd4TestBeforeART.dateOfSpecimenCollection",
-        "path": "HIVCaseReport.monthlyReport.cd4TestBeforeART.dateOfSpecimenCollection",
+        "id": "HIVCaseReport.cd4TestBeforeART.dateOfSpecimenCollection",
+        "path": "HIVCaseReport.cd4TestBeforeART.dateOfSpecimenCollection",
         "short": "The date the samples were collected for the CD4 test",
         "min": 0,
         "max": "1",
@@ -509,8 +533,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.cd4TestBeforeART.dateOfTestPerformance",
-        "path": "HIVCaseReport.monthlyReport.cd4TestBeforeART.dateOfTestPerformance",
+        "id": "HIVCaseReport.cd4TestBeforeART.dateOfTestPerformance",
+        "path": "HIVCaseReport.cd4TestBeforeART.dateOfTestPerformance",
         "short": "The date the CD4 test was performed",
         "min": 0,
         "max": "1",
@@ -521,8 +545,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.cd4TestBeforeART.placeOfSpecimenCollection",
-        "path": "HIVCaseReport.monthlyReport.cd4TestBeforeART.placeOfSpecimenCollection",
+        "id": "HIVCaseReport.cd4TestBeforeART.placeOfSpecimenCollection",
+        "path": "HIVCaseReport.cd4TestBeforeART.placeOfSpecimenCollection",
         "short": "The date the samples were collected for the CD4 test",
         "min": 0,
         "max": "1",
@@ -533,8 +557,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.cd4TestBeforeART.result",
-        "path": "HIVCaseReport.monthlyReport.cd4TestBeforeART.result",
+        "id": "HIVCaseReport.cd4TestBeforeART.result",
+        "path": "HIVCaseReport.cd4TestBeforeART.result",
         "short": "The date the samples were collected for the CD4 test",
         "min": 0,
         "max": "1",
@@ -546,8 +570,8 @@
       },
 
       {
-        "id": "HIVCaseReport.monthlyReport.cd4TestDuringART",
-        "path": "HIVCaseReport.monthlyReport.cd4TestDuringART",
+        "id": "HIVCaseReport.cd4TestDuringART",
+        "path": "HIVCaseReport.cd4TestDuringART",
         "short": "CD4 test before ART initiation",
         "min": 0,
         "max": "1",
@@ -558,8 +582,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.cd4TestDuringART.dateOfSpecimenCollection",
-        "path": "HIVCaseReport.monthlyReport.cd4TestDuringART.dateOfSpecimenCollection",
+        "id": "HIVCaseReport.cd4TestDuringART.dateOfSpecimenCollection",
+        "path": "HIVCaseReport.cd4TestDuringART.dateOfSpecimenCollection",
         "short": "The date the samples were collected for the CD4 test",
         "min": 0,
         "max": "1",
@@ -570,8 +594,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.cd4TestDuringART.dateOfTestPerformance",
-        "path": "HIVCaseReport.monthlyReport.cd4TestDuringART.dateOfTestPerformance",
+        "id": "HIVCaseReport.cd4TestDuringART.dateOfTestPerformance",
+        "path": "HIVCaseReport.cd4TestDuringART.dateOfTestPerformance",
         "short": "The date the CD4 test was performed",
         "min": 0,
         "max": "1",
@@ -582,8 +606,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.cd4TestDuringART.placeOfSpecimenCollection",
-        "path": "HIVCaseReport.monthlyReport.cd4TestDuringART.placeOfSpecimenCollection",
+        "id": "HIVCaseReport.cd4TestDuringART.placeOfSpecimenCollection",
+        "path": "HIVCaseReport.cd4TestDuringART.placeOfSpecimenCollection",
         "short": "The date the samples were collected for the CD4 test",
         "min": 0,
         "max": "1",
@@ -594,8 +618,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.cd4TestDuringART.result",
-        "path": "HIVCaseReport.monthlyReport.cd4TestDuringART.result",
+        "id": "HIVCaseReport.cd4TestDuringART.result",
+        "path": "HIVCaseReport.cd4TestDuringART.result",
         "short": "The date the samples were collected for the CD4 test",
         "min": 0,
         "max": "1",
@@ -607,8 +631,8 @@
       },
 
       {
-        "id": "HIVCaseReport.monthlyReport.routineVLTestDuringART",
-        "path": "HIVCaseReport.monthlyReport.routineVLTestDuringART",
+        "id": "HIVCaseReport.routineVLTestDuringART",
+        "path": "HIVCaseReport.routineVLTestDuringART",
         "short": "CD4 test before ART initiation",
         "min": 0,
         "max": "1",
@@ -619,8 +643,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.routineVLTestDuringART.dateOfSpecimenCollection",
-        "path": "HIVCaseReport.monthlyReport.routineVLTestDuringART.dateOfSpecimenCollection",
+        "id": "HIVCaseReport.routineVLTestDuringART.dateOfSpecimenCollection",
+        "path": "HIVCaseReport.routineVLTestDuringART.dateOfSpecimenCollection",
         "short": "The date the samples were collected for the CD4 test",
         "min": 0,
         "max": "1",
@@ -631,8 +655,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.routineVLTestDuringART.dateOfTestPerformance",
-        "path": "HIVCaseReport.monthlyReport.routineVLTestDuringART.dateOfTestPerformance",
+        "id": "HIVCaseReport.routineVLTestDuringART.dateOfTestPerformance",
+        "path": "HIVCaseReport.routineVLTestDuringART.dateOfTestPerformance",
         "short": "The date the CD4 test was performed",
         "min": 0,
         "max": "1",
@@ -643,8 +667,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.routineVLTestDuringART.placeOfSpecimenCollection",
-        "path": "HIVCaseReport.monthlyReport.routineVLTestDuringART.placeOfSpecimenCollection",
+        "id": "HIVCaseReport.routineVLTestDuringART.placeOfSpecimenCollection",
+        "path": "HIVCaseReport.routineVLTestDuringART.placeOfSpecimenCollection",
         "short": "The date the samples were collected for the CD4 test",
         "min": 0,
         "max": "1",
@@ -655,8 +679,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.routineVLTestDuringART.result",
-        "path": "HIVCaseReport.monthlyReport.routineVLTestDuringART.result",
+        "id": "HIVCaseReport.routineVLTestDuringART.result",
+        "path": "HIVCaseReport.routineVLTestDuringART.result",
         "short": "The date the samples were collected for the CD4 test",
         "min": 0,
         "max": "1",
@@ -669,8 +693,8 @@
 
 
       {
-        "id": "HIVCaseReport.monthlyReport.drugResistanceTest",
-        "path": "HIVCaseReport.monthlyReport.drugResistanceTest",
+        "id": "HIVCaseReport.drugResistanceTest",
+        "path": "HIVCaseReport.drugResistanceTest",
         "short": "CD4 test before ART initiation",
         "min": 0,
         "max": "1",
@@ -681,8 +705,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.drugResistanceTest.dateOfSpecimenCollection",
-        "path": "HIVCaseReport.monthlyReport.drugResistanceTest.dateOfSpecimenCollection",
+        "id": "HIVCaseReport.drugResistanceTest.dateOfSpecimenCollection",
+        "path": "HIVCaseReport.drugResistanceTest.dateOfSpecimenCollection",
         "short": "The date the samples were collected for the CD4 test",
         "min": 0,
         "max": "1",
@@ -693,8 +717,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.drugResistanceTest.dateOfTestPerformance",
-        "path": "HIVCaseReport.monthlyReport.drugResistanceTest.dateOfTestPerformance",
+        "id": "HIVCaseReport.drugResistanceTest.dateOfTestPerformance",
+        "path": "HIVCaseReport.drugResistanceTest.dateOfTestPerformance",
         "short": "The date the CD4 test was performed",
         "min": 0,
         "max": "1",
@@ -705,8 +729,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.drugResistanceTest.placeOfSpecimenCollection",
-        "path": "HIVCaseReport.monthlyReport.drugResistanceTest.placeOfSpecimenCollection",
+        "id": "HIVCaseReport.drugResistanceTest.placeOfSpecimenCollection",
+        "path": "HIVCaseReport.drugResistanceTest.placeOfSpecimenCollection",
         "short": "The date the samples were collected for the CD4 test",
         "min": 0,
         "max": "1",
@@ -717,8 +741,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.drugResistanceTest.result",
-        "path": "HIVCaseReport.monthlyReport.drugResistanceTest.result",
+        "id": "HIVCaseReport.drugResistanceTest.result",
+        "path": "HIVCaseReport.drugResistanceTest.result",
         "short": "The date the samples were collected for the CD4 test",
         "min": 0,
         "max": "1",
@@ -736,8 +760,8 @@
 
 
       {
-        "id": "HIVCaseReport.monthlyReport.arvTreatment",
-        "path": "HIVCaseReport.monthlyReport.arvTreatment",
+        "id": "HIVCaseReport.arvTreatment",
+        "path": "HIVCaseReport.arvTreatment",
         "short": "Antiretroviral treatment",
         "min": 0,
         "max": "1",
@@ -748,8 +772,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentHistory",
-        "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentHistory",
+        "id": "HIVCaseReport.arvTreatment.treatmentHistory",
+        "path": "HIVCaseReport.arvTreatment.treatmentHistory",
         "short": "Antiretroviral treatment history",
         "min": 0,
         "max": "1",
@@ -760,8 +784,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.arvTreatment.dateOfARVInitiation",
-        "path": "HIVCaseReport.monthlyReport.arvTreatment.dateOfARVInitiation",
+        "id": "HIVCaseReport.arvTreatment.dateOfARVInitiation",
+        "path": "HIVCaseReport.arvTreatment.dateOfARVInitiation",
         "short": "Date of antiretroviral treatment initiation",
         "min": 0,
         "max": "1",
@@ -772,8 +796,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.arvTreatment.placeOfARVInitiation",
-        "path": "HIVCaseReport.monthlyReport.arvTreatment.placeOfARVInitiation",
+        "id": "HIVCaseReport.arvTreatment.placeOfARVInitiation",
+        "path": "HIVCaseReport.arvTreatment.placeOfARVInitiation",
         "short": "Place of antiretroviral treatment initiation ",
         "min": 0,
         "max": "1",
@@ -784,8 +808,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.arvTreatment.dateOfLossToFollowUp",
-        "path": "HIVCaseReport.monthlyReport.arvTreatment.dateOfLossToFollowUp",
+        "id": "HIVCaseReport.arvTreatment.dateOfLossToFollowUp",
+        "path": "HIVCaseReport.arvTreatment.dateOfLossToFollowUp",
         "short": "Date of loss to follow up antiretroviral treatment",
         "min": 0,
         "max": "1",
@@ -796,8 +820,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.arvTreatment.dateOfTreatmentStop",
-        "path": "HIVCaseReport.monthlyReport.arvTreatment.dateOfTreatmentStop",
+        "id": "HIVCaseReport.arvTreatment.dateOfTreatmentStop",
+        "path": "HIVCaseReport.arvTreatment.dateOfTreatmentStop",
         "short": "Date of antiretroviral treatment stop",
         "min": 0,
         "max": "1",
@@ -808,8 +832,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.arvTreatment.dateOfARVTransferredOut",
-        "path": "HIVCaseReport.monthlyReport.arvTreatment.dateOfARVTransferredOut",
+        "id": "HIVCaseReport.arvTreatment.dateOfARVTransferredOut",
+        "path": "HIVCaseReport.arvTreatment.dateOfARVTransferredOut",
         "short": "Date of antiretroviral treatment transferred out",
         "min": 0,
         "max": "1",
@@ -820,8 +844,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.arvTreatment.placeOfARVTransferredOut",
-        "path": "HIVCaseReport.monthlyReport.arvTreatment.placeOfARVTransferredOut",
+        "id": "HIVCaseReport.arvTreatment.placeOfARVTransferredOut",
+        "path": "HIVCaseReport.arvTreatment.placeOfARVTransferredOut",
         "short": "Place of antiretroviral treatment transferred out",
         "min": 0,
         "max": "1",
@@ -835,8 +859,8 @@
 
 
       {
-        "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimens",
-        "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimens",
+        "id": "HIVCaseReport.arvTreatment.treatmentRegimens",
+        "path": "HIVCaseReport.arvTreatment.treatmentRegimens",
         "short": "Antiretroviral treatment regimen information",
         "min": 0,
         "max": "1",
@@ -847,8 +871,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimens.date1stLineStarted",
-        "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimens.date1stLineStarted",
+        "id": "HIVCaseReport.arvTreatment.treatmentRegimens.date1stLineStarted",
+        "path": "HIVCaseReport.arvTreatment.treatmentRegimens.date1stLineStarted",
         "short": "Date antiretroviral 1st line and regimen started",
         "min": 0,
         "max": "1",
@@ -859,8 +883,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimens.date2ndLineStarted",
-        "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimens.date2ndLineStarted",
+        "id": "HIVCaseReport.arvTreatment.treatmentRegimens.date2ndLineStarted",
+        "path": "HIVCaseReport.arvTreatment.treatmentRegimens.date2ndLineStarted",
         "short": "Date antiretroviral 2nd line and regimen started",
         "min": 0,
         "max": "1",
@@ -871,8 +895,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimens.date3rdLineStarted",
-        "path": "HIVCaseReport.monthlyReport.arvTreatment.treatmentRegimens.date3rdLineStarted",
+        "id": "HIVCaseReport.arvTreatment.treatmentRegimens.date3rdLineStarted",
+        "path": "HIVCaseReport.arvTreatment.treatmentRegimens.date3rdLineStarted",
         "short": "Date antiretroviral 3rd line and regimen started",
         "min": 0,
         "max": "1",
@@ -883,8 +907,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.coMorbidities",
-        "path": "HIVCaseReport.monthlyReport.coMorbidities",
+        "id": "HIVCaseReport.coMorbidities",
+        "path": "HIVCaseReport.coMorbidities",
         "short": "Date antiretroviral 3rd line and regimen started",
         "min": 0,
         "max": "1",
@@ -895,8 +919,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.comorbidities",
-        "path": "HIVCaseReport.monthlyReport.comorbidities",
+        "id": "HIVCaseReport.comorbidities",
+        "path": "HIVCaseReport.comorbidities",
         "short": "Comorbidities",
         "min": 0,
         "max": "1",
@@ -907,8 +931,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.comorbidities.tuberculosis",
-        "path": "HIVCaseReport.monthlyReport.comorbidities.tuberculosis",
+        "id": "HIVCaseReport.comorbidities.tuberculosis",
+        "path": "HIVCaseReport.comorbidities.tuberculosis",
         "short": "Tuberculosis",
         "min": 0,
         "max": "1",
@@ -919,8 +943,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.comorbidities.tuberculosis.datesTPTStartedAndCompleted",
-        "path": "HIVCaseReport.monthlyReport.comorbidities.tuberculosis.datesTPTStartedAndCompleted",
+        "id": "HIVCaseReport.comorbidities.tuberculosis.datesTPTStartedAndCompleted",
+        "path": "HIVCaseReport.comorbidities.tuberculosis.datesTPTStartedAndCompleted",
         "short": "Dates started and completed TPT",
         "min": 0,
         "max": "1",
@@ -931,8 +955,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.comorbidities.tuberculosis.placeTPTProvided",
-        "path": "HIVCaseReport.monthlyReport.comorbidities.tuberculosis.placeTPTProvided",
+        "id": "HIVCaseReport.comorbidities.tuberculosis.placeTPTProvided",
+        "path": "HIVCaseReport.comorbidities.tuberculosis.placeTPTProvided",
         "short": "P*lace where the TPT was provided",
         "min": 0,
         "max": "1",
@@ -943,8 +967,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.comorbidities.tuberculosis.dateTBDiagnosis",
-        "path": "HIVCaseReport.monthlyReport.comorbidities.tuberculosis.dateTBDiagnosis",
+        "id": "HIVCaseReport.comorbidities.tuberculosis.dateTBDiagnosis",
+        "path": "HIVCaseReport.comorbidities.tuberculosis.dateTBDiagnosis",
         "short": "Date TB diagnosis",
         "min": 0,
         "max": "1",
@@ -955,8 +979,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.comorbidities.tuberculosis.datesTBTreatmentStartedAndCompleted",
-        "path": "HIVCaseReport.monthlyReport.comorbidities.tuberculosis.datesTBTreatmentStartedAndCompleted",
+        "id": "HIVCaseReport.comorbidities.tuberculosis.datesTBTreatmentStartedAndCompleted",
+        "path": "HIVCaseReport.comorbidities.tuberculosis.datesTBTreatmentStartedAndCompleted",
         "short": "Dates started and completed TB Treatment",
         "min": 0,
         "max": "1",
@@ -967,8 +991,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.comorbidities.tuberculosis.placeTBTreatmentProvided",
-        "path": "HIVCaseReport.monthlyReport.comorbidities.tuberculosis.placeTBTreatmentProvided",
+        "id": "HIVCaseReport.comorbidities.tuberculosis.placeTBTreatmentProvided",
+        "path": "HIVCaseReport.comorbidities.tuberculosis.placeTBTreatmentProvided",
         "short": "Place where the TB treatment was provided",
         "min": 0,
         "max": "1",
@@ -980,8 +1004,8 @@
       },
 
       {
-        "id": "HIVCaseReport.monthlyReport.comorbidities.hbv_hcv",
-        "path": "HIVCaseReport.monthlyReport.comorbidities.hbv_hcv",
+        "id": "HIVCaseReport.comorbidities.hbv_hcv",
+        "path": "HIVCaseReport.comorbidities.hbv_hcv",
         "short": "HBV and HCV",
         "min": 0,
         "max": "1",
@@ -992,8 +1016,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.comorbidities.hbv_hcv.dateHBVHCVDiagnosis",
-        "path": "HIVCaseReport.monthlyReport.comorbidities.hbv_hcv.dateHBVHCVDiagnosis",
+        "id": "HIVCaseReport.comorbidities.hbv_hcv.dateHBVHCVDiagnosis",
+        "path": "HIVCaseReport.comorbidities.hbv_hcv.dateHBVHCVDiagnosis",
         "short": "Date HBV and HCV diagnosis",
         "min": 0,
         "max": "1",
@@ -1004,8 +1028,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.comorbidities.hbv_hcv.datesHBVHCVTreatmentStartedAndCompleted",
-        "path": "HIVCaseReport.monthlyReport.comorbidities.hbv_hcv.datesHBVHCVTreatmentStartedAndCompleted",
+        "id": "HIVCaseReport.comorbidities.hbv_hcv.datesHBVHCVTreatmentStartedAndCompleted",
+        "path": "HIVCaseReport.comorbidities.hbv_hcv.datesHBVHCVTreatmentStartedAndCompleted",
         "short": "Dates started and completed HBV and HCV Treatment",
         "min": 0,
         "max": "1",
@@ -1016,8 +1040,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.comorbidities.hbv_hcv.placeHBVHCVTreatmentProvided",
-        "path": "HIVCaseReport.monthlyReport.comorbidities.hbv_hcv.placeHBVHCVTreatmentProvided",
+        "id": "HIVCaseReport.comorbidities.hbv_hcv.placeHBVHCVTreatmentProvided",
+        "path": "HIVCaseReport.comorbidities.hbv_hcv.placeHBVHCVTreatmentProvided",
         "short": "Place where the HBV and HCV treatment was provided",
         "min": 0,
         "max": "1",
@@ -1030,8 +1054,8 @@
 
 
       {
-        "id": "HIVCaseReport.monthlyReport.pregnancy",
-        "path": "HIVCaseReport.monthlyReport.pregnancy",
+        "id": "HIVCaseReport.pregnancy",
+        "path": "HIVCaseReport.pregnancy",
         "short": "Pregnancy Status",
         "min": 0,
         "max": "1",
@@ -1042,8 +1066,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.pregnancy.datePregnancyReported",
-        "path": "HIVCaseReport.monthlyReport.pregnancy.datePregnancyReported",
+        "id": "HIVCaseReport.pregnancy.datePregnancyReported",
+        "path": "HIVCaseReport.pregnancy.datePregnancyReported",
         "short": "Dates pregnancy reported",
         "min": 0,
         "max": "1",
@@ -1054,8 +1078,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.pregnancy.placePregnancyReported",
-        "path": "HIVCaseReport.monthlyReport.pregnancy.placePregnancyReported",
+        "id": "HIVCaseReport.pregnancy.placePregnancyReported",
+        "path": "HIVCaseReport.pregnancy.placePregnancyReported",
         "short": "Place pregnancy reported",
         "min": 0,
         "max": "1",
@@ -1066,8 +1090,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.pregnancy.dateChildDeliveryReported",
-        "path": "HIVCaseReport.monthlyReport.pregnancy.dateChildDeliveryReported",
+        "id": "HIVCaseReport.pregnancy.dateChildDeliveryReported",
+        "path": "HIVCaseReport.pregnancy.dateChildDeliveryReported",
         "short": "Dates child delivery reported",
         "min": 0,
         "max": "1",
@@ -1078,8 +1102,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.pregnancy.placeChildDeliveryReported",
-        "path": "HIVCaseReport.monthlyReport.pregnancy.placeChildDeliveryReported",
+        "id": "HIVCaseReport.pregnancy.placeChildDeliveryReported",
+        "path": "HIVCaseReport.pregnancy.placeChildDeliveryReported",
         "short": "Place child delivery reported",
         "min": 0,
         "max": "1",
@@ -1090,8 +1114,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes",
-        "path": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes",
+        "id": "HIVCaseReport.pregnancy.pregnancyOutcomes",
+        "path": "HIVCaseReport.pregnancy.pregnancyOutcomes",
         "short": "Pregnancy outcomes",
         "min": 0,
         "max": "*",
@@ -1102,8 +1126,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes.pregnancyOutcomeCode",
-        "path": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes.pregnancyOutcomeCode",
+        "id": "HIVCaseReport.pregnancy.pregnancyOutcomes.pregnancyOutcomeCode",
+        "path": "HIVCaseReport.pregnancy.pregnancyOutcomes.pregnancyOutcomeCode",
         "short": "Pregnancy outcomes",
         "min": 0,
         "max": "1",
@@ -1114,8 +1138,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes.childDateOfBirth",
-        "path": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes.childDateOfBirth",
+        "id": "HIVCaseReport.pregnancy.pregnancyOutcomes.childDateOfBirth",
+        "path": "HIVCaseReport.pregnancy.pregnancyOutcomes.childDateOfBirth",
         "short": "Child's date of birth outcomes",
         "min": 0,
         "max": "1",
@@ -1126,8 +1150,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes.gestationAtDelivery",
-        "path": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes.gestationAtDelivery",
+        "id": "HIVCaseReport.pregnancy.pregnancyOutcomes.gestationAtDelivery",
+        "path": "HIVCaseReport.pregnancy.pregnancyOutcomes.gestationAtDelivery",
         "short": "Child's date of birth outcomes",
         "min": 0,
         "max": "1",
@@ -1138,8 +1162,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes.birthWeight",
-        "path": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes.birthWeight",
+        "id": "HIVCaseReport.pregnancy.pregnancyOutcomes.birthWeight",
+        "path": "HIVCaseReport.pregnancy.pregnancyOutcomes.birthWeight",
         "short": "Child's date of birth outcomes",
         "min": 0,
         "max": "1",
@@ -1150,8 +1174,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes.birthDefects",
-        "path": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes.birthDefects",
+        "id": "HIVCaseReport.pregnancy.pregnancyOutcomes.birthDefects",
+        "path": "HIVCaseReport.pregnancy.pregnancyOutcomes.birthDefects",
         "short": "Child's date of birth outcomes",
         "min": 0,
         "max": "*",
@@ -1162,8 +1186,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes.hivStatus",
-        "path": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes.hivStatus",
+        "id": "HIVCaseReport.pregnancy.pregnancyOutcomes.hivStatus",
+        "path": "HIVCaseReport.pregnancy.pregnancyOutcomes.hivStatus",
         "short": "Child's date of birth outcomes",
         "min": 0,
         "max": "1",
@@ -1174,8 +1198,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes.hivDiagnosisDate",
-        "path": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes.hivDiagnosisDate",
+        "id": "HIVCaseReport.pregnancy.pregnancyOutcomes.hivDiagnosisDate",
+        "path": "HIVCaseReport.pregnancy.pregnancyOutcomes.hivDiagnosisDate",
         "short": "Child's date of birth outcomes",
         "min": 0,
         "max": "1",
@@ -1186,8 +1210,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes.dateARTStart",
-        "path": "HIVCaseReport.monthlyReport.pregnancy.pregnancyOutcomes.dateARTStart",
+        "id": "HIVCaseReport.pregnancy.pregnancyOutcomes.dateARTStart",
+        "path": "HIVCaseReport.pregnancy.pregnancyOutcomes.dateARTStart",
         "short": "Child's date of birth outcomes",
         "min": 0,
         "max": "1",
@@ -1198,8 +1222,8 @@
         ]
       },      
       {
-        "id": "HIVCaseReport.monthlyReport.death",
-        "path": "HIVCaseReport.monthlyReport.death",
+        "id": "HIVCaseReport.death",
+        "path": "HIVCaseReport.death",
         "short": "The death of the patient",
         "min": 0,
         "max": "1",
@@ -1210,8 +1234,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.death.dateofDeath",
-        "path": "HIVCaseReport.monthlyReport.death.dateofDeath",
+        "id": "HIVCaseReport.death.dateofDeath",
+        "path": "HIVCaseReport.death.dateofDeath",
         "short": "The date of the patient's death",
         "min": 0,
         "max": "1",
@@ -1222,8 +1246,8 @@
         ]
       },
       {
-        "id": "HIVCaseReport.monthlyReport.death.causeofDeath",
-        "path": "HIVCaseReport.monthlyReport.death.causeofDeath",
+        "id": "HIVCaseReport.death.causeofDeath",
+        "path": "HIVCaseReport.death.causeofDeath",
         "short": "The cause of the patient's death",
         "min": 0,
         "max": "1",
