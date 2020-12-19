@@ -32,7 +32,7 @@ jobs:
       - name: Run the IG publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args:   curl -L http://beta.plantuml.net/plantuml.jar -o ./openhie-template/package/scripts/publisher.jar --create-dirs; java -jar ./input-cache/publisher.jar publisher -ig .
+          args:   curl -L http://beta.plantuml.net/plantuml.jar -o ./openhie-template/package/scripts/publisher.jar --create-dirs ; java -jar ./input-cache/publisher.jar publisher -ig .
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
