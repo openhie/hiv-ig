@@ -1,0 +1,209 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"HIVCaseReport","","","",0,*,"","","","","HIV monthly case report","Base definition for all elements in a resource.","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a"
+"HIVCaseReport.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"HIVCaseReport.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"HIVCaseReport.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Unique business identifiers for the report","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.identifier",0,*,"",""
+"HIVCaseReport.submitter","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Who submitted the report","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.submitter",0,1,"",""
+"HIVCaseReport.submitter.institution","","","",0,1,"","","","Reference {[]} {[]}
+","The institution that submitted the report","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.submitter.institution",0,1,"",""
+"HIVCaseReport.submitter.recorder","","","",0,1,"","","","string {[]} {[]}
+","The person who submitted the report","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.submitter.recorder",0,1,"",""
+"HIVCaseReport.reportDate","","","",0,1,"","","","date {[]} {[]}
+","Date of the Case Report","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.reportDate",0,1,"",""
+"HIVCaseReport.reportNumber","","","",0,1,"","","","string {[]} {[]}
+","Case Report Number","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.reportNumber",0,1,"",""
+"HIVCaseReport.reportIntro","","","",0,1,"","","","string {[]} {[]}
+","Case Report Introduction text","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.reportIntro",0,1,"",""
+"HIVCaseReport.identifyingInformation","","","",0,1,"","","","BackboneElement {[]} {[]}
+","The patient's identifying information","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.identifyingInformation",0,1,"",""
+"HIVCaseReport.identifyingInformation.ARVPatientNumber","","","",0,1,"","","","Identifier {[]} {[]}
+","The patient's ARV treatment identifier","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.identifyingInformation.ARVPatientNumber",0,1,"",""
+"HIVCaseReport.identifyingInformation.personalInformation","","","",0,1,"","","","BackboneElement {[]} {[]}
+","The patient's personal information","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.identifyingInformation.personalInformation",0,1,"",""
+"HIVCaseReport.identifyingInformation.personalInformation.full_name","","","",0,1,"","","","string {[]} {[]}
+","Patient's first and last name","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.identifyingInformation.personalInformation.full_name",0,1,"",""
+"HIVCaseReport.identifyingInformation.personalInformation.ethnicity","","","",0,1,"","","","code {[]} {[]}
+","The patient's ethnicity","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.identifyingInformation.personalInformation.ethnicity",0,1,"",""
+"HIVCaseReport.identifyingInformation.personalInformation.gender","","","",0,1,"","","","code {[]} {[]}
+","The patient's gender","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.identifyingInformation.personalInformation.gender",0,1,"",""
+"HIVCaseReport.identifyingInformation.personalInformation.birth_year","","","",0,1,"","","","date {[]} {[]}
+","The patient's year of birth","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.identifyingInformation.personalInformation.birth_year",0,1,"",""
+"HIVCaseReport.identifyingInformation.personalInformation.identification","","","",0,1,"","","","BackboneElement {[]} {[]}
+","The patient's personal identification","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.identifyingInformation.personalInformation.identification",0,1,"",""
+"HIVCaseReport.identifyingInformation.personalInformation.identification.health_insurance","","","",0,1,"","","","string {[]} {[]}
+","Health insurance number","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.identifyingInformation.personalInformation.identification.health_insurance",0,1,"",""
+"HIVCaseReport.identifyingInformation.personalInformation.identification.passport","","","",0,1,"","","","string {[]} {[]}
+","Passport number","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.identifyingInformation.personalInformation.identification.passport",0,1,"",""
+"HIVCaseReport.identifyingInformation.personalInformation.currentResidence","","","",0,1,"","","","string {[]} {[]}
+","Patient's current residence","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.identifyingInformation.personalInformation.currentResidence",0,1,"",""
+"HIVCaseReport.identifyingInformation.personalInformation.permanentResidence","","","",0,1,"","","","string {[]} {[]}
+","Patient's permanent residence","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.identifyingInformation.personalInformation.permanentResidence",0,1,"",""
+"HIVCaseReport.identifyingInformation.personalInformation.occupation","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Patient's occupation or profession","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.identifyingInformation.personalInformation.occupation",0,1,"",""
+"HIVCaseReport.riskFactors.riskPopulation","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The risk population","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.riskFactors.riskPopulation",0,1,"",""
+"HIVCaseReport.riskFactors.riskBehavior","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The risk population","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.riskFactors.riskBehavior",0,1,"",""
+"HIVCaseReport.riskFactors.transmissionRoute","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The risk population","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.riskFactors.transmissionRoute",0,1,"",""
+"HIVCaseReport.hiv-diagnosis","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Patient's Test results","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.hiv-diagnosis",0,1,"",""
+"HIVCaseReport.hiv-diagnosis.dateOfConfirmation","","","",0,1,"","","","date {[]} {[]}
+","Date of HIV Infection confirmation","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.hiv-diagnosis.dateOfConfirmation",0,1,"",""
+"HIVCaseReport.hiv-diagnosis.confirmingLab","","","",0,1,"","","","Reference {[]} {[]}
+","Date of HIV Infection confirmation","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.hiv-diagnosis.confirmingLab",0,1,"",""
+"HIVCaseReport.hiv-diagnosis.placeOfSpecimenCollection","","","",0,1,"","","","string {[]} {[]}
+","Date of HIV Infection confirmation","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.hiv-diagnosis.placeOfSpecimenCollection",0,1,"",""
+"HIVCaseReport.hiv-diagnosis.dateOfSpecimenCollection","","","",0,1,"","","","date {[]} {[]}
+","Date of HIV Infection confirmation","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.hiv-diagnosis.dateOfSpecimenCollection",0,1,"",""
+"HIVCaseReport.hiv-recencyTest","","","",0,1,"","","","BackboneElement {[]} {[]}
+","HIV recency test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.hiv-recencyTest",0,1,"",""
+"HIVCaseReport.hiv-recencyTest.rapidTest","","","",0,1,"","","","BackboneElement {[]} {[]}
+","HIV recency test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.hiv-recencyTest.rapidTest",0,1,"",""
+"HIVCaseReport.hiv-recencyTest.rapidTest.dateOfSpecimenCollection","","","",0,1,"","","","date {[]} {[]}
+","Date of specimen collection for HIV recency test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.hiv-recencyTest.rapidTest.dateOfSpecimenCollection",0,1,"",""
+"HIVCaseReport.hiv-recencyTest.rapidTest.dateOfTestPerformance","","","",0,1,"","","","date {[]} {[]}
+","Date of HIV recency test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.hiv-recencyTest.rapidTest.dateOfTestPerformance",0,1,"",""
+"HIVCaseReport.hiv-recencyTest.rapidTest.placeOfSpecimenCollection","","","",0,1,"","","","codeableConcept {[]} {[]}
+","Date of HIV recency test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.hiv-recencyTest.rapidTest.placeOfSpecimenCollection",0,1,"",""
+"HIVCaseReport.hiv-recencyTest.rapidTest.testResult","","","",0,1,"","","","code {[]} {[]}
+","Date of HIV recency test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.hiv-recencyTest.rapidTest.testResult",0,1,"",""
+"HIVCaseReport.hiv-recencyTest.viralLoadTest","","","",0,1,"","","","BackboneElement {[]} {[]}
+","HIV recency test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.hiv-recencyTest.viralLoadTest",0,1,"",""
+"HIVCaseReport.hiv-recencyTest.viralLoadTest.dateOfTestPerformance","","","",0,1,"","","","date {[]} {[]}
+","Date of HIV recency test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.hiv-recencyTest.viralLoadTest.dateOfTestPerformance",0,1,"",""
+"HIVCaseReport.hiv-recencyTest.viralLoadTest.testResult","","","",0,1,"","","","code {[]} {[]}
+","Date of HIV recency test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.hiv-recencyTest.viralLoadTest.testResult",0,1,"",""
+"HIVCaseReport.hiv-recencyTest.recencyConclusion","","","",0,1,"","","","code {[]} {[]}
+","Date of HIV recency test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.hiv-recencyTest.recencyConclusion",0,1,"",""
+"HIVCaseReport.cd4TestBeforeART","","","",0,1,"","","","BackboneElement {[]} {[]}
+","CD4 test before ART initiation","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.cd4TestBeforeART",0,1,"",""
+"HIVCaseReport.cd4TestBeforeART.dateOfSpecimenCollection","","","",0,1,"","","","date {[]} {[]}
+","The date the samples were collected for the CD4 test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.cd4TestBeforeART.dateOfSpecimenCollection",0,1,"",""
+"HIVCaseReport.cd4TestBeforeART.dateOfTestPerformance","","","",0,1,"","","","date {[]} {[]}
+","The date the CD4 test was performed","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.cd4TestBeforeART.dateOfTestPerformance",0,1,"",""
+"HIVCaseReport.cd4TestBeforeART.placeOfSpecimenCollection","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The date the samples were collected for the CD4 test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.cd4TestBeforeART.placeOfSpecimenCollection",0,1,"",""
+"HIVCaseReport.cd4TestBeforeART.result","","","",0,1,"","","","CodeableConceot {[]} {[]}
+","The date the samples were collected for the CD4 test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.cd4TestBeforeART.result",0,1,"",""
+"HIVCaseReport.cd4TestDuringART","","","",0,1,"","","","BackboneElement {[]} {[]}
+","CD4 test before ART initiation","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.cd4TestDuringART",0,1,"",""
+"HIVCaseReport.cd4TestDuringART.dateOfSpecimenCollection","","","",0,1,"","","","date {[]} {[]}
+","The date the samples were collected for the CD4 test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.cd4TestDuringART.dateOfSpecimenCollection",0,1,"",""
+"HIVCaseReport.cd4TestDuringART.dateOfTestPerformance","","","",0,1,"","","","date {[]} {[]}
+","The date the CD4 test was performed","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.cd4TestDuringART.dateOfTestPerformance",0,1,"",""
+"HIVCaseReport.cd4TestDuringART.placeOfSpecimenCollection","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The date the samples were collected for the CD4 test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.cd4TestDuringART.placeOfSpecimenCollection",0,1,"",""
+"HIVCaseReport.cd4TestDuringART.result","","","",0,1,"","","","CodeableConceot {[]} {[]}
+","The date the samples were collected for the CD4 test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.cd4TestDuringART.result",0,1,"",""
+"HIVCaseReport.routineVLTestDuringART","","","",0,1,"","","","BackboneElement {[]} {[]}
+","CD4 test before ART initiation","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.routineVLTestDuringART",0,1,"",""
+"HIVCaseReport.routineVLTestDuringART.dateOfSpecimenCollection","","","",0,1,"","","","date {[]} {[]}
+","The date the samples were collected for the CD4 test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.routineVLTestDuringART.dateOfSpecimenCollection",0,1,"",""
+"HIVCaseReport.routineVLTestDuringART.dateOfTestPerformance","","","",0,1,"","","","date {[]} {[]}
+","The date the CD4 test was performed","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.routineVLTestDuringART.dateOfTestPerformance",0,1,"",""
+"HIVCaseReport.routineVLTestDuringART.placeOfSpecimenCollection","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The date the samples were collected for the CD4 test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.routineVLTestDuringART.placeOfSpecimenCollection",0,1,"",""
+"HIVCaseReport.routineVLTestDuringART.result","","","",0,1,"","","","CodeableConceot {[]} {[]}
+","The date the samples were collected for the CD4 test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.routineVLTestDuringART.result",0,1,"",""
+"HIVCaseReport.drugResistanceTest","","","",0,1,"","","","BackboneElement {[]} {[]}
+","CD4 test before ART initiation","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.drugResistanceTest",0,1,"",""
+"HIVCaseReport.drugResistanceTest.dateOfSpecimenCollection","","","",0,1,"","","","date {[]} {[]}
+","The date the samples were collected for the CD4 test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.drugResistanceTest.dateOfSpecimenCollection",0,1,"",""
+"HIVCaseReport.drugResistanceTest.dateOfTestPerformance","","","",0,1,"","","","date {[]} {[]}
+","The date the CD4 test was performed","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.drugResistanceTest.dateOfTestPerformance",0,1,"",""
+"HIVCaseReport.drugResistanceTest.placeOfSpecimenCollection","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The date the samples were collected for the CD4 test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.drugResistanceTest.placeOfSpecimenCollection",0,1,"",""
+"HIVCaseReport.drugResistanceTest.result","","","",0,1,"","","","CodeableConceot {[]} {[]}
+","The date the samples were collected for the CD4 test","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.drugResistanceTest.result",0,1,"",""
+"HIVCaseReport.arvTreatment","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Antiretroviral treatment","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.arvTreatment",0,1,"",""
+"HIVCaseReport.arvTreatment.treatmentHistory","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Antiretroviral treatment history","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.arvTreatment.treatmentHistory",0,1,"",""
+"HIVCaseReport.arvTreatment.dateOfARVInitiation","","","",0,1,"","","","date {[]} {[]}
+","Date of antiretroviral treatment initiation","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.arvTreatment.dateOfARVInitiation",0,1,"",""
+"HIVCaseReport.arvTreatment.placeOfARVInitiation","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Place of antiretroviral treatment initiation ","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.arvTreatment.placeOfARVInitiation",0,1,"",""
+"HIVCaseReport.arvTreatment.dateOfLossToFollowUp","","","",0,1,"","","","date {[]} {[]}
+","Date of loss to follow up antiretroviral treatment","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.arvTreatment.dateOfLossToFollowUp",0,1,"",""
+"HIVCaseReport.arvTreatment.dateOfTreatmentStop","","","",0,1,"","","","date {[]} {[]}
+","Date of antiretroviral treatment stop","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.arvTreatment.dateOfTreatmentStop",0,1,"",""
+"HIVCaseReport.arvTreatment.dateOfARVTransferredOut","","","",0,1,"","","","date {[]} {[]}
+","Date of antiretroviral treatment transferred out","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.arvTreatment.dateOfARVTransferredOut",0,1,"",""
+"HIVCaseReport.arvTreatment.placeOfARVTransferredOut","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Place of antiretroviral treatment transferred out","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.arvTreatment.placeOfARVTransferredOut",0,1,"",""
+"HIVCaseReport.arvTreatment.treatmentRegimens","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Antiretroviral treatment regimen information","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.arvTreatment.treatmentRegimens",0,1,"",""
+"HIVCaseReport.arvTreatment.treatmentRegimens.date1stLineStarted","","","",0,1,"","","","date {[]} {[]}
+","Date antiretroviral 1st line and regimen started","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.arvTreatment.treatmentRegimens.date1stLineStarted",0,1,"",""
+"HIVCaseReport.arvTreatment.treatmentRegimens.date2ndLineStarted","","","",0,1,"","","","date {[]} {[]}
+","Date antiretroviral 2nd line and regimen started","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.arvTreatment.treatmentRegimens.date2ndLineStarted",0,1,"",""
+"HIVCaseReport.arvTreatment.treatmentRegimens.date3rdLineStarted","","","",0,1,"","","","date {[]} {[]}
+","Date antiretroviral 3rd line and regimen started","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.arvTreatment.treatmentRegimens.date3rdLineStarted",0,1,"",""
+"HIVCaseReport.coMorbidities","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Date antiretroviral 3rd line and regimen started","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.coMorbidities",0,1,"",""
+"HIVCaseReport.comorbidities","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Comorbidities","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.comorbidities",0,1,"",""
+"HIVCaseReport.comorbidities.tuberculosis","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Tuberculosis","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.comorbidities.tuberculosis",0,1,"",""
+"HIVCaseReport.comorbidities.tuberculosis.datesTPTStartedAndCompleted","","","",0,1,"","","","Period {[]} {[]}
+","Dates started and completed TPT","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.comorbidities.tuberculosis.datesTPTStartedAndCompleted",0,1,"",""
+"HIVCaseReport.comorbidities.tuberculosis.placeTPTProvided","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","P*lace where the TPT was provided","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.comorbidities.tuberculosis.placeTPTProvided",0,1,"",""
+"HIVCaseReport.comorbidities.tuberculosis.dateTBDiagnosis","","","",0,1,"","","","date {[]} {[]}
+","Date TB diagnosis","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.comorbidities.tuberculosis.dateTBDiagnosis",0,1,"",""
+"HIVCaseReport.comorbidities.tuberculosis.datesTBTreatmentStartedAndCompleted","","","",0,1,"","","","Period {[]} {[]}
+","Dates started and completed TB Treatment","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.comorbidities.tuberculosis.datesTBTreatmentStartedAndCompleted",0,1,"",""
+"HIVCaseReport.comorbidities.tuberculosis.placeTBTreatmentProvided","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Place where the TB treatment was provided","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.comorbidities.tuberculosis.placeTBTreatmentProvided",0,1,"",""
+"HIVCaseReport.comorbidities.hbv_hcv","","","",0,1,"","","","BackboneElement {[]} {[]}
+","HBV and HCV","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.comorbidities.hbv_hcv",0,1,"",""
+"HIVCaseReport.comorbidities.hbv_hcv.dateHBVHCVDiagnosis","","","",0,1,"","","","date {[]} {[]}
+","Date HBV and HCV diagnosis","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.comorbidities.hbv_hcv.dateHBVHCVDiagnosis",0,1,"",""
+"HIVCaseReport.comorbidities.hbv_hcv.datesHBVHCVTreatmentStartedAndCompleted","","","",0,1,"","","","Period {[]} {[]}
+","Dates started and completed HBV and HCV Treatment","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.comorbidities.hbv_hcv.datesHBVHCVTreatmentStartedAndCompleted",0,1,"",""
+"HIVCaseReport.comorbidities.hbv_hcv.placeHBVHCVTreatmentProvided","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Place where the HBV and HCV treatment was provided","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.comorbidities.hbv_hcv.placeHBVHCVTreatmentProvided",0,1,"",""
+"HIVCaseReport.pregnancy","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Pregnancy Status","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.pregnancy",0,1,"",""
+"HIVCaseReport.pregnancy.datePregnancyReported","","","",0,1,"","","","date {[]} {[]}
+","Dates pregnancy reported","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.pregnancy.datePregnancyReported",0,1,"",""
+"HIVCaseReport.pregnancy.placePregnancyReported","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Place pregnancy reported","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.pregnancy.placePregnancyReported",0,1,"",""
+"HIVCaseReport.pregnancy.dateChildDeliveryReported","","","",0,1,"","","","date {[]} {[]}
+","Dates child delivery reported","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.pregnancy.dateChildDeliveryReported",0,1,"",""
+"HIVCaseReport.pregnancy.placeChildDeliveryReported","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Place child delivery reported","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.pregnancy.placeChildDeliveryReported",0,1,"",""
+"HIVCaseReport.pregnancy.pregnancyOutcomes","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Pregnancy outcomes","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.pregnancy.pregnancyOutcomes",0,*,"",""
+"HIVCaseReport.pregnancy.pregnancyOutcomes.pregnancyOutcomeCode","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Pregnancy outcomes","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.pregnancy.pregnancyOutcomes.pregnancyOutcomeCode",0,1,"",""
+"HIVCaseReport.pregnancy.pregnancyOutcomes.childDateOfBirth","","","",0,1,"","","","date {[]} {[]}
+","Child's date of birth outcomes","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.pregnancy.pregnancyOutcomes.childDateOfBirth",0,1,"",""
+"HIVCaseReport.pregnancy.pregnancyOutcomes.gestationAtDelivery","","","",0,1,"","","","date {[]} {[]}
+","Child's date of birth outcomes","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.pregnancy.pregnancyOutcomes.gestationAtDelivery",0,1,"",""
+"HIVCaseReport.pregnancy.pregnancyOutcomes.birthWeight","","","",0,1,"","","","SimpleQuantity {[]} {[]}
+","Child's date of birth outcomes","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.pregnancy.pregnancyOutcomes.birthWeight",0,1,"",""
+"HIVCaseReport.pregnancy.pregnancyOutcomes.birthDefects","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Child's date of birth outcomes","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.pregnancy.pregnancyOutcomes.birthDefects",0,*,"",""
+"HIVCaseReport.pregnancy.pregnancyOutcomes.hivStatus","","","",0,1,"","","","code {[]} {[]}
+","Child's date of birth outcomes","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.pregnancy.pregnancyOutcomes.hivStatus",0,1,"",""
+"HIVCaseReport.pregnancy.pregnancyOutcomes.hivDiagnosisDate","","","",0,1,"","","","date {[]} {[]}
+","Child's date of birth outcomes","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.pregnancy.pregnancyOutcomes.hivDiagnosisDate",0,1,"",""
+"HIVCaseReport.pregnancy.pregnancyOutcomes.dateARTStart","","","",0,1,"","","","date {[]} {[]}
+","Child's date of birth outcomes","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.pregnancy.pregnancyOutcomes.dateARTStart",0,1,"",""
+"HIVCaseReport.death","","","",0,1,"","","","BackboneElement {[]} {[]}
+","The death of the patient","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.death",0,1,"",""
+"HIVCaseReport.death.dateofDeath","","","",0,1,"","","","date {[]} {[]}
+","The date of the patient's death","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.death.dateofDeath",0,1,"",""
+"HIVCaseReport.death.causeofDeath","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The cause of the patient's death","","","","","","","","","","",,,,,"",,,,"HIVCaseReport.death.causeofDeath",0,1,"",""

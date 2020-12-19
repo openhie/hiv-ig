@@ -1,0 +1,30 @@
+[
+  {
+    "id": "openhie.fhir.hiv",
+    "type": "ImplementationGuide",
+    "url": "http://openhie.org/fhir/ImplementationGuide/openhie.fhir.hiv",
+    "version": "0.2.0",
+    "name": "HIVCaseReporting"
+  },
+  {
+    "id": "HIVCaseReportForm",
+    "type": "Questionnaire",
+    "url": "http://openhie.org/fhir/Questionnaire/HIVCaseReportForm",
+    "version": "0.2.0",
+    "name": "HIVCaseReportForm"
+  },
+  {
+    "id": "model-hiv-record",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv/StructureDefinition/model-hiv-record",
+    "version": "0.2.0",
+    "name": "HIVRecord"
+  },
+  {
+    "id": "model-hiv-case-report",
+    "type": "StructureDefinition",
+    "url": "https://www.openhie.org/fhir/hiv/StructureDefinition/model-hiv-case-report",
+    "version": "0.2.0",
+    "name": "HIVCaseReport"
+  }
+]
