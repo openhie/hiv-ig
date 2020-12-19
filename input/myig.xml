@@ -46,36 +46,41 @@
 <reference value="MyLogicalModel/AS"/>
 </reference>
 </resource> -->
-<!--    <resource>
-      <reference>
-        <reference value="Library/example"/>
-      </reference>
-      <name value="Simple library example"/>
-      <description value="A simple example showing how library is pre-loaded"/>
-    </resource> -->
-<!--
-      <resource>
-      <reference>
-        <reference value="ExampleScenario/scenario-allergy"/>
-      </reference>
-      <name value="Example Scenario - Allergy / Intolerance"/>
-      <description value="Overriding description because we can"/>
-    </resource>
--->    
+    <grouping id="caseReport">
+       <name value="HIV Case Report" />
+       <description value="HIV Case Report artifacts" />
+    </grouping>
+    <grouping id="longitudinalRecord">
+       <name value="HIV Longitudinal Record" />
+       <description value="HIV Longitudinal record" />
+    </grouping>
+
     <resource>
       <reference>
         <reference value="StructureDefinition/model-hiv-case-report"/>
       </reference>
       <name value="Case Report Logical Model"/>
       <description value="Logical Model for a patient's monthly case report"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hiv-case-report-questionnaire-long"/>
+      </reference>
+      <name value="Case Report Questionnaire"/>
+      <description value="Questionnaire for case report"/>
+      <groupingId value="caseReport" />
     </resource>    
+
     <resource>
       <reference>
         <reference value="StructureDefinition/model-hiv-record"/>
       </reference>
-      <name value="HIV Record Logical Model"/>
+      <name value="HIV Longitudinal Record Logical Model"/>
       <description value="HIV Longitudinal record Logical Model"/>
+      <groupingId value="longitudinalRecord" />
     </resource>    
+
+
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -127,6 +132,10 @@
     <parameter>
       <code value="path-liquid"/>
       <value value="templates\liquid"/>
+    </parameter>
+    <parameter>
+      <code value="show-inherited-invariants"/>
+      <value value="false"/>
     </parameter>
 <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
     <parameter>
