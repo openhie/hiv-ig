@@ -35,10 +35,6 @@ jobs:
         with:
           args: curl -L http://beta.plantuml.net/plantuml.jar -o ./openhie-template/package/scripts/publisher.jar --create-dirs
 
-
-
-http://beta.plantuml.net/plantuml.jar
-
       - name: Run the IG publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
