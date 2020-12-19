@@ -29,16 +29,10 @@ jobs:
         with:
           args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
 
-      - uses: actions/checkout@v2
-      - name: Update the image to the latest publisher
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: curl -L http://beta.plantuml.net/plantuml.jar -o ./openhie-template/package/scripts/publisher.jar --create-dirs
-
       - name: Run the IG publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: java -jar ./input-cache/publisher.jar publisher -ig .
+          args:  java -jar ./input-cache/publisher.jar publisher -ig . ; curl -L http://beta.plantuml.net/plantuml.jar -o ./openhie-template/package/scripts/publisher.jar --create-dirs
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
