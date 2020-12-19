@@ -5,15 +5,15 @@
    </p>
 	<blockquote class="stu-note">
 	<strong>This documentation and set of artefacts are still undergoing development.</strong>
-	This content is only for demonstrative purposes.
 	</blockquote>
 	<p> </p>
   <h3>Content</h3> <a name="content"> </a>
 	<p/>
 
-<p>This publication contains the full set of specifications...</p>
+<p>This publication contains the full set of specifications for the openHIE's HIV Case Reporting...</p>
 <p></p>
- {% include diagram1.svg %}
+  {% include diagram1.svg %} 
+
 
 <p>There is also an overview of the projects and motivation for the specifications.</p>
 <p></p>
