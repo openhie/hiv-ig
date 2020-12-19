@@ -27,7 +27,7 @@ jobs:
       - name: Update the image to the latest publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: sudo ./_updatePublisher.sh --force
+          args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o $PWD/input-cache/publisher.jar --create-dirs
 
       - name: Run the IG publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
