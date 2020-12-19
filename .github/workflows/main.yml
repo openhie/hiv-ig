@@ -27,12 +27,12 @@ jobs:
       - name: Update the image to the latest publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o $PWD/input-cache/publisher.jar --create-dirs
+          args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
 
       - name: Run the IG publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: ls 
+          args: java -jar ./input-cache/publisher.jar publisher -ig .
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
