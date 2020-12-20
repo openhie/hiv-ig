@@ -284,7 +284,7 @@
       {
         "id": "HIVCaseReport.riskFactors.riskPopulation",
         "path": "HIVCaseReport.riskFactors.riskPopulation",
-        "short": "The risk population",
+        "short": "Risk population",
         "min": 0,
         "max": "*",
         "type": [
@@ -296,7 +296,7 @@
       {
         "id": "HIVCaseReport.riskFactors.riskBehavior",
         "path": "HIVCaseReport.riskFactors.riskBehavior",
-        "short": "The risk population",
+        "short": "Risk behavior(s)",
         "min": 0,
         "max": "*",
         "type": [
@@ -308,7 +308,7 @@
       {
         "id": "HIVCaseReport.riskFactors.transmissionRoute",
         "path": "HIVCaseReport.riskFactors.transmissionRoute",
-        "short": "The risk population",
+        "short": "HIV transmission route",
         "min": 0,
         "max": "1",
         "type": [
@@ -339,7 +339,7 @@
       {
         "id": "HIVCaseReport.hiv-diagnosis.confirmingLab",
         "path": "HIVCaseReport.hiv-diagnosis.confirmingLab",
-        "short": "Date of HIV Infection confirmation",
+        "short": "HIV Infection confirming Lab",
         "min": 0,
         "max": "1",
         "type": [
@@ -351,19 +351,19 @@
       {
         "id": "HIVCaseReport.hiv-diagnosis.placeOfSpecimenCollection",
         "path": "HIVCaseReport.hiv-diagnosis.placeOfSpecimenCollection",
-        "short": "Date of HIV Infection confirmation",
+        "short": "Place of specimen collection for HIV Infection confirmation diagnosis",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
         ]
       },
       {
         "id": "HIVCaseReport.hiv-diagnosis.dateOfSpecimenCollection",
         "path": "HIVCaseReport.hiv-diagnosis.dateOfSpecimenCollection",
-        "short": "Date of HIV Infection confirmation",
+        "short": "Date of specimen collection for HIV Infection confirmation diagnosis",
         "min": 0,
         "max": "1",
         "type": [
@@ -401,7 +401,7 @@
       {
         "id": "HIVCaseReport.hiv-recencyTest.rapidTest.dateOfTestPerformance",
         "path": "HIVCaseReport.hiv-recencyTest.rapidTest.dateOfTestPerformance",
-        "short": "Date of HIV recency test",
+        "short": "Date of HIV rapid test performance for recency test",
         "min": 1,
         "max": "1",
         "type": [
@@ -413,19 +413,19 @@
       {
         "id": "HIVCaseReport.hiv-recencyTest.rapidTest.placeOfSpecimenCollection",
         "path": "HIVCaseReport.hiv-recencyTest.rapidTest.placeOfSpecimenCollection",
-        "short": "Date of HIV recency test",
+        "short": "Place of specimen collection for rapid recency test",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "codeableConcept"
+            "code": "CodeableConcept"
           }
         ]
       },
       {
         "id": "HIVCaseReport.hiv-recencyTest.rapidTest.testResult",
         "path": "HIVCaseReport.hiv-recencyTest.rapidTest.testResult",
-        "short": "Date of HIV recency test",
+        "short": "Rapid recency test result",
         "min": 1,
         "max": "1",
         "type": [
@@ -445,7 +445,7 @@
       {
         "id": "HIVCaseReport.hiv-recencyTest.viralLoadTest.dateOfTestPerformance",
         "path": "HIVCaseReport.hiv-recencyTest.viralLoadTest.dateOfTestPerformance",
-        "short": "Date of HIV recency test",
+        "short": "Date of viral load test",
         "min": 0,
         "max": "1",
         "type": [
@@ -457,7 +457,7 @@
       {
         "id": "HIVCaseReport.hiv-recencyTest.viralLoadTest.testResult",
         "path": "HIVCaseReport.hiv-recencyTest.viralLoadTest.testResult",
-        "short": "Date of HIV recency test",
+        "short": "Result of viral load test",
         "min": 1,
         "max": "1",
         "type": [
@@ -469,7 +469,7 @@
       {
         "id": "HIVCaseReport.hiv-recencyTest.recencyConclusion",
         "path": "HIVCaseReport.hiv-recencyTest.recencyConclusion",
-        "short": "Date of HIV recency test",
+        "short": "Recency test Conclusion",
         "min": 0,
         "max": "1",
         "type": [
@@ -489,7 +489,7 @@
       {
         "id": "HIVCaseReport.cd4TestBeforeART.dateOfSpecimenCollection",
         "path": "HIVCaseReport.cd4TestBeforeART.dateOfSpecimenCollection",
-        "short": "The date the samples were collected for the CD4 test",
+        "short": "Date of specimen collection for the CD4 test before ART",
         "min": 0,
         "max": "1",
         "type": [
@@ -501,7 +501,7 @@
       {
         "id": "HIVCaseReport.cd4TestBeforeART.dateOfTestPerformance",
         "path": "HIVCaseReport.cd4TestBeforeART.dateOfTestPerformance",
-        "short": "The date the CD4 test was performed",
+        "short": "Date of the CD4 test before ART",
         "min": 1,
         "max": "1",
         "type": [
@@ -513,7 +513,7 @@
       {
         "id": "HIVCaseReport.cd4TestBeforeART.placeOfSpecimenCollection",
         "path": "HIVCaseReport.cd4TestBeforeART.placeOfSpecimenCollection",
-        "short": "The date the samples were collected for the CD4 test",
+        "short": "Place of specimen collection for the CD4 test before ART",
         "min": 0,
         "max": "1",
         "type": [
@@ -525,7 +525,7 @@
       {
         "id": "HIVCaseReport.cd4TestBeforeART.result",
         "path": "HIVCaseReport.cd4TestBeforeART.result",
-        "short": "The date the samples were collected for the CD4 test",
+        "short": "CD4 before ART test result",
         "min": 1,
         "max": "1",
         "type": [
@@ -538,14 +538,14 @@
       {
         "id": "HIVCaseReport.cd4TestDuringART",
         "path": "HIVCaseReport.cd4TestDuringART",
-        "short": "CD4 test before ART initiation",
+        "short": "CD4 test during ART",
         "min": 0,
         "max": "*"
       },
       {
         "id": "HIVCaseReport.cd4TestDuringART.dateOfSpecimenCollection",
         "path": "HIVCaseReport.cd4TestDuringART.dateOfSpecimenCollection",
-        "short": "The date the samples were collected for the CD4 test",
+        "short": "Date of specimen collection for the CD4 test during ART",
         "min": 0,
         "max": "1",
         "type": [
@@ -557,7 +557,7 @@
       {
         "id": "HIVCaseReport.cd4TestDuringART.dateOfTestPerformance",
         "path": "HIVCaseReport.cd4TestDuringART.dateOfTestPerformance",
-        "short": "The date the CD4 test was performed",
+        "short": "Date of the CD4 test during ART",
         "min": 0,
         "max": "1",
         "type": [
@@ -569,7 +569,7 @@
       {
         "id": "HIVCaseReport.cd4TestDuringART.placeOfSpecimenCollection",
         "path": "HIVCaseReport.cd4TestDuringART.placeOfSpecimenCollection",
-        "short": "The date the samples were collected for the CD4 test",
+        "short": "Place of specimen collection for the CD4 test during ART",
         "min": 0,
         "max": "1",
         "type": [
@@ -581,7 +581,7 @@
       {
         "id": "HIVCaseReport.cd4TestDuringART.result",
         "path": "HIVCaseReport.cd4TestDuringART.result",
-        "short": "The date the samples were collected for the CD4 test",
+        "short": "CD4 during ART test result",
         "min": 1,
         "max": "1",
         "type": [
@@ -594,14 +594,14 @@
       {
         "id": "HIVCaseReport.routineVLTestDuringART",
         "path": "HIVCaseReport.routineVLTestDuringART",
-        "short": "CD4 test before ART initiation",
+        "short": "Routine Viral Load (VL) test during ART",
         "min": 0,
         "max": "*"
       },
       {
         "id": "HIVCaseReport.routineVLTestDuringART.dateOfSpecimenCollection",
         "path": "HIVCaseReport.routineVLTestDuringART.dateOfSpecimenCollection",
-        "short": "The date the samples were collected for the CD4 test",
+        "short": "Date of specimen collection for the routine VL test during ART",
         "min": 0,
         "max": "1",
         "type": [
@@ -613,7 +613,7 @@
       {
         "id": "HIVCaseReport.routineVLTestDuringART.dateOfTestPerformance",
         "path": "HIVCaseReport.routineVLTestDuringART.dateOfTestPerformance",
-        "short": "The date the CD4 test was performed",
+        "short": "Date of the VL test during ART",
         "min": 0,
         "max": "1",
         "type": [
@@ -625,7 +625,7 @@
       {
         "id": "HIVCaseReport.routineVLTestDuringART.placeOfSpecimenCollection",
         "path": "HIVCaseReport.routineVLTestDuringART.placeOfSpecimenCollection",
-        "short": "The date the samples were collected for the CD4 test",
+        "short": "Place of specimen collection for the VL test during ART",
         "min": 0,
         "max": "1",
         "type": [
@@ -637,7 +637,7 @@
       {
         "id": "HIVCaseReport.routineVLTestDuringART.result",
         "path": "HIVCaseReport.routineVLTestDuringART.result",
-        "short": "The date the samples were collected for the CD4 test",
+        "short": "VL during ART test result",
         "min": 1,
         "max": "1",
         "type": [
@@ -651,14 +651,14 @@
       {
         "id": "HIVCaseReport.drugResistanceTest",
         "path": "HIVCaseReport.drugResistanceTest",
-        "short": "CD4 test before ART initiation",
+        "short": "Drug resistance test",
         "min": 0,
         "max": "*"
       },
       {
         "id": "HIVCaseReport.drugResistanceTest.dateOfSpecimenCollection",
         "path": "HIVCaseReport.drugResistanceTest.dateOfSpecimenCollection",
-        "short": "The date the samples were collected for the CD4 test",
+        "short": "Date of specimen collection for the drug resistance test",
         "min": 0,
         "max": "1",
         "type": [
@@ -670,7 +670,7 @@
       {
         "id": "HIVCaseReport.drugResistanceTest.dateOfTestPerformance",
         "path": "HIVCaseReport.drugResistanceTest.dateOfTestPerformance",
-        "short": "The date the CD4 test was performed",
+        "short": "Date of the drug resistance test",
         "min": 0,
         "max": "1",
         "type": [
@@ -682,7 +682,7 @@
       {
         "id": "HIVCaseReport.drugResistanceTest.placeOfSpecimenCollection",
         "path": "HIVCaseReport.drugResistanceTest.placeOfSpecimenCollection",
-        "short": "The date the samples were collected for the CD4 test",
+        "short": "Place of specimen collection for the drug resistance test",
         "min": 0,
         "max": "1",
         "type": [
@@ -694,7 +694,7 @@
       {
         "id": "HIVCaseReport.drugResistanceTest.result",
         "path": "HIVCaseReport.drugResistanceTest.result",
-        "short": "The date the samples were collected for the CD4 test",
+        "short": "Drug resistance test results",
         "min": 1,
         "max": "1",
         "type": [
@@ -737,6 +737,18 @@
         ]
       },
       {
+        "id": "HIVCaseReport.arvTreatment.dateOfTreatmentStop",
+        "path": "HIVCaseReport.arvTreatment.dateOfTreatmentStop",
+        "short": "Date of antiretroviral treatment stop",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
         "id": "HIVCaseReport.arvTreatment.placeOfARVInitiation",
         "path": "HIVCaseReport.arvTreatment.placeOfARVInitiation",
         "short": "Place of antiretroviral treatment initiation ",
@@ -752,18 +764,6 @@
         "id": "HIVCaseReport.arvTreatment.dateOfLossToFollowUp",
         "path": "HIVCaseReport.arvTreatment.dateOfLossToFollowUp",
         "short": "Date of loss to follow up antiretroviral treatment",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "date"
-          }
-        ]
-      },
-      {
-        "id": "HIVCaseReport.arvTreatment.dateOfTreatmentStop",
-        "path": "HIVCaseReport.arvTreatment.dateOfTreatmentStop",
-        "short": "Date of antiretroviral treatment stop",
         "min": 0,
         "max": "1",
         "type": [
