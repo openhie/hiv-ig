@@ -61,6 +61,7 @@
       </reference>
       <name value="Case Report Logical Model"/>
       <description value="Logical Model for a patient's monthly case report"/>
+      <groupingId value="caseReport" />
     </resource>
     <resource>
       <reference>
