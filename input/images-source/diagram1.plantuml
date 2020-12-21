@@ -3,7 +3,7 @@
 'skinparam linetype ortho
 hide circle
 hide stereotype
-!pragma graphviz_dot smatana
+!pragma graphviz_dot smetana
 
 skinparam class<<AS>> {
  BorderColor DarkRed
