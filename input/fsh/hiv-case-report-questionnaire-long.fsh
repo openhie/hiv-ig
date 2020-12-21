@@ -49,6 +49,33 @@ Usage: #inline
 * status = #draft
 
 
+Instance: PregnancyOutcomeCodes
+InstanceOf: ValueSet
+Description: "Pregnancy Outcome Codes"
+Title: "Pregnancy Outcome Codes"
+Usage: #inline
+* name = "PregnancyOutcomeCodes"
+* status = #draft
+
+
+Instance: BirthDefects
+InstanceOf: ValueSet
+Description: "Birth Defects"
+Title: "Pregnancy Outcome Codes"
+Usage: #inline
+* name = "BirthDefects"
+* status = #draft
+
+
+Instance: ChildHIVStatus
+InstanceOf: ValueSet
+Description: "Child HIV Status"
+Title: "Child HIV Status"
+Usage: #inline
+* name = "ChildHIVStatus"
+* status = #draft
+
+
 //============================================================
 
 
@@ -399,17 +426,129 @@ Usage: #definition
 
 
 
-
 * item[5].item[9].linkId = "comorbidities"
 * item[5].item[9].text   = "Comorbidities"
 * item[5].item[9].type   = #group
+* item[5].item[9].item[0].linkId = "tuberculosis"
+* item[5].item[9].item[0].text   = "Tuberculosis"
+* item[5].item[9].item[0].type   = #group
+* item[5].item[9].item[0].item[0].linkId = "TPT"
+* item[5].item[9].item[0].item[0].text   = "TPT"
+* item[5].item[9].item[0].item[0].type   = #group
+* item[5].item[9].item[0].item[0].item[0].linkId = "tpt.dateStarted"
+* item[5].item[9].item[0].item[0].item[0].text   = "Date TPT started"
+* item[5].item[9].item[0].item[0].item[0].type   = #date
+* item[5].item[9].item[0].item[0].item[1].linkId = "tpt.dateCompleted"
+* item[5].item[9].item[0].item[0].item[1].text   = "Date TPT completed"
+* item[5].item[9].item[0].item[0].item[1].type   = #date
+* item[5].item[9].item[0].item[0].item[2].linkId = "tpt.placeProvided"
+* item[5].item[9].item[0].item[0].item[2].text   = "Place TPT provided"
+* item[5].item[9].item[0].item[0].item[2].type   = #date
+* item[5].item[9].item[0].item[1].linkId = "tbDiagnosisDate"
+* item[5].item[9].item[0].item[1].text   = "TB Diagnosis Date"
+* item[5].item[9].item[0].item[1].type   = #date
 
+
+
+
+* item[5].item[9].item[0].item[2].linkId = "tbTreatment"
+* item[5].item[9].item[0].item[2].text   = "TB Treatment"
+* item[5].item[9].item[0].item[2].type   = #group
+* item[5].item[9].item[0].item[2].item[0].linkId = "tbTreatment.dateStarted"
+* item[5].item[9].item[0].item[2].item[0].text   = "Date TB Treatment started"
+* item[5].item[9].item[0].item[2].item[0].type   = #date
+* item[5].item[9].item[0].item[2].item[1].linkId = "tbTreatment.dateCompleted"
+* item[5].item[9].item[0].item[2].item[1].text   = "Date TB Treatment completed"
+* item[5].item[9].item[0].item[2].item[1].type   = #date
+* item[5].item[9].item[0].item[2].item[2].linkId = "tbTreatment.placeProvided"
+* item[5].item[9].item[0].item[2].item[2].text   = "Place TB Treatment provided"
+* item[5].item[9].item[0].item[2].item[2].type   = #date
+
+
+
+* item[5].item[9].item[1].linkId = "hbv_hcv"
+* item[5].item[9].item[1].text   = "HBV and HCV"
+* item[5].item[9].item[1].type   = #group
+* item[5].item[9].item[1].item[0].linkId = "hbv"
+* item[5].item[9].item[1].item[0].text   = "HBV"
+* item[5].item[9].item[1].item[0].type   = #group
+
+* item[5].item[9].item[1].item[0].item[0].linkId = "hbv.diagnosisDate"
+* item[5].item[9].item[1].item[0].item[0].text   = "Date of HBV diagnosis"
+* item[5].item[9].item[1].item[0].item[0].type   = #date
+* item[5].item[9].item[1].item[0].item[1].linkId = "hbv.treatmentStartDate"
+* item[5].item[9].item[1].item[0].item[1].text   = "Date of HBV treatment start"
+* item[5].item[9].item[1].item[0].item[1].type   = #date
+* item[5].item[9].item[1].item[0].item[2].linkId = "hbv.treatmentEndDate"
+* item[5].item[9].item[1].item[0].item[2].text   = "Date HBV treatment completed"
+* item[5].item[9].item[1].item[0].item[2].type   = #date
+* item[5].item[9].item[1].item[0].item[3].linkId = "hbv.placeProvided"
+* item[5].item[9].item[1].item[0].item[3].text   = "Place HBV treatment provided"
+* item[5].item[9].item[1].item[0].item[3].type   = #date
+* item[5].item[9].item[1].item[1].linkId = "hcv"
+* item[5].item[9].item[1].item[1].text   = "HCV"
+* item[5].item[9].item[1].item[1].type   = #group
+* item[5].item[9].item[1].item[1].item[0].linkId = "hcv.diagnosisDate"
+* item[5].item[9].item[1].item[1].item[0].text   = "Date of HBV diagnosis"
+* item[5].item[9].item[1].item[1].item[0].type   = #date
+// * item[5].item[9].item[1].item[1].item[1].linkId = "hcv.treatmentStartDate"
+// * item[5].item[9].item[1].item[1].item[1].text   = "Date of HBV treatment start"
+// * item[5].item[9].item[1].item[1].item[1].type   = #date
+// * item[5].item[9].item[1].item[1].item[2].linkId = "hcv.treatmentEndDate"
+// * item[5].item[9].item[1].item[1].item[2].text   = "Date HBV treatment completed"
+// * item[5].item[9].item[1].item[1].item[2].type   = #date
+* item[5].item[9].item[1].item[1].item[1].linkId = "hcv.placeProvided"
+* item[5].item[9].item[1].item[1].item[1].text   = "Place HBV treatment provided"
+* item[5].item[9].item[1].item[1].item[1].type   = #date
 
 
 
 * item[5].item[10].linkId = "pregnancies"
 * item[5].item[10].text   = "ARV Treatment"
 * item[5].item[10].type   = #group
+* item[5].item[10].item[0].linkId = "datePregnancyReported"
+* item[5].item[10].item[0].text   = "Date pregnancy reported"
+* item[5].item[10].item[0].type   = #date
+* item[5].item[10].item[1].linkId = "placePregnancyReported"
+* item[5].item[10].item[1].text   = "Place pregnancy reported"
+* item[5].item[10].item[1].type   = #string
+* item[5].item[10].item[2].linkId = "childDeliveryDate"
+* item[5].item[10].item[2].text   = "Reported child delivery date"
+* item[5].item[10].item[2].type   = #date
+* item[5].item[10].item[3].linkId = "childDeliveryPlace"
+* item[5].item[10].item[3].text   = "Reported child delivery place"
+* item[5].item[10].item[3].type   = #string
+* item[5].item[10].item[4].linkId = "pregnancyOutcomes"
+* item[5].item[10].item[4].text   = "Pregnancy Outcomes"
+* item[5].item[10].item[4].type   = #group
+* item[5].item[10].item[4].item[0].linkId = "pregnancyOutcomeCode"
+* item[5].item[10].item[4].item[0].text   = "Pregnancy Outcome code"
+* item[5].item[10].item[4].item[0].type   = #choice
+* item[5].item[10].item[4].item[0].answerValueSet = "#PregnancyOutcomeCodes"
+* item[5].item[10].item[4].item[1].linkId = "childDateOfBirth"
+* item[5].item[10].item[4].item[1].text   = "Date of child birth"
+* item[5].item[10].item[4].item[1].type   = #date
+* item[5].item[10].item[4].item[2].linkId = "gestationAtDelivery"
+* item[5].item[10].item[4].item[2].text   = "Gestational age at delivery"
+* item[5].item[10].item[4].item[2].type   = #number
+* item[5].item[10].item[4].item[3].linkId = "birthWeight"
+* item[5].item[10].item[4].item[3].text   = "Weight at birth"
+* item[5].item[10].item[4].item[3].type   = #number
+* item[5].item[10].item[4].item[4].linkId = "birtDefects"
+* item[5].item[10].item[4].item[4].text   = "Birth defects"
+* item[5].item[10].item[4].item[4].type   = #choice
+* item[5].item[10].item[4].item[4].answerValueSet = "#BirthDefects"
+* item[5].item[10].item[4].item[5].linkId = "hivStatus"
+* item[5].item[10].item[4].item[5].text   = "HIV status"
+* item[5].item[10].item[4].item[5].type   = #choice
+* item[5].item[10].item[4].item[5].answerValueSet = "#ChildHIVStatus"
+
+* item[5].item[10].item[4].item[6].linkId = "childHIVDiagnosisDate"
+* item[5].item[10].item[4].item[6].text   = "HIV diagnosis date"
+* item[5].item[10].item[4].item[6].type   = #date
+* item[5].item[10].item[4].item[7].linkId = "childARTStartDate"
+* item[5].item[10].item[4].item[7].text   = "ART start date"
+* item[5].item[10].item[4].item[7].type   = #date
 
 
 
@@ -418,11 +557,17 @@ Usage: #definition
 * item[5].item[11].linkId = "death"
 * item[5].item[11].text   = "Patient death"
 * item[5].item[11].type   = #group
+* item[5].item[11].item[0].linkId = "dateOfDeath"
+* item[5].item[11].item[0].text   = "Date of death"
+* item[5].item[11].item[0].type   = #date
+* item[5].item[11].item[1].linkId = "causeOfDeath"
+* item[5].item[11].item[1].text   = "Cause of death"
+* item[5].item[11].item[1].type   = #string
 
 
+  
 
 
-*/
 
 
 
