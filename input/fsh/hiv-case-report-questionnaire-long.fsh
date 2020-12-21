@@ -529,11 +529,11 @@ Usage: #definition
 * item[5].item[10].item[4].item[1].text   = "Date of child birth"
 * item[5].item[10].item[4].item[1].type   = #date
 * item[5].item[10].item[4].item[2].linkId = "gestationAtDelivery"
-* item[5].item[10].item[4].item[2].text   = "Gestational age at delivery"
-* item[5].item[10].item[4].item[2].type   = #number
+* item[5].item[10].item[4].item[2].text   = "Gestational age at delivery (weeks)"
+* item[5].item[10].item[4].item[2].type   = #decimal
 * item[5].item[10].item[4].item[3].linkId = "birthWeight"
-* item[5].item[10].item[4].item[3].text   = "Weight at birth"
-* item[5].item[10].item[4].item[3].type   = #number
+* item[5].item[10].item[4].item[3].text   = "Weight at birth (kg)"
+* item[5].item[10].item[4].item[3].type   = #decimal
 * item[5].item[10].item[4].item[4].linkId = "birtDefects"
 * item[5].item[10].item[4].item[4].text   = "Birth defects"
 * item[5].item[10].item[4].item[4].type   = #choice
