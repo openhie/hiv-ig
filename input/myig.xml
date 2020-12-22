@@ -54,6 +54,10 @@
        <name value="HIV Longitudinal Record" />
        <description value="HIV Longitudinal record" />
     </grouping>
+    <grouping id="vocabulary">
+       <name value="Vocabulary" />
+       <description value="Vocabulary resources" />
+    </grouping>
 
     <resource>
       <reference>
@@ -72,14 +76,6 @@
       <groupingId value="caseReport" />
     </resource>    
 
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/model-hiv-record"/>
-      </reference>
-      <name value="HIV Longitudinal Record Logical Model"/>
-      <description value="HIV Longitudinal record Logical Model"/>
-      <groupingId value="longitudinalRecord" />
-    </resource>    
 
 <!--
 
@@ -96,21 +92,26 @@ risk-factor
 pregnancy-status
 art-therapy-summary
 
-
 HIVRecencyResults
 Ethnicity
 
-
-
-
 -->
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/model-hiv-record"/>
+      </reference>
+      <name value="HIV Longitudinal Record Logical Model"/>
+      <description value="HIV Longitudinal record Logical Model"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
 
     <resource>
       <reference>
         <reference value="StructureDefinition/hiv-patient"/>
       </reference>
       <name value="HIV patient"/>
-      <description value="HIV patient"/>
+      <description value="Profile - HIV patient"/>
       <groupingId value="longitudinalRecord" />
     </resource>    
     <resource>
@@ -135,8 +136,16 @@ Ethnicity
       <reference>
         <reference value="StructureDefinition/hiv-viral-load"/>
       </reference>
-      <name value="HIV viral load test result"/>
+      <name value="Viral Load"/>
       <description value="Profile - HIV viral load test result"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hiv-specimen"/>
+      </reference>
+      <name value="Specimen"/>
+      <description value="Profile - Specimen"/>
       <groupingId value="longitudinalRecord" />
     </resource>    
     <resource>
@@ -147,14 +156,6 @@ Ethnicity
       <description value="Extension - specimen collection place"/>
       <groupingId value="longitudinalRecord" />
     </resource>    
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/hiv-specimen"/>
-      </reference>
-      <name value="Profile - specimen"/>
-      <description value="Profile - specimen"/>
-      <groupingId value="longitudinalRecord" />
-    </resource>    
 
 
 
@@ -162,7 +163,7 @@ Ethnicity
       <reference>
         <reference value="StructureDefinition/hiv-risk-factor"/>
       </reference>
-      <name value="Profile - risk factor"/>
+      <name value="Risk factor"/>
       <description value="Profile - HIV risk factor"/>
       <groupingId value="longitudinalRecord" />
     </resource>    
@@ -170,7 +171,7 @@ Ethnicity
       <reference>
         <reference value="StructureDefinition/pregnancy-status"/>
       </reference>
-      <name value="Profile - pregnancy status"/>
+      <name value="Pregnancy status"/>
       <description value="Profile - pregnancy status"/>
       <groupingId value="longitudinalRecord" />
     </resource>    
@@ -178,11 +179,20 @@ Ethnicity
       <reference>
         <reference value="StructureDefinition/arv-therapy-summary"/>
       </reference>
-      <name value="Profile - ARV Therapy"/>
-      <description value="ARV therapy profile"/>
+      <name value="ARV Therapy"/>
+      <description value="Profile - ARV therapy"/>
       <groupingId value="longitudinalRecord" />
     </resource>    
 
+<!--    <resource>
+      <reference>
+        <reference value="NamingSystem/vn-passport-number"/>
+      </reference>
+      <name value=""/>
+      <description value="Profile - ARV therapy"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+-->
 
     <resource>
       <reference>
