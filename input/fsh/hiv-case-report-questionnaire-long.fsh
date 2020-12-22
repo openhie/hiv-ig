@@ -19,17 +19,13 @@ InstanceOf: ValueSet
 Description: "HIV Transmission Route codes"
 Title: "HIV Transmission Route"
 Usage: #inline
-* name = "HIVTransmissionRoute"
+//* name = "HIVTransmissionRoute"
 * status = #draft
 
-
-Instance: Ethnicity
-InstanceOf: ValueSet
+ValueSet: Ethnicity
 Description: "Ethnicity codes"
 Title: "Ethnicity"
-Usage: #inline
-* name = "Ethnicity"
-* status = #draft
+* ^status = #draft
 
 Instance: Gender
 InstanceOf: ValueSet
@@ -40,13 +36,14 @@ Usage: #inline
 * status = #draft
 
 
-Instance: HIVRecencyResults
-InstanceOf: ValueSet
-Description: "HIV recency result codes"
+
+ValueSet: HIVRecencyResults
+//Id: be-vs-vaccine-administration-route
 Title: "Gender"
-Usage: #inline
-* name = "HIVRecencyResults"
-* status = #draft
+Description: "HIV recency result codes"
+* ^status = #draft
+//* codes from system BeCSVaccineAdministrationRoute
+
 
 
 Instance: PregnancyOutcomeCodes
@@ -95,7 +92,13 @@ Usage: #definition
 
 * contained[0] = HIVRiskPopulation
 * contained[1] = HIVRiskBehavior
-* contained[2] = HIVTransmissionRoute
+//* contained[3] = Ethnicity
+* contained[2] = Gender
+//* contained[5] = HIVRecencyResults
+* contained[3] = PregnancyOutcomeCodes
+* contained[4] = BirthDefects
+* contained[5] = ChildHIVStatus
+* contained[6] = HIVTransmissionRoute
 
 
 * item[0].linkId = "title"
@@ -145,7 +148,7 @@ Usage: #definition
 
 * item[5].item[0].item[1].item[1].linkId = "ethnic"
 * item[5].item[0].item[1].item[1].text   = "Ethnicity"
-* item[5].item[0].item[1].item[1].type   = #string
+* item[5].item[0].item[1].item[1].type   = #choice
 * item[5].item[0].item[1].item[1].prefix = "2"
 * item[5].item[0].item[1].item[1].answerValueSet = "#Ethnicity"
 
@@ -185,7 +188,6 @@ Usage: #definition
 * item[5].item[0].item[1].item[5].item[0].text   = "Current residence"
 * item[5].item[0].item[1].item[5].item[0].type   = #string
 * item[5].item[0].item[1].item[5].item[0].prefix   = "6"
-//* item[5].item[0].item[1].item[2].answerValueSet    = Canonical($vs-iso3166-1-2)
 
 * item[5].item[0].item[1].item[5].item[1].linkId = "permanent"
 * item[5].item[0].item[1].item[5].item[1].text   = "Permanent residence"
@@ -196,7 +198,7 @@ Usage: #definition
 * item[5].item[0].item[1].item[6].text   = "Occupation"
 * item[5].item[0].item[1].item[6].type   = #string
 * item[5].item[0].item[1].item[6].prefix   = "8"
-* item[5].item[0].item[1].item[6].answerValueSet = "#e4564565"
+//* item[5].item[0].item[1].item[6].answerValueSet = "#occupation"
 
 * item[5].item[1].linkId = "risk_factors"
 * item[5].item[1].text   = "Risk Factors"
@@ -206,20 +208,25 @@ Usage: #definition
 * item[5].item[1].item[0].text   = "Risk population"
 * item[5].item[1].item[0].type   = #group
 * item[5].item[1].item[0].prefix   = "9"
-* item[5].item[1].item[0].answerValueSet = "#HIVRiskPopulation"
-
 
 * item[5].item[1].item[1].linkId = "risk_behavior"
 * item[5].item[1].item[1].text   = "Risk Behavior"
-* item[5].item[1].item[1].type   = #date
+* item[5].item[1].item[1].type   = #choice
 * item[5].item[1].item[1].prefix   = "9.1"
 * item[5].item[1].item[1].answerValueSet = "#HIVRiskBehavior"
 
 * item[5].item[1].item[2].linkId = "transmission_route"
 * item[5].item[1].item[2].text   = "Transmission Route"
-* item[5].item[1].item[2].type   = #date
+* item[5].item[1].item[2].type   = #choice
 * item[5].item[1].item[2].prefix   = "9.1"
 * item[5].item[1].item[2].answerValueSet = "#HIVTransmissionRoute"
+
+* item[5].item[0].item[1].item[1].linkId = "ethnic"
+* item[5].item[0].item[1].item[1].text   = "Ethnicity"
+* item[5].item[0].item[1].item[1].type   = #choice
+* item[5].item[0].item[1].item[1].prefix = "2"
+* item[5].item[0].item[1].item[1].answerValueSet = "#Ethnicity"
+
 
 * item[5].item[2].linkId = "hiv-diagnosis"
 * item[5].item[2].text   = "HIV Diagnosis"
@@ -262,13 +269,13 @@ Usage: #definition
 
 * item[5].item[3].item[0].item[2].linkId = "hiv-recency-test.placeOfSpecimenCollection"
 * item[5].item[3].item[0].item[2].text   = "Place of Specimen Collection"
-* item[5].item[3].item[0].item[2].type   = #choice
+* item[5].item[3].item[0].item[2].type   = #string
 * item[5].item[3].item[0].item[2].prefix   = "9"
 
 * item[5].item[3].item[0].item[3].linkId = "hiv-recency-test.testResult"
 * item[5].item[3].item[0].item[3].text   = "Recency from rapid test - result"
 * item[5].item[3].item[0].item[3].type   = #choice
-* item[5].item[3].item[0].item[3].answerValueSet = "#HIVRecencyResults"
+* item[5].item[3].item[0].item[3].answerValueSet = "HIVRecencyResults"
 
 
 
@@ -285,7 +292,7 @@ Usage: #definition
 * item[5].item[3].item[1].item[1].linkId = "recency.testResult"
 * item[5].item[3].item[1].item[1].text   = "Recency from rapid test - result"
 * item[5].item[3].item[1].item[1].type   = #choice
-* item[5].item[3].item[1].item[1].answerValueSet = "#HIVRecencyResults"
+* item[5].item[3].item[1].item[1].answerValueSet = "HIVRecencyResults"
 
 
 * item[5].item[4].linkId = "cd4BeforeART"
@@ -302,7 +309,7 @@ Usage: #definition
 * item[5].item[4].item[1].prefix   = "9"
 * item[5].item[4].item[2].linkId = "cd4BeforeART.placeOfSpecimenCollection"
 * item[5].item[4].item[2].text   = "Place of Specimen Collection for CD4 test before ART"
-* item[5].item[4].item[2].type   = #choice
+* item[5].item[4].item[2].type   = #string
 * item[5].item[4].item[2].prefix   = "9"
 * item[5].item[4].item[3].linkId = "cd4BeforeART.testResult"
 * item[5].item[4].item[3].text   = "CD4 test before ART - result"
@@ -323,7 +330,7 @@ Usage: #definition
 * item[5].item[5].item[1].prefix   = "9"
 * item[5].item[5].item[2].linkId = "cd4DuringART.placeOfSpecimenCollection"
 * item[5].item[5].item[2].text   = "Place of Specimen Collection for CD4 test during ART"
-* item[5].item[5].item[2].type   = #choice
+* item[5].item[5].item[2].type   = #string
 * item[5].item[5].item[2].prefix   = "9"
 * item[5].item[5].item[3].linkId = "cd4DuringART.testResult"
 * item[5].item[5].item[3].text   = "CD4 test during ART - result"
@@ -344,7 +351,7 @@ Usage: #definition
 * item[5].item[6].item[1].prefix   = "9"
 * item[5].item[6].item[2].linkId = "vl4DuringART.placeOfSpecimenCollection"
 * item[5].item[6].item[2].text   = "Place of Specimen Collection for VL test during ART"
-* item[5].item[6].item[2].type   = #choice
+* item[5].item[6].item[2].type   = #string
 * item[5].item[6].item[2].prefix   = "9"
 * item[5].item[6].item[3].linkId = "vl4DuringART.testResult"
 * item[5].item[6].item[3].text   = "VL test during ART - result"
@@ -368,7 +375,7 @@ Usage: #definition
 * item[5].item[7].item[1].prefix   = "9"
 * item[5].item[7].item[2].linkId = "drugResistanceTest.placeOfSpecimenCollection"
 * item[5].item[7].item[2].text   = "Place of Specimen Collection for Drug Resistance test"
-* item[5].item[7].item[2].type   = #choice
+* item[5].item[7].item[2].type   = #string
 * item[5].item[7].item[2].prefix   = "9"
 * item[5].item[7].item[3].linkId = "drugResistanceTest.testResult"
 * item[5].item[7].item[3].text   = "Drug Resistance test result"
@@ -425,7 +432,6 @@ Usage: #definition
 * item[5].item[8].item[7].item[2].prefix   = "9"
 
 
-
 * item[5].item[9].linkId = "comorbidities"
 * item[5].item[9].text   = "Comorbidities"
 * item[5].item[9].type   = #group
@@ -443,12 +449,10 @@ Usage: #definition
 * item[5].item[9].item[0].item[0].item[1].type   = #date
 * item[5].item[9].item[0].item[0].item[2].linkId = "tpt.placeProvided"
 * item[5].item[9].item[0].item[0].item[2].text   = "Place TPT provided"
-* item[5].item[9].item[0].item[0].item[2].type   = #date
+* item[5].item[9].item[0].item[0].item[2].type   = #string
 * item[5].item[9].item[0].item[1].linkId = "tbDiagnosisDate"
 * item[5].item[9].item[0].item[1].text   = "TB Diagnosis Date"
 * item[5].item[9].item[0].item[1].type   = #date
-
-
 
 
 * item[5].item[9].item[0].item[2].linkId = "tbTreatment"
@@ -462,7 +466,7 @@ Usage: #definition
 * item[5].item[9].item[0].item[2].item[1].type   = #date
 * item[5].item[9].item[0].item[2].item[2].linkId = "tbTreatment.placeProvided"
 * item[5].item[9].item[0].item[2].item[2].text   = "Place TB Treatment provided"
-* item[5].item[9].item[0].item[2].item[2].type   = #date
+* item[5].item[9].item[0].item[2].item[2].type   = #string
 
 
 
@@ -484,7 +488,7 @@ Usage: #definition
 * item[5].item[9].item[1].item[0].item[2].type   = #date
 * item[5].item[9].item[1].item[0].item[3].linkId = "hbv.placeProvided"
 * item[5].item[9].item[1].item[0].item[3].text   = "Place HBV treatment provided"
-* item[5].item[9].item[1].item[0].item[3].type   = #date
+* item[5].item[9].item[1].item[0].item[3].type   = #string
 * item[5].item[9].item[1].item[1].linkId = "hcv"
 * item[5].item[9].item[1].item[1].text   = "HCV"
 * item[5].item[9].item[1].item[1].type   = #group
@@ -499,7 +503,7 @@ Usage: #definition
 // * item[5].item[9].item[1].item[1].item[2].type   = #date
 * item[5].item[9].item[1].item[1].item[1].linkId = "hcv.placeProvided"
 * item[5].item[9].item[1].item[1].item[1].text   = "Place HBV treatment provided"
-* item[5].item[9].item[1].item[1].item[1].type   = #date
+* item[5].item[9].item[1].item[1].item[1].type   = #string
 
 
 
@@ -563,20 +567,6 @@ Usage: #definition
 * item[5].item[11].item[1].linkId = "causeOfDeath"
 * item[5].item[11].item[1].text   = "Cause of death"
 * item[5].item[11].item[1].type   = #string
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
 
 
 

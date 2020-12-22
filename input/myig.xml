@@ -81,6 +81,125 @@
       <groupingId value="longitudinalRecord" />
     </resource>    
 
+<!--
+
+hiv-patient
+ext-patient-ethnicity
+
+hiv-recency-result
+hiv-viral-load
+ext-specimen-collection-place
+hiv-specimen
+
+
+risk-factor
+pregnancy-status
+art-therapy-summary
+
+
+HIVRecencyResults
+Ethnicity
+
+
+
+
+-->
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hiv-patient"/>
+      </reference>
+      <name value="HIV patient"/>
+      <description value="HIV patient"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ext-patient-ethnicity"/>
+      </reference>
+      <name value="Patient Ethnicity"/>
+      <description value="Extension - Patient Ethnicity"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hiv-recency-result"/>
+      </reference>
+      <name value="HIV recency test result"/>
+      <description value="Profile - HIV recency test result"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hiv-viral-load"/>
+      </reference>
+      <name value="HIV viral load test result"/>
+      <description value="Profile - HIV viral load test result"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ext-specimen-collection-place"/>
+      </reference>
+      <name value="Specimen collection place"/>
+      <description value="Extension - specimen collection place"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hiv-specimen"/>
+      </reference>
+      <name value="Profile - specimen"/>
+      <description value="Profile - specimen"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+
+
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hiv-risk-factor"/>
+      </reference>
+      <name value="Profile - risk factor"/>
+      <description value="Profile - HIV risk factor"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/pregnancy-status"/>
+      </reference>
+      <name value="Profile - pregnancy status"/>
+      <description value="Profile - pregnancy status"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/arv-therapy-summary"/>
+      </reference>
+      <name value="Profile - ARV Therapy"/>
+      <description value="ARV therapy profile"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+
+
+    <resource>
+      <reference>
+        <reference value="ValueSet/Ethnicity"/>
+      </reference>
+      <name value="Ethnicity"/>
+      <description value="ValueSet - patient ethnicity"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="ValueSet/HIVRecencyResults"/>
+      </reference>
+      <name value="HIVRecencyResults"/>
+      <description value="HIV Recency Results"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>   
 
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
