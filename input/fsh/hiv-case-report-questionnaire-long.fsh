@@ -1,3 +1,5 @@
+Alias: $targetStructureMap = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap
+
 Instance: HIVRiskPopulation
 InstanceOf: ValueSet
 Description: "HIV Risk Population codes"
@@ -21,11 +23,6 @@ Title: "HIV Transmission Route"
 Usage: #inline
 * name = "HIVTransmissionRoute"
 * status = #draft
-
-ValueSet: Ethnicity
-Description: "Ethnicity codes"
-Title: "Ethnicity"
-* ^status = #draft
 
 Instance: Gender
 InstanceOf: ValueSet
@@ -73,6 +70,7 @@ Usage: #inline
 * status = #draft
 
 
+
 //============================================================
 
 
@@ -81,6 +79,10 @@ InstanceOf: Questionnaire
 Description: "HIV Case Report Form"
 Title: "HIV Case Report Form"
 Usage: #definition
+
+
+* extension[0].valueCanonical = Canonical(HIVCaseReportMap)
+* extension[0].url = $targetStructureMap
 
 
 * name = "HIVCaseReportForm"
@@ -99,6 +101,7 @@ Usage: #definition
 * contained[4] = BirthDefects
 * contained[5] = ChildHIVStatus
 * contained[6] = HIVTransmissionRoute
+
 
 
 * item[0].linkId = "title"
@@ -153,7 +156,7 @@ Usage: #definition
 * item[5].item[0].item[1].item[1].text   = "Ethnicity"
 * item[5].item[0].item[1].item[1].type   = #choice
 * item[5].item[0].item[1].item[1].prefix = "1.2.2"
-* item[5].item[0].item[1].item[1].answerValueSet = "Ethnicity"
+* item[5].item[0].item[1].item[1].answerValueSet = "VSEthnicity"
 
 * item[5].item[0].item[1].item[2].linkId = "gender"
 * item[5].item[0].item[1].item[2].text   = "Gender"
