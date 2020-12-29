@@ -116,7 +116,7 @@ Ethnicity
     </resource>    
     <resource>
       <reference>
-        <reference value="StructureDefinition/ext-patient-ethnicity"/>
+        <reference value="StructureDefinition/ethnicity"/>
       </reference>
       <name value="Patient Ethnicity"/>
       <description value="Extension - Patient Ethnicity"/>
@@ -196,7 +196,7 @@ Ethnicity
 
     <resource>
       <reference>
-        <reference value="ValueSet/Ethnicity"/>
+        <reference value="ValueSet/vs-ethnicity"/>
       </reference>
       <name value="Ethnicity"/>
       <description value="ValueSet - patient ethnicity"/>

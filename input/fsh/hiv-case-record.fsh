@@ -19,12 +19,12 @@ Description: "Ethnicity."
 * valueCodeableConcept from VSEthnicity (extensible)
 
 
-Profile:        HIVRiskBehavior
+Profile:        HIVRiskFactor
 Parent:         Condition
-Id:             hiv-riskbehavior
+Id:             hiv-risk-factor
 Title:          "HIVRiskBehavior"
 Description:    """ 
-    This Patient profile allows the exchange of patient's risk behaviors"""
+    This profile allows the exchange of patient's risk behaviors"""
 
 
 
@@ -55,7 +55,7 @@ Parent:         Condition
 Id:             hiv-condition
 Title:          "HIVRiskBehavior"
 Description:    """ 
-    This Patient profile allows the exchange of a patient's hiv diagnosis"""
+    This profile allows the exchange of a patient's hiv diagnosis"""
 
 
 
@@ -64,7 +64,7 @@ Parent:         Observation
 Id:             hiv-recency-result
 Title:          "HIV Recency result"
 Description:    """ 
-    This Patient profile allows the exchange of a patient's hiv recency test"""
+    This profile allows the exchange of a patient's hiv recency test"""
 * code from HIVRecencyResults
 * specimen MS
 //date of specimencollection
@@ -79,7 +79,7 @@ Parent:         Observation
 Id:             hiv-cd4-observation
 Title:          "CD4Observation"
 Description:    """ 
-    This Patient profile allows the exchange of a patient's hiv diagnosis"""
+    This profile allows the exchange of a patient's CD$ test and results"""
 
 
 Profile:        ARVCarePlan
@@ -87,7 +87,7 @@ Parent:         CarePlan
 Id:             hiv-arv-careplan
 Title:          "ARVCarePlan"
 Description:    """ 
-    This Patient profile allows the exchange of a patient's hiv diagnosis"""
+    This profile allows the exchange of a patient's ARV treatment"""
 
 
 
