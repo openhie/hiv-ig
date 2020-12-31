@@ -13,8 +13,6 @@
 <p>This publication contains the full set of specifications for the openHIE's HIV Case Reporting.</p>
 <p></p>
 
- {% include diagram1.svg %} 
-
 
 <p>There is also an overview of the projects and motivation for the specifications.</p>
 <p></p>
