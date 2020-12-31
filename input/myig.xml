@@ -218,8 +218,59 @@ Ethnicity
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
+        <title value="Home Page"/>
         <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="methodology.html"/>
+        <title value="Methodology"/>
+        <generation value="markdown"/>
+      </page>
+
+
+      <page>
+        <nameUrl value="references.html"/>
+        <title value="References"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="use_case_overview.html"/>
+        <title value="Use Case Overview"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="case_reporting.html"/>
+        <title value="Case Reporting"/>
+        <generation value="markdown"/>
+      </page>
+
+      <page>
+        <nameUrl value="case_record.html"/>
+        <title value="Case Record"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="analytics.html"/>
+        <title value="Data Analytics"/>
+        <generation value="markdown"/>
+      </page>
+
+
+
+      <page>
+        <nameUrl value="follow-up.html"/>
+        <title value="Case Follow-up"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="exchange.html"/>
+        <title value="Data Exchange"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="data_extraction.html"/>
+        <title value="Data Extraction and Mapping"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="downloads.html"/>

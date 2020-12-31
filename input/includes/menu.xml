@@ -9,17 +9,48 @@
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
 		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="methodology.html">Methodology</a>
+			</li>
+			<li>
+				<a href="references.html">References</a>
+			</li>
+		</ul>
 
 	</li>
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
 		</a>
-
+		<ul class="dropdown-menu">
+			<li>
+				<a href="use_case_overview.html">Use Case Overview</a>
+			</li>
+			<li>
+				<a href="case_reporting.html">Case Reporting</a>
+			</li>
+			<li>
+				<a href="case_record.html">Case Record</a>
+			</li>
+			<li>
+				<a href="analytics.html">Analytics</a>
+			</li>
+			<li>
+				<a href="follow-up.html">Follow-up</a>
+			</li>
+		</ul>
 	</li>
+
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
+			<li>
+				<a href="exchange.html">Data Exchange</a>
+			</li>
+			<li>
+				<a href="data_extraction.html">Data Extraction</a>
+			</li>
 			<li>
 				<a href="artifacts.html">Artifact Index</a>
 			</li>
