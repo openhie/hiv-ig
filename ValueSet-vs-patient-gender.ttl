@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "VSPatientGender"];
   fhir:ValueSet.title [ fhir:value "Patient Gender"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-01-15T21:51:02+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-01-15T22:44:59+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "openHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;

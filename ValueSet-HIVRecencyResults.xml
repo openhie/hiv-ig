@@ -8,9 +8,9 @@
   <url value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
   <version value="0.2.0"/>
   <name value="HIVRecencyResults"/>
-  <title value="Gender"/>
+  <title value="HIVRecencyResults"/>
   <status value="draft"/>
-  <date value="2021-01-15T21:51:02+00:00"/>
+  <date value="2021-01-15T22:44:59+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>
