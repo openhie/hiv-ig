@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "ARVTherapySummary"];
   fhir:StructureDefinition.title [ fhir:value "ART therapy summary"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-01-15T21:25:03+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-01-15T21:33:22+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "openHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
