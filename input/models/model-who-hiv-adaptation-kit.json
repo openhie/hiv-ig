@@ -1,0 +1,573 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "model-who-hiv-adaptation-kit",
+    "url": "http://openhie.org/standards/fhir/hiv/model-who-hiv-adaptation-kit",
+    "version": "version",
+    "name": "WHOHIVAdaptationKitModel",
+    "status": "draft",
+    "date": "2021-01-07",
+    "publisher": "OpenHIE",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://openhie.org"
+                }
+            ]
+        }
+    ],
+    "description": "This logical model reflects the WHO HIV Digital Accelerator Kit data dictionary",
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+                    "code": "001"
+                }
+            ]
+        }
+    ],
+    "fhirVersion": "4.0.1",
+    "kind": "logical",
+    "abstract": false,
+    "type": "WHOHIVAdaptationKitModel",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+    "derivation": "specialization",
+    "differential": {
+        "element": [
+            {
+                "id": "WHOHIVAdaptationKitModel.patient",
+                "path": "WHOHIVAdaptationKitModel.patient",
+                "short": "Patient",
+                "definition": "Patient info",
+                "min": "1",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "BackboneElement"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.name",
+                "path": "WHOHIVAdaptationKitModel.patient.name",
+                "short": "Patient's name",
+                "definition": "Patient's name",
+                "min": "1",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "HumanName"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.identification",
+                "path": "WHOHIVAdaptationKitModel.patient.identification",
+                "short": "Patient identification",
+                "definition": "Patient Identification",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "BackboneElement"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.identification.uniqueId",
+                "path": "WHOHIVAdaptationKitModel.patient.identification.uniqueId",
+                "short": "Unique ID",
+                "definition": "Unique identifier generated for new clients or a universal ID, if used in the country.",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.identification.nationalId",
+                "path": "WHOHIVAdaptationKitModel.patient.identification.nationalId",
+                "short": "National ID",
+                "definition": "National unique identifier assigned to the client, if used in the country.",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.identification.nationalHealthId",
+                "path": "WHOHIVAdaptationKitModel.patient.identification.nationalHealthId",
+                "short": "National health ID",
+                "definition": "National health unique identifier assigned to the client, if used in the country.",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.identification.nationalProgramId",
+                "path": "WHOHIVAdaptationKitModel.patient.identification.nationalProgramId",
+                "short": "National program ID",
+                "definition": "National program unique identifier assigned to the client, if used in the country.",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.identification.nationalHealthInsuranceId",
+                "path": "WHOHIVAdaptationKitModel.patient.identification.nationalHealthInsuranceId",
+                "short": "National health insurance ID",
+                "definition": "National health insurance unique identifier assigned to the client, if used in the country.",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.countryOfBirth",
+                "path": "WHOHIVAdaptationKitModel.patient.countryOfBirth",
+                "short": "Country of birth",
+                "definition": "Country where the client was born",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "code"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.dateOfBirth",
+                "path": "WHOHIVAdaptationKitModel.patient.dateOfBirth",
+                "short": "Date of birth ",
+                "definition": "The client's date of birth (DOB) if known.",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "date"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.dateOfBirthUnknown",
+                "path": "WHOHIVAdaptationKitModel.patient.dateOfBirthUnknown",
+                "short": "Date of birth unknown",
+                "definition": "Select this if the client's DOB is unknown.",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "boolean"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.age",
+                "path": "WHOHIVAdaptationKitModel.patient.age",
+                "short": "Age",
+                "definition": "Calculated age (number of years) of the client based on date of birth",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "SimpleQuantity"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.estimatedAge",
+                "path": "WHOHIVAdaptationKitModel.patient.estimatedAge",
+                "short": "Estimated age",
+                "definition": "If DOB is unknown, enter the client's estimated age. Display client's age in number of years.",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "SimpleQuantity"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.gender",
+                "path": "WHOHIVAdaptationKitModel.patient.gender",
+                "short": "Patient gender",
+                "definition": "Patient gender",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "code"
+                    }
+                ],
+                "binding": {
+                    "strength": "required",
+                    "valueSet": "VSPatientGender"
+                }
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.genderIdentity",
+                "path": "WHOHIVAdaptationKitModel.patient.genderIdentity",
+                "short": "Gender identity",
+                "definition": "The gender that the client identifies with",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "code"
+                    }
+                ],
+                "binding": {
+                    "strength": "required",
+                    "valueSet": "VSPatientGenderIdentity"
+                }
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.address",
+                "path": "WHOHIVAdaptationKitModel.patient.address",
+                "short": "Address",
+                "definition": "Client's home address or address at which the client is consenting to disclose",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.telephoneNumber",
+                "path": "WHOHIVAdaptationKitModel.patient.telephoneNumber",
+                "short": "Telephone Number",
+                "definition": "Can be a landline or a mobile phone number",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.administrativeArea",
+                "path": "WHOHIVAdaptationKitModel.patient.administrativeArea",
+                "short": "Administrative Area",
+                "definition": "This should be a context-specific list of administrative areas, such as villages, districts, etc. The purpose of this data element is to allow for grouping and flagging of client data to a particular facility's catchment area. This can be input into the system by the end user OR it can be automated in the database based on the end user's attributes",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.communicationConsent",
+                "path": "WHOHIVAdaptationKitModel.patient.communicationConsent",
+                "short": "Communication Consent",
+                "definition": "Indication that client gave consent to be contacted",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "boolean"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.reminderMessages",
+                "path": "WHOHIVAdaptationKitModel.patient.reminderMessages",
+                "short": "Reminder messages",
+                "definition": "Whether client wants to receive text or other messages as follow-up for family planning",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "boolean"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.communicationPreferences",
+                "path": "WHOHIVAdaptationKitModel.patient.communicationPreferences",
+                "short": "Communication preference(s)",
+                "definition": "text-message | voice-call",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "code"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.email",
+                "path": "WHOHIVAdaptationKitModel.patient.email",
+                "short": "Client's E-mail",
+                "definition": "Client's primary email account where the client can be contacted",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.alternateContact",
+                "path": "WHOHIVAdaptationKitModel.patient.alternateContact",
+                "short": "Alternate contact ",
+                "definition": "An alternate contact, which could be next of kin (e.g. partner, husband, mother, sibling, etc.). The alternate contact would be used in the case of an emergency situation.",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "BackboneElement"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.alternateContact.name",
+                "path": "WHOHIVAdaptationKitModel.patient.alternateContact.name",
+                "short": "Alternate contact's name ",
+                "definition": "Name of alternate contact",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.alternateContact.phoneNumber",
+                "path": "WHOHIVAdaptationKitModel.patient.alternateContact.phoneNumber",
+                "short": "Alternate contact's phone number",
+                "definition": "Phone number of the alternate contact.",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.alternateContact.address",
+                "path": "WHOHIVAdaptationKitModel.patient.alternateContact.address",
+                "short": "Alternate contact's address",
+                "definition": "Alternate contact's home address or address at which the client able to disclose.",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.patient.alternateContact.relationship",
+                "path": "WHOHIVAdaptationKitModel.patient.alternateContact.relationship",
+                "short": "Alternate contact relationship",
+                "definition": "The alternate contact's relationship to the client (e.g. partner, husband, mother, sibling, etc.).",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "code"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.visit",
+                "path": "WHOHIVAdaptationKitModel.visit",
+                "short": "Visit",
+                "definition": "Patient's visits",
+                "min": "1",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "BackboneElement"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.visit.date",
+                "path": "WHOHIVAdaptationKitModel.visit.date",
+                "short": "Visit date",
+                "definition": "The date and time of the client's visit",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "date"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.visit.referral",
+                "path": "WHOHIVAdaptationKitModel.visit.referral",
+                "short": "Referral",
+                "definition": "If client was referred for care",
+                "min": "1",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "BackboneElement"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.visit.referral.referred",
+                "path": "WHOHIVAdaptationKitModel.visit.referral.referred",
+                "short": "Referred",
+                "definition": "If client was referred for care",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "boolean"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.visit.referral.referrer",
+                "path": "WHOHIVAdaptationKitModel.visit.referral.referrer",
+                "short": "Referred by",
+                "definition": "Referred by the Community level services / health facility",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.visit.reason",
+                "path": "WHOHIVAdaptationKitModel.visit.reason",
+                "short": "Reason for HIV testing services visit",
+                "definition": "",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "BackboneElement"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.visit.firstTimeHIVTest",
+                "path": "WHOHIVAdaptationKitModel.visit.firstTimeHIVTest",
+                "short": "First encounter for screening for human immunodeficiency virus",
+                "definition": "First encounter for screening for human immunodeficiency virus",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "boolean"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.visit.hivRetest",
+                "path": "WHOHIVAdaptationKitModel.visit.hivRetest",
+                "short": "Retesting for human immunodeficiency virus",
+                "definition": "Retesting for human immunodeficiency virus",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "boolean"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices",
+                "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices",
+                "short": "Referred through partner services ",
+                "definition": "Client reported coming to the facility after receiving a provider-assisted referral or patient referral from a contact or partner.",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "BackboneElement"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.indexCase",
+                "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.indexCase",
+                "short": "Partner or contact of an index case",
+                "definition": "The client is a contact or partner of a person diagnosed with HIV (an index case).",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "boolean"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.non-indexCase",
+                "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.non-indexCase",
+                "short": "Partner or contact of an HIV testing client (non-index case)",
+                "definition": "The client is a contact or partner identified through partner or social network services, but is not known to be a partner of an index-case.",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "boolean"
+                    }
+                ]
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact",
+                "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact",
+                "short": "Type of contact or partner for partner services",
+                "definition": "Client's relationship to the person that referred the client for partner services or family services",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "coding"
+                    }
+                ],
+                "binding": {
+                    "strength": "extensible",
+                    "valueSet": "vs-type-of-contact"
+                }
+            },
+            {
+                "id": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV.date",
+                "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV.date",
+                "short": "DateTime of suspected exposure to HIV",
+                "definition": "Date and time when the client had suspected exposure to HIV",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "date"
+                    }
+                ]
+            }
+        ]
+    }
+}

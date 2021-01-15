@@ -1,0 +1,51 @@
+@startuml
+title Use Cases
+skinparam actorStyle awesome
+
+hide footbox
+
+!include ./style.iuml
+
+actor "\nPatient" as P
+actor "**Healthcare**\n**Professional**" as HCP
+Participant "** Local **\n**  EHR  **" as EHR
+Participant "**Central**\n** Repository **" as CR
+
+
+group Monthly report
+HCP -> P: Provide form
+P -> HCP: Deliver filled form
+HCP -> EHR: Deliver filled form
+Note right: Monthly\nReport
+end
+
+
+
+group Bulk reports
+P -> HCP: Batch import XLS
+HCP -> EHR: Deliver filled form
+Note right: Monthly\nReport
+end
+
+
+...
+
+
+
+
+group Process reports
+EHR -> CR: Send Monthly Report
+CR -> CR: Import &\nProcess
+Note right: Longidudinal\nCase Record
+end
+...
+
+group Extract data
+EHR -> EHR: Extract \nEHR data
+Note right: EHR-derived\ncase data
+end
+...
+
+
+
+@enduml

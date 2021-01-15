@@ -69,7 +69,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Questionnaire/hiv-case-report-questionnaire-long"/>
+        <reference value="Questionnaire/hiv-case-report-questionnaire"/>
       </reference>
       <name value="Case Report Questionnaire"/>
       <description value="Questionnaire for case report"/>
@@ -156,8 +156,6 @@ Ethnicity
       <description value="Extension - specimen collection place"/>
       <groupingId value="longitudinalRecord" />
     </resource>    
-
-
 
     <resource>
       <reference>
@@ -254,9 +252,6 @@ Ethnicity
         <title value="Data Analytics"/>
         <generation value="markdown"/>
       </page>
-
-
-
       <page>
         <nameUrl value="follow-up.html"/>
         <title value="Case Follow-up"/>
