@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/CodeSystem/cs-patient-gender> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-patient-gender"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/CodeSystem/cs-patient-gender defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">male<a name=\"cs-patient-gender-male\"> </a></td><td>Male</td><td>Client identifies as female</td></tr><tr><td style=\"white-space:nowrap\">female<a name=\"cs-patient-gender-female\"> </a></td><td>Female</td><td>Client identifies as male</td></tr><tr><td style=\"white-space:nowrap\">transgender<a name=\"cs-patient-gender-transgender\"> </a></td><td>Transgender</td><td>Client identifies as transgender</td></tr><tr><td style=\"white-space:nowrap\">non-binary<a name=\"cs-patient-gender-non-binary\"> </a></td><td>Non-binary</td><td>Client identifies in a non-binary way</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/CodeSystem/cs-patient-gender"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "PatientGender"];
+  fhir:CodeSystem.title [ fhir:value "Patient Gender"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-01-15T21:51:02+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "openHIE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/[something]" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "The genders for patients"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "male" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Male" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Client identifies as female" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "female" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Female" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Client identifies as male" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "transgender" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transgender" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Client identifies as transgender" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "non-binary" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non-binary" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Client identifies in a non-binary way" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/CodeSystem/cs-patient-gender.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

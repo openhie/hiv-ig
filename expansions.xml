@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e7016ef9-a813-4787-9eee-a3e8a2855a96"/>
+  <id value="15634e16-d369-4729-a739-c4c89ccae6e4"/>
   <meta>
-    <lastUpdated value="2021-01-15T21:33:22.859+00:00"/>
+    <lastUpdated value="2021-01-15T21:51:02.195+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -35,7 +35,7 @@
         <name value="HIVRecencyResults"/>
         <title value="Gender"/>
         <status value="draft"/>
-        <date value="2021-01-15T21:33:22+00:00"/>
+        <date value="2021-01-15T21:51:02+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -51,8 +51,436 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:db21e300-a132-4c50-bc56-b86aa34f2cf7"/>
-          <timestamp value="2021-01-15T21:33:43+00:00"/>
+          <identifier value="urn:uuid:deed9b3d-1c3d-42a3-bb26-f2f09336de4a"/>
+          <timestamp value="2021-01-15T21:51:21+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/vs-patient-communication-preferences"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-patient-communication-preferences"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-patient-communication-preferences.html">Patient Communication Preferences v0.2.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-patient-communication-preferences.html">
+                <code>http://openhie.org/fhir/CodeSystem/cs-patient-communication-preferences</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-cs-patient-communication-preferences-text-message"> </a>
+                  <a href="CodeSystem-cs-patient-communication-preferences.html#cs-patient-communication-preferences-text-message">text-message</a>
+                </td>
+                <td>SMS or  Text message</td>
+                <td>The client would like to receive communications via Text Message/SMS</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-cs-patient-communication-preferences-voice-call"> </a>
+                  <a href="CodeSystem-cs-patient-communication-preferences.html#cs-patient-communication-preferences-voice-call">voice-call</a>
+                </td>
+                <td>Voice Call</td>
+                <td>Client would like to receive communications via Voice Calls</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/ValueSet/vs-patient-communication-preferences"/>
+        <version value="0.2.0"/>
+        <name value="VSPatientCommunicationPreferences"/>
+        <title value="Patient Communication Preferences"/>
+        <status value="active"/>
+        <date value="2021-01-15T21:51:02+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="Valueset - Patient Communication Preferences"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a89b21a3-32d1-4d1e-aa26-2a3e27ca647a"/>
+          <timestamp value="2021-01-15T21:51:23+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://openhie.org/fhir/CodeSystem/cs-patient-communication-preferences|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/cs-patient-communication-preferences"/>
+            <code value="text-message"/>
+            <display value="SMS or  Text message"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/cs-patient-communication-preferences"/>
+            <code value="voice-call"/>
+            <display value="Voice Call"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/vs-patient-gender"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-patient-gender"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-patient-gender.html">Patient Gender v0.2.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-patient-gender.html">
+                <code>http://openhie.org/fhir/CodeSystem/cs-patient-gender</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-cs-patient-gender-male"> </a>
+                  <a href="CodeSystem-cs-patient-gender.html#cs-patient-gender-male">male</a>
+                </td>
+                <td>Male</td>
+                <td>Client identifies as female</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-cs-patient-gender-female"> </a>
+                  <a href="CodeSystem-cs-patient-gender.html#cs-patient-gender-female">female</a>
+                </td>
+                <td>Female</td>
+                <td>Client identifies as male</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-cs-patient-gender-transgender"> </a>
+                  <a href="CodeSystem-cs-patient-gender.html#cs-patient-gender-transgender">transgender</a>
+                </td>
+                <td>Transgender</td>
+                <td>Client identifies as transgender</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-cs-patient-gender-non-binary"> </a>
+                  <a href="CodeSystem-cs-patient-gender.html#cs-patient-gender-non-binary">non-binary</a>
+                </td>
+                <td>Non-binary</td>
+                <td>Client identifies in a non-binary way</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/ValueSet/vs-patient-gender"/>
+        <version value="0.2.0"/>
+        <name value="VSPatientGender"/>
+        <title value="Patient Gender"/>
+        <status value="active"/>
+        <date value="2021-01-15T21:51:02+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="Valueset - patient genders"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4cb600ee-1922-4fff-bc03-6783b29a87c4"/>
+          <timestamp value="2021-01-15T21:51:24+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://openhie.org/fhir/CodeSystem/cs-patient-gender|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/cs-patient-gender"/>
+            <code value="male"/>
+            <display value="Male"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/cs-patient-gender"/>
+            <code value="female"/>
+            <display value="Female"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/cs-patient-gender"/>
+            <code value="transgender"/>
+            <display value="Transgender"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/cs-patient-gender"/>
+            <code value="non-binary"/>
+            <display value="Non-binary"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/vs-patient-gender-identity"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-patient-gender-identity"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 7 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-patient-gender-identity.html">Patient Gender Identity v0.2.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-cs-patient-gender-identity.html">
+                <code>http://openhie.org/fhir/CodeSystem/cs-patient-gender-identity</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-cs-patient-gender-identity-transgender-to-female"> </a>
+                  <a href="CodeSystem-cs-patient-gender-identity.html#cs-patient-gender-identity-transgender-to-female">transgender-to-female</a>
+                </td>
+                <td>Transgender female</td>
+                <td>Client identifies as transgender male-to-female</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-cs-patient-gender-identity-transgender-to-male"> </a>
+                  <a href="CodeSystem-cs-patient-gender-identity.html#cs-patient-gender-identity-transgender-to-male">transgender-to-male</a>
+                </td>
+                <td>Transgender male</td>
+                <td>Client identifies as transgender female-to-male</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-cs-patient-gender-identity-non-binary"> </a>
+                  <a href="CodeSystem-cs-patient-gender-identity.html#cs-patient-gender-identity-non-binary">non-binary</a>
+                </td>
+                <td>Non-binary</td>
+                <td>Client identifies with neither/both female and male</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-cs-patient-gender-identity-male"> </a>
+                  <a href="CodeSystem-cs-patient-gender-identity.html#cs-patient-gender-identity-male">male</a>
+                </td>
+                <td>Male</td>
+                <td>Client identifies as male</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-cs-patient-gender-identity-female"> </a>
+                  <a href="CodeSystem-cs-patient-gender-identity.html#cs-patient-gender-identity-female">female</a>
+                </td>
+                <td>Female</td>
+                <td>Client identifies as female</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-cs-patient-gender-identity-other"> </a>
+                  <a href="CodeSystem-cs-patient-gender-identity.html#cs-patient-gender-identity-other">other</a>
+                </td>
+                <td>Other</td>
+                <td>Other gender identity</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-cs-patient-gender-identity-not-disclosed"> </a>
+                  <a href="CodeSystem-cs-patient-gender-identity.html#cs-patient-gender-identity-not-disclosed">not-disclosed</a>
+                </td>
+                <td>Does not wish to disclose</td>
+                <td>Client does not wish to disclose gender identity</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/ValueSet/vs-patient-gender-identity"/>
+        <version value="0.2.0"/>
+        <name value="VSPatientGenderIdentity"/>
+        <title value="Patient Gender Identity"/>
+        <status value="active"/>
+        <date value="2021-01-15T21:51:02+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="Valueset - patient gender identities"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:6276d2f6-f5ac-461b-8b3d-9e1b4a313e90"/>
+          <timestamp value="2021-01-15T21:51:24+00:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://openhie.org/fhir/CodeSystem/cs-patient-gender-identity|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/cs-patient-gender-identity"/>
+            <code value="transgender-to-female"/>
+            <display value="Transgender female"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/cs-patient-gender-identity"/>
+            <code value="transgender-to-male"/>
+            <display value="Transgender male"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/cs-patient-gender-identity"/>
+            <code value="non-binary"/>
+            <display value="Non-binary"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/cs-patient-gender-identity"/>
+            <code value="male"/>
+            <display value="Male"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/cs-patient-gender-identity"/>
+            <code value="female"/>
+            <display value="Female"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/cs-patient-gender-identity"/>
+            <code value="other"/>
+            <display value="Other"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/cs-patient-gender-identity"/>
+            <code value="not-disclosed"/>
+            <display value="Does not wish to disclose"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+    <resource>
+      <ValueSet>
+        <id value="HIVRecencyResults"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+        <version value="0.2.0"/>
+        <name value="HIVRecencyResults"/>
+        <title value="Gender"/>
+        <status value="draft"/>
+        <date value="2021-01-15T21:51:02+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="HIV recency result codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:deed9b3d-1c3d-42a3-bb26-f2f09336de4a"/>
+          <timestamp value="2021-01-15T21:51:21+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -90,7 +518,7 @@
         <name value="HIVRecencyResults"/>
         <title value="Gender"/>
         <status value="draft"/>
-        <date value="2021-01-15T21:33:22+00:00"/>
+        <date value="2021-01-15T21:51:02+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -106,8 +534,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:db21e300-a132-4c50-bc56-b86aa34f2cf7"/>
-          <timestamp value="2021-01-15T21:33:43+00:00"/>
+          <identifier value="urn:uuid:deed9b3d-1c3d-42a3-bb26-f2f09336de4a"/>
+          <timestamp value="2021-01-15T21:51:21+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -145,7 +573,7 @@
         <name value="HIVRecencyResults"/>
         <title value="Gender"/>
         <status value="draft"/>
-        <date value="2021-01-15T21:33:22+00:00"/>
+        <date value="2021-01-15T21:51:02+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -161,8 +589,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:db21e300-a132-4c50-bc56-b86aa34f2cf7"/>
-          <timestamp value="2021-01-15T21:33:43+00:00"/>
+          <identifier value="urn:uuid:deed9b3d-1c3d-42a3-bb26-f2f09336de4a"/>
+          <timestamp value="2021-01-15T21:51:21+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -200,7 +628,7 @@
         <name value="HIVRecencyResults"/>
         <title value="Gender"/>
         <status value="draft"/>
-        <date value="2021-01-15T21:33:22+00:00"/>
+        <date value="2021-01-15T21:51:02+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -216,8 +644,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:db21e300-a132-4c50-bc56-b86aa34f2cf7"/>
-          <timestamp value="2021-01-15T21:33:43+00:00"/>
+          <identifier value="urn:uuid:deed9b3d-1c3d-42a3-bb26-f2f09336de4a"/>
+          <timestamp value="2021-01-15T21:51:21+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -255,7 +683,7 @@
         <name value="HIVRecencyResults"/>
         <title value="Gender"/>
         <status value="draft"/>
-        <date value="2021-01-15T21:33:22+00:00"/>
+        <date value="2021-01-15T21:51:02+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -271,8 +699,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:db21e300-a132-4c50-bc56-b86aa34f2cf7"/>
-          <timestamp value="2021-01-15T21:33:43+00:00"/>
+          <identifier value="urn:uuid:deed9b3d-1c3d-42a3-bb26-f2f09336de4a"/>
+          <timestamp value="2021-01-15T21:51:21+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -310,7 +738,7 @@
         <name value="HIVRecencyResults"/>
         <title value="Gender"/>
         <status value="draft"/>
-        <date value="2021-01-15T21:33:22+00:00"/>
+        <date value="2021-01-15T21:51:02+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -326,8 +754,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:db21e300-a132-4c50-bc56-b86aa34f2cf7"/>
-          <timestamp value="2021-01-15T21:33:43+00:00"/>
+          <identifier value="urn:uuid:deed9b3d-1c3d-42a3-bb26-f2f09336de4a"/>
+          <timestamp value="2021-01-15T21:51:21+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -365,7 +793,7 @@
         <name value="HIVRecencyResults"/>
         <title value="Gender"/>
         <status value="draft"/>
-        <date value="2021-01-15T21:33:22+00:00"/>
+        <date value="2021-01-15T21:51:02+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -381,8 +809,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:db21e300-a132-4c50-bc56-b86aa34f2cf7"/>
-          <timestamp value="2021-01-15T21:33:43+00:00"/>
+          <identifier value="urn:uuid:deed9b3d-1c3d-42a3-bb26-f2f09336de4a"/>
+          <timestamp value="2021-01-15T21:51:21+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -392,35 +820,75 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/vs-type-of-contact"/>
     <resource>
       <ValueSet>
-        <id value="HIVRecencyResults"/>
+        <id value="vs-type-of-contact"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 0 concepts</p>
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-type-of-contact.html">Type of contact or relationship v0.2.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-type-of-contact.html">
+                <code>http://openhie.org/fhir/CodeSystem/type-of-contact</code>
+              </a>
+            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
-                </td>
-                <td>
                   <b>Display</b>
                 </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-type-of-contact-child"> </a>
+                  <a href="CodeSystem-type-of-contact.html#type-of-contact-child">child</a>
+                </td>
+                <td>Biological child</td>
+                <td>Client is the biological child of the person that referred the client for family services</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-type-of-contact-drug-injecting-partner"> </a>
+                  <a href="CodeSystem-type-of-contact.html#type-of-contact-drug-injecting-partner">drug-injecting-partner</a>
+                </td>
+                <td>Drug injecting partner</td>
+                <td>Client is a drug injecting partner of the person that referred the client for partner services</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-type-of-contact-sexual-partner"> </a>
+                  <a href="CodeSystem-type-of-contact.html#type-of-contact-sexual-partner">sexual-partner</a>
+                </td>
+                <td>Sexual partner</td>
+                <td>Client is a sexual partner of the person that referred the client for partner services</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-CodeSystem-type-of-contact-social-contact"> </a>
+                  <a href="CodeSystem-type-of-contact.html#type-of-contact-social-contact">social-contact</a>
+                </td>
+                <td>Social contact</td>
+                <td>Client is a social contact of the person that referred the client for social-network services</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+        <url value="http://openhie.org/fhir/ValueSet/vs-type-of-contact"/>
         <version value="0.2.0"/>
-        <name value="HIVRecencyResults"/>
-        <title value="Gender"/>
-        <status value="draft"/>
-        <date value="2021-01-15T21:33:22+00:00"/>
+        <name value="VSTypeOfContact"/>
+        <title value="Type of contact or relationship"/>
+        <status value="active"/>
+        <date value="2021-01-15T21:51:02+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -428,7 +896,7 @@
             <value value="http://hl7.org/Special/committees/[something]"/>
           </telecom>
         </contact>
-        <description value="HIV recency result codes"/>
+        <description value="Type of contact or relationship"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -436,12 +904,37 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:db21e300-a132-4c50-bc56-b86aa34f2cf7"/>
-          <timestamp value="2021-01-15T21:33:43+00:00"/>
+          <identifier value="urn:uuid:0eed319a-77a7-45a0-992f-18d33ff65d9f"/>
+          <timestamp value="2021-01-15T21:51:26+00:00"/>
+          <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://openhie.org/fhir/CodeSystem/type-of-contact|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/type-of-contact"/>
+            <code value="child"/>
+            <display value="Biological child"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/type-of-contact"/>
+            <code value="drug-injecting-partner"/>
+            <display value="Drug injecting partner"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/type-of-contact"/>
+            <code value="sexual-partner"/>
+            <display value="Sexual partner"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/CodeSystem/type-of-contact"/>
+            <code value="social-contact"/>
+            <display value="Social contact"/>
+          </contains>
         </expansion>
       </ValueSet>
     </resource>

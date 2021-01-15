@@ -12,7 +12,7 @@
   <title value="HIV Case Reporting and Monitoring"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-01-15T21:33:22+00:00"/>
+  <date value="2021-01-15T21:51:02+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>
@@ -243,7 +243,7 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/hiv-case-report-questionnaire-long"/>
+        <reference value="Questionnaire/hiv-case-report-questionnaire"/>
       </reference>
       <name value="Case Report Questionnaire"/>
       <description value="Questionnaire for case report"/>
@@ -383,6 +383,15 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/model-who-hiv-adaptation-kit"/>
+      </reference>
+      <description value="This logical model reflects the WHO HIV Digital Accelerator Kit data dictionary"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="NamingSystem"/>
       </extension>
       <reference>
@@ -411,11 +420,23 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/HIVCaseReportForm"/>
+        <reference value="ValueSet/vs-patient-communication-preferences"/>
       </reference>
+      <name value="Patient Communication Preferences"/>
+      <description value="Valueset - Patient Communication Preferences"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-patient-communication-preferences"/>
+      </reference>
+      <name value="Patient Communication Preferences"/>
+      <description value="The way the patient prefers to be contacted"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -425,6 +446,36 @@
         <reference value="NamingSystem/ns-hiv-case-id"/>
       </reference>
       <description value="Naming System - HIV Case identifiers"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-patient-gender"/>
+      </reference>
+      <name value="Patient Gender"/>
+      <description value="Valueset - patient genders"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-patient-gender-identity"/>
+      </reference>
+      <name value="Patient Gender Identity"/>
+      <description value="Valueset - patient gender identities"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-patient-gender"/>
+      </reference>
+      <name value="Patient Gender"/>
+      <description value="The genders for patients"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -447,6 +498,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/type-of-contact"/>
+      </reference>
+      <name value="Type of contact or relationship"/>
+      <description value="Type of contact or relationship"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -454,6 +515,26 @@
       </reference>
       <name value="CD4Observation"/>
       <description value="This profile allows the exchange of a patient&#39;s CD$ test and results"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-patient-gender-identity"/>
+      </reference>
+      <name value="Patient Gender Identity"/>
+      <description value="A list of genders that the patient may identify with"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-type-of-contact"/>
+      </reference>
+      <name value="Type of contact or relationship"/>
+      <description value="Type of contact or relationship"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

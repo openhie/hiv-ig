@@ -1,5 +1,33 @@
 [
   {
+    "id": "cs-patient-communication-preferences",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/CodeSystem/cs-patient-communication-preferences",
+    "version": "0.2.0",
+    "name": "PatientCommunicationPreferences"
+  },
+  {
+    "id": "cs-patient-gender",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/CodeSystem/cs-patient-gender",
+    "version": "0.2.0",
+    "name": "PatientGender"
+  },
+  {
+    "id": "cs-patient-gender-identity",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/CodeSystem/cs-patient-gender-identity",
+    "version": "0.2.0",
+    "name": "PatientGenderIdentity"
+  },
+  {
+    "id": "type-of-contact",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/CodeSystem/type-of-contact",
+    "version": "0.2.0",
+    "name": "TypeOfContact"
+  },
+  {
     "id": "openhie.fhir.hiv",
     "type": "ImplementationGuide",
     "url": "http://openhie.org/fhir/ImplementationGuide/openhie.fhir.hiv",
@@ -35,16 +63,9 @@
     "name": "NSPassportID"
   },
   {
-    "id": "HIVCaseReportForm",
+    "id": "hiv-case-report-questionnaire",
     "type": "Questionnaire",
-    "url": "http://openhie.org/fhir/Questionnaire/HIVCaseReportForm",
-    "version": "0.2.0",
-    "name": "HIVCaseReportForm"
-  },
-  {
-    "id": "hiv-case-report-questionnaire-long",
-    "type": "Questionnaire",
-    "url": "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire-long",
+    "url": "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire",
     "version": "0.2.0",
     "name": "HIVCaseReportForm"
   },
@@ -147,11 +168,46 @@
     "name": "VSEthnicity"
   },
   {
+    "id": "vs-patient-communication-preferences",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/ValueSet/vs-patient-communication-preferences",
+    "version": "0.2.0",
+    "name": "VSPatientCommunicationPreferences"
+  },
+  {
+    "id": "vs-patient-gender",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/ValueSet/vs-patient-gender",
+    "version": "0.2.0",
+    "name": "VSPatientGender"
+  },
+  {
+    "id": "vs-patient-gender-identity",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/ValueSet/vs-patient-gender-identity",
+    "version": "0.2.0",
+    "name": "VSPatientGenderIdentity"
+  },
+  {
+    "id": "vs-type-of-contact",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/ValueSet/vs-type-of-contact",
+    "version": "0.2.0",
+    "name": "VSTypeOfContact"
+  },
+  {
     "id": "model-hiv-record",
     "type": "StructureDefinition",
     "url": "http://openhie.org/fhir/hiv/StructureDefinition/model-hiv-record",
     "version": "0.2.0",
     "name": "HIVRecord"
+  },
+  {
+    "id": "model-who-hiv-adaptation-kit",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/standards/fhir/hiv/model-who-hiv-adaptation-kit",
+    "version": "0.2.0",
+    "name": "WHOHIVAdaptationKitModel"
   },
   {
     "id": "model-hiv-case-report",

@@ -11,7 +11,7 @@
   "title": "HIV Case Reporting and Monitoring",
   "status": "draft",
   "experimental": false,
-  "date": "2021-01-15T21:33:22+00:00",
+  "date": "2021-01-15T21:51:02+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -381,7 +381,7 @@
           }
         ],
         "reference": {
-          "reference": "Questionnaire/hiv-case-report-questionnaire-long"
+          "reference": "Questionnaire/hiv-case-report-questionnaire"
         },
         "name": "Case Report Questionnaire",
         "description": "Questionnaire for case report",
@@ -559,6 +559,18 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/model-who-hiv-adaptation-kit"
+        },
+        "description": "This logical model reflects the WHO HIV Digital Accelerator Kit data dictionary"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "NamingSystem"
           }
         ],
@@ -596,12 +608,27 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Questionnaire"
+            "valueString": "ValueSet"
           }
         ],
         "reference": {
-          "reference": "Questionnaire/HIVCaseReportForm"
-        }
+          "reference": "ValueSet/vs-patient-communication-preferences"
+        },
+        "name": "Patient Communication Preferences",
+        "description": "Valueset - Patient Communication Preferences"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-patient-communication-preferences"
+        },
+        "name": "Patient Communication Preferences",
+        "description": "The way the patient prefers to be contacted"
       },
       {
         "extension": [
@@ -614,6 +641,45 @@
           "reference": "NamingSystem/ns-hiv-case-id"
         },
         "description": "Naming System - HIV Case identifiers"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-patient-gender"
+        },
+        "name": "Patient Gender",
+        "description": "Valueset - patient genders"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-patient-gender-identity"
+        },
+        "name": "Patient Gender Identity",
+        "description": "Valueset - patient gender identities"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-patient-gender"
+        },
+        "name": "Patient Gender",
+        "description": "The genders for patients"
       },
       {
         "extension": [
@@ -644,6 +710,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/type-of-contact"
+        },
+        "name": "Type of contact or relationship",
+        "description": "Type of contact or relationship"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -652,6 +731,32 @@
         },
         "name": "CD4Observation",
         "description": "This profile allows the exchange of a patient's CD$ test and results"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-patient-gender-identity"
+        },
+        "name": "Patient Gender Identity",
+        "description": "A list of genders that the patient may identify with"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-type-of-contact"
+        },
+        "name": "Type of contact or relationship",
+        "description": "Type of contact or relationship"
       }
     ],
     "page": {

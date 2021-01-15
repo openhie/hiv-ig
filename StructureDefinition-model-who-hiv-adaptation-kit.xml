@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="model-who-hiv-adaptation-kit"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel">WHOHIVAdaptationKitModel</a><a name="WHOHIVAdaptationKitModel"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Element">Element</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient" title="Patient info">patient</a><a name="WHOHIVAdaptationKitModel.patient"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.name" title="Patient's name">name</a><a name="WHOHIVAdaptationKitModel.patient.name"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient's name<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.identification" title="Patient Identification">identification</a><a name="WHOHIVAdaptationKitModel.patient.identification"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient identification</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.identification.uniqueId" title="Unique identifier generated for new clients or a universal ID, if used in the country.">uniqueId</a><a name="WHOHIVAdaptationKitModel.patient.identification.uniqueId"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Unique ID</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.identification.nationalId" title="National unique identifier assigned to the client, if used in the country.">nationalId</a><a name="WHOHIVAdaptationKitModel.patient.identification.nationalId"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">National ID</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.identification.nationalHealthId" title="National health unique identifier assigned to the client, if used in the country.">nationalHealthId</a><a name="WHOHIVAdaptationKitModel.patient.identification.nationalHealthId"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">National health ID</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.identification.nationalProgramId" title="National program unique identifier assigned to the client, if used in the country.">nationalProgramId</a><a name="WHOHIVAdaptationKitModel.patient.identification.nationalProgramId"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">National program ID</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.identification.nationalHealthInsuranceId" title="National health insurance unique identifier assigned to the client, if used in the country.">nationalHealthInsuranceId</a><a name="WHOHIVAdaptationKitModel.patient.identification.nationalHealthInsuranceId"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">National health insurance ID</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.countryOfBirth" title="Country where the client was born">countryOfBirth</a><a name="WHOHIVAdaptationKitModel.patient.countryOfBirth"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Country of birth</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.dateOfBirth" title="The client's date of birth (DOB) if known.">dateOfBirth</a><a name="WHOHIVAdaptationKitModel.patient.dateOfBirth"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date of birth </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.dateOfBirthUnknown" title="Select this if the client's DOB is unknown.">dateOfBirthUnknown</a><a name="WHOHIVAdaptationKitModel.patient.dateOfBirthUnknown"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date of birth unknown</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.age" title="Calculated age (number of years) of the client based on date of birth">age</a><a name="WHOHIVAdaptationKitModel.patient.age"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">SimpleQuantity</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Age</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.estimatedAge" title="If DOB is unknown, enter the client's estimated age. Display client's age in number of years.">estimatedAge</a><a name="WHOHIVAdaptationKitModel.patient.estimatedAge"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">SimpleQuantity</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Estimated age</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.gender" title="Patient gender">gender</a><a name="WHOHIVAdaptationKitModel.patient.gender"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient gender<br/><span style="font-weight:bold">Binding: </span><a href="VSPatientGender.html">VSPatientGender</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.genderIdentity" title="The gender that the client identifies with">genderIdentity</a><a name="WHOHIVAdaptationKitModel.patient.genderIdentity"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Gender identity<br/><span style="font-weight:bold">Binding: </span><a href="VSPatientGenderIdentity.html">VSPatientGenderIdentity</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.address" title="Client's home address or address at which the client is consenting to disclose">address</a><a name="WHOHIVAdaptationKitModel.patient.address"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Address</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.telephoneNumber" title="Can be a landline or a mobile phone number">telephoneNumber</a><a name="WHOHIVAdaptationKitModel.patient.telephoneNumber"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Telephone Number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.administrativeArea" title="This should be a context-specific list of administrative areas, such as villages, districts, etc. The purpose of this data element is to allow for grouping and flagging of client data to a particular facility's catchment area. This can be input into the system by the end user OR it can be automated in the database based on the end user's attributes">administrativeArea</a><a name="WHOHIVAdaptationKitModel.patient.administrativeArea"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Administrative Area</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.communicationConsent" title="Indication that client gave consent to be contacted">communicationConsent</a><a name="WHOHIVAdaptationKitModel.patient.communicationConsent"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Communication Consent</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.reminderMessages" title="Whether client wants to receive text or other messages as follow-up for family planning">reminderMessages</a><a name="WHOHIVAdaptationKitModel.patient.reminderMessages"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reminder messages</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.communicationPreferences" title="text-message | voice-call">communicationPreferences</a><a name="WHOHIVAdaptationKitModel.patient.communicationPreferences"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Communication preference(s)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.email" title="Client's primary email account where the client can be contacted">email</a><a name="WHOHIVAdaptationKitModel.patient.email"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Client's E-mail</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.alternateContact" title="An alternate contact, which could be next of kin (e.g. partner, husband, mother, sibling, etc.). The alternate contact would be used in the case of an emergency situation.">alternateContact</a><a name="WHOHIVAdaptationKitModel.patient.alternateContact"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Alternate contact </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.alternateContact.name" title="Name of alternate contact">name</a><a name="WHOHIVAdaptationKitModel.patient.alternateContact.name"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Alternate contact's name </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.alternateContact.phoneNumber" title="Phone number of the alternate contact.">phoneNumber</a><a name="WHOHIVAdaptationKitModel.patient.alternateContact.phoneNumber"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Alternate contact's phone number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.alternateContact.address" title="Alternate contact's home address or address at which the client able to disclose.">address</a><a name="WHOHIVAdaptationKitModel.patient.alternateContact.address"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Alternate contact's address</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.alternateContact.relationship" title="The alternate contact's relationship to the client (e.g. partner, husband, mother, sibling, etc.).">relationship</a><a name="WHOHIVAdaptationKitModel.patient.alternateContact.relationship"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Alternate contact relationship</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit" title="Patient's visits">visit</a><a name="WHOHIVAdaptationKitModel.visit"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Visit<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.date" title="The date and time of the client's visit">date</a><a name="WHOHIVAdaptationKitModel.visit.date"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Visit date</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referral" title="If client was referred for care">referral</a><a name="WHOHIVAdaptationKitModel.visit.referral"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Referral<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referral.referred" title="If client was referred for care">referred</a><a name="WHOHIVAdaptationKitModel.visit.referral.referred"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Referred</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referral.referrer" title="Referred by the Community level services / health facility">referrer</a><a name="WHOHIVAdaptationKitModel.visit.referral.referrer"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Referred by</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.reason">reason</a><a name="WHOHIVAdaptationKitModel.visit.reason"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reason for HIV testing services visit</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.firstTimeHIVTest" title="First encounter for screening for human immunodeficiency virus">firstTimeHIVTest</a><a name="WHOHIVAdaptationKitModel.visit.firstTimeHIVTest"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">First encounter for screening for human immunodeficiency virus</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.hivRetest" title="Retesting for human immunodeficiency virus">hivRetest</a><a name="WHOHIVAdaptationKitModel.visit.hivRetest"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Retesting for human immunodeficiency virus</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck001.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referredByPartnerServices" title="Client reported coming to the facility after receiving a provider-assisted referral or patient referral from a contact or partner.">referredByPartnerServices</a><a name="WHOHIVAdaptationKitModel.visit.referredByPartnerServices"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Referred through partner services </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referredByPartnerServices.indexCase" title="The client is a contact or partner of a person diagnosed with HIV (an index case).">indexCase</a><a name="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.indexCase"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Partner or contact of an index case</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referredByPartnerServices.non-indexCase" title="The client is a contact or partner identified through partner or social network services, but is not known to be a partner of an index-case.">non-indexCase</a><a name="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.non-indexCase"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Partner or contact of an HIV testing client (non-index case)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0001.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact" title="Client's relationship to the person that referred the client for partner services or family services">typeOfContact</a><a name="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">coding</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type of contact or partner for partner services<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-vs-type-of-contact.html">Type of contact or relationship</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00001.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV">exposureToHIV</a><a name="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV.date" title="Date and time when the client had suspected exposure to HIV">date</a><a name="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV.date"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">DateTime of suspected exposure to HIV</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/standards/fhir/hiv/model-who-hiv-adaptation-kit"/>
+  <version value="0.2.0"/>
+  <name value="WHOHIVAdaptationKitModel"/>
+  <status value="draft"/>
+  <date value="2021-01-07"/>
+  <publisher value="openHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="This logical model reflects the WHO HIV Digital Accelerator Kit data dictionary"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="WHOHIVAdaptationKitModel"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="WHOHIVAdaptationKitModel">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0"/>
+      </extension>
+      <path value="WHOHIVAdaptationKitModel"/>
+      <short value="Base for all elements"/>
+      <definition value="Base definition for all elements in a resource."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.id">
+      <path value="WHOHIVAdaptationKitModel.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.extension">
+      <path value="WHOHIVAdaptationKitModel.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient">
+      <path value="WHOHIVAdaptationKitModel.patient"/>
+      <short value="Patient"/>
+      <definition value="Patient info"/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.name">
+      <path value="WHOHIVAdaptationKitModel.patient.name"/>
+      <short value="Patient&#39;s name"/>
+      <definition value="Patient&#39;s name"/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.name"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="HumanName"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.identification">
+      <path value="WHOHIVAdaptationKitModel.patient.identification"/>
+      <short value="Patient identification"/>
+      <definition value="Patient Identification"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.identification"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.identification.uniqueId">
+      <path value="WHOHIVAdaptationKitModel.patient.identification.uniqueId"/>
+      <short value="Unique ID"/>
+      <definition value="Unique identifier generated for new clients or a universal ID, if used in the country."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.identification.uniqueId"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.identification.nationalId">
+      <path value="WHOHIVAdaptationKitModel.patient.identification.nationalId"/>
+      <short value="National ID"/>
+      <definition value="National unique identifier assigned to the client, if used in the country."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.identification.nationalId"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.identification.nationalHealthId">
+      <path value="WHOHIVAdaptationKitModel.patient.identification.nationalHealthId"/>
+      <short value="National health ID"/>
+      <definition value="National health unique identifier assigned to the client, if used in the country."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.identification.nationalHealthId"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.identification.nationalProgramId">
+      <path value="WHOHIVAdaptationKitModel.patient.identification.nationalProgramId"/>
+      <short value="National program ID"/>
+      <definition value="National program unique identifier assigned to the client, if used in the country."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.identification.nationalProgramId"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.identification.nationalHealthInsuranceId">
+      <path value="WHOHIVAdaptationKitModel.patient.identification.nationalHealthInsuranceId"/>
+      <short value="National health insurance ID"/>
+      <definition value="National health insurance unique identifier assigned to the client, if used in the country."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.identification.nationalHealthInsuranceId"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.countryOfBirth">
+      <path value="WHOHIVAdaptationKitModel.patient.countryOfBirth"/>
+      <short value="Country of birth"/>
+      <definition value="Country where the client was born"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.countryOfBirth"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.dateOfBirth">
+      <path value="WHOHIVAdaptationKitModel.patient.dateOfBirth"/>
+      <short value="Date of birth "/>
+      <definition value="The client&#39;s date of birth (DOB) if known."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.dateOfBirth"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.dateOfBirthUnknown">
+      <path value="WHOHIVAdaptationKitModel.patient.dateOfBirthUnknown"/>
+      <short value="Date of birth unknown"/>
+      <definition value="Select this if the client&#39;s DOB is unknown."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.dateOfBirthUnknown"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.age">
+      <path value="WHOHIVAdaptationKitModel.patient.age"/>
+      <short value="Age"/>
+      <definition value="Calculated age (number of years) of the client based on date of birth"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.age"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="SimpleQuantity"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.estimatedAge">
+      <path value="WHOHIVAdaptationKitModel.patient.estimatedAge"/>
+      <short value="Estimated age"/>
+      <definition value="If DOB is unknown, enter the client&#39;s estimated age. Display client&#39;s age in number of years."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.estimatedAge"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="SimpleQuantity"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.gender">
+      <path value="WHOHIVAdaptationKitModel.patient.gender"/>
+      <short value="Patient gender"/>
+      <definition value="Patient gender"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.gender"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="VSPatientGender"/>
+      </binding>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.genderIdentity">
+      <path value="WHOHIVAdaptationKitModel.patient.genderIdentity"/>
+      <short value="Gender identity"/>
+      <definition value="The gender that the client identifies with"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.genderIdentity"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="VSPatientGenderIdentity"/>
+      </binding>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.address">
+      <path value="WHOHIVAdaptationKitModel.patient.address"/>
+      <short value="Address"/>
+      <definition value="Client&#39;s home address or address at which the client is consenting to disclose"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.address"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.telephoneNumber">
+      <path value="WHOHIVAdaptationKitModel.patient.telephoneNumber"/>
+      <short value="Telephone Number"/>
+      <definition value="Can be a landline or a mobile phone number"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.telephoneNumber"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.administrativeArea">
+      <path value="WHOHIVAdaptationKitModel.patient.administrativeArea"/>
+      <short value="Administrative Area"/>
+      <definition value="This should be a context-specific list of administrative areas, such as villages, districts, etc. The purpose of this data element is to allow for grouping and flagging of client data to a particular facility&#39;s catchment area. This can be input into the system by the end user OR it can be automated in the database based on the end user&#39;s attributes"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.administrativeArea"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.communicationConsent">
+      <path value="WHOHIVAdaptationKitModel.patient.communicationConsent"/>
+      <short value="Communication Consent"/>
+      <definition value="Indication that client gave consent to be contacted"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.communicationConsent"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.reminderMessages">
+      <path value="WHOHIVAdaptationKitModel.patient.reminderMessages"/>
+      <short value="Reminder messages"/>
+      <definition value="Whether client wants to receive text or other messages as follow-up for family planning"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.reminderMessages"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.communicationPreferences">
+      <path value="WHOHIVAdaptationKitModel.patient.communicationPreferences"/>
+      <short value="Communication preference(s)"/>
+      <definition value="text-message | voice-call"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.communicationPreferences"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.email">
+      <path value="WHOHIVAdaptationKitModel.patient.email"/>
+      <short value="Client&#39;s E-mail"/>
+      <definition value="Client&#39;s primary email account where the client can be contacted"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.email"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.alternateContact">
+      <path value="WHOHIVAdaptationKitModel.patient.alternateContact"/>
+      <short value="Alternate contact "/>
+      <definition value="An alternate contact, which could be next of kin (e.g. partner, husband, mother, sibling, etc.). The alternate contact would be used in the case of an emergency situation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.alternateContact"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.alternateContact.name">
+      <path value="WHOHIVAdaptationKitModel.patient.alternateContact.name"/>
+      <short value="Alternate contact&#39;s name "/>
+      <definition value="Name of alternate contact"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.alternateContact.name"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.alternateContact.phoneNumber">
+      <path value="WHOHIVAdaptationKitModel.patient.alternateContact.phoneNumber"/>
+      <short value="Alternate contact&#39;s phone number"/>
+      <definition value="Phone number of the alternate contact."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.alternateContact.phoneNumber"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.alternateContact.address">
+      <path value="WHOHIVAdaptationKitModel.patient.alternateContact.address"/>
+      <short value="Alternate contact&#39;s address"/>
+      <definition value="Alternate contact&#39;s home address or address at which the client able to disclose."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.alternateContact.address"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.alternateContact.relationship">
+      <path value="WHOHIVAdaptationKitModel.patient.alternateContact.relationship"/>
+      <short value="Alternate contact relationship"/>
+      <definition value="The alternate contact&#39;s relationship to the client (e.g. partner, husband, mother, sibling, etc.)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.patient.alternateContact.relationship"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit">
+      <path value="WHOHIVAdaptationKitModel.visit"/>
+      <short value="Visit"/>
+      <definition value="Patient&#39;s visits"/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.visit"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.date">
+      <path value="WHOHIVAdaptationKitModel.visit.date"/>
+      <short value="Visit date"/>
+      <definition value="The date and time of the client&#39;s visit"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.visit.date"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.referral">
+      <path value="WHOHIVAdaptationKitModel.visit.referral"/>
+      <short value="Referral"/>
+      <definition value="If client was referred for care"/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.visit.referral"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.referral.referred">
+      <path value="WHOHIVAdaptationKitModel.visit.referral.referred"/>
+      <short value="Referred"/>
+      <definition value="If client was referred for care"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.visit.referral.referred"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.referral.referrer">
+      <path value="WHOHIVAdaptationKitModel.visit.referral.referrer"/>
+      <short value="Referred by"/>
+      <definition value="Referred by the Community level services / health facility"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.visit.referral.referrer"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.reason">
+      <path value="WHOHIVAdaptationKitModel.visit.reason"/>
+      <short value="Reason for HIV testing services visit"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.visit.reason"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.firstTimeHIVTest">
+      <path value="WHOHIVAdaptationKitModel.visit.firstTimeHIVTest"/>
+      <short value="First encounter for screening for human immunodeficiency virus"/>
+      <definition value="First encounter for screening for human immunodeficiency virus"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.visit.firstTimeHIVTest"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.hivRetest">
+      <path value="WHOHIVAdaptationKitModel.visit.hivRetest"/>
+      <short value="Retesting for human immunodeficiency virus"/>
+      <definition value="Retesting for human immunodeficiency virus"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.visit.hivRetest"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.referredByPartnerServices">
+      <path value="WHOHIVAdaptationKitModel.visit.referredByPartnerServices"/>
+      <short value="Referred through partner services "/>
+      <definition value="Client reported coming to the facility after receiving a provider-assisted referral or patient referral from a contact or partner."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.visit.referredByPartnerServices"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.indexCase">
+      <path value="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.indexCase"/>
+      <short value="Partner or contact of an index case"/>
+      <definition value="The client is a contact or partner of a person diagnosed with HIV (an index case)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.indexCase"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.non-indexCase">
+      <path value="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.non-indexCase"/>
+      <short value="Partner or contact of an HIV testing client (non-index case)"/>
+      <definition value="The client is a contact or partner identified through partner or social network services, but is not known to be a partner of an index-case."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.non-indexCase"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact">
+      <path value="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact"/>
+      <short value="Type of contact or partner for partner services"/>
+      <definition value="Client&#39;s relationship to the person that referred the client for partner services or family services"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="coding"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="vs-type-of-contact"/>
+      </binding>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV.date">
+      <path value="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV.date"/>
+      <short value="DateTime of suspected exposure to HIV"/>
+      <definition value="Date and time when the client had suspected exposure to HIV"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV.date"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="WHOHIVAdaptationKitModel.patient">
+      <path value="WHOHIVAdaptationKitModel.patient"/>
+      <short value="Patient"/>
+      <definition value="Patient info"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.name">
+      <path value="WHOHIVAdaptationKitModel.patient.name"/>
+      <short value="Patient&#39;s name"/>
+      <definition value="Patient&#39;s name"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="HumanName"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.identification">
+      <path value="WHOHIVAdaptationKitModel.patient.identification"/>
+      <short value="Patient identification"/>
+      <definition value="Patient Identification"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.identification.uniqueId">
+      <path value="WHOHIVAdaptationKitModel.patient.identification.uniqueId"/>
+      <short value="Unique ID"/>
+      <definition value="Unique identifier generated for new clients or a universal ID, if used in the country."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.identification.nationalId">
+      <path value="WHOHIVAdaptationKitModel.patient.identification.nationalId"/>
+      <short value="National ID"/>
+      <definition value="National unique identifier assigned to the client, if used in the country."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.identification.nationalHealthId">
+      <path value="WHOHIVAdaptationKitModel.patient.identification.nationalHealthId"/>
+      <short value="National health ID"/>
+      <definition value="National health unique identifier assigned to the client, if used in the country."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.identification.nationalProgramId">
+      <path value="WHOHIVAdaptationKitModel.patient.identification.nationalProgramId"/>
+      <short value="National program ID"/>
+      <definition value="National program unique identifier assigned to the client, if used in the country."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.identification.nationalHealthInsuranceId">
+      <path value="WHOHIVAdaptationKitModel.patient.identification.nationalHealthInsuranceId"/>
+      <short value="National health insurance ID"/>
+      <definition value="National health insurance unique identifier assigned to the client, if used in the country."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.countryOfBirth">
+      <path value="WHOHIVAdaptationKitModel.patient.countryOfBirth"/>
+      <short value="Country of birth"/>
+      <definition value="Country where the client was born"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.dateOfBirth">
+      <path value="WHOHIVAdaptationKitModel.patient.dateOfBirth"/>
+      <short value="Date of birth "/>
+      <definition value="The client&#39;s date of birth (DOB) if known."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.dateOfBirthUnknown">
+      <path value="WHOHIVAdaptationKitModel.patient.dateOfBirthUnknown"/>
+      <short value="Date of birth unknown"/>
+      <definition value="Select this if the client&#39;s DOB is unknown."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.age">
+      <path value="WHOHIVAdaptationKitModel.patient.age"/>
+      <short value="Age"/>
+      <definition value="Calculated age (number of years) of the client based on date of birth"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="SimpleQuantity"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.estimatedAge">
+      <path value="WHOHIVAdaptationKitModel.patient.estimatedAge"/>
+      <short value="Estimated age"/>
+      <definition value="If DOB is unknown, enter the client&#39;s estimated age. Display client&#39;s age in number of years."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="SimpleQuantity"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.gender">
+      <path value="WHOHIVAdaptationKitModel.patient.gender"/>
+      <short value="Patient gender"/>
+      <definition value="Patient gender"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="VSPatientGender"/>
+      </binding>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.genderIdentity">
+      <path value="WHOHIVAdaptationKitModel.patient.genderIdentity"/>
+      <short value="Gender identity"/>
+      <definition value="The gender that the client identifies with"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="VSPatientGenderIdentity"/>
+      </binding>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.address">
+      <path value="WHOHIVAdaptationKitModel.patient.address"/>
+      <short value="Address"/>
+      <definition value="Client&#39;s home address or address at which the client is consenting to disclose"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.telephoneNumber">
+      <path value="WHOHIVAdaptationKitModel.patient.telephoneNumber"/>
+      <short value="Telephone Number"/>
+      <definition value="Can be a landline or a mobile phone number"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.administrativeArea">
+      <path value="WHOHIVAdaptationKitModel.patient.administrativeArea"/>
+      <short value="Administrative Area"/>
+      <definition value="This should be a context-specific list of administrative areas, such as villages, districts, etc. The purpose of this data element is to allow for grouping and flagging of client data to a particular facility&#39;s catchment area. This can be input into the system by the end user OR it can be automated in the database based on the end user&#39;s attributes"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.communicationConsent">
+      <path value="WHOHIVAdaptationKitModel.patient.communicationConsent"/>
+      <short value="Communication Consent"/>
+      <definition value="Indication that client gave consent to be contacted"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.reminderMessages">
+      <path value="WHOHIVAdaptationKitModel.patient.reminderMessages"/>
+      <short value="Reminder messages"/>
+      <definition value="Whether client wants to receive text or other messages as follow-up for family planning"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.communicationPreferences">
+      <path value="WHOHIVAdaptationKitModel.patient.communicationPreferences"/>
+      <short value="Communication preference(s)"/>
+      <definition value="text-message | voice-call"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.email">
+      <path value="WHOHIVAdaptationKitModel.patient.email"/>
+      <short value="Client&#39;s E-mail"/>
+      <definition value="Client&#39;s primary email account where the client can be contacted"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.alternateContact">
+      <path value="WHOHIVAdaptationKitModel.patient.alternateContact"/>
+      <short value="Alternate contact "/>
+      <definition value="An alternate contact, which could be next of kin (e.g. partner, husband, mother, sibling, etc.). The alternate contact would be used in the case of an emergency situation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.alternateContact.name">
+      <path value="WHOHIVAdaptationKitModel.patient.alternateContact.name"/>
+      <short value="Alternate contact&#39;s name "/>
+      <definition value="Name of alternate contact"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.alternateContact.phoneNumber">
+      <path value="WHOHIVAdaptationKitModel.patient.alternateContact.phoneNumber"/>
+      <short value="Alternate contact&#39;s phone number"/>
+      <definition value="Phone number of the alternate contact."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.alternateContact.address">
+      <path value="WHOHIVAdaptationKitModel.patient.alternateContact.address"/>
+      <short value="Alternate contact&#39;s address"/>
+      <definition value="Alternate contact&#39;s home address or address at which the client able to disclose."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.patient.alternateContact.relationship">
+      <path value="WHOHIVAdaptationKitModel.patient.alternateContact.relationship"/>
+      <short value="Alternate contact relationship"/>
+      <definition value="The alternate contact&#39;s relationship to the client (e.g. partner, husband, mother, sibling, etc.)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit">
+      <path value="WHOHIVAdaptationKitModel.visit"/>
+      <short value="Visit"/>
+      <definition value="Patient&#39;s visits"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.date">
+      <path value="WHOHIVAdaptationKitModel.visit.date"/>
+      <short value="Visit date"/>
+      <definition value="The date and time of the client&#39;s visit"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.referral">
+      <path value="WHOHIVAdaptationKitModel.visit.referral"/>
+      <short value="Referral"/>
+      <definition value="If client was referred for care"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.referral.referred">
+      <path value="WHOHIVAdaptationKitModel.visit.referral.referred"/>
+      <short value="Referred"/>
+      <definition value="If client was referred for care"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.referral.referrer">
+      <path value="WHOHIVAdaptationKitModel.visit.referral.referrer"/>
+      <short value="Referred by"/>
+      <definition value="Referred by the Community level services / health facility"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.reason">
+      <path value="WHOHIVAdaptationKitModel.visit.reason"/>
+      <short value="Reason for HIV testing services visit"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.firstTimeHIVTest">
+      <path value="WHOHIVAdaptationKitModel.visit.firstTimeHIVTest"/>
+      <short value="First encounter for screening for human immunodeficiency virus"/>
+      <definition value="First encounter for screening for human immunodeficiency virus"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.hivRetest">
+      <path value="WHOHIVAdaptationKitModel.visit.hivRetest"/>
+      <short value="Retesting for human immunodeficiency virus"/>
+      <definition value="Retesting for human immunodeficiency virus"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.referredByPartnerServices">
+      <path value="WHOHIVAdaptationKitModel.visit.referredByPartnerServices"/>
+      <short value="Referred through partner services "/>
+      <definition value="Client reported coming to the facility after receiving a provider-assisted referral or patient referral from a contact or partner."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.indexCase">
+      <path value="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.indexCase"/>
+      <short value="Partner or contact of an index case"/>
+      <definition value="The client is a contact or partner of a person diagnosed with HIV (an index case)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.non-indexCase">
+      <path value="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.non-indexCase"/>
+      <short value="Partner or contact of an HIV testing client (non-index case)"/>
+      <definition value="The client is a contact or partner identified through partner or social network services, but is not known to be a partner of an index-case."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact">
+      <path value="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact"/>
+      <short value="Type of contact or partner for partner services"/>
+      <definition value="Client&#39;s relationship to the person that referred the client for partner services or family services"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="coding"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="vs-type-of-contact"/>
+      </binding>
+    </element>
+    <element id="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV.date">
+      <path value="WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV.date"/>
+      <short value="DateTime of suspected exposure to HIV"/>
+      <definition value="Date and time when the client had suspected exposure to HIV"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
