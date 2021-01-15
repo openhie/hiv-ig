@@ -1,182 +1,3494 @@
 ﻿HIVCaseReporting : Validation Results
 =========================================
 
-err = 12, warn = 67, info = 0
-IG Publisher Version: 1.1.55
-Generated Sat Dec 19 15:44:30 UTC 2020. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir)
+err = 21, warn = 100, info = 0
+IG Publisher Version: 1.1.57
+Generated Fri Jan 15 21:25:30 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir)
 
- Build Errors : 31 / 1 / 0
+ Build Errors : 185 / 1 / 0
+ /github/workspace/fsh-generated/resources/NamingSystem-ns-arv-id : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-ns-hiv-case-id : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-ns-insurance-id : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-ns-passport-id : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-HIVCaseReportForm : 1 / 0 / 1
- /github/workspace/input/models/model-hiv-case-report : 3 / 48 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire-long : 7 / 0 / 8
+ /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ethnicity : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ext-specimen-collection-place : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-careplan : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-cd4-observation : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-condition : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-recency-result : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-risk-factor : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-specimen : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-viral-load : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-pregnancy-status : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-HIVRecencyResults : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-ethnicity : 0 / 1 / 1
+ /github/workspace/input/models/model-hiv-case-report : 3 / 68 / 1
  /github/workspace/input/models/model-hiv-record : 3 / 18 / 1
  /github/workspace/input/myig : 0 / 0 / 1
 </table>
 == n/a ==
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/ns-insurance-id.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/ns-passport-id.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Questionnaire/HIVCaseReportForm.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/HIVCaseReportForm.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: StructureDefinition-model-hiv-case-report.html: The reference codeableConcept could not be resolved
-ERROR: StructureDefinition-model-hiv-case-report.html: The reference CodeableConceot could not be resolved
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/ns-hiv-case-id.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/ns-arv-id.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: StructureDefinition-model-hiv-record.html: The reference CodeableReference could not be resolved
 ERROR: StructureDefinition-model-hiv-record.html: The reference period could not be resolved
-ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report-definitions.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 642 column 37
-ERROR: /github/workspace/output/StructureDefinition-model-hiv-record.profile.json.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 1186 column 37
-ERROR: /github/workspace/output/StructureDefinition-model-hiv-record.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 704 column 37
-ERROR: /github/workspace/output/Questionnaire-HIVCaseReportForm.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 323 column 37
-ERROR: /github/workspace/output/Questionnaire-HIVCaseReportForm.change.history.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 289 column 37
-ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report-mappings.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 326 column 37
-ERROR: /github/workspace/output/downloads.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 272 column 37
-ERROR: /github/workspace/output/StructureDefinition-model-hiv-record-mappings.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 326 column 37
-ERROR: /github/workspace/output/StructureDefinition-model-hiv-record.profile.ttl.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 1013 column 37
-ERROR: /github/workspace/output/changes.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 236 column 37
-ERROR: /github/workspace/output/index.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 480 column 37
-ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 1176 column 37
-ERROR: /github/workspace/output/StructureDefinition-model-hiv-record-examples.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 321 column 37
-ERROR: /github/workspace/output/StructureDefinition-model-hiv-record.profile.xml.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 1056 column 37
-ERROR: /github/workspace/output/Questionnaire-HIVCaseReportForm.xml.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 614 column 37
-ERROR: /github/workspace/output/StructureDefinition-model-hiv-record.profile.history.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 310 column 37
-ERROR: /github/workspace/output/artifacts.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 292 column 37
-ERROR: /github/workspace/output/Questionnaire-HIVCaseReportForm.ttl.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 560 column 37
-ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report.profile.json.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 3388 column 37
-ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report.profile.ttl.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 2683 column 37
-ERROR: /github/workspace/output/toc.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 225 column 37
-ERROR: /github/workspace/output/Questionnaire-HIVCaseReportForm.json.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 606 column 37
-ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report.profile.history.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 310 column 37
-ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report-examples.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 321 column 37
-ERROR: /github/workspace/output/StructureDefinition-model-hiv-record-definitions.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 416 column 37
-ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report.profile.xml.html: unable to parse character reference '"'' (last text = '
-
-
-
-
-' at line 2978 column 37
+ERROR: /github/workspace/output/StructureDefinition-hiv-specimen-examples.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 382 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-passport-id.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 385 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-passport-id.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 350 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-risk-factor.profile.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2390 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-arv-careplan.profile.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 371 column 45
+ERROR: /github/workspace/output/StructureDefinition-model-hiv-record.profile.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 1074 column 45
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire-long_BirthDefects.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 392 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-hiv-case-id.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 350 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-passport-id.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 369 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-patient.profile.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2484 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-condition.profile.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2390 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-condition.profile.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2152 column 45
+ERROR: /github/workspace/output/StructureDefinition-pregnancy-status.profile.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2862 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-condition-definitions.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 740 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-risk-factor-definitions.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 740 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-specimen.profile.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2442 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-arv-id.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 385 column 45
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire-long.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 350 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-arv-careplan.profile.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2966 column 45
+ERROR: /github/workspace/output/StructureDefinition-model-hiv-record-examples.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 382 column 45
+ERROR: /github/workspace/output/methodology.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 302 column 45
+ERROR: /github/workspace/output/ValueSet-vs-ethnicity.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 386 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-arv-id.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 369 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-cd4-observation.profile.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 3109 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-arv-careplan-definitions.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 997 column 45
+ERROR: /github/workspace/output/StructureDefinition-pregnancy-status-examples.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 382 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-condition.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 819 column 45
+ERROR: /github/workspace/output/references.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 302 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load-mappings.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 540 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-patient.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 876 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-specimen-mappings.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 469 column 45
+ERROR: /github/workspace/output/StructureDefinition-arv-therapy-summary.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 735 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-recency-result.profile.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 371 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-patient-definitions.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 874 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-cd4-observation.profile.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 371 column 45
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire-long_HIVTransmissionRoute.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 392 column 45
+ERROR: /github/workspace/output/follow-up.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 302 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-patient-examples.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 382 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-recency-result-examples.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 382 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-recency-result.profile.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2931 column 45
+ERROR: /github/workspace/output/StructureDefinition-model-hiv-record-mappings.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 387 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-recency-result.profile.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 3184 column 45
+ERROR: /github/workspace/output/downloads.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 333 column 45
+ERROR: /github/workspace/output/StructureDefinition-arv-therapy-summary.profile.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 371 column 45
+ERROR: /github/workspace/output/StructureDefinition-ethnicity.profile.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 699 column 45
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire-long_HIVTransmissionRoute.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 350 column 45
+ERROR: /github/workspace/output/StructureDefinition-ext-specimen-collection-place.profile.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 704 column 45
+ERROR: /github/workspace/output/StructureDefinition-model-hiv-record-definitions.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 477 column 45
+ERROR: /github/workspace/output/StructureDefinition-pregnancy-status-mappings.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 540 column 45
+ERROR: /github/workspace/output/ValueSet-HIVRecencyResults.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 373 column 45
+ERROR: /github/workspace/output/Questionnaire-HIVCaseReportForm.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 621 column 45
+ERROR: /github/workspace/output/StructureDefinition-ethnicity.profile.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 371 column 45
+ERROR: /github/workspace/output/StructureDefinition-arv-therapy-summary-definitions.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 640 column 45
+ERROR: /github/workspace/output/Questionnaire-HIVCaseReportForm.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 350 column 45
+ERROR: /github/workspace/output/Questionnaire-HIVCaseReportForm.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 667 column 45
+ERROR: /github/workspace/output/ValueSet-HIVRecencyResults.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 381 column 45
+ERROR: /github/workspace/output/changes.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 297 column 45
+ERROR: /github/workspace/output/StructureDefinition-model-hiv-record.profile.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 371 column 45
+ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report.profile.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2728 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-patient.profile.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2402 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-arv-careplan-examples.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 382 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load.profile.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2790 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-condition-examples.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 382 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-cd4-observation.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 936 column 45
+ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report.profile.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 371 column 45
+ERROR: /github/workspace/output/StructureDefinition-arv-therapy-summary.profile.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 1559 column 45
+ERROR: /github/workspace/output/StructureDefinition-arv-therapy-summary.profile.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 1689 column 45
+ERROR: /github/workspace/output/ValueSet-vs-ethnicity.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 380 column 45
+ERROR: /github/workspace/output/StructureDefinition-model-hiv-record.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 753 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-risk-factor.profile.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2152 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-arv-careplan.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 889 column 45
+ERROR: /github/workspace/output/StructureDefinition-ethnicity-mappings.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 389 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-risk-factor.profile.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2195 column 45
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire-long_PregnancyOutcomeCodes.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 350 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-risk-factor-examples.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 382 column 45
+ERROR: /github/workspace/output/StructureDefinition-ethnicity.profile.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 679 column 45
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire-long.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 445 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-recency-result-mappings.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 544 column 45
+ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report-examples.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 382 column 45
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire-long.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 1124 column 45
+ERROR: /github/workspace/output/ValueSet-HIVRecencyResults.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 365 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-hiv-case-id.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 369 column 45
+ERROR: /github/workspace/output/ValueSet-HIVRecencyResults.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 350 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-patient.profile.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 371 column 45
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire-long_HIVRiskBehavior.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 350 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-recency-result-definitions.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 943 column 45
+ERROR: /github/workspace/output/ValueSet-vs-ethnicity.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 400 column 45
+ERROR: /github/workspace/output/StructureDefinition-pregnancy-status.profile.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 371 column 45
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire-long_Gender.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 350 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-cd4-observation-examples.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 382 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-cd4-observation.profile.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2790 column 45
+ERROR: /github/workspace/output/analytics.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 302 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-patient.profile.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2708 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-insurance-id.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 378 column 45
+ERROR: /github/workspace/output/exchange.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 302 column 45
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire-long_PregnancyOutcomeCodes.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 392 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-risk-factor.profile.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 371 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-specimen-definitions.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 836 column 45
+ERROR: /github/workspace/output/StructureDefinition-ethnicity.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 633 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 937 column 45
+ERROR: /github/workspace/output/ValueSet-HIVRecencyResults.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 398 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-cd4-observation-mappings.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 540 column 45
+ERROR: /github/workspace/output/StructureDefinition-pregnancy-status.profile.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2790 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-arv-careplan.profile.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 3256 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load-examples.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 382 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-cd4-observation.profile.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2863 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-arv-id.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 350 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load.profile.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2862 column 45
+ERROR: /github/workspace/output/StructureDefinition-ext-specimen-collection-place.profile.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 746 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-insurance-id.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 369 column 45
+ERROR: /github/workspace/output/toc.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 286 column 45
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire-long_ChildHIVStatus.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 350 column 45
+ERROR: /github/workspace/output/StructureDefinition-arv-therapy-summary-mappings.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 441 column 45
+ERROR: /github/workspace/output/data_extraction.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 327 column 45
+ERROR: /github/workspace/output/StructureDefinition-ext-specimen-collection-place-mappings.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 389 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-specimen.profile.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2454 column 45
+ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report.profile.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 3384 column 45
+ERROR: /github/workspace/output/ValueSet-vs-ethnicity.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 350 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-patient-mappings.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 493 column 45
+ERROR: /github/workspace/output/artifacts.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 567 column 45
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire-long_ChildHIVStatus.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 392 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-recency-result.profile.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2854 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-cd4-observation-definitions.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 928 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-insurance-id.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 350 column 45
+ERROR: /github/workspace/output/Questionnaire-HIVCaseReportForm.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 675 column 45
+ERROR: /github/workspace/output/StructureDefinition-ethnicity.profile.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 738 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-specimen.profile.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 371 column 45
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire-long_Gender.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 392 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load-definitions.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 928 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load.profile.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 3109 column 45
+ERROR: /github/workspace/output/index.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 324 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-passport-id.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 378 column 45
+ERROR: /github/workspace/output/StructureDefinition-model-hiv-record.profile.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 1117 column 45
+ERROR: /github/workspace/output/StructureDefinition-pregnancy-status.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 937 column 45
+ERROR: /github/workspace/output/StructureDefinition-ext-specimen-collection-place-definitions.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 429 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-hiv-case-id.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 338 column 45
+ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report.profile.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 3046 column 45
+ERROR: /github/workspace/output/StructureDefinition-ext-specimen-collection-place.profile.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 690 column 45
+ERROR: /github/workspace/output/StructureDefinition-ethnicity-definitions.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 429 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-risk-factor.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 819 column 45
+ERROR: /github/workspace/output/StructureDefinition-model-hiv-record.profile.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 1247 column 45
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire-long_HIVRiskBehavior.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 392 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-condition.profile.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2195 column 45
+ERROR: /github/workspace/output/StructureDefinition-ext-specimen-collection-place.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 637 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-risk-factor-mappings.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 501 column 45
+ERROR: /github/workspace/output/case_record.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 325 column 45
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire-long_BirthDefects.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 350 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-condition-mappings.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 501 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-passport-id.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 338 column 45
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire-long_HIVRiskPopulation.change.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 350 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-arv-careplan.profile.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2945 column 45
+ERROR: /github/workspace/output/ValueSet-vs-ethnicity.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 370 column 45
+ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report-mappings.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 387 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-insurance-id.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 338 column 45
+ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report-definitions.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 697 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load.profile.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 371 column 45
+ERROR: /github/workspace/output/StructureDefinition-arv-therapy-summary.profile.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 1573 column 45
+ERROR: /github/workspace/output/case_reporting.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 321 column 45
+ERROR: /github/workspace/output/StructureDefinition-arv-therapy-summary-examples.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 382 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-specimen.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 886 column 45
+ERROR: /github/workspace/output/use_case_overview.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 352 column 45
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire-long.xml.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 1173 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-insurance-id.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 385 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-recency-result.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 939 column 45
+ERROR: /github/workspace/output/StructureDefinition-pregnancy-status.profile.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 3109 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-condition.profile.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 371 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-arv-id.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 338 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-specimen.profile.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 2757 column 45
+ERROR: /github/workspace/output/StructureDefinition-hiv-arv-careplan-mappings.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 499 column 45
+ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 1035 column 45
+ERROR: /github/workspace/output/StructureDefinition-ext-specimen-collection-place.profile.history.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 371 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-hiv-case-id.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 378 column 45
+ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire-long_HIVRiskPopulation.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 392 column 45
+ERROR: /github/workspace/output/StructureDefinition-pregnancy-status-definitions.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 928 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-arv-id.json.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 378 column 45
+ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire-long.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 1005 column 45
+ERROR: /github/workspace/output/NamingSystem-ns-hiv-case-id.ttl.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 385 column 45
+ERROR: /github/workspace/output/Questionnaire-HIVCaseReportForm.html: unable to parse character reference '''' (last text = '
+        $(':header[id]').each(function() {
+          var id = $(this).attr('id');
+          var formVars = new Set();  
+            formVars.add("sectionId");  
+            formVars.add("pageTitle");  
+            formVars.add("sectionName");  
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';
+            ;
+
+            
+            var parameterFieldId = '';
+            var parameterVariableName = '';
+            var parameterValue = '';
+/* ' at line 384 column 45
+== /github/workspace/fsh-generated/resources/NamingSystem-ns-arv-id.json ==
+INFORMATION: NamingSystem/ns-arv-id: NamingSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem
+== /github/workspace/fsh-generated/resources/NamingSystem-ns-hiv-case-id.json ==
+INFORMATION: NamingSystem/ns-hiv-case-id: NamingSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem
+== /github/workspace/fsh-generated/resources/NamingSystem-ns-insurance-id.json ==
+INFORMATION: NamingSystem/ns-insurance-id: NamingSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem
+== /github/workspace/fsh-generated/resources/NamingSystem-ns-passport-id.json ==
+INFORMATION: NamingSystem/ns-passport-id: NamingSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem
 == /github/workspace/fsh-generated/resources/Questionnaire-HIVCaseReportForm.json ==
 INFORMATION: Questionnaire/HIVCaseReportForm: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
 ERROR: Questionnaire/HIVCaseReportForm: Questionnaire: que-2: The link ids for groups and questions must be unique within the questionnaire [descendants().linkId.isDistinct()]
+== /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire-long.json ==
+INFORMATION: Questionnaire/hiv-case-report-questionnaire-long: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
+ERROR: Questionnaire/hiv-case-report-questionnaire-long: Questionnaire: dom-3: If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource ( (unmatched: HIVRiskPopulation)) [contained.where(((('#' + id) in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()]
+INFORMATION: Questionnaire/hiv-case-report-questionnaire-long: Questionnaire.contained[0].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: Questionnaire/hiv-case-report-questionnaire-long: Questionnaire.contained[1].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: Questionnaire/hiv-case-report-questionnaire-long: Questionnaire.contained[2].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: Questionnaire/hiv-case-report-questionnaire-long: Questionnaire.contained[3].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: Questionnaire/hiv-case-report-questionnaire-long: Questionnaire.contained[4].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: Questionnaire/hiv-case-report-questionnaire-long: Questionnaire.contained[5].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: Questionnaire/hiv-case-report-questionnaire-long: Questionnaire.contained[6].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+ERROR: Questionnaire/hiv-case-report-questionnaire-long: Questionnaire.extension[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap is unknown, and not allowed here
+ERROR: Questionnaire/hiv-case-report-questionnaire-long: Questionnaire.extension[0].url: URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' does not resolve
+ERROR: Questionnaire/hiv-case-report-questionnaire-long: Questionnaire.item[5].item[0].item[1].item[1].answerValueSet: Canonical URLs must be absolute URLs if they are not fragment references (VSEthnicity) 
+ERROR: Questionnaire/hiv-case-report-questionnaire-long: Questionnaire.item[5].item[1].item[0]: que-1: Group items must have nested items, display items cannot have nested items [((type = 'group') implies item.empty().not()) and ((type.trace('type') = 'display') implies item.trace('item').empty())]
+ERROR: Questionnaire/hiv-case-report-questionnaire-long: Questionnaire.item[5].item[3].item[0].item[3].answerValueSet: Canonical URLs must be absolute URLs if they are not fragment references (HIVRecencyResults) 
+ERROR: Questionnaire/hiv-case-report-questionnaire-long: Questionnaire.item[5].item[3].item[1].item[1].answerValueSet: Canonical URLs must be absolute URLs if they are not fragment references (HIVRecencyResults) 
+== /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary.json ==
+INFORMATION: StructureDefinition/arv-therapy-summary: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/arv-therapy-summary'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-ethnicity.json ==
+INFORMATION: StructureDefinition/ethnicity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/ethnicity'): The Implementation Guide contains no examples for this extension
+== /github/workspace/fsh-generated/resources/StructureDefinition-ext-specimen-collection-place.json ==
+INFORMATION: StructureDefinition/ext-specimen-collection-place: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/ext-specimen-collection-place'): The Implementation Guide contains no examples for this extension
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-careplan.json ==
+INFORMATION: StructureDefinition/hiv-arv-careplan: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/hiv-arv-careplan'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-cd4-observation.json ==
+INFORMATION: StructureDefinition/hiv-cd4-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/hiv-cd4-observation'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-condition.json ==
+INFORMATION: StructureDefinition/hiv-condition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/hiv-condition'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient.json ==
+INFORMATION: StructureDefinition/hiv-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/hiv-patient'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-recency-result.json ==
+INFORMATION: StructureDefinition/hiv-recency-result: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/hiv-recency-result'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-risk-factor.json ==
+INFORMATION: StructureDefinition/hiv-risk-factor: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/hiv-risk-factor'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-specimen.json ==
+INFORMATION: StructureDefinition/hiv-specimen: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/hiv-specimen'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-viral-load.json ==
+INFORMATION: StructureDefinition/hiv-viral-load: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/hiv-viral-load'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-pregnancy-status.json ==
+INFORMATION: StructureDefinition/pregnancy-status: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/pregnancy-status'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/ValueSet-HIVRecencyResults.json ==
+INFORMATION: ValueSet/HIVRecencyResults: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vs-ethnicity.json ==
+INFORMATION: ValueSet/vs-ethnicity: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+WARNING: ValueSet.where(id = 'vs-ethnicity'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.114222.4.11.877
 == /github/workspace/input/models/model-hiv-case-report.json ==
 ERROR: StructureDefinition.where(url = 'https://www.openhie.org/fhir/hiv/StructureDefinition/model-hiv-case-report'): Conformance resource /github/workspace/input/models/model-hiv-case-report.json - the canonical URL (http://openhie.org/fhir/StructureDefinition/model-hiv-case-report) does not match the URL (https://www.openhie.org/fhir/hiv/StructureDefinition/model-hiv-case-report)
 INFORMATION: StructureDefinition/model-hiv-case-report: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
@@ -200,11 +3512,21 @@ WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[38]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[39]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[40]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
-WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[64].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[65].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[75]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[76]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[77]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[79]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[80]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[81]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[82]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[83]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[84]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[85]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[86]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[87]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[88]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[89]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[9]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[11]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[14]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
@@ -224,11 +3546,21 @@ WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differen
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[36]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[37]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[38]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
-WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[62].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[63].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[73]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[74]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[75]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[77]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[78]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[79]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[80]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[81]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[82]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[83]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[84]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[85]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[86]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
+WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.differential.element[87]: eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
 ERROR: /github/workspace/input/models/model-hiv-case-report: URL Mismatch http://openhie.org/fhir/StructureDefinition/model-hiv-case-report vs https://www.openhie.org/fhir/hiv/StructureDefinition/model-hiv-case-report
 == /github/workspace/input/models/model-hiv-record.json ==
 ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv/StructureDefinition/model-hiv-record'): Conformance resource /github/workspace/input/models/model-hiv-record.json - the canonical URL (http://openhie.org/fhir/StructureDefinition/model-hiv-record) does not match the URL (http://openhie.org/fhir/hiv/StructureDefinition/model-hiv-record)

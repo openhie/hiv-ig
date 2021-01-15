@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "id": "HIVRecencyResults",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+  },
+  "url": "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+  "version": "0.2.0",
+  "name": "HIVRecencyResults",
+  "title": "Gender",
+  "status": "draft",
+  "date": "2021-01-15T21:24:59+00:00",
+  "publisher": "openHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "HIV recency result codes",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ]
+}

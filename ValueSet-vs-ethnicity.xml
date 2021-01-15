@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-ethnicity"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>urn:oid:2.16.840.1.114222.4.11.877</code></li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/ValueSet/vs-ethnicity"/>
+  <version value="0.2.0"/>
+  <name value="VSEthnicity"/>
+  <title value="Ethnicity"/>
+  <status value="draft"/>
+  <date value="2021-01-15T21:24:59+00:00"/>
+  <publisher value="openHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="Ethnicity"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.114222.4.11.877"/>
+    </include>
+  </compose>
+</ValueSet>

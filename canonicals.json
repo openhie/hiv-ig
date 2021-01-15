@@ -7,11 +7,144 @@
     "name": "HIVCaseReporting"
   },
   {
+    "id": "ns-arv-id",
+    "type": "NamingSystem",
+    "url": "http://openhie.org/fhir/NamingSystem/ns-arv-id",
+    "version": "0.2.0",
+    "name": "NSARVID"
+  },
+  {
+    "id": "ns-hiv-case-id",
+    "type": "NamingSystem",
+    "url": "http://openhie.org/fhir/NamingSystem/ns-hiv-case-id",
+    "version": "0.2.0",
+    "name": "NSHIVID"
+  },
+  {
+    "id": "ns-insurance-id",
+    "type": "NamingSystem",
+    "url": "http://openhie.org/fhir/NamingSystem/ns-insurance-id",
+    "version": "0.2.0",
+    "name": "NSInsuranceID"
+  },
+  {
+    "id": "ns-passport-id",
+    "type": "NamingSystem",
+    "url": "http://openhie.org/fhir/NamingSystem/ns-passport-id",
+    "version": "0.2.0",
+    "name": "NSPassportID"
+  },
+  {
     "id": "HIVCaseReportForm",
     "type": "Questionnaire",
     "url": "http://openhie.org/fhir/Questionnaire/HIVCaseReportForm",
     "version": "0.2.0",
     "name": "HIVCaseReportForm"
+  },
+  {
+    "id": "hiv-case-report-questionnaire-long",
+    "type": "Questionnaire",
+    "url": "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire-long",
+    "version": "0.2.0",
+    "name": "HIVCaseReportForm"
+  },
+  {
+    "id": "arv-therapy-summary",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/arv-therapy-summary",
+    "version": "0.2.0",
+    "name": "ARVTherapySummary"
+  },
+  {
+    "id": "ethnicity",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/ethnicity",
+    "version": "0.2.0",
+    "name": "Ethnicity"
+  },
+  {
+    "id": "ext-specimen-collection-place",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/ext-specimen-collection-place",
+    "version": "0.2.0",
+    "name": "SpecimenCollectionPlace"
+  },
+  {
+    "id": "hiv-arv-careplan",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/hiv-arv-careplan",
+    "version": "0.2.0",
+    "name": "ARVCarePlan"
+  },
+  {
+    "id": "hiv-cd4-observation",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/hiv-cd4-observation",
+    "version": "0.2.0",
+    "name": "CD4Observation"
+  },
+  {
+    "id": "hiv-condition",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/hiv-condition",
+    "version": "0.2.0",
+    "name": "HIVCondition"
+  },
+  {
+    "id": "hiv-patient",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/hiv-patient",
+    "version": "0.2.0",
+    "name": "HIVPatient"
+  },
+  {
+    "id": "hiv-recency-result",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/hiv-recency-result",
+    "version": "0.2.0",
+    "name": "HIVRecencyResult"
+  },
+  {
+    "id": "hiv-risk-factor",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/hiv-risk-factor",
+    "version": "0.2.0",
+    "name": "HIVRiskFactor"
+  },
+  {
+    "id": "hiv-specimen",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/hiv-specimen",
+    "version": "0.2.0",
+    "name": "HIVSpecimen"
+  },
+  {
+    "id": "hiv-viral-load",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/hiv-viral-load",
+    "version": "0.2.0",
+    "name": "ViralLoad"
+  },
+  {
+    "id": "pregnancy-status",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/pregnancy-status",
+    "version": "0.2.0",
+    "name": "PregnancyStatus"
+  },
+  {
+    "id": "HIVRecencyResults",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+    "version": "0.2.0",
+    "name": "HIVRecencyResults"
+  },
+  {
+    "id": "vs-ethnicity",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/ValueSet/vs-ethnicity",
+    "version": "0.2.0",
+    "name": "VSEthnicity"
   },
   {
     "id": "model-hiv-record",

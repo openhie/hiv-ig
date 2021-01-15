@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-ethnicity",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>urn:oid:2.16.840.1.114222.4.11.877</code></li></ul></div>"
+  },
+  "url": "http://openhie.org/fhir/ValueSet/vs-ethnicity",
+  "version": "0.2.0",
+  "name": "VSEthnicity",
+  "title": "Ethnicity",
+  "status": "draft",
+  "date": "2021-01-15T21:24:59+00:00",
+  "publisher": "openHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "Ethnicity",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.114222.4.11.877"
+      }
+    ]
+  }
+}

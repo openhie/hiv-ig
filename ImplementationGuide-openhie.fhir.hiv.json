@@ -11,7 +11,7 @@
   "title": "HIV Case Reporting and Monitoring",
   "status": "draft",
   "experimental": false,
-  "date": "2020-12-19T15:44:18+00:00",
+  "date": "2021-01-15T21:24:59+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -89,6 +89,19 @@
           {
             "url": "value",
             "valueString": "templates\\liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "show-inherited-invariants"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -328,6 +341,23 @@
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       }
     ],
+    "grouping": [
+      {
+        "id": "caseReport",
+        "name": "HIV Case Report",
+        "description": "HIV Case Report artifacts"
+      },
+      {
+        "id": "longitudinalRecord",
+        "name": "HIV Longitudinal Record",
+        "description": "HIV Longitudinal record"
+      },
+      {
+        "id": "vocabulary",
+        "name": "Vocabulary",
+        "description": "Vocabulary resources"
+      }
+    ],
     "resource": [
       {
         "extension": [
@@ -340,7 +370,22 @@
           "reference": "StructureDefinition/model-hiv-case-report"
         },
         "name": "Case Report Logical Model",
-        "description": "Logical Model for a patient's monthly case report"
+        "description": "Logical Model for a patient's monthly case report",
+        "groupingId": "caseReport"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/hiv-case-report-questionnaire-long"
+        },
+        "name": "Case Report Questionnaire",
+        "description": "Questionnaire for case report",
+        "groupingId": "caseReport"
       },
       {
         "extension": [
@@ -352,8 +397,200 @@
         "reference": {
           "reference": "StructureDefinition/model-hiv-record"
         },
-        "name": "HIV Record Logical Model",
-        "description": "HIV Longitudinal record Logical Model"
+        "name": "HIV Longitudinal Record Logical Model",
+        "description": "HIV Longitudinal record Logical Model",
+        "groupingId": "longitudinalRecord"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-patient"
+        },
+        "name": "HIV patient",
+        "description": "Profile - HIV patient",
+        "groupingId": "longitudinalRecord"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ethnicity"
+        },
+        "name": "Patient Ethnicity",
+        "description": "Extension - Patient Ethnicity",
+        "groupingId": "longitudinalRecord"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-recency-result"
+        },
+        "name": "HIV recency test result",
+        "description": "Profile - HIV recency test result",
+        "groupingId": "longitudinalRecord"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-viral-load"
+        },
+        "name": "Viral Load",
+        "description": "Profile - HIV viral load test result",
+        "groupingId": "longitudinalRecord"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-specimen"
+        },
+        "name": "Specimen",
+        "description": "Profile - Specimen",
+        "groupingId": "longitudinalRecord"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ext-specimen-collection-place"
+        },
+        "name": "Specimen collection place",
+        "description": "Extension - specimen collection place",
+        "groupingId": "longitudinalRecord"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-risk-factor"
+        },
+        "name": "Risk factor",
+        "description": "Profile - HIV risk factor",
+        "groupingId": "longitudinalRecord"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pregnancy-status"
+        },
+        "name": "Pregnancy status",
+        "description": "Profile - pregnancy status",
+        "groupingId": "longitudinalRecord"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/arv-therapy-summary"
+        },
+        "name": "ARV Therapy",
+        "description": "Profile - ARV therapy",
+        "groupingId": "longitudinalRecord"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-ethnicity"
+        },
+        "name": "Ethnicity",
+        "description": "ValueSet - patient ethnicity",
+        "groupingId": "longitudinalRecord"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/HIVRecencyResults"
+        },
+        "name": "HIVRecencyResults",
+        "description": "HIV Recency Results",
+        "groupingId": "longitudinalRecord"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "NamingSystem"
+          }
+        ],
+        "reference": {
+          "reference": "NamingSystem/ns-insurance-id"
+        },
+        "description": "Naming System - Insurance identifiers"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-arv-careplan"
+        },
+        "name": "ARVCarePlan",
+        "description": "This profile allows the exchange of a patient's ARV treatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "NamingSystem"
+          }
+        ],
+        "reference": {
+          "reference": "NamingSystem/ns-passport-id"
+        },
+        "description": "Naming System - Passport identifiers"
       },
       {
         "extension": [
@@ -365,6 +602,56 @@
         "reference": {
           "reference": "Questionnaire/HIVCaseReportForm"
         }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "NamingSystem"
+          }
+        ],
+        "reference": {
+          "reference": "NamingSystem/ns-hiv-case-id"
+        },
+        "description": "Naming System - HIV Case identifiers"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-condition"
+        },
+        "name": "HIVRiskBehavior",
+        "description": "This profile allows the exchange of a patient's hiv diagnosis"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "NamingSystem"
+          }
+        ],
+        "reference": {
+          "reference": "NamingSystem/ns-arv-id"
+        },
+        "description": "Naming System - ARV treatment identifiers"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-cd4-observation"
+        },
+        "name": "CD4Observation",
+        "description": "This profile allows the exchange of a patient's CD$ test and results"
       }
     ],
     "page": {
@@ -374,8 +661,53 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "MyIG Home Page",
+          "title": "Home Page",
           "generation": "html"
+        },
+        {
+          "nameUrl": "methodology.html",
+          "title": "Methodology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "references.html",
+          "title": "References",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "use_case_overview.html",
+          "title": "Use Case Overview",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "case_reporting.html",
+          "title": "Case Reporting",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "case_record.html",
+          "title": "Case Record",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "analytics.html",
+          "title": "Data Analytics",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "follow-up.html",
+          "title": "Case Follow-up",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "exchange.html",
+          "title": "Data Exchange",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "data_extraction.html",
+          "title": "Data Extraction and Mapping",
+          "generation": "markdown"
         },
         {
           "nameUrl": "downloads.html",

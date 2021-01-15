@@ -1,9 +1,449 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8c7e7f0e-88c2-4054-add4-2de66e0e791e"/>
+  <id value="d983ebb5-99f1-4514-93cc-3e2910b681ee"/>
   <meta>
-    <lastUpdated value="2020-12-19T15:44:18.344+00:00"/>
+    <lastUpdated value="2021-01-15T21:24:59.892+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+    <resource>
+      <ValueSet>
+        <id value="HIVRecencyResults"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+        <version value="0.2.0"/>
+        <name value="HIVRecencyResults"/>
+        <title value="Gender"/>
+        <status value="draft"/>
+        <date value="2021-01-15T21:24:59+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="HIV recency result codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:bd1a3b14-c148-438d-859c-97dad4a74f18"/>
+          <timestamp value="2021-01-15T21:25:18+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+    <resource>
+      <ValueSet>
+        <id value="HIVRecencyResults"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+        <version value="0.2.0"/>
+        <name value="HIVRecencyResults"/>
+        <title value="Gender"/>
+        <status value="draft"/>
+        <date value="2021-01-15T21:24:59+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="HIV recency result codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:bd1a3b14-c148-438d-859c-97dad4a74f18"/>
+          <timestamp value="2021-01-15T21:25:18+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+    <resource>
+      <ValueSet>
+        <id value="HIVRecencyResults"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+        <version value="0.2.0"/>
+        <name value="HIVRecencyResults"/>
+        <title value="Gender"/>
+        <status value="draft"/>
+        <date value="2021-01-15T21:24:59+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="HIV recency result codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:bd1a3b14-c148-438d-859c-97dad4a74f18"/>
+          <timestamp value="2021-01-15T21:25:18+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+    <resource>
+      <ValueSet>
+        <id value="HIVRecencyResults"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+        <version value="0.2.0"/>
+        <name value="HIVRecencyResults"/>
+        <title value="Gender"/>
+        <status value="draft"/>
+        <date value="2021-01-15T21:24:59+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="HIV recency result codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:bd1a3b14-c148-438d-859c-97dad4a74f18"/>
+          <timestamp value="2021-01-15T21:25:18+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+    <resource>
+      <ValueSet>
+        <id value="HIVRecencyResults"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+        <version value="0.2.0"/>
+        <name value="HIVRecencyResults"/>
+        <title value="Gender"/>
+        <status value="draft"/>
+        <date value="2021-01-15T21:24:59+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="HIV recency result codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:bd1a3b14-c148-438d-859c-97dad4a74f18"/>
+          <timestamp value="2021-01-15T21:25:18+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+    <resource>
+      <ValueSet>
+        <id value="HIVRecencyResults"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+        <version value="0.2.0"/>
+        <name value="HIVRecencyResults"/>
+        <title value="Gender"/>
+        <status value="draft"/>
+        <date value="2021-01-15T21:24:59+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="HIV recency result codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:bd1a3b14-c148-438d-859c-97dad4a74f18"/>
+          <timestamp value="2021-01-15T21:25:18+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+    <resource>
+      <ValueSet>
+        <id value="HIVRecencyResults"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+        <version value="0.2.0"/>
+        <name value="HIVRecencyResults"/>
+        <title value="Gender"/>
+        <status value="draft"/>
+        <date value="2021-01-15T21:24:59+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="HIV recency result codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:bd1a3b14-c148-438d-859c-97dad4a74f18"/>
+          <timestamp value="2021-01-15T21:25:18+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+    <resource>
+      <ValueSet>
+        <id value="HIVRecencyResults"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+        <version value="0.2.0"/>
+        <name value="HIVRecencyResults"/>
+        <title value="Gender"/>
+        <status value="draft"/>
+        <date value="2021-01-15T21:24:59+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="HIV recency result codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:bd1a3b14-c148-438d-859c-97dad4a74f18"/>
+          <timestamp value="2021-01-15T21:25:18+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

@@ -1,8 +1,320 @@
 {
   "resourceType" : "Bundle",
-  "id" : "8c7e7f0e-88c2-4054-add4-2de66e0e791e",
+  "id" : "d983ebb5-99f1-4514-93cc-3e2910b681ee",
   "meta" : {
-    "lastUpdated" : "2020-12-19T15:44:18.344+00:00"
+    "lastUpdated" : "2021-01-15T21:24:59.892+00:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "HIVRecencyResults",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+      "version" : "0.2.0",
+      "name" : "HIVRecencyResults",
+      "title" : "Gender",
+      "status" : "draft",
+      "date" : "2021-01-15T21:24:59+00:00",
+      "publisher" : "openHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://hl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "HIV recency result codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:bd1a3b14-c148-438d-859c-97dad4a74f18",
+        "timestamp" : "2021-01-15T21:25:18+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "HIVRecencyResults",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+      "version" : "0.2.0",
+      "name" : "HIVRecencyResults",
+      "title" : "Gender",
+      "status" : "draft",
+      "date" : "2021-01-15T21:24:59+00:00",
+      "publisher" : "openHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://hl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "HIV recency result codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:bd1a3b14-c148-438d-859c-97dad4a74f18",
+        "timestamp" : "2021-01-15T21:25:18+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "HIVRecencyResults",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+      "version" : "0.2.0",
+      "name" : "HIVRecencyResults",
+      "title" : "Gender",
+      "status" : "draft",
+      "date" : "2021-01-15T21:24:59+00:00",
+      "publisher" : "openHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://hl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "HIV recency result codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:bd1a3b14-c148-438d-859c-97dad4a74f18",
+        "timestamp" : "2021-01-15T21:25:18+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "HIVRecencyResults",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+      "version" : "0.2.0",
+      "name" : "HIVRecencyResults",
+      "title" : "Gender",
+      "status" : "draft",
+      "date" : "2021-01-15T21:24:59+00:00",
+      "publisher" : "openHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://hl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "HIV recency result codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:bd1a3b14-c148-438d-859c-97dad4a74f18",
+        "timestamp" : "2021-01-15T21:25:18+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "HIVRecencyResults",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+      "version" : "0.2.0",
+      "name" : "HIVRecencyResults",
+      "title" : "Gender",
+      "status" : "draft",
+      "date" : "2021-01-15T21:24:59+00:00",
+      "publisher" : "openHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://hl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "HIV recency result codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:bd1a3b14-c148-438d-859c-97dad4a74f18",
+        "timestamp" : "2021-01-15T21:25:18+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "HIVRecencyResults",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+      "version" : "0.2.0",
+      "name" : "HIVRecencyResults",
+      "title" : "Gender",
+      "status" : "draft",
+      "date" : "2021-01-15T21:24:59+00:00",
+      "publisher" : "openHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://hl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "HIV recency result codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:bd1a3b14-c148-438d-859c-97dad4a74f18",
+        "timestamp" : "2021-01-15T21:25:18+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "HIVRecencyResults",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+      "version" : "0.2.0",
+      "name" : "HIVRecencyResults",
+      "title" : "Gender",
+      "status" : "draft",
+      "date" : "2021-01-15T21:24:59+00:00",
+      "publisher" : "openHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://hl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "HIV recency result codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:bd1a3b14-c148-438d-859c-97dad4a74f18",
+        "timestamp" : "2021-01-15T21:25:18+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "HIVRecencyResults",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+      "version" : "0.2.0",
+      "name" : "HIVRecencyResults",
+      "title" : "Gender",
+      "status" : "draft",
+      "date" : "2021-01-15T21:24:59+00:00",
+      "publisher" : "openHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://hl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "HIV recency result codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:bd1a3b14-c148-438d-859c-97dad4a74f18",
+        "timestamp" : "2021-01-15T21:25:18+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  }]
 }
