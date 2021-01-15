@@ -3,7 +3,7 @@
 
 err = 21, warn = 100, info = 0
 IG Publisher Version: 1.1.57
-Generated Fri Jan 15 21:25:30 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir)
+Generated Fri Jan 15 21:25:43 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir)
 
  Build Errors : 185 / 1 / 0
  /github/workspace/fsh-generated/resources/NamingSystem-ns-arv-id : 0 / 0 / 1
