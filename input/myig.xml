@@ -46,36 +46,171 @@
 <reference value="MyLogicalModel/AS"/>
 </reference>
 </resource> -->
-<!--    <resource>
-      <reference>
-        <reference value="Library/example"/>
-      </reference>
-      <name value="Simple library example"/>
-      <description value="A simple example showing how library is pre-loaded"/>
-    </resource> -->
-<!--
-      <resource>
-      <reference>
-        <reference value="ExampleScenario/scenario-allergy"/>
-      </reference>
-      <name value="Example Scenario - Allergy / Intolerance"/>
-      <description value="Overriding description because we can"/>
-    </resource>
--->    
+    <grouping id="caseReport">
+       <name value="HIV Case Report" />
+       <description value="HIV Case Report artifacts" />
+    </grouping>
+    <grouping id="longitudinalRecord">
+       <name value="HIV Longitudinal Record" />
+       <description value="HIV Longitudinal record" />
+    </grouping>
+    <grouping id="vocabulary">
+       <name value="Vocabulary" />
+       <description value="Vocabulary resources" />
+    </grouping>
+
     <resource>
       <reference>
         <reference value="StructureDefinition/model-hiv-case-report"/>
       </reference>
       <name value="Case Report Logical Model"/>
       <description value="Logical Model for a patient's monthly case report"/>
+      <groupingId value="caseReport" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hiv-case-report-questionnaire-long"/>
+      </reference>
+      <name value="Case Report Questionnaire"/>
+      <description value="Questionnaire for case report"/>
+      <groupingId value="caseReport" />
     </resource>    
+
+
+<!--
+
+hiv-patient
+ext-patient-ethnicity
+
+hiv-recency-result
+hiv-viral-load
+ext-specimen-collection-place
+hiv-specimen
+
+
+risk-factor
+pregnancy-status
+art-therapy-summary
+
+HIVRecencyResults
+Ethnicity
+
+-->
+
     <resource>
       <reference>
         <reference value="StructureDefinition/model-hiv-record"/>
       </reference>
-      <name value="HIV Record Logical Model"/>
+      <name value="HIV Longitudinal Record Logical Model"/>
       <description value="HIV Longitudinal record Logical Model"/>
+      <groupingId value="longitudinalRecord" />
     </resource>    
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hiv-patient"/>
+      </reference>
+      <name value="HIV patient"/>
+      <description value="Profile - HIV patient"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ethnicity"/>
+      </reference>
+      <name value="Patient Ethnicity"/>
+      <description value="Extension - Patient Ethnicity"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hiv-recency-result"/>
+      </reference>
+      <name value="HIV recency test result"/>
+      <description value="Profile - HIV recency test result"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hiv-viral-load"/>
+      </reference>
+      <name value="Viral Load"/>
+      <description value="Profile - HIV viral load test result"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hiv-specimen"/>
+      </reference>
+      <name value="Specimen"/>
+      <description value="Profile - Specimen"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ext-specimen-collection-place"/>
+      </reference>
+      <name value="Specimen collection place"/>
+      <description value="Extension - specimen collection place"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+
+
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hiv-risk-factor"/>
+      </reference>
+      <name value="Risk factor"/>
+      <description value="Profile - HIV risk factor"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/pregnancy-status"/>
+      </reference>
+      <name value="Pregnancy status"/>
+      <description value="Profile - pregnancy status"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/arv-therapy-summary"/>
+      </reference>
+      <name value="ARV Therapy"/>
+      <description value="Profile - ARV therapy"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+
+<!--    <resource>
+      <reference>
+        <reference value="NamingSystem/vn-passport-number"/>
+      </reference>
+      <name value=""/>
+      <description value="Profile - ARV therapy"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+-->
+
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-ethnicity"/>
+      </reference>
+      <name value="Ethnicity"/>
+      <description value="ValueSet - patient ethnicity"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="ValueSet/HIVRecencyResults"/>
+      </reference>
+      <name value="HIVRecencyResults"/>
+      <description value="HIV Recency Results"/>
+      <groupingId value="longitudinalRecord" />
+    </resource>   
+
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -83,8 +218,59 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
+        <title value="Home Page"/>
         <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="methodology.html"/>
+        <title value="Methodology"/>
+        <generation value="markdown"/>
+      </page>
+
+
+      <page>
+        <nameUrl value="references.html"/>
+        <title value="References"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="use_case_overview.html"/>
+        <title value="Use Case Overview"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="case_reporting.html"/>
+        <title value="Case Reporting"/>
+        <generation value="markdown"/>
+      </page>
+
+      <page>
+        <nameUrl value="case_record.html"/>
+        <title value="Case Record"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="analytics.html"/>
+        <title value="Data Analytics"/>
+        <generation value="markdown"/>
+      </page>
+
+
+
+      <page>
+        <nameUrl value="follow-up.html"/>
+        <title value="Case Follow-up"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="exchange.html"/>
+        <title value="Data Exchange"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="data_extraction.html"/>
+        <title value="Data Extraction and Mapping"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="downloads.html"/>
@@ -127,6 +313,10 @@
     <parameter>
       <code value="path-liquid"/>
       <value value="templates\liquid"/>
+    </parameter>
+    <parameter>
+      <code value="show-inherited-invariants"/>
+      <value value="false"/>
     </parameter>
 <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
     <parameter>

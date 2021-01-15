@@ -1,8 +1,9 @@
 @startuml
-skinparam linetype polyline
+'skinparam linetype polyline
+'skinparam linetype ortho
 hide circle
 hide stereotype
-!pragma graphviz_dot jdot
+!pragma graphviz_dot smetana
 
 skinparam class<<AS>> {
  BorderColor DarkRed
@@ -32,7 +33,7 @@ skinparam class<<TL>> {
  HeaderBackgroundColor LimeGreen
 }
 
-package "Input Data" as InputData {
+package "HIV Case Surveillance" as HIVCaseSurveillance {
   package "Monthly Case Report" as MonthlyReport {
     class "**       XLS       **" as XLS<<MD>> {
         (Bulk import)
@@ -46,14 +47,15 @@ package "Input Data" as InputData {
         |_ Co-infections
         |_ Death
         --
+        QuestionnaireResponse
         }
-        XLS -down[hidden]- Frms
-        
+'        XLS .down.> Frms
+        XLS ..> Frms
   }
 
   
-  package "Standard Data Model" as DataModel {
-    class "**Standardized**\n**Report**" as StdReport<<TL>> {
+  package "Standard Data Layer" as DataModel {
+    class "**Standardized**\n** Case **\n**Report**" as StdReport<<TL>> {
         Report
         |_ Identification
         |_ Demographics  
@@ -62,6 +64,7 @@ package "Input Data" as InputData {
         |_ Co-infections
         |_ Death
         --
+        
     }
 
     class "**Longitudinal**\n**Record**" as Long<<TL>> {
@@ -74,47 +77,69 @@ package "Input Data" as InputData {
         |_ Death
         --
     }
-    StdReport -down- Long
-    XLS -right- StdReport: "                      "
-    Frms -right- StdReport: "              "
+    StdReport -down- Long: "                             "
+    'XLS -right- StdReport: "                                                                                    "
+    XLS -> StdReport
+    Frms -right-> StdReport: "       "
     
 
   }  
-/'
-  package " EHR  " as EHR {
-    class "**   ARV   **\n**  Data   **" as ARV<<TL>> {
-    }
+
+  package "   EHR    " as EHR {
+    class "**     ARV     **\n**  Data   **" as ARV<<TL>> {
+     --
+     MedicationUsage
+     }
     Package "**  Lab  **\n**   Data   **" as LAB<<TL>> {
         class "**     VL     **\n**     Data     **" as VL<<TL>> {
+      --
+      Observation
         }
-        class "**     CD4     **\n**     Data     **" as CD4<<TL>> {
+        class "**       CD4       **\n**     Data     **" as CD4<<TL>> {
+      --
+      Observation
         }
-        VL -right[hidden]- CD4 : " "
-        
+        VL -right[hidden]- CD4 : "              "
     }
-    class "**Recency**\n** Data **" as Recency<<TL>> {
-    }
-    class "** OTHER **\n** Data **" as OTH<<TL>> {
-        Report
-        |_ Identification  
-        |_ Demographics  
-        |_ Test Results
-        |_ ARV
-        |_ Co-infections
-        |_ Death
-        --
+  'CD4 -left[hidden]- ARV : " "
+
+    class "**    Recency     **\n** Data **" as Recency<<TL>> {
+      --
+      Observation
     }
 
-  Recency -down- VL : " "
-  ARV -right[hidden]- VL : " "
-  ARV -right[hidden]- LAB : " "
-  LAB -right[hidden]- OTH : " "
+    class "**    Other    **\n** Data **" as OTH<<TL>> {
+'        Report
+'        |_ Identification  
+'        |_ Demographics  
+'        |_ Test Results
+'        |_ ARV
+'        |_ Co-infections
+'        |_ Death
+        --
+        ...
+    }
+
+  Recency <-down- LAB : "  "
+  ARV -up[hidden]- VL : " "
+'  LAB -right[hidden]- OTH : " "
+'Recency -right[hidden]- Frms : " "
+ARV -right[hidden]- OTH : " "
+CD4 -down[hidden]- OTH : " "
+OTH -right[hidden]- Long : " "
   
   }
-'/
-
+ 
   'Long -down[hidden]- EHR
-'  Long -down[hidden]- ARV
+  Frms -down[hidden]- EHR
+ EHR -> Frms :"                  "
+ EHR ..> Long
+'  EHR -right[hidden]- DataModel
+  EHR -right[hidden]- DataModel : "                     "
+  
+caption
+HIV Case Surveillance
+endcaption
 
 
 @enduml
