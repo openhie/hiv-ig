@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8fe64e46-c4aa-4b34-97b9-a740d4516cc4"/>
+  <id value="88ac52b7-35b5-4bca-b083-d3b0af5afa7c"/>
   <meta>
-    <lastUpdated value="2021-01-16T00:38:34.447+00:00"/>
+    <lastUpdated value="2021-01-16T00:52:51.501+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -35,7 +35,7 @@
         <name value="HIVRecencyResults"/>
         <title value="HIVRecencyResults"/>
         <status value="draft"/>
-        <date value="2021-01-16T00:38:34+00:00"/>
+        <date value="2021-01-16T00:52:51+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -51,8 +51,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:eeaeb790-77e9-4d14-9300-e4eb6b8dc69e"/>
-          <timestamp value="2021-01-16T00:38:53+00:00"/>
+          <identifier value="urn:uuid:7476a1c7-e5bf-4c1a-a5e0-6d673e9319b4"/>
+          <timestamp value="2021-01-16T00:53:14+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -114,7 +114,7 @@
         <name value="VSPatientCommunicationPreferences"/>
         <title value="Patient Communication Preferences"/>
         <status value="active"/>
-        <date value="2021-01-16T00:38:34+00:00"/>
+        <date value="2021-01-16T00:52:51+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -130,8 +130,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d398a906-e489-4b2c-8933-6d53e72e49d1"/>
-          <timestamp value="2021-01-16T00:38:56+00:00"/>
+          <identifier value="urn:uuid:60a74331-fd15-4553-811e-3e32868924bb"/>
+          <timestamp value="2021-01-16T00:53:17+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -224,7 +224,7 @@
         <name value="VSPatientGender"/>
         <title value="Patient Gender"/>
         <status value="active"/>
-        <date value="2021-01-16T00:38:34+00:00"/>
+        <date value="2021-01-16T00:52:51+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -240,8 +240,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5ecdfd3e-9693-4744-a2b5-6d0c93adc5b0"/>
-          <timestamp value="2021-01-16T00:38:57+00:00"/>
+          <identifier value="urn:uuid:12baacc2-6f9b-41f2-a957-8d152d326645"/>
+          <timestamp value="2021-01-16T00:53:17+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -368,7 +368,7 @@
         <name value="VSPatientGenderIdentity"/>
         <title value="Patient Gender Identity"/>
         <status value="active"/>
-        <date value="2021-01-16T00:38:34+00:00"/>
+        <date value="2021-01-16T00:52:51+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -384,8 +384,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2b233c49-013b-4c20-a20c-0e9af41d473b"/>
-          <timestamp value="2021-01-16T00:38:57+00:00"/>
+          <identifier value="urn:uuid:17fec5d1-c7dd-4498-b200-14fb558c54ae"/>
+          <timestamp value="2021-01-16T00:53:17+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -463,7 +463,7 @@
         <name value="HIVRecencyResults"/>
         <title value="HIVRecencyResults"/>
         <status value="draft"/>
-        <date value="2021-01-16T00:38:34+00:00"/>
+        <date value="2021-01-16T00:52:51+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -479,8 +479,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:eeaeb790-77e9-4d14-9300-e4eb6b8dc69e"/>
-          <timestamp value="2021-01-16T00:38:53+00:00"/>
+          <identifier value="urn:uuid:7476a1c7-e5bf-4c1a-a5e0-6d673e9319b4"/>
+          <timestamp value="2021-01-16T00:53:14+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -518,7 +518,7 @@
         <name value="HIVRecencyResults"/>
         <title value="HIVRecencyResults"/>
         <status value="draft"/>
-        <date value="2021-01-16T00:38:34+00:00"/>
+        <date value="2021-01-16T00:52:51+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -534,8 +534,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:eeaeb790-77e9-4d14-9300-e4eb6b8dc69e"/>
-          <timestamp value="2021-01-16T00:38:53+00:00"/>
+          <identifier value="urn:uuid:7476a1c7-e5bf-4c1a-a5e0-6d673e9319b4"/>
+          <timestamp value="2021-01-16T00:53:14+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -573,7 +573,7 @@
         <name value="HIVRecencyResults"/>
         <title value="HIVRecencyResults"/>
         <status value="draft"/>
-        <date value="2021-01-16T00:38:34+00:00"/>
+        <date value="2021-01-16T00:52:51+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -589,8 +589,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:eeaeb790-77e9-4d14-9300-e4eb6b8dc69e"/>
-          <timestamp value="2021-01-16T00:38:53+00:00"/>
+          <identifier value="urn:uuid:7476a1c7-e5bf-4c1a-a5e0-6d673e9319b4"/>
+          <timestamp value="2021-01-16T00:53:14+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -628,7 +628,7 @@
         <name value="HIVRecencyResults"/>
         <title value="HIVRecencyResults"/>
         <status value="draft"/>
-        <date value="2021-01-16T00:38:34+00:00"/>
+        <date value="2021-01-16T00:52:51+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -644,8 +644,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:eeaeb790-77e9-4d14-9300-e4eb6b8dc69e"/>
-          <timestamp value="2021-01-16T00:38:53+00:00"/>
+          <identifier value="urn:uuid:7476a1c7-e5bf-4c1a-a5e0-6d673e9319b4"/>
+          <timestamp value="2021-01-16T00:53:14+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -683,7 +683,7 @@
         <name value="HIVRecencyResults"/>
         <title value="HIVRecencyResults"/>
         <status value="draft"/>
-        <date value="2021-01-16T00:38:34+00:00"/>
+        <date value="2021-01-16T00:52:51+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -699,8 +699,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:eeaeb790-77e9-4d14-9300-e4eb6b8dc69e"/>
-          <timestamp value="2021-01-16T00:38:53+00:00"/>
+          <identifier value="urn:uuid:7476a1c7-e5bf-4c1a-a5e0-6d673e9319b4"/>
+          <timestamp value="2021-01-16T00:53:14+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -738,7 +738,7 @@
         <name value="HIVRecencyResults"/>
         <title value="HIVRecencyResults"/>
         <status value="draft"/>
-        <date value="2021-01-16T00:38:34+00:00"/>
+        <date value="2021-01-16T00:52:51+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -754,8 +754,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:eeaeb790-77e9-4d14-9300-e4eb6b8dc69e"/>
-          <timestamp value="2021-01-16T00:38:53+00:00"/>
+          <identifier value="urn:uuid:7476a1c7-e5bf-4c1a-a5e0-6d673e9319b4"/>
+          <timestamp value="2021-01-16T00:53:14+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -833,7 +833,7 @@
         <name value="VSTypeOfContact"/>
         <title value="Type of contact or relationship"/>
         <status value="active"/>
-        <date value="2021-01-16T00:38:34+00:00"/>
+        <date value="2021-01-16T00:52:51+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -849,8 +849,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cf232046-4a58-4e0c-a1e5-6c35160810a0"/>
-          <timestamp value="2021-01-16T00:38:59+00:00"/>
+          <identifier value="urn:uuid:8b95fa74-cb7d-4f3a-a535-e97ebef04494"/>
+          <timestamp value="2021-01-16T00:53:19+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
