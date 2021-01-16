@@ -58,5 +58,5 @@ jobs:
           server: ftp.dlptest.com
           username: dlpuser
           password: rNrKYTX9g7z3RgJRmxWuGHbeu          
-          
-        
+          local-dir: ./output
+          server-dir: fhir/hiv/
