@@ -2,6 +2,7 @@
 # Based on the instructions from Elliot Silver, available from: https://www.argentixinfo.com/archives/156
 # Make sure your repo has a branch called gh-pages
 
+
 # Update 15-Jan-2021: This now adds a FTP upload feature. This uses a repository secret.
 # Action documentation
 # https://github.com/marketplace/actions/ftp-deploy
