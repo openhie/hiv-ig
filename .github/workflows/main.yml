@@ -1,7 +1,10 @@
 # This is a simple workflow that runs the publisher and copies the output to https://<owner>.github.io/<repo>/index.html
 # Based on the instructions from Elliot Silver, available from: https://www.argentixinfo.com/archives/156
-
 # Make sure your repo has a branch called gh-pages
+
+# Update 15-Jan-2021: This now adds a FTP upload feature. This uses a repository secret.
+# Action documentation
+# https://github.com/marketplace/actions/ftp-deploy
 
 name: CI
 
@@ -49,14 +52,14 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
 
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: ftp.dlptest.com
-          username: dlpuser
-          password: rNrKYTX9g7z3RgJRmxWuGHbeu          
-          local-dir: output/
-          server-dir: fhir/hiv/
+#      - name: 📂 Sync files
+#        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+#        with:
+#          server: ftp.dlptest.com
+#          username: dlpuser
+#          password: ${{ secrets.ftp_password }}          
+#          local-dir: output/
+#          server-dir: fhir/hiv/
 
       - name: 🚚 Get latest code
         uses: actions/checkout@v2.3.2
