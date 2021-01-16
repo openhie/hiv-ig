@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "8e096656-9731-47ce-bf95-bf821eae0f27",
+  "id" : "21bfef3e-c7e2-4ea5-ab45-c1babb42ead2",
   "meta" : {
-    "lastUpdated" : "2021-01-16T00:15:16.121+00:00"
+    "lastUpdated" : "2021-01-16T00:28:32.647+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "HIVRecencyResults",
       "title" : "HIVRecencyResults",
       "status" : "draft",
-      "date" : "2021-01-16T00:15:16+00:00",
+      "date" : "2021-01-16T00:28:32+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -35,8 +35,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e2f87d29-36a9-4b25-b3cc-b3d015a7b3d3",
-        "timestamp" : "2021-01-16T00:15:36+00:00",
+        "identifier" : "urn:uuid:fa48420f-8833-4d2b-ab5f-28131e47b3b2",
+        "timestamp" : "2021-01-16T00:28:54+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -58,7 +58,7 @@
       "name" : "VSPatientCommunicationPreferences",
       "title" : "Patient Communication Preferences",
       "status" : "active",
-      "date" : "2021-01-16T00:15:16+00:00",
+      "date" : "2021-01-16T00:28:32+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -74,8 +74,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7cd47699-b26b-4d48-974c-55d7d59d3cc4",
-        "timestamp" : "2021-01-16T00:15:39+00:00",
+        "identifier" : "urn:uuid:e06c92ca-acd9-4419-aed9-a4b84ec27dc3",
+        "timestamp" : "2021-01-16T00:28:57+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -112,7 +112,7 @@
       "name" : "VSPatientGender",
       "title" : "Patient Gender",
       "status" : "active",
-      "date" : "2021-01-16T00:15:16+00:00",
+      "date" : "2021-01-16T00:28:32+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -128,8 +128,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:db9c8ac1-e09e-4ff9-91fc-52db578e5394",
-        "timestamp" : "2021-01-16T00:15:40+00:00",
+        "identifier" : "urn:uuid:44da655d-4c74-496a-800b-43f76ba48112",
+        "timestamp" : "2021-01-16T00:28:58+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -176,7 +176,7 @@
       "name" : "VSPatientGenderIdentity",
       "title" : "Patient Gender Identity",
       "status" : "active",
-      "date" : "2021-01-16T00:15:16+00:00",
+      "date" : "2021-01-16T00:28:32+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -192,8 +192,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:aa4b1e03-2bc1-46a8-9ca4-317c20590996",
-        "timestamp" : "2021-01-16T00:15:40+00:00",
+        "identifier" : "urn:uuid:d4e5728e-ca24-4cea-bf9b-10757f3a8531",
+        "timestamp" : "2021-01-16T00:28:58+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -255,7 +255,7 @@
       "name" : "HIVRecencyResults",
       "title" : "HIVRecencyResults",
       "status" : "draft",
-      "date" : "2021-01-16T00:15:16+00:00",
+      "date" : "2021-01-16T00:28:32+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -271,8 +271,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e2f87d29-36a9-4b25-b3cc-b3d015a7b3d3",
-        "timestamp" : "2021-01-16T00:15:36+00:00",
+        "identifier" : "urn:uuid:fa48420f-8833-4d2b-ab5f-28131e47b3b2",
+        "timestamp" : "2021-01-16T00:28:54+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -294,7 +294,7 @@
       "name" : "HIVRecencyResults",
       "title" : "HIVRecencyResults",
       "status" : "draft",
-      "date" : "2021-01-16T00:15:16+00:00",
+      "date" : "2021-01-16T00:28:32+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -310,8 +310,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e2f87d29-36a9-4b25-b3cc-b3d015a7b3d3",
-        "timestamp" : "2021-01-16T00:15:36+00:00",
+        "identifier" : "urn:uuid:fa48420f-8833-4d2b-ab5f-28131e47b3b2",
+        "timestamp" : "2021-01-16T00:28:54+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -333,7 +333,7 @@
       "name" : "HIVRecencyResults",
       "title" : "HIVRecencyResults",
       "status" : "draft",
-      "date" : "2021-01-16T00:15:16+00:00",
+      "date" : "2021-01-16T00:28:32+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -349,8 +349,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e2f87d29-36a9-4b25-b3cc-b3d015a7b3d3",
-        "timestamp" : "2021-01-16T00:15:36+00:00",
+        "identifier" : "urn:uuid:fa48420f-8833-4d2b-ab5f-28131e47b3b2",
+        "timestamp" : "2021-01-16T00:28:54+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -372,7 +372,7 @@
       "name" : "HIVRecencyResults",
       "title" : "HIVRecencyResults",
       "status" : "draft",
-      "date" : "2021-01-16T00:15:16+00:00",
+      "date" : "2021-01-16T00:28:32+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -388,8 +388,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e2f87d29-36a9-4b25-b3cc-b3d015a7b3d3",
-        "timestamp" : "2021-01-16T00:15:36+00:00",
+        "identifier" : "urn:uuid:fa48420f-8833-4d2b-ab5f-28131e47b3b2",
+        "timestamp" : "2021-01-16T00:28:54+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -411,7 +411,7 @@
       "name" : "HIVRecencyResults",
       "title" : "HIVRecencyResults",
       "status" : "draft",
-      "date" : "2021-01-16T00:15:16+00:00",
+      "date" : "2021-01-16T00:28:32+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -427,8 +427,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e2f87d29-36a9-4b25-b3cc-b3d015a7b3d3",
-        "timestamp" : "2021-01-16T00:15:36+00:00",
+        "identifier" : "urn:uuid:fa48420f-8833-4d2b-ab5f-28131e47b3b2",
+        "timestamp" : "2021-01-16T00:28:54+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -450,7 +450,7 @@
       "name" : "HIVRecencyResults",
       "title" : "HIVRecencyResults",
       "status" : "draft",
-      "date" : "2021-01-16T00:15:16+00:00",
+      "date" : "2021-01-16T00:28:32+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -466,8 +466,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e2f87d29-36a9-4b25-b3cc-b3d015a7b3d3",
-        "timestamp" : "2021-01-16T00:15:36+00:00",
+        "identifier" : "urn:uuid:fa48420f-8833-4d2b-ab5f-28131e47b3b2",
+        "timestamp" : "2021-01-16T00:28:54+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -489,7 +489,7 @@
       "name" : "VSTypeOfContact",
       "title" : "Type of contact or relationship",
       "status" : "active",
-      "date" : "2021-01-16T00:15:16+00:00",
+      "date" : "2021-01-16T00:28:32+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -505,8 +505,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3c3ce4d6-52d3-45b8-856d-c6468715d5f9",
-        "timestamp" : "2021-01-16T00:15:42+00:00",
+        "identifier" : "urn:uuid:80696670-f4f4-4dae-a609-ffd1622f23c7",
+        "timestamp" : "2021-01-16T00:29:00+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
