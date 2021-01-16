@@ -3,7 +3,7 @@
 
 err = 78, warn = 113, info = 0
 IG Publisher Version: 1.1.57
-Generated Sat Jan 16 00:33:25 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir)
+Generated Sat Jan 16 00:39:07 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir)
 
  Build Errors : 229 / 0 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-communication-preferences : 0 / 0 / 1
