@@ -5,15 +5,44 @@ Description: "The genders for patients"
 * #male "Male" "Client identifies as female"
 * #female "Female" "Client identifies as male"
 * #transgender "Transgender" "Client identifies as transgender"
-* #non-binary "Non-binary" "Client identifies in a non-binary way"
+* #other "Other" "Other gender identity"
+* #not-disclosed "Not disclosed" "Client does not wish to disclose gender identity"
 
 ValueSet: VSPatientGender
 Id: vs-patient-gender
 Title: "Patient Gender"
 Description:  "Valueset - patient genders"
-//* SCT#951000205108 "Wearing underwear or less"
 * include codes from system PatientGender 
 
+CodeSystem:  CSOccupation
+Id: cs-occupation
+Title: "Patient Occupation"
+Description: "The patient's occpation"
+* #1 "Vulnerable to engage in prostitution" "Employees of facilities providing services that are vulnerable to be abused to engage in prostitution"
+* #2 "Drivers" "Drivers"
+* #3 "Fisherman" "Fishermen"
+* #4 "Agricultural worker" "Agricultural workers"
+* #5 "Worker" "Workers"
+* #6 "Officers and soldiers of armed forces" "Officers and soldiers of armed forces"
+* #7 "Public servants, officers, or workers with labor contracts" "Public servants, officers, or workers with labor contracts under labor laws"
+* #8 "Students" "Pupils, students"
+* #9 "Children" "Children"
+* #10 "Workers without labor contract" "Workers without labor contract"
+* #11 "Out of work" "Out of work"
+* #12 "Prisoners" "Prisoners"
+
+ValueSet: VSOccupation
+Id: vs-occupation
+Title: "Patient Occupation"
+Description:  "Valueset - patient genders"
+* include codes from system PatientGender 
+
+
+
+
+
+
+/*
 
 CodeSystem:  PatientGenderIdentity
 Id: cs-patient-gender-identity
@@ -26,6 +55,7 @@ Description: "A list of genders that the patient may identify with"
 * #female "Female" "Client identifies as female"
 * #other "Other" "Other gender identity"
 * #not-disclosed "Does not wish to disclose" "Client does not wish to disclose gender identity"
+
 
 
 ValueSet: VSPatientGenderIdentity
@@ -68,3 +98,4 @@ Title: "Type of contact or relationship"
 Description:  "Type of contact or relationship"
 //* SCT#951000205108 "Wearing underwear or less"
 * include codes from system TypeOfContact
+*/

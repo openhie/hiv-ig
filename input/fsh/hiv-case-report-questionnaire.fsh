@@ -8,21 +8,6 @@ Usage: #inline
 * name = "HIVRiskPopulation"
 * status = #draft
 
-Instance: HIVRiskBehavior
-InstanceOf: ValueSet
-Description: "HIV Risk Behavior codes"
-Title: "HIV Risk Behavior"
-Usage: #inline
-* name = "HIVRiskBehavior"
-* status = #draft
-
-Instance: HIVTransmissionRoute
-InstanceOf: ValueSet
-Description: "HIV Transmission Route codes"
-Title: "HIV Transmission Route"
-Usage: #inline
-* name = "HIVTransmissionRoute"
-* status = #draft
 /*
 Instance: Gender
 InstanceOf: ValueSet
@@ -90,14 +75,14 @@ Usage: #definition
 * status = #draft
 
 * contained[+] = HIVRiskPopulation
-* contained[+] = HIVRiskBehavior
+//* contained[+] = HIVRiskBehavior
 //* contained[+] = Ethnicity
 //* contained[+] = Gender
 //* contained[+] = HIVRecencyResults
 * contained[+] = PregnancyOutcomeCodes
 * contained[+] = BirthDefects
 * contained[+] = ChildHIVStatus
-* contained[+] = HIVTransmissionRoute
+//* contained[+] = HIVTransmissionRoute
 
 
 * item[+].linkId = "title"
@@ -198,9 +183,9 @@ Usage: #definition
 
 * item[=].item[=].item[=].item[+].linkId = "occupation"
 * item[=].item[=].item[=].item[=].text   = "Occupation"
-* item[=].item[=].item[=].item[=].type   = #string
+* item[=].item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].item[=].prefix   = "9"
-//* item[=].item[=].item[=].item[=].answerValueSet = "#occupation"
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical(VSOccupation)
 
 * item[=].item[+].linkId = "risk_factors"
 * item[=].item[=].text   = "Risk Factors"
@@ -209,20 +194,21 @@ Usage: #definition
 
 * item[=].item[=].item[+].linkId = "risk_population"
 * item[=].item[=].item[=].text   = "Risk population"
-* item[=].item[=].item[=].type   = #group
+* item[=].item[=].item[=].type   = #choice
+* item[=].item[=].item[=].answerValueSet = Canonical(VSHIVRiskPopulation)
 * item[=].item[=].item[=].prefix   = "10.1"
 
 * item[=].item[=].item[+].linkId = "risk_behavior"
 * item[=].item[=].item[=].text   = "Risk Behavior"
 * item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].prefix   = "10.2"
-* item[=].item[=].item[=].answerValueSet = "#HIVRiskBehavior"
+* item[=].item[=].item[=].answerValueSet = Canonical(VSHIVRiskBehavior)
 
 * item[=].item[=].item[+].linkId = "transmission_route"
 * item[=].item[=].item[=].text   = "Transmission Route"
 * item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].prefix   = "10.3"
-* item[=].item[=].item[=].answerValueSet = "#HIVTransmissionRoute"
+* item[=].item[=].item[=].answerValueSet = Canonical(VSHIVTransmissionRoute)
 
 
 * item[=].item[+].linkId = "hiv-diagnosis"
@@ -670,5 +656,19 @@ Usage: #definition
 
 * item[=].item[=].item[+].linkId = "causeOfDeath"
 * item[=].item[=].item[=].text   = "Cause of death"
-* item[=].item[=].item[=].type   = #string
+* item[=].item[=].item[=].type   = #choice
+* item[=].item[=].item[=].answerValueSet = Canonical(VSHIVCauseOfDeath)
 * item[=].item[=].item[=].prefix   = "19"
+
+/*
+missing valuesets:
+BirthDefects
+ethnicity
+recency
+cd4
+Viral Load
+drugresistance 
+pregnancystatus
+hiv test result
+*/
+
