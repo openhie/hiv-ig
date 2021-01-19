@@ -1,10 +1,45 @@
 [
   {
-    "id": "cs-patient-communication-preferences",
+    "id": "cs-hiv-cause-of-death",
     "type": "CodeSystem",
-    "url": "http://openhie.org/fhir/CodeSystem/cs-patient-communication-preferences",
+    "url": "http://openhie.org/fhir/CodeSystem/cs-hiv-cause-of-death",
     "version": "0.2.0",
-    "name": "PatientCommunicationPreferences"
+    "name": "HIVCauseOfDeath"
+  },
+  {
+    "id": "cs-hiv-risk-behavior",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/CodeSystem/cs-hiv-risk-behavior",
+    "version": "0.2.0",
+    "name": "HIVRiskBehavior"
+  },
+  {
+    "id": "cs-hiv-risk-population",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/CodeSystem/cs-hiv-risk-population",
+    "version": "0.2.0",
+    "name": "HIVRiskPopulation"
+  },
+  {
+    "id": "cs-hiv-symptoms",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/CodeSystem/cs-hiv-symptoms",
+    "version": "0.2.0",
+    "name": "HIVSymptoms"
+  },
+  {
+    "id": "cs-hiv-transmission-route",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/CodeSystem/cs-hiv-transmission-route",
+    "version": "0.2.0",
+    "name": "HIVTransmissionRoute"
+  },
+  {
+    "id": "cs-occupation",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/CodeSystem/cs-occupation",
+    "version": "0.2.0",
+    "name": "CSOccupation"
   },
   {
     "id": "cs-patient-gender",
@@ -14,53 +49,11 @@
     "name": "PatientGender"
   },
   {
-    "id": "cs-patient-gender-identity",
-    "type": "CodeSystem",
-    "url": "http://openhie.org/fhir/CodeSystem/cs-patient-gender-identity",
-    "version": "0.2.0",
-    "name": "PatientGenderIdentity"
-  },
-  {
-    "id": "type-of-contact",
-    "type": "CodeSystem",
-    "url": "http://openhie.org/fhir/CodeSystem/type-of-contact",
-    "version": "0.2.0",
-    "name": "TypeOfContact"
-  },
-  {
     "id": "openhie.fhir.hiv",
     "type": "ImplementationGuide",
     "url": "http://openhie.org/fhir/ImplementationGuide/openhie.fhir.hiv",
     "version": "0.2.0",
     "name": "HIVCaseReporting"
-  },
-  {
-    "id": "ns-arv-id",
-    "type": "NamingSystem",
-    "url": "http://openhie.org/fhir/NamingSystem/ns-arv-id",
-    "version": "0.2.0",
-    "name": "NSARVID"
-  },
-  {
-    "id": "ns-hiv-case-id",
-    "type": "NamingSystem",
-    "url": "http://openhie.org/fhir/NamingSystem/ns-hiv-case-id",
-    "version": "0.2.0",
-    "name": "NSHIVID"
-  },
-  {
-    "id": "ns-insurance-id",
-    "type": "NamingSystem",
-    "url": "http://openhie.org/fhir/NamingSystem/ns-insurance-id",
-    "version": "0.2.0",
-    "name": "NSInsuranceID"
-  },
-  {
-    "id": "ns-passport-id",
-    "type": "NamingSystem",
-    "url": "http://openhie.org/fhir/NamingSystem/ns-passport-id",
-    "version": "0.2.0",
-    "name": "NSPassportID"
   },
   {
     "id": "hiv-case-report-questionnaire",
@@ -168,11 +161,46 @@
     "name": "VSEthnicity"
   },
   {
-    "id": "vs-patient-communication-preferences",
+    "id": "vs-hiv-cause-of-death",
     "type": "ValueSet",
-    "url": "http://openhie.org/fhir/ValueSet/vs-patient-communication-preferences",
+    "url": "http://openhie.org/fhir/ValueSet/vs-hiv-cause-of-death",
     "version": "0.2.0",
-    "name": "VSPatientCommunicationPreferences"
+    "name": "HIVCauseOfDeath"
+  },
+  {
+    "id": "vs-hiv-risk-behavior",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/ValueSet/vs-hiv-risk-behavior",
+    "version": "0.2.0",
+    "name": "HIVRiskBehavior"
+  },
+  {
+    "id": "vs-hiv-risk-population",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/ValueSet/vs-hiv-risk-population",
+    "version": "0.2.0",
+    "name": "HIVRiskPopulation"
+  },
+  {
+    "id": "vs-hiv-symptoms",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/ValueSet/vs-hiv-symptoms",
+    "version": "0.2.0",
+    "name": "HIVSymptoms"
+  },
+  {
+    "id": "vs-hiv-transmission-route",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/ValueSet/vs-hiv-transmission-route",
+    "version": "0.2.0",
+    "name": "HIVTransmissionRoute"
+  },
+  {
+    "id": "vs-occupation",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/ValueSet/vs-occupation",
+    "version": "0.2.0",
+    "name": "VSOccupation"
   },
   {
     "id": "vs-patient-gender",
@@ -180,20 +208,6 @@
     "url": "http://openhie.org/fhir/ValueSet/vs-patient-gender",
     "version": "0.2.0",
     "name": "VSPatientGender"
-  },
-  {
-    "id": "vs-patient-gender-identity",
-    "type": "ValueSet",
-    "url": "http://openhie.org/fhir/ValueSet/vs-patient-gender-identity",
-    "version": "0.2.0",
-    "name": "VSPatientGenderIdentity"
-  },
-  {
-    "id": "vs-type-of-contact",
-    "type": "ValueSet",
-    "url": "http://openhie.org/fhir/ValueSet/vs-type-of-contact",
-    "version": "0.2.0",
-    "name": "VSTypeOfContact"
   },
   {
     "id": "model-hiv-record",

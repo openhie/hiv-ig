@@ -11,7 +11,7 @@
   "title": "HIV Case Reporting and Monitoring",
   "status": "draft",
   "experimental": false,
-  "date": "2021-01-16T01:00:33+00:00",
+  "date": "2021-01-19T18:06:47+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -571,13 +571,53 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "NamingSystem"
+            "valueString": "ValueSet"
           }
         ],
         "reference": {
-          "reference": "NamingSystem/ns-insurance-id"
+          "reference": "ValueSet/vs-hiv-risk-population"
         },
-        "description": "Naming System - Insurance identifiers"
+        "name": "HIV Risk Population",
+        "description": "HIV Risk Population codes"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-cause-of-death"
+        },
+        "name": "HIV Cause Of Death",
+        "description": "HIV Cause Of Death codes"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-symptoms"
+        },
+        "name": "HIV Symptoms",
+        "description": "HIV Symptoms codes"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-occupation"
+        },
+        "name": "Patient Occupation",
+        "description": "Valueset - patient genders"
       },
       {
         "extension": [
@@ -596,13 +636,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "NamingSystem"
+            "valueString": "ValueSet"
           }
         ],
         "reference": {
-          "reference": "NamingSystem/ns-passport-id"
+          "reference": "ValueSet/vs-hiv-symptoms"
         },
-        "description": "Naming System - Passport identifiers"
+        "name": "HIV Symptoms",
+        "description": "HIV Symptoms codes"
       },
       {
         "extension": [
@@ -612,35 +653,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-patient-communication-preferences"
+          "reference": "ValueSet/vs-hiv-cause-of-death"
         },
-        "name": "Patient Communication Preferences",
-        "description": "Valueset - Patient Communication Preferences"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-patient-communication-preferences"
-        },
-        "name": "Patient Communication Preferences",
-        "description": "The way the patient prefers to be contacted"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "NamingSystem"
-          }
-        ],
-        "reference": {
-          "reference": "NamingSystem/ns-hiv-case-id"
-        },
-        "description": "Naming System - HIV Case identifiers"
+        "name": "HIV Cause Of Death",
+        "description": "HIV Cause Of Death codes"
       },
       {
         "extension": [
@@ -659,14 +675,40 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-transmission-route"
+        },
+        "name": "HIV Transmission Route",
+        "description": "HIV Transmission Route codes"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-patient-gender-identity"
+          "reference": "ValueSet/vs-hiv-transmission-route"
         },
-        "name": "Patient Gender Identity",
-        "description": "Valueset - patient gender identities"
+        "name": "HIV Transmission Route",
+        "description": "HIV Transmission Route codes"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-occupation"
+        },
+        "name": "Patient Occupation",
+        "description": "The patient's occpation"
       },
       {
         "extension": [
@@ -698,26 +740,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "NamingSystem"
-          }
-        ],
-        "reference": {
-          "reference": "NamingSystem/ns-arv-id"
-        },
-        "description": "Naming System - ARV treatment identifiers"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/type-of-contact"
+          "reference": "CodeSystem/cs-hiv-risk-behavior"
         },
-        "name": "Type of contact or relationship",
-        "description": "Type of contact or relationship"
+        "name": "HIV Risk Behavior",
+        "description": "HIV Risk Behavior codes"
       },
       {
         "extension": [
@@ -736,27 +766,27 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
+            "valueString": "ValueSet"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-patient-gender-identity"
+          "reference": "ValueSet/vs-hiv-risk-behavior"
         },
-        "name": "Patient Gender Identity",
-        "description": "A list of genders that the patient may identify with"
+        "name": "HIV Risk Behavior",
+        "description": "HIV Risk Behavior codes"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
+            "valueString": "CodeSystem"
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-type-of-contact"
+          "reference": "CodeSystem/cs-hiv-risk-population"
         },
-        "name": "Type of contact or relationship",
-        "description": "Type of contact or relationship"
+        "name": "HIV Risk Population",
+        "description": "HIV Risk Population codes"
       }
     ],
     "page": {

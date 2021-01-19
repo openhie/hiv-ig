@@ -1,0 +1,99 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/CodeSystem/cs-hiv-symptoms> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-hiv-symptoms"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/CodeSystem/cs-hiv-symptoms defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-hiv-symptoms-1\"> </a></td><td>Prolonged fever</td><td>Prolonged fever</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-hiv-symptoms-2\"> </a></td><td>Headache and neurological presentations</td><td>Headache and neurological presentations</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-hiv-symptoms-3\"> </a></td><td>Swollen lymph nodes</td><td>Swollen lymph nodes</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-hiv-symptoms-4\"> </a></td><td>Respiratory syndrome</td><td>Respiratory syndrome</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-hiv-symptoms-5\"> </a></td><td>Swallow with pain</td><td>Swallow with pain</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"cs-hiv-symptoms-6\"> </a></td><td>Diarrhea</td><td>Diarrhea</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"cs-hiv-symptoms-7\"> </a></td><td>Dermatological lesions</td><td>Dermatological lesions</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"cs-hiv-symptoms-8\"> </a></td><td>Cachexia/fatigue</td><td>Cachexia/fatigue</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"cs-hiv-symptoms-9\"> </a></td><td>Anemia</td><td>Anemia</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"cs-hiv-symptoms-10\"> </a></td><td>Physical retardation in pediatric patients</td><td>Physical retardation in pediatric patients</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/CodeSystem/cs-hiv-symptoms"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "HIVSymptoms"];
+  fhir:CodeSystem.title [ fhir:value "HIV Symptoms"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2021-01-19T18:06:47+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "openHIE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/[something]" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "HIV Symptoms codes"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "10"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prolonged fever" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Prolonged fever" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Headache and neurological presentations" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Headache and neurological presentations" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Swollen lymph nodes" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Swollen lymph nodes" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Respiratory syndrome" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Respiratory syndrome" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Swallow with pain" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Swallow with pain" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Diarrhea" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Diarrhea" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dermatological lesions" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dermatological lesions" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cachexia/fatigue" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Cachexia/fatigue" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Anemia" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Anemia" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "10" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Physical retardation in pediatric patients" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Physical retardation in pediatric patients" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/CodeSystem/cs-hiv-symptoms.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

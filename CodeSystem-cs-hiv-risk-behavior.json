@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-hiv-risk-behavior",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/CodeSystem/cs-hiv-risk-behavior defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-hiv-risk-behavior-1\"> </a></td><td>Drug injection</td><td>Drug injection</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-hiv-risk-behavior-2\"> </a></td><td>Sex with sex workers or clients</td><td>Sexual relationship with sex workers or with sex buyers/clients (for money or drug)</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-hiv-risk-behavior-3\"> </a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-hiv-risk-behavior-4\"> </a></td><td>Multiple sex partners</td><td>Multiple sex partners (not for money or drug)</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-hiv-risk-behavior-5\"> </a></td><td>Other risks</td><td>Other risks of oneself</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/CodeSystem/cs-hiv-risk-behavior",
+  "version": "0.2.0",
+  "name": "HIVRiskBehavior",
+  "title": "HIV Risk Behavior",
+  "status": "draft",
+  "date": "2021-01-19T18:06:47+00:00",
+  "publisher": "openHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "HIV Risk Behavior codes",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Drug injection",
+      "definition": "Drug injection"
+    },
+    {
+      "code": "2",
+      "display": "Sex with sex workers or clients",
+      "definition": "Sexual relationship with sex workers or with sex buyers/clients (for money or drug)"
+    },
+    {
+      "code": "3",
+      "display": "MSM",
+      "definition": "Men who have sex with men"
+    },
+    {
+      "code": "4",
+      "display": "Multiple sex partners",
+      "definition": "Multiple sex partners (not for money or drug)"
+    },
+    {
+      "code": "5",
+      "display": "Other risks",
+      "definition": "Other risks of oneself"
+    }
+  ]
+}

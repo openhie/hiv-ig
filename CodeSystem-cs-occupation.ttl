@@ -1,0 +1,109 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/CodeSystem/cs-occupation> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-occupation"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/CodeSystem/cs-occupation defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-occupation-1\"> </a></td><td>Vulnerable to engage in prostitution</td><td>Employees of facilities providing services that are vulnerable to be abused to engage in prostitution</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-occupation-2\"> </a></td><td>Drivers</td><td>Drivers</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-occupation-3\"> </a></td><td>Fisherman</td><td>Fishermen</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-occupation-4\"> </a></td><td>Agricultural worker</td><td>Agricultural workers</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-occupation-5\"> </a></td><td>Worker</td><td>Workers</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"cs-occupation-6\"> </a></td><td>Officers and soldiers of armed forces</td><td>Officers and soldiers of armed forces</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"cs-occupation-7\"> </a></td><td>Public servants, officers, or workers with labor contracts</td><td>Public servants, officers, or workers with labor contracts under labor laws</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"cs-occupation-8\"> </a></td><td>Students</td><td>Pupils, students</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"cs-occupation-9\"> </a></td><td>Children</td><td>Children</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"cs-occupation-10\"> </a></td><td>Workers without labor contract</td><td>Workers without labor contract</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"cs-occupation-11\"> </a></td><td>Out of work</td><td>Out of work</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"cs-occupation-12\"> </a></td><td>Prisoners</td><td>Prisoners</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/CodeSystem/cs-occupation"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "CSOccupation"];
+  fhir:CodeSystem.title [ fhir:value "Patient Occupation"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-01-19T18:06:47+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "openHIE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/[something]" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "The patient's occpation"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "12"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vulnerable to engage in prostitution" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Employees of facilities providing services that are vulnerable to be abused to engage in prostitution" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Drivers" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Drivers" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fisherman" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Fishermen" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Agricultural worker" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Agricultural workers" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Worker" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Workers" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Officers and soldiers of armed forces" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Officers and soldiers of armed forces" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Public servants, officers, or workers with labor contracts" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Public servants, officers, or workers with labor contracts under labor laws" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Students" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Pupils, students" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Children" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Children" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "10" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Workers without labor contract" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Workers without labor contract" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Out of work" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Out of work" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prisoners" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Prisoners" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/CodeSystem/cs-occupation.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

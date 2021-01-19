@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-hiv-symptoms"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/CodeSystem/cs-hiv-symptoms defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="cs-hiv-symptoms-1"> </a></td><td>Prolonged fever</td><td>Prolonged fever</td></tr><tr><td style="white-space:nowrap">2<a name="cs-hiv-symptoms-2"> </a></td><td>Headache and neurological presentations</td><td>Headache and neurological presentations</td></tr><tr><td style="white-space:nowrap">3<a name="cs-hiv-symptoms-3"> </a></td><td>Swollen lymph nodes</td><td>Swollen lymph nodes</td></tr><tr><td style="white-space:nowrap">4<a name="cs-hiv-symptoms-4"> </a></td><td>Respiratory syndrome</td><td>Respiratory syndrome</td></tr><tr><td style="white-space:nowrap">5<a name="cs-hiv-symptoms-5"> </a></td><td>Swallow with pain</td><td>Swallow with pain</td></tr><tr><td style="white-space:nowrap">6<a name="cs-hiv-symptoms-6"> </a></td><td>Diarrhea</td><td>Diarrhea</td></tr><tr><td style="white-space:nowrap">7<a name="cs-hiv-symptoms-7"> </a></td><td>Dermatological lesions</td><td>Dermatological lesions</td></tr><tr><td style="white-space:nowrap">8<a name="cs-hiv-symptoms-8"> </a></td><td>Cachexia/fatigue</td><td>Cachexia/fatigue</td></tr><tr><td style="white-space:nowrap">9<a name="cs-hiv-symptoms-9"> </a></td><td>Anemia</td><td>Anemia</td></tr><tr><td style="white-space:nowrap">10<a name="cs-hiv-symptoms-10"> </a></td><td>Physical retardation in pediatric patients</td><td>Physical retardation in pediatric patients</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/CodeSystem/cs-hiv-symptoms"/>
+  <version value="0.2.0"/>
+  <name value="HIVSymptoms"/>
+  <title value="HIV Symptoms"/>
+  <status value="draft"/>
+  <date value="2021-01-19T18:06:47+00:00"/>
+  <publisher value="openHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="HIV Symptoms codes"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="1"/>
+    <display value="Prolonged fever"/>
+    <definition value="Prolonged fever"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Headache and neurological presentations"/>
+    <definition value="Headache and neurological presentations"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Swollen lymph nodes"/>
+    <definition value="Swollen lymph nodes"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Respiratory syndrome"/>
+    <definition value="Respiratory syndrome"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Swallow with pain"/>
+    <definition value="Swallow with pain"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="Diarrhea"/>
+    <definition value="Diarrhea"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="Dermatological lesions"/>
+    <definition value="Dermatological lesions"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="Cachexia/fatigue"/>
+    <definition value="Cachexia/fatigue"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="Anemia"/>
+    <definition value="Anemia"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="Physical retardation in pediatric patients"/>
+    <definition value="Physical retardation in pediatric patients"/>
+  </concept>
+</CodeSystem>

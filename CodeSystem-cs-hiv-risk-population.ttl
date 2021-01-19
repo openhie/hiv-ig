@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/CodeSystem/cs-hiv-risk-population> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-hiv-risk-population"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/CodeSystem/cs-hiv-risk-population defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-hiv-risk-population-1\"> </a></td><td>Injecting drug users</td><td>Injecting drug users</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-hiv-risk-population-2\"> </a></td><td>Female sex workers</td><td>Female sex workers</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-hiv-risk-population-3\"> </a></td><td>Pregnant women</td><td>Pregnant women</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-hiv-risk-population-4\"> </a></td><td>Blood donors</td><td>Blood donors</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-hiv-risk-population-5\"> </a></td><td>TB patients</td><td>TB patients</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"cs-hiv-risk-population-6\"> </a></td><td>People with sexually transmitted diseases</td><td>People with sexually transmitted diseases</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"cs-hiv-risk-population-7\"> </a></td><td>Young recruits for military service</td><td>Young recruits for military service</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"cs-hiv-risk-population-8\"> </a></td><td>Men who have sex with men</td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"cs-hiv-risk-population-9\"> </a></td><td>Others</td><td>Others</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/CodeSystem/cs-hiv-risk-population"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "HIVRiskPopulation"];
+  fhir:CodeSystem.title [ fhir:value "HIV Risk Population"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2021-01-19T18:06:47+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "openHIE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/[something]" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "HIV Risk Population codes"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "9"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Injecting drug users" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Injecting drug users" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Female sex workers" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Female sex workers" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pregnant women" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Pregnant women" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Blood donors" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Blood donors" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "TB patients" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "TB patients" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "People with sexually transmitted diseases" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "People with sexually transmitted diseases" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Young recruits for military service" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Young recruits for military service" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Men who have sex with men" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Men who have sex with men" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Others" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Others" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/CodeSystem/cs-hiv-risk-population.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
