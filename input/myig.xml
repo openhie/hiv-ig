@@ -202,7 +202,7 @@ Ethnicity
     </resource>    
     <resource>
       <reference>
-        <reference value="ValueSet/HIVRecencyResults"/>
+        <reference value="ValueSet/vs-hiv-recency-results"/>
       </reference>
       <name value="HIVRecencyResults"/>
       <description value="HIV Recency Results"/>
