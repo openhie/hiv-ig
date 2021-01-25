@@ -1,4 +1,4 @@
-CodeSystem:  PatientGender
+CodeSystem:  CSPatientGender
 Id: cs-patient-gender
 Title: "Patient Gender"
 Description: "The genders for patients"
@@ -12,7 +12,7 @@ ValueSet: VSPatientGender
 Id: vs-patient-gender
 Title: "Patient Gender"
 Description:  "Valueset - patient genders"
-* include codes from system PatientGender 
+* include codes from system CSPatientGender 
 
 CodeSystem:  CSOccupation
 Id: cs-occupation

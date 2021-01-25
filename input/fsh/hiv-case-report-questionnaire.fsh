@@ -265,7 +265,7 @@ Usage: #definition
 * item[=].item[=].item[=].item[+].linkId = "hiv-recency-test.testResult"
 * item[=].item[=].item[=].item[=].text   = "Recency from rapid test - result"
 * item[=].item[=].item[=].item[=].type   = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "HIVRecencyResults"
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical(HIVRecencyResults)
 * item[=].item[=].item[=].item[=].prefix   = "12.1.4"
 
 
@@ -283,7 +283,7 @@ Usage: #definition
 * item[=].item[=].item[=].item[+].linkId = "recency.testResult"
 * item[=].item[=].item[=].item[=].text   = "Recency from rapid test - result"
 * item[=].item[=].item[=].item[=].type   = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "HIVRecencyResults"
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical(HIVRecencyResults)
 * item[=].item[=].item[=].item[=].prefix   = "12.2.2"
 
 

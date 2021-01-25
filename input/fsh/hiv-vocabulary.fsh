@@ -9,23 +9,6 @@ Description:  "Ethnicity"
 * ^status = #draft
 * codes from system $ethnicity
 
-CodeSystem:  PatientGender
-Id: cs-patient-gender
-Title: "Patient Gender"
-Description: "The genders for patients"
-* #male "Male" "Client identifies as female"
-* #female "Female" "Client identifies as male"
-* #transgender "Transgender" "Client identifies as transgender"
-* #other "Other" "Other gender identity"
-* #not-disclosed "Not disclosed" "Client does not wish to disclose gender identity"
-
-ValueSet: VSPatientGender
-Id: vs-patient-gender
-Title: "Patient Gender"
-Description:  "Valueset - patient genders"
-//* SCT#951000205108 "Wearing underwear or less"
-* include codes from system PatientGender 
-
 
 
 CodeSystem:  CSOccupation
