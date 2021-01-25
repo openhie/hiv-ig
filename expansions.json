@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "d9b7197d-c527-441a-b211-c2cb766b770b",
+  "id" : "316b3dfe-3c10-47ec-9f32-414368574f16",
   "meta" : {
-    "lastUpdated" : "2021-01-25T08:21:27.016+00:00"
+    "lastUpdated" : "2021-01-25T09:18:25.520+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "HIVSymptoms",
       "title" : "HIV Symptoms",
       "status" : "draft",
-      "date" : "2021-01-25T08:21:27+00:00",
+      "date" : "2021-01-25T09:18:25+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -35,8 +35,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1312122e-7e01-453d-8ca3-a45289e9d98f",
-        "timestamp" : "2021-01-25T08:21:49+00:00",
+        "identifier" : "urn:uuid:edd41796-8b64-4871-9b3b-368ed63eb6ec",
+        "timestamp" : "2021-01-25T09:18:50+00:00",
         "total" : 10,
         "parameter" : [{
           "name" : "excludeNested",
@@ -100,6 +100,45 @@
     }
   },
   {
+    "fullUrl" : "http://openhie.org/fhir/ValueSet/vs-hiv-recency-results",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-hiv-recency-results",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/ValueSet/vs-hiv-recency-results",
+      "version" : "0.2.0",
+      "name" : "HIVRecencyResults",
+      "title" : "HIVRecencyResults",
+      "status" : "draft",
+      "date" : "2021-01-25T09:18:25+00:00",
+      "publisher" : "openHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://hl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "HIV recency result codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:785efa91-a7b8-4da6-9018-d2963eda4db4",
+        "timestamp" : "2021-01-25T09:18:50+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://openhie.org/fhir/ValueSet/vs-patient-gender",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -113,7 +152,7 @@
       "name" : "VSPatientGender",
       "title" : "Patient Gender",
       "status" : "active",
-      "date" : "2021-01-25T08:21:27+00:00",
+      "date" : "2021-01-25T09:18:25+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -129,8 +168,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c2bba73e-e6eb-465b-a7c6-0576498bee12",
-        "timestamp" : "2021-01-25T08:21:49+00:00",
+        "identifier" : "urn:uuid:9f028247-2839-4722-b21c-6e21c9aefb3b",
+        "timestamp" : "2021-01-25T09:18:50+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -182,7 +221,7 @@
       "name" : "HIVRiskBehavior",
       "title" : "HIV Risk Behavior",
       "status" : "draft",
-      "date" : "2021-01-25T08:21:27+00:00",
+      "date" : "2021-01-25T09:18:25+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -198,8 +237,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8370cd31-e086-460c-9fdc-dc399703e5ff",
-        "timestamp" : "2021-01-25T08:21:49+00:00",
+        "identifier" : "urn:uuid:ca23dfe6-1837-4e35-94d7-150cae676688",
+        "timestamp" : "2021-01-25T09:18:50+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -251,7 +290,7 @@
       "name" : "VSOccupation",
       "title" : "Patient Occupation",
       "status" : "active",
-      "date" : "2021-01-25T08:21:27+00:00",
+      "date" : "2021-01-25T09:18:25+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -267,8 +306,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d76f092f-327a-4afd-afb7-ed9eb1ecaa37",
-        "timestamp" : "2021-01-25T08:21:49+00:00",
+        "identifier" : "urn:uuid:5d273d90-e092-493e-ad65-d801f15a6128",
+        "timestamp" : "2021-01-25T09:18:50+00:00",
         "total" : 12,
         "parameter" : [{
           "name" : "excludeNested",
@@ -342,21 +381,37 @@
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation",
+    "fullUrl" : "http://openhie.org/fhir/ValueSet/vs-hiv-recency-results",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "HIVRiskPopulation",
+      "id" : "vs-hiv-recency-results",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation",
+      "url" : "http://openhie.org/fhir/ValueSet/vs-hiv-recency-results",
       "version" : "0.2.0",
-      "name" : "HIVRiskPopulation",
+      "name" : "HIVRecencyResults",
+      "title" : "HIVRecencyResults",
       "status" : "draft",
+      "date" : "2021-01-25T09:18:25+00:00",
+      "publisher" : "openHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://hl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "HIV recency result codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
       "expansion" : {
-        "identifier" : "urn:uuid:fb9d3ca3-60d5-41f3-a545-fb41448a40be",
-        "timestamp" : "2021-01-25T08:21:52+00:00",
+        "identifier" : "urn:uuid:785efa91-a7b8-4da6-9018-d2963eda4db4",
+        "timestamp" : "2021-01-25T09:18:50+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -365,21 +420,37 @@
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation",
+    "fullUrl" : "http://openhie.org/fhir/ValueSet/vs-hiv-recency-results",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "HIVRiskPopulation",
+      "id" : "vs-hiv-recency-results",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation",
+      "url" : "http://openhie.org/fhir/ValueSet/vs-hiv-recency-results",
       "version" : "0.2.0",
-      "name" : "HIVRiskPopulation",
+      "name" : "HIVRecencyResults",
+      "title" : "HIVRecencyResults",
       "status" : "draft",
+      "date" : "2021-01-25T09:18:25+00:00",
+      "publisher" : "openHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://hl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "HIV recency result codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
       "expansion" : {
-        "identifier" : "urn:uuid:fb9d3ca3-60d5-41f3-a545-fb41448a40be",
-        "timestamp" : "2021-01-25T08:21:52+00:00",
+        "identifier" : "urn:uuid:785efa91-a7b8-4da6-9018-d2963eda4db4",
+        "timestamp" : "2021-01-25T09:18:50+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -388,21 +459,37 @@
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation",
+    "fullUrl" : "http://openhie.org/fhir/ValueSet/vs-hiv-recency-results",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "HIVRiskPopulation",
+      "id" : "vs-hiv-recency-results",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation",
+      "url" : "http://openhie.org/fhir/ValueSet/vs-hiv-recency-results",
       "version" : "0.2.0",
-      "name" : "HIVRiskPopulation",
+      "name" : "HIVRecencyResults",
+      "title" : "HIVRecencyResults",
       "status" : "draft",
+      "date" : "2021-01-25T09:18:25+00:00",
+      "publisher" : "openHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://hl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "HIV recency result codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
       "expansion" : {
-        "identifier" : "urn:uuid:fb9d3ca3-60d5-41f3-a545-fb41448a40be",
-        "timestamp" : "2021-01-25T08:21:52+00:00",
+        "identifier" : "urn:uuid:785efa91-a7b8-4da6-9018-d2963eda4db4",
+        "timestamp" : "2021-01-25T09:18:50+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -411,21 +498,37 @@
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation",
+    "fullUrl" : "http://openhie.org/fhir/ValueSet/vs-hiv-recency-results",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "HIVRiskPopulation",
+      "id" : "vs-hiv-recency-results",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation",
+      "url" : "http://openhie.org/fhir/ValueSet/vs-hiv-recency-results",
       "version" : "0.2.0",
-      "name" : "HIVRiskPopulation",
+      "name" : "HIVRecencyResults",
+      "title" : "HIVRecencyResults",
       "status" : "draft",
+      "date" : "2021-01-25T09:18:25+00:00",
+      "publisher" : "openHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://hl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "HIV recency result codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
       "expansion" : {
-        "identifier" : "urn:uuid:fb9d3ca3-60d5-41f3-a545-fb41448a40be",
-        "timestamp" : "2021-01-25T08:21:52+00:00",
+        "identifier" : "urn:uuid:785efa91-a7b8-4da6-9018-d2963eda4db4",
+        "timestamp" : "2021-01-25T09:18:50+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -447,7 +550,7 @@
       "name" : "HIVCauseOfDeath",
       "title" : "HIV Cause Of Death",
       "status" : "draft",
-      "date" : "2021-01-25T08:21:27+00:00",
+      "date" : "2021-01-25T09:18:25+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -463,8 +566,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ea41d492-95cc-4b81-9318-06116147f10a",
-        "timestamp" : "2021-01-25T08:21:53+00:00",
+        "identifier" : "urn:uuid:d7072c54-377a-4570-958a-21a797be5506",
+        "timestamp" : "2021-01-25T09:18:54+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -498,29 +601,6 @@
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "HIVRiskPopulation",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation",
-      "version" : "0.2.0",
-      "name" : "HIVRiskPopulation",
-      "status" : "draft",
-      "expansion" : {
-        "identifier" : "urn:uuid:fb9d3ca3-60d5-41f3-a545-fb41448a40be",
-        "timestamp" : "2021-01-25T08:21:52+00:00",
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://openhie.org/fhir/ValueSet/vs-hiv-risk-population",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -534,7 +614,7 @@
       "name" : "HIVRiskPopulation",
       "title" : "HIV Risk Population",
       "status" : "draft",
-      "date" : "2021-01-25T08:21:27+00:00",
+      "date" : "2021-01-25T09:18:25+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -550,8 +630,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5423cc52-4f24-4c56-8039-e8c99d21a4c1",
-        "timestamp" : "2021-01-25T08:21:54+00:00",
+        "identifier" : "urn:uuid:0ff6324d-ca91-4b4a-99c4-4027ff7b4c47",
+        "timestamp" : "2021-01-25T09:18:55+00:00",
         "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",
@@ -623,7 +703,7 @@
       "name" : "HIVTransmissionRoute",
       "title" : "HIV Transmission Route",
       "status" : "draft",
-      "date" : "2021-01-25T08:21:27+00:00",
+      "date" : "2021-01-25T09:18:25+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -639,8 +719,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:86a0413c-5c3b-4260-b220-e7d6c5c3af83",
-        "timestamp" : "2021-01-25T08:21:54+00:00",
+        "identifier" : "urn:uuid:2811c275-3232-4e08-8667-f269196be87a",
+        "timestamp" : "2021-01-25T09:18:56+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",

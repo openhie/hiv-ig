@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="HIVRecencyResults"/>
+  <id value="vs-hiv-recency-results"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul/></div>
   </text>
-  <url value="http://openhie.org/fhir/ValueSet/HIVRecencyResults"/>
+  <url value="http://openhie.org/fhir/ValueSet/vs-hiv-recency-results"/>
   <version value="0.2.0"/>
   <name value="HIVRecencyResults"/>
   <title value="HIVRecencyResults"/>
   <status value="draft"/>
-  <date value="2021-01-25T08:21:27+00:00"/>
+  <date value="2021-01-25T09:18:25+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>

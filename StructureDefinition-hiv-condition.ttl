@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "HIVCondition"];
   fhir:StructureDefinition.title [ fhir:value "HIVRiskBehavior"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-01-25T08:21:27+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-01-25T09:18:25+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "openHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

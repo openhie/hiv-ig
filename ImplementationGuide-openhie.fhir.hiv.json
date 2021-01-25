@@ -11,7 +11,7 @@
   "title": "HIV Case Reporting and Monitoring",
   "status": "draft",
   "experimental": false,
-  "date": "2021-01-25T08:21:27+00:00",
+  "date": "2021-01-25T09:18:25+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -549,7 +549,7 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/HIVRecencyResults"
+          "reference": "ValueSet/vs-hiv-recency-results"
         },
         "name": "HIVRecencyResults",
         "description": "HIV Recency Results",

@@ -12,7 +12,7 @@
   <title value="HIV Case Reporting and Monitoring"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-01-25T08:21:27+00:00"/>
+  <date value="2021-01-25T09:18:25+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>
@@ -375,7 +375,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/HIVRecencyResults"/>
+        <reference value="ValueSet/vs-hiv-recency-results"/>
       </reference>
       <name value="HIVRecencyResults"/>
       <description value="HIV Recency Results"/>

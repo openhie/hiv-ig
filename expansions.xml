@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d9b7197d-c527-441a-b211-c2cb766b770b"/>
+  <id value="316b3dfe-3c10-47ec-9f32-414368574f16"/>
   <meta>
-    <lastUpdated value="2021-01-25T08:21:27.016+00:00"/>
+    <lastUpdated value="2021-01-25T09:18:25.520+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -123,7 +123,7 @@
         <name value="HIVSymptoms"/>
         <title value="HIV Symptoms"/>
         <status value="draft"/>
-        <date value="2021-01-25T08:21:27+00:00"/>
+        <date value="2021-01-25T09:18:25+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -139,8 +139,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1312122e-7e01-453d-8ca3-a45289e9d98f"/>
-          <timestamp value="2021-01-25T08:21:49+00:00"/>
+          <identifier value="urn:uuid:edd41796-8b64-4871-9b3b-368ed63eb6ec"/>
+          <timestamp value="2021-01-25T09:18:50+00:00"/>
           <total value="10"/>
           <parameter>
             <name value="excludeNested"/>
@@ -200,6 +200,61 @@
             <code value="10"/>
             <display value="Physical retardation in pediatric patients"/>
           </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/vs-hiv-recency-results"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-hiv-recency-results"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/ValueSet/vs-hiv-recency-results"/>
+        <version value="0.2.0"/>
+        <name value="HIVRecencyResults"/>
+        <title value="HIVRecencyResults"/>
+        <status value="draft"/>
+        <date value="2021-01-25T09:18:25+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="HIV recency result codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:785efa91-a7b8-4da6-9018-d2963eda4db4"/>
+          <timestamp value="2021-01-25T09:18:50+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
         </expansion>
       </ValueSet>
     </resource>
@@ -281,7 +336,7 @@
         <name value="VSPatientGender"/>
         <title value="Patient Gender"/>
         <status value="active"/>
-        <date value="2021-01-25T08:21:27+00:00"/>
+        <date value="2021-01-25T09:18:25+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -297,8 +352,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c2bba73e-e6eb-465b-a7c6-0576498bee12"/>
-          <timestamp value="2021-01-25T08:21:49+00:00"/>
+          <identifier value="urn:uuid:9f028247-2839-4722-b21c-6e21c9aefb3b"/>
+          <timestamp value="2021-01-25T09:18:50+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -414,7 +469,7 @@
         <name value="HIVRiskBehavior"/>
         <title value="HIV Risk Behavior"/>
         <status value="draft"/>
-        <date value="2021-01-25T08:21:27+00:00"/>
+        <date value="2021-01-25T09:18:25+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -430,8 +485,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8370cd31-e086-460c-9fdc-dc399703e5ff"/>
-          <timestamp value="2021-01-25T08:21:49+00:00"/>
+          <identifier value="urn:uuid:ca23dfe6-1837-4e35-94d7-150cae676688"/>
+          <timestamp value="2021-01-25T09:18:50+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -603,7 +658,7 @@
         <name value="VSOccupation"/>
         <title value="Patient Occupation"/>
         <status value="active"/>
-        <date value="2021-01-25T08:21:27+00:00"/>
+        <date value="2021-01-25T09:18:25+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -619,8 +674,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d76f092f-327a-4afd-afb7-ed9eb1ecaa37"/>
-          <timestamp value="2021-01-25T08:21:49+00:00"/>
+          <identifier value="urn:uuid:5d273d90-e092-493e-ad65-d801f15a6128"/>
+          <timestamp value="2021-01-25T09:18:50+00:00"/>
           <total value="12"/>
           <parameter>
             <name value="excludeNested"/>
@@ -695,10 +750,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation"/>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/vs-hiv-recency-results"/>
     <resource>
       <ValueSet>
-        <id value="HIVRiskPopulation"/>
+        <id value="vs-hiv-recency-results"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -718,13 +773,29 @@
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation"/>
+        <url value="http://openhie.org/fhir/ValueSet/vs-hiv-recency-results"/>
         <version value="0.2.0"/>
-        <name value="HIVRiskPopulation"/>
+        <name value="HIVRecencyResults"/>
+        <title value="HIVRecencyResults"/>
         <status value="draft"/>
+        <date value="2021-01-25T09:18:25+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="HIV recency result codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fb9d3ca3-60d5-41f3-a545-fb41448a40be"/>
-          <timestamp value="2021-01-25T08:21:52+00:00"/>
+          <identifier value="urn:uuid:785efa91-a7b8-4da6-9018-d2963eda4db4"/>
+          <timestamp value="2021-01-25T09:18:50+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -734,10 +805,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation"/>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/vs-hiv-recency-results"/>
     <resource>
       <ValueSet>
-        <id value="HIVRiskPopulation"/>
+        <id value="vs-hiv-recency-results"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -757,13 +828,29 @@
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation"/>
+        <url value="http://openhie.org/fhir/ValueSet/vs-hiv-recency-results"/>
         <version value="0.2.0"/>
-        <name value="HIVRiskPopulation"/>
+        <name value="HIVRecencyResults"/>
+        <title value="HIVRecencyResults"/>
         <status value="draft"/>
+        <date value="2021-01-25T09:18:25+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="HIV recency result codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fb9d3ca3-60d5-41f3-a545-fb41448a40be"/>
-          <timestamp value="2021-01-25T08:21:52+00:00"/>
+          <identifier value="urn:uuid:785efa91-a7b8-4da6-9018-d2963eda4db4"/>
+          <timestamp value="2021-01-25T09:18:50+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -773,10 +860,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation"/>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/vs-hiv-recency-results"/>
     <resource>
       <ValueSet>
-        <id value="HIVRiskPopulation"/>
+        <id value="vs-hiv-recency-results"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -796,13 +883,29 @@
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation"/>
+        <url value="http://openhie.org/fhir/ValueSet/vs-hiv-recency-results"/>
         <version value="0.2.0"/>
-        <name value="HIVRiskPopulation"/>
+        <name value="HIVRecencyResults"/>
+        <title value="HIVRecencyResults"/>
         <status value="draft"/>
+        <date value="2021-01-25T09:18:25+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="HIV recency result codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fb9d3ca3-60d5-41f3-a545-fb41448a40be"/>
-          <timestamp value="2021-01-25T08:21:52+00:00"/>
+          <identifier value="urn:uuid:785efa91-a7b8-4da6-9018-d2963eda4db4"/>
+          <timestamp value="2021-01-25T09:18:50+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -812,10 +915,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation"/>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/vs-hiv-recency-results"/>
     <resource>
       <ValueSet>
-        <id value="HIVRiskPopulation"/>
+        <id value="vs-hiv-recency-results"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -835,13 +938,29 @@
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation"/>
+        <url value="http://openhie.org/fhir/ValueSet/vs-hiv-recency-results"/>
         <version value="0.2.0"/>
-        <name value="HIVRiskPopulation"/>
+        <name value="HIVRecencyResults"/>
+        <title value="HIVRecencyResults"/>
         <status value="draft"/>
+        <date value="2021-01-25T09:18:25+00:00"/>
+        <publisher value="openHIE"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="HIV recency result codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fb9d3ca3-60d5-41f3-a545-fb41448a40be"/>
-          <timestamp value="2021-01-25T08:21:52+00:00"/>
+          <identifier value="urn:uuid:785efa91-a7b8-4da6-9018-d2963eda4db4"/>
+          <timestamp value="2021-01-25T09:18:50+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -919,7 +1038,7 @@
         <name value="HIVCauseOfDeath"/>
         <title value="HIV Cause Of Death"/>
         <status value="draft"/>
-        <date value="2021-01-25T08:21:27+00:00"/>
+        <date value="2021-01-25T09:18:25+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -935,8 +1054,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ea41d492-95cc-4b81-9318-06116147f10a"/>
-          <timestamp value="2021-01-25T08:21:53+00:00"/>
+          <identifier value="urn:uuid:d7072c54-377a-4570-958a-21a797be5506"/>
+          <timestamp value="2021-01-25T09:18:54+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -966,45 +1085,6 @@
             <code value="4"/>
             <display value="Unknown/Unidentified"/>
           </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation"/>
-    <resource>
-      <ValueSet>
-        <id value="HIVRiskPopulation"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 0 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire#HIVRiskPopulation"/>
-        <version value="0.2.0"/>
-        <name value="HIVRiskPopulation"/>
-        <status value="draft"/>
-        <expansion>
-          <identifier value="urn:uuid:fb9d3ca3-60d5-41f3-a545-fb41448a40be"/>
-          <timestamp value="2021-01-25T08:21:52+00:00"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
         </expansion>
       </ValueSet>
     </resource>
@@ -1118,7 +1198,7 @@
         <name value="HIVRiskPopulation"/>
         <title value="HIV Risk Population"/>
         <status value="draft"/>
-        <date value="2021-01-25T08:21:27+00:00"/>
+        <date value="2021-01-25T09:18:25+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -1134,8 +1214,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5423cc52-4f24-4c56-8039-e8c99d21a4c1"/>
-          <timestamp value="2021-01-25T08:21:54+00:00"/>
+          <identifier value="urn:uuid:0ff6324d-ca91-4b4a-99c4-4027ff7b4c47"/>
+          <timestamp value="2021-01-25T09:18:55+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1263,7 +1343,7 @@
         <name value="HIVTransmissionRoute"/>
         <title value="HIV Transmission Route"/>
         <status value="draft"/>
-        <date value="2021-01-25T08:21:27+00:00"/>
+        <date value="2021-01-25T09:18:25+00:00"/>
         <publisher value="openHIE"/>
         <contact>
           <telecom>
@@ -1279,8 +1359,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:86a0413c-5c3b-4260-b220-e7d6c5c3af83"/>
-          <timestamp value="2021-01-25T08:21:54+00:00"/>
+          <identifier value="urn:uuid:2811c275-3232-4e08-8667-f269196be87a"/>
+          <timestamp value="2021-01-25T09:18:56+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>

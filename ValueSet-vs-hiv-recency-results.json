@@ -1,16 +1,16 @@
 {
   "resourceType": "ValueSet",
-  "id": "HIVRecencyResults",
+  "id": "vs-hiv-recency-results",
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
   },
-  "url": "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
+  "url": "http://openhie.org/fhir/ValueSet/vs-hiv-recency-results",
   "version": "0.2.0",
   "name": "HIVRecencyResults",
   "title": "HIVRecencyResults",
   "status": "draft",
-  "date": "2021-01-25T08:21:27+00:00",
+  "date": "2021-01-25T09:18:25+00:00",
   "publisher": "openHIE",
   "contact": [
     {

@@ -147,13 +147,6 @@
     "name": "PregnancyStatus"
   },
   {
-    "id": "HIVRecencyResults",
-    "type": "ValueSet",
-    "url": "http://openhie.org/fhir/ValueSet/HIVRecencyResults",
-    "version": "0.2.0",
-    "name": "HIVRecencyResults"
-  },
-  {
     "id": "vs-ethnicity",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/ValueSet/vs-ethnicity",
@@ -166,6 +159,13 @@
     "url": "http://openhie.org/fhir/ValueSet/vs-hiv-cause-of-death",
     "version": "0.2.0",
     "name": "HIVCauseOfDeath"
+  },
+  {
+    "id": "vs-hiv-recency-results",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/ValueSet/vs-hiv-recency-results",
+    "version": "0.2.0",
+    "name": "HIVRecencyResults"
   },
   {
     "id": "vs-hiv-risk-behavior",

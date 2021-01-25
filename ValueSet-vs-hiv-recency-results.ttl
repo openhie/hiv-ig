@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/ValueSet/HIVRecencyResults> a fhir:ValueSet;
+<http://openhie.org/fhir/ValueSet/vs-hiv-recency-results> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "HIVRecencyResults"];
+  fhir:Resource.id [ fhir:value "vs-hiv-recency-results"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/ValueSet/HIVRecencyResults"];
+  fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/ValueSet/vs-hiv-recency-results"];
   fhir:ValueSet.version [ fhir:value "0.2.0"];
   fhir:ValueSet.name [ fhir:value "HIVRecencyResults"];
   fhir:ValueSet.title [ fhir:value "HIVRecencyResults"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2021-01-25T08:21:27+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-01-25T09:18:25+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "openHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -39,7 +39,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/ValueSet/HIVRecencyResults.ttl> a owl:Ontology;
+<http://openhie.org/fhir/ValueSet/vs-hiv-recency-results.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
