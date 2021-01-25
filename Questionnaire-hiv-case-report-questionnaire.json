@@ -45,7 +45,7 @@
   "subjectType": [
     "Patient"
   ],
-  "date": "2021-01-19T18:06:47+00:00",
+  "date": "2021-01-25T08:21:27+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -288,7 +288,7 @@
                   "prefix": "12.1.4",
                   "text": "Recency from rapid test - result",
                   "type": "choice",
-                  "answerValueSet": "HIVRecencyResults"
+                  "answerValueSet": "http://openhie.org/fhir/ValueSet/HIVRecencyResults"
                 }
               ]
             },
@@ -309,7 +309,7 @@
                   "prefix": "12.2.2",
                   "text": "Recency from rapid test - result",
                   "type": "choice",
-                  "answerValueSet": "HIVRecencyResults"
+                  "answerValueSet": "http://openhie.org/fhir/ValueSet/HIVRecencyResults"
                 }
               ]
             }

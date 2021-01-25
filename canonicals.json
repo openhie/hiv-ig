@@ -46,7 +46,7 @@
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/CodeSystem/cs-patient-gender",
     "version": "0.2.0",
-    "name": "PatientGender"
+    "name": "CSPatientGender"
   },
   {
     "id": "openhie.fhir.hiv",

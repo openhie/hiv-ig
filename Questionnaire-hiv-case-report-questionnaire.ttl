@@ -54,7 +54,7 @@
      fhir:value "Patient";
      fhir:index 0
   ];
-  fhir:Questionnaire.date [ fhir:value "2021-01-19T18:06:47+00:00"^^xsd:dateTime];
+  fhir:Questionnaire.date [ fhir:value "2021-01-25T08:21:27+00:00"^^xsd:dateTime];
   fhir:Questionnaire.publisher [ fhir:value "openHIE"];
   fhir:Questionnaire.contact [
      fhir:index 0;
@@ -305,7 +305,10 @@
            fhir:Questionnaire.item.prefix [ fhir:value "12.1.4" ];
            fhir:Questionnaire.item.text [ fhir:value "Recency from rapid test - result" ];
            fhir:Questionnaire.item.type [ fhir:value "choice" ];
-           fhir:Questionnaire.item.answerValueSet [ fhir:value "HIVRecencyResults" ]
+           fhir:Questionnaire.item.answerValueSet [
+             fhir:value "http://openhie.org/fhir/ValueSet/HIVRecencyResults";
+             fhir:link <http://openhie.org/fhir/ValueSet/HIVRecencyResults>
+           ]
          ]
        ], [
          fhir:index 1;
@@ -325,7 +328,10 @@
            fhir:Questionnaire.item.prefix [ fhir:value "12.2.2" ];
            fhir:Questionnaire.item.text [ fhir:value "Recency from rapid test - result" ];
            fhir:Questionnaire.item.type [ fhir:value "choice" ];
-           fhir:Questionnaire.item.answerValueSet [ fhir:value "HIVRecencyResults" ]
+           fhir:Questionnaire.item.answerValueSet [
+             fhir:value "http://openhie.org/fhir/ValueSet/HIVRecencyResults";
+             fhir:link <http://openhie.org/fhir/ValueSet/HIVRecencyResults>
+           ]
          ]
        ]
      ], [

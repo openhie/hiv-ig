@@ -7,10 +7,10 @@
   </text>
   <url value="http://openhie.org/fhir/CodeSystem/cs-patient-gender"/>
   <version value="0.2.0"/>
-  <name value="PatientGender"/>
+  <name value="CSPatientGender"/>
   <title value="Patient Gender"/>
   <status value="active"/>
-  <date value="2021-01-19T18:06:47+00:00"/>
+  <date value="2021-01-25T08:21:27+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>

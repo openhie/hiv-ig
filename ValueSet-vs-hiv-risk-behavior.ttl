@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "HIVRiskBehavior"];
   fhir:ValueSet.title [ fhir:value "HIV Risk Behavior"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2021-01-19T18:06:47+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-01-25T08:21:27+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "openHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;

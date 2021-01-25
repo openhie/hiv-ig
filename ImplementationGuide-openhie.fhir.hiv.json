@@ -11,7 +11,7 @@
   "title": "HIV Case Reporting and Monitoring",
   "status": "draft",
   "experimental": false,
-  "date": "2021-01-19T18:06:47+00:00",
+  "date": "2021-01-25T08:21:27+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -571,40 +571,66 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-patient-gender"
+        },
+        "name": "Patient Gender",
+        "description": "The genders for patients"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-hiv-risk-population"
-        },
-        "name": "HIV Risk Population",
-        "description": "HIV Risk Population codes"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-hiv-cause-of-death"
-        },
-        "name": "HIV Cause Of Death",
-        "description": "HIV Cause Of Death codes"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-hiv-symptoms"
+          "reference": "ValueSet/vs-hiv-symptoms"
         },
         "name": "HIV Symptoms",
         "description": "HIV Symptoms codes"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-patient-gender"
+        },
+        "name": "Patient Gender",
+        "description": "Valueset - patient genders"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-risk-behavior"
+        },
+        "name": "HIV Risk Behavior",
+        "description": "HIV Risk Behavior codes"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-risk-behavior"
+        },
+        "name": "HIV Risk Behavior",
+        "description": "HIV Risk Behavior codes"
       },
       {
         "extension": [
@@ -636,40 +662,27 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
+            "valueString": "CodeSystem"
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-hiv-symptoms"
+          "reference": "CodeSystem/cs-hiv-risk-population"
         },
-        "name": "HIV Symptoms",
-        "description": "HIV Symptoms codes"
+        "name": "HIV Risk Population",
+        "description": "HIV Risk Population codes"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
+            "valueString": "StructureDefinition:resource"
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-hiv-cause-of-death"
+          "reference": "StructureDefinition/hiv-cd4-observation"
         },
-        "name": "HIV Cause Of Death",
-        "description": "HIV Cause Of Death codes"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-patient-gender"
-        },
-        "name": "Patient Gender",
-        "description": "Valueset - patient genders"
+        "name": "CD4Observation",
+        "description": "This profile allows the exchange of a patient's CD$ test and results"
       },
       {
         "extension": [
@@ -679,23 +692,10 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-hiv-transmission-route"
+          "reference": "CodeSystem/cs-hiv-symptoms"
         },
-        "name": "HIV Transmission Route",
-        "description": "HIV Transmission Route codes"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-hiv-transmission-route"
-        },
-        "name": "HIV Transmission Route",
-        "description": "HIV Transmission Route codes"
+        "name": "HIV Symptoms",
+        "description": "HIV Symptoms codes"
       },
       {
         "extension": [
@@ -709,19 +709,6 @@
         },
         "name": "Patient Occupation",
         "description": "The patient's occpation"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-patient-gender"
-        },
-        "name": "Patient Gender",
-        "description": "The genders for patients"
       },
       {
         "extension": [
@@ -744,23 +731,10 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-hiv-risk-behavior"
+          "reference": "CodeSystem/cs-hiv-transmission-route"
         },
-        "name": "HIV Risk Behavior",
-        "description": "HIV Risk Behavior codes"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/hiv-cd4-observation"
-        },
-        "name": "CD4Observation",
-        "description": "This profile allows the exchange of a patient's CD$ test and results"
+        "name": "HIV Transmission Route",
+        "description": "HIV Transmission Route codes"
       },
       {
         "extension": [
@@ -770,10 +744,23 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-hiv-risk-behavior"
+          "reference": "ValueSet/vs-hiv-cause-of-death"
         },
-        "name": "HIV Risk Behavior",
-        "description": "HIV Risk Behavior codes"
+        "name": "HIV Cause Of Death",
+        "description": "HIV Cause Of Death codes"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-risk-population"
+        },
+        "name": "HIV Risk Population",
+        "description": "HIV Risk Population codes"
       },
       {
         "extension": [
@@ -783,10 +770,23 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-hiv-risk-population"
+          "reference": "CodeSystem/cs-hiv-cause-of-death"
         },
-        "name": "HIV Risk Population",
-        "description": "HIV Risk Population codes"
+        "name": "HIV Cause Of Death",
+        "description": "HIV Cause Of Death codes"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-transmission-route"
+        },
+        "name": "HIV Transmission Route",
+        "description": "HIV Transmission Route codes"
       }
     ],
     "page": {

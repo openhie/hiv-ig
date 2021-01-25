@@ -7,10 +7,10 @@
   },
   "url": "http://openhie.org/fhir/CodeSystem/cs-patient-gender",
   "version": "0.2.0",
-  "name": "PatientGender",
+  "name": "CSPatientGender",
   "title": "Patient Gender",
   "status": "active",
-  "date": "2021-01-19T18:06:47+00:00",
+  "date": "2021-01-25T08:21:27+00:00",
   "publisher": "openHIE",
   "contact": [
     {
