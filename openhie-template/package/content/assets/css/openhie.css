@@ -62,3 +62,23 @@
   border: 0.5px solid #777;
   background-color: #f7f7f7;
 }
+
+
+dl {
+    display: flex;
+    flex-flow: row wrap;
+}
+dt {
+    flex-basis: 20%;
+    padding: 2px 4px;
+    text-align: left;
+    margin-left: 3em;
+}
+dd {
+    flex-basis: 70%;
+    flex-grow: 1;
+    margin: 0;
+    padding: 2px 4px;
+
+}
+
