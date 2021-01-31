@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "HIVTransmissionRoute"];
   fhir:ValueSet.title [ fhir:value "HIV Transmission Route"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2021-01-25T09:18:25+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-01-31T20:46:18+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "openHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;

@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "HIVRiskBehavior"];
   fhir:CodeSystem.title [ fhir:value "HIV Risk Behavior"];
   fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.date [ fhir:value "2021-01-25T09:18:25+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-01-31T20:46:18+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "openHIE"];
   fhir:CodeSystem.contact [
      fhir:index 0;
