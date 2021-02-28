@@ -1,28 +1,7 @@
 Alias: $targetStructureMap = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap
+Alias: $LOINC = http://loinc.org
 
-Instance: HIVRiskPopulation
-InstanceOf: ValueSet
-Description: "HIV Risk Population codes"
-Title: "HIV Risk Population"
-Usage: #inline
-* name = "HIVRiskPopulation"
-* status = #draft
 
-Instance: HIVRiskBehavior
-InstanceOf: ValueSet
-Description: "HIV Risk Behavior codes"
-Title: "HIV Risk Behavior"
-Usage: #inline
-* name = "HIVRiskBehavior"
-* status = #draft
-
-Instance: HIVTransmissionRoute
-InstanceOf: ValueSet
-Description: "HIV Transmission Route codes"
-Title: "HIV Transmission Route"
-Usage: #inline
-* name = "HIVTransmissionRoute"
-* status = #draft
 /*
 Instance: Gender
 InstanceOf: ValueSet
@@ -33,11 +12,6 @@ Usage: #inline
 * status = #draft
 */
 
-ValueSet: HIVRecencyResults
-//Id: be-vs-vaccine-administration-route
-Title: "HIVRecencyResults"
-Description: "HIV recency result codes"
-* ^status = #draft
 
 
 Instance: PregnancyOutcomeCodes
@@ -71,6 +45,7 @@ Usage: #inline
 //============================================================
 
 
+
 Instance: hiv-case-report-questionnaire
 InstanceOf: Questionnaire
 Description: "HIV Case Report Form"
@@ -89,15 +64,12 @@ Usage: #definition
 * language = #en
 * status = #draft
 
-* contained[+] = HIVRiskPopulation
-* contained[+] = HIVRiskBehavior
-//* contained[+] = Ethnicity
-//* contained[+] = Gender
-//* contained[+] = HIVRecencyResults
+//* contained[+] = HIVRiskPopulation
+//* contained[+] = HIVRiskBehavior
 * contained[+] = PregnancyOutcomeCodes
 * contained[+] = BirthDefects
 * contained[+] = ChildHIVStatus
-* contained[+] = HIVTransmissionRoute
+//* contained[+] = HIVTransmissionRoute
 
 
 * item[+].linkId = "title"
@@ -147,7 +119,7 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].type   = #string
 * item[=].item[=].item[=].item[=].prefix = "3"
 
-* item[=].item[=].item[=].item[+].linkId = "ethnic"
+* item[=].item[=].item[=].item[+].linkId = "ethnicity"
 * item[=].item[=].item[=].item[=].text   = "Ethnicity"
 * item[=].item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].item[=].prefix = "4"
@@ -163,7 +135,12 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].text   = "Year of Birth"
 * item[=].item[=].item[=].item[=].type   = #integer
 * item[=].item[=].item[=].item[=].prefix = "6"
-//* item[=].item[=].item[=].item[=].answerValueSet    = Canonical($vs-iso3166-1-2)
+
+* item[=].item[=].item[=].item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/regex"
+* item[=].item[=].item[=].item[=].extension.valueString = "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00))"
+
+
+
 
 * item[=].item[=].item[=].item[+].linkId = "id_cccd"
 * item[=].item[=].item[=].item[=].text   = "Identification"
@@ -198,9 +175,9 @@ Usage: #definition
 
 * item[=].item[=].item[=].item[+].linkId = "occupation"
 * item[=].item[=].item[=].item[=].text   = "Occupation"
-* item[=].item[=].item[=].item[=].type   = #string
+* item[=].item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].item[=].prefix   = "9"
-//* item[=].item[=].item[=].item[=].answerValueSet = "#occupation"
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-occupations)
 
 * item[=].item[+].linkId = "risk_factors"
 * item[=].item[=].text   = "Risk Factors"
@@ -209,20 +186,21 @@ Usage: #definition
 
 * item[=].item[=].item[+].linkId = "risk_population"
 * item[=].item[=].item[=].text   = "Risk population"
-* item[=].item[=].item[=].type   = #group
+* item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].prefix   = "10.1"
+* item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-population)
 
 * item[=].item[=].item[+].linkId = "risk_behavior"
 * item[=].item[=].item[=].text   = "Risk Behavior"
 * item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].prefix   = "10.2"
-* item[=].item[=].item[=].answerValueSet = "#HIVRiskBehavior"
+* item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-risk-behavior)
 
 * item[=].item[=].item[+].linkId = "transmission_route"
 * item[=].item[=].item[=].text   = "Transmission Route"
 * item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].prefix   = "10.3"
-* item[=].item[=].item[=].answerValueSet = "#HIVTransmissionRoute"
+* item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-transmission-route)
 
 
 * item[=].item[+].linkId = "hiv-diagnosis"
@@ -279,9 +257,8 @@ Usage: #definition
 * item[=].item[=].item[=].item[+].linkId = "hiv-recency-test.testResult"
 * item[=].item[=].item[=].item[=].text   = "Recency from rapid test - result"
 * item[=].item[=].item[=].item[=].type   = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "HIVRecencyResults"
+* item[=].item[=].item[=].item[=].answerValueSet = "HIVRapidTestResults"
 * item[=].item[=].item[=].item[=].prefix   = "12.1.4"
-
 
 
 * item[=].item[=].item[+].linkId = "recency.vlTest"
@@ -295,9 +272,9 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].prefix   = "12.2.1"
 
 * item[=].item[=].item[=].item[+].linkId = "recency.testResult"
-* item[=].item[=].item[=].item[=].text   = "Recency from rapid test - result"
-* item[=].item[=].item[=].item[=].type   = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "HIVRecencyResults"
+* item[=].item[=].item[=].item[=].text   = "VL recency test result"
+* item[=].item[=].item[=].item[=].type   = #integer
+//* item[=].item[=].item[=].item[=].answerValueSet = "HIVRapidTestResults"
 * item[=].item[=].item[=].item[=].prefix   = "12.2.2"
 
 
@@ -324,7 +301,7 @@ Usage: #definition
 
 * item[=].item[=].item[+].linkId = "cd4BeforeART.testResult"
 * item[=].item[=].item[=].text   = "CD4 test before ART - result"
-* item[=].item[=].item[=].type   = #choice
+* item[=].item[=].item[=].type   = #integer
 * item[=].item[=].item[=].prefix   = "13.4"
 
 
@@ -350,7 +327,7 @@ Usage: #definition
 
 * item[=].item[=].item[+].linkId = "cd4DuringART.testResult"
 * item[=].item[=].item[=].text   = "CD4 test during ART - result"
-* item[=].item[=].item[=].type   = #choice
+* item[=].item[=].item[=].type   = #integer
 * item[=].item[=].item[=].prefix   = "14.4"
 
 
@@ -376,7 +353,7 @@ Usage: #definition
 
 * item[=].item[=].item[+].linkId = "vl4DuringART.testResult"
 * item[=].item[=].item[=].text   = "VL test during ART - result"
-* item[=].item[=].item[=].type   = #choice
+* item[=].item[=].item[=].type   = #integer
 * item[=].item[=].item[=].prefix   = "15.4"
 
 
@@ -448,8 +425,8 @@ Usage: #definition
 * item[=].item[=].item[=].type   = #string
 * item[=].item[=].item[=].prefix   = "16.7"
 
-* item[=].item[=].item[+].linkId = "arvTreatment.regimens"
-* item[=].item[=].item[=].text   = "ARV treatment regimens"
+* item[=].item[=].item[+].linkId = "arvTreatment.regimen"
+* item[=].item[=].item[=].text   = "ARV treatment regimen"
 * item[=].item[=].item[=].type   = #group
 * item[=].item[=].item[=].prefix   = "16.8"
 
@@ -652,9 +629,6 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].text   = "ART start date"
 * item[=].item[=].item[=].item[=].type   = #date
 * item[=].item[=].item[=].item[=].prefix   = "19"
-
-
-
 
 
 

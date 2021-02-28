@@ -16,7 +16,7 @@ Id: ethnicity
 Title: "Ethnicity"
 Description: "Ethnicity."
 * value[x] only CodeableConcept
-* valueCodeableConcept from VSEthnicity (extensible)
+* valueCodeableConcept from Ethnicity (extensible)
 
 
 Profile:        HIVRiskFactor
@@ -44,7 +44,7 @@ Id: ext-specimen-collection-place
 Title: "Ethnicity"
 Description: "Specimen Collection Place."
 * value[x] only CodeableConcept or Reference
-* valueCodeableConcept from VSEthnicity (extensible)
+* valueCodeableConcept from Ethnicity (extensible)
 
 
 
@@ -65,7 +65,7 @@ Id:             hiv-recency-result
 Title:          "HIV Recency result"
 Description:    """ 
     This profile allows the exchange of a patient's hiv recency test"""
-* code from HIVRecencyResults
+* code from HIVRapidTestResults
 * specimen MS
 //date of specimencollection
 //place of specimencollection
