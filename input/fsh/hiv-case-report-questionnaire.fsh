@@ -1,6 +1,13 @@
 Alias: $targetStructureMap = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap
 Alias: $LOINC = http://loinc.org
 
+Instance: vs-hiv-risk-population
+InstanceOf: ValueSet
+Description: "HIV Risk Population codes"
+Title: "HIV Risk Population"
+Usage: #inline
+* name = "HIVRiskPopulation"
+* status = #draft
 
 /*
 Instance: Gender
@@ -12,9 +19,14 @@ Usage: #inline
 * status = #draft
 */
 
+ValueSet: HIVRecencyResults
+Id: vs-hiv-recency-results
+Title: "HIVRecencyResults"
+Description: "HIV recency result codes"
+* ^status = #draft
 
 
-Instance: PregnancyOutcomeCodes
+Instance: vs-hiv-pregnancy-outcomes
 InstanceOf: ValueSet
 Description: "Pregnancy Outcome Codes"
 Title: "Pregnancy Outcome Codes"
@@ -23,7 +35,7 @@ Usage: #inline
 * status = #draft
 
 
-Instance: BirthDefects
+Instance: vs-hiv-birth-defects
 InstanceOf: ValueSet
 Description: "Birth Defects"
 Title: "Pregnancy Outcome Codes"
@@ -32,7 +44,7 @@ Usage: #inline
 * status = #draft
 
 
-Instance: ChildHIVStatus
+Instance: vs-hiv-child-hiv-status
 InstanceOf: ValueSet
 Description: "Child HIV Status"
 Title: "Child HIV Status"
@@ -64,11 +76,13 @@ Usage: #definition
 * language = #en
 * status = #draft
 
-//* contained[+] = HIVRiskPopulation
+* contained[+] = vs-hiv-risk-population
 //* contained[+] = HIVRiskBehavior
-* contained[+] = PregnancyOutcomeCodes
-* contained[+] = BirthDefects
-* contained[+] = ChildHIVStatus
+//* contained[+] = Ethnicity
+//* contained[+] = Gender
+* contained[+] = vs-hiv-pregnancy-outcomes
+* contained[+] = vs-hiv-birth-defects
+* contained[+] = vs-hiv-child-hiv-status
 //* contained[+] = HIVTransmissionRoute
 
 
@@ -177,7 +191,7 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].text   = "Occupation"
 * item[=].item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].item[=].prefix   = "9"
-* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-occupations)
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical(Occupation)
 
 * item[=].item[+].linkId = "risk_factors"
 * item[=].item[=].text   = "Risk Factors"
@@ -187,6 +201,7 @@ Usage: #definition
 * item[=].item[=].item[+].linkId = "risk_population"
 * item[=].item[=].item[=].text   = "Risk population"
 * item[=].item[=].item[=].type   = #choice
+* item[=].item[=].item[=].answerValueSet = Canonical(VSHIVRiskPopulation)
 * item[=].item[=].item[=].prefix   = "10.1"
 * item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-population)
 
@@ -194,13 +209,13 @@ Usage: #definition
 * item[=].item[=].item[=].text   = "Risk Behavior"
 * item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].prefix   = "10.2"
-* item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-risk-behavior)
+* item[=].item[=].item[=].answerValueSet = Canonical(VSHIVRiskBehavior)
 
 * item[=].item[=].item[+].linkId = "transmission_route"
 * item[=].item[=].item[=].text   = "Transmission Route"
 * item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].prefix   = "10.3"
-* item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-transmission-route)
+* item[=].item[=].item[=].answerValueSet = Canonical(VSHIVTransmissionRoute)
 
 
 * item[=].item[+].linkId = "hiv-diagnosis"
@@ -257,7 +272,7 @@ Usage: #definition
 * item[=].item[=].item[=].item[+].linkId = "hiv-recency-test.testResult"
 * item[=].item[=].item[=].item[=].text   = "Recency from rapid test - result"
 * item[=].item[=].item[=].item[=].type   = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "HIVRapidTestResults"
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-recency-results)
 * item[=].item[=].item[=].item[=].prefix   = "12.1.4"
 
 
@@ -272,9 +287,9 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].prefix   = "12.2.1"
 
 * item[=].item[=].item[=].item[+].linkId = "recency.testResult"
-* item[=].item[=].item[=].item[=].text   = "VL recency test result"
-* item[=].item[=].item[=].item[=].type   = #integer
-//* item[=].item[=].item[=].item[=].answerValueSet = "HIVRapidTestResults"
+* item[=].item[=].item[=].item[=].text   = "Recency from rapid test - result"
+* item[=].item[=].item[=].item[=].type   = #choice
+* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-recency-results)
 * item[=].item[=].item[=].item[=].prefix   = "12.2.2"
 
 
@@ -644,5 +659,19 @@ Usage: #definition
 
 * item[=].item[=].item[+].linkId = "causeOfDeath"
 * item[=].item[=].item[=].text   = "Cause of death"
-* item[=].item[=].item[=].type   = #string
+* item[=].item[=].item[=].type   = #choice
+* item[=].item[=].item[=].answerValueSet = Canonical(vs-hiv-cause-of-death)
 * item[=].item[=].item[=].prefix   = "19"
+
+/*
+missing valuesets:
+BirthDefects
+ethnicity
+recency
+cd4
+Viral Load
+drugresistance 
+pregnancystatus
+hiv test result
+*/
+
