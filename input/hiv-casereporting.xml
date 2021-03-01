@@ -236,7 +236,7 @@ Ethnicity
     </resource>    
     <resource>
       <reference>
-        <reference value="ValueSet/vs-hiv-recency-results"/>
+        <reference value="ValueSet/HIVRapidTestResults"/>
       </reference>
       <name value="HIVRapidTestResults"/>
       <description value="HIV Rapid Test Results"/>
