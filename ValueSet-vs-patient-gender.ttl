@@ -14,10 +14,10 @@
   ];
   fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/ValueSet/vs-patient-gender"];
   fhir:ValueSet.version [ fhir:value "0.2.0"];
-  fhir:ValueSet.name [ fhir:value "VSPatientGender"];
+  fhir:ValueSet.name [ fhir:value "PatientGender"];
   fhir:ValueSet.title [ fhir:value "Patient Gender"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-01-31T20:46:18+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-03-01T22:29:39+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "openHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;

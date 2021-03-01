@@ -1,0 +1,85 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-hiv-population",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/CodeSystem/cs-hiv-population defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-hiv-population-1\"> </a></td><td>Injection drug users</td><td>Injecting drug users</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-hiv-population-2\"> </a></td><td>FSW</td><td>Female sex workers</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-hiv-population-3\"> </a></td><td>Pregnant women</td><td>Pregnant women</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-hiv-population-4\"> </a></td><td>Blood donors</td><td>Blood donors</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-hiv-population-5\"> </a></td><td>TB patients</td><td>TB patients</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"cs-hiv-population-6\"> </a></td><td>People with STDs</td><td>People with sexually transmitted diseases</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"cs-hiv-population-7\"> </a></td><td>Young recruits</td><td>Young recruits for military service</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"cs-hiv-population-8\"> </a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"cs-hiv-population-9\"> </a></td><td>Others</td><td>Others</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/CodeSystem/cs-hiv-population",
+  "version": "0.2.0",
+  "name": "CSHIVPopulation",
+  "title": "Population groups",
+  "status": "active",
+  "date": "2021-03-01T22:29:39+00:00",
+  "publisher": "openHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "CodeSystem - Population groups - Subjects to be tested for HIV",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 9,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Injection drug users",
+      "definition": "Injecting drug users"
+    },
+    {
+      "code": "2",
+      "display": "FSW",
+      "definition": "Female sex workers"
+    },
+    {
+      "code": "3",
+      "display": "Pregnant women",
+      "definition": "Pregnant women"
+    },
+    {
+      "code": "4",
+      "display": "Blood donors",
+      "definition": "Blood donors"
+    },
+    {
+      "code": "5",
+      "display": "TB patients",
+      "definition": "TB patients"
+    },
+    {
+      "code": "6",
+      "display": "People with STDs",
+      "definition": "People with sexually transmitted diseases"
+    },
+    {
+      "code": "7",
+      "display": "Young recruits",
+      "definition": "Young recruits for military service"
+    },
+    {
+      "code": "8",
+      "display": "MSM",
+      "definition": "Men who have sex with men"
+    },
+    {
+      "code": "9",
+      "display": "Others",
+      "definition": "Others"
+    }
+  ]
+}

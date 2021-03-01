@@ -9,8 +9,8 @@
   "version": "0.2.0",
   "name": "HIVTransmissionRoute",
   "title": "HIV Transmission Route",
-  "status": "draft",
-  "date": "2021-01-31T20:46:18+00:00",
+  "status": "active",
+  "date": "2021-03-01T22:29:39+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -22,7 +22,7 @@
       ]
     }
   ],
-  "description": "HIV Transmission Route codes",
+  "description": "Valueset - Route of HIV transmission",
   "jurisdiction": [
     {
       "coding": [

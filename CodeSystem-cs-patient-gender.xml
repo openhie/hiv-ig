@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="cs-patient-gender"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/CodeSystem/cs-patient-gender defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">male<a name="cs-patient-gender-male"> </a></td><td>Male</td><td>Client identifies as female</td></tr><tr><td style="white-space:nowrap">female<a name="cs-patient-gender-female"> </a></td><td>Female</td><td>Client identifies as male</td></tr><tr><td style="white-space:nowrap">transgender<a name="cs-patient-gender-transgender"> </a></td><td>Transgender</td><td>Client identifies as transgender</td></tr><tr><td style="white-space:nowrap">other<a name="cs-patient-gender-other"> </a></td><td>Other</td><td>Other gender identity</td></tr><tr><td style="white-space:nowrap">not-disclosed<a name="cs-patient-gender-not-disclosed"> </a></td><td>Not disclosed</td><td>Client does not wish to disclose gender identity</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/CodeSystem/cs-patient-gender defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">male<a name="cs-patient-gender-male"> </a></td><td>Male</td><td>Client identifies as female</td></tr><tr><td style="white-space:nowrap">female<a name="cs-patient-gender-female"> </a></td><td>Female</td><td>Client identifies as male</td></tr><tr><td style="white-space:nowrap">transgender<a name="cs-patient-gender-transgender"> </a></td><td>Transgender</td><td>Client identifies as transgender</td></tr><tr><td style="white-space:nowrap">non-binary<a name="cs-patient-gender-non-binary"> </a></td><td>Non-binary</td><td>Client identifies in a non-binary way</td></tr></table></div>
   </text>
   <url value="http://openhie.org/fhir/CodeSystem/cs-patient-gender"/>
   <version value="0.2.0"/>
   <name value="CSPatientGender"/>
   <title value="Patient Gender"/>
   <status value="active"/>
-  <date value="2021-01-31T20:46:18+00:00"/>
+  <date value="2021-03-01T22:29:39+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>
@@ -26,7 +26,7 @@
     </coding>
   </jurisdiction>
   <content value="complete"/>
-  <count value="5"/>
+  <count value="4"/>
   <concept>
     <code value="male"/>
     <display value="Male"/>
@@ -43,13 +43,8 @@
     <definition value="Client identifies as transgender"/>
   </concept>
   <concept>
-    <code value="other"/>
-    <display value="Other"/>
-    <definition value="Other gender identity"/>
-  </concept>
-  <concept>
-    <code value="not-disclosed"/>
-    <display value="Not disclosed"/>
-    <definition value="Client does not wish to disclose gender identity"/>
+    <code value="non-binary"/>
+    <display value="Non-binary"/>
+    <definition value="Client identifies in a non-binary way"/>
   </concept>
 </CodeSystem>

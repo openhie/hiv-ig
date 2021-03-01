@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENHIE.FHIR.HIV\HIV Risk Behavior - FHIR v4.0.1</title>
+    <title>OPENHIE.FHIR.HIV\Risk Behavior - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"13.31"}
-    h3,h4,h5,h6{--heading-prefix:"13.31"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.37"}
+    h3,h4,h5,h6{--heading-prefix:"13.37"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Left logo - typically the publisher's logo - project or affiliate -->
@@ -163,7 +163,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>HIV Risk Behavior</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Risk Behavior</b></li>
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -214,7 +214,7 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">CodeSystem: HIV Risk Behavior</h2>
+  <h2 id="root">CodeSystem: Risk Behavior</h2>
 
   <!-- insert intro if present -->
   
@@ -229,10 +229,10 @@
 <tbody>
 <tr><td>Defining URL:</td><td>http://openhie.org/fhir/CodeSystem/cs-hiv-risk-behavior</td></tr>
  <tr><td>Version:</td><td>0.2.0</td></tr>
- <tr><td>Name:</td><td>HIVRiskBehavior</td></tr>
- <tr><td>Title:</td><td>HIV Risk Behavior</td></tr>
- <tr><td>Status:</td><td>Draft as of 2021-01-31T20:46:18+00:00</td></tr>
- <tr><td>Definition:</td><td><p>HIV Risk Behavior codes</p>
+ <tr><td>Name:</td><td>CSHIVRiskBehavior</td></tr>
+ <tr><td>Title:</td><td>Risk Behavior</td></tr>
+ <tr><td>Status:</td><td>Active as of 2021-03-01T22:29:39+00:00</td></tr>
+ <tr><td>Definition:</td><td><p>CodeSystem - Behavior associated with risk of HIV transmission</p>
 </td></tr>
  <tr><td>Publisher:</td><td>openHIE</td></tr>
  <tr><td>Content:</td><td>Complete: All the concepts defined by the code system are included in the code system resource</td></tr>
@@ -250,7 +250,7 @@
 </ul>
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/CodeSystem/cs-hiv-risk-behavior defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="cs-hiv-risk-behavior-1"> </a></td><td>Drug injection</td><td>Drug injection</td></tr><tr><td style="white-space:nowrap">2<a name="cs-hiv-risk-behavior-2"> </a></td><td>Sex with sex workers or clients</td><td>Sexual relationship with sex workers or with sex buyers/clients (for money or drug)</td></tr><tr><td style="white-space:nowrap">3<a name="cs-hiv-risk-behavior-3"> </a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style="white-space:nowrap">4<a name="cs-hiv-risk-behavior-4"> </a></td><td>Multiple sex partners</td><td>Multiple sex partners (not for money or drug)</td></tr><tr><td style="white-space:nowrap">5<a name="cs-hiv-risk-behavior-5"> </a></td><td>Other risks</td><td>Other risks of oneself</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/CodeSystem/cs-hiv-risk-behavior defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="cs-hiv-risk-behavior-1"> </a></td><td>Drug injection</td><td>Drug injection</td></tr><tr><td style="white-space:nowrap">2<a name="cs-hiv-risk-behavior-2"> </a></td><td>Sex workers</td><td>Sexual relationship with sex workers or with sex buyers/clients (for money or drug)</td></tr><tr><td style="white-space:nowrap">3<a name="cs-hiv-risk-behavior-3"> </a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style="white-space:nowrap">4<a name="cs-hiv-risk-behavior-4"> </a></td><td>Multiple Sex Partners</td><td>Multiple Sex Partners (NOT for money or drugs)</td></tr><tr><td style="white-space:nowrap">5<a name="cs-hiv-risk-behavior-5"> </a></td><td>Others</td><td>Other risks to oneself</td></tr></table></div>
 
   <!-- insert notes if present -->
   
@@ -280,7 +280,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jan 31, 2021 20:46+0000">2021-01-31</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 1, 2021 22:29+0000">2021-03-01</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

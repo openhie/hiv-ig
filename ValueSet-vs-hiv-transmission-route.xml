@@ -9,8 +9,8 @@
   <version value="0.2.0"/>
   <name value="HIVTransmissionRoute"/>
   <title value="HIV Transmission Route"/>
-  <status value="draft"/>
-  <date value="2021-01-31T20:46:18+00:00"/>
+  <status value="active"/>
+  <date value="2021-03-01T22:29:39+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>
@@ -18,7 +18,7 @@
       <value value="http://hl7.org/Special/committees/[something]"/>
     </telecom>
   </contact>
-  <description value="HIV Transmission Route codes"/>
+  <description value="Valueset - Route of HIV transmission"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

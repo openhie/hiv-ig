@@ -7,10 +7,10 @@
   </text>
   <url value="http://openhie.org/fhir/ValueSet/vs-patient-gender"/>
   <version value="0.2.0"/>
-  <name value="VSPatientGender"/>
+  <name value="PatientGender"/>
   <title value="Patient Gender"/>
   <status value="active"/>
-  <date value="2021-01-31T20:46:18+00:00"/>
+  <date value="2021-03-01T22:29:39+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>

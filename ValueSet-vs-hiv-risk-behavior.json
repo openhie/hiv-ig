@@ -8,9 +8,9 @@
   "url": "http://openhie.org/fhir/ValueSet/vs-hiv-risk-behavior",
   "version": "0.2.0",
   "name": "HIVRiskBehavior",
-  "title": "HIV Risk Behavior",
-  "status": "draft",
-  "date": "2021-01-31T20:46:18+00:00",
+  "title": "Risk Behavior",
+  "status": "active",
+  "date": "2021-03-01T22:29:39+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -22,7 +22,7 @@
       ]
     }
   ],
-  "description": "HIV Risk Behavior codes",
+  "description": "ValueSet - Behavior associated with risk of HIV transmission",
   "jurisdiction": [
     {
       "coding": [
