@@ -182,6 +182,40 @@ Ethnicity
       <groupingId value="longitudinalRecord" />
     </resource>    
 
+    <resource>
+      <reference>
+        <reference value="NamingSystem/ns-hiv-case-id"/>
+      </reference>
+      <name value="Naming System - Case ID"/>
+      <description value="A common naming system for case IDs"/>
+      <groupingId value="caseReport" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="NamingSystem/ns-passport-id"/>
+      </reference>
+      <name value="Naming System - Passport Numbers"/>
+      <description value="A naming system for passport numbers"/>
+      <groupingId value="caseReport" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="NamingSystem/ns-insurance-id"/>
+      </reference>
+      <name value="Naming System - Insurance Numbers"/>
+      <description value="A naming system for insurance numbers"/>
+      <groupingId value="caseReport" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="NamingSystem/ns-art-id"/>
+      </reference>
+      <name value="Naming System - ARV treatment IDs"/>
+      <description value="A naming system for ARV treatment IDs"/>
+      <groupingId value="caseReport" />
+    </resource>    
+
+
 <!--    <resource>
       <reference>
         <reference value="NamingSystem/vn-passport-number"/>
@@ -202,10 +236,10 @@ Ethnicity
     </resource>    
     <resource>
       <reference>
-        <reference value="ValueSet/vs-hiv-recency-results"/>
+        <reference value="ValueSet/HIVRapidTestResults"/>
       </reference>
-      <name value="HIVRecencyResults"/>
-      <description value="HIV Recency Results"/>
+      <name value="HIVRapidTestResults"/>
+      <description value="HIV Rapid Test Results"/>
       <groupingId value="longitudinalRecord" />
     </resource>   
 
