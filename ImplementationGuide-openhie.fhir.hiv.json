@@ -11,7 +11,7 @@
   "title": "HIV Case Reporting and Monitoring",
   "status": "draft",
   "experimental": false,
-  "date": "2021-03-01T23:05:19+00:00",
+  "date": "2021-03-09T19:28:18+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -38,6 +38,13 @@
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "uri": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse",
+      "packageId": "hl7.fhir.uv.sdc",
+      "version": "2.7.0"
+    }
   ],
   "definition": {
     "extension": [
@@ -830,6 +837,17 @@
         },
         "name": "Risk Behavior",
         "description": "CodeSystem - Behavior associated with risk of HIV transmission"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/exampleresponse"
+        }
       },
       {
         "extension": [

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "106ffedf-8faf-4ecd-bcb5-1ee85f0ce0c4",
+  "id" : "a857d8b8-118e-440e-b4ca-cf969e8f0888",
   "meta" : {
-    "lastUpdated" : "2021-03-01T23:05:19.375+00:00"
+    "lastUpdated" : "2021-03-09T19:28:18.051+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "TypeOfContact",
       "title" : "Type of contact or relationship",
       "status" : "active",
-      "date" : "2021-03-01T23:05:19+00:00",
+      "date" : "2021-03-09T19:28:18+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -35,8 +35,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:4027f472-e24f-48ef-999c-57a8c61a12ad",
-        "timestamp" : "2021-03-01T23:05:45+00:00",
+        "identifier" : "urn:uuid:01900006-fba5-4c20-9106-27f0f6cd3c0b",
+        "timestamp" : "2021-03-09T19:28:35+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -83,7 +83,7 @@
       "name" : "PatientCommunicationPreferences",
       "title" : "Patient Communication Preferences",
       "status" : "active",
-      "date" : "2021-03-01T23:05:19+00:00",
+      "date" : "2021-03-09T19:28:18+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -99,8 +99,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:4230c5d3-adf7-4725-be6c-667109f85f29",
-        "timestamp" : "2021-03-01T23:05:47+00:00",
+        "identifier" : "urn:uuid:291ba5af-8eec-4d47-9a29-ff6d2f87162d",
+        "timestamp" : "2021-03-09T19:28:37+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -130,14 +130,14 @@
       "id" : "HIVRapidTestResults",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.68</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.0.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA11882-0\"> </a><a href=\"http://details.loinc.org/LOINC/LA11882-0.html\">LA11882-0</a></td><td>Detected</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA11883-8\"> </a><a href=\"http://details.loinc.org/LOINC/LA11883-8.html\">LA11883-8</a></td><td>Not detected</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA11885-3\"> </a><a href=\"http://details.loinc.org/LOINC/LA11885-3.html\">LA11885-3</a></td><td>Equivocal</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA9663-1\"> </a><a href=\"http://details.loinc.org/LOINC/LA9663-1.html\">LA9663-1</a></td><td>Inconclusive</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.68</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA11882-0\"> </a><a href=\"http://details.loinc.org/LOINC/LA11882-0.html\">LA11882-0</a></td><td>Detected</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA11883-8\"> </a><a href=\"http://details.loinc.org/LOINC/LA11883-8.html\">LA11883-8</a></td><td>Not detected</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA11885-3\"> </a><a href=\"http://details.loinc.org/LOINC/LA11885-3.html\">LA11885-3</a></td><td>Equivocal</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA9663-1\"> </a><a href=\"http://details.loinc.org/LOINC/LA9663-1.html\">LA9663-1</a></td><td>Inconclusive</td><td/></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/ValueSet/HIVRapidTestResults",
       "version" : "0.2.0",
       "name" : "HIVRapidTestResults",
       "title" : "HIVRapidTestResults",
       "status" : "draft",
-      "date" : "2021-03-01T23:05:19+00:00",
+      "date" : "2021-03-09T19:28:18+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -153,8 +153,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:01655eec-7561-4aa6-ab5b-6f9bf5237e1e",
-        "timestamp" : "2021-03-01T23:05:50+00:00",
+        "identifier" : "urn:uuid:3bdb5e24-f5df-45bd-9970-23d3b9b6685a",
+        "timestamp" : "2021-03-09T19:28:39+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -205,7 +205,7 @@
       "name" : "HIVOccupations",
       "title" : "Occupations relevant for HIV",
       "status" : "active",
-      "date" : "2021-03-01T23:05:19+00:00",
+      "date" : "2021-03-09T19:28:18+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -221,8 +221,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ee3c25b8-5ac9-4229-833b-e1d9f5d226a8",
-        "timestamp" : "2021-03-01T23:05:50+00:00",
+        "identifier" : "urn:uuid:ca6c0b1b-801b-4524-a89d-947dbcde9772",
+        "timestamp" : "2021-03-09T19:28:39+00:00",
         "total" : 12,
         "parameter" : [{
           "name" : "excludeNested",
@@ -309,7 +309,7 @@
       "name" : "HIVRiskBehavior",
       "title" : "Risk Behavior",
       "status" : "active",
-      "date" : "2021-03-01T23:05:19+00:00",
+      "date" : "2021-03-09T19:28:18+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -325,8 +325,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ea7851b0-87fb-4166-b068-5a76cc608176",
-        "timestamp" : "2021-03-01T23:05:50+00:00",
+        "identifier" : "urn:uuid:d594518b-f4b7-4037-88cc-a9e1cea819a6",
+        "timestamp" : "2021-03-09T19:28:39+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -378,7 +378,7 @@
       "name" : "PatientGender",
       "title" : "Patient Gender",
       "status" : "active",
-      "date" : "2021-03-01T23:05:19+00:00",
+      "date" : "2021-03-09T19:28:18+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -394,8 +394,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a996734e-fd9a-45f1-92ae-9d7e132cdfc3",
-        "timestamp" : "2021-03-01T23:05:51+00:00",
+        "identifier" : "urn:uuid:9d24e679-a862-42ac-8f17-821afa31475f",
+        "timestamp" : "2021-03-09T19:28:40+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -442,8 +442,8 @@
       "name" : "PregnancyOutcomeCodes",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:815492e5-5755-4da6-9d25-b5e57b6b1d66",
-        "timestamp" : "2021-03-01T23:05:52+00:00",
+        "identifier" : "urn:uuid:1ffd74d3-ca0a-42d4-85e5-fe3ed9f7ee5b",
+        "timestamp" : "2021-03-09T19:28:41+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -465,8 +465,8 @@
       "name" : "PregnancyOutcomeCodes",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:815492e5-5755-4da6-9d25-b5e57b6b1d66",
-        "timestamp" : "2021-03-01T23:05:52+00:00",
+        "identifier" : "urn:uuid:1ffd74d3-ca0a-42d4-85e5-fe3ed9f7ee5b",
+        "timestamp" : "2021-03-09T19:28:41+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -488,8 +488,8 @@
       "name" : "PregnancyOutcomeCodes",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:815492e5-5755-4da6-9d25-b5e57b6b1d66",
-        "timestamp" : "2021-03-01T23:05:52+00:00",
+        "identifier" : "urn:uuid:1ffd74d3-ca0a-42d4-85e5-fe3ed9f7ee5b",
+        "timestamp" : "2021-03-09T19:28:41+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -511,7 +511,7 @@
       "name" : "HIVTransmissionRoute",
       "title" : "HIV Transmission Route",
       "status" : "active",
-      "date" : "2021-03-01T23:05:19+00:00",
+      "date" : "2021-03-09T19:28:18+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -527,8 +527,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:94da61c3-8349-4a37-a61d-9cfe98c513df",
-        "timestamp" : "2021-03-01T23:05:52+00:00",
+        "identifier" : "urn:uuid:dc4a157c-7787-4e3f-8ead-8954af4f3eff",
+        "timestamp" : "2021-03-09T19:28:41+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -575,7 +575,7 @@
       "name" : "HIVPopulation",
       "title" : "Occupations relevant for HIV",
       "status" : "active",
-      "date" : "2021-03-01T23:05:19+00:00",
+      "date" : "2021-03-09T19:28:18+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -591,8 +591,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:024601df-09e4-4803-981e-dde12b891b79",
-        "timestamp" : "2021-03-01T23:05:53+00:00",
+        "identifier" : "urn:uuid:989e84ab-12d5-4d3c-bb47-96563bcb121e",
+        "timestamp" : "2021-03-09T19:28:42+00:00",
         "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",
@@ -664,7 +664,7 @@
       "name" : "PatientGenderIdentity",
       "title" : "Patient Gender Identity",
       "status" : "active",
-      "date" : "2021-03-01T23:05:19+00:00",
+      "date" : "2021-03-09T19:28:18+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -680,8 +680,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:eb828b0e-ebc2-4ca8-8cf9-89784c58a0d5",
-        "timestamp" : "2021-03-01T23:05:53+00:00",
+        "identifier" : "urn:uuid:e4745131-9e90-4d64-8ad5-c3ef737315cb",
+        "timestamp" : "2021-03-09T19:28:42+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
