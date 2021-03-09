@@ -1,9 +1,9 @@
 ﻿HIVCaseReporting : Validation Results
 =========================================
 
-err = 106, warn = 116, info = 2
+err = 116, warn = 116, info = 2
 IG Publisher Version: 1.1.63
-Generated Tue Mar 09 19:28:52 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir)
+Generated Tue Mar 09 19:48:42 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir)
 
  Build Errors : 265 / 2 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-occupations : 0 / 0 / 1
@@ -19,7 +19,7 @@ Generated Tue Mar 09 19:28:52 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#
  /github/workspace/fsh-generated/resources/NamingSystem-ns-insurance-id : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-ns-passport-id : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 1 / 0 / 6
- /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 13 / 1 / 2
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 23 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ethnicity : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ext-specimen-collection-place : 1 / 1 / 1
@@ -494,7 +494,7 @@ ERROR: /github/workspace/output/QuestionnaireResponse-exampleresponse.xml.html: 
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 479 column 45
+/* ' at line 497 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-risk-factor-definitions.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3059,7 +3059,7 @@ ERROR: /github/workspace/output/QuestionnaireResponse-exampleresponse.json.html:
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 525 column 45
+/* ' at line 549 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-patient-gender-identity.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3287,7 +3287,7 @@ ERROR: /github/workspace/output/QuestionnaireResponse-exampleresponse.ttl.html: 
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 487 column 45
+/* ' at line 503 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-patient.profile.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4993,6 +4993,14 @@ ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[3
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract - listed in meta
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[0].item[1].item[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract
 == /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse.json ==
+ERROR: QuestionnaireResponse.item[2].item[2]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[2])
+ERROR: QuestionnaireResponse.item[2].item[3]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[3])
+ERROR: QuestionnaireResponse.item[2].item[4]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[4])
+ERROR: QuestionnaireResponse.item[2].item[5]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[5])
+ERROR: QuestionnaireResponse.item[2].item[6]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[6])
+ERROR: QuestionnaireResponse.item[2].item[7]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[7])
+ERROR: QuestionnaireResponse.item[2].item[8].item[0]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[8].item[0])
+ERROR: QuestionnaireResponse.item[2].item[8].item[2]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[8].item[2])
 INFORMATION: QuestionnaireResponse/exampleresponse: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
 WARNING: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.meta.tag[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: QuestionnaireResponse/exampleresponse: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse - listed in meta
@@ -5009,6 +5017,8 @@ ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[1].item[1].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[1].item[2].answer[0].value.ofType(date): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type date
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[1].item[3].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[2].item[0].answer[0].value.ofType(date): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type date
+ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[2].item[1].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
 == /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary.json ==
 INFORMATION: StructureDefinition/arv-therapy-summary: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/arv-therapy-summary'): The Implementation Guide contains no examples for this profile
