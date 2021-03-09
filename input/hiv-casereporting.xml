@@ -33,9 +33,17 @@
       -->
     </coding>
   </jurisdiction>
+
+
   <packageId value="openhie.fhir.hiv"/>
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
   <license value="CC0-1.0"/>
+
+  <dependsOn>
+    <uri value = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse" />
+    <packageId value = "hl7.fhir.uv.sdc" />
+    <version value = "2.7.0" />
+  </dependsOn>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="4.0.1"/>
   <definition>
