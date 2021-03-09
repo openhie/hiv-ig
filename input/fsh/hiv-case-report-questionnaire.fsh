@@ -47,7 +47,7 @@ Usage: #inline
 
 
 Instance: hiv-case-report-questionnaire
-InstanceOf: Questionnaire
+InstanceOf: sdc-questionnaire-extract
 Description: "HIV Case Report Form"
 Title: "HIV Case Report Form"
 Usage: #definition
@@ -70,6 +70,10 @@ Usage: #definition
 * contained[+] = BirthDefects
 * contained[+] = ChildHIVStatus
 //* contained[+] = HIVTransmissionRoute
+
+
+* url = "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire"
+
 
 
 * item[+].linkId = "title"
@@ -216,17 +220,17 @@ Usage: #definition
 * item[=].item[=].item[+].linkId = "hiv-diagnosis.confirmingLab"
 * item[=].item[=].item[=].text   = "Confirming Lab"
 * item[=].item[=].item[=].type   = #string
-* item[=].item[=].item[=].prefix   = "11.1"
+* item[=].item[=].item[=].prefix   = "11.2"
 
 * item[=].item[=].item[+].linkId = "hiv-diagnosis.dateOfSpecimenCollection"
 * item[=].item[=].item[=].text   = "Date of Specimen Collection"
 * item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].prefix   = "11.2"
+* item[=].item[=].item[=].prefix   = "11.3"
 
 * item[=].item[=].item[+].linkId = "hiv-diagnosis.placeOfSpecimenCollection"
 * item[=].item[=].item[=].text   = "Place of Specimen Collection"
 * item[=].item[=].item[=].type   = #string
-* item[=].item[=].item[=].prefix   = "11.3"
+* item[=].item[=].item[=].prefix   = "11.4"
 
 
 * item[=].item[+].linkId = "hiv-recency-test"
@@ -362,186 +366,187 @@ Usage: #definition
 * item[=].item[+].linkId = "drugResistanceTest"
 * item[=].item[=].text   = "Drug Resistance test"
 * item[=].item[=].type   = #group
-* item[=].item[=].prefix   = "15"
+* item[=].item[=].prefix   = "16"
 
 * item[=].item[=].item[+].linkId = "drugResistanceTest.dateOfSpecimenCollection"
 * item[=].item[=].item[=].text   = "Date of Specimen Collection for Drug Resistance test"
 * item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].prefix   = "15.5"
+* item[=].item[=].item[=].prefix   = "16.1"
 
 * item[=].item[=].item[+].linkId = "drugResistanceTest.dateOfTestPerformance"
 * item[=].item[=].item[=].text   = "Date of Drug Resistance test"
 * item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].prefix   = "15.6"
+* item[=].item[=].item[=].prefix   = "16.2"
 
 * item[=].item[=].item[+].linkId = "drugResistanceTest.placeOfSpecimenCollection"
 * item[=].item[=].item[=].text   = "Place of Specimen Collection for Drug Resistance test"
 * item[=].item[=].item[=].type   = #string
-* item[=].item[=].item[=].prefix   = "15.7"
+* item[=].item[=].item[=].prefix   = "16.3"
 
 * item[=].item[=].item[+].linkId = "drugResistanceTest.testResult"
 * item[=].item[=].item[=].text   = "Drug Resistance test result"
 * item[=].item[=].item[=].type   = #choice
-* item[=].item[=].item[=].prefix   = "15.8"
+* item[=].item[=].item[=].prefix   = "16.4"
 
 
 * item[=].item[+].linkId = "arvTreatment"
 * item[=].item[=].text   = "ARV Treatment"
 * item[=].item[=].type   = #group
-* item[=].item[=].prefix   = "16"
+* item[=].item[=].prefix   = "17"
 
 * item[=].item[=].item[+].linkId = "arvTreatment.treatmentHistory"
 * item[=].item[=].item[=].text   = "ARV Treatment history"
 * item[=].item[=].item[=].type   = #string
-* item[=].item[=].item[=].prefix   = "16.1"
+* item[=].item[=].item[=].prefix   = "17.1"
 
 * item[=].item[=].item[+].linkId = "arvTreatment.dateOfTreatmentStart"
 * item[=].item[=].item[=].text   = "Date of treatment start"
 * item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].prefix   = "16.1"
+* item[=].item[=].item[=].prefix   = "17.2"
 
 * item[=].item[=].item[+].linkId = "arvTreatment.dateOfTreatmentStop"
 * item[=].item[=].item[=].text   = "Date of treatment stop"
 * item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].prefix   = "16.3"
+* item[=].item[=].item[=].prefix   = "17.3"
 
 * item[=].item[=].item[+].linkId = "arvTreatment.placeOfInitiation"
 * item[=].item[=].item[=].text   = "Place of ARV treatment initiation"
 * item[=].item[=].item[=].type   = #string
-* item[=].item[=].item[=].prefix   = "16.4"
+* item[=].item[=].item[=].prefix   = "17.4"
 
 * item[=].item[=].item[+].linkId = "arvTreatment.dateOfLossToFollowUp"
 * item[=].item[=].item[=].text   = "Date of loss to follow up"
 * item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].prefix   = "16.5"
+* item[=].item[=].item[=].prefix   = "17.5"
 
 * item[=].item[=].item[+].linkId = "arvTreatment.dateOfTransferredOut"
 * item[=].item[=].item[=].text   = "Date ARV treatment transferred out"
 * item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].prefix   = "16.6"
+* item[=].item[=].item[=].prefix   = "17.6"
 
 * item[=].item[=].item[+].linkId = "arvTreatment.placeTransferredOut"
 * item[=].item[=].item[=].text   = "Place ARV treatment transferred out"
 * item[=].item[=].item[=].type   = #string
-* item[=].item[=].item[=].prefix   = "16.7"
+* item[=].item[=].item[=].prefix   = "17.7"
 
 * item[=].item[=].item[+].linkId = "arvTreatment.regimen"
 * item[=].item[=].item[=].text   = "ARV treatment regimen"
 * item[=].item[=].item[=].type   = #group
-* item[=].item[=].item[=].prefix   = "16.8"
+* item[=].item[=].item[=].prefix   = "17.8"
 
 * item[=].item[=].item[=].item[+].linkId = "regimen.date1stLineStarted"
 * item[=].item[=].item[=].item[=].text   = "Date 1st ARV regimen started"
 * item[=].item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].item[=].prefix   = "16.8.1"
+* item[=].item[=].item[=].item[=].prefix   = "17.8.1"
 
 * item[=].item[=].item[=].item[+].linkId = "arvTreatment.date2ndLineStarted"
 * item[=].item[=].item[=].item[=].text   = "Date 3rd ARV regimen started"
 * item[=].item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].item[=].prefix   = "16.8.2"
+* item[=].item[=].item[=].item[=].prefix   = "17.8.2"
 
 * item[=].item[=].item[=].item[+].linkId = "arvTreatment.date3rdLineStarted"
 * item[=].item[=].item[=].item[=].text   = "Date 3rd ARV regimen started"
 * item[=].item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].item[=].prefix   = "16.8.3"
+* item[=].item[=].item[=].item[=].prefix   = "17.8.3"
 
 
 * item[=].item[+].linkId = "comorbidities"
 * item[=].item[=].text   = "Comorbidities"
 * item[=].item[=].type   = #group
-* item[=].item[=].prefix   = "17"
+* item[=].item[=].prefix   = "18"
 
 * item[=].item[=].item[+].linkId = "tuberculosis"
 * item[=].item[=].item[=].text   = "Tuberculosis"
 * item[=].item[=].item[=].type   = #group
-* item[=].item[=].item[=].prefix   = "17.1"
+* item[=].item[=].item[=].prefix   = "18.1"
 
 * item[=].item[=].item[=].item[+].linkId = "TPT"
 * item[=].item[=].item[=].item[=].text   = "TPT"
 * item[=].item[=].item[=].item[=].type   = #group
-* item[=].item[=].item[=].item[=].prefix   = "17.1.1"
+* item[=].item[=].item[=].item[=].prefix   = "18.1.1"
 
 * item[=].item[=].item[=].item[=].item[+].linkId = "tpt.dateStarted"
 * item[=].item[=].item[=].item[=].item[=].text   = "Date TPT started"
 * item[=].item[=].item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].item[=].item[=].prefix   = "17.1.1.1"
+* item[=].item[=].item[=].item[=].item[=].prefix   = "18.1.1.1"
 
 * item[=].item[=].item[=].item[=].item[+].linkId = "tpt.dateCompleted"
 * item[=].item[=].item[=].item[=].item[=].text   = "Date TPT completed"
 * item[=].item[=].item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].item[=].item[=].prefix   = "17.1.1.2"
+* item[=].item[=].item[=].item[=].item[=].prefix   = "18.1.1.2"
 
 * item[=].item[=].item[=].item[=].item[+].linkId = "tpt.placeProvided"
 * item[=].item[=].item[=].item[=].item[=].text   = "Place TPT provided"
 * item[=].item[=].item[=].item[=].item[=].type   = #string
-* item[=].item[=].item[=].item[=].item[=].prefix   = "17.1.1.3"
+* item[=].item[=].item[=].item[=].item[=].prefix   = "18.1.1.3"
 
 * item[=].item[=].item[=].item[+].linkId = "tbDiagnosisDate"
 * item[=].item[=].item[=].item[=].text   = "TB Diagnosis Date"
 * item[=].item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].item[=].prefix   = "17.1.2"
+* item[=].item[=].item[=].item[=].prefix   = "18.1.2"
 
 
 * item[=].item[=].item[=].item[+].linkId = "tbTreatment"
 * item[=].item[=].item[=].item[=].text   = "TB Treatment"
 * item[=].item[=].item[=].item[=].type   = #group
-* item[=].item[=].item[=].item[=].prefix   = "17.1.3"
+* item[=].item[=].item[=].item[=].prefix   = "18.1.3"
 
 * item[=].item[=].item[=].item[=].item[+].linkId = "tbTreatment.dateStarted"
 * item[=].item[=].item[=].item[=].item[=].text   = "Date TB Treatment started"
 * item[=].item[=].item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].item[=].item[=].prefix   = "17.1.3.1"
+* item[=].item[=].item[=].item[=].item[=].prefix   = "18.1.3.1"
 
 * item[=].item[=].item[=].item[=].item[+].linkId = "tbTreatment.dateCompleted"
 * item[=].item[=].item[=].item[=].item[=].text   = "Date TB Treatment completed"
 * item[=].item[=].item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].item[=].item[=].prefix   = "17.1.3.2"
+* item[=].item[=].item[=].item[=].item[=].prefix   = "18.1.3.2"
 
 * item[=].item[=].item[=].item[=].item[+].linkId = "tbTreatment.placeProvided"
 * item[=].item[=].item[=].item[=].item[=].text   = "Place TB Treatment provided"
 * item[=].item[=].item[=].item[=].item[=].type   = #string
-* item[=].item[=].item[=].item[=].item[=].prefix   = "17.1.3.3"
+* item[=].item[=].item[=].item[=].item[=].prefix   = "18.1.3.3"
 
 
 
 * item[=].item[=].item[+].linkId = "hbv_hcv"
 * item[=].item[=].item[=].text   = "HBV and HCV"
 * item[=].item[=].item[=].type   = #group
+* item[=].item[=].item[=].prefix   = "18.2"
 
 * item[=].item[=].item[=].item[+].linkId = "hbv"
 * item[=].item[=].item[=].item[=].text   = "HBV"
 * item[=].item[=].item[=].item[=].type   = #group
-* item[=].item[=].item[=].item[=].prefix   = "17.1.4"
+* item[=].item[=].item[=].item[=].prefix   = "18.2.1"
 
 * item[=].item[=].item[=].item[=].item[+].linkId = "hbv.diagnosisDate"
 * item[=].item[=].item[=].item[=].item[=].text   = "Date of HBV diagnosis"
 * item[=].item[=].item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].item[=].item[=].prefix   = "17.1.4"
+* item[=].item[=].item[=].item[=].item[=].prefix   = "18.2.1.1"
 
 * item[=].item[=].item[=].item[=].item[+].linkId = "hbv.treatmentStartDate"
 * item[=].item[=].item[=].item[=].item[=].text   = "Date of HBV treatment start"
 * item[=].item[=].item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].item[=].item[=].prefix   = "17.1.4"
+* item[=].item[=].item[=].item[=].item[=].prefix   = "18.2.1.2"
 
 * item[=].item[=].item[=].item[=].item[+].linkId = "hbv.treatmentEndDate"
 * item[=].item[=].item[=].item[=].item[=].text   = "Date HBV treatment completed"
 * item[=].item[=].item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].item[=].item[=].prefix   = "17.1.4"
+* item[=].item[=].item[=].item[=].item[=].prefix   = "18.2.1.3"
 
 * item[=].item[=].item[=].item[=].item[+].linkId = "hbv.placeProvided"
 * item[=].item[=].item[=].item[=].item[=].text   = "Place HBV treatment provided"
 * item[=].item[=].item[=].item[=].item[=].type   = #string
-* item[=].item[=].item[=].item[=].item[=].prefix   = "17.1.4"
+* item[=].item[=].item[=].item[=].item[=].prefix   = "18.2.1.4"
 
 * item[=].item[=].item[=].item[+].linkId = "hcv"
 * item[=].item[=].item[=].item[=].text   = "HCV"
 * item[=].item[=].item[=].item[=].type   = #group
-* item[=].item[=].item[=].item[=].prefix   = "17.1.4"
+* item[=].item[=].item[=].item[=].prefix   = "18.2.2"
 
 * item[=].item[=].item[=].item[=].item[+].linkId = "hcv.diagnosisDate"
 * item[=].item[=].item[=].item[=].item[=].text   = "Date of HBV diagnosis"
 * item[=].item[=].item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].item[=].item[=].prefix   = "17.1.4"
+* item[=].item[=].item[=].item[=].item[=].prefix   = "18.2.2.1"
 
 // * item[=].item[=].item[=].item[=].item[+].linkId = "hcv.treatmentStartDate"
 // * item[=].item[=].item[=].item[=].item[=].text   = "Date of HBV treatment start"
@@ -552,7 +557,7 @@ Usage: #definition
 * item[=].item[=].item[=].item[=].item[+].linkId = "hcv.placeProvided"
 * item[=].item[=].item[=].item[=].item[=].text   = "Place HBV treatment provided"
 * item[=].item[=].item[=].item[=].item[=].type   = #string
-* item[=].item[=].item[=].item[=].item[=].prefix   = "17.1.4"
+* item[=].item[=].item[=].item[=].item[=].prefix   = "18.2.2.2"
 
 
 
@@ -564,85 +569,85 @@ Usage: #definition
 * item[=].item[=].item[+].linkId = "datePregnancyReported"
 * item[=].item[=].item[=].text   = "Date pregnancy reported"
 * item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].prefix   = "19"
+* item[=].item[=].item[=].prefix   = "19.1"
 
 * item[=].item[=].item[+].linkId = "placePregnancyReported"
 * item[=].item[=].item[=].text   = "Place pregnancy reported"
 * item[=].item[=].item[=].type   = #string
-* item[=].item[=].item[=].prefix   = "19"
+* item[=].item[=].item[=].prefix   = "19.2"
 
 * item[=].item[=].item[+].linkId = "childDeliveryDate"
 * item[=].item[=].item[=].text   = "Reported child delivery date"
 * item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].prefix   = "19"
+* item[=].item[=].item[=].prefix   = "19.3"
 
 * item[=].item[=].item[+].linkId = "childDeliveryPlace"
 * item[=].item[=].item[=].text   = "Reported child delivery place"
 * item[=].item[=].item[=].type   = #string
-* item[=].item[=].item[=].prefix   = "19"
+* item[=].item[=].item[=].prefix   = "19.4"
 
 * item[=].item[=].item[+].linkId = "pregnancyOutcomes"
 * item[=].item[=].item[=].text   = "Pregnancy Outcomes"
 * item[=].item[=].item[=].type   = #group
-* item[=].item[=].item[=].prefix   = "19"
+* item[=].item[=].item[=].prefix   = "19.5"
 
 * item[=].item[=].item[=].item[+].linkId = "pregnancyOutcomeCode"
 * item[=].item[=].item[=].item[=].text   = "Pregnancy Outcome code"
 * item[=].item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].item[=].answerValueSet = "#PregnancyOutcomeCodes"
-* item[=].item[=].item[=].item[=].prefix   = "19"
+* item[=].item[=].item[=].item[=].prefix   = "19.5.1"
 
 * item[=].item[=].item[=].item[+].linkId = "childDateOfBirth"
 * item[=].item[=].item[=].item[=].text   = "Date of child birth"
 * item[=].item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].item[=].prefix   = "19"
+* item[=].item[=].item[=].item[=].prefix   = "19.5.2"
 
 * item[=].item[=].item[=].item[+].linkId = "gestationAtDelivery"
 * item[=].item[=].item[=].item[=].text   = "Gestational age at delivery (weeks)"
 * item[=].item[=].item[=].item[=].type   = #decimal
-* item[=].item[=].item[=].item[=].prefix   = "19"
+* item[=].item[=].item[=].item[=].prefix   = "19.5.3"
 
 * item[=].item[=].item[=].item[+].linkId = "birthWeight"
 * item[=].item[=].item[=].item[=].text   = "Weight at birth (kg)"
 * item[=].item[=].item[=].item[=].type   = #decimal
-* item[=].item[=].item[=].item[=].prefix   = "19"
+* item[=].item[=].item[=].item[=].prefix   = "19.5.4"
 
 * item[=].item[=].item[=].item[+].linkId = "birtDefects"
 * item[=].item[=].item[=].item[=].text   = "Birth defects"
 * item[=].item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].item[=].answerValueSet = "#BirthDefects"
-* item[=].item[=].item[=].item[=].prefix   = "19"
+* item[=].item[=].item[=].item[=].prefix   = "19.5.5"
 
 * item[=].item[=].item[=].item[+].linkId = "hivStatus"
 * item[=].item[=].item[=].item[=].text   = "HIV status"
 * item[=].item[=].item[=].item[=].type   = #choice
 * item[=].item[=].item[=].item[=].answerValueSet = "#ChildHIVStatus"
-* item[=].item[=].item[=].item[=].prefix   = "19"
+* item[=].item[=].item[=].item[=].prefix   = "19.5.6"
 
 
 * item[=].item[=].item[=].item[+].linkId = "childHIVDiagnosisDate"
 * item[=].item[=].item[=].item[=].text   = "HIV diagnosis date"
 * item[=].item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].item[=].prefix   = "19"
+* item[=].item[=].item[=].item[=].prefix   = "19.5.7"
 
 * item[=].item[=].item[=].item[+].linkId = "childARTStartDate"
 * item[=].item[=].item[=].item[=].text   = "ART start date"
 * item[=].item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].item[=].prefix   = "19"
+* item[=].item[=].item[=].item[=].prefix   = "19.5.8"
 
 
 
 * item[=].item[+].linkId = "death"
 * item[=].item[=].text   = "Patient death"
 * item[=].item[=].type   = #group
-* item[=].item[=].prefix   = "19"
+* item[=].item[=].prefix   = "20"
 
 * item[=].item[=].item[+].linkId = "dateOfDeath"
 * item[=].item[=].item[=].text   = "Date of death"
 * item[=].item[=].item[=].type   = #date
-* item[=].item[=].item[=].prefix   = "19"
+* item[=].item[=].item[=].prefix   = "20.1"
 
 * item[=].item[=].item[+].linkId = "causeOfDeath"
 * item[=].item[=].item[=].text   = "Cause of death"
 * item[=].item[=].item[=].type   = #string
-* item[=].item[=].item[=].prefix   = "19"
+* item[=].item[=].item[=].prefix   = "20.2"
