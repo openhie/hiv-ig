@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExampleScenario xmlns="http://hl7.org/fhir">
+  <id value="hiv-case-reporting-scenario"/>
+  <version value="0.0.1"/>
+  <name value="HIVCaseReportingScenario"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2021-03-09T00:00:00.000+01:00"/>
+  <publisher value="OHIE"/>
+  <actor>
+    <actorId value="QS"/>
+    <type value="entity"/>
+    <name value="Questionnaire\nSource"/>
+  </actor>
+  <actor>
+    <actorId value="HCP"/>
+    <type value="person"/>
+    <name value="Healthcare Professional"/>
+  </actor>
+  <actor>
+    <actorId value="CRSUBM"/>
+    <type value="entity"/>
+    <name value="Case Report Submitter"/>
+  </actor>
+  <actor>
+    <actorId value="CRTRANSF"/>
+    <type value="entity"/>
+    <name value="Case Report Submitter"/>
+  </actor>
+  <actor>
+    <actorId value="CRREPO"/>
+    <type value="entity"/>
+    <name value="Case Report Submitter"/>
+  </actor>
+
+  <instance>
+    <resourceId value="hiv-case-report-questionnaire"/>
+    <resourceType value="Questionnaire"/>
+    <name value="HIV Case Report\nQuestionnaire\n(template)"/>
+  </instance>
+
+  <instance>
+    <resourceId value="exampleresponse"/>
+    <resourceType value="QuestionnaireResponse"/>
+    <name value="HIV Case Report\nResponse"/>
+  </instance>
+
+  <instance>
+    <resourceId value="extractedexample"/>
+    <resourceType value="Bundle"/>
+    <name value="HIV Case Record\n(Transformed)"/>
+  </instance>
+
+
+  <process>
+    <title value="Case Reporting Example"/>
+    <description value="description"/>
+    <preConditions value="The patient visits the clinic for HIV case follow-up."/>
+    <postConditions value="The patient's HIV longitudinal record (and eventually the alerts and reports) is updated with the information extracted from the case report."/>
+
+    <step>
+      <operation>
+        <name value="Obtain Questionnaire"/>
+        <number value="1"/>
+        <initiator value="CRSUBM"/>
+        <receiver value="QS"/>
+        <response>
+          <resourceId value="hiv-case-report-questionnaire"/>
+        </response>
+      </operation>
+    </step>
+
+
+
+    <step>
+      <operation>
+        <name value="Fill Questionnaire"/>
+        <number value="2"/>
+        <initiator value="HCP"/>
+        <receiver value="CRSUBM"/>
+        <request>
+          <resourceId value="exampleresponse"/>
+        </request>
+      </operation>
+    </step>
+
+
+    <step>
+      <operation>
+        <name value="Send questionnaire"/>
+        <number value="3"/>
+        <initiator value="CRSUBM"/>
+        <receiver value="CRTRANSF"/>
+        <response>
+          <resourceId value="exampleresponse"/>
+        </response>
+      </operation>
+    </step>
+
+
+
+    <step>
+      <operation>
+        <name value="Extract data from questionnaire"/>
+        <number value="4"/>
+        <initiator value="CRTRANSF"/>
+        <receiver value="CRREPO"/>
+        <request>
+          <resourceId value="extractedexample"/>
+        </request>
+      </operation>
+    </step>
+
+
+
+
+
+  </process>
+</ExampleScenario>

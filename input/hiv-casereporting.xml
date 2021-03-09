@@ -83,6 +83,14 @@
       <description value="Questionnaire for case report"/>
       <groupingId value="caseReport" />
     </resource>    
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/exampleresponse"/>
+      </reference>
+      <name value="Example QuestionnaireResponse"/>
+      <description value="Example QuestionnaireResponse - patient info, HIV detection and ARV treatment"/>
+      <groupingId value="caseReport" />
+    </resource>    
 
 
 <!--
