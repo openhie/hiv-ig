@@ -20,6 +20,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
 <link href="assets/css/openhie.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -45,11 +46,9 @@
     h3,h4,h5,h6{--heading-prefix:"13.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        <!-- Placeholder for child template header declarations -->
-
-<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <!-- Left logo - typically the publisher's logo - project or affiliate -->
         <div id="project-nav">
-          <a id="project-logo" no-external="true" href="http://hl7.eu">
+          <a id="project-logo" no-external="true" href="http://ohie.org">
             <img height="71" alt="Project home" src="assets/images/home.png"/>
           </a>
         </div>
@@ -210,7 +209,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#6">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#7">Other</a>
+         <a href="#7">Example: Example Scenarios</a>
       </li>
    </ul>
 </div>
@@ -243,6 +242,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Questionnaire for case report</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-exampleresponse.html"
+                     title="QuestionnaireResponse/exampleresponse">Example QuestionnaireResponse</a>
+               </td>
+               <td>
+<p>Example QuestionnaireResponse - patient info, HIV detection and ARV treatment</p>
 </td>
             </tr>
             <tr>
@@ -631,9 +639,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </table>
    </p>
    <a name="7"> </a>
-   <h3>Other </h3>
+   <h3>Example: Example Scenarios </h3>
    <p>
-    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories</p>
+    <p>These define groups of interrelated examples that demonstrate one or more of the workflows supported by this implementation guide</p>
 </p>
    <p>
       <table class="grid">
@@ -641,8 +649,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-exampleresponse.html"
-                     title="QuestionnaireResponse/exampleresponse">QuestionnaireResponse/exampleresponse</a>
+                  <a href="ExampleScenario-hiv-case-reporting-scenario.html"
+                     title="ExampleScenario/hiv-case-reporting-scenario">ExampleScenario/hiv-case-reporting-scenario</a>
                </td>
             </tr>
          </tbody>
@@ -651,6 +659,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 
 </div>
+
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -659,18 +668,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    if(window.location.hash != "") {
+        $('a[href="' + window.location.hash + '"]').click()
+    }
+  });
+</script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 9, 2021 19:48+0000">2021-03-09</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 9, 2021 23:21+0000">2021-03-09</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -679,6 +688,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                  <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
 
 
           </span>
@@ -701,8 +712,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
-  
-  <!-- feedback form - Google forms -->
+
+<!-- feedback form - Google forms -->
 <!-- v0.1, 2021-01-09 -->
 
 
@@ -797,7 +808,7 @@ anchors.add()</script>
 <!-- / feedback form  -->
 
 
-  <!-- Analytics Below
+<!-- Analytics Below
   ================================================== -->
   </body>
 </html>

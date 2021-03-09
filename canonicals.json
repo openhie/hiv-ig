@@ -56,6 +56,13 @@
     "name": "CSTypeOfContact"
   },
   {
+    "id": "hiv-case-reporting-scenario",
+    "type": "ExampleScenario",
+    "url": "http://openhie.org/fhir/ExampleScenario/hiv-case-reporting-scenario",
+    "version": "0.2.0",
+    "name": "HIVCaseReportingScenario"
+  },
+  {
     "id": "openhie.fhir.hiv",
     "type": "ImplementationGuide",
     "url": "http://openhie.org/fhir/ImplementationGuide/openhie.fhir.hiv",

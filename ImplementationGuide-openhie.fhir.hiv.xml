@@ -12,7 +12,7 @@
   <title value="HIV Case Reporting and Monitoring"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-03-09T19:48:10+00:00"/>
+  <date value="2021-03-09T23:21:35+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>
@@ -256,6 +256,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/exampleresponse"/>
+      </reference>
+      <name value="Example QuestionnaireResponse"/>
+      <description value="Example QuestionnaireResponse - patient info, HIV detection and ARV treatment"/>
+      <groupingId value="caseReport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
@@ -432,6 +443,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExampleScenario"/>
+      </extension>
+      <reference>
+        <reference value="ExampleScenario/hiv-case-reporting-scenario"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
@@ -598,14 +617,6 @@
       </reference>
       <name value="Risk Behavior"/>
       <description value="CodeSystem - Behavior associated with risk of HIV transmission"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/exampleresponse"/>
-      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

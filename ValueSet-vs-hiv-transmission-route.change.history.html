@@ -24,6 +24,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
 <link href="assets/css/openhie.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -45,15 +46,13 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"13.28"}
-    h3,h4,h5,h6{--heading-prefix:"13.28"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.29"}
+    h3,h4,h5,h6{--heading-prefix:"13.29"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        <!-- Placeholder for child template header declarations -->
-
-<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <!-- Left logo - typically the publisher's logo - project or affiliate -->
         <div id="project-nav">
-          <a id="project-logo" no-external="true" href="http://hl7.eu">
+          <a id="project-logo" no-external="true" href="http://ohie.org">
             <img height="71" alt="Project home" src="assets/images/home.png"/>
           </a>
         </div>
@@ -228,6 +227,7 @@
 
 </div>
 
+
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -259,18 +259,18 @@
     });
   </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    if(window.location.hash != "") {
+        $('a[href="' + window.location.hash + '"]').click()
+    }
+  });
+</script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 9, 2021 19:48+0000">2021-03-09</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 9, 2021 23:21+0000">2021-03-09</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -279,6 +279,8 @@
                  <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
 
 
           </span>
@@ -301,8 +303,8 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
-  
-  <!-- feedback form - Google forms -->
+
+<!-- feedback form - Google forms -->
 <!-- v0.1, 2021-01-09 -->
 
 
@@ -397,7 +399,7 @@ anchors.add()</script>
 <!-- / feedback form  -->
 
 
-  <!-- Analytics Below
+<!-- Analytics Below
   ================================================== -->
   </body>
 </html>

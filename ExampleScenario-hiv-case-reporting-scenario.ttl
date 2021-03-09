@@ -1,0 +1,139 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/ExampleScenario/hiv-case-reporting-scenario> a fhir:ExampleScenario;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "hiv-case-reporting-scenario"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>http://openhie.org/fhir/ExampleScenario/hiv-case-reporting-scenario</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: HIVCaseReportingScenario</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: Mar 8, 2021, 11:00:00 PM</p><p><b>publisher</b>: openHIE</p><p><b>contact</b>: <a href=\"http://hl7.org/Special/committees/[something]\">http://hl7.org/Special/committees/[something]</a></p><p><b>jurisdiction</b>: <span title=\"Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 001}\">World</span></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: QS</p><p><b>type</b>: entity</p><p><b>name</b>: Questionnaire\\nSource</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: HCP</p><p><b>type</b>: person</p><p><b>name</b>: Healthcare Professional</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: CRSUBM</p><p><b>type</b>: entity</p><p><b>name</b>: Case Report Submitter</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: CRTRANSF</p><p><b>type</b>: entity</p><p><b>name</b>: Case Report Submitter</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: CRREPO</p><p><b>type</b>: entity</p><p><b>name</b>: Case Report Submitter</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: hiv-case-report-questionnaire</p><p><b>resourceType</b>: Questionnaire</p><p><b>name</b>: HIV Case Report\\nQuestionnaire\\n(template)</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: exampleresponse</p><p><b>resourceType</b>: QuestionnaireResponse</p><p><b>name</b>: HIV Case Report\\nResponse</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: extractedexample</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: HIV Case Record\\n(Transformed)</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Case Reporting Example</p><p><b>description</b>: description</p><p><b>preConditions</b>: The patient visits the clinic for HIV case follow-up.</p><p><b>postConditions</b>: The patient's HIV longitudinal record (and eventually the alerts and reports) is updated with the information extracted from the case report.</p><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 1</p><p><b>name</b>: Obtain Questionnaire</p><p><b>initiator</b>: CRSUBM</p><p><b>receiver</b>: QS</p><h3>Responses</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>hiv-case-report-questionnaire</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 2</p><p><b>name</b>: Fill Questionnaire</p><p><b>initiator</b>: HCP</p><p><b>receiver</b>: CRSUBM</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>exampleresponse</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 3</p><p><b>name</b>: Send questionnaire</p><p><b>initiator</b>: CRSUBM</p><p><b>receiver</b>: CRTRANSF</p><h3>Responses</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>exampleresponse</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>name</b>: Extract data from questionnaire</p><p><b>initiator</b>: CRTRANSF</p><p><b>receiver</b>: CRREPO</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>extractedexample</td></tr></table></blockquote></blockquote></blockquote></div>"
+  ];
+  fhir:ExampleScenario.url [ fhir:value "http://openhie.org/fhir/ExampleScenario/hiv-case-reporting-scenario"];
+  fhir:ExampleScenario.version [ fhir:value "0.2.0"];
+  fhir:ExampleScenario.name [ fhir:value "HIVCaseReportingScenario"];
+  fhir:ExampleScenario.status [ fhir:value "draft"];
+  fhir:ExampleScenario.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:ExampleScenario.date [ fhir:value "2021-03-09T00:00:00.000+01:00"^^xsd:dateTime];
+  fhir:ExampleScenario.publisher [ fhir:value "openHIE"];
+  fhir:ExampleScenario.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/[something]" ]
+     ]
+  ];
+  fhir:ExampleScenario.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:ExampleScenario.actor [
+     fhir:index 0;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "QS" ];
+     fhir:ExampleScenario.actor.type [ fhir:value "entity" ];
+     fhir:ExampleScenario.actor.name [ fhir:value "Questionnaire\\nSource" ]
+  ], [
+     fhir:index 1;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "HCP" ];
+     fhir:ExampleScenario.actor.type [ fhir:value "person" ];
+     fhir:ExampleScenario.actor.name [ fhir:value "Healthcare Professional" ]
+  ], [
+     fhir:index 2;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "CRSUBM" ];
+     fhir:ExampleScenario.actor.type [ fhir:value "entity" ];
+     fhir:ExampleScenario.actor.name [ fhir:value "Case Report Submitter" ]
+  ], [
+     fhir:index 3;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "CRTRANSF" ];
+     fhir:ExampleScenario.actor.type [ fhir:value "entity" ];
+     fhir:ExampleScenario.actor.name [ fhir:value "Case Report Submitter" ]
+  ], [
+     fhir:index 4;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "CRREPO" ];
+     fhir:ExampleScenario.actor.type [ fhir:value "entity" ];
+     fhir:ExampleScenario.actor.name [ fhir:value "Case Report Submitter" ]
+  ];
+  fhir:ExampleScenario.instance [
+     fhir:index 0;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "hiv-case-report-questionnaire" ];
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "Questionnaire" ];
+     fhir:ExampleScenario.instance.name [ fhir:value "HIV Case Report\\nQuestionnaire\\n(template)" ]
+  ], [
+     fhir:index 1;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "exampleresponse" ];
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "QuestionnaireResponse" ];
+     fhir:ExampleScenario.instance.name [ fhir:value "HIV Case Report\\nResponse" ]
+  ], [
+     fhir:index 2;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "extractedexample" ];
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "Bundle" ];
+     fhir:ExampleScenario.instance.name [ fhir:value "HIV Case Record\\n(Transformed)" ]
+  ];
+  fhir:ExampleScenario.process [
+     fhir:index 0;
+     fhir:ExampleScenario.process.title [ fhir:value "Case Reporting Example" ];
+     fhir:ExampleScenario.process.description [ fhir:value "description" ];
+     fhir:ExampleScenario.process.preConditions [ fhir:value "The patient visits the clinic for HIV case follow-up." ];
+     fhir:ExampleScenario.process.postConditions [ fhir:value "The patient's HIV longitudinal record (and eventually the alerts and reports) is updated with the information extracted from the case report." ];
+     fhir:ExampleScenario.process.step [
+       fhir:index 0;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "1" ];
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Obtain Questionnaire" ];
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "CRSUBM" ];
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "QS" ];
+         fhir:ExampleScenario.process.step.operation.response [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "hiv-case-report-questionnaire" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "2" ];
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Fill Questionnaire" ];
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "HCP" ];
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "CRSUBM" ];
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "exampleresponse" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "3" ];
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Send questionnaire" ];
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "CRSUBM" ];
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "CRTRANSF" ];
+         fhir:ExampleScenario.process.step.operation.response [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "exampleresponse" ]
+         ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ];
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Extract data from questionnaire" ];
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "CRTRANSF" ];
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "CRREPO" ];
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "extractedexample" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/ExampleScenario/hiv-case-reporting-scenario.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

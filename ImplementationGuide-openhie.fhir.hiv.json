@@ -11,7 +11,7 @@
   "title": "HIV Case Reporting and Monitoring",
   "status": "draft",
   "experimental": false,
-  "date": "2021-03-09T19:48:10+00:00",
+  "date": "2021-03-09T23:21:35+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -398,6 +398,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/exampleresponse"
+        },
+        "name": "Example QuestionnaireResponse",
+        "description": "Example QuestionnaireResponse - patient info, HIV detection and ARV treatment",
+        "groupingId": "caseReport"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:logical"
           }
         ],
@@ -622,6 +636,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ExampleScenario"
+          }
+        ],
+        "reference": {
+          "reference": "ExampleScenario/hiv-case-reporting-scenario"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:logical"
           }
         ],
@@ -837,17 +862,6 @@
         },
         "name": "Risk Behavior",
         "description": "CodeSystem - Behavior associated with risk of HIV transmission"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "QuestionnaireResponse"
-          }
-        ],
-        "reference": {
-          "reference": "QuestionnaireResponse/exampleresponse"
-        }
       },
       {
         "extension": [
