@@ -1,0 +1,36 @@
+@startuml
+
+
+Title Case Reporting Example
+
+participant "Questionnaire\nSource" as QS
+actor "Healthcare Professional" as HCP
+participant "Case Report\nSubmitter" as CRSUBM
+participant "Case Report\nTransformer" as CRTRANSF
+participant "Case Report\nRepository" as CRREPO
+
+    
+    
+    
+    
+
+    CRSUBM-> QS : Obtain Questionnaire\n[[ExampleScenario-hiv-case-reporting-scenario-resources.html#hiv-case-report-questionnaire HIV Case Report\nQuestionnaire\n(template)]]\n
+
+
+
+    HCP-> CRSUBM : Fill Questionnaire\n[[ExampleScenario-hiv-case-reporting-scenario-resources.html#HIV Case Report\nResponse]]\n
+
+
+    CRSUBM-> CRTRANSF : Send questionnaire\n[[ExampleScenario-hiv-case-reporting-scenario-resources.html#exampleresponse HIV Case Report\nResponse]]\n
+
+
+
+    CRTRANSF-> CRREPO : Extract data from questionnaire\n[[ExampleScenario-hiv-case-reporting-scenario-resources.html#HIV Case Record\n(Transformed)]]\n
+
+
+
+
+
+  
+
+@enduml
