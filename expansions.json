@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "9fd4db92-1e62-4606-a835-b199ed13f40e",
+  "id" : "aad0b515-9f26-4278-9a43-bf4ffd8cdf1e",
   "meta" : {
-    "lastUpdated" : "2021-03-10T19:53:17.319+00:00"
+    "lastUpdated" : "2021-03-10T20:06:47.119+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "TypeOfContact",
       "title" : "Type of contact or relationship",
       "status" : "active",
-      "date" : "2021-03-10T19:53:17+00:00",
+      "date" : "2021-03-10T20:06:47+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -35,8 +35,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:79067011-eac5-4d4f-b03c-ac115a75d9c4",
-        "timestamp" : "2021-03-10T19:53:33+00:00",
+        "identifier" : "urn:uuid:b4cba575-ae77-4aea-a6b2-1a1b298bfd00",
+        "timestamp" : "2021-03-10T20:07:05+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -83,7 +83,7 @@
       "name" : "PatientCommunicationPreferences",
       "title" : "Patient Communication Preferences",
       "status" : "active",
-      "date" : "2021-03-10T19:53:17+00:00",
+      "date" : "2021-03-10T20:06:47+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -99,8 +99,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:abafc1ab-e1f1-4fe5-b170-8e12484af499",
-        "timestamp" : "2021-03-10T19:53:35+00:00",
+        "identifier" : "urn:uuid:670c0eb8-aaee-4827-ad97-d61a81f874a3",
+        "timestamp" : "2021-03-10T20:07:07+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -137,7 +137,7 @@
       "name" : "HIVRapidTestResults",
       "title" : "HIVRapidTestResults",
       "status" : "draft",
-      "date" : "2021-03-10T19:53:17+00:00",
+      "date" : "2021-03-10T20:06:47+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -153,8 +153,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:57499082-308d-4da6-9d97-7feaf221fe55",
-        "timestamp" : "2021-03-10T19:53:37+00:00",
+        "identifier" : "urn:uuid:2f5b913b-4466-4117-bd32-5ce0cf6b6ed4",
+        "timestamp" : "2021-03-10T20:07:10+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -205,7 +205,7 @@
       "name" : "HIVOccupations",
       "title" : "Occupations relevant for HIV",
       "status" : "active",
-      "date" : "2021-03-10T19:53:17+00:00",
+      "date" : "2021-03-10T20:06:47+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -221,8 +221,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fb70e80a-6770-43b6-b090-f729f21e8a40",
-        "timestamp" : "2021-03-10T19:53:37+00:00",
+        "identifier" : "urn:uuid:d95053de-a6bd-4ef7-a645-985fc25c2c26",
+        "timestamp" : "2021-03-10T20:07:11+00:00",
         "total" : 12,
         "parameter" : [{
           "name" : "excludeNested",
@@ -309,7 +309,7 @@
       "name" : "HIVRiskBehavior",
       "title" : "Risk Behavior",
       "status" : "active",
-      "date" : "2021-03-10T19:53:17+00:00",
+      "date" : "2021-03-10T20:06:47+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -325,8 +325,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8828e0fd-d043-47ba-b5f2-f1137d7a398a",
-        "timestamp" : "2021-03-10T19:53:37+00:00",
+        "identifier" : "urn:uuid:b29452e9-76f6-47f6-987e-ecb9ed6e487b",
+        "timestamp" : "2021-03-10T20:07:11+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -378,7 +378,7 @@
       "name" : "PatientGender",
       "title" : "Patient Gender",
       "status" : "active",
-      "date" : "2021-03-10T19:53:17+00:00",
+      "date" : "2021-03-10T20:06:47+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -394,8 +394,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2083d925-c257-448e-95f8-74bbf2e6c374",
-        "timestamp" : "2021-03-10T19:53:38+00:00",
+        "identifier" : "urn:uuid:53b59fa3-fcde-4637-8426-0ce574410ab2",
+        "timestamp" : "2021-03-10T20:07:12+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -442,8 +442,8 @@
       "name" : "PregnancyOutcomeCodes",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:db148674-386a-4441-afcb-bb04e707d872",
-        "timestamp" : "2021-03-10T19:53:39+00:00",
+        "identifier" : "urn:uuid:c5f0c30f-d99e-411a-a11d-407f0b25dd13",
+        "timestamp" : "2021-03-10T20:07:13+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -465,8 +465,8 @@
       "name" : "PregnancyOutcomeCodes",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:db148674-386a-4441-afcb-bb04e707d872",
-        "timestamp" : "2021-03-10T19:53:39+00:00",
+        "identifier" : "urn:uuid:c5f0c30f-d99e-411a-a11d-407f0b25dd13",
+        "timestamp" : "2021-03-10T20:07:13+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -488,8 +488,8 @@
       "name" : "PregnancyOutcomeCodes",
       "status" : "draft",
       "expansion" : {
-        "identifier" : "urn:uuid:db148674-386a-4441-afcb-bb04e707d872",
-        "timestamp" : "2021-03-10T19:53:39+00:00",
+        "identifier" : "urn:uuid:c5f0c30f-d99e-411a-a11d-407f0b25dd13",
+        "timestamp" : "2021-03-10T20:07:13+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -511,7 +511,7 @@
       "name" : "HIVTransmissionRoute",
       "title" : "HIV Transmission Route",
       "status" : "active",
-      "date" : "2021-03-10T19:53:17+00:00",
+      "date" : "2021-03-10T20:06:47+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -527,8 +527,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:62e08da1-8717-4f26-8727-f6a69c7d51ef",
-        "timestamp" : "2021-03-10T19:53:39+00:00",
+        "identifier" : "urn:uuid:8073a036-b8a3-4b3a-8321-59215ae6e0ec",
+        "timestamp" : "2021-03-10T20:07:13+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -575,7 +575,7 @@
       "name" : "HIVPopulation",
       "title" : "Occupations relevant for HIV",
       "status" : "active",
-      "date" : "2021-03-10T19:53:17+00:00",
+      "date" : "2021-03-10T20:06:47+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -591,8 +591,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bfbe7d27-fb8f-4683-a5da-e38a6e1b697f",
-        "timestamp" : "2021-03-10T19:53:40+00:00",
+        "identifier" : "urn:uuid:9b786913-aa17-41c9-b9f5-68c680450947",
+        "timestamp" : "2021-03-10T20:07:14+00:00",
         "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",
@@ -664,7 +664,7 @@
       "name" : "PatientGenderIdentity",
       "title" : "Patient Gender Identity",
       "status" : "active",
-      "date" : "2021-03-10T19:53:17+00:00",
+      "date" : "2021-03-10T20:06:47+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -680,8 +680,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:aac67426-570a-4603-99bd-a10fea8ffd97",
-        "timestamp" : "2021-03-10T19:53:40+00:00",
+        "identifier" : "urn:uuid:85035d0a-9806-4d01-8c49-59e23a8d964b",
+        "timestamp" : "2021-03-10T20:07:14+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",

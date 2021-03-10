@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "HIVRiskBehavior"];
   fhir:ValueSet.title [ fhir:value "Risk Behavior"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-03-10T19:53:17+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-03-10T20:06:47+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "openHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;
