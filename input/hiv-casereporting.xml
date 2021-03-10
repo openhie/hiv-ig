@@ -33,9 +33,17 @@
       -->
     </coding>
   </jurisdiction>
+
+
   <packageId value="openhie.fhir.hiv"/>
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
   <license value="CC0-1.0"/>
+
+  <dependsOn>
+    <uri value = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse" />
+    <packageId value = "hl7.fhir.uv.sdc" />
+    <version value = "2.7.0" />
+  </dependsOn>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="4.0.1"/>
   <definition>
@@ -73,6 +81,22 @@
       </reference>
       <name value="Case Report Questionnaire"/>
       <description value="Questionnaire for case report"/>
+      <groupingId value="caseReport" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/exampleresponse"/>
+      </reference>
+      <name value="Example QuestionnaireResponse"/>
+      <description value="Example QuestionnaireResponse - patient info, HIV detection and ARV treatment"/>
+      <groupingId value="caseReport" />
+    </resource>    
+    <resource>
+      <reference>
+        <reference value="ExampleScenario/hiv-case-reporting-scenario"/>
+      </reference>
+      <name value="Example Scenario #1"/>
+      <description value="Example Scenario from Questionnaire to QuestionnaireResponse, where patient info, HIV detection and ARV treatment are extracted into the adequate resources"/>
       <groupingId value="caseReport" />
     </resource>    
 

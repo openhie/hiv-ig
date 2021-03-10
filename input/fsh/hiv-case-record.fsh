@@ -9,6 +9,44 @@ Description:    """
     This Patient profile allows the exchange of patient information, including all the data associated with HIV patients"""
 * extension contains Ethnicity named species 0..1
 * extension[Ethnicity] MS
+* birthDate MS
+* name MS
+* gender MS
+
+
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.description = "Slice based on the type of identifier"
+
+* address ^slicing.discriminator.type = #pattern
+* address ^slicing.discriminator.path = "use"
+* address ^slicing.rules = #open
+* address ^slicing.description = "Slice based on the type of address"
+
+
+* identifier contains
+    arv 0..* and
+    passport 0..* and
+    insurance 0..* 
+* identifier[arv].system 1..1
+* identifier[arv].system = "https://basespecs.vn/NamingSystem/ARVIdentifiers" (exactly)
+* identifier[arv].value 1..1
+* identifier[passport].system 1..1
+* identifier[passport].system = "https://basespecs.vn/NamingSystem/PassportNumbers" (exactly)
+* identifier[passport].value 1..1
+* identifier[insurance].system 1..1
+* identifier[insurance].system = "https://basespecs.vn/NamingSystem/InsuranceNumbers" (exactly)
+* identifier[insurance].value 1..1
+
+* address contains
+   Temporary 0..1 and 
+   Permanent 0..1
+
+* address[Temporary].use = #temp (exactly)
+* address[Permanent].use = #home (exactly)
+
+
 
 
 Extension: Ethnicity
