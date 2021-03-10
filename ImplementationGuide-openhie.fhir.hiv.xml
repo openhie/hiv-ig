@@ -12,7 +12,7 @@
   <title value="HIV Case Reporting and Monitoring"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-03-09T23:21:35+00:00"/>
+  <date value="2021-03-10T16:45:37+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>
@@ -267,6 +267,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExampleScenario"/>
+      </extension>
+      <reference>
+        <reference value="ExampleScenario/hiv-case-reporting-scenario"/>
+      </reference>
+      <name value="Example Scenario #1"/>
+      <description value="Example Scenario from Questionnaire to QuestionnaireResponse, where patient info, HIV detection and ARV treatment are extracted into the adequate resources"/>
+      <groupingId value="caseReport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
@@ -440,14 +451,6 @@
       <name value="HIVRapidTestResults"/>
       <description value="HIV Rapid Test Results"/>
       <groupingId value="longitudinalRecord"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExampleScenario"/>
-      </extension>
-      <reference>
-        <reference value="ExampleScenario/hiv-case-reporting-scenario"/>
-      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

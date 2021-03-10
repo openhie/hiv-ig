@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 262, errors = 116, warn = 116, info = 2 -->
+<!-- broken links = 262, errors = 118, warn = 115, info = 2 -->
 <head>
   <title>HIVCaseReporting : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for HIVCaseReporting</h1>
- <p>Generated Tue Mar 09 23:22:03 UTC 2021, FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = <a href="http://openhie.org/fhir">http://openhie.org/fhir</a> (<a href="http://openhie.org/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Wed Mar 10 16:46:13 UTC 2021, FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = <a href="http://openhie.org/fhir">http://openhie.org/fhir</a> (<a href="http://openhie.org/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.63</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = openhie.fhir.hiv, Canonical = http://openhie.org/fhir</td></tr>
@@ -38,14 +38,14 @@
 </td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://openhie.org/fhir (Problem #1 with package-list.json at http://openhie.org/fhir: openhie.org)</td></tr>
- <tr><td>Summary:</td><td> broken links = 262, errors = 116, warn = 116, info = 2</td></tr>
+ <tr><td>Summary:</td><td> broken links = 262, errors = 118, warn = 115, info = 2</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>269</b></td><td><b>2</b></td><td><b>1</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>268</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-cs-hiv-occupations"><b>/github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-occupations</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
@@ -84,7 +84,7 @@
      <td><a href="#_github_workspace_fsh-generated_resources_NamingSystem-ns-passport-id"><b>/github/workspace/fsh-generated/resources/NamingSystem-ns-passport-id</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-hiv-case-report-questionnaire"><b>/github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>6</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-hiv-case-report-questionnaire"><b>/github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>6</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_QuestionnaireResponse-exampleresponse"><b>/github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse</b></a></td><td><b>23</b></td><td><b>1</b></td><td><b>2</b></td>
@@ -188,12 +188,6 @@
      <td><b>WHOHIVAdaptationKitModel.patient.genderIdentity</b></td><td><b>error</b></td><td title=""><b>The reference VSPatientGenderIdentity could not be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource ExampleScenario/hiv-case-reporting-scenario.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ExampleScenario/hiv-case-reporting-scenario.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/model-who-hiv-adaptation-kit.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -266,7 +260,7 @@
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 1051 column 45</b></td>
+/* ' at line 1049 column 45</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-hiv-viral-load-mappings.html">StructureDefinition-hiv-viral-load-mappings.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
@@ -4865,7 +4859,7 @@
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 437 column 45</b></td>
+/* ' at line 444 column 45</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="ValueSet-vs-hiv-population.ttl.html">ValueSet-vs-hiv-population.ttl.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
@@ -5054,7 +5048,7 @@
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 759 column 45</b></td>
+/* ' at line 747 column 45</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-hiv-specimen-definitions.html">StructureDefinition-hiv-specimen-definitions.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
@@ -5348,7 +5342,7 @@
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 1006 column 45</b></td>
+/* ' at line 1005 column 45</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="NamingSystem-ns-insurance-id.change.history.html">NamingSystem-ns-insurance-id.change.history.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
@@ -5411,7 +5405,7 @@
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 899 column 45</b></td>
+/* ' at line 896 column 45</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="CodeSystem-cs-patient-communication-preferences.ttl.html">CodeSystem-cs-patient-communication-preferences.ttl.html</a></b></td><td><b>error</b></td><td><b>unable to parse character reference '''' (last text = '
@@ -5860,13 +5854,22 @@
      <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[2].ofType(ValueSet)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]</b></td><td><b>error</b></td><td title="ext-1: 'Must have either extensions or value[x], not both' failed"><b>ext-1: 'Must have either extensions or value[x], not both' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Simple"><b>The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext' definition is for a simple extension, so it must contain a value, not extensions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[3].item[0].item[3].answerValueSet</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_CANONICAL_ABSOLUTE"><b>Canonical URLs must be absolute URLs if they are not fragment references (HIVRapidTestResults) </b></td>
    </tr>
    <tr style="background-color: #d6feff">
      <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract - listed in meta</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract, Element matches more than one slice - rootContext, itemContext</b></td>
+   </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[0].item[1].item[3].extension[0]</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract</b> <span id="sl290" class="flip" onclick="flip('l290')">Show Reasoning</span><div id="l290" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract<ul><li>Questionnaire.item[5].item[0].item[1].item[3].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/designNote' in url)</li>, <li>Questionnaire.item[5].item[0].item[1].item[3].extension[0]: discriminator = true and ('http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer' in url)</li>, <li>Questionnaire.item[5].item[0].item[1].item[3].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/questionnaire-unit' in url)</li>, <li>Questionnaire.item[5].item[0].item[1].item[3].extension[0]: discriminator = true and ('http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod' in url)</li>, <li>Questionnaire.item[5].item[0].item[1].item[3].extension[0]: discriminator = true and ('http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext' in url)</li>, <li>Questionnaire.item[5].item[0].item[1].item[3].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/variable' in url)</li>, <li>Questionnaire.item[5].item[0].item[1].item[3].extension[0]: discriminator = true and ('http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression' in url)</li>, <li>Questionnaire.item[5].item[0].item[1].item[3].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/questionnaire-hidden' in url)</li></ul></div></td>
+     <td><b><a href="">Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[0].item[1].item[3].extension[0]</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract</b> <span id="sl291" class="flip" onclick="flip('l291')">Show Reasoning</span><div id="l291" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract<ul><li>Questionnaire.item[5].item[0].item[1].item[3].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/designNote' in url)</li>, <li>Questionnaire.item[5].item[0].item[1].item[3].extension[0]: discriminator = true and ('http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer' in url)</li>, <li>Questionnaire.item[5].item[0].item[1].item[3].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/questionnaire-unit' in url)</li>, <li>Questionnaire.item[5].item[0].item[1].item[3].extension[0]: discriminator = true and ('http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod' in url)</li>, <li>Questionnaire.item[5].item[0].item[1].item[3].extension[0]: discriminator = true and ('http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext' in url)</li>, <li>Questionnaire.item[5].item[0].item[1].item[3].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/variable' in url)</li>, <li>Questionnaire.item[5].item[0].item[1].item[3].extension[0]: discriminator = true and ('http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression' in url)</li>, <li>Questionnaire.item[5].item[0].item[1].item[3].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/questionnaire-hidden' in url)</li></ul></div></td>
    </tr>
 </table>
 <hr/>
@@ -6862,6 +6865,14 @@
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
+<a name="Extension_EXT_Simple"> </a>
+<h2>Extension_EXT_Simple</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-hiv-case-report-questionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json</a></td><td><b>The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext' definition is for a simple extension, so it must contain a value, not extensions</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="Extension_PROF_Type"> </a>
 <h2>Extension_PROF_Type</h2>
  <table class="grid">
@@ -7079,6 +7090,14 @@
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-model-who-hiv-adaptation-kit.html">/github/workspace/input/models/model-who-hiv-adaptation-kit.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_MatchMultiple"> </a>
+<h2>Validation_VAL_Profile_MatchMultiple</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-hiv-case-report-questionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json</a></td><td><b>Profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract, Element matches more than one slice - rootContext, itemContext</b></td>
    </tr>
 </table>
 </body>

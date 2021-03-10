@@ -41,11 +41,7 @@
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap" ];
-     fhir:Extension.valueCanonical [
-       fhir:value "http://example.com/some-url-to-be-defined";
-       fhir:link <http://example.com/some-url-to-be-defined>
-     ]
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext" ]
   ];
   fhir:Questionnaire.url [ fhir:value "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire"];
   fhir:Questionnaire.version [ fhir:value "0.2.0"];
@@ -55,7 +51,7 @@
      fhir:value "Patient";
      fhir:index 0
   ];
-  fhir:Questionnaire.date [ fhir:value "2021-03-09T23:21:35+00:00"^^xsd:dateTime];
+  fhir:Questionnaire.date [ fhir:value "2021-03-10T16:45:37+00:00"^^xsd:dateTime];
   fhir:Questionnaire.publisher [ fhir:value "openHIE"];
   fhir:Questionnaire.contact [
      fhir:index 0;

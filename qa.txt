@@ -1,11 +1,11 @@
 ﻿HIVCaseReporting : Validation Results
 =========================================
 
-err = 116, warn = 116, info = 2
+err = 118, warn = 115, info = 2
 IG Publisher Version: 1.1.63
-Generated Tue Mar 09 23:22:04 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir)
+Generated Wed Mar 10 16:46:14 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir)
 
- Build Errors : 269 / 2 / 1
+ Build Errors : 268 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-occupations : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-population : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-risk-behavior : 0 / 0 / 1
@@ -18,7 +18,7 @@ Generated Tue Mar 09 23:22:04 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#
  /github/workspace/fsh-generated/resources/NamingSystem-ns-hiv-case-id : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-ns-insurance-id : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-ns-passport-id : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 1 / 0 / 6
+ /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 4 / 0 / 6
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 23 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ethnicity : 1 / 1 / 1
@@ -53,8 +53,6 @@ WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Impleme
 INFORMATION: ImplementationGuide.dependency[0].url: The correct canonical URL for this dependency is http://hl7.org/fhir/uv/sdc/ImplementationGuide/sdc
 ERROR: WHOHIVAdaptationKitModel.patient.gender: The reference VSPatientGender could not be resolved
 ERROR: WHOHIVAdaptationKitModel.patient.genderIdentity: The reference VSPatientGenderIdentity could not be resolved
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ExampleScenario/hiv-case-reporting-scenario.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ExampleScenario/hiv-case-reporting-scenario.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/model-who-hiv-adaptation-kit.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: StructureDefinition-model-who-hiv-adaptation-kit.html: The reference coding could not be resolved
 ERROR: StructureDefinition-model-hiv-record.html: The reference CodeableReference could not be resolved
@@ -115,7 +113,7 @@ ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.xml.
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 1051 column 45
+/* ' at line 1049 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load-mappings.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4276,7 +4274,7 @@ ERROR: /github/workspace/output/ExampleScenario-hiv-case-reporting-scenario-desc
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 437 column 45
+/* ' at line 444 column 45
 ERROR: /github/workspace/output/ValueSet-vs-hiv-population.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4447,7 +4445,7 @@ ERROR: /github/workspace/output/artifacts.html: unable to parse character refere
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 759 column 45
+/* ' at line 747 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-specimen-definitions.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4713,7 +4711,7 @@ ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.json
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 1006 column 45
+/* ' at line 1005 column 45
 ERROR: /github/workspace/output/NamingSystem-ns-insurance-id.change.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4770,7 +4768,7 @@ ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.ttl.
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 899 column 45
+/* ' at line 896 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-patient-communication-preferences.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -5066,8 +5064,11 @@ INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire: Validat
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[0].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[1].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[2].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: ext-1: 'Must have either extensions or value[x], not both' failed
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext' definition is for a simple extension, so it must contain a value, not extensions
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[3].item[0].item[3].answerValueSet: Canonical URLs must be absolute URLs if they are not fragment references (HIVRapidTestResults) 
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract - listed in meta
+ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: Profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract, Element matches more than one slice - rootContext, itemContext
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[0].item[1].item[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract
 == /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse.json ==
 ERROR: QuestionnaireResponse.item[2].item[2]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[2])

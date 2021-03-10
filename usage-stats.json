@@ -115,7 +115,7 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap": [
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext": [
       "Questionnaire"
     ],
     "http://openhie.org/fhir/StructureDefinition/ethnicity": [

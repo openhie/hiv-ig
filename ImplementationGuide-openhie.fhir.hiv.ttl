@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "HIV Case Reporting and Monitoring"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-03-09T23:21:35+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-03-10T16:45:37+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "openHIE"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -393,6 +393,20 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ExampleScenario" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/ExampleScenario/hiv-case-reporting-scenario>;
+         fhir:Reference.reference [ fhir:value "ExampleScenario/hiv-case-reporting-scenario" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Scenario #1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Scenario from Questionnaire to QuestionnaireResponse, where patient info, HIV detection and ARV treatment are extracted into the adequate resources" ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "caseReport" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -403,7 +417,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIV Longitudinal record Logical Model" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "longitudinalRecord" ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -417,7 +431,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile - HIV patient" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "longitudinalRecord" ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -431,7 +445,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension - Patient Ethnicity" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "longitudinalRecord" ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -445,7 +459,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile - HIV recency test result" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "longitudinalRecord" ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -459,7 +473,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile - HIV viral load test result" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "longitudinalRecord" ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -473,7 +487,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile - Specimen" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "longitudinalRecord" ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -487,7 +501,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension - specimen collection place" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "longitudinalRecord" ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -501,7 +515,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile - HIV risk factor" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "longitudinalRecord" ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -515,7 +529,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile - pregnancy status" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "longitudinalRecord" ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -529,7 +543,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile - ARV therapy" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "longitudinalRecord" ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -543,7 +557,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A common naming system for case IDs" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "caseReport" ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -557,7 +571,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A naming system for passport numbers" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "caseReport" ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -571,7 +585,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A naming system for insurance numbers" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "caseReport" ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -585,7 +599,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A naming system for ARV treatment IDs" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "caseReport" ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -599,7 +613,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet - patient ethnicity" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "longitudinalRecord" ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -612,17 +626,6 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIVRapidTestResults" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIV Rapid Test Results" ];
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "longitudinalRecord" ]
-     ], [
-       fhir:index 19;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ExampleScenario" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://openhie.org/fhir/ExampleScenario/hiv-case-reporting-scenario>;
-         fhir:Reference.reference [ fhir:value "ExampleScenario/hiv-case-reporting-scenario" ]
-       ]
      ], [
        fhir:index 20;
        fhir:Element.extension [

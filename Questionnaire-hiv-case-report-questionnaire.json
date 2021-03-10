@@ -33,8 +33,7 @@
   ],
   "extension": [
     {
-      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap",
-      "valueCanonical": "http://example.com/some-url-to-be-defined"
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext"
     }
   ],
   "url": "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire",
@@ -44,7 +43,7 @@
   "subjectType": [
     "Patient"
   ],
-  "date": "2021-03-09T23:21:35+00:00",
+  "date": "2021-03-10T16:45:37+00:00",
   "publisher": "openHIE",
   "contact": [
     {
