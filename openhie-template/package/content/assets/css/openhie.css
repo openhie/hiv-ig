@@ -14,7 +14,7 @@
   --btn-gradient-end-color: #209966; /* 10. Menu item gradient end  color */
   --btn-gradient-start-color-alpha: #ff33aa77; /* 11. Menu item gradient start color (with alpha) */
   --btn-gradient-end-color-alpha: #ff209966; /* 12. Menu item gradient end color (with alpha) */
-  --link-color: #208050; /* 13. Hyperlink text color */
+  --link-color: #24d160; /* 13. Hyperlink text color */
   --link-hover-color: #109030; /* 14. Hyperlink text hover color */
 
   --publish-box-bg-color: #ffffd0; /* 15. Publish box background color */
@@ -31,6 +31,22 @@
 
 }
 
+dl {
+  display: flex;
+  flex-flow: row wrap;
+}
+dt {
+  flex-basis: 20%;
+  padding: 2px 4px;
+  text-align: left;
+  margin-left: 3em;
+}
+dd {
+  flex-basis: 70%;
+  flex-grow: 1;
+  margin: 0;
+  padding: 2px 4px;
+}
 
 .feedback {
   color: #f0f0f0;
@@ -63,22 +79,22 @@
   background-color: #f7f7f7;
 }
 
-
-dl {
-    display: flex;
-    flex-flow: row wrap;
-}
-dt {
-    flex-basis: 20%;
-    padding: 2px 4px;
-    text-align: left;
-    margin-left: 3em;
-}
-dd {
-    flex-basis: 70%;
-    flex-grow: 1;
-    margin: 0;
-    padding: 2px 4px;
-
+figcaption {
+  caption-side: top;
+  font-weight: bold;
+  font-size: smaller;
+  text-align:center;
+  width:100%;
 }
 
+figure {
+  display : block;
+  width: 100%;
+  text-align: center;
+  text-indent: 0;
+  border: thin silver solid;
+}
+
+figure > img {
+  max-width: 100%
+}
