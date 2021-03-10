@@ -91,6 +91,14 @@
       <description value="Example QuestionnaireResponse - patient info, HIV detection and ARV treatment"/>
       <groupingId value="caseReport" />
     </resource>    
+    <resource>
+      <reference>
+        <reference value="ExampleScenario/hiv-case-reporting-scenario"/>
+      </reference>
+      <name value="Example Scenario #1"/>
+      <description value="Example Scenario from Questionnaire to QuestionnaireResponse, where patient info, HIV detection and ARV treatment are extracted into the adequate resources"/>
+      <groupingId value="caseReport" />
+    </resource>    
 
 
 <!--
