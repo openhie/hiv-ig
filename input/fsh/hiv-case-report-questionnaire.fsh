@@ -53,8 +53,11 @@ Title: "HIV Case Report Form"
 Usage: #definition
 
 
-* extension[0].valueCanonical = Canonical(HIVCaseReportMap)
-* extension[0].url = $targetStructureMap
+//* extension[+].url = $targetStructureMap
+//* extension[=].valueCanonical = Canonical(HIVCaseReportMap)
+
+* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext"
+
 
 
 * name = "HIVCaseReportForm"

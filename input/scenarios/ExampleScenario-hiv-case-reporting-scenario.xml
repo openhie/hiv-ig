@@ -20,17 +20,17 @@
   <actor>
     <actorId value="CRSUBM"/>
     <type value="entity"/>
-    <name value="Case Report Submitter"/>
+    <name value="Case Report\nSubmitter"/>
   </actor>
   <actor>
     <actorId value="CRTRANSF"/>
     <type value="entity"/>
-    <name value="Case Report Submitter"/>
+    <name value="Case Report\nTransformer"/>
   </actor>
   <actor>
     <actorId value="CRREPO"/>
     <type value="entity"/>
-    <name value="Case Report Submitter"/>
+    <name value="Case Report\nRepository"/>
   </actor>
 
   <instance>
