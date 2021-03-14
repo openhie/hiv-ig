@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "CD4Observation"];
   fhir:StructureDefinition.title [ fhir:value "CD4Observation"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-03-14T22:42:39+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-03-14T23:20:00+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "openHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
