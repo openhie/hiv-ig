@@ -1,5 +1,9 @@
 Alias:   SCT = http://snomed.info/sct
 
+Alias: $CommPreference = http://hl7.org/fhir/StructureDefinition/patient-preferenceType
+Alias: $GenderIdentity = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity
+
+
 
 Profile:        HIVPatient
 Parent:         Patient
@@ -7,12 +11,14 @@ Id:             hiv-patient
 Title:          "HIV Patient"
 Description:    """ 
     This Patient profile allows the exchange of patient information, including all the data associated with HIV patients"""
-* extension contains Ethnicity named species 0..1
+* extension contains
+    Ethnicity named species 0..1 and
+    $CommPreference named comm-preference 0..1 MS and
+    $GenderIdentity named genderIdentity 0..1 MS
+
 * extension[Ethnicity] MS
 * birthDate MS
 * name MS
-* gender MS
-
 
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
@@ -26,12 +32,12 @@ Description:    """
 
 
 * identifier contains
-    arv 0..* and
+    art 0..* and
     passport 0..* and
     insurance 0..* 
-* identifier[arv].system 1..1
-* identifier[arv].system = "https://basespecs.vn/NamingSystem/ARVIdentifiers" (exactly)
-* identifier[arv].value 1..1
+* identifier[art].system 1..1
+* identifier[art].system = "https://basespecs.vn/NamingSystem/ARTIdentifiers" (exactly)
+* identifier[art].value 1..1
 * identifier[passport].system 1..1
 * identifier[passport].system = "https://basespecs.vn/NamingSystem/PassportNumbers" (exactly)
 * identifier[passport].value 1..1
@@ -60,7 +66,7 @@ Description: "Ethnicity."
 Profile:        HIVRiskFactor
 Parent:         Condition
 Id:             hiv-risk-factor
-Title:          "HIVRiskBehavior"
+Title:          "HIV Risk Behavior"
 Description:    """ 
     This profile allows the exchange of patient's risk behaviors"""
 
@@ -91,7 +97,7 @@ Description: "Specimen Collection Place."
 Profile:        HIVCondition
 Parent:         Condition
 Id:             hiv-condition
-Title:          "HIVRiskBehavior"
+Title:          "HIV Condition"
 Description:    """ 
     This profile allows the exchange of a patient's hiv diagnosis"""
 
