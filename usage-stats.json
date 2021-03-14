@@ -47,7 +47,7 @@
     "Condition": [
       {
         "url": "http://openhie.org/fhir/StructureDefinition/hiv-risk-factor",
-        "title": "HIVRiskBehavior"
+        "title": "HIV Risk Behavior"
       }
     ],
     "Patient": [
@@ -81,6 +81,12 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-preferenceType": [
+      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "Questionnaire.item.item.item.item"

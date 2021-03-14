@@ -12,7 +12,7 @@
   <title value="HIV Case Reporting and Monitoring"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-03-10T20:07:58+00:00"/>
+  <date value="2021-03-14T22:42:39+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>
@@ -41,7 +41,7 @@
         <valueString value="copyrightyear"/>
       </extension>
       <extension url="value">
-        <valueString value="2019+"/>
+        <valueString value="2020+"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -488,8 +488,18 @@
       <reference>
         <reference value="StructureDefinition/hiv-condition"/>
       </reference>
-      <name value="HIVRiskBehavior"/>
+      <name value="HIV Condition"/>
       <description value="This profile allows the exchange of a patient&#39;s hiv diagnosis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/test-hiv-patient"/>
+      </reference>
+      <name value="Example Patient - test-hiv-patient"/>
+      <exampleCanonical value="http://openhie.org/fhir/StructureDefinition/hiv-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -650,6 +660,16 @@
       </reference>
       <name value="Patient Gender Identity"/>
       <description value="Valueset - patient gender identities"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/examplebundle"/>
+      </reference>
+      <name value="Example Bundle - examplebundle"/>
+      <exampleCanonical value="http://openhie.org/fhir/StructureDefinition/hiv-condition"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

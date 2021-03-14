@@ -15,9 +15,9 @@
   <url value="http://openhie.org/fhir/StructureDefinition/hiv-risk-factor"/>
   <version value="0.2.0"/>
   <name value="HIVRiskFactor"/>
-  <title value="HIVRiskBehavior"/>
+  <title value="HIV Risk Behavior"/>
   <status value="active"/>
-  <date value="2021-03-10T20:07:58+00:00"/>
+  <date value="2021-03-14T22:42:39+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>

@@ -18,9 +18,9 @@
   "url": "http://openhie.org/fhir/StructureDefinition/hiv-risk-factor",
   "version": "0.2.0",
   "name": "HIVRiskFactor",
-  "title": "HIVRiskBehavior",
+  "title": "HIV Risk Behavior",
   "status": "active",
-  "date": "2021-03-10T20:07:58+00:00",
+  "date": "2021-03-14T22:42:39+00:00",
   "publisher": "openHIE",
   "contact": [
     {

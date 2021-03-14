@@ -11,7 +11,7 @@
   "title": "HIV Case Reporting and Monitoring",
   "status": "draft",
   "experimental": false,
-  "date": "2021-03-10T20:07:58+00:00",
+  "date": "2021-03-14T22:42:39+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -56,7 +56,7 @@
           },
           {
             "url": "value",
-            "valueString": "2019+"
+            "valueString": "2020+"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -694,8 +694,21 @@
         "reference": {
           "reference": "StructureDefinition/hiv-condition"
         },
-        "name": "HIVRiskBehavior",
+        "name": "HIV Condition",
         "description": "This profile allows the exchange of a patient's hiv diagnosis"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/test-hiv-patient"
+        },
+        "name": "Example Patient - test-hiv-patient",
+        "exampleCanonical": "http://openhie.org/fhir/StructureDefinition/hiv-patient"
       },
       {
         "extension": [
@@ -904,6 +917,19 @@
         },
         "name": "Patient Gender Identity",
         "description": "Valueset - patient gender identities"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/examplebundle"
+        },
+        "name": "Example Bundle - examplebundle",
+        "exampleCanonical": "http://openhie.org/fhir/StructureDefinition/hiv-condition"
       }
     ],
     "page": {

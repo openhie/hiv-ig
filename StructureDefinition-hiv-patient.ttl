@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "hiv-patient"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient\">Patient</a><a name=\"Patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Information about an individual or animal receiving health care services</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.extension\">extension</a><a name=\"Patient.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.extension:species\" title=\"Extension URL = http://openhie.org/fhir/StructureDefinition/ethnicity\">ethnicity</a><a name=\"Patient.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Ethnicity</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/StructureDefinition-ethnicity.html\">http://openhie.org/fhir/StructureDefinition/ethnicity</a><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-vs-ethnicity.html\">Ethnicity</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier\">identifier</a><a name=\"Patient.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">0</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"font-style: italic\" href=\"http://hl7.org/fhir/R4/profiling.html#slicing\">(Slice Definition)</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">An identifier for this patient</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck135.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:arv\" title=\"Slice arv\">identifier:arv</a><a name=\"Patient.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An identifier for this patient</span><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:arv.system\">system</a><a name=\"Patient.identifier.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The namespace for the identifier value</span><br/><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">https://basespecs.vn/NamingSystem/ARVIdentifiers</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:arv.value\">value</a><a name=\"Patient.identifier.value\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The value that is unique</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck135.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:passport\" title=\"Slice passport\">identifier:passport</a><a name=\"Patient.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An identifier for this patient</span><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:passport.system\">system</a><a name=\"Patient.identifier.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The namespace for the identifier value</span><br/><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">https://basespecs.vn/NamingSystem/PassportNumbers</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:passport.value\">value</a><a name=\"Patient.identifier.value\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The value that is unique</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:insurance\" title=\"Slice insurance\">identifier:insurance</a><a name=\"Patient.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An identifier for this patient</span><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:insurance.system\">system</a><a name=\"Patient.identifier.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The namespace for the identifier value</span><br/><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">https://basespecs.vn/NamingSystem/InsuranceNumbers</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:insurance.value\">value</a><a name=\"Patient.identifier.value\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The value that is unique</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.name\">name</a><a name=\"Patient.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#HumanName\">HumanName</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">A name associated with the patient</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.gender\">gender</a><a name=\"Patient.gender\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">male | female | other | unknown</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.birthDate\">birthDate</a><a name=\"Patient.birthDate\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The date of birth for the individual</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-hiv-patient-definitions.html#Patient.address\">address</a><a name=\"Patient.address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">0</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"font-style: italic\" href=\"http://hl7.org/fhir/R4/profiling.html#slicing\">(Slice Definition)</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">An address for the individual</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:use</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.address:Temporary\" title=\"Slice Temporary\">address:Temporary</a><a name=\"Patient.address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Address\">Address</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An address for the individual</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.address:Temporary.use\">use</a><a name=\"Patient.address.use\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">home | work | temp | old | billing - purpose of this address</span><br/><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">temp</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.address:Permanent\" title=\"Slice Permanent\">address:Permanent</a><a name=\"Patient.address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Address\">Address</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An address for the individual</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.address:Permanent.use\">use</a><a name=\"Patient.address.use\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">home | work | temp | old | billing - purpose of this address</span><br/><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">home</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient\">Patient</a><a name=\"Patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Information about an individual or animal receiving health care services</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.extension\">extension</a><a name=\"Patient.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.extension:species\" title=\"Extension URL = http://openhie.org/fhir/StructureDefinition/ethnicity\">ethnicity</a><a name=\"Patient.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Ethnicity</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/StructureDefinition-ethnicity.html\">http://openhie.org/fhir/StructureDefinition/ethnicity</a><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-vs-ethnicity.html\">Ethnicity</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.extension:comm-preference\" title=\"Extension URL = http://hl7.org/fhir/StructureDefinition/patient-preferenceType\">patient-preferenceType</a><a name=\"Patient.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The type of the patient's preferred language.</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/extension-patient-preferencetype.html\">http://hl7.org/fhir/StructureDefinition/patient-preferenceType</a><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"http://hl7.org/fhir/R4/valueset-language-preference-type.html\">LanguagePreferenceType</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.extension:genderIdentity\" title=\"Extension URL = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity\">patient-genderIdentity</a><a name=\"Patient.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The patient's gender identity</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/extension-patient-genderidentity.html\">http://hl7.org/fhir/StructureDefinition/patient-genderIdentity</a><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"http://hl7.org/fhir/R4/valueset-gender-identity.html\">GenderIdentity</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#example\" title=\"Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included.\">example</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier\">identifier</a><a name=\"Patient.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">0</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"font-style: italic\" href=\"http://hl7.org/fhir/R4/profiling.html#slicing\">(Slice Definition)</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">An identifier for this patient</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck135.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:art\" title=\"Slice art\">identifier:art</a><a name=\"Patient.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An identifier for this patient</span><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:art.system\">system</a><a name=\"Patient.identifier.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The namespace for the identifier value</span><br/><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">https://basespecs.vn/NamingSystem/ARTIdentifiers</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:art.value\">value</a><a name=\"Patient.identifier.value\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The value that is unique</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck135.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:passport\" title=\"Slice passport\">identifier:passport</a><a name=\"Patient.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An identifier for this patient</span><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:passport.system\">system</a><a name=\"Patient.identifier.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The namespace for the identifier value</span><br/><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">https://basespecs.vn/NamingSystem/PassportNumbers</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:passport.value\">value</a><a name=\"Patient.identifier.value\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The value that is unique</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:insurance\" title=\"Slice insurance\">identifier:insurance</a><a name=\"Patient.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An identifier for this patient</span><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:insurance.system\">system</a><a name=\"Patient.identifier.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The namespace for the identifier value</span><br/><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">https://basespecs.vn/NamingSystem/InsuranceNumbers</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.identifier:insurance.value\">value</a><a name=\"Patient.identifier.value\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The value that is unique</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.name\">name</a><a name=\"Patient.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#HumanName\">HumanName</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">A name associated with the patient</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.birthDate\">birthDate</a><a name=\"Patient.birthDate\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The date of birth for the individual</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-hiv-patient-definitions.html#Patient.address\">address</a><a name=\"Patient.address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">0</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"font-style: italic\" href=\"http://hl7.org/fhir/R4/profiling.html#slicing\">(Slice Definition)</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">An address for the individual</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:use</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.address:Temporary\" title=\"Slice Temporary\">address:Temporary</a><a name=\"Patient.address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Address\">Address</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An address for the individual</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.address:Temporary.use\">use</a><a name=\"Patient.address.use\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">home | work | temp | old | billing - purpose of this address</span><br/><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">temp</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.address:Permanent\" title=\"Slice Permanent\">address:Permanent</a><a name=\"Patient.address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Address\">Address</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An address for the individual</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-hiv-patient-definitions.html#Patient.address:Permanent.use\">use</a><a name=\"Patient.address.use\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">home | work | temp | old | billing - purpose of this address</span><br/><span style=\"font-weight:bold\">Fixed Value: </span><span style=\"color: darkgreen\">home</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "HIVPatient"];
   fhir:StructureDefinition.title [ fhir:value "HIV Patient"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-03-10T20:07:58+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-03-14T22:42:39+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "openHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -513,6 +513,110 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 9;
+       fhir:Element.id [ fhir:value "Patient.extension:comm-preference" ];
+       fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "comm-preference" ];
+       fhir:ElementDefinition.short [ fhir:value "The type of the patient's preferred language." ];
+       fhir:ElementDefinition.definition [ fhir:value "Indicates what mode of communication the patient prefers to use for the indicated language." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/patient-preferenceType";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/patient-preferenceType>
+         ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.id [ fhir:value "Patient.extension:genderIdentity" ];
+       fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "genderIdentity" ];
+       fhir:ElementDefinition.short [ fhir:value "The patient's gender identity" ];
+       fhir:ElementDefinition.definition [ fhir:value "The gender the patient identifies with. The Patient's gender identity is used as guidance (e.g. for staff) about how to interact with the patient." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/patient-genderIdentity>
+         ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
        fhir:Element.id [ fhir:value "Patient.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -569,7 +673,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 10;
+       fhir:index 12;
        fhir:Element.id [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.slicing [
@@ -627,10 +731,10 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".id" ]
        ]
      ], [
-       fhir:index 11;
-       fhir:Element.id [ fhir:value "Patient.identifier:arv" ];
+       fhir:index 13;
+       fhir:Element.id [ fhir:value "Patient.identifier:art" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "arv" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "art" ];
        fhir:ElementDefinition.short [ fhir:value "An identifier for this patient" ];
        fhir:ElementDefinition.definition [ fhir:value "An identifier for this patient." ];
        fhir:ElementDefinition.requirements [ fhir:value "Patients are almost always assigned specific numerical identifiers." ];
@@ -677,8 +781,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".id" ]
        ]
      ], [
-       fhir:index 12;
-       fhir:Element.id [ fhir:value "Patient.identifier:arv.id" ];
+       fhir:index 14;
+       fhir:Element.id [ fhir:value "Patient.identifier:art.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.id" ];
        fhir:ElementDefinition.representation [
          fhir:value "xmlAttr";
@@ -710,8 +814,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 13;
-       fhir:Element.id [ fhir:value "Patient.identifier:arv.extension" ];
+       fhir:index 15;
+       fhir:Element.id [ fhir:value "Patient.identifier:art.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension" ];
        fhir:ElementDefinition.slicing [
          fhir:ElementDefinition.slicing.discriminator [
@@ -774,8 +878,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 14;
-       fhir:Element.id [ fhir:value "Patient.identifier:arv.use" ];
+       fhir:index 16;
+       fhir:Element.id [ fhir:value "Patient.identifier:art.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary | old (If known)" ];
        fhir:ElementDefinition.definition [ fhir:value "The purpose of this identifier." ];
@@ -830,8 +934,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 15;
-       fhir:Element.id [ fhir:value "Patient.identifier:arv.type" ];
+       fhir:index 17;
+       fhir:Element.id [ fhir:value "Patient.identifier:art.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Description of identifier" ];
        fhir:ElementDefinition.definition [ fhir:value "A coded type for the identifier that can be used to determine which identifier to use for a specific purpose." ];
@@ -889,8 +993,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 16;
-       fhir:Element.id [ fhir:value "Patient.identifier:arv.system" ];
+       fhir:index 18;
+       fhir:Element.id [ fhir:value "Patient.identifier:art.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "The namespace for the identifier value" ];
        fhir:ElementDefinition.definition [ fhir:value "Establishes the namespace for the value - that is, a URL that describes a set values that are unique." ];
@@ -907,7 +1011,7 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "uri" ]
        ];
-       fhir:ElementDefinition.fixedUri [ fhir:value "https://basespecs.vn/NamingSystem/ARVIdentifiers" ];
+       fhir:ElementDefinition.fixedUri [ fhir:value "https://basespecs.vn/NamingSystem/ARTIdentifiers" ];
        fhir:ElementDefinition.example [
          fhir:index 0;
          fhir:ElementDefinition.example.label [ fhir:value "General" ];
@@ -941,8 +1045,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierType" ]
        ]
      ], [
-       fhir:index 17;
-       fhir:Element.id [ fhir:value "Patient.identifier:arv.value" ];
+       fhir:index 19;
+       fhir:Element.id [ fhir:value "Patient.identifier:art.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "The value that is unique" ];
        fhir:ElementDefinition.definition [ fhir:value "The portion of the identifier typically relevant to the user and which is unique within the context of the system." ];
@@ -991,8 +1095,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 18;
-       fhir:Element.id [ fhir:value "Patient.identifier:arv.period" ];
+       fhir:index 20;
+       fhir:Element.id [ fhir:value "Patient.identifier:art.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ];
        fhir:ElementDefinition.definition [ fhir:value "Time period during which identifier is/was valid for use." ];
@@ -1035,8 +1139,8 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 19;
-       fhir:Element.id [ fhir:value "Patient.identifier:arv.assigner" ];
+       fhir:index 21;
+       fhir:Element.id [ fhir:value "Patient.identifier:art.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that issued id (may be just text)" ];
        fhir:ElementDefinition.definition [ fhir:value "Organization that issued/manages the identifier." ];
@@ -1085,7 +1189,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 22;
        fhir:Element.id [ fhir:value "Patient.identifier:passport" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.sliceName [ fhir:value "passport" ];
@@ -1135,7 +1239,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".id" ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 23;
        fhir:Element.id [ fhir:value "Patient.identifier:passport.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.id" ];
        fhir:ElementDefinition.representation [
@@ -1168,7 +1272,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 24;
        fhir:Element.id [ fhir:value "Patient.identifier:passport.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1232,7 +1336,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "Patient.identifier:passport.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary | old (If known)" ];
@@ -1288,7 +1392,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "Patient.identifier:passport.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Description of identifier" ];
@@ -1347,7 +1451,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 27;
        fhir:Element.id [ fhir:value "Patient.identifier:passport.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "The namespace for the identifier value" ];
@@ -1399,7 +1503,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierType" ]
        ]
      ], [
-       fhir:index 26;
+       fhir:index 28;
        fhir:Element.id [ fhir:value "Patient.identifier:passport.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "The value that is unique" ];
@@ -1449,7 +1553,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "Patient.identifier:passport.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ];
@@ -1493,7 +1597,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 30;
        fhir:Element.id [ fhir:value "Patient.identifier:passport.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that issued id (may be just text)" ];
@@ -1543,7 +1647,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 31;
        fhir:Element.id [ fhir:value "Patient.identifier:insurance" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.sliceName [ fhir:value "insurance" ];
@@ -1593,7 +1697,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".id" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 32;
        fhir:Element.id [ fhir:value "Patient.identifier:insurance.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.id" ];
        fhir:ElementDefinition.representation [
@@ -1626,7 +1730,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 33;
        fhir:Element.id [ fhir:value "Patient.identifier:insurance.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1690,7 +1794,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 34;
        fhir:Element.id [ fhir:value "Patient.identifier:insurance.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary | old (If known)" ];
@@ -1746,7 +1850,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 35;
        fhir:Element.id [ fhir:value "Patient.identifier:insurance.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Description of identifier" ];
@@ -1805,7 +1909,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 36;
        fhir:Element.id [ fhir:value "Patient.identifier:insurance.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "The namespace for the identifier value" ];
@@ -1857,7 +1961,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierType" ]
        ]
      ], [
-       fhir:index 35;
+       fhir:index 37;
        fhir:Element.id [ fhir:value "Patient.identifier:insurance.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "The value that is unique" ];
@@ -1907,7 +2011,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 36;
+       fhir:index 38;
        fhir:Element.id [ fhir:value "Patient.identifier:insurance.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ];
@@ -1951,7 +2055,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 39;
        fhir:Element.id [ fhir:value "Patient.identifier:insurance.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that issued id (may be just text)" ];
@@ -2001,7 +2105,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 38;
+       fhir:index 40;
        fhir:Element.id [ fhir:value "Patient.active" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.active" ];
        fhir:ElementDefinition.short [ fhir:value "Whether this patient's record is in active use" ];
@@ -2049,7 +2153,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 39;
+       fhir:index 41;
        fhir:Element.id [ fhir:value "Patient.name" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name" ];
        fhir:ElementDefinition.short [ fhir:value "A name associated with the patient" ];
@@ -2096,7 +2200,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".patient.name" ]
        ]
      ], [
-       fhir:index 40;
+       fhir:index 42;
        fhir:Element.id [ fhir:value "Patient.telecom" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom" ];
        fhir:ElementDefinition.short [ fhir:value "A contact detail for the individual" ];
@@ -2142,7 +2246,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".telecom" ]
        ]
      ], [
-       fhir:index 41;
+       fhir:index 43;
        fhir:Element.id [ fhir:value "Patient.gender" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.gender" ];
        fhir:ElementDefinition.short [ fhir:value "male | female | other | unknown" ];
@@ -2172,7 +2276,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
@@ -2206,7 +2309,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".patient.administrativeGenderCode" ]
        ]
      ], [
-       fhir:index 42;
+       fhir:index 44;
        fhir:Element.id [ fhir:value "Patient.birthDate" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate" ];
        fhir:ElementDefinition.short [ fhir:value "The date of birth for the individual" ];
@@ -2257,7 +2360,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "21112-8" ]
        ]
      ], [
-       fhir:index 43;
+       fhir:index 45;
        fhir:Element.id [ fhir:value "Patient.deceased[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.deceased[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Indicates if the individual is deceased or not" ];
@@ -2307,7 +2410,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 44;
+       fhir:index 46;
        fhir:Element.id [ fhir:value "Patient.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address" ];
        fhir:ElementDefinition.slicing [
@@ -2362,7 +2465,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".addr" ]
        ]
      ], [
-       fhir:index 45;
+       fhir:index 47;
        fhir:Element.id [ fhir:value "Patient.address:Temporary" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Temporary" ];
@@ -2409,7 +2512,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".addr" ]
        ]
      ], [
-       fhir:index 46;
+       fhir:index 48;
        fhir:Element.id [ fhir:value "Patient.address:Temporary.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.id" ];
        fhir:ElementDefinition.representation [
@@ -2442,7 +2545,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 47;
+       fhir:index 49;
        fhir:Element.id [ fhir:value "Patient.address:Temporary.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.extension" ];
        fhir:ElementDefinition.slicing [
@@ -2506,7 +2609,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 48;
+       fhir:index 50;
        fhir:Element.id [ fhir:value "Patient.address:Temporary.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.use" ];
        fhir:ElementDefinition.short [ fhir:value "home | work | temp | old | billing - purpose of this address" ];
@@ -2572,7 +2675,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./AddressPurpose" ]
        ]
      ], [
-       fhir:index 49;
+       fhir:index 51;
        fhir:Element.id [ fhir:value "Patient.address:Temporary.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.type" ];
        fhir:ElementDefinition.short [ fhir:value "postal | physical | both" ];
@@ -2635,7 +2738,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "address type parameter" ]
        ]
      ], [
-       fhir:index 50;
+       fhir:index 52;
        fhir:Element.id [ fhir:value "Patient.address:Temporary.text" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.text" ];
        fhir:ElementDefinition.short [ fhir:value "Text representation of the address" ];
@@ -2686,7 +2789,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "address label parameter" ]
        ]
      ], [
-       fhir:index 51;
+       fhir:index 53;
        fhir:Element.id [ fhir:value "Patient.address:Temporary.line" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.line" ];
        fhir:ElementDefinition.short [ fhir:value "Street name, number, direction & P.O. Box etc." ];
@@ -2740,7 +2843,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StreetAddress (newline delimitted)" ]
        ]
      ], [
-       fhir:index 52;
+       fhir:index 54;
        fhir:Element.id [ fhir:value "Patient.address:Temporary.city" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.city" ];
        fhir:ElementDefinition.short [ fhir:value "Name of city, town etc." ];
@@ -2797,7 +2900,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Jurisdiction" ]
        ]
      ], [
-       fhir:index 53;
+       fhir:index 55;
        fhir:Element.id [ fhir:value "Patient.address:Temporary.district" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.district" ];
        fhir:ElementDefinition.short [ fhir:value "District name (aka county)" ];
@@ -2847,7 +2950,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "AD.part[parttype = CNT | CPA]" ]
        ]
      ], [
-       fhir:index 54;
+       fhir:index 56;
        fhir:Element.id [ fhir:value "Patient.address:Temporary.state" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.state" ];
        fhir:ElementDefinition.short [ fhir:value "Sub-unit of country (abbreviations ok)" ];
@@ -2902,7 +3005,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Region" ]
        ]
      ], [
-       fhir:index 55;
+       fhir:index 57;
        fhir:Element.id [ fhir:value "Patient.address:Temporary.postalCode" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.postalCode" ];
        fhir:ElementDefinition.short [ fhir:value "Postal code for area" ];
@@ -2959,7 +3062,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./PostalIdentificationCode" ]
        ]
      ], [
-       fhir:index 56;
+       fhir:index 58;
        fhir:Element.id [ fhir:value "Patient.address:Temporary.country" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.country" ];
        fhir:ElementDefinition.short [ fhir:value "Country (e.g. can be ISO 3166 2 or 3 letter code)" ];
@@ -3008,7 +3111,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Country" ]
        ]
      ], [
-       fhir:index 57;
+       fhir:index 59;
        fhir:Element.id [ fhir:value "Patient.address:Temporary.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when address was/is in use" ];
@@ -3061,7 +3164,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 58;
+       fhir:index 60;
        fhir:Element.id [ fhir:value "Patient.address:Permanent" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Permanent" ];
@@ -3108,7 +3211,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".addr" ]
        ]
      ], [
-       fhir:index 59;
+       fhir:index 61;
        fhir:Element.id [ fhir:value "Patient.address:Permanent.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.id" ];
        fhir:ElementDefinition.representation [
@@ -3141,7 +3244,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 60;
+       fhir:index 62;
        fhir:Element.id [ fhir:value "Patient.address:Permanent.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.extension" ];
        fhir:ElementDefinition.slicing [
@@ -3205,7 +3308,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 61;
+       fhir:index 63;
        fhir:Element.id [ fhir:value "Patient.address:Permanent.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.use" ];
        fhir:ElementDefinition.short [ fhir:value "home | work | temp | old | billing - purpose of this address" ];
@@ -3271,7 +3374,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./AddressPurpose" ]
        ]
      ], [
-       fhir:index 62;
+       fhir:index 64;
        fhir:Element.id [ fhir:value "Patient.address:Permanent.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.type" ];
        fhir:ElementDefinition.short [ fhir:value "postal | physical | both" ];
@@ -3334,7 +3437,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "address type parameter" ]
        ]
      ], [
-       fhir:index 63;
+       fhir:index 65;
        fhir:Element.id [ fhir:value "Patient.address:Permanent.text" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.text" ];
        fhir:ElementDefinition.short [ fhir:value "Text representation of the address" ];
@@ -3385,7 +3488,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "address label parameter" ]
        ]
      ], [
-       fhir:index 64;
+       fhir:index 66;
        fhir:Element.id [ fhir:value "Patient.address:Permanent.line" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.line" ];
        fhir:ElementDefinition.short [ fhir:value "Street name, number, direction & P.O. Box etc." ];
@@ -3439,7 +3542,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StreetAddress (newline delimitted)" ]
        ]
      ], [
-       fhir:index 65;
+       fhir:index 67;
        fhir:Element.id [ fhir:value "Patient.address:Permanent.city" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.city" ];
        fhir:ElementDefinition.short [ fhir:value "Name of city, town etc." ];
@@ -3496,7 +3599,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Jurisdiction" ]
        ]
      ], [
-       fhir:index 66;
+       fhir:index 68;
        fhir:Element.id [ fhir:value "Patient.address:Permanent.district" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.district" ];
        fhir:ElementDefinition.short [ fhir:value "District name (aka county)" ];
@@ -3546,7 +3649,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "AD.part[parttype = CNT | CPA]" ]
        ]
      ], [
-       fhir:index 67;
+       fhir:index 69;
        fhir:Element.id [ fhir:value "Patient.address:Permanent.state" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.state" ];
        fhir:ElementDefinition.short [ fhir:value "Sub-unit of country (abbreviations ok)" ];
@@ -3601,7 +3704,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Region" ]
        ]
      ], [
-       fhir:index 68;
+       fhir:index 70;
        fhir:Element.id [ fhir:value "Patient.address:Permanent.postalCode" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.postalCode" ];
        fhir:ElementDefinition.short [ fhir:value "Postal code for area" ];
@@ -3658,7 +3761,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./PostalIdentificationCode" ]
        ]
      ], [
-       fhir:index 69;
+       fhir:index 71;
        fhir:Element.id [ fhir:value "Patient.address:Permanent.country" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.country" ];
        fhir:ElementDefinition.short [ fhir:value "Country (e.g. can be ISO 3166 2 or 3 letter code)" ];
@@ -3707,7 +3810,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Country" ]
        ]
      ], [
-       fhir:index 70;
+       fhir:index 72;
        fhir:Element.id [ fhir:value "Patient.address:Permanent.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when address was/is in use" ];
@@ -3760,7 +3863,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 71;
+       fhir:index 73;
        fhir:Element.id [ fhir:value "Patient.maritalStatus" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.maritalStatus" ];
        fhir:ElementDefinition.short [ fhir:value "Marital (civil) status of a patient" ];
@@ -3822,7 +3925,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".patient.maritalStatusCode" ]
        ]
      ], [
-       fhir:index 72;
+       fhir:index 74;
        fhir:Element.id [ fhir:value "Patient.multipleBirth[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.multipleBirth[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Whether patient is part of a multiple birth" ];
@@ -3871,7 +3974,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 73;
+       fhir:index 75;
        fhir:Element.id [ fhir:value "Patient.photo" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.photo" ];
        fhir:ElementDefinition.short [ fhir:value "Image of the patient" ];
@@ -3917,7 +4020,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 74;
+       fhir:index 76;
        fhir:Element.id [ fhir:value "Patient.contact" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -3971,7 +4074,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 75;
+       fhir:index 77;
        fhir:Element.id [ fhir:value "Patient.contact.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.id" ];
        fhir:ElementDefinition.representation [
@@ -4004,7 +4107,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 76;
+       fhir:index 78;
        fhir:Element.id [ fhir:value "Patient.contact.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -4059,7 +4162,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 77;
+       fhir:index 79;
        fhir:Element.id [ fhir:value "Patient.contact.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -4119,7 +4222,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 78;
+       fhir:index 80;
        fhir:Element.id [ fhir:value "Patient.contact.relationship" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship" ];
        fhir:ElementDefinition.short [ fhir:value "The kind of relationship" ];
@@ -4177,7 +4280,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 79;
+       fhir:index 81;
        fhir:Element.id [ fhir:value "Patient.contact.name" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name" ];
        fhir:ElementDefinition.short [ fhir:value "A name associated with the contact person" ];
@@ -4222,7 +4325,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 80;
+       fhir:index 82;
        fhir:Element.id [ fhir:value "Patient.contact.telecom" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom" ];
        fhir:ElementDefinition.short [ fhir:value "A contact detail for the person" ];
@@ -4268,7 +4371,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 81;
+       fhir:index 83;
        fhir:Element.id [ fhir:value "Patient.contact.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address" ];
        fhir:ElementDefinition.short [ fhir:value "Address for the contact person" ];
@@ -4313,7 +4416,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 82;
+       fhir:index 84;
        fhir:Element.id [ fhir:value "Patient.contact.gender" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.gender" ];
        fhir:ElementDefinition.short [ fhir:value "male | female | other | unknown" ];
@@ -4375,7 +4478,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 83;
+       fhir:index 85;
        fhir:Element.id [ fhir:value "Patient.contact.organization" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.organization" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that is associated with the contact" ];
@@ -4429,7 +4532,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 84;
+       fhir:index 86;
        fhir:Element.id [ fhir:value "Patient.contact.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.period" ];
        fhir:ElementDefinition.short [ fhir:value "The period during which this contact person or organization is valid to be contacted relating to this patient" ];
@@ -4469,7 +4572,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 85;
+       fhir:index 87;
        fhir:Element.id [ fhir:value "Patient.communication" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication" ];
        fhir:ElementDefinition.short [ fhir:value "A language which may be used to communicate with the patient about his or her health" ];
@@ -4511,7 +4614,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "patient.languageCommunication" ]
        ]
      ], [
-       fhir:index 86;
+       fhir:index 88;
        fhir:Element.id [ fhir:value "Patient.communication.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.id" ];
        fhir:ElementDefinition.representation [
@@ -4544,7 +4647,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 87;
+       fhir:index 89;
        fhir:Element.id [ fhir:value "Patient.communication.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -4599,7 +4702,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 88;
+       fhir:index 90;
        fhir:Element.id [ fhir:value "Patient.communication.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -4659,7 +4762,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 89;
+       fhir:index 91;
        fhir:Element.id [ fhir:value "Patient.communication.language" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.language" ];
        fhir:ElementDefinition.short [ fhir:value "The language which can be used to communicate with the patient about his or her health" ];
@@ -4729,7 +4832,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".languageCode" ]
        ]
      ], [
-       fhir:index 90;
+       fhir:index 92;
        fhir:Element.id [ fhir:value "Patient.communication.preferred" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.preferred" ];
        fhir:ElementDefinition.short [ fhir:value "Language preference indicator" ];
@@ -4775,7 +4878,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".preferenceInd" ]
        ]
      ], [
-       fhir:index 91;
+       fhir:index 93;
        fhir:Element.id [ fhir:value "Patient.generalPractitioner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.generalPractitioner" ];
        fhir:ElementDefinition.short [ fhir:value "Patient's nominated primary care provider" ];
@@ -4837,7 +4940,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 92;
+       fhir:index 94;
        fhir:Element.id [ fhir:value "Patient.managingOrganization" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.managingOrganization" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that is the custodian of the patient record" ];
@@ -4884,7 +4987,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".providerOrganization" ]
        ]
      ], [
-       fhir:index 93;
+       fhir:index 95;
        fhir:Element.id [ fhir:value "Patient.link" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link" ];
        fhir:ElementDefinition.short [ fhir:value "Link to another patient resource that concerns the same actual person" ];
@@ -4927,7 +5030,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 94;
+       fhir:index 96;
        fhir:Element.id [ fhir:value "Patient.link.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.id" ];
        fhir:ElementDefinition.representation [
@@ -4960,7 +5063,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 95;
+       fhir:index 97;
        fhir:Element.id [ fhir:value "Patient.link.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -5015,7 +5118,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 96;
+       fhir:index 98;
        fhir:Element.id [ fhir:value "Patient.link.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -5075,7 +5178,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 97;
+       fhir:index 99;
        fhir:Element.id [ fhir:value "Patient.link.other" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.other" ];
        fhir:ElementDefinition.short [ fhir:value "The other patient or related person resource that the link refers to" ];
@@ -5134,7 +5237,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 98;
+       fhir:index 100;
        fhir:Element.id [ fhir:value "Patient.link.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.type" ];
        fhir:ElementDefinition.short [ fhir:value "replaced-by | replaces | refer | seealso" ];
@@ -5225,6 +5328,40 @@
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 3;
+       fhir:Element.id [ fhir:value "Patient.extension:comm-preference" ];
+       fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "comm-preference" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/patient-preferenceType";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/patient-preferenceType>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "Patient.extension:genderIdentity" ];
+       fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "genderIdentity" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/patient-genderIdentity>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
        fhir:Element.id [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.slicing [
@@ -5237,76 +5374,71 @@
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ]
      ], [
-       fhir:index 4;
-       fhir:Element.id [ fhir:value "Patient.identifier:arv" ];
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "Patient.identifier:art" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "arv" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "art" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ]
      ], [
-       fhir:index 5;
-       fhir:Element.id [ fhir:value "Patient.identifier:arv.system" ];
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "Patient.identifier:art.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.fixedUri [ fhir:value "https://basespecs.vn/NamingSystem/ARVIdentifiers" ]
+       fhir:ElementDefinition.fixedUri [ fhir:value "https://basespecs.vn/NamingSystem/ARTIdentifiers" ]
      ], [
-       fhir:index 6;
-       fhir:Element.id [ fhir:value "Patient.identifier:arv.value" ];
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "Patient.identifier:art.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
      ], [
-       fhir:index 7;
+       fhir:index 9;
        fhir:Element.id [ fhir:value "Patient.identifier:passport" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.sliceName [ fhir:value "passport" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ]
      ], [
-       fhir:index 8;
+       fhir:index 10;
        fhir:Element.id [ fhir:value "Patient.identifier:passport.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.fixedUri [ fhir:value "https://basespecs.vn/NamingSystem/PassportNumbers" ]
      ], [
-       fhir:index 9;
+       fhir:index 11;
        fhir:Element.id [ fhir:value "Patient.identifier:passport.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
      ], [
-       fhir:index 10;
+       fhir:index 12;
        fhir:Element.id [ fhir:value "Patient.identifier:insurance" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.sliceName [ fhir:value "insurance" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ]
      ], [
-       fhir:index 11;
+       fhir:index 13;
        fhir:Element.id [ fhir:value "Patient.identifier:insurance.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.fixedUri [ fhir:value "https://basespecs.vn/NamingSystem/InsuranceNumbers" ]
      ], [
-       fhir:index 12;
+       fhir:index 14;
        fhir:Element.id [ fhir:value "Patient.identifier:insurance.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
      ], [
-       fhir:index 13;
+       fhir:index 15;
        fhir:Element.id [ fhir:value "Patient.name" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name" ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 14;
-       fhir:Element.id [ fhir:value "Patient.gender" ];
-       fhir:ElementDefinition.path [ fhir:value "Patient.gender" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.id [ fhir:value "Patient.birthDate" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate" ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
        fhir:Element.id [ fhir:value "Patient.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address" ];
        fhir:ElementDefinition.slicing [
@@ -5319,27 +5451,27 @@
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.id [ fhir:value "Patient.address:Temporary" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Temporary" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.id [ fhir:value "Patient.address:Temporary.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.use" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.fixedCode [ fhir:value "temp" ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.id [ fhir:value "Patient.address:Permanent" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Permanent" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.id [ fhir:value "Patient.address:Permanent.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address.use" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
