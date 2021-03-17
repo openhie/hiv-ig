@@ -7,7 +7,7 @@ This is the Implementation Guide for HIV ImplementationGuide by OpenHIE
 This ImplementationGuide is published in the following locations:
 
 Continuous Build: __http://build.fhir.org/ig/openhie/hiv-ig/__  
-Canonical / permanent URL: __http://somewhere.org/...__  
+Canonical / permanent URL: __https://openhie.github.io/hiv-ig/index.html__  
 <br> </br>
 
 ### Issues
