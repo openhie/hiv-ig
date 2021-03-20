@@ -1,11 +1,11 @@
 ﻿HIVCaseReporting : Validation Results
 =========================================
 
-err = 122, warn = 115, info = 3
-IG Publisher Version: 1.1.63
-Generated Wed Mar 17 07:20:48 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir)
+err = 122, warn = 116, info = 3
+IG Publisher Version: 1.1.64
+Generated Sat Mar 20 18:00:22 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir/hiv-casereporting)
 
- Build Errors : 278 / 3 / 1
+ Build Errors : 278 / 4 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 4 / 0 / 5
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-occupations : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-population : 0 / 0 / 1
@@ -20,11 +20,11 @@ Generated Wed Mar 17 07:20:48 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#
  /github/workspace/fsh-generated/resources/NamingSystem-ns-insurance-id : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-ns-passport-id : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-test-hiv-patient : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 4 / 0 / 6
+ /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 6 / 0 / 6
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 23 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ethnicity : 1 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ext-specimen-collection-place : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ethnicity : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ext-specimen-collection-place : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-careplan : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-cd4-observation : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-condition : 0 / 0 / 2
@@ -53,6 +53,7 @@ Generated Wed Mar 17 07:20:48 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#
 == n/a ==
 WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[0].url: The correct canonical URL for this dependency is http://hl7.org/fhir/uv/sdc/ImplementationGuide/sdc
+WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be openhie.fhir.hiv
 ERROR: WHOHIVAdaptationKitModel.patient.gender: The reference VSPatientGender could not be resolved
 ERROR: WHOHIVAdaptationKitModel.patient.genderIdentity: The reference VSPatientGenderIdentity could not be resolved
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/model-who-hiv-adaptation-kit.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
@@ -231,7 +232,7 @@ ERROR: /github/workspace/output/StructureDefinition-ethnicity.profile.xml.html: 
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 679 column 45
+/* ' at line 684 column 45
 ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report.profile.xml.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -383,7 +384,7 @@ ERROR: /github/workspace/output/CodeSystem-cs-hiv-risk-behavior.xml.html: unable
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 394 column 45
+/* ' at line 395 column 45
 ERROR: /github/workspace/output/ValueSet-vs-ethnicity.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -896,7 +897,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-condition.profile.ttl.ht
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 2162 column 45
+/* ' at line 2152 column 45
 ERROR: /github/workspace/output/case_reporting.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -972,7 +973,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-condition-definitions.ht
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 750 column 45
+/* ' at line 740 column 45
 ERROR: /github/workspace/output/NamingSystem-ns-passport-id.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1219,7 +1220,7 @@ ERROR: /github/workspace/output/CodeSystem-cs-hiv-transmission-route.xml.html: u
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 387 column 45
+/* ' at line 388 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-hiv-transmission-route.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1333,7 +1334,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-condition.profile.xml.ht
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 2205 column 45
+/* ' at line 2196 column 45
 ERROR: /github/workspace/output/CodeSystem-type-of-contact.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1447,7 +1448,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-condition.profile.histor
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 381 column 45
+/* ' at line 371 column 45
 ERROR: /github/workspace/output/ValueSet-HIVRapidTestResults.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1504,7 +1505,7 @@ ERROR: /github/workspace/output/ValueSet-vs-patient-gender.xml.html: unable to p
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 370 column 45
+/* ' at line 372 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-hiv-population.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -1694,7 +1695,7 @@ ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.xml.
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 1049 column 45
+/* ' at line 1050 column 45
 ERROR: /github/workspace/output/StructureDefinition-pregnancy-status-examples.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2055,7 +2056,7 @@ ERROR: /github/workspace/output/CodeSystem-type-of-contact.xml.html: unable to p
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 391 column 45
+/* ' at line 392 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-specimen-definitions.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2207,7 +2208,7 @@ ERROR: /github/workspace/output/CodeSystem-cs-hiv-population.xml.html: unable to
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 413 column 45
+/* ' at line 414 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-cd4-observation.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2321,7 +2322,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-patient.profile.xml.html
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 5096 column 45
+/* ' at line 5099 column 45
 ERROR: /github/workspace/output/NamingSystem-ns-art-id.change.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2530,7 +2531,7 @@ ERROR: /github/workspace/output/StructureDefinition-pregnancy-status.profile.xml
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 2862 column 45
+/* ' at line 2863 column 45
 ERROR: /github/workspace/output/ValueSet-HIVRapidTestResults.xml.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2549,7 +2550,7 @@ ERROR: /github/workspace/output/ValueSet-HIVRapidTestResults.xml.html: unable to
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 386 column 45
+/* ' at line 387 column 45
 ERROR: /github/workspace/output/index.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2606,7 +2607,7 @@ ERROR: /github/workspace/output/Patient-test-hiv-patient.xml.html: unable to par
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 359 column 45
+/* ' at line 360 column 45
 ERROR: /github/workspace/output/StructureDefinition-arv-therapy-summary-examples.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2815,7 +2816,7 @@ ERROR: /github/workspace/output/CodeSystem-cs-hiv-occupations.xml.html: unable t
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 429 column 45
+/* ' at line 430 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-condition-examples.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2834,7 +2835,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-condition-examples.html:
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 403 column 45
+/* ' at line 382 column 45
 ERROR: /github/workspace/output/ValueSet-vs-hiv-occupations.xml.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -2853,7 +2854,7 @@ ERROR: /github/workspace/output/ValueSet-vs-hiv-occupations.xml.html: unable to 
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 370 column 45
+/* ' at line 372 column 45
 ERROR: /github/workspace/output/ValueSet-vs-hiv-risk-behavior.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3024,7 +3025,7 @@ ERROR: /github/workspace/output/ValueSet-vs-patient-gender-identity.xml.html: un
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 371 column 45
+/* ' at line 372 column 45
 ERROR: /github/workspace/output/ValueSet-vs-type-of-contact.change.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3119,7 +3120,7 @@ ERROR: /github/workspace/output/ValueSet-vs-type-of-contact.xml.html: unable to 
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 370 column 45
+/* ' at line 372 column 45
 ERROR: /github/workspace/output/changes.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3252,7 +3253,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load.profile.xml.h
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 2862 column 45
+/* ' at line 2863 column 45
 ERROR: /github/workspace/output/StructureDefinition-model-hiv-case-report-mappings.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3290,7 +3291,7 @@ ERROR: /github/workspace/output/ValueSet-vs-hiv-risk-behavior.xml.html: unable t
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 371 column 45
+/* ' at line 373 column 45
 ERROR: /github/workspace/output/ValueSet-HIVRapidTestResults.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3632,7 +3633,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-cd4-observation.profile.
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 2863 column 45
+/* ' at line 2864 column 45
 ERROR: /github/workspace/output/ValueSet-vs-patient-gender-identity.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3708,7 +3709,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-condition.html: unable t
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 829 column 45
+/* ' at line 819 column 45
 ERROR: /github/workspace/output/StructureDefinition-pregnancy-status.profile.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3765,7 +3766,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-condition-mappings.html:
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 511 column 45
+/* ' at line 501 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-hiv-population.change.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -3860,7 +3861,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-patient-examples.html: u
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 403 column 45
+/* ' at line 409 column 45
 ERROR: /github/workspace/output/ValueSet-hiv-case-report-questionnaire_PregnancyOutcomeCodes.change.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4012,7 +4013,7 @@ ERROR: /github/workspace/output/StructureDefinition-ext-specimen-collection-plac
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 690 column 45
+/* ' at line 692 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-hiv-population.ttl.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4164,7 +4165,7 @@ ERROR: /github/workspace/output/StructureDefinition-arv-therapy-summary.profile.
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 1573 column 45
+/* ' at line 1574 column 45
 ERROR: /github/workspace/output/Questionnaire-hiv-case-report-questionnaire.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4240,7 +4241,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-specimen.profile.xml.htm
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 2442 column 45
+/* ' at line 2443 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-patient-gender.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4316,7 +4317,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-condition.profile.json.h
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 2400 column 45
+/* ' at line 2390 column 45
 ERROR: /github/workspace/output/CodeSystem-cs-patient-gender.xml.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4335,7 +4336,7 @@ ERROR: /github/workspace/output/CodeSystem-cs-patient-gender.xml.html: unable to
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 387 column 45
+/* ' at line 388 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-recency-result.profile.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4487,7 +4488,7 @@ ERROR: /github/workspace/output/ValueSet-vs-hiv-population.xml.html: unable to p
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 370 column 45
+/* ' at line 372 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-patient.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4544,7 +4545,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-risk-factor.profile.xml.
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 2195 column 45
+/* ' at line 2196 column 45
 ERROR: /github/workspace/output/NamingSystem-ns-hiv-case-id.json.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4791,7 +4792,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-recency-result.profile.x
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 2931 column 45
+/* ' at line 2934 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-specimen.profile.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4886,7 +4887,7 @@ ERROR: /github/workspace/output/ValueSet-vs-hiv-transmission-route.xml.html: una
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 371 column 45
+/* ' at line 372 column 45
 ERROR: /github/workspace/output/StructureDefinition-model-hiv-record-mappings.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -4943,7 +4944,7 @@ ERROR: /github/workspace/output/CodeSystem-cs-patient-gender-identity.xml.html: 
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 402 column 45
+/* ' at line 403 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-risk-factor-mappings.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -5019,7 +5020,7 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-arv-careplan.profile.xml
             var parameterFieldId = '';
             var parameterVariableName = '';
             var parameterValue = '';
-/* ' at line 2945 column 45
+/* ' at line 2946 column 45
 ERROR: /github/workspace/output/StructureDefinition-hiv-viral-load.profile.history.html: unable to parse character reference '''' (last text = '
         $(':header[id]').each(function() {
           var id = $(this).attr('id');
@@ -5232,11 +5233,11 @@ ERROR: /github/workspace/output/StructureDefinition-hiv-risk-factor-examples.htm
 == /github/workspace/fsh-generated/resources/Bundle-examplebundle.json ==
 INFORMATION: Bundle/examplebundle: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
 INFORMATION: Bundle/examplebundle: Bundle.entry[0].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
-INFORMATION: Bundle/examplebundle: Bundle.entry[0].resource.ofType(Patient): Validate resource against profile http://openhie.org/fhir/StructureDefinition/hiv-patient - listed in meta
+INFORMATION: Bundle/examplebundle: Bundle.entry[0].resource.ofType(Patient): Validate resource against profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient - listed in meta
 INFORMATION: Bundle/examplebundle: Bundle.entry[1].resource.ofType(Condition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
 ERROR: Bundle/examplebundle: Bundle.entry[1]: Bundle entry missing fullUrl
 ERROR: Bundle/examplebundle: Bundle.entry[1].resource.ofType(Condition).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/examplebundle: Bundle.entry[1].resource.ofType(Condition): Validate resource against profile http://openhie.org/fhir/StructureDefinition/hiv-condition - listed in meta
+INFORMATION: Bundle/examplebundle: Bundle.entry[1].resource.ofType(Condition): Validate resource against profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-condition - listed in meta
 ERROR: Bundle/examplebundle: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/examplebundle: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 == /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-occupations.json ==
@@ -5265,8 +5266,9 @@ INFORMATION: NamingSystem/ns-insurance-id: NamingSystem: Validate resource again
 INFORMATION: NamingSystem/ns-passport-id: NamingSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem
 == /github/workspace/fsh-generated/resources/Patient-test-hiv-patient.json ==
 INFORMATION: Patient/test-hiv-patient: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
-INFORMATION: Patient/test-hiv-patient: Patient: Validate resource against profile http://openhie.org/fhir/StructureDefinition/hiv-patient - listed in meta
+INFORMATION: Patient/test-hiv-patient: Patient: Validate resource against profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient - listed in meta
 == /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json ==
+ERROR: Questionnaire.where(url = 'http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json - the canonical URL (http://openhie.org/fhir/hiv-casereporting/Questionnaire/hiv-case-report-questionnaire) does not match the URL (http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire)
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[0].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.contained[1].ofType(ValueSet): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
@@ -5277,6 +5279,7 @@ ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[3
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract - listed in meta
 ERROR: Questionnaire/hiv-case-report-questionnaire: Questionnaire.extension[0]: Profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract, Element matches more than one slice - rootContext, itemContext
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire.item[5].item[0].item[1].item[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extract
+ERROR: /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire: URL Mismatch http://openhie.org/fhir/hiv-casereporting/Questionnaire/hiv-case-report-questionnaire vs http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire
 == /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse.json ==
 ERROR: QuestionnaireResponse.item[2].item[2]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[2])
 ERROR: QuestionnaireResponse.item[2].item[3]: The property item must be an Array, not null (at QuestionnaireResponse.item[2].item[3])
@@ -5306,41 +5309,39 @@ ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[2].item[1].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
 == /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary.json ==
 INFORMATION: StructureDefinition/arv-therapy-summary: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/arv-therapy-summary'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/arv-therapy-summary'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-ethnicity.json ==
 INFORMATION: StructureDefinition/ethnicity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition/ethnicity: StructureDefinition.snapshot.element[3].fixed.ofType(uri): The element Extension.url has a fixed of type uri, which is not in the list of allowed types ([http://hl7.org/fhirpath/System.String])
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/ethnicity'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/ethnicity'): The Implementation Guide contains no examples for this extension
 == /github/workspace/fsh-generated/resources/StructureDefinition-ext-specimen-collection-place.json ==
 INFORMATION: StructureDefinition/ext-specimen-collection-place: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition/ext-specimen-collection-place: StructureDefinition.snapshot.element[3].fixed.ofType(uri): The element Extension.url has a fixed of type uri, which is not in the list of allowed types ([http://hl7.org/fhirpath/System.String])
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/ext-specimen-collection-place'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/ext-specimen-collection-place'): The Implementation Guide contains no examples for this extension
 == /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-careplan.json ==
 INFORMATION: StructureDefinition/hiv-arv-careplan: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/hiv-arv-careplan'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-careplan'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-hiv-cd4-observation.json ==
 INFORMATION: StructureDefinition/hiv-cd4-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/hiv-cd4-observation'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-observation'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-hiv-condition.json ==
 INFORMATION: StructureDefinition/hiv-condition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/hiv-condition'): The Implementation Guide contains no explicitly linked examples for this profile
+INFORMATION: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-condition'): The Implementation Guide contains no explicitly linked examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient.json ==
 INFORMATION: StructureDefinition/hiv-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /github/workspace/fsh-generated/resources/StructureDefinition-hiv-recency-result.json ==
 INFORMATION: StructureDefinition/hiv-recency-result: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/hiv-recency-result'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-result'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-hiv-risk-factor.json ==
 INFORMATION: StructureDefinition/hiv-risk-factor: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/hiv-risk-factor'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-risk-factor'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-hiv-specimen.json ==
 INFORMATION: StructureDefinition/hiv-specimen: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/hiv-specimen'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-specimen'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-hiv-viral-load.json ==
 INFORMATION: StructureDefinition/hiv-viral-load: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/hiv-viral-load'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-pregnancy-status.json ==
 INFORMATION: StructureDefinition/pregnancy-status: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/pregnancy-status'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/pregnancy-status'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/ValueSet-HIVRapidTestResults.json ==
 INFORMATION: ValueSet/HIVRapidTestResults: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-vs-ethnicity.json ==
@@ -5363,9 +5364,9 @@ INFORMATION: ValueSet/vs-patient-gender-identity: ValueSet: Validate resource ag
 == /github/workspace/fsh-generated/resources/ValueSet-vs-type-of-contact.json ==
 INFORMATION: ValueSet/vs-type-of-contact: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/input/hiv-casereporting.xml ==
-INFORMATION: ImplementationGuide/openhie.fhir.hiv: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+INFORMATION: ImplementationGuide/hiv-casereporting: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 == /github/workspace/input/models/model-hiv-case-report.json ==
-ERROR: StructureDefinition.where(url = 'https://www.openhie.org/fhir/hiv/StructureDefinition/model-hiv-case-report'): Conformance resource /github/workspace/input/models/model-hiv-case-report.json - the canonical URL (http://openhie.org/fhir/StructureDefinition/model-hiv-case-report) does not match the URL (https://www.openhie.org/fhir/hiv/StructureDefinition/model-hiv-case-report)
+ERROR: StructureDefinition.where(url = 'https://www.openhie.org/fhir/hiv/StructureDefinition/model-hiv-case-report'): Conformance resource /github/workspace/input/models/model-hiv-case-report.json - the canonical URL (http://openhie.org/fhir/hiv-casereporting/StructureDefinition/model-hiv-case-report) does not match the URL (https://www.openhie.org/fhir/hiv/StructureDefinition/model-hiv-case-report)
 INFORMATION: StructureDefinition/model-hiv-case-report: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' failed
 WARNING: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[11]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
@@ -5457,9 +5458,9 @@ ERROR: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.e
 ERROR: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[90]: The element HIVCaseReport.pregnancy has no assigned types, and no content reference
 ERROR: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[95]: The element HIVCaseReport.pregnancy.pregnancyOutcomes has no assigned types, and no content reference
 ERROR: StructureDefinition/model-hiv-case-report: StructureDefinition.snapshot.element[104]: The element HIVCaseReport.death has no assigned types, and no content reference
-ERROR: /github/workspace/input/models/model-hiv-case-report: URL Mismatch http://openhie.org/fhir/StructureDefinition/model-hiv-case-report vs https://www.openhie.org/fhir/hiv/StructureDefinition/model-hiv-case-report
+ERROR: /github/workspace/input/models/model-hiv-case-report: URL Mismatch http://openhie.org/fhir/hiv-casereporting/StructureDefinition/model-hiv-case-report vs https://www.openhie.org/fhir/hiv/StructureDefinition/model-hiv-case-report
 == /github/workspace/input/models/model-hiv-record.json ==
-ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv/StructureDefinition/model-hiv-record'): Conformance resource /github/workspace/input/models/model-hiv-record.json - the canonical URL (http://openhie.org/fhir/StructureDefinition/model-hiv-record) does not match the URL (http://openhie.org/fhir/hiv/StructureDefinition/model-hiv-record)
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv/StructureDefinition/model-hiv-record'): Conformance resource /github/workspace/input/models/model-hiv-record.json - the canonical URL (http://openhie.org/fhir/hiv-casereporting/StructureDefinition/model-hiv-record) does not match the URL (http://openhie.org/fhir/hiv/StructureDefinition/model-hiv-record)
 INFORMATION: StructureDefinition/model-hiv-record: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/model-hiv-record: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' failed
 WARNING: StructureDefinition/model-hiv-record: StructureDefinition.snapshot.element[13]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
@@ -5480,7 +5481,7 @@ WARNING: StructureDefinition/model-hiv-record: StructureDefinition.differential.
 WARNING: StructureDefinition/model-hiv-record: StructureDefinition.differential.element[18]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
 WARNING: StructureDefinition/model-hiv-record: StructureDefinition.differential.element[19]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
 WARNING: StructureDefinition/model-hiv-record: StructureDefinition.differential.element[20]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-ERROR: /github/workspace/input/models/model-hiv-record: URL Mismatch http://openhie.org/fhir/StructureDefinition/model-hiv-record vs http://openhie.org/fhir/hiv/StructureDefinition/model-hiv-record
+ERROR: /github/workspace/input/models/model-hiv-record: URL Mismatch http://openhie.org/fhir/hiv-casereporting/StructureDefinition/model-hiv-record vs http://openhie.org/fhir/hiv/StructureDefinition/model-hiv-record
 == /github/workspace/input/models/model-who-hiv-adaptation-kit.json ==
 ERROR: StructureDefinition.differential.element[0].min: Error parsing JSON: the primitive value must be a number
 ERROR: StructureDefinition.differential.element[1].min: Error parsing JSON: the primitive value must be a number
@@ -5522,7 +5523,7 @@ ERROR: StructureDefinition.differential.element[36].min: Error parsing JSON: the
 ERROR: StructureDefinition.differential.element[37].min: Error parsing JSON: the primitive value must be a number
 ERROR: StructureDefinition.differential.element[38].min: Error parsing JSON: the primitive value must be a number
 ERROR: StructureDefinition.differential.element[39].min: Error parsing JSON: the primitive value must be a number
-ERROR: StructureDefinition.where(url = 'http://openhie.org/standards/fhir/hiv/model-who-hiv-adaptation-kit'): Conformance resource /github/workspace/input/models/model-who-hiv-adaptation-kit.json - the canonical URL (http://openhie.org/fhir/StructureDefinition/model-who-hiv-adaptation-kit) does not match the URL (http://openhie.org/standards/fhir/hiv/model-who-hiv-adaptation-kit)
+ERROR: StructureDefinition.where(url = 'http://openhie.org/standards/fhir/hiv/model-who-hiv-adaptation-kit'): Conformance resource /github/workspace/input/models/model-who-hiv-adaptation-kit.json - the canonical URL (http://openhie.org/fhir/hiv-casereporting/StructureDefinition/model-who-hiv-adaptation-kit) does not match the URL (http://openhie.org/standards/fhir/hiv/model-who-hiv-adaptation-kit)
 INFORMATION: StructureDefinition/model-who-hiv-adaptation-kit: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/model-who-hiv-adaptation-kit: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' failed
 WARNING: StructureDefinition/model-who-hiv-adaptation-kit: StructureDefinition.snapshot.element[12].short: value should not start or finish with whitespace
@@ -5552,6 +5553,6 @@ WARNING: StructureDefinition/model-who-hiv-adaptation-kit: StructureDefinition.d
 WARNING: StructureDefinition/model-who-hiv-adaptation-kit: StructureDefinition.snapshot.element[16].binding: The valueSet reference VSPatientGender on element WHOHIVAdaptationKitModel.patient.gender could not be resolved
 WARNING: StructureDefinition/model-who-hiv-adaptation-kit: StructureDefinition.snapshot.element[17].binding: The valueSet reference VSPatientGenderIdentity on element WHOHIVAdaptationKitModel.patient.genderIdentity could not be resolved
 ERROR: StructureDefinition/model-who-hiv-adaptation-kit: StructureDefinition.snapshot.element[41].binding: The element WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact has a binding, but no bindable types are present [coding]
-ERROR: /github/workspace/input/models/model-who-hiv-adaptation-kit: URL Mismatch http://openhie.org/fhir/StructureDefinition/model-who-hiv-adaptation-kit vs http://openhie.org/standards/fhir/hiv/model-who-hiv-adaptation-kit
+ERROR: /github/workspace/input/models/model-who-hiv-adaptation-kit: URL Mismatch http://openhie.org/fhir/hiv-casereporting/StructureDefinition/model-who-hiv-adaptation-kit vs http://openhie.org/standards/fhir/hiv/model-who-hiv-adaptation-kit
 == /github/workspace/input/scenarios/ExampleScenario-hiv-case-reporting-scenario.xml ==
 INFORMATION: ExampleScenario/hiv-case-reporting-scenario: ExampleScenario: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ExampleScenario

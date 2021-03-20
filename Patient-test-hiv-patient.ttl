@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/Patient/test-hiv-patient> a fhir:Patient;
+<http://openhie.org/fhir/hiv-casereporting/Patient/test-hiv-patient> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "test-hiv-patient"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://openhie.org/fhir/StructureDefinition/hiv-patient";
+       fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient";
        fhir:index 0;
-       fhir:link <http://openhie.org/fhir/StructureDefinition/hiv-patient>
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient>
      ]
   ];
   fhir:DomainResource.text [
@@ -41,7 +41,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/Patient/test-hiv-patient.ttl> a owl:Ontology;
+<http://openhie.org/fhir/hiv-casereporting/Patient/test-hiv-patient.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

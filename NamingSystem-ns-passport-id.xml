@@ -3,7 +3,7 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
   <id value="ns-passport-id"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>http://openhie.org/fhir/NamingSystem/ns-passport-id</td></tr><tr><td>Version</td><td>0.2.0</td></tr><tr><td>Name</td><td>NSPassportID</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Naming System - Passport identifiers</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>http://openhie.org/fhir/hiv-casereporting/NamingSystem/ns-passport-id</td></tr><tr><td>Version</td><td>0.2.0</td></tr><tr><td>Name</td><td>NSPassportID</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Naming System - Passport identifiers</p>
 </div></td></tr><tr><td>Publisher</td><td>openHIE</td></tr></table><h3>Identifiers</h3><table class="grid"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://openhie.org/sid/passport</td><td>true</td></tr></table></div>
   </text>
   <name value="NSPassportID"/>

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/StructureDefinition/hiv-recency-result> a fhir:StructureDefinition;
+<http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-result> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "hiv-recency-result"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://openhie.org/fhir/StructureDefinition/hiv-recency-result"];
+  fhir:StructureDefinition.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-result"];
   fhir:StructureDefinition.version [ fhir:value "0.2.0"];
   fhir:StructureDefinition.name [ fhir:value "HIVRecencyResult"];
   fhir:StructureDefinition.title [ fhir:value "HIV Recency result"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-03-17T07:20:09+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-03-20T17:59:44+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "openHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -930,8 +930,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://openhie.org/fhir/ValueSet/HIVRapidTestResults";
-           fhir:link <http://openhie.org/fhir/ValueSet/HIVRapidTestResults>
+           fhir:value "http://openhie.org/fhir/hiv-casereporting/ValueSet/HIVRapidTestResults";
+           fhir:link <http://openhie.org/fhir/hiv-casereporting/ValueSet/HIVRapidTestResults>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2990,8 +2990,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://openhie.org/fhir/ValueSet/HIVRapidTestResults";
-           fhir:link <http://openhie.org/fhir/ValueSet/HIVRapidTestResults>
+           fhir:value "http://openhie.org/fhir/hiv-casereporting/ValueSet/HIVRapidTestResults";
+           fhir:link <http://openhie.org/fhir/hiv-casereporting/ValueSet/HIVRapidTestResults>
          ]
        ]
      ], [
@@ -3015,7 +3015,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/StructureDefinition/hiv-recency-result.ttl> a owl:Ontology;
+<http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-result.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

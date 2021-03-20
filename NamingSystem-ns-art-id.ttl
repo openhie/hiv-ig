@@ -5,12 +5,12 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/NamingSystem/ns-art-id> a fhir:NamingSystem;
+<http://openhie.org/fhir/hiv-casereporting/NamingSystem/ns-art-id> a fhir:NamingSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ns-art-id"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://openhie.org/fhir/NamingSystem/ns-art-id</td></tr><tr><td>Version</td><td>0.2.0</td></tr><tr><td>Name</td><td>NSARTID</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Naming System - ARV treatment identifiers</p>\n</div></td></tr><tr><td>Publisher</td><td>openHIE</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://openhie.org/sid/arv</td><td>true</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://openhie.org/fhir/hiv-casereporting/NamingSystem/ns-art-id</td></tr><tr><td>Version</td><td>0.2.0</td></tr><tr><td>Name</td><td>NSARTID</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Naming System - ARV treatment identifiers</p>\n</div></td></tr><tr><td>Publisher</td><td>openHIE</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://openhie.org/sid/arv</td><td>true</td></tr></table></div>"
   ];
   fhir:NamingSystem.name [ fhir:value "NSARTID"];
   fhir:NamingSystem.status [ fhir:value "active"];
@@ -43,7 +43,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/NamingSystem/ns-art-id.ttl> a owl:Ontology;
+<http://openhie.org/fhir/hiv-casereporting/NamingSystem/ns-art-id.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

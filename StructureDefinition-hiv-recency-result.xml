@@ -15,12 +15,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://openhie.org/fhir/StructureDefinition/hiv-recency-result"/>
+  <url value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-result"/>
   <version value="0.2.0"/>
   <name value="HIVRecencyResult"/>
   <title value="HIV Recency result"/>
   <status value="active"/>
-  <date value="2021-03-17T07:20:09+00:00"/>
+  <date value="2021-03-20T17:59:44+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>
@@ -690,7 +690,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://openhie.org/fhir/ValueSet/HIVRapidTestResults"/>
+        <valueSet value="http://openhie.org/fhir/hiv-casereporting/ValueSet/HIVRapidTestResults"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -2288,7 +2288,7 @@
       <path value="Observation.code"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://openhie.org/fhir/ValueSet/HIVRapidTestResults"/>
+        <valueSet value="http://openhie.org/fhir/hiv-casereporting/ValueSet/HIVRapidTestResults"/>
       </binding>
     </element>
     <element id="Observation.effectiveDateTime">

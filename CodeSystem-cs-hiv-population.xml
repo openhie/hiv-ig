@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="cs-hiv-population"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/CodeSystem/cs-hiv-population defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="cs-hiv-population-1"> </a></td><td>Injection drug users</td><td>Injecting drug users</td></tr><tr><td style="white-space:nowrap">2<a name="cs-hiv-population-2"> </a></td><td>FSW</td><td>Female sex workers</td></tr><tr><td style="white-space:nowrap">3<a name="cs-hiv-population-3"> </a></td><td>Pregnant women</td><td>Pregnant women</td></tr><tr><td style="white-space:nowrap">4<a name="cs-hiv-population-4"> </a></td><td>Blood donors</td><td>Blood donors</td></tr><tr><td style="white-space:nowrap">5<a name="cs-hiv-population-5"> </a></td><td>TB patients</td><td>TB patients</td></tr><tr><td style="white-space:nowrap">6<a name="cs-hiv-population-6"> </a></td><td>People with STDs</td><td>People with sexually transmitted diseases</td></tr><tr><td style="white-space:nowrap">7<a name="cs-hiv-population-7"> </a></td><td>Young recruits</td><td>Young recruits for military service</td></tr><tr><td style="white-space:nowrap">8<a name="cs-hiv-population-8"> </a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style="white-space:nowrap">9<a name="cs-hiv-population-9"> </a></td><td>Others</td><td>Others</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="cs-hiv-population-1"> </a></td><td>Injection drug users</td><td>Injecting drug users</td></tr><tr><td style="white-space:nowrap">2<a name="cs-hiv-population-2"> </a></td><td>FSW</td><td>Female sex workers</td></tr><tr><td style="white-space:nowrap">3<a name="cs-hiv-population-3"> </a></td><td>Pregnant women</td><td>Pregnant women</td></tr><tr><td style="white-space:nowrap">4<a name="cs-hiv-population-4"> </a></td><td>Blood donors</td><td>Blood donors</td></tr><tr><td style="white-space:nowrap">5<a name="cs-hiv-population-5"> </a></td><td>TB patients</td><td>TB patients</td></tr><tr><td style="white-space:nowrap">6<a name="cs-hiv-population-6"> </a></td><td>People with STDs</td><td>People with sexually transmitted diseases</td></tr><tr><td style="white-space:nowrap">7<a name="cs-hiv-population-7"> </a></td><td>Young recruits</td><td>Young recruits for military service</td></tr><tr><td style="white-space:nowrap">8<a name="cs-hiv-population-8"> </a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style="white-space:nowrap">9<a name="cs-hiv-population-9"> </a></td><td>Others</td><td>Others</td></tr></table></div>
   </text>
-  <url value="http://openhie.org/fhir/CodeSystem/cs-hiv-population"/>
+  <url value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population"/>
   <version value="0.2.0"/>
   <name value="CSHIVPopulation"/>
   <title value="Population groups"/>
   <status value="active"/>
-  <date value="2021-03-17T07:20:09+00:00"/>
+  <date value="2021-03-20T17:59:44+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>

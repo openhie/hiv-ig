@@ -24,7 +24,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.extension","species","","",0,1,"Y","","","Extension {[CanonicalType[http://openhie.org/fhir/StructureDefinition/ethnicity]]} {[]}
+"Patient.extension","species","","",0,1,"Y","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-casereporting/StructureDefinition/ethnicity]]} {[]}
 ","Ethnicity","Ethnicity.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

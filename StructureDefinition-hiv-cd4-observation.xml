@@ -12,12 +12,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://openhie.org/fhir/StructureDefinition/hiv-cd4-observation"/>
+  <url value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-observation"/>
   <version value="0.2.0"/>
   <name value="CD4Observation"/>
   <title value="CD4Observation"/>
   <status value="active"/>
-  <date value="2021-03-17T07:20:09+00:00"/>
+  <date value="2021-03-20T17:59:44+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>

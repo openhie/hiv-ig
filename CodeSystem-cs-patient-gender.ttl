@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/CodeSystem/cs-patient-gender> a fhir:CodeSystem;
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "cs-patient-gender"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/CodeSystem/cs-patient-gender defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">male<a name=\"cs-patient-gender-male\"> </a></td><td>Male</td><td>Client identifies as female</td></tr><tr><td style=\"white-space:nowrap\">female<a name=\"cs-patient-gender-female\"> </a></td><td>Female</td><td>Client identifies as male</td></tr><tr><td style=\"white-space:nowrap\">transgender<a name=\"cs-patient-gender-transgender\"> </a></td><td>Transgender</td><td>Client identifies as transgender</td></tr><tr><td style=\"white-space:nowrap\">non-binary<a name=\"cs-patient-gender-non-binary\"> </a></td><td>Non-binary</td><td>Client identifies in a non-binary way</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">male<a name=\"cs-patient-gender-male\"> </a></td><td>Male</td><td>Client identifies as female</td></tr><tr><td style=\"white-space:nowrap\">female<a name=\"cs-patient-gender-female\"> </a></td><td>Female</td><td>Client identifies as male</td></tr><tr><td style=\"white-space:nowrap\">transgender<a name=\"cs-patient-gender-transgender\"> </a></td><td>Transgender</td><td>Client identifies as transgender</td></tr><tr><td style=\"white-space:nowrap\">non-binary<a name=\"cs-patient-gender-non-binary\"> </a></td><td>Non-binary</td><td>Client identifies in a non-binary way</td></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/CodeSystem/cs-patient-gender"];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender"];
   fhir:CodeSystem.version [ fhir:value "0.2.0"];
   fhir:CodeSystem.name [ fhir:value "CSPatientGender"];
   fhir:CodeSystem.title [ fhir:value "Patient Gender"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-03-17T07:20:09+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-03-20T17:59:44+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "openHIE"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -62,7 +62,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/CodeSystem/cs-patient-gender.ttl> a owl:Ontology;
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

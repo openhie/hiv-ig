@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="vs-type-of-contact"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-type-of-contact.html"><code>http://openhie.org/fhir/CodeSystem/type-of-contact</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-type-of-contact.html"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/type-of-contact</code></a></li></ul></div>
   </text>
-  <url value="http://openhie.org/fhir/ValueSet/vs-type-of-contact"/>
+  <url value="http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-type-of-contact"/>
   <version value="0.2.0"/>
   <name value="TypeOfContact"/>
   <title value="Type of contact or relationship"/>
   <status value="active"/>
-  <date value="2021-03-17T07:20:09+00:00"/>
+  <date value="2021-03-20T17:59:44+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>
@@ -27,7 +27,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://openhie.org/fhir/CodeSystem/type-of-contact"/>
+      <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/type-of-contact"/>
     </include>
   </compose>
 </ValueSet>

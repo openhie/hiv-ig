@@ -5,12 +5,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>urn:oid:2.16.840.1.114222.4.11.877</code></li></ul></div>"
   },
-  "url": "http://openhie.org/fhir/ValueSet/vs-ethnicity",
+  "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-ethnicity",
   "version": "0.2.0",
   "name": "Ethnicity",
   "title": "Ethnicity",
   "status": "draft",
-  "date": "2021-03-17T07:20:09+00:00",
+  "date": "2021-03-20T17:59:44+00:00",
   "publisher": "openHIE",
   "contact": [
     {

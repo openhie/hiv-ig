@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/CodeSystem/cs-patient-communication-preferences> a fhir:CodeSystem;
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-communication-preferences> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "cs-patient-communication-preferences"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/CodeSystem/cs-patient-communication-preferences defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">text-message<a name=\"cs-patient-communication-preferences-text-message\"> </a></td><td>SMS or  Text message</td><td>The client would like to receive communications via Text Message/SMS</td></tr><tr><td style=\"white-space:nowrap\">voice-call<a name=\"cs-patient-communication-preferences-voice-call\"> </a></td><td>Voice Call</td><td>Client would like to receive communications via Voice Calls</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-communication-preferences defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">text-message<a name=\"cs-patient-communication-preferences-text-message\"> </a></td><td>SMS or  Text message</td><td>The client would like to receive communications via Text Message/SMS</td></tr><tr><td style=\"white-space:nowrap\">voice-call<a name=\"cs-patient-communication-preferences-voice-call\"> </a></td><td>Voice Call</td><td>Client would like to receive communications via Voice Calls</td></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/CodeSystem/cs-patient-communication-preferences"];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-communication-preferences"];
   fhir:CodeSystem.version [ fhir:value "0.2.0"];
   fhir:CodeSystem.name [ fhir:value "CSPatientCommunicationPreferences"];
   fhir:CodeSystem.title [ fhir:value "Patient Communication Preferences"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-03-17T07:20:09+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-03-20T17:59:44+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "openHIE"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -52,7 +52,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/CodeSystem/cs-patient-communication-preferences.ttl> a owl:Ontology;
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-communication-preferences.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

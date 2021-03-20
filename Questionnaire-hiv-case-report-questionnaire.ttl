@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire> a fhir:Questionnaire;
+<http://openhie.org/fhir/hiv-casereporting/Questionnaire/hiv-case-report-questionnaire> a fhir:Questionnaire;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "hiv-case-report-questionnaire"];
   fhir:Resource.meta [
@@ -51,7 +51,7 @@
      fhir:value "Patient";
      fhir:index 0
   ];
-  fhir:Questionnaire.date [ fhir:value "2021-03-17T07:20:09+00:00"^^xsd:dateTime];
+  fhir:Questionnaire.date [ fhir:value "2021-03-20T17:59:44+00:00"^^xsd:dateTime];
   fhir:Questionnaire.publisher [ fhir:value "openHIE"];
   fhir:Questionnaire.contact [
      fhir:index 0;
@@ -125,8 +125,8 @@
            fhir:Questionnaire.item.text [ fhir:value "Ethnicity" ];
            fhir:Questionnaire.item.type [ fhir:value "choice" ];
            fhir:Questionnaire.item.answerValueSet [
-             fhir:value "http://openhie.org/fhir/ValueSet/vs-ethnicity";
-             fhir:link <http://openhie.org/fhir/ValueSet/vs-ethnicity>
+             fhir:value "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-ethnicity";
+             fhir:link <http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-ethnicity>
            ]
          ], [
            fhir:index 2;
@@ -134,8 +134,8 @@
            fhir:Questionnaire.item.text [ fhir:value "Gender" ];
            fhir:Questionnaire.item.type [ fhir:value "choice" ];
            fhir:Questionnaire.item.answerValueSet [
-             fhir:value "http://openhie.org/fhir/ValueSet/vs-patient-gender";
-             fhir:link <http://openhie.org/fhir/ValueSet/vs-patient-gender>
+             fhir:value "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-gender";
+             fhir:link <http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-gender>
            ]
          ], [
            fhir:index 3;
@@ -185,8 +185,8 @@
            fhir:Questionnaire.item.text [ fhir:value "Occupation" ];
            fhir:Questionnaire.item.type [ fhir:value "choice" ];
            fhir:Questionnaire.item.answerValueSet [
-             fhir:value "http://openhie.org/fhir/ValueSet/vs-hiv-occupations";
-             fhir:link <http://openhie.org/fhir/ValueSet/vs-hiv-occupations>
+             fhir:value "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-occupations";
+             fhir:link <http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-occupations>
            ]
          ]
        ]
@@ -201,8 +201,8 @@
          fhir:Questionnaire.item.text [ fhir:value "Risk population" ];
          fhir:Questionnaire.item.type [ fhir:value "choice" ];
          fhir:Questionnaire.item.answerValueSet [
-           fhir:value "http://openhie.org/fhir/ValueSet/vs-hiv-population";
-           fhir:link <http://openhie.org/fhir/ValueSet/vs-hiv-population>
+           fhir:value "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-population";
+           fhir:link <http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-population>
          ]
        ], [
          fhir:index 1;
@@ -210,8 +210,8 @@
          fhir:Questionnaire.item.text [ fhir:value "Risk Behavior" ];
          fhir:Questionnaire.item.type [ fhir:value "choice" ];
          fhir:Questionnaire.item.answerValueSet [
-           fhir:value "http://openhie.org/fhir/ValueSet/vs-hiv-risk-behavior";
-           fhir:link <http://openhie.org/fhir/ValueSet/vs-hiv-risk-behavior>
+           fhir:value "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-risk-behavior";
+           fhir:link <http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-risk-behavior>
          ]
        ], [
          fhir:index 2;
@@ -219,8 +219,8 @@
          fhir:Questionnaire.item.text [ fhir:value "Transmission Route" ];
          fhir:Questionnaire.item.type [ fhir:value "choice" ];
          fhir:Questionnaire.item.answerValueSet [
-           fhir:value "http://openhie.org/fhir/ValueSet/vs-hiv-transmission-route";
-           fhir:link <http://openhie.org/fhir/ValueSet/vs-hiv-transmission-route>
+           fhir:value "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-transmission-route";
+           fhir:link <http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-transmission-route>
          ]
        ]
      ], [
@@ -662,7 +662,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire.ttl> a owl:Ontology;
+<http://openhie.org/fhir/hiv-casereporting/Questionnaire/hiv-case-report-questionnaire.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

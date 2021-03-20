@@ -9,7 +9,7 @@
         "id": "test-hiv-patient",
         "meta": {
           "profile": [
-            "http://openhie.org/fhir/StructureDefinition/hiv-patient"
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"
           ]
         },
         "text": {
@@ -43,7 +43,7 @@
         "id": "test-hiv-condition",
         "meta": {
           "profile": [
-            "http://openhie.org/fhir/StructureDefinition/hiv-condition"
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-condition"
           ]
         },
         "text": {

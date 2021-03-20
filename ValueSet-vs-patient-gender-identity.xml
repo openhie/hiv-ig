@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="vs-patient-gender-identity"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-cs-patient-gender-identity.html"><code>http://openhie.org/fhir/CodeSystem/cs-patient-gender-identity</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-cs-patient-gender-identity.html"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender-identity</code></a></li></ul></div>
   </text>
-  <url value="http://openhie.org/fhir/ValueSet/vs-patient-gender-identity"/>
+  <url value="http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-gender-identity"/>
   <version value="0.2.0"/>
   <name value="PatientGenderIdentity"/>
   <title value="Patient Gender Identity"/>
   <status value="active"/>
-  <date value="2021-03-17T07:20:09+00:00"/>
+  <date value="2021-03-20T17:59:44+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>
@@ -27,7 +27,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://openhie.org/fhir/CodeSystem/cs-patient-gender-identity"/>
+      <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender-identity"/>
     </include>
   </compose>
 </ValueSet>

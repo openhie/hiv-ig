@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/CodeSystem/cs-hiv-risk-behavior> a fhir:CodeSystem;
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "cs-hiv-risk-behavior"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/CodeSystem/cs-hiv-risk-behavior defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-hiv-risk-behavior-1\"> </a></td><td>Drug injection</td><td>Drug injection</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-hiv-risk-behavior-2\"> </a></td><td>Sex workers</td><td>Sexual relationship with sex workers or with sex buyers/clients (for money or drug)</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-hiv-risk-behavior-3\"> </a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-hiv-risk-behavior-4\"> </a></td><td>Multiple Sex Partners</td><td>Multiple Sex Partners (NOT for money or drugs)</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-hiv-risk-behavior-5\"> </a></td><td>Others</td><td>Other risks to oneself</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-hiv-risk-behavior-1\"> </a></td><td>Drug injection</td><td>Drug injection</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-hiv-risk-behavior-2\"> </a></td><td>Sex workers</td><td>Sexual relationship with sex workers or with sex buyers/clients (for money or drug)</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-hiv-risk-behavior-3\"> </a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-hiv-risk-behavior-4\"> </a></td><td>Multiple Sex Partners</td><td>Multiple Sex Partners (NOT for money or drugs)</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-hiv-risk-behavior-5\"> </a></td><td>Others</td><td>Other risks to oneself</td></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/CodeSystem/cs-hiv-risk-behavior"];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior"];
   fhir:CodeSystem.version [ fhir:value "0.2.0"];
   fhir:CodeSystem.name [ fhir:value "CSHIVRiskBehavior"];
   fhir:CodeSystem.title [ fhir:value "Risk Behavior"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-03-17T07:20:09+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-03-20T17:59:44+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "openHIE"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -67,7 +67,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/CodeSystem/cs-hiv-risk-behavior.ttl> a owl:Ontology;
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

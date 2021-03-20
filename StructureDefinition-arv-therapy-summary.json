@@ -15,12 +15,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://openhie.org/fhir/StructureDefinition/arv-therapy-summary",
+  "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/arv-therapy-summary",
   "version": "0.2.0",
   "name": "ARVTherapySummary",
   "title": "ART therapy summary",
   "status": "active",
-  "date": "2021-03-17T07:20:09+00:00",
+  "date": "2021-03-20T17:59:44+00:00",
   "publisher": "openHIE",
   "contact": [
     {

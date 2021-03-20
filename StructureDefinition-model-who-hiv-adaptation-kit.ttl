@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/StructureDefinition/model-who-hiv-adaptation-kit> a fhir:StructureDefinition;
+<http://openhie.org/fhir/hiv-casereporting/StructureDefinition/model-who-hiv-adaptation-kit> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "model-who-hiv-adaptation-kit"];
   fhir:DomainResource.text [
@@ -1378,7 +1378,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/StructureDefinition/model-who-hiv-adaptation-kit.ttl> a owl:Ontology;
+<http://openhie.org/fhir/hiv-casereporting/StructureDefinition/model-who-hiv-adaptation-kit.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

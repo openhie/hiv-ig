@@ -3,14 +3,14 @@
   "id": "cs-hiv-risk-behavior",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/CodeSystem/cs-hiv-risk-behavior defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-hiv-risk-behavior-1\"> </a></td><td>Drug injection</td><td>Drug injection</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-hiv-risk-behavior-2\"> </a></td><td>Sex workers</td><td>Sexual relationship with sex workers or with sex buyers/clients (for money or drug)</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-hiv-risk-behavior-3\"> </a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-hiv-risk-behavior-4\"> </a></td><td>Multiple Sex Partners</td><td>Multiple Sex Partners (NOT for money or drugs)</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-hiv-risk-behavior-5\"> </a></td><td>Others</td><td>Other risks to oneself</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-hiv-risk-behavior-1\"> </a></td><td>Drug injection</td><td>Drug injection</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-hiv-risk-behavior-2\"> </a></td><td>Sex workers</td><td>Sexual relationship with sex workers or with sex buyers/clients (for money or drug)</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-hiv-risk-behavior-3\"> </a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-hiv-risk-behavior-4\"> </a></td><td>Multiple Sex Partners</td><td>Multiple Sex Partners (NOT for money or drugs)</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-hiv-risk-behavior-5\"> </a></td><td>Others</td><td>Other risks to oneself</td></tr></table></div>"
   },
-  "url": "http://openhie.org/fhir/CodeSystem/cs-hiv-risk-behavior",
+  "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior",
   "version": "0.2.0",
   "name": "CSHIVRiskBehavior",
   "title": "Risk Behavior",
   "status": "active",
-  "date": "2021-03-17T07:20:09+00:00",
+  "date": "2021-03-20T17:59:44+00:00",
   "publisher": "openHIE",
   "contact": [
     {

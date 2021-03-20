@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="cs-patient-gender"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/CodeSystem/cs-patient-gender defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">male<a name="cs-patient-gender-male"> </a></td><td>Male</td><td>Client identifies as female</td></tr><tr><td style="white-space:nowrap">female<a name="cs-patient-gender-female"> </a></td><td>Female</td><td>Client identifies as male</td></tr><tr><td style="white-space:nowrap">transgender<a name="cs-patient-gender-transgender"> </a></td><td>Transgender</td><td>Client identifies as transgender</td></tr><tr><td style="white-space:nowrap">non-binary<a name="cs-patient-gender-non-binary"> </a></td><td>Non-binary</td><td>Client identifies in a non-binary way</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">male<a name="cs-patient-gender-male"> </a></td><td>Male</td><td>Client identifies as female</td></tr><tr><td style="white-space:nowrap">female<a name="cs-patient-gender-female"> </a></td><td>Female</td><td>Client identifies as male</td></tr><tr><td style="white-space:nowrap">transgender<a name="cs-patient-gender-transgender"> </a></td><td>Transgender</td><td>Client identifies as transgender</td></tr><tr><td style="white-space:nowrap">non-binary<a name="cs-patient-gender-non-binary"> </a></td><td>Non-binary</td><td>Client identifies in a non-binary way</td></tr></table></div>
   </text>
-  <url value="http://openhie.org/fhir/CodeSystem/cs-patient-gender"/>
+  <url value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender"/>
   <version value="0.2.0"/>
   <name value="CSPatientGender"/>
   <title value="Patient Gender"/>
   <status value="active"/>
-  <date value="2021-03-17T07:20:09+00:00"/>
+  <date value="2021-03-20T17:59:44+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>

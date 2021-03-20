@@ -1,17 +1,17 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "openhie.fhir.hiv",
+  "id": "hiv-casereporting",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HIVCaseReporting</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/ImplementationGuide/openhie.fhir.hiv</pre><div><p>HIV Case Reporting and Monitoring</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HIVCaseReporting</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/hiv-casereporting/ImplementationGuide/hiv-casereporting</pre><div><p>HIV Case Reporting and Monitoring</p>\n</div></div>"
   },
-  "url": "http://openhie.org/fhir/ImplementationGuide/openhie.fhir.hiv",
+  "url": "http://openhie.org/fhir/hiv-casereporting/ImplementationGuide/hiv-casereporting",
   "version": "0.2.0",
   "name": "HIVCaseReporting",
   "title": "HIV Case Reporting and Monitoring",
   "status": "draft",
   "experimental": false,
-  "date": "2021-03-17T07:20:09+00:00",
+  "date": "2021-03-20T17:59:44+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -212,7 +212,7 @@
           },
           {
             "url": "value",
-            "valueString": "http://openhie.org/fhir/history.html"
+            "valueString": "http://openhie.org/fhir/hiv-casereporting/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -682,7 +682,7 @@
           "reference": "Bundle/examplebundle"
         },
         "name": "Example Bundle - examplebundle",
-        "exampleCanonical": "http://openhie.org/fhir/StructureDefinition/hiv-condition"
+        "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"
       },
       {
         "extension": [
@@ -695,7 +695,7 @@
           "reference": "Patient/test-hiv-patient"
         },
         "name": "Example Patient - test-hiv-patient",
-        "exampleCanonical": "http://openhie.org/fhir/StructureDefinition/hiv-patient"
+        "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"
       },
       {
         "extension": [

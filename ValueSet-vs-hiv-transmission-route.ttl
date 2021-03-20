@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/ValueSet/vs-hiv-transmission-route> a fhir:ValueSet;
+<http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-transmission-route> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "vs-hiv-transmission-route"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-hiv-transmission-route.html\"><code>http://openhie.org/fhir/CodeSystem/cs-hiv-transmission-route</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-hiv-transmission-route.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-transmission-route</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/ValueSet/vs-hiv-transmission-route"];
+  fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-transmission-route"];
   fhir:ValueSet.version [ fhir:value "0.2.0"];
   fhir:ValueSet.name [ fhir:value "HIVTransmissionRoute"];
   fhir:ValueSet.title [ fhir:value "HIV Transmission Route"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-03-17T07:20:09+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-03-20T17:59:44+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "openHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -39,13 +39,13 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://openhie.org/fhir/CodeSystem/cs-hiv-transmission-route" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-transmission-route" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/ValueSet/vs-hiv-transmission-route.ttl> a owl:Ontology;
+<http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-transmission-route.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

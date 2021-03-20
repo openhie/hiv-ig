@@ -3,14 +3,14 @@
   "id": "vs-hiv-occupations",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-hiv-occupations.html\"><code>http://openhie.org/fhir/CodeSystem/cs-hiv-occupations</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-hiv-occupations.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations</code></a></li></ul></div>"
   },
-  "url": "http://openhie.org/fhir/ValueSet/vs-hiv-occupations",
+  "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-occupations",
   "version": "0.2.0",
   "name": "HIVOccupations",
   "title": "Occupations relevant for HIV",
   "status": "active",
-  "date": "2021-03-17T07:20:09+00:00",
+  "date": "2021-03-20T17:59:44+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -36,7 +36,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://openhie.org/fhir/CodeSystem/cs-hiv-occupations"
+        "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations"
       }
     ]
   }

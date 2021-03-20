@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/Bundle/examplebundle> a fhir:Bundle;
+<http://openhie.org/fhir/hiv-casereporting/Bundle/examplebundle> a fhir:Bundle;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "examplebundle"];
   fhir:Bundle.type [ fhir:value "collection"];
@@ -16,9 +16,9 @@
        fhir:Resource.id [ fhir:value "test-hiv-patient" ];
        fhir:Resource.meta [
          fhir:Meta.profile [
-           fhir:value "http://openhie.org/fhir/StructureDefinition/hiv-patient";
+           fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient";
            fhir:index 0;
-           fhir:link <http://openhie.org/fhir/StructureDefinition/hiv-patient>
+           fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient>
          ]
        ];
        fhir:DomainResource.text [
@@ -52,9 +52,9 @@
        fhir:Resource.id [ fhir:value "test-hiv-condition" ];
        fhir:Resource.meta [
          fhir:Meta.profile [
-           fhir:value "http://openhie.org/fhir/StructureDefinition/hiv-condition";
+           fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-condition";
            fhir:index 0;
-           fhir:link <http://openhie.org/fhir/StructureDefinition/hiv-condition>
+           fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-condition>
          ]
        ];
        fhir:DomainResource.text [
@@ -62,7 +62,7 @@
          fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>subject</b>: <a href=\"#Patient_test-hiv-patient\">See above (Patient/test-hiv-patient)</a></p><p><b>recordedDate</b>: 2020-09-09</p></div>"
        ];
        fhir:Condition.subject [
-         fhir:link <http://openhie.org/fhir/Patient/test-hiv-patient>;
+         fhir:link <http://openhie.org/fhir/hiv-casereporting/Patient/test-hiv-patient>;
          fhir:Reference.reference [ fhir:value "Patient/test-hiv-patient" ]
        ];
        fhir:Condition.recordedDate [ fhir:value "2020-09-09"^^xsd:date ]
@@ -71,7 +71,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/Bundle/examplebundle.ttl> a owl:Ontology;
+<http://openhie.org/fhir/hiv-casereporting/Bundle/examplebundle.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

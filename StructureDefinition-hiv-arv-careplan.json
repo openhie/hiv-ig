@@ -15,12 +15,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://openhie.org/fhir/StructureDefinition/hiv-arv-careplan",
+  "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-careplan",
   "version": "0.2.0",
   "name": "ARVCarePlan",
   "title": "ARVCarePlan",
   "status": "active",
-  "date": "2021-03-17T07:20:09+00:00",
+  "date": "2021-03-20T17:59:44+00:00",
   "publisher": "openHIE",
   "contact": [
     {

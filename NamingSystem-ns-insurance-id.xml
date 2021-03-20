@@ -3,7 +3,7 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
   <id value="ns-insurance-id"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>http://openhie.org/fhir/NamingSystem/ns-insurance-id</td></tr><tr><td>Version</td><td>0.2.0</td></tr><tr><td>Name</td><td>NSInsuranceID</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Naming System - Insurance identifiers</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>http://openhie.org/fhir/hiv-casereporting/NamingSystem/ns-insurance-id</td></tr><tr><td>Version</td><td>0.2.0</td></tr><tr><td>Name</td><td>NSInsuranceID</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Naming System - Insurance identifiers</p>
 </div></td></tr><tr><td>Publisher</td><td>openHIE</td></tr></table><h3>Identifiers</h3><table class="grid"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://openhie.org/sid/insurance</td><td>true</td></tr></table></div>
   </text>
   <name value="NSInsuranceID"/>

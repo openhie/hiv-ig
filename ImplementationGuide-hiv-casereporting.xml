@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="openhie.fhir.hiv"/>
+  <id value="hiv-casereporting"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>HIVCaseReporting</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/ImplementationGuide/openhie.fhir.hiv</pre><div><p>HIV Case Reporting and Monitoring</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>HIVCaseReporting</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/hiv-casereporting/ImplementationGuide/hiv-casereporting</pre><div><p>HIV Case Reporting and Monitoring</p>
 </div></div>
   </text>
-  <url value="http://openhie.org/fhir/ImplementationGuide/openhie.fhir.hiv"/>
+  <url value="http://openhie.org/fhir/hiv-casereporting/ImplementationGuide/hiv-casereporting"/>
   <version value="0.2.0"/>
   <name value="HIVCaseReporting"/>
   <title value="HIV Case Reporting and Monitoring"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-03-17T07:20:09+00:00"/>
+  <date value="2021-03-20T17:59:44+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>
@@ -137,7 +137,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://openhie.org/fhir/history.html"/>
+        <valueString value="http://openhie.org/fhir/hiv-casereporting/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -479,7 +479,7 @@
         <reference value="Bundle/examplebundle"/>
       </reference>
       <name value="Example Bundle - examplebundle"/>
-      <exampleCanonical value="http://openhie.org/fhir/StructureDefinition/hiv-condition"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -489,7 +489,7 @@
         <reference value="Patient/test-hiv-patient"/>
       </reference>
       <name value="Example Patient - test-hiv-patient"/>
-      <exampleCanonical value="http://openhie.org/fhir/StructureDefinition/hiv-patient"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

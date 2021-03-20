@@ -15,12 +15,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://openhie.org/fhir/StructureDefinition/hiv-recency-result",
+  "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-result",
   "version": "0.2.0",
   "name": "HIVRecencyResult",
   "title": "HIV Recency result",
   "status": "active",
-  "date": "2021-03-17T07:20:09+00:00",
+  "date": "2021-03-20T17:59:44+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -831,7 +831,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://openhie.org/fhir/ValueSet/HIVRapidTestResults"
+          "valueSet": "http://openhie.org/fhir/hiv-casereporting/ValueSet/HIVRapidTestResults"
         },
         "mapping": [
           {
@@ -2771,7 +2771,7 @@
         "path": "Observation.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://openhie.org/fhir/ValueSet/HIVRapidTestResults"
+          "valueSet": "http://openhie.org/fhir/hiv-casereporting/ValueSet/HIVRapidTestResults"
         }
       },
       {

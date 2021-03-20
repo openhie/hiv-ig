@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENHIE.FHIR.HIV\Case Report Questionnaire - XML Representation - FHIR v4.0.1</title>
+    <title>HIV-CASEREPORTING\Case Report Questionnaire - XML Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -377,7 +377,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HIVCaseReportForm&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.subjectType">subjectType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Patient&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2021-03-17T07:20:09+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2021-03-20T17:59:44+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;openHIE&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
@@ -443,14 +443,15 @@
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ethnicity&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ethnicity&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://openhie.org/fhir/ValueSet/vs-ethnicity&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>
+                          <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-ethnicity&quot;/&gt;
         &lt;/item&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;gender&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Gender&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>
-                          <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://openhie.org/fhir/ValueSet/vs-patient-gender&quot;/&gt;
+                          <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-gender&quot;/&gt;
         &lt;/item&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/regex&quot;&gt;
@@ -495,7 +496,7 @@
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Occupation&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>
-                          <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://openhie.org/fhir/ValueSet/vs-hiv-occupations&quot;/&gt;
+                          <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-occupations&quot;/&gt;
         &lt;/item&gt;
       &lt;/item&gt;
     &lt;/item&gt;
@@ -508,21 +509,21 @@
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Risk population&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://openhie.org/fhir/ValueSet/vs-hiv-population&quot;/&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-population&quot;/&gt;
       &lt;/item&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;risk_behavior&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Risk Behavior&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://openhie.org/fhir/ValueSet/vs-hiv-risk-behavior&quot;/&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-risk-behavior&quot;/&gt;
       &lt;/item&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;transmission_route&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Transmission Route&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://openhie.org/fhir/ValueSet/vs-hiv-transmission-route&quot;/&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-transmission-route&quot;/&gt;
       &lt;/item&gt;
     &lt;/item&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
@@ -969,13 +970,13 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 17, 2021 07:20+0000">2021-03-17</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Mar 20, 2021 17:59+0000">2021-03-20</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
                  <a style="color: #81BEF7" target="_blank" href="https://github.com/openhie/hiv-ig/projects/1">Issues</a> |
-                 <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/history.html">Version History</a> |
+                 <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/hiv-casereporting/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
 

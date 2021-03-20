@@ -3,7 +3,7 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="test-hiv-patient"/>
   <meta>
-    <profile value="http://openhie.org/fhir/StructureDefinition/hiv-patient"/>
+    <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 00001</p><p><b>name</b>: Robert , David Smith </p></div>

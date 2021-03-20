@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/CodeSystem/cs-hiv-population> a fhir:CodeSystem;
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "cs-hiv-population"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/CodeSystem/cs-hiv-population defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-hiv-population-1\"> </a></td><td>Injection drug users</td><td>Injecting drug users</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-hiv-population-2\"> </a></td><td>FSW</td><td>Female sex workers</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-hiv-population-3\"> </a></td><td>Pregnant women</td><td>Pregnant women</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-hiv-population-4\"> </a></td><td>Blood donors</td><td>Blood donors</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-hiv-population-5\"> </a></td><td>TB patients</td><td>TB patients</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"cs-hiv-population-6\"> </a></td><td>People with STDs</td><td>People with sexually transmitted diseases</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"cs-hiv-population-7\"> </a></td><td>Young recruits</td><td>Young recruits for military service</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"cs-hiv-population-8\"> </a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"cs-hiv-population-9\"> </a></td><td>Others</td><td>Others</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-hiv-population-1\"> </a></td><td>Injection drug users</td><td>Injecting drug users</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-hiv-population-2\"> </a></td><td>FSW</td><td>Female sex workers</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-hiv-population-3\"> </a></td><td>Pregnant women</td><td>Pregnant women</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-hiv-population-4\"> </a></td><td>Blood donors</td><td>Blood donors</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-hiv-population-5\"> </a></td><td>TB patients</td><td>TB patients</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"cs-hiv-population-6\"> </a></td><td>People with STDs</td><td>People with sexually transmitted diseases</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"cs-hiv-population-7\"> </a></td><td>Young recruits</td><td>Young recruits for military service</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"cs-hiv-population-8\"> </a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"cs-hiv-population-9\"> </a></td><td>Others</td><td>Others</td></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/CodeSystem/cs-hiv-population"];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population"];
   fhir:CodeSystem.version [ fhir:value "0.2.0"];
   fhir:CodeSystem.name [ fhir:value "CSHIVPopulation"];
   fhir:CodeSystem.title [ fhir:value "Population groups"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-03-17T07:20:09+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-03-20T17:59:44+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "openHIE"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -87,7 +87,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/CodeSystem/cs-hiv-population.ttl> a owl:Ontology;
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

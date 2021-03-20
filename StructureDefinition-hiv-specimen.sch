@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:Specimen</sch:title>
     <sch:rule context="f:Specimen">
-      <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/StructureDefinition/ext-specimen-collection-place']) &lt;= 1">extension with URL = 'http://openhie.org/fhir/StructureDefinition/ext-specimen-collection-place': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/ext-specimen-collection-place']) &lt;= 1">extension with URL = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/ext-specimen-collection-place': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

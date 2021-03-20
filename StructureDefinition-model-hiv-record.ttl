@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/StructureDefinition/model-hiv-record> a fhir:StructureDefinition;
+<http://openhie.org/fhir/hiv-casereporting/StructureDefinition/model-hiv-record> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "model-hiv-record"];
   fhir:DomainResource.text [
@@ -821,7 +821,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/StructureDefinition/model-hiv-record.ttl> a owl:Ontology;
+<http://openhie.org/fhir/hiv-casereporting/StructureDefinition/model-hiv-record.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

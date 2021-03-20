@@ -43,7 +43,7 @@
   "subjectType": [
     "Patient"
   ],
-  "date": "2021-03-17T07:20:09+00:00",
+  "date": "2021-03-20T17:59:44+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -120,13 +120,13 @@
                   "linkId": "ethnicity",
                   "text": "Ethnicity",
                   "type": "choice",
-                  "answerValueSet": "http://openhie.org/fhir/ValueSet/vs-ethnicity"
+                  "answerValueSet": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-ethnicity"
                 },
                 {
                   "linkId": "gender",
                   "text": "Gender",
                   "type": "choice",
-                  "answerValueSet": "http://openhie.org/fhir/ValueSet/vs-patient-gender"
+                  "answerValueSet": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-gender"
                 },
                 {
                   "extension": [
@@ -177,7 +177,7 @@
                   "linkId": "occupation",
                   "text": "Occupation",
                   "type": "choice",
-                  "answerValueSet": "http://openhie.org/fhir/ValueSet/vs-hiv-occupations"
+                  "answerValueSet": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-occupations"
                 }
               ]
             }
@@ -192,19 +192,19 @@
               "linkId": "risk_population",
               "text": "Risk population",
               "type": "choice",
-              "answerValueSet": "http://openhie.org/fhir/ValueSet/vs-hiv-population"
+              "answerValueSet": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-population"
             },
             {
               "linkId": "risk_behavior",
               "text": "Risk Behavior",
               "type": "choice",
-              "answerValueSet": "http://openhie.org/fhir/ValueSet/vs-hiv-risk-behavior"
+              "answerValueSet": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-risk-behavior"
             },
             {
               "linkId": "transmission_route",
               "text": "Transmission Route",
               "type": "choice",
-              "answerValueSet": "http://openhie.org/fhir/ValueSet/vs-hiv-transmission-route"
+              "answerValueSet": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-transmission-route"
             }
           ]
         },

@@ -12,12 +12,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://openhie.org/fhir/StructureDefinition/pregnancy-status"/>
+  <url value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/pregnancy-status"/>
   <version value="0.2.0"/>
   <name value="PregnancyStatus"/>
   <title value="Pregnancy status"/>
   <status value="active"/>
-  <date value="2021-03-17T07:20:09+00:00"/>
+  <date value="2021-03-20T17:59:44+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>

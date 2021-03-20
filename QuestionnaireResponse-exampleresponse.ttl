@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/QuestionnaireResponse/exampleresponse> a fhir:QuestionnaireResponse;
+<http://openhie.org/fhir/hiv-casereporting/QuestionnaireResponse/exampleresponse> a fhir:QuestionnaireResponse;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "exampleresponse"];
   fhir:Resource.meta [
@@ -199,7 +199,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/QuestionnaireResponse/exampleresponse.ttl> a owl:Ontology;
+<http://openhie.org/fhir/hiv-casereporting/QuestionnaireResponse/exampleresponse.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
