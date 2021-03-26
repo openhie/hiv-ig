@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "CSPatientCommunicationPreferences"];
   fhir:CodeSystem.title [ fhir:value "Patient Communication Preferences"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-03-20T17:59:44+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-03-26T11:00:02+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "openHIE"];
   fhir:CodeSystem.contact [
      fhir:index 0;

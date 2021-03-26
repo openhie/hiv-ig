@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "TypeOfContact"];
   fhir:ValueSet.title [ fhir:value "Type of contact or relationship"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-03-20T17:59:44+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-03-26T11:00:02+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "openHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;
