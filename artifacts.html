@@ -200,16 +200,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#3">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#4">Structures: Resource Profiles</a>
+         <a href="#4">Structures: Questionnaires</a>
       </li>
       <li>
-         <a href="#5">Terminology: Value Sets</a>
+         <a href="#5">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#6">Terminology: Code Systems</a>
+         <a href="#6">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#7">Example: Example Instances</a>
+         <a href="#7">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#8">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -441,6 +444,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </table>
    </p>
    <a name="4"> </a>
+   <h3>Structures: Questionnaires </h3>
+   <p>
+    <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-vn-hiv-csv-import-questionnaire.html"
+                     title="Questionnaire/vn-hiv-csv-import-questionnaire">Questionnaire/vn-hiv-csv-import-questionnaire</a>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
@@ -449,6 +470,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-condition.html"
+                     title="StructureDefinition/hiv-condition">HIV Condition</a>
+               </td>
+               <td>
+<p>This profile allows the exchange of a patient’s hiv diagnosis</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-hiv-arv-careplan.html"
@@ -467,19 +497,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>This profile allows the exchange of a patient’s CD$ test and results</p>
 </td>
             </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-condition.html"
-                     title="StructureDefinition/hiv-condition">HIV Condition</a>
-               </td>
-               <td>
-<p>This profile allows the exchange of a patient’s hiv diagnosis</p>
-</td>
-            </tr>
          </tbody>
       </table>
    </p>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
     <p>These define sets of codes used by systems conforming to this implementation guide</p>
@@ -490,11 +511,56 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-vs-hiv-transmission-route.html"
+                     title="ValueSet/vs-hiv-transmission-route">HIV Transmission Route</a>
+               </td>
+               <td>
+<p>Valueset - Route of HIV transmission</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-patient-communication-preferences.html"
+                     title="ValueSet/vs-patient-communication-preferences">Patient Communication Preferences</a>
+               </td>
+               <td>
+<p>Valueset - Patient Communication Preferences</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-type-of-contact.html"
+                     title="ValueSet/vs-type-of-contact">Type of contact or relationship</a>
+               </td>
+               <td>
+<p>Type of contact or relationship</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-vs-hiv-occupations.html"
                      title="ValueSet/vs-hiv-occupations">Occupations relevant for HIV</a>
                </td>
                <td>
 <p>Valueset - Occupations relevant for HIV</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-patient-gender-identity.html"
+                     title="ValueSet/vs-patient-gender-identity">Patient Gender Identity</a>
+               </td>
+               <td>
+<p>Valueset - patient gender identities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-patient-gender.html"
+                     title="ValueSet/vs-patient-gender">Patient Gender</a>
+               </td>
+               <td>
+<p>Valueset - patient genders</p>
 </td>
             </tr>
             <tr>
@@ -515,55 +581,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Valueset - Occupations relevant for HIV</p>
 </td>
             </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-vs-type-of-contact.html"
-                     title="ValueSet/vs-type-of-contact">Type of contact or relationship</a>
-               </td>
-               <td>
-<p>Type of contact or relationship</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-vs-patient-gender-identity.html"
-                     title="ValueSet/vs-patient-gender-identity">Patient Gender Identity</a>
-               </td>
-               <td>
-<p>Valueset - patient gender identities</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-vs-hiv-transmission-route.html"
-                     title="ValueSet/vs-hiv-transmission-route">HIV Transmission Route</a>
-               </td>
-               <td>
-<p>Valueset - Route of HIV transmission</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-vs-patient-gender.html"
-                     title="ValueSet/vs-patient-gender">Patient Gender</a>
-               </td>
-               <td>
-<p>Valueset - patient genders</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-vs-patient-communication-preferences.html"
-                     title="ValueSet/vs-patient-communication-preferences">Patient Communication Preferences</a>
-               </td>
-               <td>
-<p>Valueset - Patient Communication Preferences</p>
-</td>
-            </tr>
          </tbody>
       </table>
    </p>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
     <p>These define new code systems used by systems conforming to this implementation guide</p>
@@ -574,20 +595,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-cs-patient-gender.html"
-                     title="CodeSystem/cs-patient-gender">Patient Gender</a>
+                  <a href="CodeSystem-cs-hiv-occupations.html"
+                     title="CodeSystem/cs-hiv-occupations">Occupations relevant for HIV</a>
                </td>
                <td>
-<p>The genders for patients</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-cs-hiv-population.html"
-                     title="CodeSystem/cs-hiv-population">Population groups</a>
-               </td>
-               <td>
-<p>CodeSystem - Population groups - Subjects to be tested for HIV</p>
+<p>CodeSystem Occupations for HIV</p>
 </td>
             </tr>
             <tr>
@@ -601,29 +613,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-cs-hiv-occupations.html"
-                     title="CodeSystem/cs-hiv-occupations">Occupations relevant for HIV</a>
-               </td>
-               <td>
-<p>CodeSystem Occupations for HIV</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-cs-patient-communication-preferences.html"
-                     title="CodeSystem/cs-patient-communication-preferences">Patient Communication Preferences</a>
-               </td>
-               <td>
-<p>The way the patient prefers to be contacted</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="CodeSystem-cs-hiv-risk-behavior.html"
                      title="CodeSystem/cs-hiv-risk-behavior">Risk Behavior</a>
                </td>
                <td>
 <p>CodeSystem - Behavior associated with risk of HIV transmission</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-hiv-population.html"
+                     title="CodeSystem/cs-hiv-population">Population groups</a>
+               </td>
+               <td>
+<p>CodeSystem - Population groups - Subjects to be tested for HIV</p>
 </td>
             </tr>
             <tr>
@@ -644,10 +647,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Type of contact or relationship</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-patient-communication-preferences.html"
+                     title="CodeSystem/cs-patient-communication-preferences">Patient Communication Preferences</a>
+               </td>
+               <td>
+<p>The way the patient prefers to be contacted</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-patient-gender.html"
+                     title="CodeSystem/cs-patient-gender">Patient Gender</a>
+               </td>
+               <td>
+<p>The genders for patients</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
-   <a name="7"> </a>
+   <a name="8"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -692,7 +713,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 26, 2021 11:00+0000">2021-03-26</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 8, 2021 20:21+0000">2021-04-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

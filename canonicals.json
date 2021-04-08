@@ -7,6 +7,13 @@
     "name": "HIVCaseReportForm"
   },
   {
+    "id": "vn-hiv-csv-import-questionnaire",
+    "type": "Questionnaire",
+    "url": "http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire",
+    "version": "0.2.0",
+    "name": "CSVImportQuestionnaire"
+  },
+  {
     "id": "cs-hiv-occupations",
     "type": "CodeSystem",
     "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations",
