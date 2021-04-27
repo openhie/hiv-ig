@@ -18,13 +18,27 @@ InstanceOf: HIVPatient
 Usage: #example
 Title: "hiv-patient"
 Description: ""
-* identifier.system = "http://test.org/identifier/test-poc"
-* identifier.value = "1234567890"
+
 * active = true
 * name[+].given[+] = "Jane"
 * name[+].family = "Smith"
 * gender = #female
 * birthDate = "1986-06-04"
+* telecom[0].system = #email
+* telecom[0].value = "johndoe@erewhon.com"
+* telecom[1].system = #phone
+* telecom[1].value = "+27825556666"
+* address[Permanent].country = "South Africa"
+* address[Permanent].state = "Western Province"
+* address[Permanent].district = "City of Cape Town"
+* address[Permanent].city = "Cape Town"
+* address[Temporary].country = "South Africa"
+* address[Temporary].state = "Eastern Cape"
+* address[Temporary].district = "Buffalo City Metropolitan Municipality"
+* address[Temporary].city = "East London"
+* identifier[art].value = "ART1234567"
+* identifier[national].value = "NAT1234567"
+* identifier[emr].value = "EMR1234567"
 
 // First 90 - people who know they are HIV +ve
 Instance: hiv-condition
