@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "PatientCommunicationPreferences"];
   fhir:ValueSet.title [ fhir:value "Patient Communication Preferences"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-04-08T20:21:48+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-04-27T15:08:45+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "openHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;
