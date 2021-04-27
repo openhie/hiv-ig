@@ -34,7 +34,9 @@ Description:    """
 * identifier contains
     art 0..* and
     passport 0..* and
-    insurance 0..* 
+    insurance 0..* and
+    national 0..* and
+    emr 0..*
 * identifier[art].system 1..1
 * identifier[art].system = "https://basespecs.vn/NamingSystem/ARTIdentifiers" (exactly)
 * identifier[art].value 1..1
@@ -44,6 +46,12 @@ Description:    """
 * identifier[insurance].system 1..1
 * identifier[insurance].system = "https://basespecs.vn/NamingSystem/InsuranceNumbers" (exactly)
 * identifier[insurance].value 1..1
+* identifier[national].system 1..1
+* identifier[national].system = "https://basespecs.vn/NamingSystem/NationalIdentifiers" (exactly)
+* identifier[national].value 1..1
+* identifier[emr].system 1..1
+* identifier[emr].system = "https://basespecs.vn/NamingSystem/EMRIdentifiers" (exactly)
+* identifier[emr].value 1..1
 
 * address contains
    Temporary 0..1 and 
