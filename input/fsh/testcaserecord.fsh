@@ -1,3 +1,13 @@
+Instance: test-hiv-composition
+InstanceOf: Composition
+Usage: #inline
+* status = #final
+* type = #QuestionnaireResults
+* date = "2021-05-04"
+* author.identifier.value = "someID"
+* title = "HIV Questionnaire Results"
+
+
 Instance: test-hiv-patient
 InstanceOf: HIVPatient
 //Usage: #inline
@@ -37,5 +47,6 @@ InstanceOf: Bundle
 Usage: #example
 
 * type = #collection
+* entry[+].resource = test-hiv-composition
 * entry[+].resource = test-hiv-patient
 * entry[+].resource = test-hiv-condition

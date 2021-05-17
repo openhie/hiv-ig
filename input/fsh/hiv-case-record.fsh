@@ -140,7 +140,11 @@ Parent:         Observation
 Id:             hiv-viral-load
 Title:          "HIV viral load"
 Description:    "HIV viral load."
-//* code from HIVRecencyResults
+//* code from HIVViralLoadResults /// (10351-5)
+//* referenceRange.min = 200
+
+
+
 
 Profile:        ARVTherapySummary
 Parent:         MedicationStatement
@@ -151,7 +155,7 @@ Description:    "ART therapy summary."
 
 
 Profile:        PregnancyStatus
-Parent:         Observation
+Parent:         Condition // Observation
 Id:             pregnancy-status
 Title:          "Pregnancy status"
 Description:    "Pregnancy status."
