@@ -77,108 +77,147 @@ Usage: #definition
 
 * url = "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire"
 
+/*
+* insert Question(,clinical-status,Clinical Status,string,false)
+
+* insert Question(item[=].,clinical-status,Clinical Status,string,false)
+*/
 
 
-* item[+].linkId = "title"
-* item[=].text   = "HIV Case Report"
-* item[=].type   = #display
 
-* item[+].linkId = "regulations"
-* item[=].text   = "Reporting regulations: Monthly – applicable to each patient during the reporting period"
-* item[=].type   = #display
+* insert Question(,title,HIV Case Report,display,false)
 
-* item[+].linkId = "unit_name"
-* item[=].text   = "Governing body unit name"
-* item[=].type   = #string
+* insert Question(,instructions,Reporting regulations: Monthly – applicable to each patient during the reporting period,display,false)
 
-* item[+].linkId = "reportDate"
-* item[=].text   = "Date of report"
-* item[=].type   = #date
+* insert Question(,patient_identification,Patient Identification,group,false)
 
-//* item[+].linkId = "reportNumber" 
-//* item[=].text   = "Date of report"
-//* item[=].type   = #date
+* insert Question(item[=].,patient_unique_identifier,Patient Identification,group,false)
 
-* item[+].linkId = "intro"
-* item[=].text   = "Dear:"
-* item[=].type   = #display
+* insert Question(item[=].item[=].,patient_unique_identifier_number,Patient Identification Unique Number,string,false)
 
-* item[+].linkId = "questions"
-* item[=].text   = "Monthly report"
-* item[=].type   = #group
+* insert Question(item[=].item[=].,patient_unique_identifier_assigner,Patient Identification Unique Number type or entity,string,false)
 
-* item[=].item[+].linkId = "identifying_information"
-* item[=].item[=].text   = "Part I: Identifying Information"
+* insert Question(item[=].,patient_date_of_birth,Patient Date of Birth,date,false)
+
+* insert Question(item[=].,patient_name,Patient Name,group,true)
+* insert Question(item[=].item[=].,patient_name_use,Patient Name Use or Type,string,false)
+* insert Question(item[=].item[=].,patient_given_name,Patient Given Name,string,false)
+* insert Question(item[=].item[=].,patient_family_name,Patient Family Name,string,false)
+
+* insert Question(item[=].,patient_gender_at_birth,Patient Gender at Birth,choice,false)
+* item[=].item[=].answerValueSet = ""
+
+* insert Question(item[=].,patient_gender_identity,Patient Gender identity,choice,false)
+* item[=].item[=].answerValueSet = ""
+
+* insert Question(item[=].,patient_marital_status,Patient Marital Status,choice,false)
+* item[=].item[=].answerValueSet = ""
+
+* insert Question(item[=].,patient_risk_population,Patient Risk Population,choice,true)
+* item[=].item[=].answerValueSet = ""
+
+* insert Question(item[=].,patient_address,Patient Address,group,true)
+* insert Question(item[=].item[=].,patient_address_type,Patient Address Type (permanent\, current\),choice,false)
+* insert Question(item[=].item[=].,patient_address_country,Address country,choice,false)
+* insert Question(item[=].item[=].,patient_address_state,Address state\, department\, province,string,false)
+* insert Question(item[=].item[=].,patient_address_district,Address district\, arrondissement\, subcounty,string,false)
+* insert Question(item[=].item[=].,patient_address_city,Address city or village,string,false)
+* insert Question(item[=].,patient_risk_population,Patient Risk Population,choice,false)
+
+* insert Question(item[=].,phone_number,Phone_number,string,true)
+
+* insert Question(item[=].,contact_preferences,Contact Preferences,choice,true)
+
+* insert Question(item[=].,guardian_name,Guardian name,string,false)
+
+* insert Question(item[=].,guardian_name,Guardian name,string,false)
+
+* insert Question(,hiv_diagnosis,HIV Positive Diagnosis,group,false)
+* insert Question(item[=].,hiv_diagnosis_date,HIV positive diagnosis date,date,false)
+* insert Question(item[=].,hiv_diagnosis_test_id,HIV positive diagnosis unique test ID,string,false)
+* insert Question(item[=].,hiv_diagnosis_site_id,HIV positive diagnosis site identifier,string,false)
+* insert Question(item[=].,hiv_diagnosis_site_name,HIV positive diagnosis site name,string,false)
+* insert Question(item[=].,hiv_diagnosis_collection_date,HIV positive diagnosis collection date,date,false)
+* insert Question(item[=].,hiv_diagnosis_collection_place,HIV positive diagnosis collection place,string,false)
+* insert Question(item[=].,hiv_diagnosis_transmission_route,HIV transmission route,choice,false)
+* item[=].item[=].answerValueSet = ""
+
+
+* insert Question(,recency_test,HIV Recency Test,group,false)
+* insert Question(item[=].,recency_type_of_test,Type of test,choice,false)
+* item[=].item[=].answerValueSet = ""
+* insert Question(item[=].,recency_test_date,Date of recency test,date,false)
+* insert Question(item[=].,recency_test_place,Date of recency test,string,false)
+* insert Question(item[=].,recency_test_collection_place,Date of recency test sample collection,date,false)
+* insert Question(item[=].,recency_test_result,Result of recency test,integer,false)
+* insert Question(item[=].,recency_test_result_conclusion,Recency conclusion,choice,false)
+
+
+
+
+
+
+
+* insert Question(,death,Death,group,false)
+* insert Question(item[=].,date_of_death,Date of Death,date,false)
+* insert Question(item[=].,age_at_death,Age at Death,integer,false)
+* insert Question(item[=].,cause_of_death,Cause of Death,open-choice,false)
+
+
+
+* item[=].item[+].linkId = "death"
+* item[=].item[=].text   = "Patient death"
 * item[=].item[=].type   = #group
+//* item[=].item[=].prefix   = "21"
 
-* item[=].item[=].item[+].linkId = "arv_patient_nr"
-* item[=].item[=].item[=].text   = "ARV Patient Number"
+* item[=].item[=].item[+].linkId = "dateOfDeath"
+* item[=].item[=].item[=].text   = "Date of death"
+* item[=].item[=].item[=].type   = #date
+//* item[=].item[=].item[=].prefix   = "21.1"
+
+* item[=].item[=].item[+].linkId = "causeOfDeath"
+* item[=].item[=].item[=].text   = "Cause of death"
 * item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].prefix = "1"
 
-* item[=].item[=].item[+].linkId = "personal_information"
-* item[=].item[=].item[=].text   = "Personal Information"
+
+
+/*
+* item[=].item[+].linkId = "hiv-recency-test"
+* item[=].item[=].text   = "HIV Recency Test"
+* item[=].item[=].type   = #group
+//* item[=].item[=].prefix   = "12"
+
+* item[=].item[=].item[+].linkId = "hiv-recency-test.rapidTest"
+* item[=].item[=].item[=].text   = "Rapid test"
 * item[=].item[=].item[=].type   = #group
-//* item[=].item[=].item[=].prefix = "2"
+//* item[=].item[=].item[=].prefix   = "12.1"
 
-* item[=].item[=].item[=].item[+].linkId = "name"
-* item[=].item[=].item[=].item[=].text   = "Full name"
+* item[=].item[=].item[=].item[+].linkId = "hiv-recency-test.dateOfSpecimenCollection"
+* item[=].item[=].item[=].item[=].text   = "Date of Specimen Collection for rapid test"
+* item[=].item[=].item[=].item[=].type   = #date
+//* item[=].item[=].item[=].item[=].prefix   = "12.1.1"
+
+* item[=].item[=].item[=].item[+].linkId = "hiv-recency-test.dateOfTestPerformance"
+* item[=].item[=].item[=].item[=].text   = "Date of rapid test performance"
+* item[=].item[=].item[=].item[=].type   = #date
+//* item[=].item[=].item[=].item[=].prefix   = "12.1.2"
+
+* item[=].item[=].item[=].item[+].linkId = "hiv-recency-test.placeOfSpecimenCollection"
+* item[=].item[=].item[=].item[=].text   = "Place of Specimen Collection"
 * item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].prefix = "3"
+//* item[=].item[=].item[=].item[=].prefix   = "12.1.3"
 
-* item[=].item[=].item[=].item[+].linkId = "ethnicity"
-* item[=].item[=].item[=].item[=].text   = "Ethnicity"
+* item[=].item[=].item[=].item[+].linkId = "hiv-recency-test.testResult"
+* item[=].item[=].item[=].item[=].text   = "Recency from rapid test - result"
 * item[=].item[=].item[=].item[=].type   = #choice
-//* item[=].item[=].item[=].item[=].prefix = "4"
-* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-ethnicity)
-
-* item[=].item[=].item[=].item[+].linkId = "gender"
-* item[=].item[=].item[=].item[=].text   = "Gender"
-* item[=].item[=].item[=].item[=].type   = #choice
-//* item[=].item[=].item[=].item[=].prefix = "5"
-* item[=].item[=].item[=].item[=].answerValueSet = Canonical(vs-patient-gender)
-
-* item[=].item[=].item[=].item[+].linkId = "birth_year"
-* item[=].item[=].item[=].item[=].text   = "Year of Birth"
-* item[=].item[=].item[=].item[=].type   = #integer
-//* item[=].item[=].item[=].item[=].prefix = "6"
-
-* item[=].item[=].item[=].item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/regex"
-* item[=].item[=].item[=].item[=].extension.valueString = "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00))"
+* item[=].item[=].item[=].item[=].answerValueSet = "HIVRapidTestResults"
+//* item[=].item[=].item[=].item[=].prefix   = "12.1.4"
 
 
 
 
-* item[=].item[=].item[=].item[+].linkId = "id_cccd"
-* item[=].item[=].item[=].item[=].text   = "Identification"
-* item[=].item[=].item[=].item[=].type   = #group
-//* item[=].item[=].item[=].item[=].prefix = "7"
-//* item[=].item[=].item[=].item[=].answerValueSet    = Canonical($vs-iso3166-1-2)
 
-* item[=].item[=].item[=].item[=].item[+].linkId = "health_insurance_code"
-* item[=].item[=].item[=].item[=].item[=].text   = "Health insurance code"
-* item[=].item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "7.1"
 
-* item[=].item[=].item[=].item[=].item[+].linkId = "passport_nr"
-* item[=].item[=].item[=].item[=].item[=].text   = "Passport Number"
-* item[=].item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "7.2"
-
-* item[=].item[=].item[=].item[+].linkId = "residence"
-* item[=].item[=].item[=].item[=].text   = "Residence"
-* item[=].item[=].item[=].item[=].type   = #group
-//* item[=].item[=].item[=].item[=].prefix   = "8"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "current"
-* item[=].item[=].item[=].item[=].item[=].text   = "Current residence"
-* item[=].item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "8.1"
-
-* item[=].item[=].item[=].item[=].item[+].linkId = "permanent"
-* item[=].item[=].item[=].item[=].item[=].text   = "Permanent residence"
-* item[=].item[=].item[=].item[=].item[=].type   = #string
-//* item[=].item[=].item[=].item[=].item[=].prefix   = "8.2"
 
 * item[=].item[=].item[=].item[+].linkId = "occupation"
 * item[=].item[=].item[=].item[=].text   = "Occupation"
@@ -649,3 +688,4 @@ Usage: #definition
 * item[=].item[=].item[=].text   = "Cause of death"
 * item[=].item[=].item[=].type   = #string
 //* item[=].item[=].item[=].prefix   = "21.2"
+*/
