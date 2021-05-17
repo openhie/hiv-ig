@@ -40,8 +40,8 @@ Description: ""
 * address[Temporary].district = "Buffalo City Metropolitan Municipality"
 * address[Temporary].city = "East London"
 * identifier[art].value = "ART1234567"
-* identifier[national].value = "NAT1234567"
-* identifier[emr].value = "EMR1234567"
+//* identifier[national].value = "NAT1234567"
+//* identifier[emr].value = "EMR1234567"
 
 // First 90 - people who know they are HIV +ve
 Instance: hiv-condition
