@@ -3,13 +3,6 @@ Alias: $LOINC = http://loinc.org
 Alias: $translation = http://hl7.org/fhir/StructureDefinition/translation
 
 
-RuleSet: Question(context, linkId, text, type, repeats)
-* {context}item[+].linkId = "{linkId}"
-* {context}item[=].text = "{text}"
-* {context}item[=].type = #{type}
-* {context}item[=].repeats = {repeats}
-
-
 
 
 Instance: vn-hiv-csv-import-questionnaire
