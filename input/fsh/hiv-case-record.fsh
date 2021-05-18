@@ -3,7 +3,63 @@ Alias:   SCT = http://snomed.info/sct
 Alias: $CommPreference = http://hl7.org/fhir/StructureDefinition/patient-preferenceType
 Alias: $GenderIdentity = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity
 
+Profile:    HIVCrComposition
+Parent:     Composition
+Id: hiv-cr-composition
+Description:    "HIV Case Reporting Composition"
+Title:      "HIV Case Reporting Composition"
+* type = $LNC#95412-3
+* category = $LNC#75218-8
+* encounter 1..1
+* identifier 1..1
 
+* section ^slicing.discriminator.type = #value
+* section ^slicing.discriminator.path = "code.coding.code"
+* section ^slicing.rules = #openAtEnd
+* section ^slicing.ordered = true
+* section ^slicing.description = "Slice of composition.section based on code"
+
+* section contains
+    hivPatient 1..1 and
+    hivCondition 1..1 and
+    arvTherapySummary 1..1 and
+    viralLoad 1..1
+
+* section[hivPatient].title = "hivPatient"
+* section[hivPatient].code = http://test.org/sectionCode#hivPatient
+* section[hivPatient].entry only Reference(HIVPatient)
+
+* section[hivCondition].title = "hivCondition"
+* section[hivCondition].code = http://test.org/sectionCode#hivCondition
+* section[hivCondition].entry only Reference(HIVCondition)
+
+* section[arvTherapySummary].title = "arvTherapySummary"
+* section[arvTherapySummary].code = http://test.org/sectionCode#arvTherapySummary
+* section[arvTherapySummary].entry only Reference(ARVTherapySummary)
+
+* section[viralLoad].title = "viralLoad"
+* section[viralLoad].code = http://test.org/sectionCode#viralLoad
+* section[viralLoad].entry only Reference(ViralLoad)
+
+
+
+Profile: HIVCrEncounter
+Parent: Encounter
+Id: hiv-cr-encounter
+Title: "HIV CR Encounter"
+Description: "HIV Encounter for a case report"
+* location 1..1
+* reasonCode 1..*
+//* reasonCode from HIVCrValueSetReasonForCovid19Testing
+
+Profile: HIVCrLocation
+Parent: Location
+Id: hiv-cr-location
+Title: "HIV CR Location"
+Description: "HIV Location for case report"
+* address 1..1
+* address.country 1..1
+* address.state 1..1
 
 Profile:        HIVPatient
 Parent:         Patient
@@ -36,7 +92,7 @@ Description:    """
     passport 0..* and
     insurance 0..* and
     national 0..* and
-    emr 0..*
+    pos 0..*
 * identifier[art].system 1..1
 * identifier[art].system = "https://basespecs.vn/NamingSystem/ARTIdentifiers" (exactly)
 * identifier[art].value 1..1
@@ -49,9 +105,9 @@ Description:    """
 * identifier[national].system 1..1
 * identifier[national].system = "https://basespecs.vn/NamingSystem/NationalIdentifiers" (exactly)
 * identifier[national].value 1..1
-* identifier[emr].system 1..1
-* identifier[emr].system = "https://basespecs.vn/NamingSystem/EMRIdentifiers" (exactly)
-* identifier[emr].value 1..1
+* identifier[pos].system 1..1
+* identifier[pos].system = "https://basespecs.vn/NamingSystem/POSIdentifiers" (exactly)
+* identifier[pos].value 1..1
 
 * address contains
    Temporary 0..1 and 
@@ -59,8 +115,6 @@ Description:    """
 
 * address[Temporary].use = #temp (exactly)
 * address[Permanent].use = #home (exactly)
-
-
 
 
 Extension: Ethnicity
@@ -80,7 +134,6 @@ Description:    """
 
 
 
-
 Profile:        HIVSpecimen
 Parent:         Specimen
 Id:             hiv-specimen
@@ -97,8 +150,6 @@ Title: "Ethnicity"
 Description: "Specimen Collection Place."
 * value[x] only CodeableConcept or Reference
 * valueCodeableConcept from Ethnicity (extensible)
-
-
 
 
 

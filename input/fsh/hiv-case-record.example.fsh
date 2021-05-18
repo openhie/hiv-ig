@@ -1,22 +1,83 @@
-Instance: hiv-case-record-bundle
+Instance: HIVCrBundleExample
 InstanceOf: Bundle
 Usage: #example
-Title: "hiv-case-record-bundle"
-Description: ""
+Title: "HIV Cr Bundle Example"
+Description: "Example of a clinical bundle representing a case report"
 * type = #document
-* entry[+].fullUrl = ""
-* entry[=].resource = hiv-patient
-* entry[+].fullUrl = ""
-* entry[=].resource = hiv-condition
-* entry[+].fullUrl = ""
-* entry[=].resource = art-medication-statement
-* entry[+].fullUrl = ""
-* entry[=].resource = vl-obs
+* entry[+].fullUrl = "http://test.org/fhir/HIVCrComposition/HIVCrCompositionExample"
+* entry[=].resource = HIVCrCompositionExample
+* entry[+].fullUrl = "http://test.org/fhir/Encounter/HIVCrEncounterExample"
+* entry[=].resource = HIVCrEncounterExample
+* entry[+].fullUrl = "http://test.org/fhir/Location/HIVCrLocationExample"
+* entry[=].resource = HIVCrLocationExample
+* entry[+].fullUrl = "http://test.org/fhir/HIVPatient/HIVPatientExample"
+* entry[=].resource = HIVPatientExample
+* entry[+].fullUrl = "http://test.org/fhir/HIVCondition/HIVConditionExample"
+* entry[=].resource = HIVConditionExample
+* entry[+].fullUrl = "http://test.org/fhir/ARVTherapySummary/ARVTherapySummaryExample"
+* entry[=].resource = ARVTherapySummaryExample
+* entry[+].fullUrl = "http://test.org/fhir/ViralLoad/ViralLoadExample"
+* entry[=].resource = ViralLoadExample
 
-Instance: hiv-patient
+
+Instance: HIVCrCompositionExample
+InstanceOf: HIVCrComposition
+Usage: #example
+Title: "HIV Cr Composition Basic Example"
+Description: "Basic Composition example"
+* status = #final
+* identifier.system = "http://test.org/identifier/hiv-case-report"
+* identifier.value = "1111"
+* encounter = Reference(HIVCrEncounterExample)
+* date = "2021-05-18"
+* author = Reference(HIVCrPractitionerExample)
+* title = "HIV Case Report"
+
+* section[+].title = "hivPatient"
+* section[=].code = http://test.org/sectionCode#hivPatient
+* section[=].entry[+] = Reference(HIVPatientExample)
+
+* section[+].title = "hivCondition"
+* section[=].code = http://test.org/sectionCode#hivCondition
+* section[=].entry[+] = Reference(HIVConditionExample)
+
+* section[+].title = "arvTherapySummary"
+* section[=].code = http://test.org/sectionCode#arvTherapySummary
+* section[=].entry[+] = Reference(ARVTherapySummaryExample)
+
+* section[+].title = "viralLoad"
+* section[=].code = http://test.org/sectionCode#viralLoad
+* section[=].entry[+] = Reference(ViralLoadExample)
+
+Instance: HIVCrEncounterExample
+InstanceOf: Encounter
+Usage: #example
+Title: "HIV CR Encounter Example"
+Description: "Encounter example"
+* location.location = Reference(HIVCrLocationExample)
+* status = #finished
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#ACUTE
+
+Instance: HIVCrLocationExample
+InstanceOf: Location
+Usage: #example
+Title: "HIV Cr Location Example"
+Description: "Location example"
+* address.country = "ZA"
+* address.state = "KZN"
+
+Instance: HIVCrPractitionerExample
+InstanceOf: Practitioner
+Usage: #example
+Title: "HIV Cr Practitioner Example"
+Description: "Practitioner example"
+* name[0].given[0] = "Homer"
+* name[1].family = "Simpson"
+
+Instance: HIVPatientExample
 InstanceOf: HIVPatient
 Usage: #example
-Title: "hiv-patient"
+Title: "HIV Patient example"
 Description: ""
 
 * active = true
@@ -38,38 +99,38 @@ Description: ""
 * address[Temporary].city = "East London"
 * identifier[art].value = "ART1234567"
 * identifier[national].value = "NAT1234567"
-* identifier[emr].value = "EMR1234567"
+* identifier[pos].value = "EMR1234567"
 
 // First 90 - people who know they are HIV +ve
-Instance: hiv-condition
+Instance: HIVConditionExample
 InstanceOf: HIVCondition
 Usage: #example
-Title: "hiv-condition"
+Title: "HIV Condition example"
 Description: ""
 * clinicalStatus = #active
 * verificationStatus = #confirmed
 * code = $SCT#86406008
-* subject = Reference(hiv-patient)
+* subject = Reference(HIVPatientExample)
 
 // Second 90 - on ARTs
-Instance: art-medication-statement
+Instance: ARVTherapySummaryExample
 InstanceOf: ARVTherapySummary
 Usage: #example
-Title: "art-medication-statement"
+Title: "ARV therapy summary example"
 Description: ""
 * status = #active
 * medicationCodeableConcept = http://test.org/medication-type#ART "Antiretrovirals"
-* subject = Reference(hiv-patient)
+* subject = Reference(HIVPatientExample)
 
 // Third 90 - virally supressed
-Instance: vl-obs
+Instance: ViralLoadExample
 InstanceOf: ViralLoad
 Usage: #example
-Title: "vl-obs"
+Title: "Viral load example"
 Description: ""
 * status = #final
 * code = http://test.org/obs#VL-RESULT "Viral load result"
-* subject = Reference(hiv-patient)
+* subject = Reference(HIVPatientExample)
 * valueCodeableConcept = http://test.org/obs/vl-result#<200 "less than 200 - undetectable"
 // * valueCodeableConcept = 200-1000#http://test.org/obs/vl-result "200 - 1000 - detectable"
 // * valueCodeableConcept = >1000#http://test.org/obs/vl-result "greather than 1000 - detectable"
