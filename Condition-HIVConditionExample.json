@@ -1,0 +1,38 @@
+{
+  "resourceType": "Condition",
+  "id": "HIVConditionExample",
+  "meta": {
+    "profile": [
+      "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-condition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: \">active</span></p><p><b>verificationStatus</b>: <span title=\"Codes: \">confirmed</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 86406008}\">Human immunodeficiency virus infection</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Generated Summary: id: ART1234567, id: NAT1234567, id: EMR1234567; active; Jane , Smith ; johndoe@erewhon.com, Phone: +27825556666; gender: female; birthDate: 1986-06-04</a></p></div>"
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "86406008"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/HIVPatientExample"
+  }
+}

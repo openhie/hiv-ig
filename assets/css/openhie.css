@@ -14,8 +14,8 @@
   --btn-gradient-end-color: #209966; /* 10. Menu item gradient end  color */
   --btn-gradient-start-color-alpha: #ff33aa77; /* 11. Menu item gradient start color (with alpha) */
   --btn-gradient-end-color-alpha: #ff209966; /* 12. Menu item gradient end color (with alpha) */
-  --link-color: #109030; /* 13. Hyperlink text color */
-  --link-hover-color: #24d160; /* 14. Hyperlink text hover color */
+  --link-color: #24d160; /* 13. Hyperlink text color */
+  --link-hover-color: #109030; /* 14. Hyperlink text hover color */
 
   --publish-box-bg-color: #ffffd0; /* 15. Publish box background color */
   --publish-box-border: 1px solid green; /* 16.  Publish box border definition */

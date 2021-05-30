@@ -11,7 +11,7 @@
   "title": "HIV Case Reporting and Monitoring",
   "status": "draft",
   "experimental": false,
-  "date": "2021-04-27T15:08:45+00:00",
+  "date": "2021-05-30T12:12:04+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -662,27 +662,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
+            "valueString": "Bundle"
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-patient-gender"
+          "reference": "Bundle/HIVCrBundleExample"
         },
-        "name": "Patient Gender",
-        "description": "Valueset - patient genders"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-patient-communication-preferences"
-        },
-        "name": "Patient Communication Preferences",
-        "description": "Valueset - Patient Communication Preferences"
+        "name": "Example Bundle - HIVCrBundleExample",
+        "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"
       },
       {
         "extension": [
@@ -692,23 +679,10 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-patient-communication-preferences"
+          "reference": "CodeSystem/cs-hiv-transmission-route"
         },
-        "name": "Patient Communication Preferences",
-        "description": "The way the patient prefers to be contacted"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/type-of-contact"
-        },
-        "name": "Type of contact or relationship",
-        "description": "Type of contact or relationship"
+        "name": "HIV Transmission Route",
+        "description": "CodeSystem - Route of HIV transmission"
       },
       {
         "extension": [
@@ -722,6 +696,58 @@
         },
         "name": "Population groups",
         "description": "CodeSystem - Population groups - Subjects to be tested for HIV"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-patient-gender"
+        },
+        "name": "Patient Gender",
+        "description": "The genders for patients"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-arv-careplan"
+        },
+        "name": "ARVCarePlan",
+        "description": "This profile allows the exchange of a patient's ARV treatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-transmission-route"
+        },
+        "name": "HIV Transmission Route",
+        "description": "Valueset - Route of HIV transmission"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/test-hiv-patient"
+        },
+        "name": "Example Patient - test-hiv-patient",
+        "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"
       },
       {
         "extension": [
@@ -751,14 +777,25 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
+            "valueString": "Practitioner"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-patient-gender"
+          "reference": "Practitioner/HIVCrPractitionerExample"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-patient-gender"
         },
         "name": "Patient Gender",
-        "description": "The genders for patients"
+        "description": "Valueset - patient genders"
       },
       {
         "extension": [
@@ -768,36 +805,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-type-of-contact"
+          "reference": "ValueSet/vs-patient-gender-identity"
         },
-        "name": "Type of contact or relationship",
-        "description": "Type of contact or relationship"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-hiv-population"
-        },
-        "name": "Occupations relevant for HIV",
-        "description": "Valueset - Occupations relevant for HIV"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-hiv-transmission-route"
-        },
-        "name": "HIV Transmission Route",
-        "description": "Valueset - Route of HIV transmission"
+        "name": "Patient Gender Identity",
+        "description": "Valueset - patient gender identities"
       },
       {
         "extension": [
@@ -820,88 +831,23 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/hiv-arv-careplan"
+          "reference": "StructureDefinition/hiv-cr-encounter"
         },
-        "name": "ARVCarePlan",
-        "description": "This profile allows the exchange of a patient's ARV treatment"
+        "name": "HIV CR Encounter",
+        "description": "HIV Encounter for a case report"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
+            "valueString": "Observation"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/cs-hiv-transmission-route"
+          "reference": "Observation/ViralLoadExample"
         },
-        "name": "HIV Transmission Route",
-        "description": "CodeSystem - Route of HIV transmission"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/hiv-cd4-observation"
-        },
-        "name": "CD4Observation",
-        "description": "This profile allows the exchange of a patient's CD$ test and results"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-patient-gender-identity"
-        },
-        "name": "Patient Gender Identity",
-        "description": "A list of genders that the patient may identify with"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-patient-gender-identity"
-        },
-        "name": "Patient Gender Identity",
-        "description": "Valueset - patient gender identities"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/test-hiv-patient"
-        },
-        "name": "Example Patient - test-hiv-patient",
-        "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/cs-hiv-risk-behavior"
-        },
-        "name": "Risk Behavior",
-        "description": "CodeSystem - Behavior associated with risk of HIV transmission"
+        "name": "Example Observation - ViralLoadExample",
+        "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load"
       },
       {
         "extension": [
@@ -920,14 +866,192 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
+            "valueString": "Encounter"
           }
         ],
         "reference": {
-          "reference": "Bundle/examplebundle"
+          "reference": "Encounter/HIVCrEncounterExample"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-patient-gender-identity"
         },
-        "name": "Example Bundle - examplebundle",
+        "name": "Patient Gender Identity",
+        "description": "A list of genders that the patient may identify with"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-patient-communication-preferences"
+        },
+        "name": "Patient Communication Preferences",
+        "description": "The way the patient prefers to be contacted"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "name": "Example Patient - HIVPatientExample",
         "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-patient-communication-preferences"
+        },
+        "name": "Patient Communication Preferences",
+        "description": "Valueset - Patient Communication Preferences"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/HIVConditionExample"
+        },
+        "name": "Example Condition - HIVConditionExample",
+        "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-condition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-cr-location"
+        },
+        "name": "HIV CR Location",
+        "description": "HIV Location for case report"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-hiv-risk-behavior"
+        },
+        "name": "Risk Behavior",
+        "description": "CodeSystem - Behavior associated with risk of HIV transmission"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-cr-composition"
+        },
+        "name": "HIV Case Reporting Composition",
+        "description": "HIV Case Reporting Composition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-cd4-observation"
+        },
+        "name": "CD4Observation",
+        "description": "This profile allows the exchange of a patient's CD$ test and results"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          }
+        ],
+        "reference": {
+          "reference": "Location/HIVCrLocationExample"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-type-of-contact"
+        },
+        "name": "Type of contact or relationship",
+        "description": "Type of contact or relationship"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/ARVTherapySummaryExample"
+        },
+        "name": "Example MedicationStatement - ARVTherapySummaryExample",
+        "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/arv-therapy-summary"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/HIVCrCompositionExample"
+        },
+        "name": "HIV Case Report",
+        "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-population"
+        },
+        "name": "Occupations relevant for HIV",
+        "description": "Valueset - Occupations relevant for HIV"
       },
       {
         "extension": [
@@ -941,6 +1065,19 @@
         },
         "name": "Risk Behavior",
         "description": "ValueSet - Behavior associated with risk of HIV transmission"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/type-of-contact"
+        },
+        "name": "Type of contact or relationship",
+        "description": "Type of contact or relationship"
       }
     ],
     "page": {

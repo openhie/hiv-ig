@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="HIVCrEncounterExample"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: finished</p><p><b>class</b>: <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}">inpatient acute</span></p><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href="Location-HIVCrLocationExample.html">Generated Summary: </a></td></tr></table></div>
+  </text>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="ACUTE"/>
+  </class>
+  <location>
+    <location>
+      <reference value="Location/HIVCrLocationExample"/>
+    </location>
+  </location>
+</Encounter>

@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/Patient/HIVPatientExample> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HIVPatientExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient";
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: ART1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane , Smith </p><p><b>telecom</b>: <a href=\"mailto:johndoe@erewhon.com\">johndoe@erewhon.com</a>, <a href=\"tel:+27825556666\">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: </p><ul><li>Cape Town Western Province South Africa (HOME)</li><li>East London Eastern Cape South Africa (TEMP)</li></ul></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://basespecs.vn/NamingSystem/ARTIdentifiers" ];
+     fhir:Identifier.value [ fhir:value "ART1234567" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "https://basespecs.vn/NamingSystem/NationalIdentifiers" ];
+     fhir:Identifier.value [ fhir:value "NAT1234567" ]
+  ], [
+     fhir:index 2;
+     fhir:Identifier.system [ fhir:value "https://basespecs.vn/NamingSystem/POSIdentifiers" ];
+     fhir:Identifier.value [ fhir:value "EMR1234567" ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.given [
+       fhir:value "Jane";
+       fhir:index 0
+     ]
+  ], [
+     fhir:index 1;
+     fhir:HumanName.family [ fhir:value "Smith" ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "johndoe@erewhon.com" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "+27825556666" ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.birthDate [ fhir:value "1986-06-04"^^xsd:date];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.city [ fhir:value "Cape Town" ];
+     fhir:Address.district [ fhir:value "City of Cape Town" ];
+     fhir:Address.state [ fhir:value "Western Province" ];
+     fhir:Address.country [ fhir:value "South Africa" ]
+  ], [
+     fhir:index 1;
+     fhir:Address.use [ fhir:value "temp" ];
+     fhir:Address.city [ fhir:value "East London" ];
+     fhir:Address.district [ fhir:value "Buffalo City Metropolitan Municipality" ];
+     fhir:Address.state [ fhir:value "Eastern Cape" ];
+     fhir:Address.country [ fhir:value "South Africa" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/Patient/HIVPatientExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

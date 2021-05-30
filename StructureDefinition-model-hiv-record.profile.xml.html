@@ -11,7 +11,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HIV-CASEREPORTING\HIV Longitudinal Record Logical Model - Profile XML - FHIR v4.0.1</title>
+    <title>HIV-CASEREPORTING\HIV Longitudinal Record Logical Model - XML Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -19,7 +19,6 @@
     <link href="fhir.css" rel="stylesheet"/>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
     <!-- Project extras -->
@@ -28,7 +27,6 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/hl7-be.css" rel="stylesheet"/>
 <link href="assets/css/openhie.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -54,9 +52,11 @@
     h3,h4,h5,h6{--heading-prefix:"13.9"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
         <div id="project-nav">
-          <a id="project-logo" no-external="true" href="http://ohie.org">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
             <img height="71" alt="Project home" src="assets/images/home.png"/>
           </a>
         </div>
@@ -168,21 +168,24 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
+
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>HIV Longitudinal Record Logical Model</b></li>
+
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">  <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">HIV Case Reporting and Monitoring - Local Development build (v0.2.0). See the <a href="http://openhie.org/fhir/hiv-casereporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -280,11 +283,12 @@
 &lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vline.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_datatype.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Data Type&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-model-hiv-record-definitions.html#HIVRecord.co-infections.diagnosis&quot;&gt;diagnosis&lt;/a&gt;&lt;a name=&quot;HIVRecord.co-infections.diagnosis&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/datatypes.html#BackboneElement&quot;&gt;BackboneElement&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;The patient's concurrent diagnosis&lt;/td&gt;&lt;/tr&gt;
 &lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vline.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vline.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_datatype.gif&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;Data Type&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-model-hiv-record-definitions.html#HIVRecord.co-infections.diagnosis.code&quot;&gt;code&lt;/a&gt;&lt;a name=&quot;HIVRecord.co-infections.diagnosis.code&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;The patient's concurrent diagnosis&lt;/td&gt;&lt;/tr&gt;
 &lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vline.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vline.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_datatype.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Data Type&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-model-hiv-record-definitions.html#HIVRecord.co-infections.diagnosis.period&quot;&gt;period&lt;/a&gt;&lt;a name=&quot;HIVRecord.co-infections.diagnosis.period&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/datatypes.html#Period&quot;&gt;Period&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;The onset for tuberculosis&lt;/td&gt;&lt;/tr&gt;
-&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vline.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_reference.png&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;Reference to another Resource&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-model-hiv-record-definitions.html#HIVRecord.co-infections.treatment&quot;&gt;treatment&lt;/a&gt;&lt;a name=&quot;HIVRecord.co-infections.treatment&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..*&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/references.html&quot;&gt;CodeableReference&lt;/a&gt;()&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;The patient's treatments  - should perhaps be a different parent element?&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vline.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_resource.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Resource&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-model-hiv-record-definitions.html#HIVRecord.co-infections.treatment.period&quot;&gt;period&lt;/a&gt;&lt;a name=&quot;HIVRecord.co-infections.treatment.period&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;period&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;The start date fot the patient's treatment for tuberculosis&lt;/td&gt;&lt;/tr&gt;
-&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_datatype.gif&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;Data Type&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-model-hiv-record-definitions.html#HIVRecord.death&quot;&gt;death&lt;/a&gt;&lt;a name=&quot;HIVRecord.death&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/datatypes.html#BackboneElement&quot;&gt;BackboneElement&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;The death of the patient&lt;/td&gt;&lt;/tr&gt;
-&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_primitive.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Primitive Data Type&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-model-hiv-record-definitions.html#HIVRecord.death.dateofDeath&quot;&gt;dateofDeath&lt;/a&gt;&lt;a name=&quot;HIVRecord.death.dateofDeath&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/datatypes.html#date&quot;&gt;date&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;The date of the patient's death&lt;/td&gt;&lt;/tr&gt;
-&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_datatype.gif&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;Data Type&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-model-hiv-record-definitions.html#HIVRecord.death.causeofDeath&quot;&gt;causeofDeath&lt;/a&gt;&lt;a name=&quot;HIVRecord.death.causeofDeath&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;The cause of the patient's death&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vline.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_datatype.gif&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;Data Type&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-model-hiv-record-definitions.html#HIVRecord.co-infections.treatment&quot;&gt;treatment&lt;/a&gt;&lt;a name=&quot;HIVRecord.co-infections.treatment&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..*&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/datatypes.html#BackboneElement&quot;&gt;BackboneElement&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;The patient's treatments&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vline.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_reference.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Reference to another Resource&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-model-hiv-record-definitions.html#HIVRecord.co-infections.treatment.treatmentType&quot;&gt;treatmentType&lt;/a&gt;&lt;a name=&quot;HIVRecord.co-infections.treatment.treatmentType&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..*&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/references.html&quot;&gt;CodeableReference&lt;/a&gt;()&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;The type of treatment&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vline.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_resource.png&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;Resource&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-model-hiv-record-definitions.html#HIVRecord.co-infections.treatment.period&quot;&gt;period&lt;/a&gt;&lt;a name=&quot;HIVRecord.co-infections.treatment.period&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;period&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;The start date fot the patient's treatment for tuberculosis&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_datatype.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Data Type&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-model-hiv-record-definitions.html#HIVRecord.death&quot;&gt;death&lt;/a&gt;&lt;a name=&quot;HIVRecord.death&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/datatypes.html#BackboneElement&quot;&gt;BackboneElement&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;The death of the patient&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_primitive.png&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;Primitive Data Type&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-model-hiv-record-definitions.html#HIVRecord.death.dateofDeath&quot;&gt;dateofDeath&lt;/a&gt;&lt;a name=&quot;HIVRecord.death.dateofDeath&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/datatypes.html#date&quot;&gt;date&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;The date of the patient's death&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_datatype.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Data Type&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-model-hiv-record-definitions.html#HIVRecord.death.causeofDeath&quot;&gt;causeofDeath&lt;/a&gt;&lt;a name=&quot;HIVRecord.death.causeofDeath&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;The cause of the patient's death&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td colspan=&quot;5&quot; class=&quot;hierarchy&quot;&gt;&lt;br/&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/formats.html#table&quot; title=&quot;Legend for this format&quot;&gt;&lt;img src=&quot;http://hl7.org/fhir/R4/help16.png&quot; alt=&quot;doco&quot; style=&quot;background-color: inherit&quot;/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://openhie.org/fhir/hiv/StructureDefinition/model-hiv-record&quot;/&gt;
@@ -688,12 +692,25 @@
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;HIVRecord.co-infections.treatment&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HIVRecord.co-infections.treatment&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The patient&amp;#39;s treatments  - should perhaps be a different parent element?&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The patient&amp;#39;s treatments&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;*&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HIVRecord.co-infections.treatment&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;*&quot;/&gt;
+      &lt;/base&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;BackboneElement&quot;/&gt;
+      &lt;/type&gt;
+    &lt;/element&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;HIVRecord.co-infections.treatment.treatmentType&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HIVRecord.co-infections.treatment.treatmentType&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The type of treatment&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;*&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HIVRecord.co-infections.treatment.treatmentType&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;*&quot;/&gt;
       &lt;/base&gt;
@@ -938,8 +955,16 @@
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;HIVRecord.co-infections.treatment&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HIVRecord.co-infections.treatment&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The patient&amp;#39;s treatments  - should perhaps be a different parent element?&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The patient&amp;#39;s treatments&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;*&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;BackboneElement&quot;/&gt;
+      &lt;/type&gt;
+    &lt;/element&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;HIVRecord.co-infections.treatment.treatmentType&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HIVRecord.co-infections.treatment.treatmentType&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The type of treatment&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;*&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
@@ -994,7 +1019,6 @@
 
 </div>
 
-
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -1026,18 +1050,18 @@
     });
   </script>
 
-<script type="text/javascript">
-  $(document).ready(function(){
-    if(window.location.hash != "") {
-        $('a[href="' + window.location.hash + '"]').click()
-    }
-  });
-</script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 27, 2021 15:08+0000">2021-04-27</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 30, 2021 12:12+0000">2021-05-30</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -1046,8 +1070,6 @@
                  <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/hiv-casereporting/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-
-
 
 
           </span>
@@ -1070,79 +1092,76 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
-
-<!-- feedback form - Google forms -->
+  
+  <!-- feedback form - Google forms -->
 <!-- v0.1, 2021-01-09 -->
 
 
   
     
-      <script type="text/javascript">
-        $(':header[id]').each(function() {
+    <script type="text/javascript">
+     /* <![CDATA[ */
+        $(':header[id]').each(function() { // apply this to each heading
           var id = $(this).attr('id');
-          var formVars = new Set();  
-            formVars.add("sectionId");  
-            formVars.add("pageTitle");  
-            formVars.add("sectionName");  
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
           var feedbacklabel = 'Feedback';
           
             
-              feedbacklabel = 'Feedback';
-            ;
+              feedbacklabel = 'Feedback';  // The feedback label is a string
+            
 
             
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(1353807103).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'pageTitle';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
 /* <![CDATA[ */
-            parameterFieldId = 'entry.'+parseInt(1353807103).toString()
-            parameterVariableName = 'pageTitle'
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
 /* ]]> */
-
-            switch (parameterVariableName) {
-              default:
-                  console.log("Parameter value not supported");
-                  break;
-                case "pageTitle":
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case "sectionId":
-                  parameterValue = id;
-                  break;
-                case "sectionName":
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '&';
-            feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
             
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(247644557).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'sectionName';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
 /* <![CDATA[ */
-            parameterFieldId = 'entry.'+parseInt(247644557).toString()
-            parameterVariableName = 'sectionName'
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
 /* ]]> */
-
-            switch (parameterVariableName) {
-              default:
-                  console.log("Parameter value not supported");
-                  break;
-                case "pageTitle":
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case "sectionId":
-                  parameterValue = id;
-                  break;
-                case "sectionName":
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '&';
-            feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
             
-          
+            
           if (id) { //To make sure the element has an id
             $(this).append(function () {
               return $('<a/>', {
@@ -1156,7 +1175,8 @@ anchors.add()</script>
               });
             });
           }
-        })
+        }) 
+/* ]]> */
       </script>  
     
   
@@ -1165,8 +1185,7 @@ anchors.add()</script>
 
 <!-- / feedback form  -->
 
-
-<!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>

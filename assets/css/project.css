@@ -72,6 +72,7 @@ var(--publish-box-border); */
 
   --ig-header-color: #f5f5f5; /* 21. Header color (sides) */
   --ig-header-container-color: #ffffff; /* 22. Header container color (center) */
+  --footer-nav-bg-color: #f5f5f5; /* 23. Footer navigation background color*/
 
 }
 
@@ -215,6 +216,24 @@ body {
   background-color: var(--publish-box-bg-color);
   border: var(--publish-box-border);
   padding: 5px;
+}
+
+.dragon {
+  border: 1px solid maroon;
+  padding: 10px;
+  background-color: #fffbf7;
+  min-height: 160px;
+}
+
+.dragon::before {
+  content: "";
+  background-image: url('../images/dragon.png');
+  background-size: 150px 150px;
+  display: inline-block;
+  float:left; 
+  margin-right: 10px;
+  width: 150px;
+  height: 150px;
 }
 
 .note-to-balloters, .stu-note {
@@ -593,7 +612,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 /* ============ downloads css ============= */
 
-a[href$=".sch"]:after, a[href$=".zip"]:after, a[href$=".tgz"]:after, a[href$=".xml"]:not([no-download^="true"]):after, a[href$=".json"]:not([no-download^="true"]):after, a[href$=".csv"]:after, a[href$=".ttl"]:not([no-download^="true"]):after {
+a[href$=".sch"]:after, a[href$=".xlsx"]:after, a[href$=".zip"]:after, a[href$=".tgz"]:after, a[href$=".xml"]:not([no-download^="true"]):after, a[href$=".json"]:not([no-download^="true"]):after, a[href$=".csv"]:after, a[href$=".ttl"]:not([no-download^="true"]):after {
   content: url(../images/download.png);
   display: inline-block;
   text-decoration: none;
@@ -652,18 +671,6 @@ li a[href^="http://"]:not([no-external^="true"]):after, a[href^="https://"]:not(
     color: #a94442;
     background-color: #f2dede;
     border-color: #ebccd1;
-}
-
-
-/*--------- smooth transitions ---------- */
-
-body{
-    opacity: 0;
-    transition: opacity 0.7s;
-    -webkit-transition: opacity 0.7s; /* Safari */
-    -ms-transition: opacity 0.7s; /* ie */
-    -o-transition: opacity 0.7s; /* opera */
-    -moz-transition: opacity 0.7s; /* firefox */
 }
 
 

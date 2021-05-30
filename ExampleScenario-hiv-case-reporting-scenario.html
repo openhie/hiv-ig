@@ -11,7 +11,6 @@
     <link href="fhir.css" rel="stylesheet"/>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
     <!-- Project extras -->
@@ -20,7 +19,6 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/hl7-be.css" rel="stylesheet"/>
 <link href="assets/css/openhie.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -46,9 +44,11 @@
     h3,h4,h5,h6{--heading-prefix:"13.4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
         <div id="project-nav">
-          <a id="project-logo" no-external="true" href="http://ohie.org">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
             <img height="71" alt="Project home" src="assets/images/home.png"/>
           </a>
         </div>
@@ -160,62 +160,86 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
+
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example Scenario #1</b></li>
+
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">  <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">HIV Case Reporting and Monitoring - Local Development build (v0.2.0). See the <a href="http://openhie.org/fhir/hiv-casereporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
-<!-- Option 1: Separate html per tab -->
-  <ul class="nav nav-tabs">
-    <li class="active">
-      <a href="ExampleScenario-hiv-case-reporting-scenario.html">Sequence</a>
-    </li>
+  
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
     <li>
-      <a href="ExampleScenario-hiv-case-reporting-scenario-description.html">Detailed Description</a>
+      <a href="ExampleScenario-hiv-case-reporting-scenario.xml.html">XML</a>
     </li>
+  
+
+
+  
     <li>
-      <a href="ExampleScenario-hiv-case-reporting-scenario-resources.html">Resources</a>
+      <a href="ExampleScenario-hiv-case-reporting-scenario.json.html">JSON</a>
     </li>
-  </ul>
+  
+
+
+  
+    <li>
+      <a href="ExampleScenario-hiv-case-reporting-scenario.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
 
   <a name="root"> </a>
-  <h2 id="root">ExampleScenario: HIVCaseReportingScenario</h2>
 
-  <div xmlns:fhir="http://hl7.org/fhir" id="sequence" class="tab-pane fade in active">
-   <p></p>
-   <h4><a name="preconditions"></a>
-      																Pre-Conditions
-      															
-   </h4>
-   <p>The patient visits the clinic for HIV case follow-up.</p>
-   <h4><a name="postconditions"></a>
-      																Post Conditions
-      															
-   </h4>
-   <p>The patient's HIV longitudinal record (and eventually the alerts and reports) is updated
-      with the information extracted from the case report.
-   </p>
-   <p></p>
-</div> 
-  <br/>
-<!--  <img alt="Scenario diagram" src="ExampleScenario-hiv-case-reporting-scenario.svg"/> -->
-  <object type="image/svg+xml" data="ExampleScenario-hiv-case-reporting-scenario.svg"></object>
+
+  <h2 id="root">ExampleScenario: Example Scenario #1</h2>
+
+
   
+
+
+  <!-- insert intro if present -->
   
-  <a name="root"> </a>
 
 
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>http://openhie.org/fhir/hiv-casereporting/ExampleScenario/hiv-case-reporting-scenario</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: HIVCaseReportingScenario</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: Mar 8, 2021, 11:00:00 PM</p><p><b>publisher</b>: openHIE</p><p><b>contact</b>: <a href="http://hl7.org/Special/committees/[something]">http://hl7.org/Special/committees/[something]</a></p><p><b>jurisdiction</b>: <span title="Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 001}">World</span></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: QS</p><p><b>type</b>: entity</p><p><b>name</b>: Questionnaire\nSource</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: HCP</p><p><b>type</b>: person</p><p><b>name</b>: Healthcare Professional</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: CRSUBM</p><p><b>type</b>: entity</p><p><b>name</b>: Case Report\nSubmitter</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: CRTRANSF</p><p><b>type</b>: entity</p><p><b>name</b>: Case Report\nTransformer</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: CRREPO</p><p><b>type</b>: entity</p><p><b>name</b>: Case Report\nRepository</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: hiv-case-report-questionnaire</p><p><b>resourceType</b>: Questionnaire</p><p><b>name</b>: HIV Case Report\nQuestionnaire\n(template)</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: exampleresponse</p><p><b>resourceType</b>: QuestionnaireResponse</p><p><b>name</b>: HIV Case Report\nResponse</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: extractedexample</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: HIV Case Record\n(Transformed)</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Case Reporting Example</p><p><b>description</b>: description</p><p><b>preConditions</b>: The patient visits the clinic for HIV case follow-up.</p><p><b>postConditions</b>: The patient's HIV longitudinal record (and eventually the alerts and reports) is updated with the information extracted from the case report.</p><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 1</p><p><b>name</b>: Obtain Questionnaire</p><p><b>initiator</b>: CRSUBM</p><p><b>receiver</b>: QS</p><h3>Responses</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>hiv-case-report-questionnaire</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 2</p><p><b>name</b>: Fill Questionnaire</p><p><b>initiator</b>: HCP</p><p><b>receiver</b>: CRSUBM</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>exampleresponse</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 3</p><p><b>name</b>: Send questionnaire</p><p><b>initiator</b>: CRSUBM</p><p><b>receiver</b>: CRTRANSF</p><h3>Responses</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>exampleresponse</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>name</b>: Extract data from questionnaire</p><p><b>initiator</b>: CRTRANSF</p><p><b>receiver</b>: CRREPO</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>extractedexample</td></tr></table></blockquote></blockquote></blockquote></div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -225,40 +249,17 @@
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
   <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
       }
     });
   </script>
-
-<script type="text/javascript">
-  $(document).ready(function(){
-    if(window.location.hash != "") {
-        $('a[href="' + window.location.hash + '"]').click()
-    }
-  });
-</script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 27, 2021 15:08+0000">2021-04-27</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 30, 2021 12:12+0000">2021-05-30</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -267,8 +268,6 @@
                  <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/hiv-casereporting/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-
-
 
 
           </span>
@@ -291,79 +290,76 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
-
-<!-- feedback form - Google forms -->
+  
+  <!-- feedback form - Google forms -->
 <!-- v0.1, 2021-01-09 -->
 
 
   
     
-      <script type="text/javascript">
-        $(':header[id]').each(function() {
+    <script type="text/javascript">
+     /* <![CDATA[ */
+        $(':header[id]').each(function() { // apply this to each heading
           var id = $(this).attr('id');
-          var formVars = new Set();  
-            formVars.add("sectionId");  
-            formVars.add("pageTitle");  
-            formVars.add("sectionName");  
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
           var feedbacklabel = 'Feedback';
           
             
-              feedbacklabel = 'Feedback';
-            ;
+              feedbacklabel = 'Feedback';  // The feedback label is a string
+            
 
             
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(1353807103).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'pageTitle';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
 /* <![CDATA[ */
-            parameterFieldId = 'entry.'+parseInt(1353807103).toString()
-            parameterVariableName = 'pageTitle'
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
 /* ]]> */
-
-            switch (parameterVariableName) {
-              default:
-                  console.log("Parameter value not supported");
-                  break;
-                case "pageTitle":
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case "sectionId":
-                  parameterValue = id;
-                  break;
-                case "sectionName":
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '&';
-            feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
             
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(247644557).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'sectionName';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
 /* <![CDATA[ */
-            parameterFieldId = 'entry.'+parseInt(247644557).toString()
-            parameterVariableName = 'sectionName'
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
 /* ]]> */
-
-            switch (parameterVariableName) {
-              default:
-                  console.log("Parameter value not supported");
-                  break;
-                case "pageTitle":
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case "sectionId":
-                  parameterValue = id;
-                  break;
-                case "sectionName":
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '&';
-            feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
             
-          
+            
           if (id) { //To make sure the element has an id
             $(this).append(function () {
               return $('<a/>', {
@@ -377,7 +373,8 @@ anchors.add()</script>
               });
             });
           }
-        })
+        }) 
+/* ]]> */
       </script>  
     
   
@@ -386,8 +383,8 @@ anchors.add()</script>
 
 <!-- / feedback form  -->
 
-
-<!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
+

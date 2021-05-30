@@ -11,7 +11,6 @@
     <link href="fhir.css" rel="stylesheet"/>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
     <!-- Project extras -->
@@ -20,7 +19,6 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/hl7-be.css" rel="stylesheet"/>
 <link href="assets/css/openhie.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -42,13 +40,15 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"13.28"}
-    h3,h4,h5,h6{--heading-prefix:"13.28"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.34"}
+    h3,h4,h5,h6{--heading-prefix:"13.34"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
         <div id="project-nav">
-          <a id="project-logo" no-external="true" href="http://ohie.org">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
             <img height="71" alt="Project home" src="assets/images/home.png"/>
           </a>
         </div>
@@ -160,21 +160,24 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
+
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Type of contact or relationship</b></li>
+
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">  <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">HIV Case Reporting and Monitoring - Local Development build (v0.2.0). See the <a href="http://openhie.org/fhir/hiv-casereporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -224,7 +227,7 @@
  <tr><td>Version:</td><td>0.2.0</td></tr>
  <tr><td>Name:</td><td>TypeOfContact</td></tr>
  <tr><td>Title:</td><td>Type of contact or relationship</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-04-27T15:08:45+00:00</td></tr>
+ <tr><td>Status:</td><td>Active as of 2021-05-30T12:12:04+00:00</td></tr>
  <tr><td>Definition:</td><td><p>Type of contact or relationship</p>
 </td></tr>
  <tr><td>Publisher:</td><td>openHIE</td></tr>
@@ -296,7 +299,6 @@
   
 
 </div>
-
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -305,18 +307,18 @@
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-<script type="text/javascript">
-  $(document).ready(function(){
-    if(window.location.hash != "") {
-        $('a[href="' + window.location.hash + '"]').click()
-    }
-  });
-</script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 27, 2021 15:08+0000">2021-04-27</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 30, 2021 12:12+0000">2021-05-30</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -325,8 +327,6 @@
                  <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/hiv-casereporting/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-
-
 
 
           </span>
@@ -349,79 +349,76 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
-
-<!-- feedback form - Google forms -->
+  
+  <!-- feedback form - Google forms -->
 <!-- v0.1, 2021-01-09 -->
 
 
   
     
-      <script type="text/javascript">
-        $(':header[id]').each(function() {
+    <script type="text/javascript">
+     /* <![CDATA[ */
+        $(':header[id]').each(function() { // apply this to each heading
           var id = $(this).attr('id');
-          var formVars = new Set();  
-            formVars.add("sectionId");  
-            formVars.add("pageTitle");  
-            formVars.add("sectionName");  
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url';  //this still needs to be secured
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
           var feedbacklabel = 'Feedback';
           
             
-              feedbacklabel = 'Feedback';
-            ;
+              feedbacklabel = 'Feedback';  // The feedback label is a string
+            
 
             
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(1353807103).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'pageTitle';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
 /* <![CDATA[ */
-            parameterFieldId = 'entry.'+parseInt(1353807103).toString()
-            parameterVariableName = 'pageTitle'
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
 /* ]]> */
-
-            switch (parameterVariableName) {
-              default:
-                  console.log("Parameter value not supported");
-                  break;
-                case "pageTitle":
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case "sectionId":
-                  parameterValue = id;
-                  break;
-                case "sectionName":
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '&';
-            feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
             
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(247644557).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'sectionName';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
 /* <![CDATA[ */
-            parameterFieldId = 'entry.'+parseInt(247644557).toString()
-            parameterVariableName = 'sectionName'
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
 /* ]]> */
-
-            switch (parameterVariableName) {
-              default:
-                  console.log("Parameter value not supported");
-                  break;
-                case "pageTitle":
-                  parameterValue = encodeURIComponent($(document).attr('title'));
-                  break;
-                case "sectionId":
-                  parameterValue = id;
-                  break;
-                case "sectionName":
-                  parameterValue = document.getElementById(id).textContent;
-                  break;
-            }
-            feedbackurl = feedbackurl + '&';
-            feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
             
-          
+            
           if (id) { //To make sure the element has an id
             $(this).append(function () {
               return $('<a/>', {
@@ -435,7 +432,8 @@ anchors.add()</script>
               });
             });
           }
-        })
+        }) 
+/* ]]> */
       </script>  
     
   
@@ -444,8 +442,7 @@ anchors.add()</script>
 
 <!-- / feedback form  -->
 
-
-<!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>

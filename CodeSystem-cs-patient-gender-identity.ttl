@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "CSPatientGenderIdentity"];
   fhir:CodeSystem.title [ fhir:value "Patient Gender Identity"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-04-27T15:08:45+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-05-30T12:12:04+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "openHIE"];
   fhir:CodeSystem.contact [
      fhir:index 0;
