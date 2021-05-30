@@ -31,7 +31,7 @@ Usage: #inline
 
 
 
-
+/*
 Instance: examplebundle
 InstanceOf: Bundle
 Usage: #example
@@ -39,3 +39,4 @@ Usage: #example
 * type = #collection
 * entry[+].resource = test-hiv-patient
 * entry[+].resource = test-hiv-condition
+*/
