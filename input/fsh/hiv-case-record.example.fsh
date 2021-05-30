@@ -4,21 +4,22 @@ Usage: #example
 Title: "HIV Cr Bundle Example"
 Description: "Example of a clinical bundle representing a case report"
 * type = #document
-* entry[+].fullUrl = "http://test.org/fhir/HIVCrComposition/HIVCrCompositionExample"
+* entry[+].fullUrl = "http://test.org/fhir/Composition/HIVCrCompositionExample"
 * entry[=].resource = HIVCrCompositionExample
 * entry[+].fullUrl = "http://test.org/fhir/Encounter/HIVCrEncounterExample"
 * entry[=].resource = HIVCrEncounterExample
 * entry[+].fullUrl = "http://test.org/fhir/Location/HIVCrLocationExample"
 * entry[=].resource = HIVCrLocationExample
-* entry[+].fullUrl = "http://test.org/fhir/HIVPatient/HIVPatientExample"
+* entry[+].fullUrl = "http://test.org/fhir/Patient/HIVPatientExample"
 * entry[=].resource = HIVPatientExample
-* entry[+].fullUrl = "http://test.org/fhir/HIVCondition/HIVConditionExample"
+* entry[+].fullUrl = "http://test.org/fhir/Condition/HIVConditionExample"
 * entry[=].resource = HIVConditionExample
-* entry[+].fullUrl = "http://test.org/fhir/ARVTherapySummary/ARVTherapySummaryExample"
+/*
+* entry[+].fullUrl = "http://test.org/fhir/MedicationStatement/ARVTherapySummaryExample"
 * entry[=].resource = ARVTherapySummaryExample
-* entry[+].fullUrl = "http://test.org/fhir/ViralLoad/ViralLoadExample"
+*/
+* entry[+].fullUrl = "http://test.org/fhir/Observation/ViralLoadExample"
 * entry[=].resource = ViralLoadExample
-
 
 Instance: HIVCrCompositionExample
 InstanceOf: HIVCrComposition
@@ -78,7 +79,7 @@ Instance: HIVPatientExample
 InstanceOf: HIVPatient
 Usage: #example
 Title: "HIV Patient example"
-Description: ""
+Description: "."
 
 * active = true
 * name[+].given[+] = "Jane"
@@ -106,7 +107,7 @@ Instance: HIVConditionExample
 InstanceOf: HIVCondition
 Usage: #example
 Title: "HIV Condition example"
-Description: ""
+Description: "."
 * clinicalStatus = #active
 * verificationStatus = #confirmed
 * code = $SCT#86406008
@@ -117,7 +118,7 @@ Instance: ARVTherapySummaryExample
 InstanceOf: ARVTherapySummary
 Usage: #example
 Title: "ARV therapy summary example"
-Description: ""
+Description: "."
 * status = #active
 * medicationCodeableConcept = http://test.org/medication-type#ART "Antiretrovirals"
 * subject = Reference(HIVPatientExample)
@@ -127,7 +128,7 @@ Instance: ViralLoadExample
 InstanceOf: ViralLoad
 Usage: #example
 Title: "Viral load example"
-Description: ""
+Description: "."
 * status = #final
 * code = http://test.org/obs#VL-RESULT "Viral load result"
 * subject = Reference(HIVPatientExample)
