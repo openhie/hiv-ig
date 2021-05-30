@@ -1,12 +1,12 @@
 ﻿HIVCaseReporting : Validation Results
 =========================================
 
-err = 200, warn = 131, info = 31
+err = 161, warn = 119, info = 3
 IG Publisher Version: 1.1.72
-Generated Sun May 30 12:12:55 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir/hiv-casereporting)
+Generated Sun May 30 12:22:33 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir/hiv-casereporting)
 
- Build Errors : 98 / 13 / 1
- /github/workspace/fsh-generated/resources/Bundle-HIVCrBundleExample : 22 / 2 / 21
+ Build Errors : 95 / 5 / 1
+ /github/workspace/fsh-generated/resources/Bundle-examplebundle : 4 / 0 / 5
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-occupations : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-population : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-risk-behavior : 0 / 0 / 1
@@ -15,36 +15,25 @@ Generated Sun May 30 12:12:55 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#
  /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-gender : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-gender-identity : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-type-of-contact : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Composition-HIVCrCompositionExample : 16 / 0 / 10
- /github/workspace/fsh-generated/resources/Condition-HIVConditionExample : 2 / 2 / 2
- /github/workspace/fsh-generated/resources/Encounter-HIVCrEncounterExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Location-HIVCrLocationExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/MedicationStatement-ARVTherapySummaryExample : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/NamingSystem-ns-art-id : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-ns-hiv-case-id : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-ns-insurance-id : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-ns-passport-id : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-ViralLoadExample : 0 / 0 / 4
- /github/workspace/fsh-generated/resources/Patient-HIVPatientExample : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Patient-test-hiv-patient : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Practitioner-HIVCrPractitionerExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire : 6 / 0 / 6
  /github/workspace/fsh-generated/resources/Questionnaire-vn-hiv-csv-import-questionnaire : 9 / 0 / 5
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-exampleresponse : 23 / 1 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ethnicity : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ext-specimen-collection-place : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-careplan : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-cd4-observation : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-condition : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-cr-composition : 0 / 0 / 9
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-cr-encounter : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-cr-location : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-condition : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-recency-result : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-risk-factor : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-specimen : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-viral-load : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-viral-load : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-pregnancy-status : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-HIVRapidTestResults : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-ethnicity : 0 / 1 / 1
@@ -69,21 +58,10 @@ WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be 
 ERROR: WHOHIVAdaptationKitModel.patient.gender: The reference VSPatientGender could not be resolved
 ERROR: WHOHIVAdaptationKitModel.patient.genderIdentity: The reference VSPatientGenderIdentity could not be resolved
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/model-who-hiv-adaptation-kit.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/HIVCrBundleExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/test-hiv-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Questionnaire/vn-hiv-csv-import-questionnaire.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/vn-hiv-csv-import-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Practitioner/HIVCrPractitionerExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/HIVCrPractitionerExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ViralLoadExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Encounter/HIVCrEncounterExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/HIVCrEncounterExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/HIVPatientExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/HIVConditionExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Location/HIVCrLocationExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Location/HIVCrLocationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/ARVTherapySummaryExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Composition/HIVCrCompositionExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/examplebundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: StructureDefinition-model-hiv-record.html: The reference CodeableReference could not be resolved
 ERROR: StructureDefinition-model-hiv-record.html: The reference period could not be resolved
 ERROR: StructureDefinition-model-who-hiv-adaptation-kit.html: The reference coding could not be resolved
@@ -175,52 +153,16 @@ ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_Pregnan
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 204, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.json.html' for "JSON" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.html#/html/body/div/div/div/div/div/ul/li/a at Line 211, column 8: The link 'ValueSet-vn-hiv-csv-import-questionnaire_PregnancyOutcomeCodes.ttl.html' for "TTL" cannot be resolved
 ERROR: /github/workspace/output/data_extraction.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 209, column 9: The link '' for "Observation-based extraction" cannot be resolved
-== /github/workspace/fsh-generated/resources/Bundle-HIVCrBundleExample.json ==
-INFORMATION: Bundle/HIVCrBundleExample: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
-ERROR: Bundle/HIVCrBundleExample: Bundle: bdl-9: 'A document must have an identifier with a system and a value' Rule 'A document must have an identifier with a system and a value' Failed
-ERROR: Bundle/HIVCrBundleExample: Bundle: bdl-10: 'A document must have a date' Rule 'A document must have a date' Failed
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[0].code.coding[0]: Code System URI 'http://test.org/sectionCode' is unknown so the code cannot be validated
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[1].code.coding[0]: Code System URI 'http://test.org/sectionCode' is unknown so the code cannot be validated
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[2].code.coding[0]: Code System URI 'http://test.org/sectionCode' is unknown so the code cannot be validated
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[3].code.coding[0]: Code System URI 'http://test.org/sectionCode' is unknown so the code cannot be validated
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - listed in meta
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[0]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:hivPatient in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[1]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:hivPatient in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[2]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:hivPatient in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[3]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:hivPatient in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[0]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:hivCondition in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[1]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:hivCondition in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[2]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:hivCondition in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[3]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:hivCondition in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[0]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:arvTherapySummary in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[1]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:arvTherapySummary in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[2]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:arvTherapySummary in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[3]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:arvTherapySummary in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[0]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:viralLoad in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[1]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:viralLoad in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[2]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:viralLoad in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition).section[3]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:viralLoad in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition): Composition.section:hivPatient: Unable to check minimum required (Composition.section) due to lack of slicing validation (from http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition)
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition): Composition.section:hivCondition: Unable to check minimum required (Composition.section) due to lack of slicing validation (from http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition)
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition): Composition.section:arvTherapySummary: Unable to check minimum required (Composition.section) due to lack of slicing validation (from http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition)
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[0].resource.ofType(Composition): Composition.section:viralLoad: Unable to check minimum required (Composition.section) due to lack of slicing validation (from http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition)
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[1].resource.ofType(Encounter): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[2].resource.ofType(Location): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Location
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[3].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[3].resource.ofType(Patient): Validate resource against profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient - listed in meta
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[4].resource.ofType(Condition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[4].resource.ofType(Condition).clinicalStatus: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/condition-clinical|4.0.1 (http://hl7.org/fhir/ValueSet/condition-clinical), and a coding from this value set is required) (codes = null#active)
-WARNING: Bundle/HIVCrBundleExample: Bundle.entry[4].resource.ofType(Condition).clinicalStatus.coding[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[4].resource.ofType(Condition).verificationStatus: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/condition-ver-status|4.0.1 (http://hl7.org/fhir/ValueSet/condition-ver-status), and a coding from this value set is required) (codes = null#confirmed)
-WARNING: Bundle/HIVCrBundleExample: Bundle.entry[4].resource.ofType(Condition).verificationStatus.coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[4].resource.ofType(Condition): Validate resource against profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-condition - listed in meta
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[5].resource.ofType(Observation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[5].resource.ofType(Observation).code.coding[0]: Code System URI 'http://test.org/obs' is unknown so the code cannot be validated
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[5].resource.ofType(Observation).value.ofType(CodeableConcept).coding[0]: Code System URI 'http://test.org/obs/vl-result' is unknown so the code cannot be validated
-INFORMATION: Bundle/HIVCrBundleExample: Bundle.entry[5].resource.ofType(Observation): Validate resource against profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load - listed in meta
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[1].resource.author[1].reference: Can't find 'Practitioner/HIVCrPractitionerExample' in the bundle (Composition.author)
-ERROR: Bundle/HIVCrBundleExample: Bundle.entry[1].resource.section[3].entry[1].reference: Can't find 'MedicationStatement/ARVTherapySummaryExample' in the bundle (Section Entry)
+== /github/workspace/fsh-generated/resources/Bundle-examplebundle.json ==
+INFORMATION: Bundle/examplebundle: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
+INFORMATION: Bundle/examplebundle: Bundle.entry[0].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/examplebundle: Bundle.entry[0].resource.ofType(Patient): Validate resource against profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient - listed in meta
+INFORMATION: Bundle/examplebundle: Bundle.entry[1].resource.ofType(Condition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
+ERROR: Bundle/examplebundle: Bundle.entry[1]: Bundle entry missing fullUrl
+ERROR: Bundle/examplebundle: Bundle.entry[1].resource.ofType(Condition).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/examplebundle: Bundle.entry[1].resource.ofType(Condition): Validate resource against profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-condition - listed in meta
+ERROR: Bundle/examplebundle: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/examplebundle: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 == /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-occupations.json ==
 INFORMATION: CodeSystem/cs-hiv-occupations: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-population.json ==
@@ -237,48 +179,6 @@ INFORMATION: CodeSystem/cs-patient-gender: CodeSystem: Validate resource against
 INFORMATION: CodeSystem/cs-patient-gender-identity: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /github/workspace/fsh-generated/resources/CodeSystem-type-of-contact.json ==
 INFORMATION: CodeSystem/type-of-contact: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-== /github/workspace/fsh-generated/resources/Composition-HIVCrCompositionExample.json ==
-INFORMATION: Composition/HIVCrCompositionExample: Composition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
-INFORMATION: Composition/HIVCrCompositionExample: Composition.section[0].code.coding[0]: Code System URI 'http://test.org/sectionCode' is unknown so the code cannot be validated
-INFORMATION: Composition/HIVCrCompositionExample: Composition.section[1].code.coding[0]: Code System URI 'http://test.org/sectionCode' is unknown so the code cannot be validated
-INFORMATION: Composition/HIVCrCompositionExample: Composition.section[2].code.coding[0]: Code System URI 'http://test.org/sectionCode' is unknown so the code cannot be validated
-INFORMATION: Composition/HIVCrCompositionExample: Composition.section[3].code.coding[0]: Code System URI 'http://test.org/sectionCode' is unknown so the code cannot be validated
-INFORMATION: Composition/HIVCrCompositionExample: Composition: Validate resource against profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - listed in meta
-ERROR: Composition/HIVCrCompositionExample: Composition.section[0]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:hivPatient in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Composition/HIVCrCompositionExample: Composition.section[1]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:hivPatient in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Composition/HIVCrCompositionExample: Composition.section[2]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:hivPatient in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Composition/HIVCrCompositionExample: Composition.section[3]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:hivPatient in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Composition/HIVCrCompositionExample: Composition.section[0]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:hivCondition in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Composition/HIVCrCompositionExample: Composition.section[1]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:hivCondition in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Composition/HIVCrCompositionExample: Composition.section[2]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:hivCondition in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Composition/HIVCrCompositionExample: Composition.section[3]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:hivCondition in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Composition/HIVCrCompositionExample: Composition.section[0]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:arvTherapySummary in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Composition/HIVCrCompositionExample: Composition.section[1]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:arvTherapySummary in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Composition/HIVCrCompositionExample: Composition.section[2]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:arvTherapySummary in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Composition/HIVCrCompositionExample: Composition.section[3]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:arvTherapySummary in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Composition/HIVCrCompositionExample: Composition.section[0]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:viralLoad in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Composition/HIVCrCompositionExample: Composition.section[1]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:viralLoad in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Composition/HIVCrCompositionExample: Composition.section[2]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:viralLoad in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-ERROR: Composition/HIVCrCompositionExample: Composition.section[3]: Slicing cannot be evaluated: Could not match discriminator ([code.coding.code]) for slice Composition.section:viralLoad in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition - the discriminator [code.coding.code] does not have fixed value, binding or existence assertions
-INFORMATION: Composition/HIVCrCompositionExample: Composition: Composition.section:hivPatient: Unable to check minimum required (Composition.section) due to lack of slicing validation (from http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition)
-INFORMATION: Composition/HIVCrCompositionExample: Composition: Composition.section:hivCondition: Unable to check minimum required (Composition.section) due to lack of slicing validation (from http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition)
-INFORMATION: Composition/HIVCrCompositionExample: Composition: Composition.section:arvTherapySummary: Unable to check minimum required (Composition.section) due to lack of slicing validation (from http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition)
-INFORMATION: Composition/HIVCrCompositionExample: Composition: Composition.section:viralLoad: Unable to check minimum required (Composition.section) due to lack of slicing validation (from http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition)
-== /github/workspace/fsh-generated/resources/Condition-HIVConditionExample.json ==
-INFORMATION: Condition/HIVConditionExample: Condition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
-ERROR: Condition/HIVConditionExample: Condition.clinicalStatus: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/condition-clinical|4.0.1 (http://hl7.org/fhir/ValueSet/condition-clinical), and a coding from this value set is required) (codes = null#active)
-WARNING: Condition/HIVConditionExample: Condition.clinicalStatus.coding[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: Condition/HIVConditionExample: Condition.verificationStatus: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/condition-ver-status|4.0.1 (http://hl7.org/fhir/ValueSet/condition-ver-status), and a coding from this value set is required) (codes = null#confirmed)
-WARNING: Condition/HIVConditionExample: Condition.verificationStatus.coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: Condition/HIVConditionExample: Condition: Validate resource against profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-condition - listed in meta
-== /github/workspace/fsh-generated/resources/Encounter-HIVCrEncounterExample.json ==
-INFORMATION: Encounter/HIVCrEncounterExample: Encounter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
-== /github/workspace/fsh-generated/resources/Location-HIVCrLocationExample.json ==
-INFORMATION: Location/HIVCrLocationExample: Location: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Location
-== /github/workspace/fsh-generated/resources/MedicationStatement-ARVTherapySummaryExample.json ==
-INFORMATION: MedicationStatement/ARVTherapySummaryExample: MedicationStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationStatement
-INFORMATION: MedicationStatement/ARVTherapySummaryExample: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Code System URI 'http://test.org/medication-type' is unknown so the code cannot be validated
-INFORMATION: MedicationStatement/ARVTherapySummaryExample: MedicationStatement: Validate resource against profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/arv-therapy-summary - listed in meta
 == /github/workspace/fsh-generated/resources/NamingSystem-ns-art-id.json ==
 INFORMATION: NamingSystem/ns-art-id: NamingSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem
 == /github/workspace/fsh-generated/resources/NamingSystem-ns-hiv-case-id.json ==
@@ -287,19 +187,9 @@ INFORMATION: NamingSystem/ns-hiv-case-id: NamingSystem: Validate resource agains
 INFORMATION: NamingSystem/ns-insurance-id: NamingSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem
 == /github/workspace/fsh-generated/resources/NamingSystem-ns-passport-id.json ==
 INFORMATION: NamingSystem/ns-passport-id: NamingSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem
-== /github/workspace/fsh-generated/resources/Observation-ViralLoadExample.json ==
-INFORMATION: Observation/ViralLoadExample: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-INFORMATION: Observation/ViralLoadExample: Observation.code.coding[0]: Code System URI 'http://test.org/obs' is unknown so the code cannot be validated
-INFORMATION: Observation/ViralLoadExample: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://test.org/obs/vl-result' is unknown so the code cannot be validated
-INFORMATION: Observation/ViralLoadExample: Observation: Validate resource against profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load - listed in meta
-== /github/workspace/fsh-generated/resources/Patient-HIVPatientExample.json ==
-INFORMATION: Patient/HIVPatientExample: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
-INFORMATION: Patient/HIVPatientExample: Patient: Validate resource against profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient - listed in meta
 == /github/workspace/fsh-generated/resources/Patient-test-hiv-patient.json ==
 INFORMATION: Patient/test-hiv-patient: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
 INFORMATION: Patient/test-hiv-patient: Patient: Validate resource against profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient - listed in meta
-== /github/workspace/fsh-generated/resources/Practitioner-HIVCrPractitionerExample.json ==
-INFORMATION: Practitioner/HIVCrPractitionerExample: Practitioner: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
 == /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json ==
 ERROR: Questionnaire.where(url = 'http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-hiv-case-report-questionnaire.json - the canonical URL (http://openhie.org/fhir/hiv-casereporting/Questionnaire/hiv-case-report-questionnaire) does not match the URL (http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire)
 INFORMATION: Questionnaire/hiv-case-report-questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
@@ -357,6 +247,7 @@ ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item
 ERROR: QuestionnaireResponse/exampleresponse: QuestionnaireResponse.item[2].item[2].item[1].answer[0].value.ofType(string): The Profile 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse' definition allows for the type Coding but found type string
 == /github/workspace/fsh-generated/resources/StructureDefinition-arv-therapy-summary.json ==
 INFORMATION: StructureDefinition/arv-therapy-summary: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/arv-therapy-summary'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-ethnicity.json ==
 INFORMATION: StructureDefinition/ethnicity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/ethnicity'): The Implementation Guide contains no examples for this extension
@@ -371,22 +262,7 @@ INFORMATION: StructureDefinition/hiv-cd4-observation: StructureDefinition: Valid
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-observation'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-hiv-condition.json ==
 INFORMATION: StructureDefinition/hiv-condition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-cr-composition.json ==
-INFORMATION: StructureDefinition/hiv-cr-composition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/hiv-cr-composition: StructureDefinition.snapshot.element[59].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://test.org/sectionCode' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/hiv-cr-composition: StructureDefinition.snapshot.element[73].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://test.org/sectionCode' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/hiv-cr-composition: StructureDefinition.snapshot.element[87].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://test.org/sectionCode' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/hiv-cr-composition: StructureDefinition.snapshot.element[101].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://test.org/sectionCode' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/hiv-cr-composition: StructureDefinition.differential.element[8].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://test.org/sectionCode' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/hiv-cr-composition: StructureDefinition.differential.element[12].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://test.org/sectionCode' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/hiv-cr-composition: StructureDefinition.differential.element[16].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://test.org/sectionCode' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/hiv-cr-composition: StructureDefinition.differential.element[20].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://test.org/sectionCode' is unknown so the code cannot be validated
-== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-cr-encounter.json ==
-INFORMATION: StructureDefinition/hiv-cr-encounter: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-encounter'): The Implementation Guide contains no examples for this profile
-== /github/workspace/fsh-generated/resources/StructureDefinition-hiv-cr-location.json ==
-INFORMATION: StructureDefinition/hiv-cr-location: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-location'): The Implementation Guide contains no examples for this profile
+INFORMATION: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-condition'): The Implementation Guide contains no explicitly linked examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient.json ==
 INFORMATION: StructureDefinition/hiv-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /github/workspace/fsh-generated/resources/StructureDefinition-hiv-recency-result.json ==
@@ -400,6 +276,7 @@ INFORMATION: StructureDefinition/hiv-specimen: StructureDefinition: Validate res
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-specimen'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-hiv-viral-load.json ==
 INFORMATION: StructureDefinition/hiv-viral-load: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-pregnancy-status.json ==
 INFORMATION: StructureDefinition/pregnancy-status: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/pregnancy-status'): The Implementation Guide contains no examples for this profile

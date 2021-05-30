@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="examplebundle"/>
+  <type value="collection"/>
+  <entry>
+    <resource>
+      <Patient>
+        <id value="test-hiv-patient"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 00001</p><p><b>name</b>: Robert , David Smith </p></div>
+        </text>
+        <identifier>
+          <system value="https://basespecs.vn/NamingSystem/ARTIdentifiers"/>
+          <value value="00001"/>
+        </identifier>
+        <name>
+          <given value="Robert"/>
+        </name>
+        <name>
+          <family value="Smith"/>
+          <given value="David"/>
+        </name>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Condition>
+        <id value="test-hiv-condition"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>subject</b>: <a href="#Patient_test-hiv-patient">See above (Patient/test-hiv-patient)</a></p><p><b>recordedDate</b>: 2020-09-09</p></div>
+        </text>
+        <subject>
+          <reference value="Patient/test-hiv-patient"/>
+        </subject>
+        <recordedDate value="2020-09-09"/>
+      </Condition>
+    </resource>
+  </entry>
+</Bundle>

@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HIV-CASEREPORTING\HIV Case Report - JSON Representation - FHIR v4.0.1</title>
+    <title>HIV-CASEREPORTING\Example Bundle - examplebundle - TTL Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"13.51"}
-    h3,h4,h5,h6{--heading-prefix:"13.51"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.43"}
+    h3,h4,h5,h6{--heading-prefix:"13.43"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -166,7 +166,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>HIV Case Report</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example Bundle - examplebundle</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -178,7 +178,7 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 8" class="col-12">
+<div style="counter-reset: section 9" class="col-12">
 <!--ReleaseHeader--><p id="publish-box">HIV Case Reporting and Monitoring - Local Development build (v0.2.0). See the <a href="http://openhie.org/fhir/hiv-casereporting/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
@@ -190,27 +190,27 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="Composition-HIVCrCompositionExample.html">Narrative Content</a>
+    <a href="Bundle-examplebundle.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="Composition-HIVCrCompositionExample.xml.html">XML</a>
+      <a href="Bundle-examplebundle.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-examplebundle.json.html">JSON</a>
     </li>
   
 
 
   
     <li class="active">
-      <a href="#">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="Composition-HIVCrCompositionExample.ttl.html">TTL</a>
+      <a href="#">TTL</a>
     </li>
   
 
@@ -222,118 +222,79 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: HIV Case Report - JSON Representation</h2>
+<h2 id="root">: Example Bundle - examplebundle - TTL Representation</h2>
 
-<p><a href="Composition-HIVCrCompositionExample.json" no-download="true">Raw json</a> | <a href="Composition-HIVCrCompositionExample.json" download>Download</a></p>
+<p><a href="Bundle-examplebundle.ttl" no-download="true">Raw ttl</a> | <a href="Bundle-examplebundle.ttl" download>Download</a></p>
 
   <!-- insert intro if present -->
   
 
 
 
-  <pre class="json"><code class="language-json">
-{
-  "<a href="http://hl7.org/fhir/R4/composition.html#Composition">resourceType</a>" : "Composition",
-  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.id">id</a>" : "HIVCrCompositionExample",
-  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.meta">meta</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-      "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition"
-    ]
-  },
-  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 1111&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://loinc.org 95412-3}\&quot;&gt;COVID-19 case report&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-HIVCrEncounterExample.html\&quot;&gt;Generated Summary: status: finished; &lt;span title=\&quot;{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}\&quot;&gt;inpatient acute&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2021-05-18&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;Practitioner-HIVCrPractitionerExample.html\&quot;&gt;Generated Summary: Homer , Simpson &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: HIV Case Report&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-  },
-  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.identifier">identifier</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://test.org/identifier/hiv-case-report",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "1111"
-  },
-  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.status">status</a>" : "final",
-  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.type">type</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-      {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "95412-3"
-      }
-    ]
-  },
-  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.encounter">encounter</a>" : {
-    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Encounter/HIVCrEncounterExample"
-  },
-  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.date">date</a>" : "2021-05-18",
-  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.author">author</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/HIVCrPractitionerExample"
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.title">title</a>" : "HIV Case Report",
-  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "hivPatient",
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://test.org/sectionCode",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "hivPatient"
-          }
-        ]
-      },
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/HIVPatientExample"
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "hivCondition",
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://test.org/sectionCode",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "hivCondition"
-          }
-        ]
-      },
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Condition/HIVConditionExample"
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "arvTherapySummary",
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://test.org/sectionCode",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "arvTherapySummary"
-          }
-        ]
-      },
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "MedicationStatement/ARVTherapySummaryExample"
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "viralLoad",
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://test.org/sectionCode",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "viralLoad"
-          }
-        ]
-      },
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/ViralLoadExample"
-        }
-      ]
-    }
-  ]
-}</code></pre>
+  <pre class="rdf"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Bundle;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;examplebundle&quot;];
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">fhir:Bundle.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;collection&quot;];
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">fhir:Bundle.entry</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/patient.html#Patient">fhir:Bundle.entry.resource</a> [
+       <a href="http://hl7.org/fhir/R4/patient.html">a</a> fhir:Patient;
+       <a href="http://hl7.org/fhir/R4/patient.html#Patient.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;test-hiv-patient&quot; ];
+       <a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">fhir:Resource.meta</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+           <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient&quot;;
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient&gt;         ]       ];
+       <a href="http://hl7.org/fhir/R4/patient.html#Patient.text">fhir:DomainResource.text</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 00001&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Robert , David Smith &lt;/p&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">fhir:Patient.identifier</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://basespecs.vn/NamingSystem/ARTIdentifiers&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;00001&quot; ]       ];
+       <a href="http://hl7.org/fhir/R4/patient.html#Patient.name">fhir:Patient.name</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">fhir:HumanName.given</a> [
+           <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Robert&quot;;
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">fhir:HumanName.family</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Smith&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">fhir:HumanName.given</a> [
+           <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;David&quot;;
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0         ]       ]     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4/condition.html#Condition">fhir:Bundle.entry.resource</a> [
+       <a href="http://hl7.org/fhir/R4/condition.html">a</a> fhir:Condition;
+       <a href="http://hl7.org/fhir/R4/condition.html#Condition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;test-hiv-condition&quot; ];
+       <a href="http://hl7.org/fhir/R4/condition.html#Condition.meta">fhir:Resource.meta</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+           <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-condition&quot;;
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-condition&gt;         ]       ];
+       <a href="http://hl7.org/fhir/R4/condition.html#Condition.text">fhir:DomainResource.text</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+         fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_test-hiv-patient\&quot;&gt;See above (Patient/test-hiv-patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: 2020-09-09&lt;/p&gt;&lt;/div&gt;&quot;       ];
+       <a href="http://hl7.org/fhir/R4/condition.html#Condition.subject">fhir:Condition.subject</a> [
+         <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/test-hiv-patient&quot; ]       ];
+       <a href="http://hl7.org/fhir/R4/condition.html#Condition.recordedDate">fhir:Condition.recordedDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2020-09-09&quot;^^xsd:date ]     ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</code></pre>
+
 
 
   <!-- insert notes if present -->
@@ -361,7 +322,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 30, 2021 12:12+0000">2021-05-30</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 30, 2021 12:21+0000">2021-05-30</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
