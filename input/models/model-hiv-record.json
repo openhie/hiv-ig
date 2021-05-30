@@ -270,7 +270,19 @@
       {
         "id": "HIVRecord.co-infections.treatment",
         "path": "HIVRecord.co-infections.treatment",
-        "short": "The patient's treatments  - should perhaps be a different parent element?",
+        "short": "The patient's treatments",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "HIVRecord.co-infections.treatment.treatmentType",
+        "path": "HIVRecord.co-infections.treatment.treatmentType",
+        "short": "The type of treatment",
         "min": 0,
         "max": "*",
         "type": [
