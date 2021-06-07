@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "CSTypeOfContact"];
   fhir:CodeSystem.title [ fhir:value "Type of contact or relationship"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-06-07T13:01:59+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-06-07T13:02:08+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "openHIE"];
   fhir:CodeSystem.contact [
      fhir:index 0;
