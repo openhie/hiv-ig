@@ -13,6 +13,8 @@ Description: "Example of a clinical bundle representing a case report"
 * entry[=].resource = HIVCrLocationExample
 * entry[+].fullUrl = "http://test.org/fhir/Patient/HIVPatientExample"
 * entry[=].resource = HIVPatientExample
+* entry[+].fullUrl = "http://test.org/fhir/RelatedPerson/GuardianExample"
+* entry[=].resource = GuardianExample
 * entry[+].fullUrl = "http://test.org/fhir/Condition/HIVConditionExample"
 * entry[=].resource = HIVConditionExample
 /*
@@ -59,6 +61,8 @@ Description: "Encounter example"
 * location.location = Reference(HIVCrLocationExample)
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#ACUTE
+* period.start = "2021-05-20"
+* period.end = "2021-05-20"
 
 Instance: HIVCrLocationExample
 InstanceOf: Location
@@ -102,6 +106,19 @@ Description: "."
 * identifier[art].value = "ART1234567"
 * identifier[national].value = "NAT1234567"
 * identifier[pos].value = "EMR1234567"
+* link.other = Reference(GuardianExample)
+* link.type = #seealso // what link to use?
+* maritalStatus = $MaritalStatus#M
+
+Instance: GuardianExample
+InstanceOf: RelatedPerson
+Usage: #example
+Title: "Related person example"
+Description: ""
+* name.given = "Peter"
+* name.family = "Loo"
+//* relationship = what to add here?
+* patient = Reference(HIVPatientExample)
 
 // First 90 - people who know they are HIV +ve
 Instance: HIVConditionExample

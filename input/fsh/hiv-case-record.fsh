@@ -2,6 +2,7 @@ Alias:   SCT = http://snomed.info/sct
 
 Alias: $CommPreference = http://hl7.org/fhir/StructureDefinition/patient-preferenceType
 Alias: $GenderIdentity = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity
+Alias: $MaritalStatus = http://hl7.org/fhir/ValueSet/marital-status
 
 Profile:    HIVCrComposition
 Parent:     Composition
@@ -40,8 +41,6 @@ Title:      "HIV Case Reporting Composition"
 * section[viralLoad].title = "viralLoad"
 * section[viralLoad].code = http://test.org/sectionCode#viralLoad
 * section[viralLoad].entry only Reference(ViralLoad)
-
-
 
 Profile: HIVCrEncounter
 Parent: Encounter
