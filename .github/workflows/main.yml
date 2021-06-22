@@ -1,11 +1,9 @@
 # This is a simple workflow that runs the publisher and copies the output to https://<owner>.github.io/<repo>/index.html
 # Based on the instructions from Elliot Silver, available from: https://www.argentixinfo.com/archives/156
+# Change log:
+# 2021-06-18: publish ddefault branches to / , other branches branches/<branch>
+
 # Make sure your repo has a branch called gh-pages
-
-
-# Update 15-Jan-2021: This now adds a FTP upload feature. This uses a repository secret.
-# Action documentation
-# https://github.com/marketplace/actions/ftp-deploy
 
 name: CI
 
@@ -16,10 +14,14 @@ on:
     branches: 
       - main
       - master
+      - draft
+      - candidate
   pull_request:
     branches: 
       - main
-      - master 
+      - master
+      - draft
+      - candidate
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -33,6 +35,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Get branch name
+        run: echo ${GITHUB_REF##*/}
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: Update the image to the latest publisher
@@ -47,21 +51,37 @@ jobs:
           # Run the publisher - don't run the batch script but run the line directly
           args: java -jar ./input-cache/publisher.jar publisher -ig .
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+
+      - name: Deploy candidate_test
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        if: ${{ steps.branch-name.outputs.current_branch }}  == 'jct_updates'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
+          branch: gh-pages # The branch the action should deploy to.
+          folder: ./output # The folder the action should deploy.
+          commit-message: Deploy candidate branch
+          target-folder: ${{ steps.branch-name.outputs.current_branch }}  
+          clean: false 
 
-#      - name: 📂 Sync files
-#        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-#        with:
-#          server: ftp.dlptest.com
-#          username: dlpuser
-#          password: ${{ secrets.ftp_password }}          
-#          local-dir: output/
-#          server-dir: fhir/hiv/
+      - name: Get branch names
+        id: branch-name
+        uses: tj-actions/branch-names@v4.3
+      
 
-#      - name: 🚚 Get latest code
-#        uses: actions/checkout@v2.3.2
-    
+      - name: Deploy candidate
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        if: ${{ steps.branch-name.outputs.is_default }} == 'false'
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: ./output # The folder the action should deploy.
+          commit-message: Deploy candidate branch
+          target-folder: branches/${{ steps.branch-name.outputs.current_branch }}
+          clean: false 
+
+      - name: Deploy main
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        if: ${{ steps.branch-name.outputs.is_default }} == 'true'
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: ./output # The folder the action should deploy.
+          commit-message: Deploy main branch
+          clean-exclude: branches
