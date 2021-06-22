@@ -34,8 +34,6 @@ skinparam class<<TL>> {
 }
 
 package "HIV Case Surveillance" as HIVCaseSurveillance {
-
-
   
     class "**Standardized**\n** Case **\n**Report**" as StdReport<<TL>> {
         Report
@@ -43,202 +41,98 @@ package "HIV Case Surveillance" as HIVCaseSurveillance {
         |_ Demographics  
         |_ Test Results
         |_ ARV
-        |_ Co-infections
         |_ Death
+          |_ Cause of Death
         --
         QuestionnaireResponse
         --
     }
 
     package "**  HIV Case  **\n**  Record  **" as Long<<AS>> {
-        class "**Patient**" as Pat<<TM>> {
+       class "**Patient**" as Pat<<TM>> {
             |_ Identification     
-              |_ ARV
-              |_ Passport
-              |_ Insurance
-            |_ Birth Year
-            |_ Ethnicity
-            |_ Name
+              |_ ART ID
+              |_ National ID
+              |_ Passport Nr
+              |_ OHRI ID
+            |_ First name
+            |_ Last name
             |_ Gender
-            |_ Address
-            |_ Occupation
-            |_ Population
+            |_ Date of birth
+            |_ Key population status 
+            |_ Marital status
+            |_ Country
+            |_ State
+            |_ District
+            |_ City
+            |_ Phone number
+            |_ Guardian name
             |_ Death
               |_ Date
-              |_ Cause
             --
             Patient
         }
-        class "** Risk **\n** Factors **" as Risk<<TM>> {
-            |_ Date Started     
-            |_ Risk Factor  
-            --
-            Condition
-        }
-        class "** Pregnancy **" as Preg<<TM>> {
-            |_ Date Reported
-            |_ Place Reported
-            |_ Delivery 
-              |_ Date
-              |_ Location
-            |_ Outcomes
-              |_ Code
-              |_ Birth
-                |_ Date
-                |_ Gestation Age
-                |_ Weight
-                |_ Defects
-                |_ HIV Status 
-                |_ HIV Diagnosis Date  
-                |_ ART start date
-            --
-            Condition
-        }
+
         class "** HIV **\n** Diagnosis **" as Diag<<TM>> {
-            |_ Transmission Route  
-            |_ Date of Confirmation  
-            |_ Confirming Lab 
-            |_ Specimen 
-              |_ Collection Date  
-              |_ Collection Place  
-            --
-            Observation
-        }
-        class "** Recency **\n** Test **" as Rec<<TM>> {
-            |_ Type (VL / Rapid)  
-            |_ Date of Test  
-            |_ Result
-            |_ Rapid Test
-              |_ Confirming Lab 
-              |_ Specimen 
-                |_ Collection Date  
-                |_ Collection Place  
-            |_ VL Test
-            --
-            Observation
-        }
-Pat -right[hidden]- Risk : ""
-Risk -right[hidden]- Preg : ""
-Preg -right[hidden]- Diag : ""
-Diag -right[hidden]- Rec : ""
-
-        class "**Drug**\n** Resistance **" as DRes<<TM>> {
-            |_ Date of Test  
-            |_ Specimen 
-              |_ Collection Date  
-              |_ Collection Place  
+            |_ Diagnosis date  
+            |_ Facility
+            |_ Unique positive test ID 
             --
             Observation
         }
 
-
-        class "** CD4 **\n** Before ART **" as CD4BeforeART<<TM>> {
-            |_ Date of Test  
-            |_ Confirming Lab ? 
-            |_ Specimen 
-              |_ Collection Date  
-              |_ Collection Place  
-            --
-            Observation
-        }
-        class "** CD4 **\n** During ART **" as CD4DuringART<<TM>> {
-            |_ Date of Test  
-            |_ Confirming Lab ? 
-            |_ Specimen 
-              |_ Collection Date  
-              |_ Collection Place  
-            --
-            Observation
-        }
-        class "** Viral Load **\n** During ART **" as VLDuringART<<TM>> {
-            |_ Date of Test  
-            |_ Specimen 
-              |_ Collection Date  
-              |_ Collection Place  
-            --
-            Observation
-            --
-        }
-
-
-
-        class "** Tuberculosis **\n**Prevention**" as TPT<<TM>> {
-            |_ Date Started
-            |_ Date Completed  
-            |_ Treatment place  
-            --
-            CarePlan
-        }
-        class "** Tuberculosis **\n**Diagnosis**" as TB<<TM>> {
-            |_ Diagnosis Date  
-            --
-            Condition
-        }
-        class "** Tuberculosis **\n**Treatment**" as TBT<<TM>> {
-            |_ Date Started
-            |_ Date Completed 
-            |_ Treatment place  
-            --
-            CarePlan
-        }
         class "**ARV**\n** Treatment **" as ARV<<TM>> {
-            |_ History
-            |_ Date Started
-            |_ Date Stopped  
-            |_ Location  
-            |_ Date of LFTU
-            |_ Transferred Out   
-              |_ Date
-              |_ Place  
-            |_ 1st Line Started  
-            |_ 2nd Line Started  
-            |_ 3rd Line Started  
+            |_ Start date
+            |_ End date  
+            |_ ART Regimen  
+            |_ Regimen line
             --
             CarePlan
         }
-        class "** HBV **" as HBV<<TM>> {
-            |_ Diagnosis Date
-            |_ Treatment
-              |_ Date Started
-              |_ Date Completed  
-              |_ Location  
-            --
-            Observation
-        }
-        class "** HCV **" as HCV<<TM>> {
-            |_ Diagnosis Date   
-            |_ Treatment
-              |_ Location  
+
+        class "** Recency **\n** Test **" as Rec<<TM>> {
+            |_ Recency test conducted  
+            |_ Test date
+            |_ Result
             --
             Observation
         }
 
+        class "** CD4 **" as CD4<<TM>> {
+            |_ Test date  
+            |_ Result
+            |_ Percentage 
+            --
+            Observation
+        }
 
+        class "** Viral Load **" as VL<<TM>> {
+            |_ Test date  
+            |_ Result
+            |_ Interpretation 
+            --
+            Observation
+            --
+        }
 
+        class "** Cause of death **" as COD<<TM>> {
+            |_ Death date  
+            |_ Cause of death coded 
+            |_ Cause of death other
+            --
+            Observation
+            --
+        }
     }
-    StdReport -down- Long: "                             "
-'    Frms -right-> StdReport: "       "
-'    MonthlyReport -right-> StdReport
-Pat -down[hidden]- TPT : ""
+}  
 
-TPT -right[hidden]- TB
-TB -right[hidden]- TBT
-TBT -right[hidden]- HBV : ""
-HBV -right[hidden]- HCV : ""
+Pat -right[hidden]- ARV : ""
+ARV -right[hidden]- COD : ""
+Pat -down[hidden]- Diag : ""
+Diag -right[hidden]- Rec : ""
+Rec -right[hidden]- VL : ""
+VL -right[hidden]- CD4 : ""
 
-
-TPT -down[hidden]- ARV : ""
-
-ARV -right[hidden]- DRes : ""
-DRes -right[hidden]- CD4BeforeART : ""
-CD4BeforeART -right[hidden]- CD4DuringART : ""
-CD4DuringART -right[hidden]- VLDuringART : ""
-DRes -right[hidden]- CD4BeforeART : ""
-
-  }  
-'MonthlyReport -right[hidden]-> StdReport
-
-  
 caption
 
 HIV Case Surveillance
