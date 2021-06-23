@@ -1,0 +1,12 @@
+{
+  "resourceType": "Location",
+  "id": "HIVCrLocationExample",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>address</b>: KZN ZA </p></div>"
+  },
+  "address": {
+    "state": "KZN",
+    "country": "ZA"
+  }
+}

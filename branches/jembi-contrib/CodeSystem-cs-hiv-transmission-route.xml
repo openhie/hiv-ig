@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-hiv-transmission-route"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-transmission-route defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="cs-hiv-transmission-route-1"> </a></td><td>Blood born</td><td>Blood born</td></tr><tr><td style="white-space:nowrap">2<a name="cs-hiv-transmission-route-2"> </a></td><td>Sexual Relationship</td><td>Sexual Relationship</td></tr><tr><td style="white-space:nowrap">3<a name="cs-hiv-transmission-route-3"> </a></td><td>Mother to child</td><td>Mother to child</td></tr><tr><td style="white-space:nowrap">4<a name="cs-hiv-transmission-route-4"> </a></td><td>Unidentified</td><td>Unidentified</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-transmission-route"/>
+  <version value="0.2.0"/>
+  <name value="CSHIVTransmissionRoute"/>
+  <title value="HIV Transmission Route"/>
+  <status value="active"/>
+  <date value="2021-06-23T12:14:02+00:00"/>
+  <publisher value="openHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem - Route of HIV transmission"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="1"/>
+    <display value="Blood born"/>
+    <definition value="Blood born"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Sexual Relationship"/>
+    <definition value="Sexual Relationship"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Mother to child"/>
+    <definition value="Mother to child"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Unidentified"/>
+    <definition value="Unidentified"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "test-hiv-patient",
+  "meta": {
+    "profile": [
+      "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 00001</p><p><b>name</b>: Robert , David Smith </p></div>"
+  },
+  "identifier": [
+    {
+      "system": "https://basespecs.vn/NamingSystem/ARTIdentifiers",
+      "value": "00001"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Robert"
+      ]
+    },
+    {
+      "family": "Smith",
+      "given": [
+        "David"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-hiv-population"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-cs-hiv-population.html"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population</code></a></li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-population"/>
+  <version value="0.2.0"/>
+  <name value="HIVPopulation"/>
+  <title value="Occupations relevant for HIV"/>
+  <status value="active"/>
+  <date value="2021-06-23T12:14:02+00:00"/>
+  <publisher value="openHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="Valueset - Occupations relevant for HIV"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population"/>
+    </include>
+  </compose>
+</ValueSet>
