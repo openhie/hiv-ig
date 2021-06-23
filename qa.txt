@@ -2,8 +2,8 @@
 =========================================
 
 err = 161, warn = 119, info = 3
-IG Publisher Version: 1.1.73
-Generated Mon Jun 07 13:05:21 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir/hiv-casereporting)
+IG Publisher Version: 1.1.75
+Generated Wed Jun 23 11:39:38 UTC 2021. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir/hiv-casereporting)
 
  Build Errors : 95 / 5 / 1
  /github/workspace/fsh-generated/resources/Bundle-examplebundle : 4 / 0 / 5
@@ -58,10 +58,10 @@ WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be 
 ERROR: WHOHIVAdaptationKitModel.patient.gender: The reference VSPatientGender could not be resolved
 ERROR: WHOHIVAdaptationKitModel.patient.genderIdentity: The reference VSPatientGenderIdentity could not be resolved
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/model-who-hiv-adaptation-kit.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/test-hiv-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Questionnaire/vn-hiv-csv-import-questionnaire.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/vn-hiv-csv-import-questionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/examplebundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/test-hiv-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: StructureDefinition-model-hiv-record.html: The reference CodeableReference could not be resolved
 ERROR: StructureDefinition-model-hiv-record.html: The reference period could not be resolved
 ERROR: StructureDefinition-model-who-hiv-adaptation-kit.html: The reference coding could not be resolved
