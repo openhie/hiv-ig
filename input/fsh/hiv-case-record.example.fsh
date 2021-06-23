@@ -108,7 +108,7 @@ Description: "."
 * identifier[pos].value = "EMR1234567"
 * link.other = Reference(GuardianExample)
 * link.type = #seealso // what link to use?
-* maritalStatus = $MaritalStatus#M
+//* maritalStatus = $MaritalStatus#M
 
 Instance: GuardianExample
 InstanceOf: RelatedPerson
