@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="HIVCrPractitionerExample"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>name</b>: Homer , Simpson </p></div>
+  </text>
+  <name>
+    <given value="Homer"/>
+  </name>
+  <name>
+    <family value="Simpson"/>
+  </name>
+</Practitioner>

@@ -154,6 +154,27 @@
     "name": "HIVCondition"
   },
   {
+    "id": "hiv-cr-composition",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition",
+    "version": "0.2.0",
+    "name": "HIVCrComposition"
+  },
+  {
+    "id": "hiv-cr-encounter",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-encounter",
+    "version": "0.2.0",
+    "name": "HIVCrEncounter"
+  },
+  {
+    "id": "hiv-cr-location",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-location",
+    "version": "0.2.0",
+    "name": "HIVCrLocation"
+  },
+  {
     "id": "hiv-patient",
     "type": "StructureDefinition",
     "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient",

@@ -50,6 +50,24 @@
         "title": "HIV Risk Behavior"
       }
     ],
+    "Composition": [
+      {
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition",
+        "title": "HIV Case Reporting Composition"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-encounter",
+        "title": "HIV CR Encounter"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-location",
+        "title": "HIV CR Location"
+      }
+    ],
     "Patient": [
       {
         "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient",

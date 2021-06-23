@@ -45,10 +45,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The patient's concurrent diagnosis","","","","","","","","","","",,,,,"",,,,"HIVRecord.co-infections.diagnosis.code",0,1,"",""
 "HIVRecord.co-infections.diagnosis.period","","","",0,1,"","","","Period {[]} {[]}
 ","The onset for tuberculosis","","","","","","","","","","",,,,,"",,,,"HIVRecord.co-infections.diagnosis.period",0,1,"",""
-"HIVRecord.co-infections.treatment","","","",0,*,"","","","BackboneElement {[]} {[]}
-","The patient's treatments","","","","","","","","","","",,,,,"",,,,"HIVRecord.co-infections.treatment",0,*,"",""
-"HIVRecord.co-infections.treatment.treatmentType","","","",0,*,"","","","CodeableReference {[]} {[]}
-","The type of treatment","","","","","","","","","","",,,,,"",,,,"HIVRecord.co-infections.treatment.treatmentType",0,*,"",""
+"HIVRecord.co-infections.treatment","","","",0,*,"","","","CodeableReference {[]} {[]}
+","The patient's treatments  - should perhaps be a different parent element?","","","","","","","","","","",,,,,"",,,,"HIVRecord.co-infections.treatment",0,*,"",""
 "HIVRecord.co-infections.treatment.period","","","",0,1,"","","","period {[]} {[]}
 ","The start date fot the patient's treatment for tuberculosis","","","","","","","","","","",,,,,"",,,,"HIVRecord.co-infections.treatment.period",0,1,"",""
 "HIVRecord.death","","","",0,1,"","","","BackboneElement {[]} {[]}
