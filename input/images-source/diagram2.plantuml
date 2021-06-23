@@ -81,13 +81,21 @@ package "HIV Case Surveillance" as HIVCaseSurveillance {
             Observation
         }
 
-        class "**ARV**\n** Treatment **" as ARV<<TM>> {
+        class "** ARV**\n** Treatment **" as ARV<<TM>> {
             |_ Start date
             |_ End date  
             |_ ART Regimen  
             |_ Regimen line
             --
             CarePlan
+        }
+
+        class "**  Encounter  **" as ENC<<TM>> {
+            |_ Start date
+            |_ End date  
+            |_ Location  
+            --
+            Encounter
         }
 
         class "** Recency **\n** Test **" as Rec<<TM>> {
