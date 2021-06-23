@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/Condition/HIVDiagnosisExample> a fhir:Condition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HIVDiagnosisExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-diagnosis";
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-diagnosis>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: \">active</span></p><p><b>verificationStatus</b>: <span title=\"Codes: \">confirmed</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 86406008}\">Human immunodeficiency virus infection</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Generated Summary: id: ART1234567, id: NAT1234567, id: EMR1234567; active; Jane , Smith ; Phone: +27825556666; gender: female; birthDate: 1986-06-04</a></p></div>"
+  ];
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "active" ]
+     ]
+  ];
+  fhir:Condition.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "confirmed" ]
+     ]
+  ];
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:86406008;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "86406008" ]
+     ]
+  ];
+  fhir:Condition.subject [
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/Patient/HIVPatientExample>;
+     fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/Condition/HIVDiagnosisExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

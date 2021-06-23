@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="HIVDiagnosisExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-diagnosis"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title="Codes: ">active</span></p><p><b>verificationStatus</b>: <span title="Codes: ">confirmed</span></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 86406008}">Human immunodeficiency virus infection</span></p><p><b>subject</b>: <a href="Patient-HIVPatientExample.html">Generated Summary: id: ART1234567, id: NAT1234567, id: EMR1234567; active; Jane , Smith ; Phone: +27825556666; gender: female; birthDate: 1986-06-04</a></p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="86406008"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/HIVPatientExample"/>
+  </subject>
+</Condition>

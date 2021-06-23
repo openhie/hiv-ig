@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "GuardianExample"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>patient</b>: <a href=\"Patient-HIVPatientExample.html\">Generated Summary: id: ART1234567, id: NAT1234567, id: EMR1234567; active; Jane , Smith ; johndoe@erewhon.com, Phone: +27825556666; gender: female; birthDate: 1986-06-04</a></p><p><b>name</b>: Peter Loo </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>patient</b>: <a href=\"Patient-HIVPatientExample.html\">Generated Summary: id: ART1234567, id: NAT1234567, id: EMR1234567; active; Jane , Smith ; Phone: +27825556666; gender: female; birthDate: 1986-06-04</a></p><p><b>name</b>: Peter Loo </p></div>"
   ];
   fhir:RelatedPerson.patient [
      fhir:link <http://openhie.org/fhir/hiv-casereporting/Patient/HIVPatientExample>;
