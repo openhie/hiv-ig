@@ -1,0 +1,206 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/QuestionnaireResponse/exampleresponse> a fhir:QuestionnaireResponse;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "exampleresponse"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse>
+     ];
+     fhir:Meta.tag [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "lforms" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire\">http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <span></span></p><p><b>authored</b>: Mar 3, 2021, 8:05:09 PM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: unit_name</p><p><b>text</b>: Governing body unit name</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>01</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: reportDate</p><p><b>text</b>: Date of report</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>2021-03-01</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: questions</p><p><b>text</b>: Monthly report</p><blockquote><p><b>item</b></p><p><b>linkId</b>: identifying_information</p><p><b>text</b>: Part I: Identifying Information</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: hiv-diagnosis</p><p><b>text</b>: HIV Diagnosis</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: arvTreatment</p><p><b>text</b>: ARV Treatment</p></blockquote></blockquote></div>"
+  ];
+  fhir:QuestionnaireResponse.questionnaire [
+     fhir:value "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire";
+     fhir:link <http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire>;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/display" ];
+       fhir:Extension.valueString [ fhir:value "HIV Case Report Questionnaire" ]
+     ]
+  ];
+  fhir:QuestionnaireResponse.status [ fhir:value "completed"];
+  fhir:QuestionnaireResponse.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://example.org/identifiers" ];
+       fhir:Identifier.value [ fhir:value "123" ]
+     ]
+  ];
+  fhir:QuestionnaireResponse.authored [ fhir:value "2021-03-03T20:05:09.707Z"^^xsd:dateTime];
+  fhir:QuestionnaireResponse.item [
+     fhir:index 0;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "unit_name" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Governing body unit name" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "01" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "reportDate" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Date of report" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2021-03-01"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "questions" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Monthly report" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "identifying_information" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Part I: Identifying Information" ];
+       fhir:QuestionnaireResponse.item.item [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "arv_patient_nr" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "ARV Patient Number" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "ARV001" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "personal_information" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Personal Information" ];
+         fhir:QuestionnaireResponse.item.item [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "name" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Full name" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "John Johnson" ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "birth_year" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Year of Birth" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueInteger [ fhir:value "1970"^^xsd:integer ]
+           ]
+         ], [
+           fhir:index 2;
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "id_cccd" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Identification" ];
+           fhir:QuestionnaireResponse.item.item [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.linkId [ fhir:value "health_insurance_code" ];
+             fhir:QuestionnaireResponse.item.text [ fhir:value "Health insurance code" ];
+             fhir:QuestionnaireResponse.item.answer [
+               fhir:index 0;
+               fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "NI000001" ]
+             ]
+           ], [
+             fhir:index 1;
+             fhir:QuestionnaireResponse.item.linkId [ fhir:value "passport_nr" ];
+             fhir:QuestionnaireResponse.item.text [ fhir:value "Passport Number" ];
+             fhir:QuestionnaireResponse.item.answer [
+               fhir:index 0;
+               fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "P000001" ]
+             ]
+           ]
+         ], [
+           fhir:index 3;
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "residence" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Residence" ];
+           fhir:QuestionnaireResponse.item.item [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.linkId [ fhir:value "current" ];
+             fhir:QuestionnaireResponse.item.text [ fhir:value "Current residence" ];
+             fhir:QuestionnaireResponse.item.answer [
+               fhir:index 0;
+               fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Current Street, 1" ]
+             ]
+           ], [
+             fhir:index 1;
+             fhir:QuestionnaireResponse.item.linkId [ fhir:value "permanent" ];
+             fhir:QuestionnaireResponse.item.text [ fhir:value "Permanent residence" ];
+             fhir:QuestionnaireResponse.item.answer [
+               fhir:index 0;
+               fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Permanent Blvd" ]
+             ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "hiv-diagnosis" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "HIV Diagnosis" ];
+       fhir:QuestionnaireResponse.item.item [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "hiv-diagnosis.dateOfConfirmation" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Date of Confirmation" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2020-11-12"^^xsd:date ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "hiv-diagnosis.confirmingLab" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Confirming Lab" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "SafeTest Lab" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "hiv-diagnosis.dateOfSpecimenCollection" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Date of Specimen Collection" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2020-11-11"^^xsd:date ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "hiv-diagnosis.placeOfSpecimenCollection" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Place of Specimen Collection" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "At patient's place during a visit" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "arvTreatment" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "ARV Treatment" ];
+       fhir:QuestionnaireResponse.item.item [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "arvTreatment.dateOfTreatmentStart" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Date of treatment start" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2020-11-19"^^xsd:date ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "arvTreatment.placeOfInitiation" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Place of ARV treatment initiation" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Home" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/QuestionnaireResponse/exampleresponse.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-patient-communication-preferences"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-cs-patient-communication-preferences.html"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-communication-preferences</code></a></li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-communication-preferences"/>
+  <version value="0.2.0"/>
+  <name value="PatientCommunicationPreferences"/>
+  <title value="Patient Communication Preferences"/>
+  <status value="active"/>
+  <date value="2021-06-23T11:39:00+00:00"/>
+  <publisher value="openHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="Valueset - Patient Communication Preferences"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-communication-preferences"/>
+    </include>
+  </compose>
+</ValueSet>

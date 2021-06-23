@@ -1,0 +1,100 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-hiv-occupations",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-hiv-occupations-1\"> </a></td><td>Sex workers</td><td>Employees of facilities providing services that are vulnerable to be abused to engage in prostitution</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-hiv-occupations-2\"> </a></td><td>Drivers</td><td>Drivers</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-hiv-occupations-3\"> </a></td><td>Fishermen</td><td>Fishermen</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-hiv-occupations-4\"> </a></td><td>Agricultural workers</td><td>Agricultural workers</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-hiv-occupations-5\"> </a></td><td>Workers</td><td>Workers</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"cs-hiv-occupations-6\"> </a></td><td>Officers and soldiers</td><td>Officers and soldiers</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"cs-hiv-occupations-7\"> </a></td><td>Public servants or workers with labor contracts</td><td>Public servants, officers, or workers with labor contracts under labor laws</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"cs-hiv-occupations-8\"> </a></td><td>Students</td><td>Pupils, students</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"cs-hiv-occupations-9\"> </a></td><td>Children</td><td>Children</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"cs-hiv-occupations-10\"> </a></td><td>Workers without labor contract</td><td>Workers without labor contract</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"cs-hiv-occupations-11\"> </a></td><td>Out of work</td><td>Out of work</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"cs-hiv-occupations-12\"> </a></td><td>Prisoners</td><td>Prisoners</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations",
+  "version": "0.2.0",
+  "name": "CSHIVOccupations",
+  "title": "Occupations relevant for HIV",
+  "status": "active",
+  "date": "2021-06-23T11:39:00+00:00",
+  "publisher": "openHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "CodeSystem Occupations for HIV",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 12,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Sex workers",
+      "definition": "Employees of facilities providing services that are vulnerable to be abused to engage in prostitution"
+    },
+    {
+      "code": "2",
+      "display": "Drivers",
+      "definition": "Drivers"
+    },
+    {
+      "code": "3",
+      "display": "Fishermen",
+      "definition": "Fishermen"
+    },
+    {
+      "code": "4",
+      "display": "Agricultural workers",
+      "definition": "Agricultural workers"
+    },
+    {
+      "code": "5",
+      "display": "Workers",
+      "definition": "Workers"
+    },
+    {
+      "code": "6",
+      "display": "Officers and soldiers",
+      "definition": "Officers and soldiers"
+    },
+    {
+      "code": "7",
+      "display": "Public servants or workers with labor contracts",
+      "definition": "Public servants, officers, or workers with labor contracts under labor laws"
+    },
+    {
+      "code": "8",
+      "display": "Students",
+      "definition": "Pupils, students"
+    },
+    {
+      "code": "9",
+      "display": "Children",
+      "definition": "Children"
+    },
+    {
+      "code": "10",
+      "display": "Workers without labor contract",
+      "definition": "Workers without labor contract"
+    },
+    {
+      "code": "11",
+      "display": "Out of work",
+      "definition": "Out of work"
+    },
+    {
+      "code": "12",
+      "display": "Prisoners",
+      "definition": "Prisoners"
+    }
+  ]
+}

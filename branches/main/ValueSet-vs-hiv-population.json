@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-hiv-population",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-hiv-population.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population</code></a></li></ul></div>"
+  },
+  "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-population",
+  "version": "0.2.0",
+  "name": "HIVPopulation",
+  "title": "Occupations relevant for HIV",
+  "status": "active",
+  "date": "2021-06-23T11:39:00+00:00",
+  "publisher": "openHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "Valueset - Occupations relevant for HIV",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1454 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "model-who-hiv-adaptation-kit",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel\">WHOHIVAdaptationKitModel</a><a name=\"WHOHIVAdaptationKitModel\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Element\">Element</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient\" title=\"Patient info\">patient</a><a name=\"WHOHIVAdaptationKitModel.patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Patient<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.name\" title=\"Patient's name\">name</a><a name=\"WHOHIVAdaptationKitModel.patient.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#HumanName\">HumanName</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Patient's name<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.identification\" title=\"Patient Identification\">identification</a><a name=\"WHOHIVAdaptationKitModel.patient.identification\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Patient identification</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.identification.uniqueId\" title=\"Unique identifier generated for new clients or a universal ID, if used in the country.\">uniqueId</a><a name=\"WHOHIVAdaptationKitModel.patient.identification.uniqueId\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Unique ID</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.identification.nationalId\" title=\"National unique identifier assigned to the client, if used in the country.\">nationalId</a><a name=\"WHOHIVAdaptationKitModel.patient.identification.nationalId\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">National ID</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.identification.nationalHealthId\" title=\"National health unique identifier assigned to the client, if used in the country.\">nationalHealthId</a><a name=\"WHOHIVAdaptationKitModel.patient.identification.nationalHealthId\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">National health ID</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.identification.nationalProgramId\" title=\"National program unique identifier assigned to the client, if used in the country.\">nationalProgramId</a><a name=\"WHOHIVAdaptationKitModel.patient.identification.nationalProgramId\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">National program ID</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.identification.nationalHealthInsuranceId\" title=\"National health insurance unique identifier assigned to the client, if used in the country.\">nationalHealthInsuranceId</a><a name=\"WHOHIVAdaptationKitModel.patient.identification.nationalHealthInsuranceId\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">National health insurance ID</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.countryOfBirth\" title=\"Country where the client was born\">countryOfBirth</a><a name=\"WHOHIVAdaptationKitModel.patient.countryOfBirth\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Country of birth</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.dateOfBirth\" title=\"The client's date of birth (DOB) if known.\">dateOfBirth</a><a name=\"WHOHIVAdaptationKitModel.patient.dateOfBirth\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date of birth </td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.dateOfBirthUnknown\" title=\"Select this if the client's DOB is unknown.\">dateOfBirthUnknown</a><a name=\"WHOHIVAdaptationKitModel.patient.dateOfBirthUnknown\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date of birth unknown</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.age\" title=\"Calculated age (number of years) of the client based on date of birth\">age</a><a name=\"WHOHIVAdaptationKitModel.patient.age\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">SimpleQuantity</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Age</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.estimatedAge\" title=\"If DOB is unknown, enter the client's estimated age. Display client's age in number of years.\">estimatedAge</a><a name=\"WHOHIVAdaptationKitModel.patient.estimatedAge\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">SimpleQuantity</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Estimated age</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.gender\" title=\"Patient gender\">gender</a><a name=\"WHOHIVAdaptationKitModel.patient.gender\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Patient gender<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"VSPatientGender.html\">VSPatientGender</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.genderIdentity\" title=\"The gender that the client identifies with\">genderIdentity</a><a name=\"WHOHIVAdaptationKitModel.patient.genderIdentity\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Gender identity<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"VSPatientGenderIdentity.html\">VSPatientGenderIdentity</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.address\" title=\"Client's home address or address at which the client is consenting to disclose\">address</a><a name=\"WHOHIVAdaptationKitModel.patient.address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Address</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.telephoneNumber\" title=\"Can be a landline or a mobile phone number\">telephoneNumber</a><a name=\"WHOHIVAdaptationKitModel.patient.telephoneNumber\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Telephone Number</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.administrativeArea\" title=\"This should be a context-specific list of administrative areas, such as villages, districts, etc. The purpose of this data element is to allow for grouping and flagging of client data to a particular facility's catchment area. This can be input into the system by the end user OR it can be automated in the database based on the end user's attributes\">administrativeArea</a><a name=\"WHOHIVAdaptationKitModel.patient.administrativeArea\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Administrative Area</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.communicationConsent\" title=\"Indication that client gave consent to be contacted\">communicationConsent</a><a name=\"WHOHIVAdaptationKitModel.patient.communicationConsent\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Communication Consent</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.reminderMessages\" title=\"Whether client wants to receive text or other messages as follow-up for family planning\">reminderMessages</a><a name=\"WHOHIVAdaptationKitModel.patient.reminderMessages\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reminder messages</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.communicationPreferences\" title=\"text-message | voice-call\">communicationPreferences</a><a name=\"WHOHIVAdaptationKitModel.patient.communicationPreferences\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Communication preference(s)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.email\" title=\"Client's primary email account where the client can be contacted\">email</a><a name=\"WHOHIVAdaptationKitModel.patient.email\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Client's E-mail</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.alternateContact\" title=\"An alternate contact, which could be next of kin (e.g. partner, husband, mother, sibling, etc.). The alternate contact would be used in the case of an emergency situation.\">alternateContact</a><a name=\"WHOHIVAdaptationKitModel.patient.alternateContact\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Alternate contact </td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.alternateContact.name\" title=\"Name of alternate contact\">name</a><a name=\"WHOHIVAdaptationKitModel.patient.alternateContact.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Alternate contact's name </td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.alternateContact.phoneNumber\" title=\"Phone number of the alternate contact.\">phoneNumber</a><a name=\"WHOHIVAdaptationKitModel.patient.alternateContact.phoneNumber\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Alternate contact's phone number</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.alternateContact.address\" title=\"Alternate contact's home address or address at which the client able to disclose.\">address</a><a name=\"WHOHIVAdaptationKitModel.patient.alternateContact.address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Alternate contact's address</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.patient.alternateContact.relationship\" title=\"The alternate contact's relationship to the client (e.g. partner, husband, mother, sibling, etc.).\">relationship</a><a name=\"WHOHIVAdaptationKitModel.patient.alternateContact.relationship\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Alternate contact relationship</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit\" title=\"Patient's visits\">visit</a><a name=\"WHOHIVAdaptationKitModel.visit\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Visit<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.date\" title=\"The date and time of the client's visit\">date</a><a name=\"WHOHIVAdaptationKitModel.visit.date\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Visit date</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referral\" title=\"If client was referred for care\">referral</a><a name=\"WHOHIVAdaptationKitModel.visit.referral\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Referral<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referral.referred\" title=\"If client was referred for care\">referred</a><a name=\"WHOHIVAdaptationKitModel.visit.referral.referred\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Referred</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referral.referrer\" title=\"Referred by the Community level services / health facility\">referrer</a><a name=\"WHOHIVAdaptationKitModel.visit.referral.referrer\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Referred by</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.reason\">reason</a><a name=\"WHOHIVAdaptationKitModel.visit.reason\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reason for HIV testing services visit</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.firstTimeHIVTest\" title=\"First encounter for screening for human immunodeficiency virus\">firstTimeHIVTest</a><a name=\"WHOHIVAdaptationKitModel.visit.firstTimeHIVTest\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">First encounter for screening for human immunodeficiency virus</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.hivRetest\" title=\"Retesting for human immunodeficiency virus\">hivRetest</a><a name=\"WHOHIVAdaptationKitModel.visit.hivRetest\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Retesting for human immunodeficiency virus</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck001.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referredByPartnerServices\" title=\"Client reported coming to the facility after receiving a provider-assisted referral or patient referral from a contact or partner.\">referredByPartnerServices</a><a name=\"WHOHIVAdaptationKitModel.visit.referredByPartnerServices\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Referred through partner services </td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referredByPartnerServices.indexCase\" title=\"The client is a contact or partner of a person diagnosed with HIV (an index case).\">indexCase</a><a name=\"WHOHIVAdaptationKitModel.visit.referredByPartnerServices.indexCase\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Partner or contact of an index case</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referredByPartnerServices.non-indexCase\" title=\"The client is a contact or partner identified through partner or social network services, but is not known to be a partner of an index-case.\">non-indexCase</a><a name=\"WHOHIVAdaptationKitModel.visit.referredByPartnerServices.non-indexCase\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Partner or contact of an HIV testing client (non-index case)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0001.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact\" title=\"Client's relationship to the person that referred the client for partner services or family services\">typeOfContact</a><a name=\"WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">coding</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Type of contact or partner for partner services<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-vs-type-of-contact.html\">Type of contact or relationship</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00001.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV\">exposureToHIV</a><a name=\"WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-model-who-hiv-adaptation-kit-definitions.html#WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV.date\" title=\"Date and time when the client had suspected exposure to HIV\">date</a><a name=\"WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV.date\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">DateTime of suspected exposure to HIV</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url": "http://openhie.org/standards/fhir/hiv/model-who-hiv-adaptation-kit",
+  "version": "0.2.0",
+  "name": "WHOHIVAdaptationKitModel",
+  "status": "draft",
+  "date": "2021-01-07",
+  "publisher": "openHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "This logical model reflects the WHO HIV Digital Accelerator Kit data dictionary",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "WHOHIVAdaptationKitModel",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "WHOHIVAdaptationKitModel",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
+        "path": "WHOHIVAdaptationKitModel",
+        "short": "Base for all elements",
+        "definition": "Base definition for all elements in a resource.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element",
+          "min": 0,
+          "max": "*"
+        },
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.id",
+        "path": "WHOHIVAdaptationKitModel.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.extension",
+        "path": "WHOHIVAdaptationKitModel.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient",
+        "path": "WHOHIVAdaptationKitModel.patient",
+        "short": "Patient",
+        "definition": "Patient info",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.name",
+        "path": "WHOHIVAdaptationKitModel.patient.name",
+        "short": "Patient's name",
+        "definition": "Patient's name",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.name",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "HumanName"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.identification",
+        "path": "WHOHIVAdaptationKitModel.patient.identification",
+        "short": "Patient identification",
+        "definition": "Patient Identification",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.identification",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.identification.uniqueId",
+        "path": "WHOHIVAdaptationKitModel.patient.identification.uniqueId",
+        "short": "Unique ID",
+        "definition": "Unique identifier generated for new clients or a universal ID, if used in the country.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.identification.uniqueId",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.identification.nationalId",
+        "path": "WHOHIVAdaptationKitModel.patient.identification.nationalId",
+        "short": "National ID",
+        "definition": "National unique identifier assigned to the client, if used in the country.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.identification.nationalId",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.identification.nationalHealthId",
+        "path": "WHOHIVAdaptationKitModel.patient.identification.nationalHealthId",
+        "short": "National health ID",
+        "definition": "National health unique identifier assigned to the client, if used in the country.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.identification.nationalHealthId",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.identification.nationalProgramId",
+        "path": "WHOHIVAdaptationKitModel.patient.identification.nationalProgramId",
+        "short": "National program ID",
+        "definition": "National program unique identifier assigned to the client, if used in the country.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.identification.nationalProgramId",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.identification.nationalHealthInsuranceId",
+        "path": "WHOHIVAdaptationKitModel.patient.identification.nationalHealthInsuranceId",
+        "short": "National health insurance ID",
+        "definition": "National health insurance unique identifier assigned to the client, if used in the country.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.identification.nationalHealthInsuranceId",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.countryOfBirth",
+        "path": "WHOHIVAdaptationKitModel.patient.countryOfBirth",
+        "short": "Country of birth",
+        "definition": "Country where the client was born",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.countryOfBirth",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.dateOfBirth",
+        "path": "WHOHIVAdaptationKitModel.patient.dateOfBirth",
+        "short": "Date of birth ",
+        "definition": "The client's date of birth (DOB) if known.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.dateOfBirth",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.dateOfBirthUnknown",
+        "path": "WHOHIVAdaptationKitModel.patient.dateOfBirthUnknown",
+        "short": "Date of birth unknown",
+        "definition": "Select this if the client's DOB is unknown.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.dateOfBirthUnknown",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.age",
+        "path": "WHOHIVAdaptationKitModel.patient.age",
+        "short": "Age",
+        "definition": "Calculated age (number of years) of the client based on date of birth",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.age",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "SimpleQuantity"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.estimatedAge",
+        "path": "WHOHIVAdaptationKitModel.patient.estimatedAge",
+        "short": "Estimated age",
+        "definition": "If DOB is unknown, enter the client's estimated age. Display client's age in number of years.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.estimatedAge",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "SimpleQuantity"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.gender",
+        "path": "WHOHIVAdaptationKitModel.patient.gender",
+        "short": "Patient gender",
+        "definition": "Patient gender",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.gender",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "VSPatientGender"
+        }
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.genderIdentity",
+        "path": "WHOHIVAdaptationKitModel.patient.genderIdentity",
+        "short": "Gender identity",
+        "definition": "The gender that the client identifies with",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.genderIdentity",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "VSPatientGenderIdentity"
+        }
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.address",
+        "path": "WHOHIVAdaptationKitModel.patient.address",
+        "short": "Address",
+        "definition": "Client's home address or address at which the client is consenting to disclose",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.address",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.telephoneNumber",
+        "path": "WHOHIVAdaptationKitModel.patient.telephoneNumber",
+        "short": "Telephone Number",
+        "definition": "Can be a landline or a mobile phone number",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.telephoneNumber",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.administrativeArea",
+        "path": "WHOHIVAdaptationKitModel.patient.administrativeArea",
+        "short": "Administrative Area",
+        "definition": "This should be a context-specific list of administrative areas, such as villages, districts, etc. The purpose of this data element is to allow for grouping and flagging of client data to a particular facility's catchment area. This can be input into the system by the end user OR it can be automated in the database based on the end user's attributes",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.administrativeArea",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.communicationConsent",
+        "path": "WHOHIVAdaptationKitModel.patient.communicationConsent",
+        "short": "Communication Consent",
+        "definition": "Indication that client gave consent to be contacted",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.communicationConsent",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.reminderMessages",
+        "path": "WHOHIVAdaptationKitModel.patient.reminderMessages",
+        "short": "Reminder messages",
+        "definition": "Whether client wants to receive text or other messages as follow-up for family planning",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.reminderMessages",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.communicationPreferences",
+        "path": "WHOHIVAdaptationKitModel.patient.communicationPreferences",
+        "short": "Communication preference(s)",
+        "definition": "text-message | voice-call",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.communicationPreferences",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.email",
+        "path": "WHOHIVAdaptationKitModel.patient.email",
+        "short": "Client's E-mail",
+        "definition": "Client's primary email account where the client can be contacted",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.email",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.alternateContact",
+        "path": "WHOHIVAdaptationKitModel.patient.alternateContact",
+        "short": "Alternate contact ",
+        "definition": "An alternate contact, which could be next of kin (e.g. partner, husband, mother, sibling, etc.). The alternate contact would be used in the case of an emergency situation.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.alternateContact",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.alternateContact.name",
+        "path": "WHOHIVAdaptationKitModel.patient.alternateContact.name",
+        "short": "Alternate contact's name ",
+        "definition": "Name of alternate contact",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.alternateContact.name",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.alternateContact.phoneNumber",
+        "path": "WHOHIVAdaptationKitModel.patient.alternateContact.phoneNumber",
+        "short": "Alternate contact's phone number",
+        "definition": "Phone number of the alternate contact.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.alternateContact.phoneNumber",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.alternateContact.address",
+        "path": "WHOHIVAdaptationKitModel.patient.alternateContact.address",
+        "short": "Alternate contact's address",
+        "definition": "Alternate contact's home address or address at which the client able to disclose.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.alternateContact.address",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.alternateContact.relationship",
+        "path": "WHOHIVAdaptationKitModel.patient.alternateContact.relationship",
+        "short": "Alternate contact relationship",
+        "definition": "The alternate contact's relationship to the client (e.g. partner, husband, mother, sibling, etc.).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.patient.alternateContact.relationship",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit",
+        "path": "WHOHIVAdaptationKitModel.visit",
+        "short": "Visit",
+        "definition": "Patient's visits",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.visit",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.date",
+        "path": "WHOHIVAdaptationKitModel.visit.date",
+        "short": "Visit date",
+        "definition": "The date and time of the client's visit",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.visit.date",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.referral",
+        "path": "WHOHIVAdaptationKitModel.visit.referral",
+        "short": "Referral",
+        "definition": "If client was referred for care",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.visit.referral",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.referral.referred",
+        "path": "WHOHIVAdaptationKitModel.visit.referral.referred",
+        "short": "Referred",
+        "definition": "If client was referred for care",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.visit.referral.referred",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.referral.referrer",
+        "path": "WHOHIVAdaptationKitModel.visit.referral.referrer",
+        "short": "Referred by",
+        "definition": "Referred by the Community level services / health facility",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.visit.referral.referrer",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.reason",
+        "path": "WHOHIVAdaptationKitModel.visit.reason",
+        "short": "Reason for HIV testing services visit",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.visit.reason",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.firstTimeHIVTest",
+        "path": "WHOHIVAdaptationKitModel.visit.firstTimeHIVTest",
+        "short": "First encounter for screening for human immunodeficiency virus",
+        "definition": "First encounter for screening for human immunodeficiency virus",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.visit.firstTimeHIVTest",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.hivRetest",
+        "path": "WHOHIVAdaptationKitModel.visit.hivRetest",
+        "short": "Retesting for human immunodeficiency virus",
+        "definition": "Retesting for human immunodeficiency virus",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.visit.hivRetest",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices",
+        "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices",
+        "short": "Referred through partner services ",
+        "definition": "Client reported coming to the facility after receiving a provider-assisted referral or patient referral from a contact or partner.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.indexCase",
+        "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.indexCase",
+        "short": "Partner or contact of an index case",
+        "definition": "The client is a contact or partner of a person diagnosed with HIV (an index case).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.indexCase",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.non-indexCase",
+        "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.non-indexCase",
+        "short": "Partner or contact of an HIV testing client (non-index case)",
+        "definition": "The client is a contact or partner identified through partner or social network services, but is not known to be a partner of an index-case.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.non-indexCase",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact",
+        "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact",
+        "short": "Type of contact or partner for partner services",
+        "definition": "Client's relationship to the person that referred the client for partner services or family services",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "vs-type-of-contact"
+        }
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV.date",
+        "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV.date",
+        "short": "DateTime of suspected exposure to HIV",
+        "definition": "Date and time when the client had suspected exposure to HIV",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV.date",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "WHOHIVAdaptationKitModel.patient",
+        "path": "WHOHIVAdaptationKitModel.patient",
+        "short": "Patient",
+        "definition": "Patient info",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.name",
+        "path": "WHOHIVAdaptationKitModel.patient.name",
+        "short": "Patient's name",
+        "definition": "Patient's name",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "HumanName"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.identification",
+        "path": "WHOHIVAdaptationKitModel.patient.identification",
+        "short": "Patient identification",
+        "definition": "Patient Identification",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.identification.uniqueId",
+        "path": "WHOHIVAdaptationKitModel.patient.identification.uniqueId",
+        "short": "Unique ID",
+        "definition": "Unique identifier generated for new clients or a universal ID, if used in the country.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.identification.nationalId",
+        "path": "WHOHIVAdaptationKitModel.patient.identification.nationalId",
+        "short": "National ID",
+        "definition": "National unique identifier assigned to the client, if used in the country.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.identification.nationalHealthId",
+        "path": "WHOHIVAdaptationKitModel.patient.identification.nationalHealthId",
+        "short": "National health ID",
+        "definition": "National health unique identifier assigned to the client, if used in the country.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.identification.nationalProgramId",
+        "path": "WHOHIVAdaptationKitModel.patient.identification.nationalProgramId",
+        "short": "National program ID",
+        "definition": "National program unique identifier assigned to the client, if used in the country.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.identification.nationalHealthInsuranceId",
+        "path": "WHOHIVAdaptationKitModel.patient.identification.nationalHealthInsuranceId",
+        "short": "National health insurance ID",
+        "definition": "National health insurance unique identifier assigned to the client, if used in the country.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.countryOfBirth",
+        "path": "WHOHIVAdaptationKitModel.patient.countryOfBirth",
+        "short": "Country of birth",
+        "definition": "Country where the client was born",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.dateOfBirth",
+        "path": "WHOHIVAdaptationKitModel.patient.dateOfBirth",
+        "short": "Date of birth ",
+        "definition": "The client's date of birth (DOB) if known.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.dateOfBirthUnknown",
+        "path": "WHOHIVAdaptationKitModel.patient.dateOfBirthUnknown",
+        "short": "Date of birth unknown",
+        "definition": "Select this if the client's DOB is unknown.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.age",
+        "path": "WHOHIVAdaptationKitModel.patient.age",
+        "short": "Age",
+        "definition": "Calculated age (number of years) of the client based on date of birth",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SimpleQuantity"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.estimatedAge",
+        "path": "WHOHIVAdaptationKitModel.patient.estimatedAge",
+        "short": "Estimated age",
+        "definition": "If DOB is unknown, enter the client's estimated age. Display client's age in number of years.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "SimpleQuantity"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.gender",
+        "path": "WHOHIVAdaptationKitModel.patient.gender",
+        "short": "Patient gender",
+        "definition": "Patient gender",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "VSPatientGender"
+        }
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.genderIdentity",
+        "path": "WHOHIVAdaptationKitModel.patient.genderIdentity",
+        "short": "Gender identity",
+        "definition": "The gender that the client identifies with",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "VSPatientGenderIdentity"
+        }
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.address",
+        "path": "WHOHIVAdaptationKitModel.patient.address",
+        "short": "Address",
+        "definition": "Client's home address or address at which the client is consenting to disclose",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.telephoneNumber",
+        "path": "WHOHIVAdaptationKitModel.patient.telephoneNumber",
+        "short": "Telephone Number",
+        "definition": "Can be a landline or a mobile phone number",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.administrativeArea",
+        "path": "WHOHIVAdaptationKitModel.patient.administrativeArea",
+        "short": "Administrative Area",
+        "definition": "This should be a context-specific list of administrative areas, such as villages, districts, etc. The purpose of this data element is to allow for grouping and flagging of client data to a particular facility's catchment area. This can be input into the system by the end user OR it can be automated in the database based on the end user's attributes",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.communicationConsent",
+        "path": "WHOHIVAdaptationKitModel.patient.communicationConsent",
+        "short": "Communication Consent",
+        "definition": "Indication that client gave consent to be contacted",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.reminderMessages",
+        "path": "WHOHIVAdaptationKitModel.patient.reminderMessages",
+        "short": "Reminder messages",
+        "definition": "Whether client wants to receive text or other messages as follow-up for family planning",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.communicationPreferences",
+        "path": "WHOHIVAdaptationKitModel.patient.communicationPreferences",
+        "short": "Communication preference(s)",
+        "definition": "text-message | voice-call",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.email",
+        "path": "WHOHIVAdaptationKitModel.patient.email",
+        "short": "Client's E-mail",
+        "definition": "Client's primary email account where the client can be contacted",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.alternateContact",
+        "path": "WHOHIVAdaptationKitModel.patient.alternateContact",
+        "short": "Alternate contact ",
+        "definition": "An alternate contact, which could be next of kin (e.g. partner, husband, mother, sibling, etc.). The alternate contact would be used in the case of an emergency situation.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.alternateContact.name",
+        "path": "WHOHIVAdaptationKitModel.patient.alternateContact.name",
+        "short": "Alternate contact's name ",
+        "definition": "Name of alternate contact",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.alternateContact.phoneNumber",
+        "path": "WHOHIVAdaptationKitModel.patient.alternateContact.phoneNumber",
+        "short": "Alternate contact's phone number",
+        "definition": "Phone number of the alternate contact.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.alternateContact.address",
+        "path": "WHOHIVAdaptationKitModel.patient.alternateContact.address",
+        "short": "Alternate contact's address",
+        "definition": "Alternate contact's home address or address at which the client able to disclose.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.patient.alternateContact.relationship",
+        "path": "WHOHIVAdaptationKitModel.patient.alternateContact.relationship",
+        "short": "Alternate contact relationship",
+        "definition": "The alternate contact's relationship to the client (e.g. partner, husband, mother, sibling, etc.).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit",
+        "path": "WHOHIVAdaptationKitModel.visit",
+        "short": "Visit",
+        "definition": "Patient's visits",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.date",
+        "path": "WHOHIVAdaptationKitModel.visit.date",
+        "short": "Visit date",
+        "definition": "The date and time of the client's visit",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.referral",
+        "path": "WHOHIVAdaptationKitModel.visit.referral",
+        "short": "Referral",
+        "definition": "If client was referred for care",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.referral.referred",
+        "path": "WHOHIVAdaptationKitModel.visit.referral.referred",
+        "short": "Referred",
+        "definition": "If client was referred for care",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.referral.referrer",
+        "path": "WHOHIVAdaptationKitModel.visit.referral.referrer",
+        "short": "Referred by",
+        "definition": "Referred by the Community level services / health facility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.reason",
+        "path": "WHOHIVAdaptationKitModel.visit.reason",
+        "short": "Reason for HIV testing services visit",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.firstTimeHIVTest",
+        "path": "WHOHIVAdaptationKitModel.visit.firstTimeHIVTest",
+        "short": "First encounter for screening for human immunodeficiency virus",
+        "definition": "First encounter for screening for human immunodeficiency virus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.hivRetest",
+        "path": "WHOHIVAdaptationKitModel.visit.hivRetest",
+        "short": "Retesting for human immunodeficiency virus",
+        "definition": "Retesting for human immunodeficiency virus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices",
+        "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices",
+        "short": "Referred through partner services ",
+        "definition": "Client reported coming to the facility after receiving a provider-assisted referral or patient referral from a contact or partner.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.indexCase",
+        "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.indexCase",
+        "short": "Partner or contact of an index case",
+        "definition": "The client is a contact or partner of a person diagnosed with HIV (an index case).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.non-indexCase",
+        "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.non-indexCase",
+        "short": "Partner or contact of an HIV testing client (non-index case)",
+        "definition": "The client is a contact or partner identified through partner or social network services, but is not known to be a partner of an index-case.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact",
+        "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact",
+        "short": "Type of contact or partner for partner services",
+        "definition": "Client's relationship to the person that referred the client for partner services or family services",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "vs-type-of-contact"
+        }
+      },
+      {
+        "id": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV.date",
+        "path": "WHOHIVAdaptationKitModel.visit.referredByPartnerServices.typeOfContact.exposureToHIV.date",
+        "short": "DateTime of suspected exposure to HIV",
+        "definition": "Date and time when the client had suspected exposure to HIV",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      }
+    ]
+  }
+}

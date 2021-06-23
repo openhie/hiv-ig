@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-hiv-risk-behavior"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="cs-hiv-risk-behavior-1"> </a></td><td>Drug injection</td><td>Drug injection</td></tr><tr><td style="white-space:nowrap">2<a name="cs-hiv-risk-behavior-2"> </a></td><td>Sex workers</td><td>Sexual relationship with sex workers or with sex buyers/clients (for money or drug)</td></tr><tr><td style="white-space:nowrap">3<a name="cs-hiv-risk-behavior-3"> </a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style="white-space:nowrap">4<a name="cs-hiv-risk-behavior-4"> </a></td><td>Multiple Sex Partners</td><td>Multiple Sex Partners (NOT for money or drugs)</td></tr><tr><td style="white-space:nowrap">5<a name="cs-hiv-risk-behavior-5"> </a></td><td>Others</td><td>Other risks to oneself</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior"/>
+  <version value="0.2.0"/>
+  <name value="CSHIVRiskBehavior"/>
+  <title value="Risk Behavior"/>
+  <status value="active"/>
+  <date value="2021-06-23T11:39:00+00:00"/>
+  <publisher value="openHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem - Behavior associated with risk of HIV transmission"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="1"/>
+    <display value="Drug injection"/>
+    <definition value="Drug injection"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Sex workers"/>
+    <definition value="Sexual relationship with sex workers or with sex buyers/clients (for money or drug)"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="MSM"/>
+    <definition value="Men who have sex with men"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Multiple Sex Partners"/>
+    <definition value="Multiple Sex Partners (NOT for money or drugs)"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Others"/>
+    <definition value="Other risks to oneself"/>
+  </concept>
+</CodeSystem>

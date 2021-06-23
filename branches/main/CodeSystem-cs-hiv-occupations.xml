@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-hiv-occupations"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="cs-hiv-occupations-1"> </a></td><td>Sex workers</td><td>Employees of facilities providing services that are vulnerable to be abused to engage in prostitution</td></tr><tr><td style="white-space:nowrap">2<a name="cs-hiv-occupations-2"> </a></td><td>Drivers</td><td>Drivers</td></tr><tr><td style="white-space:nowrap">3<a name="cs-hiv-occupations-3"> </a></td><td>Fishermen</td><td>Fishermen</td></tr><tr><td style="white-space:nowrap">4<a name="cs-hiv-occupations-4"> </a></td><td>Agricultural workers</td><td>Agricultural workers</td></tr><tr><td style="white-space:nowrap">5<a name="cs-hiv-occupations-5"> </a></td><td>Workers</td><td>Workers</td></tr><tr><td style="white-space:nowrap">6<a name="cs-hiv-occupations-6"> </a></td><td>Officers and soldiers</td><td>Officers and soldiers</td></tr><tr><td style="white-space:nowrap">7<a name="cs-hiv-occupations-7"> </a></td><td>Public servants or workers with labor contracts</td><td>Public servants, officers, or workers with labor contracts under labor laws</td></tr><tr><td style="white-space:nowrap">8<a name="cs-hiv-occupations-8"> </a></td><td>Students</td><td>Pupils, students</td></tr><tr><td style="white-space:nowrap">9<a name="cs-hiv-occupations-9"> </a></td><td>Children</td><td>Children</td></tr><tr><td style="white-space:nowrap">10<a name="cs-hiv-occupations-10"> </a></td><td>Workers without labor contract</td><td>Workers without labor contract</td></tr><tr><td style="white-space:nowrap">11<a name="cs-hiv-occupations-11"> </a></td><td>Out of work</td><td>Out of work</td></tr><tr><td style="white-space:nowrap">12<a name="cs-hiv-occupations-12"> </a></td><td>Prisoners</td><td>Prisoners</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations"/>
+  <version value="0.2.0"/>
+  <name value="CSHIVOccupations"/>
+  <title value="Occupations relevant for HIV"/>
+  <status value="active"/>
+  <date value="2021-06-23T11:39:00+00:00"/>
+  <publisher value="openHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem Occupations for HIV"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="12"/>
+  <concept>
+    <code value="1"/>
+    <display value="Sex workers"/>
+    <definition value="Employees of facilities providing services that are vulnerable to be abused to engage in prostitution"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Drivers"/>
+    <definition value="Drivers"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Fishermen"/>
+    <definition value="Fishermen"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Agricultural workers"/>
+    <definition value="Agricultural workers"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Workers"/>
+    <definition value="Workers"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="Officers and soldiers"/>
+    <definition value="Officers and soldiers"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="Public servants or workers with labor contracts"/>
+    <definition value="Public servants, officers, or workers with labor contracts under labor laws"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="Students"/>
+    <definition value="Pupils, students"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="Children"/>
+    <definition value="Children"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="Workers without labor contract"/>
+    <definition value="Workers without labor contract"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="Out of work"/>
+    <definition value="Out of work"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="Prisoners"/>
+    <definition value="Prisoners"/>
+  </concept>
+</CodeSystem>

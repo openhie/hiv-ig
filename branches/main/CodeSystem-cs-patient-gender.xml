@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-patient-gender"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">male<a name="cs-patient-gender-male"> </a></td><td>Male</td><td>Client identifies as female</td></tr><tr><td style="white-space:nowrap">female<a name="cs-patient-gender-female"> </a></td><td>Female</td><td>Client identifies as male</td></tr><tr><td style="white-space:nowrap">transgender<a name="cs-patient-gender-transgender"> </a></td><td>Transgender</td><td>Client identifies as transgender</td></tr><tr><td style="white-space:nowrap">non-binary<a name="cs-patient-gender-non-binary"> </a></td><td>Non-binary</td><td>Client identifies in a non-binary way</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender"/>
+  <version value="0.2.0"/>
+  <name value="CSPatientGender"/>
+  <title value="Patient Gender"/>
+  <status value="active"/>
+  <date value="2021-06-23T11:39:00+00:00"/>
+  <publisher value="openHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="The genders for patients"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="male"/>
+    <display value="Male"/>
+    <definition value="Client identifies as female"/>
+  </concept>
+  <concept>
+    <code value="female"/>
+    <display value="Female"/>
+    <definition value="Client identifies as male"/>
+  </concept>
+  <concept>
+    <code value="transgender"/>
+    <display value="Transgender"/>
+    <definition value="Client identifies as transgender"/>
+  </concept>
+  <concept>
+    <code value="non-binary"/>
+    <display value="Non-binary"/>
+    <definition value="Client identifies in a non-binary way"/>
+  </concept>
+</CodeSystem>

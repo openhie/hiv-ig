@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-hiv-risk-behavior",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-hiv-risk-behavior.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior</code></a></li></ul></div>"
+  },
+  "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-risk-behavior",
+  "version": "0.2.0",
+  "name": "HIVRiskBehavior",
+  "title": "Risk Behavior",
+  "status": "active",
+  "date": "2021-06-23T11:39:00+00:00",
+  "publisher": "openHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "ValueSet - Behavior associated with risk of HIV transmission",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior"
+      }
+    ]
+  }
+}

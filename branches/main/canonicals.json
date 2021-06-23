@@ -1,0 +1,289 @@
+[
+  {
+    "id": "hiv-case-report-questionnaire",
+    "type": "Questionnaire",
+    "url": "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire",
+    "version": "0.2.0",
+    "name": "HIVCaseReportForm"
+  },
+  {
+    "id": "vn-hiv-csv-import-questionnaire",
+    "type": "Questionnaire",
+    "url": "http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire",
+    "version": "0.2.0",
+    "name": "CSVImportQuestionnaire"
+  },
+  {
+    "id": "cs-hiv-occupations",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations",
+    "version": "0.2.0",
+    "name": "CSHIVOccupations"
+  },
+  {
+    "id": "cs-hiv-population",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population",
+    "version": "0.2.0",
+    "name": "CSHIVPopulation"
+  },
+  {
+    "id": "cs-hiv-risk-behavior",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior",
+    "version": "0.2.0",
+    "name": "CSHIVRiskBehavior"
+  },
+  {
+    "id": "cs-hiv-transmission-route",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-transmission-route",
+    "version": "0.2.0",
+    "name": "CSHIVTransmissionRoute"
+  },
+  {
+    "id": "cs-patient-communication-preferences",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-communication-preferences",
+    "version": "0.2.0",
+    "name": "CSPatientCommunicationPreferences"
+  },
+  {
+    "id": "cs-patient-gender",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender",
+    "version": "0.2.0",
+    "name": "CSPatientGender"
+  },
+  {
+    "id": "cs-patient-gender-identity",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender-identity",
+    "version": "0.2.0",
+    "name": "CSPatientGenderIdentity"
+  },
+  {
+    "id": "type-of-contact",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/type-of-contact",
+    "version": "0.2.0",
+    "name": "CSTypeOfContact"
+  },
+  {
+    "id": "hiv-case-reporting-scenario",
+    "type": "ExampleScenario",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ExampleScenario/hiv-case-reporting-scenario",
+    "version": "0.2.0",
+    "name": "HIVCaseReportingScenario"
+  },
+  {
+    "id": "hiv-casereporting",
+    "type": "ImplementationGuide",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ImplementationGuide/hiv-casereporting",
+    "version": "0.2.0",
+    "name": "HIVCaseReporting"
+  },
+  {
+    "id": "ns-art-id",
+    "type": "NamingSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/NamingSystem/ns-art-id",
+    "version": "0.2.0",
+    "name": "NSARTID"
+  },
+  {
+    "id": "ns-hiv-case-id",
+    "type": "NamingSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/NamingSystem/ns-hiv-case-id",
+    "version": "0.2.0",
+    "name": "NSHIVID"
+  },
+  {
+    "id": "ns-insurance-id",
+    "type": "NamingSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/NamingSystem/ns-insurance-id",
+    "version": "0.2.0",
+    "name": "NSInsuranceID"
+  },
+  {
+    "id": "ns-passport-id",
+    "type": "NamingSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/NamingSystem/ns-passport-id",
+    "version": "0.2.0",
+    "name": "NSPassportID"
+  },
+  {
+    "id": "arv-therapy-summary",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/arv-therapy-summary",
+    "version": "0.2.0",
+    "name": "ARVTherapySummary"
+  },
+  {
+    "id": "ethnicity",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/ethnicity",
+    "version": "0.2.0",
+    "name": "Ethnicity"
+  },
+  {
+    "id": "ext-specimen-collection-place",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/ext-specimen-collection-place",
+    "version": "0.2.0",
+    "name": "SpecimenCollectionPlace"
+  },
+  {
+    "id": "hiv-arv-careplan",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-careplan",
+    "version": "0.2.0",
+    "name": "ARVCarePlan"
+  },
+  {
+    "id": "hiv-cd4-observation",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-observation",
+    "version": "0.2.0",
+    "name": "CD4Observation"
+  },
+  {
+    "id": "hiv-condition",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-condition",
+    "version": "0.2.0",
+    "name": "HIVCondition"
+  },
+  {
+    "id": "hiv-patient",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient",
+    "version": "0.2.0",
+    "name": "HIVPatient"
+  },
+  {
+    "id": "hiv-recency-result",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-result",
+    "version": "0.2.0",
+    "name": "HIVRecencyResult"
+  },
+  {
+    "id": "hiv-risk-factor",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-risk-factor",
+    "version": "0.2.0",
+    "name": "HIVRiskFactor"
+  },
+  {
+    "id": "hiv-specimen",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-specimen",
+    "version": "0.2.0",
+    "name": "HIVSpecimen"
+  },
+  {
+    "id": "hiv-viral-load",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load",
+    "version": "0.2.0",
+    "name": "ViralLoad"
+  },
+  {
+    "id": "pregnancy-status",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/pregnancy-status",
+    "version": "0.2.0",
+    "name": "PregnancyStatus"
+  },
+  {
+    "id": "HIVRapidTestResults",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/HIVRapidTestResults",
+    "version": "0.2.0",
+    "name": "HIVRapidTestResults"
+  },
+  {
+    "id": "vs-ethnicity",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-ethnicity",
+    "version": "0.2.0",
+    "name": "Ethnicity"
+  },
+  {
+    "id": "vs-hiv-occupations",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-occupations",
+    "version": "0.2.0",
+    "name": "HIVOccupations"
+  },
+  {
+    "id": "vs-hiv-population",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-population",
+    "version": "0.2.0",
+    "name": "HIVPopulation"
+  },
+  {
+    "id": "vs-hiv-risk-behavior",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-risk-behavior",
+    "version": "0.2.0",
+    "name": "HIVRiskBehavior"
+  },
+  {
+    "id": "vs-hiv-transmission-route",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-transmission-route",
+    "version": "0.2.0",
+    "name": "HIVTransmissionRoute"
+  },
+  {
+    "id": "vs-patient-communication-preferences",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-communication-preferences",
+    "version": "0.2.0",
+    "name": "PatientCommunicationPreferences"
+  },
+  {
+    "id": "vs-patient-gender",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-gender",
+    "version": "0.2.0",
+    "name": "PatientGender"
+  },
+  {
+    "id": "vs-patient-gender-identity",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-gender-identity",
+    "version": "0.2.0",
+    "name": "PatientGenderIdentity"
+  },
+  {
+    "id": "vs-type-of-contact",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-type-of-contact",
+    "version": "0.2.0",
+    "name": "TypeOfContact"
+  },
+  {
+    "id": "model-hiv-record",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv/StructureDefinition/model-hiv-record",
+    "version": "0.2.0",
+    "name": "HIVRecord"
+  },
+  {
+    "id": "model-who-hiv-adaptation-kit",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/standards/fhir/hiv/model-who-hiv-adaptation-kit",
+    "version": "0.2.0",
+    "name": "WHOHIVAdaptationKitModel"
+  },
+  {
+    "id": "model-hiv-case-report",
+    "type": "StructureDefinition",
+    "url": "https://www.openhie.org/fhir/hiv/StructureDefinition/model-hiv-case-report",
+    "version": "0.2.0",
+    "name": "HIVCaseReport"
+  }
+]

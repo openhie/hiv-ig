@@ -1,0 +1,214 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "exampleresponse",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"
+    ],
+    "tag": [
+      {
+        "code": "lforms"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire\">http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <span></span></p><p><b>authored</b>: Mar 3, 2021, 8:05:09 PM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: unit_name</p><p><b>text</b>: Governing body unit name</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>01</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: reportDate</p><p><b>text</b>: Date of report</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>2021-03-01</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: questions</p><p><b>text</b>: Monthly report</p><blockquote><p><b>item</b></p><p><b>linkId</b>: identifying_information</p><p><b>text</b>: Part I: Identifying Information</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: hiv-diagnosis</p><p><b>text</b>: HIV Diagnosis</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: arvTreatment</p><p><b>text</b>: ARV Treatment</p></blockquote></blockquote></div>"
+  },
+  "questionnaire": "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire",
+  "_questionnaire": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/display",
+        "valueString": "HIV Case Report Questionnaire"
+      }
+    ]
+  },
+  "status": "completed",
+  "subject": {
+    "identifier": {
+      "system": "http://example.org/identifiers",
+      "value": "123"
+    }
+  },
+  "authored": "2021-03-03T20:05:09.707Z",
+  "item": [
+    {
+      "linkId": "unit_name",
+      "text": "Governing body unit name",
+      "answer": [
+        {
+          "valueString": "01"
+        }
+      ]
+    },
+    {
+      "linkId": "reportDate",
+      "text": "Date of report",
+      "answer": [
+        {
+          "valueDate": "2021-03-01"
+        }
+      ]
+    },
+    {
+      "linkId": "questions",
+      "text": "Monthly report",
+      "item": [
+        {
+          "linkId": "identifying_information",
+          "text": "Part I: Identifying Information",
+          "item": [
+            {
+              "linkId": "arv_patient_nr",
+              "text": "ARV Patient Number",
+              "answer": [
+                {
+                  "valueString": "ARV001"
+                }
+              ]
+            },
+            {
+              "linkId": "personal_information",
+              "text": "Personal Information",
+              "item": [
+                {
+                  "linkId": "name",
+                  "text": "Full name",
+                  "answer": [
+                    {
+                      "valueString": "John Johnson"
+                    }
+                  ]
+                },
+                {
+                  "linkId": "birth_year",
+                  "text": "Year of Birth",
+                  "answer": [
+                    {
+                      "valueInteger": 1970
+                    }
+                  ]
+                },
+                {
+                  "linkId": "id_cccd",
+                  "text": "Identification",
+                  "item": [
+                    {
+                      "linkId": "health_insurance_code",
+                      "text": "Health insurance code",
+                      "answer": [
+                        {
+                          "valueString": "NI000001"
+                        }
+                      ]
+                    },
+                    {
+                      "linkId": "passport_nr",
+                      "text": "Passport Number",
+                      "answer": [
+                        {
+                          "valueString": "P000001"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "linkId": "residence",
+                  "text": "Residence",
+                  "item": [
+                    {
+                      "linkId": "current",
+                      "text": "Current residence",
+                      "answer": [
+                        {
+                          "valueString": "Current Street, 1"
+                        }
+                      ]
+                    },
+                    {
+                      "linkId": "permanent",
+                      "text": "Permanent residence",
+                      "answer": [
+                        {
+                          "valueString": "Permanent Blvd"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "hiv-diagnosis",
+          "text": "HIV Diagnosis",
+          "item": [
+            {
+              "linkId": "hiv-diagnosis.dateOfConfirmation",
+              "text": "Date of Confirmation",
+              "answer": [
+                {
+                  "valueDate": "2020-11-12"
+                }
+              ]
+            },
+            {
+              "linkId": "hiv-diagnosis.confirmingLab",
+              "text": "Confirming Lab",
+              "answer": [
+                {
+                  "valueString": "SafeTest Lab"
+                }
+              ]
+            },
+            {
+              "linkId": "hiv-diagnosis.dateOfSpecimenCollection",
+              "text": "Date of Specimen Collection",
+              "answer": [
+                {
+                  "valueDate": "2020-11-11"
+                }
+              ]
+            },
+            {
+              "linkId": "hiv-diagnosis.placeOfSpecimenCollection",
+              "text": "Place of Specimen Collection",
+              "answer": [
+                {
+                  "valueString": "At patient's place during a visit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "arvTreatment",
+          "text": "ARV Treatment",
+          "item": [
+            {
+              "linkId": "arvTreatment.dateOfTreatmentStart",
+              "text": "Date of treatment start",
+              "answer": [
+                {
+                  "valueDate": "2020-11-19"
+                }
+              ]
+            },
+            {
+              "linkId": "arvTreatment.placeOfInitiation",
+              "text": "Place of ARV treatment initiation",
+              "answer": [
+                {
+                  "valueString": "Home"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

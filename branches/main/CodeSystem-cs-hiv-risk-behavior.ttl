@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-hiv-risk-behavior"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"cs-hiv-risk-behavior-1\"> </a></td><td>Drug injection</td><td>Drug injection</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"cs-hiv-risk-behavior-2\"> </a></td><td>Sex workers</td><td>Sexual relationship with sex workers or with sex buyers/clients (for money or drug)</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"cs-hiv-risk-behavior-3\"> </a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"cs-hiv-risk-behavior-4\"> </a></td><td>Multiple Sex Partners</td><td>Multiple Sex Partners (NOT for money or drugs)</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"cs-hiv-risk-behavior-5\"> </a></td><td>Others</td><td>Other risks to oneself</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "CSHIVRiskBehavior"];
+  fhir:CodeSystem.title [ fhir:value "Risk Behavior"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-06-23T11:39:00+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "openHIE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/[something]" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "CodeSystem - Behavior associated with risk of HIV transmission"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Drug injection" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Drug injection" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sex workers" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Sexual relationship with sex workers or with sex buyers/clients (for money or drug)" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "MSM" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Men who have sex with men" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Multiple Sex Partners" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Multiple Sex Partners (NOT for money or drugs)" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Others" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other risks to oneself" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
