@@ -3,10 +3,10 @@
   "name": "HIVCaseReporting",
   "package-id": "openhie.fhir.hiv",
   "ig-ver": "0.2.0",
-  "date": "Wed, 23 Jun, 2021 12:14:02 +0000",
-  "errs": 201,
-  "warnings": 130,
-  "hints": 31,
+  "date": "Wed, 23 Jun, 2021 14:56:42 +0000",
+  "errs": 162,
+  "warnings": 122,
+  "hints": 32,
   "version": "4.0.1",
   "tool": "4.6.0 (3)"
 }

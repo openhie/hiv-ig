@@ -1,0 +1,18 @@
+{
+  "resourceType": "CarePlan",
+  "id": "ARVTreatmentExample",
+  "meta": {
+    "profile": [
+      "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Generated Summary: id: ART1234567, id: NAT1234567, id: EMR1234567; active; Jane , Smith ; Phone: +27825556666; gender: female; birthDate: 1986-06-04</a></p></div>"
+  },
+  "status": "active",
+  "intent": "plan",
+  "subject": {
+    "reference": "Patient/HIVPatientExample"
+  }
+}

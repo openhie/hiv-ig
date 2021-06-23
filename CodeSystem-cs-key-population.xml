@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-key-population"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">MSM<a name="cs-key-population-MSM"> </a></td></tr><tr><td style="white-space:nowrap">FSW<a name="cs-key-population-FSW"> </a></td></tr><tr><td style="white-space:nowrap">MSW<a name="cs-key-population-MSW"> </a></td></tr><tr><td style="white-space:nowrap">PWID<a name="cs-key-population-PWID"> </a></td></tr><tr><td style="white-space:nowrap">PWUD<a name="cs-key-population-PWUD"> </a></td></tr><tr><td style="white-space:nowrap">transgender<a name="cs-key-population-transgender"> </a></td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population"/>
+  <version value="0.2.0"/>
+  <name value="CSKeyPopulation"/>
+  <title value="Key population"/>
+  <status value="active"/>
+  <date value="2021-06-23T14:56:42+00:00"/>
+  <publisher value="openHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="A list of key population types"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="MSM"/>
+  </concept>
+  <concept>
+    <code value="FSW"/>
+  </concept>
+  <concept>
+    <code value="MSW"/>
+  </concept>
+  <concept>
+    <code value="PWID"/>
+  </concept>
+  <concept>
+    <code value="PWUD"/>
+  </concept>
+  <concept>
+    <code value="transgender"/>
+  </concept>
+</CodeSystem>

@@ -3,68 +3,45 @@
   "version": "0.2.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
-  "extensions": [
-    {
-      "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/ethnicity",
-      "title": "Ethnicity",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/ext-specimen-collection-place",
-      "title": "Ethnicity",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept"
-      ]
-    }
-  ],
+  "extensions": [],
   "profiles": {
-    "MedicationStatement": [
-      {
-        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/arv-therapy-summary",
-        "title": "ART therapy summary"
-      }
-    ],
     "CarePlan": [
       {
-        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-careplan",
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment",
         "title": "ARVCarePlan"
       }
     ],
     "Observation": [
       {
-        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load",
-        "title": "HIV viral load"
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency",
+        "title": "HIV Recency"
       },
       {
-        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/pregnancy-status",
-        "title": "Pregnancy status"
-      }
-    ],
-    "Condition": [
-      {
-        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-risk-factor",
-        "title": "HIV Risk Behavior"
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load",
+        "title": "HIV viral load"
       }
     ],
     "Composition": [
       {
-        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-composition",
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition",
         "title": "HIV Case Reporting Composition"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-diagnosis",
+        "title": "HIV Diagnosis"
       }
     ],
     "Encounter": [
       {
-        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-encounter",
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-encounter",
         "title": "HIV CR Encounter"
       }
     ],
     "Location": [
       {
-        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cr-location",
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-location",
         "title": "HIV CR Location"
       }
     ],
@@ -73,18 +50,9 @@
         "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient",
         "title": "HIV Patient"
       }
-    ],
-    "Specimen": [
-      {
-        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-specimen",
-        "title": "HIV specimen"
-      }
     ]
   },
   "usage": {
-    "http://hl7.org/fhir/StructureDefinition/display": [
-      "QuestionnaireResponse.questionnaire"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -105,9 +73,6 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-preferenceType": [
       "Patient"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/regex": [
-      "Questionnaire.item.item.item.item"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
@@ -138,15 +103,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemContext": [
-      "Questionnaire"
-    ],
-    "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/ethnicity": [
-      "Patient"
-    ],
-    "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/ext-specimen-collection-place": [
-      "Specimen"
     ]
   }
 }
