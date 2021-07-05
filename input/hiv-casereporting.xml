@@ -91,7 +91,7 @@
   
     <resource>
       <reference>
-        <reference value="StructureDefinition/hiv-viral-load"/>
+        <reference value="StructureDefinition/hiv-viral-load-test"/>
       </reference>
       <name value="Viral Load"/>
       <description value="Profile - HIV viral load test result"/>

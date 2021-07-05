@@ -2,7 +2,7 @@
 Instance: HIVBundleExample
 InstanceOf: Bundle
 Usage: #example
-Title: "HIV Cr Bundle Example"
+Title: "HIV Bundle Example"
 Description: "Example of a clinical bundle representing a case report"
 * type = #document
 * entry[+].fullUrl = "http://test.org/fhir/Composition/HIVCompositionExample"
@@ -15,12 +15,16 @@ Description: "Example of a clinical bundle representing a case report"
 * entry[=].resource = HIVPatientExample
 * entry[+].fullUrl = "http://test.org/fhir/RelatedPerson/GuardianExample"
 * entry[=].resource = GuardianExample
+* entry[+].fullUrl = "http://test.org/fhir/RelatedPerson/MaritalStatusExample"
+* entry[=].resource = MaritalStatusExample
 * entry[+].fullUrl = "http://test.org/fhir/Condition/HIVDiagnosisExample"
 * entry[=].resource = HIVDiagnosisExample
 * entry[+].fullUrl = "http://test.org/fhir/CarePlan/ARVTreatmentExample"
 * entry[=].resource = ARVTreatmentExample
 * entry[+].fullUrl = "http://test.org/fhir/Observation/ViralLoadExample"
 * entry[=].resource = ViralLoadExample
+* entry[+].fullUrl = "http://test.org/fhir/Observation/CD4Example"
+* entry[=].resource = CD4Example
 
 Instance: HIVCompositionExample
 InstanceOf: HIVComposition
@@ -39,6 +43,10 @@ Description: "Basic Composition example"
 * section[=].code = http://test.org/sectionCode#hivPatient
 * section[=].entry[+] = Reference(HIVPatientExample)
 
+* section[+].title = "maritalStatus"
+* section[=].code = http://test.org/sectionCode#maritalStatus
+* section[=].entry[+] = Reference(MaritalStatusExample)
+
 * section[+].title = "hivDiagnosis"
 * section[=].code = http://test.org/sectionCode#hivDiagnosis
 * section[=].entry[+] = Reference(HIVDiagnosisExample)
@@ -50,6 +58,10 @@ Description: "Basic Composition example"
 * section[+].title = "viralLoad"
 * section[=].code = http://test.org/sectionCode#viralLoad
 * section[=].entry[+] = Reference(ViralLoadExample)
+
+* section[+].title = "cd4"
+* section[=].code = http://test.org/sectionCode#cd4
+* section[=].entry[+] = Reference(CD4Example)
 
 Instance: HIVEncounterExample
 InstanceOf: Encounter
@@ -75,8 +87,8 @@ InstanceOf: Practitioner
 Usage: #example
 Title: "HIV Cr Practitioner Example"
 Description: "Practitioner example"
-* name[0].given[0] = "Homer"
-* name[1].family = "Simpson"
+* name.given = "Homer"
+* name.family = "Simpson"
 
 Instance: HIVPatientExample
 InstanceOf: HIVPatient
@@ -85,8 +97,8 @@ Title: "HIV Patient example"
 Description: "."
 
 * active = true
-* name[+].given[+] = "Jane"
-* name[+].family = "Smith"
+* name.given = "Jane"
+* name.family = "Smith"
 * gender = #female
 * birthDate = "1986-06-04"
 * telecom.system = #phone
@@ -100,7 +112,8 @@ Description: "."
 * identifier[pos].value = "EMR1234567"
 * link.other = Reference(GuardianExample)
 * link.type = #seealso // what link to use?
-//* maritalStatus = $MaritalStatus#M
+* extension[genderIdentity].valueCodeableConcept = #male
+* extension[keyPopulation].valueCodeableConcept = #transgender
 
 Instance: GuardianExample
 InstanceOf: RelatedPerson
@@ -112,6 +125,17 @@ Description: ""
 //* relationship = what to add here?
 * patient = Reference(HIVPatientExample)
 
+Instance: MaritalStatusExample
+InstanceOf: MaritalStatus
+Usage: #example
+Title: "Marital Status example"
+Description: "."
+* status = #final
+* code = #M "Married"
+* subject = Reference(HIVPatientExample)
+* valueCodeableConcept = #M "Married"
+
+
 // First 90 - people who know they are HIV +ve
 Instance: HIVDiagnosisExample
 InstanceOf: HIVDiagnosis
@@ -121,10 +145,8 @@ Description: "."
 * clinicalStatus = #active
 * verificationStatus = #confirmed
 * code = $SCT#86406008
-
 * subject = Reference(HIVPatientExample)
 
-// Second 90 - on ARTs
 Instance: ARVTreatmentExample
 InstanceOf: ARVTreatment
 Usage: #example
@@ -133,17 +155,23 @@ Description: "."
 * status = #active
 * intent = #plan
 * subject = Reference(HIVPatientExample)
+* period.start = "2021-05-20"
 
-// Third 90 - virally supressed
 Instance: ViralLoadExample
 InstanceOf: ViralLoad
 Usage: #example
 Title: "Viral load example"
 Description: "."
 * status = #final
-* code = http://test.org/obs#VL-RESULT "Viral load result"
 * subject = Reference(HIVPatientExample)
+* valueInteger = 200
+* interpretation = #D
 
-* valueCodeableConcept = http://test.org/obs/vl-result#<200 "less than 200 - undetectable"
-// * valueCodeableConcept = 200-1000#http://test.org/obs/vl-result "200 - 1000 - detectable"
-// * valueCodeableConcept = >1000#http://test.org/obs/vl-result "greather than 1000 - detectable"
+Instance: CD4Example
+InstanceOf: CD4
+Usage: #example
+Title: "CD4 example"
+Description: "."
+* status = #final
+* subject = Reference(HIVPatientExample)
+* valueInteger = 200

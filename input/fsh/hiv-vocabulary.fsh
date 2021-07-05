@@ -1,21 +1,10 @@
+Alias: $SCT = http://snomed.info/sct
+Alias: $LNC = http://loinc.org
 
-CodeSystem:  CSPatientGender
-Id: cs-patient-gender
-Title: "Patient Gender"
-Description: "The genders for patients"
-* #male "Male" "Client identifies as female"
-* #female "Female" "Client identifies as male"
-* #transgender "Transgender" "Client identifies as transgender"
-* #non-binary "Non-binary" "Client identifies in a non-binary way"
+Alias: $GenderIdentity = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity
+Alias: $MaritalStatus = http://hl7.org/fhir/ValueSet/marital-status
 
-ValueSet: PatientGender
-Id: vs-patient-gender
-Title: "Patient Gender"
-Description:  "Valueset - patient genders"
-//* SCT#951000205108 "Wearing underwear or less"
-* include codes from system CSPatientGender 
-
-CodeSystem:  CSKeyPopulation
+CodeSystem: CSKeyPopulation
 Id: cs-key-population
 Title: "Key population"
 Description: "A list of key population types"
@@ -26,13 +15,43 @@ Description: "A list of key population types"
 * #PWUD
 * #transgender
 
-ValueSet: KeyPopulation
+ValueSet: VSKeyPopulation
 Id: vs-key-population
 Title: "Key population"
 Description: "A list of key population types"
 * include codes from system CSKeyPopulation
 
-ValueSet: HIVRapidTestResults
+ValueSet: VSGenderIdentity
+Id: vs-gender-identity
+Title: "Gender Identity"
+Description:  "Valueset - Gender Identities"
+* include codes from system $GenderIdentity
+
+ValueSet: VSMaritalStatus
+Id: vs-marital-status
+Title: "Marital Status"
+Description:  "Valueset - marital statuses"
+* $MaritalStatus#S "Never Married"
+* $MaritalStatus#M "Married"
+* $MaritalStatus#P "Polygamous"
+* $MaritalStatus#T "Domestic partner"
+* $MaritalStatus#D "Divorced"
+
+CodeSystem: CSVLInterpretation
+Id: cs-vl-interpretation
+Title: "Viral load Interpretation"
+Description: "A list of Viral load Interpretations"
+* #D "Detectable"
+* #ND "Non Detectable"
+* #UNK "Unknown"
+
+ValueSet: VSVLInterpretation
+Id: vs-vl-interpretation
+Title: "Viral load Interpretation"
+Description: "Valueset - Viral load Interpretations"
+* include codes from system CSVLInterpretation
+
+ValueSet: VSHIVRapidTestResults
 Title: "HIVRapidTestResults"
 Description: "HIV rapid test result codes"
 * ^status = #draft
@@ -40,7 +59,6 @@ Description: "HIV rapid test result codes"
 * $LNC#LA11883-8 "Not detected"
 * $LNC#LA11885-3 "Equivocal"
 * $LNC#LA9663-1 "Inconclusive"
-
 
 
 ////////////////////////////////   Naming Systems   ////////////////////////////////
