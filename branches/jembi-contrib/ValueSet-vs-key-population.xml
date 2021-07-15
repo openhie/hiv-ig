@@ -7,10 +7,10 @@
   </text>
   <url value="http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-key-population"/>
   <version value="0.2.0"/>
-  <name value="KeyPopulation"/>
+  <name value="VSKeyPopulation"/>
   <title value="Key population"/>
   <status value="active"/>
-  <date value="2021-06-23T14:56:42+00:00"/>
+  <date value="2021-07-15T14:01:42+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>

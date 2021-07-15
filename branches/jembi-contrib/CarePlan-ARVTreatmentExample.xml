@@ -6,11 +6,14 @@
     <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href="Patient-HIVPatientExample.html">Generated Summary: id: ART1234567, id: NAT1234567, id: EMR1234567; active; Jane , Smith ; Phone: +27825556666; gender: female; birthDate: 1986-06-04</a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href="Patient-HIVPatientExample.html">Generated Summary: id: ART1234567, id: NAT1234567, id: EMR1234567; active; Jane Smith ; Phone: +27825556666; gender: female; birthDate: 1986-06-04</a></p><p><b>period</b>: 2021-05-20 --&gt; (ongoing)</p></div>
   </text>
   <status value="active"/>
   <intent value="plan"/>
   <subject>
     <reference value="Patient/HIVPatientExample"/>
   </subject>
+  <period>
+    <start value="2021-05-20"/>
+  </period>
 </CarePlan>

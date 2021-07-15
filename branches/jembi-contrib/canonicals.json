@@ -7,11 +7,11 @@
     "name": "CSKeyPopulation"
   },
   {
-    "id": "cs-patient-gender",
+    "id": "cs-vl-interpretation",
     "type": "CodeSystem",
-    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation",
     "version": "0.2.0",
-    "name": "CSPatientGender"
+    "name": "CSVLInterpretation"
   },
   {
     "id": "hiv-case-reporting-scenario",
@@ -54,6 +54,13 @@
     "url": "http://openhie.org/fhir/hiv-casereporting/NamingSystem/ns-passport-id",
     "version": "0.2.0",
     "name": "NSPassportID"
+  },
+  {
+    "id": "gender-identity",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/gender-identity",
+    "version": "0.2.0",
+    "name": "GenderIdentity"
   },
   {
     "id": "hiv-arv-treatment",
@@ -105,39 +112,67 @@
     "name": "HIVPatient"
   },
   {
-    "id": "hiv-recency",
+    "id": "hiv-recency-test",
     "type": "StructureDefinition",
-    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-test",
     "version": "0.2.0",
     "name": "HIVRecency"
   },
   {
-    "id": "hiv-viral-load",
+    "id": "hiv-viral-load-test",
     "type": "StructureDefinition",
-    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-test",
     "version": "0.2.0",
     "name": "ViralLoad"
   },
   {
-    "id": "HIVRapidTestResults",
-    "type": "ValueSet",
-    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/HIVRapidTestResults",
+    "id": "key-population",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/key-population",
     "version": "0.2.0",
-    "name": "HIVRapidTestResults"
+    "name": "KeyPopulation"
+  },
+  {
+    "id": "marital-status",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/marital-status",
+    "version": "0.2.0",
+    "name": "MaritalStatus"
+  },
+  {
+    "id": "VSHIVRapidTestResults",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/VSHIVRapidTestResults",
+    "version": "0.2.0",
+    "name": "VSHIVRapidTestResults"
+  },
+  {
+    "id": "vs-gender-identity",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-gender-identity",
+    "version": "0.2.0",
+    "name": "VSGenderIdentity"
   },
   {
     "id": "vs-key-population",
     "type": "ValueSet",
     "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-key-population",
     "version": "0.2.0",
-    "name": "KeyPopulation"
+    "name": "VSKeyPopulation"
   },
   {
-    "id": "vs-patient-gender",
+    "id": "vs-marital-status",
     "type": "ValueSet",
-    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-gender",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-marital-status",
     "version": "0.2.0",
-    "name": "PatientGender"
+    "name": "VSMaritalStatus"
+  },
+  {
+    "id": "vs-vl-interpretation",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-interpretation",
+    "version": "0.2.0",
+    "name": "VSVLInterpretation"
   },
   {
     "id": "model-hiv-record",

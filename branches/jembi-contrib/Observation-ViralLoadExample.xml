@@ -3,10 +3,10 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="ViralLoadExample"/>
   <meta>
-    <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load"/>
+    <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-test"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://test.org/obs VL-RESULT}">Viral load result</span></p><p><b>subject</b>: <a href="Patient-HIVPatientExample.html">Generated Summary: id: ART1234567, id: NAT1234567, id: EMR1234567; active; Jane , Smith ; Phone: +27825556666; gender: female; birthDate: 1986-06-04</a></p><p><b>value</b>: <span title="Codes: {http://test.org/obs/vl-result &lt;200}">less than 200 - undetectable</span></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://test.org/obs VL-RESULT}">Viral load result</span></p><p><b>subject</b>: <a href="Patient-HIVPatientExample.html">Generated Summary: id: ART1234567, id: NAT1234567, id: EMR1234567; active; Jane Smith ; Phone: +27825556666; gender: female; birthDate: 1986-06-04</a></p><p><b>value</b>: 200</p><p><b>interpretation</b>: <span title="Codes: ">D</span></p></div>
   </text>
   <status value="final"/>
   <code>
@@ -19,11 +19,10 @@
   <subject>
     <reference value="Patient/HIVPatientExample"/>
   </subject>
-  <valueCodeableConcept>
+  <valueInteger value="200"/>
+  <interpretation>
     <coding>
-      <system value="http://test.org/obs/vl-result"/>
-      <code value="&lt;200"/>
-      <display value="less than 200 - undetectable"/>
+      <code value="D"/>
     </coding>
-  </valueCodeableConcept>
+  </interpretation>
 </Observation>

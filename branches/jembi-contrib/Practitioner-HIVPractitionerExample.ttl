@@ -10,17 +10,15 @@
   fhir:Resource.id [ fhir:value "HIVPractitionerExample"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Homer , Simpson </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Homer Simpson </p></div>"
   ];
   fhir:Practitioner.name [
      fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Simpson" ];
      fhir:HumanName.given [
        fhir:value "Homer";
        fhir:index 0
      ]
-  ], [
-     fhir:index 1;
-     fhir:HumanName.family [ fhir:value "Simpson" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

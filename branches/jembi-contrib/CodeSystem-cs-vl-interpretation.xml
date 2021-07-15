@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-vl-interpretation"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">D<a name="cs-vl-interpretation-D"> </a></td><td>Detectable</td></tr><tr><td style="white-space:nowrap">ND<a name="cs-vl-interpretation-ND"> </a></td><td>Non Detectable</td></tr><tr><td style="white-space:nowrap">UNK<a name="cs-vl-interpretation-UNK"> </a></td><td>Unknown</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation"/>
+  <version value="0.2.0"/>
+  <name value="CSVLInterpretation"/>
+  <title value="Viral load Interpretation"/>
+  <status value="active"/>
+  <date value="2021-07-15T14:01:42+00:00"/>
+  <publisher value="openHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="A list of Viral load Interpretations"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="D"/>
+    <display value="Detectable"/>
+  </concept>
+  <concept>
+    <code value="ND"/>
+    <display value="Non Detectable"/>
+  </concept>
+  <concept>
+    <code value="UNK"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

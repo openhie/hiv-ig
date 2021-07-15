@@ -12,7 +12,7 @@
           <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 95412-3}">COVID-19 case report</span></p><p><b>encounter</b>: <a href="#Encounter_HIVEncounterExample">See above (Encounter/HIVEncounterExample)</a></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href="Practitioner-HIVPractitionerExample.html">Generated Summary: Homer , Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 95412-3}">COVID-19 case report</span></p><p><b>encounter</b>: <a href="#Encounter_HIVEncounterExample">See above (Encounter/HIVEncounterExample)</a></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href="Practitioner-HIVPractitionerExample.html">Generated Summary: Homer Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>
         </text>
         <identifier>
           <system value="http://test.org/identifier/hiv-case-report"/>
@@ -43,6 +43,18 @@
           </code>
           <entry>
             <reference value="Patient/HIVPatientExample"/>
+          </entry>
+        </section>
+        <section>
+          <title value="maritalStatus"/>
+          <code>
+            <coding>
+              <system value="http://test.org/sectionCode"/>
+              <code value="maritalStatus"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/MaritalStatusExample"/>
           </entry>
         </section>
         <section>
@@ -79,6 +91,18 @@
           </code>
           <entry>
             <reference value="Observation/ViralLoadExample"/>
+          </entry>
+        </section>
+        <section>
+          <title value="cd4"/>
+          <code>
+            <coding>
+              <system value="http://test.org/sectionCode"/>
+              <code value="cd4"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/CD4Example"/>
           </entry>
         </section>
       </Composition>
@@ -133,8 +157,22 @@
           <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: ART1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane , Smith </p><p><b>telecom</b>: <a href="tel:+27825556666">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><h3>Links</h3><table class="grid"><tr><td>-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><a href="#RelatedPerson_GuardianExample">See above (RelatedPerson/GuardianExample)</a></td><td>seealso</td></tr></table></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Gender Identity</b>: <span title="Codes: ">male</span></p><p><b>Key population</b>: <span title="Codes: ">transgender</span></p><p><b>identifier</b>: id: ART1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane Smith </p><p><b>telecom</b>: <a href="tel:+27825556666">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><h3>Links</h3><table class="grid"><tr><td>-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><a href="#RelatedPerson_GuardianExample">See above (RelatedPerson/GuardianExample)</a></td><td>seealso</td></tr></table></div>
         </text>
+        <extension url="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/gender-identity">
+          <valueCodeableConcept>
+            <coding>
+              <code value="male"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/key-population">
+          <valueCodeableConcept>
+            <coding>
+              <code value="transgender"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
         <identifier>
           <value value="ART1234567"/>
         </identifier>
@@ -146,10 +184,8 @@
         </identifier>
         <active value="true"/>
         <name>
-          <given value="Jane"/>
-        </name>
-        <name>
           <family value="Smith"/>
+          <given value="Jane"/>
         </name>
         <telecom>
           <system value="phone"/>
@@ -188,6 +224,36 @@
           <given value="Peter"/>
         </name>
       </RelatedPerson>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.org/fhir/RelatedPerson/MaritalStatusExample"/>
+    <resource>
+      <Observation>
+        <id value="MaritalStatusExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/marital-status"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: ">Married</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>value</b>: <span title="Codes: ">Married</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <code value="M"/>
+            <display value="Married"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/HIVPatientExample"/>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <code value="M"/>
+            <display value="Married"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
     </resource>
   </entry>
   <entry>
@@ -232,13 +298,16 @@
           <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>period</b>: 2021-05-20 --&gt; (ongoing)</p></div>
         </text>
         <status value="active"/>
         <intent value="plan"/>
         <subject>
           <reference value="Patient/HIVPatientExample"/>
         </subject>
+        <period>
+          <start value="2021-05-20"/>
+        </period>
       </CarePlan>
     </resource>
   </entry>
@@ -248,10 +317,10 @@
       <Observation>
         <id value="ViralLoadExample"/>
         <meta>
-          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load"/>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-test"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://test.org/obs VL-RESULT}">Viral load result</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>value</b>: <span title="Codes: {http://test.org/obs/vl-result &lt;200}">less than 200 - undetectable</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://test.org/obs VL-RESULT}">Viral load result</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>value</b>: 200</p><p><b>interpretation</b>: <span title="Codes: ">D</span></p></div>
         </text>
         <status value="final"/>
         <code>
@@ -264,13 +333,38 @@
         <subject>
           <reference value="Patient/HIVPatientExample"/>
         </subject>
-        <valueCodeableConcept>
+        <valueInteger value="200"/>
+        <interpretation>
           <coding>
-            <system value="http://test.org/obs/vl-result"/>
-            <code value="&lt;200"/>
-            <display value="less than 200 - undetectable"/>
+            <code value="D"/>
           </coding>
-        </valueCodeableConcept>
+        </interpretation>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.org/fhir/Observation/CD4Example"/>
+    <resource>
+      <Observation>
+        <id value="CD4Example"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-test"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://test.org/obs CD4-RESULT}">CD4 result</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>value</b>: 200</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://test.org/obs"/>
+            <code value="CD4-RESULT"/>
+            <display value="CD4 result"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/HIVPatientExample"/>
+        </subject>
+        <valueInteger value="200"/>
       </Observation>
     </resource>
   </entry>

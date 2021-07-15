@@ -7,10 +7,10 @@
   },
   "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-key-population",
   "version": "0.2.0",
-  "name": "KeyPopulation",
+  "name": "VSKeyPopulation",
   "title": "Key population",
   "status": "active",
-  "date": "2021-06-23T14:56:42+00:00",
+  "date": "2021-07-15T14:01:42+00:00",
   "publisher": "openHIE",
   "contact": [
     {

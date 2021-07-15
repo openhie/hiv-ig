@@ -3,7 +3,24 @@
   "version": "0.2.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/gender-identity",
+      "title": "Gender Identity",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/key-population",
+      "title": "Key population",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    }
+  ],
   "profiles": {
     "CarePlan": [
       {
@@ -13,12 +30,16 @@
     ],
     "Observation": [
       {
-        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency",
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-test",
         "title": "HIV Recency"
       },
       {
-        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load",
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-test",
         "title": "HIV viral load"
+      },
+      {
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/marital-status",
+        "title": "MaritalStatus"
       }
     ],
     "Composition": [
@@ -68,12 +89,6 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity": [
-      "Patient"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/patient-preferenceType": [
-      "Patient"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
@@ -103,6 +118,14 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/gender-identity": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/key-population": [
+      "Bundle.entry.resource",
+      "Patient"
     ]
   }
 }

@@ -1,0 +1,27 @@
+{
+  "resourceType": "Observation",
+  "id": "CD4Example",
+  "meta": {
+    "profile": [
+      "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-test"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://test.org/obs CD4-RESULT}\">CD4 result</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Generated Summary: id: ART1234567, id: NAT1234567, id: EMR1234567; active; Jane Smith ; Phone: +27825556666; gender: female; birthDate: 1986-06-04</a></p><p><b>value</b>: 200</p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://test.org/obs",
+        "code": "CD4-RESULT",
+        "display": "CD4 result"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/HIVPatientExample"
+  },
+  "valueInteger": 200
+}

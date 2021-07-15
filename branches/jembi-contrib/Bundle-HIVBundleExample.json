@@ -15,7 +15,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 95412-3}\">COVID-19 case report</span></p><p><b>encounter</b>: <a href=\"#Encounter_HIVEncounterExample\">See above (Encounter/HIVEncounterExample)</a></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href=\"Practitioner-HIVPractitionerExample.html\">Generated Summary: Homer , Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 95412-3}\">COVID-19 case report</span></p><p><b>encounter</b>: <a href=\"#Encounter_HIVEncounterExample\">See above (Encounter/HIVEncounterExample)</a></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href=\"Practitioner-HIVPractitionerExample.html\">Generated Summary: Homer Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>"
         },
         "identifier": {
           "system": "http://test.org/identifier/hiv-case-report",
@@ -54,6 +54,22 @@
             "entry": [
               {
                 "reference": "Patient/HIVPatientExample"
+              }
+            ]
+          },
+          {
+            "title": "maritalStatus",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://test.org/sectionCode",
+                  "code": "maritalStatus"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "Observation/MaritalStatusExample"
               }
             ]
           },
@@ -102,6 +118,22 @@
             "entry": [
               {
                 "reference": "Observation/ViralLoadExample"
+              }
+            ]
+          },
+          {
+            "title": "cd4",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://test.org/sectionCode",
+                  "code": "cd4"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "Observation/CD4Example"
               }
             ]
           }
@@ -161,9 +193,31 @@
           ]
         },
         "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: ART1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane , Smith </p><p><b>telecom</b>: <a href=\"tel:+27825556666\">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><h3>Links</h3><table class=\"grid\"><tr><td>-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><a href=\"#RelatedPerson_GuardianExample\">See above (RelatedPerson/GuardianExample)</a></td><td>seealso</td></tr></table></div>"
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Gender Identity</b>: <span title=\"Codes: \">male</span></p><p><b>Key population</b>: <span title=\"Codes: \">transgender</span></p><p><b>identifier</b>: id: ART1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane Smith </p><p><b>telecom</b>: <a href=\"tel:+27825556666\">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><h3>Links</h3><table class=\"grid\"><tr><td>-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><a href=\"#RelatedPerson_GuardianExample\">See above (RelatedPerson/GuardianExample)</a></td><td>seealso</td></tr></table></div>"
         },
+        "extension": [
+          {
+            "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/gender-identity",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "male"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/key-population",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "transgender"
+                }
+              ]
+            }
+          }
+        ],
         "identifier": [
           {
             "value": "ART1234567"
@@ -178,12 +232,10 @@
         "active": true,
         "name": [
           {
+            "family": "Smith",
             "given": [
               "Jane"
             ]
-          },
-          {
-            "family": "Smith"
           }
         ],
         "telecom": [
@@ -232,6 +284,42 @@
             ]
           }
         ]
+      }
+    },
+    {
+      "fullUrl": "http://test.org/fhir/RelatedPerson/MaritalStatusExample",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "MaritalStatusExample",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/marital-status"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: \">Married</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>value</b>: <span title=\"Codes: \">Married</span></p></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "M",
+              "display": "Married"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "M",
+              "display": "Married"
+            }
+          ]
+        }
       }
     },
     {
@@ -287,12 +375,15 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>period</b>: 2021-05-20 --&gt; (ongoing)</p></div>"
         },
         "status": "active",
         "intent": "plan",
         "subject": {
           "reference": "Patient/HIVPatientExample"
+        },
+        "period": {
+          "start": "2021-05-20"
         }
       }
     },
@@ -303,12 +394,12 @@
         "id": "ViralLoadExample",
         "meta": {
           "profile": [
-            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load"
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-test"
           ]
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://test.org/obs VL-RESULT}\">Viral load result</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>value</b>: <span title=\"Codes: {http://test.org/obs/vl-result &lt;200}\">less than 200 - undetectable</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://test.org/obs VL-RESULT}\">Viral load result</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>value</b>: 200</p><p><b>interpretation</b>: <span title=\"Codes: \">D</span></p></div>"
         },
         "status": "final",
         "code": {
@@ -323,15 +414,46 @@
         "subject": {
           "reference": "Patient/HIVPatientExample"
         },
-        "valueCodeableConcept": {
+        "valueInteger": 200,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "D"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://test.org/fhir/Observation/CD4Example",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CD4Example",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-test"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://test.org/obs CD4-RESULT}\">CD4 result</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>value</b>: 200</p></div>"
+        },
+        "status": "final",
+        "code": {
           "coding": [
             {
-              "system": "http://test.org/obs/vl-result",
-              "code": "<200",
-              "display": "less than 200 - undetectable"
+              "system": "http://test.org/obs",
+              "code": "CD4-RESULT",
+              "display": "CD4 result"
             }
           ]
-        }
+        },
+        "subject": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "valueInteger": 200
       }
     }
   ]
