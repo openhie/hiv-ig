@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 95412-3}\">COVID-19 case report</span></p><p><b>encounter</b>: <a href=\"Encounter-HIVEncounterExample.html\">Generated Summary: status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}\">inpatient acute</span>; period: 2021-05-20 --&gt; 2021-05-20</a></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href=\"Practitioner-HIVPractitionerExample.html\">Generated Summary: Homer , Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 95412-3}\">COVID-19 case report</span></p><p><b>encounter</b>: <a href=\"Encounter-HIVEncounterExample.html\">Generated Summary: status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}\">inpatient acute</span>; period: 2021-05-20 --&gt; 2021-05-20</a></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href=\"Practitioner-HIVPractitionerExample.html\">Generated Summary: Homer Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>"
   },
   "identifier": {
     "system": "http://test.org/identifier/hiv-case-report",
@@ -47,6 +47,22 @@
       "entry": [
         {
           "reference": "Patient/HIVPatientExample"
+        }
+      ]
+    },
+    {
+      "title": "maritalStatus",
+      "code": {
+        "coding": [
+          {
+            "system": "http://test.org/sectionCode",
+            "code": "maritalStatus"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/MaritalStatusExample"
         }
       ]
     },
@@ -95,6 +111,22 @@
       "entry": [
         {
           "reference": "Observation/ViralLoadExample"
+        }
+      ]
+    },
+    {
+      "title": "cd4",
+      "code": {
+        "coding": [
+          {
+            "system": "http://test.org/sectionCode",
+            "code": "cd4"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/CD4Example"
         }
       ]
     }

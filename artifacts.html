@@ -206,19 +206,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#4">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#5">Terminology: Value Sets</a>
+         <a href="#5">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#6">Terminology: Code Systems</a>
+         <a href="#6">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#7">Example: Example Scenarios</a>
+         <a href="#7">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#8">Example: Example Instances</a>
+         <a href="#8">Example: Example Scenarios</a>
       </li>
       <li>
-         <a href="#9">Other</a>
+         <a href="#9">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#10">Other</a>
       </li>
    </ul>
 </div>
@@ -311,8 +314,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-viral-load.html"
-                     title="StructureDefinition/hiv-viral-load">Viral Load</a>
+                  <a href="StructureDefinition-hiv-viral-load-test.html"
+                     title="StructureDefinition/hiv-viral-load-test">Viral Load</a>
                </td>
                <td>
 <p>Profile - HIV viral load test result</p>
@@ -362,24 +365,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-recency.html"
-                     title="StructureDefinition/hiv-recency">HIV Recency</a>
-               </td>
-               <td>
-<p>This profile allows the exchange of a patient’s hiv recency test</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-arv-treatment.html"
-                     title="StructureDefinition/hiv-arv-treatment">ARVCarePlan</a>
-               </td>
-               <td>
-<p>This profile allows the exchange of a patient’s ARV treatment</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-hiv-location.html"
                      title="StructureDefinition/hiv-location">HIV CR Location</a>
                </td>
@@ -398,6 +383,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-composition.html"
+                     title="StructureDefinition/hiv-composition">HIV Case Reporting Composition</a>
+               </td>
+               <td>
+<p>HIV Case Reporting Composition</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-marital-status.html"
+                     title="StructureDefinition/marital-status">MaritalStatus</a>
+               </td>
+               <td>
+<p>This profile allows the exchange of a patient’s MaritalStatus</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-recency-test.html"
+                     title="StructureDefinition/hiv-recency-test">HIV Recency</a>
+               </td>
+               <td>
+<p>This profile allows the exchange of a patient’s hiv recency test</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-hiv-cd4-test.html"
                      title="StructureDefinition/hiv-cd4-test">CD4Observation</a>
                </td>
@@ -407,17 +419,47 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-composition.html"
-                     title="StructureDefinition/hiv-composition">HIV Case Reporting Composition</a>
+                  <a href="StructureDefinition-hiv-arv-treatment.html"
+                     title="StructureDefinition/hiv-arv-treatment">ARVCarePlan</a>
                </td>
                <td>
-<p>HIV Case Reporting Composition</p>
+<p>This profile allows the exchange of a patient’s ARV treatment</p>
 </td>
             </tr>
          </tbody>
       </table>
    </p>
    <a name="5"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-gender-identity.html"
+                     title="StructureDefinition/gender-identity">Gender Identity</a>
+               </td>
+               <td>
+<p>Gender identity</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-key-population.html"
+                     title="StructureDefinition/key-population">Key population</a>
+               </td>
+               <td>
+<p>Key population</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="6"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
     <p>These define sets of codes used by systems conforming to this implementation guide</p>
@@ -428,24 +470,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-vs-patient-gender.html"
-                     title="ValueSet/vs-patient-gender">Patient Gender</a>
-               </td>
-               <td>
-<p>Valueset - patient genders</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-HIVRapidTestResults.html"
-                     title="ValueSet/HIVRapidTestResults">HIVRapidTestResults</a>
-               </td>
-               <td>
-<p>HIV rapid test result codes</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="ValueSet-vs-key-population.html"
                      title="ValueSet/vs-key-population">Key population</a>
                </td>
@@ -453,10 +477,46 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A list of key population types</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-marital-status.html"
+                     title="ValueSet/vs-marital-status">Marital Status</a>
+               </td>
+               <td>
+<p>Valueset - marital statuses</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSHIVRapidTestResults.html"
+                     title="ValueSet/VSHIVRapidTestResults">HIVRapidTestResults</a>
+               </td>
+               <td>
+<p>HIV rapid test result codes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-gender-identity.html"
+                     title="ValueSet/vs-gender-identity">Gender Identity</a>
+               </td>
+               <td>
+<p>Valueset - Gender Identities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-vl-interpretation.html"
+                     title="ValueSet/vs-vl-interpretation">Viral load Interpretation</a>
+               </td>
+               <td>
+<p>Valueset - Viral load Interpretations</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
     <p>These define new code systems used by systems conforming to this implementation guide</p>
@@ -467,15 +527,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-cs-patient-gender.html"
-                     title="CodeSystem/cs-patient-gender">Patient Gender</a>
-               </td>
-               <td>
-<p>The genders for patients</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="CodeSystem-cs-key-population.html"
                      title="CodeSystem/cs-key-population">Key population</a>
                </td>
@@ -483,10 +534,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A list of key population types</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-vl-interpretation.html"
+                     title="CodeSystem/cs-vl-interpretation">Viral load Interpretation</a>
+               </td>
+               <td>
+<p>A list of Viral load Interpretations</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
-   <a name="7"> </a>
+   <a name="8"> </a>
    <h3>Example: Example Scenarios </h3>
    <p>
     <p>These define groups of interrelated examples that demonstrate one or more of the workflows supported by this implementation guide</p>
@@ -504,7 +564,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="8"> </a>
+   <a name="9"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -515,12 +575,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-HIVBundleExample.html" title="Bundle/HIVBundleExample">Example Bundle - HIVBundleExample</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-HIVPatientExample.html" title="Patient/HIVPatientExample">Example Patient - HIVPatientExample</a>
+                  <a href="CarePlan-ARVTreatmentExample.html"
+                     title="CarePlan/ARVTreatmentExample">Example CarePlan - ARVTreatmentExample</a>
                </td>
             </tr>
             <tr>
@@ -531,8 +587,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CarePlan-ARVTreatmentExample.html"
-                     title="CarePlan/ARVTreatmentExample">Example CarePlan - ARVTreatmentExample</a>
+                  <a href="Observation-MaritalStatusExample.html"
+                     title="Observation/MaritalStatusExample">Example Observation - MaritalStatusExample</a>
                </td>
             </tr>
             <tr>
@@ -547,10 +603,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Observation/ViralLoadExample">Example Observation - ViralLoadExample</a>
                </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-HIVPatientExample.html" title="Patient/HIVPatientExample">Example Patient - HIVPatientExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-CD4Example.html" title="Observation/CD4Example">Example Observation - CD4Example</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-HIVBundleExample.html" title="Bundle/HIVBundleExample">Example Bundle - HIVBundleExample</a>
+               </td>
+            </tr>
          </tbody>
       </table>
    </p>
-   <a name="9"> </a>
+   <a name="10"> </a>
    <h3>Other </h3>
    <p>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories</p>
@@ -561,8 +632,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="RelatedPerson-GuardianExample.html"
-                     title="RelatedPerson/GuardianExample">RelatedPerson/GuardianExample</a>
+                  <a href="Encounter-HIVEncounterExample.html"
+                     title="Encounter/HIVEncounterExample">Encounter/HIVEncounterExample</a>
                </td>
             </tr>
             <tr>
@@ -573,8 +644,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Encounter-HIVEncounterExample.html"
-                     title="Encounter/HIVEncounterExample">Encounter/HIVEncounterExample</a>
+                  <a href="RelatedPerson-GuardianExample.html"
+                     title="RelatedPerson/GuardianExample">RelatedPerson/GuardianExample</a>
                </td>
             </tr>
             <tr>
@@ -608,7 +679,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 23, 2021 14:56+0000">2021-06-23</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 15, 2021 14:01+0000">2021-07-15</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

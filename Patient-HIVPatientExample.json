@@ -7,9 +7,31 @@
     ]
   },
   "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: ART1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane , Smith </p><p><b>telecom</b>: <a href=\"tel:+27825556666\">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><h3>Links</h3><table class=\"grid\"><tr><td>-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><a href=\"RelatedPerson-GuardianExample.html\">Generated Summary: Peter Loo </a></td><td>seealso</td></tr></table></div>"
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Gender Identity</b>: <span title=\"Codes: \">male</span></p><p><b>Key population</b>: <span title=\"Codes: \">transgender</span></p><p><b>identifier</b>: id: ART1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane Smith </p><p><b>telecom</b>: <a href=\"tel:+27825556666\">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><h3>Links</h3><table class=\"grid\"><tr><td>-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><a href=\"RelatedPerson-GuardianExample.html\">Generated Summary: Peter Loo </a></td><td>seealso</td></tr></table></div>"
   },
+  "extension": [
+    {
+      "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/gender-identity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "male"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/key-population",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "transgender"
+          }
+        ]
+      }
+    }
+  ],
   "identifier": [
     {
       "value": "ART1234567"
@@ -24,12 +46,10 @@
   "active": true,
   "name": [
     {
+      "family": "Smith",
       "given": [
         "Jane"
       ]
-    },
-    {
-      "family": "Smith"
     }
   ],
   "telecom": [

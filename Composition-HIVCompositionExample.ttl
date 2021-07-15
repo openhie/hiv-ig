@@ -18,7 +18,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 95412-3}\">COVID-19 case report</span></p><p><b>encounter</b>: <a href=\"Encounter-HIVEncounterExample.html\">Generated Summary: status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}\">inpatient acute</span>; period: 2021-05-20 --&gt; 2021-05-20</a></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href=\"Practitioner-HIVPractitionerExample.html\">Generated Summary: Homer , Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 95412-3}\">COVID-19 case report</span></p><p><b>encounter</b>: <a href=\"Encounter-HIVEncounterExample.html\">Generated Summary: status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}\">inpatient acute</span>; period: 2021-05-20 --&gt; 2021-05-20</a></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href=\"Practitioner-HIVPractitionerExample.html\">Generated Summary: Homer Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>"
   ];
   fhir:Composition.identifier [
      fhir:Identifier.system [ fhir:value "http://test.org/identifier/hiv-case-report" ];
@@ -61,6 +61,21 @@
      ]
   ], [
      fhir:index 1;
+     fhir:Composition.section.title [ fhir:value "maritalStatus" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://test.org/sectionCode" ];
+         fhir:Coding.code [ fhir:value "maritalStatus" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/MaritalStatusExample>;
+       fhir:Reference.reference [ fhir:value "Observation/MaritalStatusExample" ]
+     ]
+  ], [
+     fhir:index 2;
      fhir:Composition.section.title [ fhir:value "hivDiagnosis" ];
      fhir:Composition.section.code [
        fhir:CodeableConcept.coding [
@@ -75,7 +90,7 @@
        fhir:Reference.reference [ fhir:value "Condition/HIVDiagnosisExample" ]
      ]
   ], [
-     fhir:index 2;
+     fhir:index 3;
      fhir:Composition.section.title [ fhir:value "arvTherapySummary" ];
      fhir:Composition.section.code [
        fhir:CodeableConcept.coding [
@@ -89,7 +104,7 @@
        fhir:Reference.reference [ fhir:value "ARVTherapySummaryExample" ]
      ]
   ], [
-     fhir:index 3;
+     fhir:index 4;
      fhir:Composition.section.title [ fhir:value "viralLoad" ];
      fhir:Composition.section.code [
        fhir:CodeableConcept.coding [
@@ -102,6 +117,21 @@
        fhir:index 0;
        fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/ViralLoadExample>;
        fhir:Reference.reference [ fhir:value "Observation/ViralLoadExample" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Composition.section.title [ fhir:value "cd4" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://test.org/sectionCode" ];
+         fhir:Coding.code [ fhir:value "cd4" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/CD4Example>;
+       fhir:Reference.reference [ fhir:value "Observation/CD4Example" ]
      ]
   ] .
 

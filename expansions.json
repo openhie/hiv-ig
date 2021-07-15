@@ -1,25 +1,25 @@
 {
   "resourceType" : "Bundle",
-  "id" : "8f503de9-e13b-4896-9a04-7b3f1ca9c6ef",
+  "id" : "87ba8776-3d3a-4923-ac13-4c62a4b13248",
   "meta" : {
-    "lastUpdated" : "2021-06-23T14:56:42.119+00:00"
+    "lastUpdated" : "2021-07-15T14:01:42.373+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-gender",
+    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-key-population",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "vs-patient-gender",
+      "id" : "vs-key-population",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-patient-gender.html\">Patient Gender v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-patient-gender.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-gender-male\"> </a><a href=\"CodeSystem-cs-patient-gender.html#cs-patient-gender-male\">male</a></td><td>Male</td><td>Client identifies as female</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-gender-female\"> </a><a href=\"CodeSystem-cs-patient-gender.html#cs-patient-gender-female\">female</a></td><td>Female</td><td>Client identifies as male</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-gender-transgender\"> </a><a href=\"CodeSystem-cs-patient-gender.html#cs-patient-gender-transgender\">transgender</a></td><td>Transgender</td><td>Client identifies as transgender</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-gender-non-binary\"> </a><a href=\"CodeSystem-cs-patient-gender.html#cs-patient-gender-non-binary\">non-binary</a></td><td>Non-binary</td><td>Client identifies in a non-binary way</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-key-population.html\">Key population v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-key-population.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSM\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-MSM\">MSM</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-FSW\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-FSW\">FSW</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSW\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-MSW\">MSW</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWID\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-PWID\">PWID</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWUD\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-PWUD\">PWUD</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-transgender\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-transgender\">transgender</a></td><td/><td/></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-gender",
+      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-key-population",
       "version" : "0.2.0",
-      "name" : "PatientGender",
-      "title" : "Patient Gender",
+      "name" : "VSKeyPopulation",
+      "title" : "Key population",
       "status" : "active",
-      "date" : "2021-06-23T14:56:42+00:00",
+      "date" : "2021-07-15T14:01:42+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -27,7 +27,7 @@
           "value" : "http://hl7.org/Special/committees/[something]"
         }]
       }],
-      "description" : "Valueset - patient genders",
+      "description" : "A list of key population types",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -35,55 +35,59 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5849a409-8708-4c96-8e41-de95e13c319f",
-        "timestamp" : "2021-06-23T14:56:56+00:00",
-        "total" : 4,
+        "identifier" : "urn:uuid:f25753c1-aad3-4d4e-baf8-00b5f32065df",
+        "timestamp" : "2021-07-15T14:02:02+00:00",
+        "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
           "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender|0.2.0"
+          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population|0.2.0"
         }],
         "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender",
-          "code" : "male",
-          "display" : "Male"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "MSM"
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender",
-          "code" : "female",
-          "display" : "Female"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "FSW"
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender",
-          "code" : "transgender",
-          "display" : "Transgender"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "MSW"
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender",
-          "code" : "non-binary",
-          "display" : "Non-binary"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "PWID"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "PWUD"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "transgender"
         }]
       }
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/HIVRapidTestResults",
+    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/VSHIVRapidTestResults",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "HIVRapidTestResults",
+      "id" : "VSHIVRapidTestResults",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.69</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA11882-0\"> </a><a href=\"http://details.loinc.org/LOINC/LA11882-0.html\">LA11882-0</a></td><td>Detected</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA11883-8\"> </a><a href=\"http://details.loinc.org/LOINC/LA11883-8.html\">LA11883-8</a></td><td>Not detected</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA11885-3\"> </a><a href=\"http://details.loinc.org/LOINC/LA11885-3.html\">LA11885-3</a></td><td>Equivocal</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA9663-1\"> </a><a href=\"http://details.loinc.org/LOINC/LA9663-1.html\">LA9663-1</a></td><td>Inconclusive</td><td/></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/HIVRapidTestResults",
+      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/VSHIVRapidTestResults",
       "version" : "0.2.0",
-      "name" : "HIVRapidTestResults",
+      "name" : "VSHIVRapidTestResults",
       "title" : "HIVRapidTestResults",
       "status" : "draft",
-      "date" : "2021-06-23T14:56:42+00:00",
+      "date" : "2021-07-15T14:01:42+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -99,8 +103,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:865751fd-8f0a-474d-9920-5837cb82d92c",
-        "timestamp" : "2021-06-23T14:56:59+00:00",
+        "identifier" : "urn:uuid:6164d513-20d9-42e6-8fe1-ce768851f48a",
+        "timestamp" : "2021-07-15T14:02:04+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -138,20 +142,20 @@
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-key-population",
+    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-interpretation",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "vs-key-population",
+      "id" : "vs-vl-interpretation",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-key-population.html\">Key population v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-key-population.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSM\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-MSM\">MSM</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-FSW\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-FSW\">FSW</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSW\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-MSW\">MSW</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWID\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-PWID\">PWID</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWUD\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-PWUD\">PWUD</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-transgender\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-transgender\">transgender</a></td><td/><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-vl-interpretation.html\">Viral load Interpretation v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-vl-interpretation.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-interpretation-D\"> </a><a href=\"CodeSystem-cs-vl-interpretation.html#cs-vl-interpretation-D\">D</a></td><td>Detectable</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-interpretation-ND\"> </a><a href=\"CodeSystem-cs-vl-interpretation.html#cs-vl-interpretation-ND\">ND</a></td><td>Non Detectable</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-interpretation-UNK\"> </a><a href=\"CodeSystem-cs-vl-interpretation.html#cs-vl-interpretation-UNK\">UNK</a></td><td>Unknown</td><td/></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-key-population",
+      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-interpretation",
       "version" : "0.2.0",
-      "name" : "KeyPopulation",
-      "title" : "Key population",
+      "name" : "VSVLInterpretation",
+      "title" : "Viral load Interpretation",
       "status" : "active",
-      "date" : "2021-06-23T14:56:42+00:00",
+      "date" : "2021-07-15T14:01:42+00:00",
       "publisher" : "openHIE",
       "contact" : [{
         "telecom" : [{
@@ -159,7 +163,7 @@
           "value" : "http://hl7.org/Special/committees/[something]"
         }]
       }],
-      "description" : "A list of key population types",
+      "description" : "Valueset - Viral load Interpretations",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -167,40 +171,31 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e9e1e214-ff31-42c5-8980-902d4eee067c",
-        "timestamp" : "2021-06-23T14:56:59+00:00",
-        "total" : 6,
+        "identifier" : "urn:uuid:4a3eeff1-52d5-49a3-98aa-f3992aeb9c22",
+        "timestamp" : "2021-07-15T14:02:06+00:00",
+        "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
           "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population|0.2.0"
+          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation|0.2.0"
         }],
         "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
-          "code" : "MSM"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation",
+          "code" : "D",
+          "display" : "Detectable"
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
-          "code" : "FSW"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation",
+          "code" : "ND",
+          "display" : "Non Detectable"
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
-          "code" : "MSW"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
-          "code" : "PWID"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
-          "code" : "PWUD"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
-          "code" : "transgender"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation",
+          "code" : "UNK",
+          "display" : "Unknown"
         }]
       }
     }

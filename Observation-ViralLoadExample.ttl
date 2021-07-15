@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "ViralLoadExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load";
+       fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-test";
        fhir:index 0;
-       fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load>
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-test>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://test.org/obs VL-RESULT}\">Viral load result</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Generated Summary: id: ART1234567, id: NAT1234567, id: EMR1234567; active; Jane , Smith ; Phone: +27825556666; gender: female; birthDate: 1986-06-04</a></p><p><b>value</b>: <span title=\"Codes: {http://test.org/obs/vl-result &lt;200}\">less than 200 - undetectable</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://test.org/obs VL-RESULT}\">Viral load result</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Generated Summary: id: ART1234567, id: NAT1234567, id: EMR1234567; active; Jane Smith ; Phone: +27825556666; gender: female; birthDate: 1986-06-04</a></p><p><b>value</b>: 200</p><p><b>interpretation</b>: <span title=\"Codes: \">D</span></p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.code [
@@ -32,12 +32,12 @@
      fhir:link <http://openhie.org/fhir/hiv-casereporting/Patient/HIVPatientExample>;
      fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
   ];
-  fhir:Observation.valueCodeableConcept [
+  fhir:Observation.valueInteger [ fhir:value "200"^^xsd:integer];
+  fhir:Observation.interpretation [
+     fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://test.org/obs/vl-result" ];
-       fhir:Coding.code [ fhir:value "<200" ];
-       fhir:Coding.display [ fhir:value "less than 200 - undetectable" ]
+       fhir:Coding.code [ fhir:value "D" ]
      ]
   ] .
 

@@ -6,7 +6,7 @@
     <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 95412-3}">COVID-19 case report</span></p><p><b>encounter</b>: <a href="Encounter-HIVEncounterExample.html">Generated Summary: status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}">inpatient acute</span>; period: 2021-05-20 --&gt; 2021-05-20</a></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href="Practitioner-HIVPractitionerExample.html">Generated Summary: Homer , Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 95412-3}">COVID-19 case report</span></p><p><b>encounter</b>: <a href="Encounter-HIVEncounterExample.html">Generated Summary: status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}">inpatient acute</span>; period: 2021-05-20 --&gt; 2021-05-20</a></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href="Practitioner-HIVPractitionerExample.html">Generated Summary: Homer Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>
   </text>
   <identifier>
     <system value="http://test.org/identifier/hiv-case-report"/>
@@ -37,6 +37,18 @@
     </code>
     <entry>
       <reference value="Patient/HIVPatientExample"/>
+    </entry>
+  </section>
+  <section>
+    <title value="maritalStatus"/>
+    <code>
+      <coding>
+        <system value="http://test.org/sectionCode"/>
+        <code value="maritalStatus"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/MaritalStatusExample"/>
     </entry>
   </section>
   <section>
@@ -73,6 +85,18 @@
     </code>
     <entry>
       <reference value="Observation/ViralLoadExample"/>
+    </entry>
+  </section>
+  <section>
+    <title value="cd4"/>
+    <code>
+      <coding>
+        <system value="http://test.org/sectionCode"/>
+        <code value="cd4"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/CD4Example"/>
     </entry>
   </section>
 </Composition>
