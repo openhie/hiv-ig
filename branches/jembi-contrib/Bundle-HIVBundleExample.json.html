@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"13.35"}
-    h3,h4,h5,h6{--heading-prefix:"13.35"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.37"}
+    h3,h4,h5,h6{--heading-prefix:"13.37"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -379,9 +379,14 @@
       "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/encounter.html">resourceType</a>" : "Encounter",
         "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">id</a>" : "HIVEncounterExample",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-encounter"
+          ]
+        },
         "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;span title=\&quot;{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}\&quot;&gt;inpatient acute&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2021-05-20 --&amp;gt; 2021-05-20&lt;/p&gt;&lt;h3&gt;Locations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Location&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Location_HIVLocationExample\&quot;&gt;See above (Location/HIVLocationExample)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;span title=\&quot;{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}\&quot;&gt;inpatient acute&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2021-05-20 --&amp;gt; 2021-05-20&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=\&quot;Organization-HIVOrganizationExample.html\&quot;&gt;Generated Summary: id: ?ngen-9?, id: facility1; name: HIV Organization&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a>" : "finished",
         "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>" : {
@@ -392,27 +397,8 @@
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2021-05-20",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2021-05-20"
         },
-        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location">location</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.location">location</a>" : {
-              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Location/HIVLocationExample"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://test.org/fhir/Location/HIVLocationExample",
-      "<a href="http://hl7.org/fhir/R4/location.html#Location">resource</a>" : {
-        "<a href="http://hl7.org/fhir/R4/location.html">resourceType</a>" : "Location",
-        "<a href="http://hl7.org/fhir/R4/location.html#Location.id">id</a>" : "HIVLocationExample",
-        "<a href="http://hl7.org/fhir/R4/location.html#Location.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: KZN ZA &lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-        },
-        "<a href="http://hl7.org/fhir/R4/location.html#Location.address">address</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a>" : "KZN",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">country</a>" : "ZA"
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceProvider">serviceProvider</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/HIVOrganizationExample"
         }
       }
     },
@@ -568,7 +554,7 @@
         },
         "<a href="http://hl7.org/fhir/R4/condition.html#Condition.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: &lt;span title=\&quot;Codes: \&quot;&gt;active&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: &lt;span title=\&quot;Codes: \&quot;&gt;confirmed&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://snomed.info/sct 86406008}\&quot;&gt;Human immunodeficiency virus infection&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: &lt;span title=\&quot;Codes: \&quot;&gt;active&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: &lt;span title=\&quot;Codes: \&quot;&gt;confirmed&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://snomed.info/sct 86406008}\&quot;&gt;Human immunodeficiency virus infection&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: 2021-05-18&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">clinicalStatus</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
@@ -594,7 +580,8 @@
         },
         "<a href="http://hl7.org/fhir/R4/condition.html#Condition.subject">subject</a>" : {
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/HIVPatientExample"
-        }
+        },
+        "<a href="http://hl7.org/fhir/R4/condition.html#Condition.recordedDate">recordedDate</a>" : "2021-05-18"
       }
     },
     {
@@ -719,7 +706,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 15, 2021 14:01+0000">2021-07-15</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 19, 2021 12:37+0000">2021-07-19</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

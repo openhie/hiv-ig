@@ -10,6 +10,12 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
+    <sch:title>f:Condition</sch:title>
+    <sch:rule context="f:Condition">
+      <sch:assert test="count(f:recordedDate) &gt;= 1">recordedDate: minimum cardinality of 'recordedDate' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Condition</sch:title>
     <sch:rule context="f:Condition">
       <sch:assert test="exists(f:clinicalStatus) or exists(f:verificationStatus/f:coding/f:code/@value='entered-in-error') or not(exists(category[@value='problem-list-item']))">Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item (inherited)</sch:assert>

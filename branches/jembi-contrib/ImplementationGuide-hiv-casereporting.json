@@ -11,7 +11,7 @@
   "title": "HIV Case Reporting and Monitoring",
   "status": "draft",
   "experimental": false,
-  "date": "2021-07-15T14:01:42+00:00",
+  "date": "2021-07-19T12:37:06+00:00",
   "publisher": "openHIE",
   "contact": [
     {
@@ -511,6 +511,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/HIVOrganizationExample"
+        },
+        "name": "Example Organization - HIVOrganizationExample",
+        "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-organization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -532,19 +545,6 @@
         },
         "name": "Key population",
         "description": "A list of key population types"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/hiv-location"
-        },
-        "name": "HIV CR Location",
-        "description": "HIV Location for case report"
       },
       {
         "extension": [
@@ -620,7 +620,9 @@
         ],
         "reference": {
           "reference": "Encounter/HIVEncounterExample"
-        }
+        },
+        "name": "Example Encounter - HIVEncounterExample",
+        "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-encounter"
       },
       {
         "extension": [
@@ -673,17 +675,6 @@
         },
         "name": "HIV Case Report",
         "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Location"
-          }
-        ],
-        "reference": {
-          "reference": "Location/HIVLocationExample"
-        }
       },
       {
         "extension": [
@@ -797,6 +788,19 @@
         "reference": {
           "reference": "Practitioner/HIVPractitionerExample"
         }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-organization"
+        },
+        "name": "HIV CR Organization",
+        "description": "HIV Organization for case report - this represents a health facility"
       },
       {
         "extension": [

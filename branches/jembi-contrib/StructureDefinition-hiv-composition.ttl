@@ -27,7 +27,7 @@
   fhir:StructureDefinition.name [ fhir:value "HIVComposition"];
   fhir:StructureDefinition.title [ fhir:value "HIV Case Reporting Composition"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-07-15T14:01:42+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-19T12:37:06+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "openHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

@@ -1,0 +1,36 @@
+{
+  "resourceType": "Organization",
+  "id": "HIVOrganizationExample",
+  "meta": {
+    "profile": [
+      "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-organization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: ?ngen-9?, id: facility1</p><p><b>name</b>: HIV Organization</p><p><b>address</b>: DISI line 1 DISI line 2 DISI line 3 DISI city 1 DISI state 1 DISI postal code DISI country </p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://test.org/identifier/hiv-organization"
+    },
+    {
+      "value": "facility1"
+    }
+  ],
+  "name": "HIV Organization",
+  "address": [
+    {
+      "line": [
+        "DISI line 1",
+        "DISI line 2",
+        "DISI line 3"
+      ],
+      "city": "DISI city 1",
+      "district": "DISI district 1",
+      "state": "DISI state 1",
+      "postalCode": "DISI postal code",
+      "country": "DISI country"
+    }
+  ]
+}

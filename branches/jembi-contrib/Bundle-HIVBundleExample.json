@@ -145,9 +145,14 @@
       "resource": {
         "resourceType": "Encounter",
         "id": "HIVEncounterExample",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-encounter"
+          ]
+        },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: finished</p><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}\">inpatient acute</span></p><p><b>period</b>: 2021-05-20 --&gt; 2021-05-20</p><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href=\"#Location_HIVLocationExample\">See above (Location/HIVLocationExample)</a></td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: finished</p><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}\">inpatient acute</span></p><p><b>period</b>: 2021-05-20 --&gt; 2021-05-20</p><p><b>serviceProvider</b>: <a href=\"Organization-HIVOrganizationExample.html\">Generated Summary: id: ?ngen-9?, id: facility1; name: HIV Organization</a></p></div>"
         },
         "status": "finished",
         "class": {
@@ -158,27 +163,8 @@
           "start": "2021-05-20",
           "end": "2021-05-20"
         },
-        "location": [
-          {
-            "location": {
-              "reference": "Location/HIVLocationExample"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "http://test.org/fhir/Location/HIVLocationExample",
-      "resource": {
-        "resourceType": "Location",
-        "id": "HIVLocationExample",
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>address</b>: KZN ZA </p></div>"
-        },
-        "address": {
-          "state": "KZN",
-          "country": "ZA"
+        "serviceProvider": {
+          "reference": "Organization/HIVOrganizationExample"
         }
       }
     },
@@ -334,7 +320,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: \">active</span></p><p><b>verificationStatus</b>: <span title=\"Codes: \">confirmed</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 86406008}\">Human immunodeficiency virus infection</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: \">active</span></p><p><b>verificationStatus</b>: <span title=\"Codes: \">confirmed</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 86406008}\">Human immunodeficiency virus infection</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>recordedDate</b>: 2021-05-18</p></div>"
         },
         "clinicalStatus": {
           "coding": [
@@ -360,7 +346,8 @@
         },
         "subject": {
           "reference": "Patient/HIVPatientExample"
-        }
+        },
+        "recordedDate": "2021-05-18"
       }
     },
     {

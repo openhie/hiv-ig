@@ -21,34 +21,30 @@
      fhir:Bundle.entry.resource <http://test.org/fhir/Encounter/HIVEncounterExample>
   ], [
      fhir:index 2;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://test.org/fhir/Location/HIVLocationExample" ];
-     fhir:Bundle.entry.resource <http://test.org/fhir/Location/HIVLocationExample>
-  ], [
-     fhir:index 3;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://test.org/fhir/Patient/HIVPatientExample" ];
      fhir:Bundle.entry.resource <http://test.org/fhir/Patient/HIVPatientExample>
   ], [
-     fhir:index 4;
+     fhir:index 3;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://test.org/fhir/RelatedPerson/GuardianExample" ];
      fhir:Bundle.entry.resource <http://test.org/fhir/RelatedPerson/GuardianExample>
   ], [
-     fhir:index 5;
+     fhir:index 4;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://test.org/fhir/RelatedPerson/MaritalStatusExample" ];
      fhir:Bundle.entry.resource <http://test.org/fhir/RelatedPerson/MaritalStatusExample>
   ], [
-     fhir:index 6;
+     fhir:index 5;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://test.org/fhir/Condition/HIVDiagnosisExample" ];
      fhir:Bundle.entry.resource <http://test.org/fhir/Condition/HIVDiagnosisExample>
   ], [
-     fhir:index 7;
+     fhir:index 6;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://test.org/fhir/CarePlan/ARVTreatmentExample" ];
      fhir:Bundle.entry.resource <http://test.org/fhir/CarePlan/ARVTreatmentExample>
   ], [
-     fhir:index 8;
+     fhir:index 7;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://test.org/fhir/Observation/ViralLoadExample" ];
      fhir:Bundle.entry.resource <http://test.org/fhir/Observation/ViralLoadExample>
   ], [
-     fhir:index 9;
+     fhir:index 8;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://test.org/fhir/Observation/CD4Example" ];
      fhir:Bundle.entry.resource <http://test.org/fhir/Observation/CD4Example>
   ] .
@@ -183,9 +179,16 @@
 
 <http://test.org/fhir/Encounter/HIVEncounterExample> a fhir:Encounter;
   fhir:Resource.id [ fhir:value "HIVEncounterExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-encounter";
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-encounter>
+     ]
+  ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: finished</p><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}\">inpatient acute</span></p><p><b>period</b>: 2021-05-20 --&gt; 2021-05-20</p><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href=\"#Location_HIVLocationExample\">See above (Location/HIVLocationExample)</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: finished</p><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}\">inpatient acute</span></p><p><b>period</b>: 2021-05-20 --&gt; 2021-05-20</p><p><b>serviceProvider</b>: <a href=\"Organization-HIVOrganizationExample.html\">Generated Summary: id: ?ngen-9?, id: facility1; name: HIV Organization</a></p></div>"
   ];
   fhir:Encounter.status [ fhir:value "finished"];
   fhir:Encounter.class [
@@ -196,23 +199,9 @@
      fhir:Period.start [ fhir:value "2021-05-20"^^xsd:date ];
      fhir:Period.end [ fhir:value "2021-05-20"^^xsd:date ]
   ];
-  fhir:Encounter.location [
-     fhir:index 0;
-     fhir:Encounter.location.location [
-       fhir:link <http://openhie.org/fhir/hiv-casereporting/Location/HIVLocationExample>;
-       fhir:Reference.reference [ fhir:value "Location/HIVLocationExample" ]
-     ]
-  ] .
-
-<http://test.org/fhir/Location/HIVLocationExample> a fhir:Location;
-  fhir:Resource.id [ fhir:value "HIVLocationExample"];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>address</b>: KZN ZA </p></div>"
-  ];
-  fhir:Location.address [
-     fhir:Address.state [ fhir:value "KZN" ];
-     fhir:Address.country [ fhir:value "ZA" ]
+  fhir:Encounter.serviceProvider [
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/Organization/HIVOrganizationExample>;
+     fhir:Reference.reference [ fhir:value "Organization/HIVOrganizationExample" ]
   ] .
 
 <http://test.org/fhir/Patient/HIVPatientExample> a fhir:Patient;
@@ -352,7 +341,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: \">active</span></p><p><b>verificationStatus</b>: <span title=\"Codes: \">confirmed</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 86406008}\">Human immunodeficiency virus infection</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: \">active</span></p><p><b>verificationStatus</b>: <span title=\"Codes: \">confirmed</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 86406008}\">Human immunodeficiency virus infection</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>recordedDate</b>: 2021-05-18</p></div>"
   ];
   fhir:Condition.clinicalStatus [
      fhir:CodeableConcept.coding [
@@ -377,7 +366,8 @@
   fhir:Condition.subject [
      fhir:link <http://openhie.org/fhir/hiv-casereporting/Patient/HIVPatientExample>;
      fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
-  ] .
+  ];
+  fhir:Condition.recordedDate [ fhir:value "2021-05-18"^^xsd:date] .
 
 <http://test.org/fhir/CarePlan/ARVTreatmentExample> a fhir:CarePlan;
   fhir:Resource.id [ fhir:value "ARVTreatmentExample"];

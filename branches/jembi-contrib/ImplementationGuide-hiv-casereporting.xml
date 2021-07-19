@@ -12,7 +12,7 @@
   <title value="HIV Case Reporting and Monitoring"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-07-15T14:01:42+00:00"/>
+  <date value="2021-07-19T12:37:06+00:00"/>
   <publisher value="openHIE"/>
   <contact>
     <telecom>
@@ -344,6 +344,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/HIVOrganizationExample"/>
+      </reference>
+      <name value="Example Organization - HIVOrganizationExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -361,16 +371,6 @@
       </reference>
       <name value="Key population"/>
       <description value="A list of key population types"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-location"/>
-      </reference>
-      <name value="HIV CR Location"/>
-      <description value="HIV Location for case report"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -429,6 +429,8 @@
       <reference>
         <reference value="Encounter/HIVEncounterExample"/>
       </reference>
+      <name value="Example Encounter - HIVEncounterExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-encounter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -469,14 +471,6 @@
       </reference>
       <name value="HIV Case Report"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <reference>
-        <reference value="Location/HIVLocationExample"/>
-      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -563,6 +557,16 @@
       <reference>
         <reference value="Practitioner/HIVPractitionerExample"/>
       </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-organization"/>
+      </reference>
+      <name value="HIV CR Organization"/>
+      <description value="HIV Organization for case report - this represents a health facility"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

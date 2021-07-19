@@ -98,11 +98,11 @@
     "name": "HIVEncounter"
   },
   {
-    "id": "hiv-location",
+    "id": "hiv-organization",
     "type": "StructureDefinition",
-    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-location",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-organization",
     "version": "0.2.0",
-    "name": "HIVLocation"
+    "name": "HIVOrganization"
   },
   {
     "id": "hiv-patient",
