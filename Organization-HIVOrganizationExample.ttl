@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/Organization/HIVOrganizationExample> a fhir:Organization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HIVOrganizationExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-organization";
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-organization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: ?ngen-9?, id: facility1</p><p><b>name</b>: HIV Organization</p><p><b>address</b>: DISI line 1 DISI line 2 DISI line 3 DISI city 1 DISI state 1 DISI postal code DISI country </p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://test.org/identifier/hiv-organization" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.value [ fhir:value "facility1" ]
+  ];
+  fhir:Organization.name [ fhir:value "HIV Organization"];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.line [
+       fhir:value "DISI line 1";
+       fhir:index 0
+     ], [
+       fhir:value "DISI line 2";
+       fhir:index 1
+     ], [
+       fhir:value "DISI line 3";
+       fhir:index 2
+     ];
+     fhir:Address.city [ fhir:value "DISI city 1" ];
+     fhir:Address.district [ fhir:value "DISI district 1" ];
+     fhir:Address.state [ fhir:value "DISI state 1" ];
+     fhir:Address.postalCode [ fhir:value "DISI postal code" ];
+     fhir:Address.country [ fhir:value "DISI country" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/Organization/HIVOrganizationExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

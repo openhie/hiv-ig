@@ -60,10 +60,10 @@
         "title": "HIV CR Encounter"
       }
     ],
-    "Location": [
+    "Organization": [
       {
-        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-location",
-        "title": "HIV CR Location"
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-organization",
+        "title": "HIV CR Organization"
       }
     ],
     "Patient": [

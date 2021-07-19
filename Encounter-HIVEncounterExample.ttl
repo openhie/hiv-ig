@@ -8,9 +8,16 @@
 <http://openhie.org/fhir/hiv-casereporting/Encounter/HIVEncounterExample> a fhir:Encounter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "HIVEncounterExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-encounter";
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-encounter>
+     ]
+  ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: finished</p><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}\">inpatient acute</span></p><p><b>period</b>: 2021-05-20 --&gt; 2021-05-20</p><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href=\"Location-HIVLocationExample.html\">Generated Summary: </a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: finished</p><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}\">inpatient acute</span></p><p><b>period</b>: 2021-05-20 --&gt; 2021-05-20</p><p><b>serviceProvider</b>: <a href=\"Organization-HIVOrganizationExample.html\">Generated Summary: id: ?ngen-9?, id: facility1; name: HIV Organization</a></p></div>"
   ];
   fhir:Encounter.status [ fhir:value "finished"];
   fhir:Encounter.class [
@@ -21,12 +28,9 @@
      fhir:Period.start [ fhir:value "2021-05-20"^^xsd:date ];
      fhir:Period.end [ fhir:value "2021-05-20"^^xsd:date ]
   ];
-  fhir:Encounter.location [
-     fhir:index 0;
-     fhir:Encounter.location.location [
-       fhir:link <http://openhie.org/fhir/hiv-casereporting/Location/HIVLocationExample>;
-       fhir:Reference.reference [ fhir:value "Location/HIVLocationExample" ]
-     ]
+  fhir:Encounter.serviceProvider [
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/Organization/HIVOrganizationExample>;
+     fhir:Reference.reference [ fhir:value "Organization/HIVOrganizationExample" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
