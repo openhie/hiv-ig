@@ -9,8 +9,6 @@ Description: "Example of a clinical bundle representing a case report"
 * entry[=].resource = HIVCompositionExample
 * entry[+].fullUrl = "http://test.org/fhir/Encounter/HIVEncounterExample"
 * entry[=].resource = HIVEncounterExample
-* entry[+].fullUrl = "http://test.org/fhir/Location/HIVLocationExample"
-* entry[=].resource = HIVLocationExample
 * entry[+].fullUrl = "http://test.org/fhir/Patient/HIVPatientExample"
 * entry[=].resource = HIVPatientExample
 * entry[+].fullUrl = "http://test.org/fhir/RelatedPerson/GuardianExample"
@@ -64,28 +62,37 @@ Description: "Basic Composition example"
 * section[=].entry[+] = Reference(CD4Example)
 
 Instance: HIVEncounterExample
-InstanceOf: Encounter
+InstanceOf: HIVEncounter
 Usage: #example
 Title: "HIV CR Encounter Example"
 Description: "Encounter example"
-* location.location = Reference(HIVLocationExample)
+* serviceProvider = Reference(HIVOrganizationExample)
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#ACUTE
 * period.start = "2021-05-20"
 * period.end = "2021-05-20"
 
-Instance: HIVLocationExample
-InstanceOf: Location
+Instance: HIVOrganizationExample
+InstanceOf: HIVOrganization
 Usage: #example
-Title: "HIV Cr Location Example"
-Description: "Location example"
-* address.country = "ZA"
-* address.state = "KZN"
+Title: "HIV Organization Example"
+Description: "Organization example"
+* address[+].country = "DISI country"
+* address[=].state = "DISI state 1"
+* address[=].district = "DISI district 1"
+* address[=].city = "DISI city 1"
+* address[=].line[+] = "DISI line 1"
+* address[=].line[+] = "DISI line 2"
+* address[=].line[+] = "DISI line 3"
+* address[=].postalCode = "DISI postal code"
+* name = "HIV Organization"
+* identifier[+].system = "http://test.org/identifier/hiv-organization"
+* identifier[+].value = "facility1"
 
 Instance: HIVPractitionerExample
 InstanceOf: Practitioner
 Usage: #example
-Title: "HIV Cr Practitioner Example"
+Title: "HIV Practitioner Example"
 Description: "Practitioner example"
 * name.given = "Homer"
 * name.family = "Simpson"
@@ -146,6 +153,7 @@ Description: "."
 * verificationStatus = #confirmed
 * code = $SCT#86406008
 * subject = Reference(HIVPatientExample)
+* recordedDate = "2021-05-18"
 
 Instance: ARVTreatmentExample
 InstanceOf: ARVTreatment

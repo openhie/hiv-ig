@@ -20,7 +20,7 @@ Title:      "HIV Case Reporting Composition"
     hivDiagnosis 0..1 and
     arvTreatment 0..1 and
     viralLoad 0..1 and
-    cd4 0..1    
+    cd4 0..1
 
 * section[hivPatient].title = "hivPatient"
 * section[hivPatient].code = http://test.org/sectionCode#hivPatient
@@ -53,18 +53,19 @@ Parent: Encounter
 Id: hiv-encounter
 Title: "HIV CR Encounter"
 Description: "HIV Encounter for a case report"
-* location 1..1
-* reasonCode 1..*
-//* reasonCode from HIVValueSetReasonForCovid19Testing
+* serviceProvider 1..1
 
-Profile: HIVLocation
-Parent: Location
-Id: hiv-location
-Title: "HIV CR Location"
-Description: "HIV Location for case report"
+Profile: HIVOrganization
+Parent: Organization
+Id: hiv-organization
+Title: "HIV CR Organization"
+Description: "HIV Organization for case report - this represents a health facility"
 * address 1..1
 * address.country 1..1
 * address.state 1..1
+* address.district 1..1
+* address.city 1..1
+* identifier 1..*
 
 Profile:        HIVPatient
 Parent:         Patient
@@ -126,6 +127,7 @@ Parent:         Condition
 Id:             hiv-diagnosis
 Title:          "HIV Diagnosis"
 Description:    "This profile allows the exchange of a patient's hiv diagnosis"
+* recordedDate 1..1 MS
 
 Profile:        HIVRecency
 Parent:         Observation
