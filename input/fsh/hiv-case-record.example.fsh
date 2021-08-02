@@ -13,7 +13,7 @@ Description: "Example of a clinical bundle representing a case report"
 * entry[=].resource = HIVPatientExample
 * entry[+].fullUrl = "http://test.org/fhir/RelatedPerson/GuardianExample"
 * entry[=].resource = GuardianExample
-* entry[+].fullUrl = "http://test.org/fhir/RelatedPerson/MaritalStatusExample"
+* entry[+].fullUrl = "http://test.org/fhir/Observation/MaritalStatusExample"
 * entry[=].resource = MaritalStatusExample
 * entry[+].fullUrl = "http://test.org/fhir/Condition/HIVDiagnosisExample"
 * entry[=].resource = HIVDiagnosisExample
@@ -71,6 +71,7 @@ Description: "Encounter example"
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#ACUTE
 * period.start = "2021-05-20"
 * period.end = "2021-05-20"
+* subject = Reference(HIVPatientExample)
 
 Instance: HIVOrganizationExample
 InstanceOf: HIVOrganization
@@ -102,8 +103,8 @@ InstanceOf: HIVPatient
 Usage: #example
 Title: "HIV Patient example"
 Description: "."
-
 * active = true
+* name.use = "official"
 * name.given = "Jane"
 * name.family = "Smith"
 * gender = #female
