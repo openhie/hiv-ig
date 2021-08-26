@@ -1,28 +1,39 @@
-
 Instance: HIVBundleExample
 InstanceOf: Bundle
 Usage: #example
 Title: "HIV Bundle Example"
 Description: "Example of a clinical bundle representing a case report"
 * type = #document
-* entry[+].fullUrl = "http://test.org/fhir/Composition/HIVCompositionExample"
+* entry[+].fullUrl = "Composition/HIVCompositionExample"
 * entry[=].resource = HIVCompositionExample
-* entry[+].fullUrl = "http://test.org/fhir/Encounter/HIVEncounterExample"
+* entry[+].fullUrl = "Encounter/HIVEncounterExample"
 * entry[=].resource = HIVEncounterExample
-* entry[+].fullUrl = "http://test.org/fhir/Patient/HIVPatientExample"
+* entry[+].fullUrl = "Patient/HIVPatientExample"
 * entry[=].resource = HIVPatientExample
-* entry[+].fullUrl = "http://test.org/fhir/RelatedPerson/GuardianExample"
+* entry[+].fullUrl = "RelatedPerson/GuardianExample"
 * entry[=].resource = GuardianExample
-* entry[+].fullUrl = "http://test.org/fhir/Observation/MaritalStatusExample"
-* entry[=].resource = MaritalStatusExample
-* entry[+].fullUrl = "http://test.org/fhir/Condition/HIVDiagnosisExample"
+* entry[+].fullUrl = "Condition/HIVDiagnosisExample"
 * entry[=].resource = HIVDiagnosisExample
-* entry[+].fullUrl = "http://test.org/fhir/CarePlan/ARVTreatmentExample"
-* entry[=].resource = ARVTreatmentExample
-* entry[+].fullUrl = "http://test.org/fhir/Observation/ViralLoadExample"
-* entry[=].resource = ViralLoadExample
-* entry[+].fullUrl = "http://test.org/fhir/Observation/CD4Example"
-* entry[=].resource = CD4Example
+* entry[+].fullUrl = "Observation/HIVRecencyTestConductedExample"
+* entry[=].resource = HIVRecencyTestConductedExample
+* entry[+].fullUrl = "Observation/HIVRecencyResultExample"
+* entry[=].resource = HIVRecencyResultExample
+* entry[+].fullUrl = "EpisodeOfCare/HIVEpisodeOfCareExample"
+* entry[=].resource = HIVEpisodeOfCareExample
+* entry[+].fullUrl = "CarePlan/ARVTreatmentExample1"
+* entry[=].resource = ARVTreatmentExample1
+* entry[+].fullUrl = "CarePlan/ARVTreatmentExample2"
+* entry[=].resource = ARVTreatmentExample2
+* entry[+].fullUrl = "Observation/CD4Example1"
+* entry[=].resource = CD4Example1
+* entry[+].fullUrl = "Observation/CD4Example2"
+* entry[=].resource = CD4Example2
+* entry[+].fullUrl = "Observation/ViralLoadSuppressionExample1"
+* entry[=].resource = ViralLoadSuppressionExample1
+* entry[+].fullUrl = "Observation/ViralLoadSuppressionExample2"
+* entry[=].resource = ViralLoadSuppressionExample2
+* entry[+].fullUrl = "Observation/DeathExample"
+* entry[=].resource = DeathExample
 
 Instance: HIVCompositionExample
 InstanceOf: HIVComposition
@@ -30,36 +41,48 @@ Usage: #example
 Title: "HIV Cr Composition Basic Example"
 Description: "Basic Composition example"
 * status = #final
-* identifier.system = "http://test.org/identifier/hiv-case-report"
+* identifier.system = "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-case-report"
 * identifier.value = "1111"
 * encounter = Reference(HIVEncounterExample)
 * date = "2021-05-18"
 * author = Reference(HIVPractitionerExample)
 * title = "HIV Case Report"
 
-* section[+].title = "hivPatient"
-* section[=].code = http://test.org/sectionCode#hivPatient
+* section[+].title = "Client registration"
+* section[=].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#clientRegistration
 * section[=].entry[+] = Reference(HIVPatientExample)
+* section[=].entry[+] = Reference(HIVEncounterExample)
+* section[=].entry[+] = Reference(GuardianExample)
 
-* section[+].title = "maritalStatus"
-* section[=].code = http://test.org/sectionCode#maritalStatus
-* section[=].entry[+] = Reference(MaritalStatusExample)
-
-* section[+].title = "hivDiagnosis"
-* section[=].code = http://test.org/sectionCode#hivDiagnosis
+* section[+].title = "HIV Diagnosis"
+* section[=].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#hivDiagnosis
 * section[=].entry[+] = Reference(HIVDiagnosisExample)
+* section[=].entry[+] = Reference(HIVEncounterExample)
+* section[=].entry[+] = Reference(HIVRecencyTestConductedExample)
+* section[=].entry[+] = Reference(HIVRecencyResultExample)
 
-* section[+].title = "arvTherapySummary"
-* section[=].code = http://test.org/sectionCode#arvTherapySummary
-* section[=].entry[+] = Reference(ARVTherapySummaryExample)
+* section[+].title = "HIV Entry To Care"
+* section[=].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#hivEntryToCare
+* section[=].entry = Reference(HIVEpisodeOfCareExample)
 
-* section[+].title = "viralLoad"
-* section[=].code = http://test.org/sectionCode#viralLoad
-* section[=].entry[+] = Reference(ViralLoadExample)
+* section[+].title = "ARV Treatment"
+* section[=].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#arvTherapySummary
+* section[=].entry[+] = Reference(ARVTreatmentExample1)
+* section[=].entry[+] = Reference(ARVTreatmentExample2)
 
-* section[+].title = "cd4"
-* section[=].code = http://test.org/sectionCode#cd4
-* section[=].entry[+] = Reference(CD4Example)
+* section[+].title = "CD4"
+* section[=].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#cd4
+* section[=].entry[+] = Reference(CD4Example1)
+* section[=].entry[+] = Reference(CD4Example2)
+
+* section[+].title = "Viral Suppression"
+* section[=].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#viralSuppression
+* section[=].entry[+] = Reference(ViralLoadSuppressionExample1)
+* section[=].entry[+] = Reference(ViralLoadSuppressionExample2)
+
+* section[+].title = "Death"
+* section[=].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#death
+* section[=].entry[+] = Reference(DeathExample)
 
 Instance: HIVEncounterExample
 InstanceOf: HIVEncounter
@@ -87,8 +110,8 @@ Description: "Organization example"
 * address[=].line[+] = "DISI line 3"
 * address[=].postalCode = "DISI postal code"
 * name = "HIV Organization"
-* identifier[+].system = "http://test.org/identifier/hiv-organization"
-* identifier[+].value = "facility1"
+* identifier[+].system = "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-organization"
+* identifier[=].value = "facility1"
 
 Instance: HIVPractitionerExample
 InstanceOf: Practitioner
@@ -104,9 +127,11 @@ Usage: #example
 Title: "HIV Patient example"
 Description: "."
 * active = true
-* name.use = "official"
+* name.use = #official
 * name.given = "Jane"
 * name.family = "Smith"
+* maritalStatus.coding[0].code = #M
+* maritalStatus.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
 * gender = #female
 * birthDate = "1986-06-04"
 * telecom.system = #phone
@@ -118,33 +143,18 @@ Description: "."
 * identifier[art].value = "ART1234567"
 * identifier[national].value = "NAT1234567"
 * identifier[pos].value = "EMR1234567"
-* link.other = Reference(GuardianExample)
-* link.type = #seealso // what link to use?
 * extension[genderIdentity].valueCodeableConcept = #male
 * extension[keyPopulation].valueCodeableConcept = #transgender
 
 Instance: GuardianExample
-InstanceOf: RelatedPerson
+InstanceOf: HIVRelatedPerson
 Usage: #example
 Title: "Related person example"
 Description: ""
 * name.given = "Peter"
 * name.family = "Loo"
-//* relationship = what to add here?
 * patient = Reference(HIVPatientExample)
 
-Instance: MaritalStatusExample
-InstanceOf: MaritalStatus
-Usage: #example
-Title: "Marital Status example"
-Description: "."
-* status = #final
-* code = #M "Married"
-* subject = Reference(HIVPatientExample)
-* valueCodeableConcept = #M "Married"
-
-
-// First 90 - people who know they are HIV +ve
 Instance: HIVDiagnosisExample
 InstanceOf: HIVDiagnosis
 Usage: #example
@@ -155,32 +165,132 @@ Description: "."
 * code = $SCT#86406008
 * subject = Reference(HIVPatientExample)
 * recordedDate = "2021-05-18"
+* identifier[+].system = "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-diagnosis"
+* identifier[=].value = "abc"
 
-Instance: ARVTreatmentExample
+Instance: HIVRecencyTestConductedExample
+InstanceOf: HIVRecencyTestConducted
+Usage: #example
+Title: "HIV recency test example"
+Description: "."
+* status = #final
+* subject = Reference(HIVPatientExample)
+* valueBoolean = true
+
+Instance: HIVRecencyResultExample
+InstanceOf: HIVRecencyResult
+Usage: #example
+Title: "HIV recency result example"
+Description: "."
+* status = #final
+* subject = Reference(HIVPatientExample)
+* valueBoolean = false
+
+Instance: HIVEpisodeOfCareExample
+InstanceOf: HIVEpisodeOfCare
+Usage: #example
+Title: "HIV Episode Of Care Example"
+Description: ""
+* status = #active
+* patient = Reference(HIVPatientExample)
+* period.start = "2021-08-25"
+* identifier[+].system = "http://example.org/enrollmentUniqueID"
+* identifier[=].value = "123456789"
+* managingOrganization = Reference(HIVOrganizationExample)
+* diagnosis.condition = Reference(HIVDiagnosisExample)
+
+Instance: ARVTreatmentExample1
 InstanceOf: ARVTreatment
 Usage: #example
 Title: "ARV therapy summary example"
-Description: "."
+Description: ""
 * status = #active
 * intent = #plan
 * subject = Reference(HIVPatientExample)
 * period.start = "2021-05-20"
+* activity.detail.status = #stopped
+* activity.detail.kind = #MedicationRequest
+* activity.detail.code = $LNC#45260-7 "HIV ART medication"
+* activity.detail.productCodeableConcept = #TDF/3TC/DTG
+* activity.detail.extension[artRegimenLine].valueCodeableConcept = #first-line
 
-Instance: ViralLoadExample
-InstanceOf: ViralLoad
+Instance: ARVTreatmentExample2
+InstanceOf: ARVTreatment
 Usage: #example
-Title: "Viral load example"
-Description: "."
-* status = #final
+Title: "ARV therapy summary example"
+Description: ""
+* status = #active
+* intent = #plan
 * subject = Reference(HIVPatientExample)
-* valueInteger = 200
-* interpretation = #D
+* period.start = "2021-07-20"
+* activity.detail.status = #in-progress
+* activity.detail.kind = #MedicationRequest
+* activity.detail.code = $LNC#45260-7 "HIV ART medication"
+* activity.detail.productCodeableConcept = #TDF/3TC/EFV
+* activity.detail.extension[artRegimenLine].valueCodeableConcept = #second-line
 
-Instance: CD4Example
+Instance: CD4Example1
 InstanceOf: CD4
 Usage: #example
 Title: "CD4 example"
-Description: "."
+Description: ""
 * status = #final
 * subject = Reference(HIVPatientExample)
+* code = http://openhie.org/fhir/hiv-casereporting/obs#CD4-RESULT "CD4 result"
+* effectiveDateTime = "2020-06-09"
+* component[+].code = $SCT#113056008 "CD4 result"
+* component[=].valueInteger = 500
+* component[+].code = $SCT#313938009 "CD4 percentage"
+* component[=].valueInteger = 50
+
+Instance: CD4Example2
+InstanceOf: CD4
+Usage: #example
+Title: "CD4 example"
+Description: ""
+* status = #final
+* subject = Reference(HIVPatientExample)
+* code = http://openhie.org/fhir/hiv-casereporting/obs#CD4-RESULT "CD4 result"
+* effectiveDateTime = "2021-08-26"
+* component[+].code = $SCT#113056008 "CD4 result"
+* component[=].valueInteger = 200
+* component[+].code = $SCT#313938009 "CD4 percentage"
+* component[=].valueInteger = 30
+
+Instance: ViralLoadSuppressionExample1
+InstanceOf: ViralLoadSuppression
+Usage: #example
+Title: "Viral load suppression example"
+Description: ""
+* status = #final
+* subject = Reference(HIVPatientExample)
+* code = http://openhie.org/fhir/hiv-casereporting/obs#VL-RESULT "Viral load result"
+* effectiveDateTime = "2020-06-09"
+* valueInteger = 1000
+* interpretation[+] = CSVLInterpretation#D "Detectable"
+* interpretation[+] = CSVLSuppression#UNSUP "Unsuppressed"
+
+Instance: ViralLoadSuppressionExample2
+InstanceOf: ViralLoadSuppression
+Usage: #example
+Title: "Viral load suppression example"
+Description: ""
+* status = #final
+* subject = Reference(HIVPatientExample)
+* code = http://openhie.org/fhir/hiv-casereporting/obs#VL-RESULT "Viral load result"
+* effectiveDateTime = "2021-06-21"
 * valueInteger = 200
+* interpretation[+] = CSVLInterpretation#ND "Non Detectable"
+* interpretation[+] = CSVLSuppression#SUP "Suppressed"
+
+Instance: DeathExample
+InstanceOf: DeathObs
+Usage: #example
+Title: "Death Example"
+Description: ""
+* status = #final
+* subject = Reference(HIVPatientExample)
+* code = http://openhie.org/fhir/hiv-casereporting/obs#CAUSE-OF-DEATH "Cause of death"
+* effectiveDateTime = "2021-08-26"
+* valueCodeableConcept = CSVLCauseOfDeath#HIV "HIV Related"
+* extension[lastClinicalVisit].valueDateTime = "2021-08-26"

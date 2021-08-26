@@ -1,8 +1,8 @@
 Alias: $SCT = http://snomed.info/sct
 Alias: $LNC = http://loinc.org
-
 Alias: $GenderIdentity = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity
 Alias: $MaritalStatus = http://hl7.org/fhir/ValueSet/marital-status
+Alias: $HIVObs = http://ohie.org/fhir/ValueSet/hiv-observation-codes
 
 CodeSystem: CSKeyPopulation
 Id: cs-key-population
@@ -51,72 +51,57 @@ Title: "Viral load Interpretation"
 Description: "Valueset - Viral load Interpretations"
 * include codes from system CSVLInterpretation
 
-ValueSet: VSHIVRapidTestResults
-Title: "HIVRapidTestResults"
-Description: "HIV rapid test result codes"
-* ^status = #draft
-* $LNC#LA11882-0 "Detected"
-* $LNC#LA11883-8 "Not detected"
-* $LNC#LA11885-3 "Equivocal"
-* $LNC#LA9663-1 "Inconclusive"
+CodeSystem: CSVLSuppression
+Id: cs-vl-suppression
+Title: "Viral load Suppression"
+Description: "A list of Viral load Suppression"
+* #SUP "Suppressed"
+* #UNSUP "Unsuppressed"
+* #UNK "Unknown"
 
+ValueSet: VSVLSuppression
+Id: vs-vl-suppression
+Title: "Viral load Suppression"
+Description: "Valueset - Viral load Suppression"
+* include codes from system CSVLSuppression
 
-////////////////////////////////   Naming Systems   ////////////////////////////////
+CodeSystem: CSVLCauseOfDeath
+Id: cs-vl-causeofdeath
+Title: "Cause Of Death"
+Description: "A list of CauseOfDeaths"
+* #HIV "HIV Related"
+* #NON-HIV "Non HIV related"
 
-Instance: ns-passport-id
-InstanceOf: NamingSystem
-Usage: #definition
-Description: "Naming System - Passport numbers"
-* status = #active
-* name = "NSPassportID"
-* date = "2020-12-24"
-* kind = #codesystem
-* description = "Naming System - Passport identifiers"
-* uniqueId[0].type = #uri
-* uniqueId[0].value = "https://openhie.org/sid/passport"
-* uniqueId[0].preferred = true
+ValueSet: VSVLCauseOfDeath
+Id: vs-vl-causeofdeath
+Title: "Cause Of Death"
+Description: "Valueset - CauseOfDeaths"
+* include codes from system CSVLCauseOfDeath
 
+CodeSystem: CSHIVObservationCodes
+Id: cs-hiv-observation-codes
+Title: "HIV observation codes"
+Description: "A list of HIV observation codes"
+* #HIV_RECENCY_TEST_CONDUCTED "HIV recency test conducted"
+* #HIV_RECENCY_RESULT "HIV recency result"
 
-Instance: ns-insurance-id
-InstanceOf: NamingSystem
-Usage: #definition
-Description: "Naming System - Insurance numbers"
-* status = #active
-* name = "NSInsuranceID"
-* date = "2020-12-24"
-* kind = #codesystem
-* description = "Naming System - Insurance identifiers"
-* uniqueId[0].type = #uri
-* uniqueId[0].value = "https://openhie.org/sid/insurance"
-* uniqueId[0].preferred = true
+ValueSet: VSHIVObservationCodes
+Id: vs-hiv-observation-codes
+Title: "HIV observation codes"
+Description: "Valueset - HIV observation codes"
+* include codes from system CSHIVObservationCodes
 
+CodeSystem: CSARTRegimenLines
+Id: cs-artregimen-lines
+Title: "ART Regimen Lines"
+Description: ""
+* #first-line "First line ARTs"
+* #second-line "Second line ARTs"
+* #third-line "Third line ARTs"
+* #special-unknown "Special/Unknown"
 
-Instance: ns-art-id
-InstanceOf: NamingSystem
-Usage: #definition
-Description: "Naming System - ARV treatment identifiers"
-* status = #active
-* name = "NSARTID"
-* date = "2020-12-24"
-* kind = #codesystem
-* description = "Naming System - ARV treatment identifiers"
-* uniqueId[0].type = #uri
-* uniqueId[0].value = "https://openhie.org/sid/arv"
-* uniqueId[0].preferred = true
-
-
-
-Instance: ns-hiv-case-id
-InstanceOf: NamingSystem
-Usage: #definition
-Description: "Naming System - HIV Case identifiers"
-* status = #active
-* name = "NSHIVID"
-* date = "2020-12-24"
-* kind = #codesystem
-* description = "Naming System - HIV Case identifiers"
-* uniqueId[0].type = #uri
-* uniqueId[0].value = "https://openhie.org/sid/hiv-case"
-* uniqueId[0].preferred = true
-
-
+ValueSet: VSARTRegimenLines
+Id: vs-artregimen-lines
+Title: "VSART Regimen Lines"
+Description: ""
+* include codes from system CSARTRegimenLines
