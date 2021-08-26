@@ -109,7 +109,8 @@ Description: "This Patient profile allows the exchange of patient information, i
 * birthDate MS
 * name 1..* MS
 * gender 1..1 MS
-* maritalStatus MS
+* maritalStatus 1..1 MS
+* maritalStatus from VSMaritalStatus
 
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
