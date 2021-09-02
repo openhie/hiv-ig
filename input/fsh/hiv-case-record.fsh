@@ -84,6 +84,7 @@ Title: "HIV CR Encounter"
 Description: "HIV Encounter for a case report"
 * serviceProvider 1..1
 * subject 1..1
+// TODO encounter category?
 
 Profile: HIVOrganization
 Parent: Organization
