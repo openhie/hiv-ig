@@ -6,8 +6,10 @@ Description: "Example of a clinical bundle representing a case report"
 * type = #document
 * entry[+].fullUrl = "Composition/HIVCompositionExample"
 * entry[=].resource = HIVCompositionExample
-* entry[+].fullUrl = "Encounter/HIVEncounterExample"
-* entry[=].resource = HIVEncounterExample
+* entry[+].fullUrl = "Encounter/HIVDiagnosisEncounterExample"
+* entry[=].resource = HIVDiagnosisEncounterExample
+* entry[+].fullUrl = "Encounter/HIVClinicalEncounterExample"
+* entry[=].resource = HIVClinicalEncounterExample
 * entry[+].fullUrl = "Patient/HIVPatientExample"
 * entry[=].resource = HIVPatientExample
 * entry[+].fullUrl = "RelatedPerson/GuardianExample"
@@ -43,7 +45,6 @@ Description: "Basic Composition example"
 * status = #final
 * identifier.system = "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-case-report"
 * identifier.value = "1111"
-* encounter = Reference(HIVEncounterExample)
 * date = "2021-05-18"
 * author = Reference(HIVPractitionerExample)
 * title = "HIV Case Report"
@@ -51,19 +52,19 @@ Description: "Basic Composition example"
 * section[+].title = "Client registration"
 * section[=].code = CSCaseReportSections#CLIENT-REGISTRATION
 * section[=].entry[+] = Reference(HIVPatientExample)
-* section[=].entry[+] = Reference(HIVEncounterExample)
 * section[=].entry[+] = Reference(GuardianExample)
 
 * section[+].title = "HIV Diagnosis"
 * section[=].code = CSCaseReportSections#HIV-DIAGNOSIS
 * section[=].entry[+] = Reference(HIVDiagnosisExample)
-* section[=].entry[+] = Reference(HIVEncounterExample)
+* section[=].entry[+] = Reference(HIVDiagnosisEncounterExample)
 * section[=].entry[+] = Reference(HIVRecencyTestConductedExample)
 * section[=].entry[+] = Reference(HIVRecencyResultExample)
 
 * section[+].title = "HIV Entry To Care"
 * section[=].code = CSCaseReportSections#HIV-ENTRY-TO-CARE
-* section[=].entry = Reference(HIVEpisodeOfCareExample)
+* section[=].entry[+] = Reference(HIVEpisodeOfCareExample)
+* section[=].entry[+] = Reference(HIVClinicalEncounterExample)
 
 * section[+].title = "ARV Treatment"
 * section[=].code = CSCaseReportSections#arvTherapySummary
@@ -84,16 +85,22 @@ Description: "Basic Composition example"
 * section[=].code = CSCaseReportSections#DEATH
 * section[=].entry[+] = Reference(DeathExample)
 
-Instance: HIVEncounterExample
-InstanceOf: HIVEncounter
+Instance: HIVDiagnosisEncounterExample
+InstanceOf: HIVDiagnosisEncounter
 Usage: #example
-Title: "HIV Encounter Example"
-Description: "Encounter example"
+Title: "HIV Diagnosis Encounter Example"
+Description: "HIV Diagnosis Encounter example"
 * serviceProvider = Reference(HIVOrganizationExample)
 * status = #finished
-* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#ACUTE
-* period.start = "2021-05-20"
-* period.end = "2021-05-20"
+* subject = Reference(HIVPatientExample)
+
+Instance: HIVClinicalEncounterExample
+InstanceOf: HIVClinicalEncounter
+Usage: #example
+Title: "HIV Clinical Encounter Example"
+Description: "HIV Clinical Encounter example"
+* status = #finished
+* period.start = "2021-07-22"
 * subject = Reference(HIVPatientExample)
 
 Instance: HIVOrganizationExample
@@ -143,6 +150,7 @@ Description: "."
 * identifier[art].value = "ART1234567"
 * identifier[national].value = "NAT1234567"
 * identifier[pos].value = "EMR1234567"
+* managingOrganization = Reference(HIVOrganizationExample)
 * extension[genderIdentity].valueCodeableConcept = #male
 * extension[keyPopulation].valueCodeableConcept = #transgender
 
@@ -176,6 +184,7 @@ Description: "."
 * status = #final
 * subject = Reference(HIVPatientExample)
 * valueBoolean = true
+* encounter = Reference(HIVClinicalEncounterExample)
 
 Instance: HIVRecencyResultExample
 InstanceOf: HIVRecencyResult
@@ -185,6 +194,7 @@ Description: "."
 * status = #final
 * subject = Reference(HIVPatientExample)
 * valueBoolean = false
+* encounter = Reference(HIVClinicalEncounterExample)
 
 Instance: HIVEpisodeOfCareExample
 InstanceOf: HIVEpisodeOfCare

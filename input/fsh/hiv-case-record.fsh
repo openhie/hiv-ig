@@ -5,7 +5,6 @@ Description: "HIV Case Reporting Composition"
 Title: "HIV Case Reporting Composition"
 * type = $LNC#95412-3
 * category = $LNC#75218-8
-* encounter 1..1
 * identifier.system = "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-case-report"
 
 * section ^slicing.discriminator.type = #value
@@ -29,32 +28,37 @@ Title: "HIV Case Reporting Composition"
 * section[hivPatientSection].entry ^slicing.rules = #closed
 * section[hivPatientSection].entry contains
     hivPatient 1..1 and
-    hivEncounter 1..1 and
     hivRelatedPerson 0..*
 * section[hivPatientSection].entry[hivPatient] only Reference(HIVPatient)
-* section[hivPatientSection].entry[hivEncounter] only Reference(HIVEncounter)
 * section[hivPatientSection].entry[hivRelatedPerson] only Reference(HIVRelatedPerson)
 
 * section[hivDiagnosisSection].title = "HIV Diagnosis"
 * section[hivDiagnosisSection].code = CSCaseReportSections#HIV-DIAGNOSIS
-* section[hivDiagnosisSection].entry only Reference(HIVDiagnosis or HIVEncounter or HIVRecencyTestConducted or HIVRecencyResult)
+* section[hivDiagnosisSection].entry only Reference(HIVDiagnosis or HIVDiagnosisEncounter or HIVRecencyTestConducted or HIVRecencyResult)
 * section[hivDiagnosisSection].entry ^slicing.discriminator.type = #profile
 * section[hivDiagnosisSection].entry ^slicing.discriminator.path = "item.resolve()"
 * section[hivDiagnosisSection].entry ^slicing.rules = #closed
 * section[hivDiagnosisSection].entry contains
     hivDiagnosis 1..1 and
-    hivEncounter 1..1 and
+    hivDiagnosisEncounter 1..1 and
     hivRecencyTestConducted 1..1 and
     hivRecencyResult 1..1
 * section[hivDiagnosisSection].entry[hivDiagnosis] only Reference(HIVDiagnosis)
-* section[hivDiagnosisSection].entry[hivEncounter] only Reference(HIVEncounter)
+* section[hivDiagnosisSection].entry[hivDiagnosisEncounter] only Reference(HIVDiagnosisEncounter)
 * section[hivDiagnosisSection].entry[hivRecencyTestConducted] only Reference(HIVRecencyTestConducted)
 * section[hivDiagnosisSection].entry[hivRecencyResult] only Reference(HIVRecencyResult)
 
 * section[hivEntryToCareSection].title = "HIV Entry To Care"
 * section[hivEntryToCareSection].code = CSCaseReportSections#HIV-ENTRY-TO-CARE
-* section[hivEntryToCareSection].entry only Reference(HIVEpisodeOfCare)
-* section[hivEntryToCareSection].entry 1..1
+* section[hivEntryToCareSection].entry only Reference(HIVEpisodeOfCare or HIVClinicalEncounter)
+* section[hivEntryToCareSection].entry ^slicing.discriminator.type = #profile
+* section[hivEntryToCareSection].entry ^slicing.discriminator.path = "item.resolve()"
+* section[hivEntryToCareSection].entry ^slicing.rules = #closed
+* section[hivEntryToCareSection].entry contains
+    hivEpisodeOfCare 1..1 and
+    hivClinicalEncounter 1..1
+* section[hivEntryToCareSection].entry[hivEpisodeOfCare] only Reference(HIVEpisodeOfCare)
+* section[hivEntryToCareSection].entry[hivClinicalEncounter] only Reference(HIVClinicalEncounter)
 
 * section[arvTreatmentSection].title = "ARV Treatment"
 * section[arvTreatmentSection].code = CSCaseReportSections#ARV-TREATMENT
@@ -72,19 +76,28 @@ Title: "HIV Case Reporting Composition"
 * section[deathSection].code = CSCaseReportSections#DEATH
 * section[deathSection].entry only Reference(DeathObs)
 
-Profile: HIVEncounter
+Profile: HIVDiagnosisEncounter
 Parent: Encounter
-Id: hiv-encounter
-Title: "HIV CR Encounter"
+Id: hiv-disgnosis-encounter
+Title: "HIV Diagnosis Encounter"
 Description: "HIV Encounter for a case report"
 * serviceProvider 1..1
 * subject 1..1
-// TODO enbcounter category?
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#PRENC
+
+Profile: HIVClinicalEncounter
+Parent: Encounter
+Id: hiv-clinical-encounter
+Title: "HIV Clinical Encounter"
+Description: "HIV Encounter for a case report"
+* subject 1..1
+* period.start 1..1
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#OBSENC
 
 Profile: HIVOrganization
 Parent: Organization
 Id: hiv-organization
-Title: "HIV CR Organization"
+Title: "HIV Organization"
 Description: "HIV Organization for case report - this represents a health facility"
 * address 1..1
 * address.country 1..1
@@ -135,6 +148,8 @@ Description: "This Patient profile allows the exchange of patient information, i
 * identifier[national].value 0..1
 * identifier[pos].value 1..1
 
+* managingOrganization 1..1
+
 Extension: KeyPopulation
 Id: key-population
 Title: "Key population"
@@ -172,6 +187,7 @@ Description: "This profile allows the exchange of a patient's hiv recency test"
 * subject 1..1
 * code = CSHIVObsCodes#HIV-RECENCY-TEST-CONDUCTED "HIV recency test conducted"
 * valueBoolean 1..1
+* encounter 1..1
 
 Profile: HIVRecencyResult
 Parent: Observation
@@ -181,6 +197,7 @@ Description: "This profile allows the exchange of a patient's hiv recency test"
 * subject 1..1
 * code = CSHIVObsCodes#HIV-RECENCY-RESULT "HIV recency test conducted"
 * valueBoolean 1..1
+* encounter 1..1
 
 Profile: HIVEpisodeOfCare
 Parent: EpisodeOfCare
