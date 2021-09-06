@@ -1,7 +1,7 @@
 Instance: HIVBundleExample
 InstanceOf: Bundle
 Usage: #example
-Title: "HIV Bundle Example"
+Title: "HIV Case Report - Full Bundle Example"
 Description: "Example of a clinical bundle representing a case report"
 * type = #document
 * entry[+].fullUrl = "Composition/HIVCompositionExample"
@@ -38,7 +38,7 @@ Description: "Example of a clinical bundle representing a case report"
 Instance: HIVCompositionExample
 InstanceOf: HIVComposition
 Usage: #example
-Title: "HIV Cr Composition Basic Example"
+Title: "HIV Case Report Composition Example"
 Description: "Basic Composition example"
 * status = #final
 * identifier.system = "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-case-report"
@@ -49,45 +49,45 @@ Description: "Basic Composition example"
 * title = "HIV Case Report"
 
 * section[+].title = "Client registration"
-* section[=].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#clientRegistration
+* section[=].code = CSCaseReportSections#CLIENT-REGISTRATION
 * section[=].entry[+] = Reference(HIVPatientExample)
 * section[=].entry[+] = Reference(HIVEncounterExample)
 * section[=].entry[+] = Reference(GuardianExample)
 
 * section[+].title = "HIV Diagnosis"
-* section[=].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#hivDiagnosis
+* section[=].code = CSCaseReportSections#HIV-DIAGNOSIS
 * section[=].entry[+] = Reference(HIVDiagnosisExample)
 * section[=].entry[+] = Reference(HIVEncounterExample)
 * section[=].entry[+] = Reference(HIVRecencyTestConductedExample)
 * section[=].entry[+] = Reference(HIVRecencyResultExample)
 
 * section[+].title = "HIV Entry To Care"
-* section[=].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#hivEntryToCare
+* section[=].code = CSCaseReportSections#HIV-ENTRY-TO-CARE
 * section[=].entry = Reference(HIVEpisodeOfCareExample)
 
 * section[+].title = "ARV Treatment"
-* section[=].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#arvTherapySummary
+* section[=].code = CSCaseReportSections#arvTherapySummary
 * section[=].entry[+] = Reference(ARVTreatmentExample1)
 * section[=].entry[+] = Reference(ARVTreatmentExample2)
 
 * section[+].title = "CD4"
-* section[=].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#cd4
+* section[=].code = CSCaseReportSections#CD4
 * section[=].entry[+] = Reference(CD4Example1)
 * section[=].entry[+] = Reference(CD4Example2)
 
 * section[+].title = "Viral Suppression"
-* section[=].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#viralSuppression
+* section[=].code = CSCaseReportSections#VIRAL-SUPPRESSION
 * section[=].entry[+] = Reference(ViralLoadSuppressionExample1)
 * section[=].entry[+] = Reference(ViralLoadSuppressionExample2)
 
 * section[+].title = "Death"
-* section[=].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#death
+* section[=].code = CSCaseReportSections#DEATH
 * section[=].entry[+] = Reference(DeathExample)
 
 Instance: HIVEncounterExample
 InstanceOf: HIVEncounter
 Usage: #example
-Title: "HIV CR Encounter Example"
+Title: "HIV Encounter Example"
 Description: "Encounter example"
 * serviceProvider = Reference(HIVOrganizationExample)
 * status = #finished
@@ -149,7 +149,7 @@ Description: "."
 Instance: GuardianExample
 InstanceOf: HIVRelatedPerson
 Usage: #example
-Title: "Related person example"
+Title: "Related Person example"
 Description: ""
 * name.given = "Peter"
 * name.family = "Loo"
@@ -212,7 +212,7 @@ Description: ""
 * activity.detail.kind = #MedicationRequest
 * activity.detail.code = $LNC#45260-7 "HIV ART medication"
 * activity.detail.productCodeableConcept = #TDF/3TC/DTG
-* activity.detail.extension[artRegimenLine].valueCodeableConcept = #first-line
+* activity.detail.extension[artRegimenLine].valueCodeableConcept = #FIRST-LINE
 
 Instance: ARVTreatmentExample2
 InstanceOf: ARVTreatment
@@ -227,16 +227,16 @@ Description: ""
 * activity.detail.kind = #MedicationRequest
 * activity.detail.code = $LNC#45260-7 "HIV ART medication"
 * activity.detail.productCodeableConcept = #TDF/3TC/EFV
-* activity.detail.extension[artRegimenLine].valueCodeableConcept = #second-line
+* activity.detail.extension[artRegimenLine].valueCodeableConcept = #SECOND-LINE
 
 Instance: CD4Example1
 InstanceOf: CD4
 Usage: #example
-Title: "CD4 example"
+Title: "CD4 example 1"
 Description: ""
 * status = #final
 * subject = Reference(HIVPatientExample)
-* code = http://openhie.org/fhir/hiv-casereporting/obs#CD4-RESULT "CD4 result"
+* code = CSHIVObsCodes#CD4-RESULT "CD4 result"
 * effectiveDateTime = "2020-06-09"
 * component[+].code = $SCT#113056008 "CD4 result"
 * component[=].valueInteger = 500
@@ -246,11 +246,11 @@ Description: ""
 Instance: CD4Example2
 InstanceOf: CD4
 Usage: #example
-Title: "CD4 example"
+Title: "CD4 example 2"
 Description: ""
 * status = #final
 * subject = Reference(HIVPatientExample)
-* code = http://openhie.org/fhir/hiv-casereporting/obs#CD4-RESULT "CD4 result"
+* code = CSHIVObsCodes#CD4-RESULT "CD4 result"
 * effectiveDateTime = "2021-08-26"
 * component[+].code = $SCT#113056008 "CD4 result"
 * component[=].valueInteger = 200
@@ -260,11 +260,11 @@ Description: ""
 Instance: ViralLoadSuppressionExample1
 InstanceOf: ViralLoadSuppression
 Usage: #example
-Title: "Viral load suppression example"
+Title: "Viral load suppression example 1"
 Description: ""
 * status = #final
 * subject = Reference(HIVPatientExample)
-* code = http://openhie.org/fhir/hiv-casereporting/obs#VL-RESULT "Viral load result"
+* code = CSHIVObsCodes#VL-RESULT "Viral load result"
 * effectiveDateTime = "2020-06-09"
 * valueInteger = 1000
 * interpretation[+] = CSVLInterpretation#D "Detectable"
@@ -273,11 +273,11 @@ Description: ""
 Instance: ViralLoadSuppressionExample2
 InstanceOf: ViralLoadSuppression
 Usage: #example
-Title: "Viral load suppression example"
+Title: "Viral load suppression example 2"
 Description: ""
 * status = #final
 * subject = Reference(HIVPatientExample)
-* code = http://openhie.org/fhir/hiv-casereporting/obs#VL-RESULT "Viral load result"
+* code = CSHIVObsCodes#VL-RESULT "Viral load result"
 * effectiveDateTime = "2021-06-21"
 * valueInteger = 200
 * interpretation[+] = CSVLInterpretation#ND "Non Detectable"
@@ -290,7 +290,7 @@ Title: "Death Example"
 Description: ""
 * status = #final
 * subject = Reference(HIVPatientExample)
-* code = http://openhie.org/fhir/hiv-casereporting/obs#CAUSE-OF-DEATH "Cause of death"
+* code = CSHIVObsCodes#CAUSE-OF-DEATH "Cause of death"
 * effectiveDateTime = "2021-08-26"
 * valueCodeableConcept = CSVLCauseOfDeath#HIV "HIV Related"
 * extension[lastClinicalVisit].valueDateTime = "2021-08-26"

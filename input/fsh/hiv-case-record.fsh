@@ -17,13 +17,13 @@ Title: "HIV Case Reporting Composition"
     hivPatientSection 1..1 and
     hivDiagnosisSection 0..1 and
     hivEntryToCareSection 0..1 and
-    arvTreatmentSection 0..* and
-    cd4Section 0..* and
-    viralSuppressionSection 0..* and
+    arvTreatmentSection 0..1 and
+    cd4Section 0..1 and
+    viralSuppressionSection 0..1 and
     deathSection 0..1
 
 * section[hivPatientSection].title = "Client registration"
-* section[hivPatientSection].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#clientRegistration
+* section[hivPatientSection].code = CSCaseReportSections#CLIENT-REGISTRATION
 * section[hivPatientSection].entry ^slicing.discriminator.type = #profile
 * section[hivPatientSection].entry ^slicing.discriminator.path = "item.resolve()"
 * section[hivPatientSection].entry ^slicing.rules = #closed
@@ -36,7 +36,7 @@ Title: "HIV Case Reporting Composition"
 * section[hivPatientSection].entry[hivRelatedPerson] only Reference(HIVRelatedPerson)
 
 * section[hivDiagnosisSection].title = "HIV Diagnosis"
-* section[hivDiagnosisSection].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#hivDiagnosis
+* section[hivDiagnosisSection].code = CSCaseReportSections#HIV-DIAGNOSIS
 * section[hivDiagnosisSection].entry only Reference(HIVDiagnosis or HIVEncounter or HIVRecencyTestConducted or HIVRecencyResult)
 * section[hivDiagnosisSection].entry ^slicing.discriminator.type = #profile
 * section[hivDiagnosisSection].entry ^slicing.discriminator.path = "item.resolve()"
@@ -52,29 +52,24 @@ Title: "HIV Case Reporting Composition"
 * section[hivDiagnosisSection].entry[hivRecencyResult] only Reference(HIVRecencyResult)
 
 * section[hivEntryToCareSection].title = "HIV Entry To Care"
-* section[hivEntryToCareSection].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#hivEntryToCare
+* section[hivEntryToCareSection].code = CSCaseReportSections#HIV-ENTRY-TO-CARE
 * section[hivEntryToCareSection].entry only Reference(HIVEpisodeOfCare)
-* section[hivEntryToCareSection].entry ^slicing.discriminator.type = #profile
-* section[hivEntryToCareSection].entry ^slicing.discriminator.path = "item.resolve()"
-* section[hivEntryToCareSection].entry ^slicing.rules = #closed
-* section[hivEntryToCareSection].entry contains
-    hivEpisodeOfCare 1..1
-* section[hivEntryToCareSection].entry[hivEpisodeOfCare] only Reference(HIVEpisodeOfCare)
+* section[hivEntryToCareSection].entry 1..1
 
 * section[arvTreatmentSection].title = "ARV Treatment"
-* section[arvTreatmentSection].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#arvTreatment
+* section[arvTreatmentSection].code = CSCaseReportSections#ARV-TREATMENT
 * section[arvTreatmentSection].entry only Reference(ARVTreatment)
 
 * section[cd4Section].title = "CD4"
-* section[cd4Section].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#cd4
+* section[cd4Section].code = CSCaseReportSections#CD4
 * section[cd4Section].entry only Reference(CD4)
 
 * section[viralSuppressionSection].title = "Viral Suppression"
-* section[viralSuppressionSection].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#viralSuppression
+* section[viralSuppressionSection].code = CSCaseReportSections#VIRAL-SUPPRESSION
 * section[viralSuppressionSection].entry only Reference(ViralLoadSuppression)
 
 * section[deathSection].title = "Death"
-* section[deathSection].code = http://openhie.org/fhir/hiv-casereporting/sectionCode#death
+* section[deathSection].code = CSCaseReportSections#DEATH
 * section[deathSection].entry only Reference(DeathObs)
 
 Profile: HIVEncounter
@@ -84,7 +79,7 @@ Title: "HIV CR Encounter"
 Description: "HIV Encounter for a case report"
 * serviceProvider 1..1
 * subject 1..1
-// TODO encounter category?
+// TODO enbcounter category?
 
 Profile: HIVOrganization
 Parent: Organization
@@ -175,7 +170,7 @@ Id: hiv-recency-test-conducted
 Title: "HIV Recency Test Conducted"
 Description: "This profile allows the exchange of a patient's hiv recency test"
 * subject 1..1
-* code = $HIVObs#HIV_RECENCY_TEST_CONDUCTED "HIV recency test conducted"
+* code = CSHIVObsCodes#HIV-RECENCY-TEST-CONDUCTED "HIV recency test conducted"
 * valueBoolean 1..1
 
 Profile: HIVRecencyResult
@@ -184,7 +179,7 @@ Id: hiv-recency-result
 Title: "HIV Recency Result"
 Description: "This profile allows the exchange of a patient's hiv recency test"
 * subject 1..1
-* code = $HIVObs#HIV_RECENCY_RESULT "HIV recency test conducted"
+* code = CSHIVObsCodes#HIV-RECENCY-RESULT "HIV recency test conducted"
 * valueBoolean 1..1
 
 Profile: HIVEpisodeOfCare
@@ -224,7 +219,7 @@ Id: hiv-cd4-test
 Title: "CD4Observation"
 Description: "This profile allows the exchange of a patient's CD4 test and results"
 * subject 1..1 MS
-* code = http://openhie.org/fhir/hiv-casereporting/obs#CD4-RESULT "CD4 result"
+* code = CSHIVObsCodes#CD4-RESULT "CD4 result"
 * effectiveDateTime 1..1 MS
 * value[x] 0..0
 * component ^slicing.discriminator.type = #pattern
@@ -244,7 +239,7 @@ Id: hiv-viral-load-suppression
 Title: "HIV viral load suppression"
 Description: "HIV viral load"
 * subject 1..1 MS
-* code = http://openhie.org/fhir/hiv-casereporting/obs#VL-RESULT "Viral load result"
+* code = CSHIVObsCodes#VL-RESULT "Viral load result"
 * effectiveDateTime 1..1 MS
 * valueInteger 1..1 MS
 * interpretation ^slicing.discriminator.type = #pattern
@@ -268,7 +263,7 @@ Id: death-obs
 Title: "Death Obs"
 Description: ""
 * subject 1..1 MS
-* code = http://openhie.org/fhir/hiv-casereporting/obs#CAUSE-OF-DEATH "Cause of death"
+* code = CSHIVObsCodes#CAUSE-OF-DEATH "Cause of death"
 * effectiveDateTime 1..1 MS
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSVLCauseOfDeath

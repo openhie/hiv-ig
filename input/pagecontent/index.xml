@@ -7,67 +7,75 @@
   </p>
 
   <blockquote class="stu-note">
-    <strong>This documentation and set of artefacts are still undergoing development.</strong>
+    <strong>This documentation and set of artifacts are still undergoing development.</strong>
     This content is only for demonstrative purposes.
   </blockquote>
 
   <p></p>
   <a name="navigation"> </a>
   <p>The top menu allows quick navigation to the different sections, and a <a href="toc.html">Table of Contents</a> is
-    provided with the entire content of this Implementation Guide. (Be aware that some pages have multiple tabs).</p>
+    provided with the entire content of this Implementation Guide.</p>
 
   <a name="introduction"></a>
   <h3>Introduction</h3>
-  <p>This FHIR IG describes how and submit HIV case reports to a central server conforming to the DISI architecture. The
-    profiles created in this IG correspond to the minumum data set defined for the DISI architecture. This minimum data
+  <p>This FHIR IG describes how and submit HIV case reports to a central server conforming to the <a
+      href="https://docs.google.com/document/d/1Ping2hTszBfaRdbCHXCw6xs5riQ2gwF7fAzqSgeQ0ks/edit#heading=h.nfb6t6sppokf">DISI
+      DISI architecture</a>. The
+    profiles created in this IG correspond to the minimum dataset for HIV case reporting defined for the DISI
+    architecture. This minimum data
     set may be <a
       href="https://docs.google.com/spreadsheets/d/1K22pfrMVlFvgm3AsTMX5HggqbFnVOeLF/edit#gid=2067500832">found
-      here</a>.</p>
-  <p>The sections that follow describe how to submit case reports and link out to the profiles resources to specify
-    exactly what is required to be submitted. If an implementation require additional modifications it is suggested a
-    new IG be created that used this one as a base and further specifies additional rules on the already profiles
+      here</a>. This dataset is fundamental to this implementation guide and form the basis for the entire architecture.
+  </p>
+  <p>The sections that follow describe how to submit case reports conforming to the minimum data set and link out to the
+    profiled resources to specify
+    exactly what is required to be submitted. If an implementation requires additional modifications it is suggested a
+    new IG be created that used this one as a base and further specifies additional rules on the already profiled
     resources.</p>
 
   <a name="submitting-case-reports"></a>
   <h3>Submitting case reports</h3>
-  <p>Case report may be submitted in one of three different ways:</p>
+  <p>Case report may be submitted in one of three different ways. For more detail about which may be best to choose see
+    the <a
+      href="https://docs.google.com/document/d/1Ping2hTszBfaRdbCHXCw6xs5riQ2gwF7fAzqSgeQ0ks/edit#heading=h.nfb6t6sppokf">
+      DISI architecture documentation
+    </a>. The transactional approaches allow the submission of a patient per request whereas
+    the batch approach allows the submission of multiple patient per request. The three approaches are:</p>
   <ul>
     <li><strong>FHIR Native (transactional)</strong> - this approach allows applications with advanced FHIR capabilities
-      to submit a
-      case report as a FHIR document bundle. This approach gives maximum control over how resources are created and
-      referenced, however, is also more complex to implement.</li>
+      to submit a case report as a FHIR document bundle. This approach gives maximum control over how resources are
+      created and referenced, however, is also more complex to implement.</li>
     <li><strong>FHIR Naive (batch)</strong> - this approach allows applications to submit case report as simply as
-      possible via
-      CSV even if the submitting application does not support any FHIR capabilities. It also allows for batches are case
-      reports to be submitted further simplifying application functionality.</li>
+      possible via CSV even if the submitting application does not support any FHIR capabilities. It also allows for
+      batches are case reports to be submitted which further simplifying application functionality by preventing the
+      individual handling of request per patient. It does however come which certain caveats which are discussed in the
+      DISI architecture documentation</li>
     <li><strong>FHIR Aware (transactional)</strong> - this approach allows applications to submit case reports using
-      FHIR but in a
-      simple way by utilizing a single resource: the QuestionnaireResponse. This is much simpler to implement which
-      remaining FHIR compliant.</li>
+      FHIR but in a simple way by utilizing a single resource: the QuestionnaireResponse. This is much simpler to
+      implement while remaining FHIR compliant. This approach follow the FHIR Structure Data Capture implementation
+      guide.</li>
   </ul>
 
   <a name="fhir-bundle"></a>
   <h4>FHIR Bundle</h4>
   <p>
-    When submitting as a FHIR bundle you may submit individual HIV sentinel event or a full case report with multiple
-    sentinel event. The FHIR bundle must be structured as a <a href="https://www.hl7.org/fhir/documents.html"
-      target="_blank">FHIR
-      document</a> with a Composition resource as the first item
-    in the bundle entries. The Composition resource has a section per sentinel event. Each of those section references
-    the other FHIR resources (one or more) that hold the actual data relating to that sentinel event. See the profile
-    for that Composition resource with links to the other profiles resources here: <a
-      href="StructureDefinition-hiv-composition.html">Profiles Composition</a>
+    When submitting as a FHIR bundle you may submit individual HIV sentinel events or a full case report with multiple
+    sentinel events. The FHIR bundle must be structured as a <a href="https://www.hl7.org/fhir/documents.html"
+      target="_blank">FHIR document</a> with a Composition resource as the first item in the bundle entries. The
+    Composition resource has a section per sentinel event. Each of those section references the other FHIR resources
+    (one or more) that hold the actual data relating to that sentinel event. See the profile for that Composition
+    resource which show the structure of each section and links to the other profiled resources: <a
+      href="StructureDefinition-hiv-composition.html">Profiled Composition</a>
   </p>
-  <p>The document is to be submitted to a <a href="https://www.hl7.org/fhir/http.html#transaction" target="_blank">FHIR
-      transaction
-      endpoint</a> using an HTTP POST coforming to the core FHIR specifications.</p>
-  <p>A full example of a case report bundle with all sentinel event filled in can be seen <a
+  <p>The FHIR document is to be submitted to a <a href="https://www.hl7.org/fhir/http.html#transaction"
+      target="_blank">FHIR transaction endpoint</a> using an HTTP POST conforming to the core FHIR specifications.</p>
+  <p>A full example of a case report bundle with all sentinel events filled in can be seen <a
       href=" Bundle-HIVBundleExample.json.html">here</a>.</p>
 
   <a name="csv"></a>
   <h4>CSV</h4>
-  <p>To allow for simple batch import of case report data may be submitted in a CSV format. A sample of the expected CSV
-    format can be <a
+  <p>To allow for simple batch import of case reports, data may be submitted in a CSV format. A sample of the expected
+    CSV format can be <a
       href="https://docs.google.com/spreadsheets/d/1g6rSiNgA1tuqQ4qHUyN8l6utFbvU6Pe0y_4lP8nhz6Q/edit?usp=sharing"
       target="_blank">found
       here</a>. The headers must be exactly as stipulated in this example and repeating fields are handled by joining
@@ -77,27 +85,26 @@
 
   <a name=" fhir-questionnaire-response"></a>
   <h4>FHIR QuestionnaireResponse (not yet implemented)</h4>
-  <p>This section is not yet developed</p>
+  <p>This section is not yet developed. When defined it will allow entire case reports to be submitted using a single
+    FHIR QuestionnaireResponse resource. This allows for standards based data submission while still remaining simple to
+    implement.</p>
 
   <a name="ip"> </a>
   <h3>Intellectual Property Considerations</h3>
   <p>
     While this implementation guide and the underlying FHIR are licensed as public domain, this guide includes examples
-    making use of terminologies such
-    as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make
-    themselves familiar with licensing and
-    any other constraints of terminologies, questionnaires, and other components used as part of their implementation
-    process. In some cases,
-    licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.
+    making use of terminologies such as LOINC, SNOMED CT and others which have more restrictive licensing requirements.
+    Implementers should make themselves familiar with licensing and any other constraints of terminologies,
+    questionnaires, and other components used as part of their implementation process. In some cases, licensing
+    requirements may limit the systems that data captured using certain questionnaires may be shared with.
   </p>
 
   <a name="disclaimer"> </a>
   <h3>Disclaimer</h3>
   <p>
     The specification herewith documented is a demo working specification, and may not be used for any implementation
-    purposes.
-    This draft is provided without warranty of completeness or consistency, and the official publication supersedes this
-    draft.
-    No liability can be inferred from the use or misuse of this specification, or its consequences.
+    purposes. This draft is provided without warranty of completeness or consistency, and the official publication
+    supersedes this draft. No liability can be inferred from the use or misuse of this specification, or its
+    consequences.
   </p>
 </div>
