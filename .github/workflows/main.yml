@@ -16,7 +16,7 @@ on:
       - master
       - draft
       - candidate
-     - jembi-contrib
+      - jembi-contrib
   pull_request:
     branches: 
       - main
