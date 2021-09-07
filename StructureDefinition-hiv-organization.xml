@@ -21,14 +21,14 @@
   <url value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-organization"/>
   <version value="0.2.0"/>
   <name value="HIVOrganization"/>
-  <title value="HIV CR Organization"/>
+  <title value="HIV Organization"/>
   <status value="active"/>
-  <date value="2021-07-19T12:37:06+00:00"/>
-  <publisher value="openHIE"/>
+  <date value="2021-09-07T07:37:47+00:00"/>
+  <publisher value="OpenHIE"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/Special/committees/[something]"/>
+      <value value="http://xxhl7.org/Special/committees/[something]"/>
     </telecom>
   </contact>
   <description value="HIV Organization for case report - this represents a health facility"/>

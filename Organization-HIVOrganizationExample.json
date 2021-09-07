@@ -8,13 +8,11 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: ?ngen-9?, id: facility1</p><p><b>name</b>: HIV Organization</p><p><b>address</b>: DISI line 1 DISI line 2 DISI line 3 DISI city 1 DISI state 1 DISI postal code DISI country </p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: facility1</p><p><b>name</b>: HIV Organization</p><p><b>address</b>: DISI line 1 DISI line 2 DISI line 3 DISI city 1 DISI state 1 DISI postal code DISI country </p></div>"
   },
   "identifier": [
     {
-      "system": "http://test.org/identifier/hiv-organization"
-    },
-    {
+      "system": "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-organization",
       "value": "facility1"
     }
   ],

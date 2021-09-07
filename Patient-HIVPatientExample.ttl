@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Gender Identity</b>: <span title=\"Codes: \">male</span></p><p><b>Key population</b>: <span title=\"Codes: \">transgender</span></p><p><b>identifier</b>: id: ART1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane Smith </p><p><b>telecom</b>: <a href=\"tel:+27825556666\">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><h3>Links</h3><table class=\"grid\"><tr><td>-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><a href=\"RelatedPerson-GuardianExample.html\">Generated Summary: Peter Loo </a></td><td>seealso</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Gender Identity</b>: <span title=\"Codes: \">male</span></p><p><b>Key population</b>: <span title=\"Codes: \">transgender</span></p><p><b>identifier</b>: id: ART1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane Smith (OFFICIAL)</p><p><b>telecom</b>: <a href=\"tel:+27825556666\">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><p><b>maritalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></p><p><b>managingOrganization</b>: <a href=\"Organization-HIVOrganizationExample.html\">Generated Summary: id: facility1; name: HIV Organization</a></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -51,6 +51,7 @@
   fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
   fhir:Patient.name [
      fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
      fhir:HumanName.family [ fhir:value "Smith" ];
      fhir:HumanName.given [
        fhir:value "Jane";
@@ -71,13 +72,16 @@
      fhir:Address.state [ fhir:value "Western Province" ];
      fhir:Address.country [ fhir:value "South Africa" ]
   ];
-  fhir:Patient.link [
-     fhir:index 0;
-     fhir:Patient.link.other [
-       fhir:link <http://openhie.org/fhir/hiv-casereporting/RelatedPerson/GuardianExample>;
-       fhir:Reference.reference [ fhir:value "RelatedPerson/GuardianExample" ]
-     ];
-     fhir:Patient.link.type [ fhir:value "seealso" ]
+  fhir:Patient.maritalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" ];
+       fhir:Coding.code [ fhir:value "M" ]
+     ]
+  ];
+  fhir:Patient.managingOrganization [
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/Organization/HIVOrganizationExample>;
+     fhir:Reference.reference [ fhir:value "Organization/HIVOrganizationExample" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

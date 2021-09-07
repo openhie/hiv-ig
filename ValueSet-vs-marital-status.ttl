@@ -17,14 +17,14 @@
   fhir:ValueSet.name [ fhir:value "VSMaritalStatus"];
   fhir:ValueSet.title [ fhir:value "Marital Status"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-07-19T12:37:06+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "openHIE"];
+  fhir:ValueSet.date [ fhir:value "2021-09-07T07:37:47+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "OpenHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/[something]" ]
+       fhir:ContactPoint.value [ fhir:value "http://xxhl7.org/Special/committees/[something]" ]
      ]
   ];
   fhir:ValueSet.description [ fhir:value "Valueset - marital statuses"];

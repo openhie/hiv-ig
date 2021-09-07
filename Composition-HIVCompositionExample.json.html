@@ -24,6 +24,13 @@
 <link href="assets/css/openhie.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+<!--
+  Questionnaire:
+-->
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -42,8 +49,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"13.33"}
-    h3,h4,h5,h6{--heading-prefix:"13.33"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.33"}
+    h3,h4,h5,h6{--heading-prefix:"3.33"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -98,60 +105,25 @@
 	<li>
 		<a href="toc.html">Table of Contents</a>
 	</li>
+<!--
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
 		</a>
-		<ul class="dropdown-menu">
-			<li>
-				<a href="methodology.html">Methodology</a>
-			</li>
-			<li>
-				<a href="references.html">References</a>
-			</li>
-		</ul>
 
 	</li>
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
 		</a>
-		<ul class="dropdown-menu">
-			<li>
-				<a href="use_case_overview.html">Use Case Overview</a>
-			</li>
-			<li>
-				<a href="case_reporting.html">Case Reporting</a>
-			</li>
-			<li>
-				<a href="case_record.html">Case Record</a>
-			</li>
-			<li>
-				<a href="analytics.html">Analytics</a>
-			</li>
-			<li>
-				<a href="follow-up.html">Follow-up</a>
-			</li>
-		</ul>
-	</li>
 
+	</li>
+-->
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="exchange.html">Data Exchange</a>
-			</li>
-			<li>
-				<a href="data_extraction.html">Data Extraction</a>
-			</li>
-			<li>
 				<a href="artifacts.html">Artifact Index</a>
 			</li>
-		</ul>
-	</li>
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
-		<ul class="dropdown-menu">
-			<li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
 </ul>      
@@ -162,12 +134,12 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
-
+    
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>HIV Case Report</b></li>
-
+          
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -242,10 +214,10 @@
   },
   "<a href="http://hl7.org/fhir/R4/composition.html#Composition.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 1111&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://loinc.org 95412-3}\&quot;&gt;COVID-19 case report&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-HIVEncounterExample.html\&quot;&gt;Generated Summary: status: finished; &lt;span title=\&quot;{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}\&quot;&gt;inpatient acute&lt;/span&gt;; period: 2021-05-20 --&amp;gt; 2021-05-20&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2021-05-18&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;Practitioner-HIVPractitionerExample.html\&quot;&gt;Generated Summary: Homer Simpson &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: HIV Case Report&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 1111&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://loinc.org 95412-3}\&quot;&gt;COVID-19 case report&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2021-05-18&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;Practitioner-HIVPractitionerExample.html\&quot;&gt;Generated Summary: Homer Simpson &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: HIV Case Report&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/composition.html#Composition.identifier">identifier</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://test.org/identifier/hiv-case-report",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-case-report",
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "1111"
   },
   "<a href="http://hl7.org/fhir/R4/composition.html#Composition.status">status</a>" : "final",
@@ -257,9 +229,6 @@
       }
     ]
   },
-  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.encounter">encounter</a>" : {
-    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Encounter/HIVEncounterExample"
-  },
   "<a href="http://hl7.org/fhir/R4/composition.html#Composition.date">date</a>" : "2021-05-18",
   "<a href="http://hl7.org/fhir/R4/composition.html#Composition.author">author</a>" : [
     {
@@ -269,98 +238,138 @@
   "<a href="http://hl7.org/fhir/R4/composition.html#Composition.title">title</a>" : "HIV Case Report",
   "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "hivPatient",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Client registration",
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://test.org/sectionCode",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "hivPatient"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "CLIENT-REGISTRATION"
           }
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/HIVPatientExample"
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "maritalStatus",
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://test.org/sectionCode",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "maritalStatus"
-          }
-        ]
-      },
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+        },
         {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/MaritalStatusExample"
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "RelatedPerson/GuardianExample"
         }
       ]
     },
     {
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "hivDiagnosis",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "HIV Diagnosis",
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://test.org/sectionCode",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "hivDiagnosis"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "HIV-DIAGNOSIS"
           }
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Condition/HIVDiagnosisExample"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Encounter/HIVDiagnosisEncounterExample"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/HIVRecencyTestConductedExample"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/HIVRecencyResultExample"
         }
       ]
     },
     {
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "arvTherapySummary",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "HIV Entry To Care",
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://test.org/sectionCode",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "HIV-ENTRY-TO-CARE"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "EpisodeOfCare/HIVEpisodeOfCareExample"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Encounter/HIVClinicalEncounterExample"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "ARV Treatment",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "arvTherapySummary"
           }
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ARVTherapySummaryExample"
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CarePlan/ARVTreatmentExample1"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CarePlan/ARVTreatmentExample2"
         }
       ]
     },
     {
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "viralLoad",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "CD4",
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://test.org/sectionCode",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "viralLoad"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "CD4"
           }
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/ViralLoadExample"
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/CD4Example1"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/CD4Example2"
         }
       ]
     },
     {
-      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "cd4",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Viral Suppression",
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://test.org/sectionCode",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "cd4"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "VIRAL-SUPPRESSION"
           }
         ]
       },
       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/CD4Example"
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/ViralLoadSuppressionExample1"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/ViralLoadSuppressionExample2"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Death",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "DEATH"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/DeathExample"
         }
       ]
     }
@@ -389,16 +398,19 @@
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
+
+           
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 19, 2021 12:37+0000">2021-07-19</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://xxhl7.org/Special/committees/[something]">OpenHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 7, 2021 07:37+0000">2021-09-07</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
-                 <a style="color: #81BEF7" target="_blank" href="https://github.com/openhie/hiv-ig/projects/1">Issues</a> |
+                 
                  <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/hiv-casereporting/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
@@ -427,91 +439,6 @@ anchors.add()</script>
   
   <!-- feedback form - Google forms -->
 <!-- v0.1, 2021-01-09 -->
-
-
-  
-    
-    <script type="text/javascript">
-     /* <![CDATA[ */
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            
-
-            
-              var parameterFieldId = '';
-              var parameterVariableName = '';
-              var parameterValue = '';
-              parameterFieldId = 'entry.'+parseInt(1353807103).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
-              parameterVariableName = 'pageTitle';
-
-              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
-                default:
-                    console.log("Parameter value not supported");
-                    break;
-                  case "pageTitle":
-                    parameterValue = encodeURIComponent($(document).attr('title'));
-                    break;
-                  case "sectionId":
-                    parameterValue = id;
-                    break;
-                  case "sectionName":
-                    parameterValue = document.getElementById(id).textContent;
-                    break;
-              }
-/* <![CDATA[ */
-              feedbackurl = feedbackurl + '&';
-              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
-/* ]]> */
-            
-              var parameterFieldId = '';
-              var parameterVariableName = '';
-              var parameterValue = '';
-              parameterFieldId = 'entry.'+parseInt(247644557).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
-              parameterVariableName = 'sectionName';
-
-              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
-                default:
-                    console.log("Parameter value not supported");
-                    break;
-                  case "pageTitle":
-                    parameterValue = encodeURIComponent($(document).attr('title'));
-                    break;
-                  case "sectionId":
-                    parameterValue = id;
-                    break;
-                  case "sectionName":
-                    parameterValue = document.getElementById(id).textContent;
-                    break;
-              }
-/* <![CDATA[ */
-              feedbackurl = feedbackurl + '&';
-              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
-/* ]]> */
-            
-            
-          if (id) { //To make sure the element has an id
-            $(this).append(function () {
-              return $('<a/>', {
-                id,
-                href: feedbackurl,
-                text: feedbacklabel+' ' ,
-                class: 'feedback',
-                target: '_blank',
-                onclick: 'window.open('+feedbackurl+',\'newwindow\',\'width=300,height=250\');return false;'
-        
-              });
-            });
-          }
-        }) 
-/* ]]> */
-      </script>  
-    
-  
 
 
 

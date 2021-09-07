@@ -10,12 +10,12 @@
   <name value="VSVLInterpretation"/>
   <title value="Viral load Interpretation"/>
   <status value="active"/>
-  <date value="2021-07-19T12:37:06+00:00"/>
-  <publisher value="openHIE"/>
+  <date value="2021-09-07T07:37:47+00:00"/>
+  <publisher value="OpenHIE"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/Special/committees/[something]"/>
+      <value value="http://xxhl7.org/Special/committees/[something]"/>
     </telecom>
   </contact>
   <description value="Valueset - Viral load Interpretations"/>

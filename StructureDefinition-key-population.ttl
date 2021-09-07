@@ -17,14 +17,14 @@
   fhir:StructureDefinition.name [ fhir:value "KeyPopulation"];
   fhir:StructureDefinition.title [ fhir:value "Key population"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-07-19T12:37:06+00:00"^^xsd:dateTime];
-  fhir:StructureDefinition.publisher [ fhir:value "openHIE"];
+  fhir:StructureDefinition.date [ fhir:value "2021-09-07T07:37:47+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.publisher [ fhir:value "OpenHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/[something]" ]
+       fhir:ContactPoint.value [ fhir:value "http://xxhl7.org/Special/committees/[something]" ]
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "Key population"];

@@ -10,6 +10,12 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
+    <sch:title>f:CarePlan</sch:title>
+    <sch:rule context="f:CarePlan">
+      <sch:assert test="count(f:activity) &gt;= 1">activity: minimum cardinality of 'activity' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>CarePlan</sch:title>
     <sch:rule context="f:CarePlan">
       <sch:assert test="not(parent::f:contained and f:contained)">If the resource is contained in another resource, it SHALL NOT contain nested Resources (inherited)</sch:assert>
@@ -136,8 +142,36 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:CarePlan/f:period</sch:title>
+    <sch:rule context="f:CarePlan/f:period">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:start) &gt;= 1">start: minimum cardinality of 'start' is 1</sch:assert>
+      <sch:assert test="count(f:start) &lt;= 1">start: maximum cardinality of 'start' is 1</sch:assert>
+      <sch:assert test="count(f:end) &lt;= 1">end: maximum cardinality of 'end' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>CarePlan.period</sch:title>
     <sch:rule context="f:CarePlan/f:period">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>CarePlan.period.extension</sch:title>
+    <sch:rule context="f:CarePlan/f:period/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>CarePlan.period.start</sch:title>
+    <sch:rule context="f:CarePlan/f:period/f:start">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>CarePlan.period.end</sch:title>
+    <sch:rule context="f:CarePlan/f:period/f:end">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -181,6 +215,12 @@
     <sch:title>CarePlan.goal</sch:title>
     <sch:rule context="f:CarePlan/f:goal">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:CarePlan/f:activity</sch:title>
+    <sch:rule context="f:CarePlan/f:activity">
+      <sch:assert test="count(f:detail) &gt;= 1">detail: minimum cardinality of 'detail' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -229,6 +269,13 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:CarePlan/f:activity/f:detail</sch:title>
+    <sch:rule context="f:CarePlan/f:activity/f:detail">
+      <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-regimen-line']) &gt;= 1">extension with URL = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-regimen-line': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-regimen-line']) &lt;= 1">extension with URL = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-regimen-line': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>CarePlan.activity.detail</sch:title>
     <sch:rule context="f:CarePlan/f:activity/f:detail">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -239,6 +286,8 @@
     <sch:rule context="f:CarePlan/f:activity/f:detail/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -329,6 +378,7 @@
   <sch:pattern>
     <sch:title>CarePlan.activity.detail.product[x] 1</sch:title>
     <sch:rule context="f:CarePlan/f:activity/f:detail/f:product[x]">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>

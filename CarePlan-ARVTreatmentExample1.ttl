@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/CarePlan/ARVTreatmentExample1> a fhir:CarePlan;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ARVTreatmentExample1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment";
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Generated Summary: id: ART1234567, id: NAT1234567, id: EMR1234567; active; Jane Smith (OFFICIAL); Phone: +27825556666; gender: female; birthDate: 1986-06-04; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></a></p><p><b>period</b>: 2021-05-20 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td></td><td>MedicationRequest</td><td><span title=\"Codes: {http://loinc.org 45260-7}\">HIV ART medication</span></td><td>stopped</td><td><span title=\"Codes: \">TDF/3TC/DTG</span></td></tr></table></blockquote></div>"
+  ];
+  fhir:CarePlan.status [ fhir:value "active"];
+  fhir:CarePlan.intent [ fhir:value "plan"];
+  fhir:CarePlan.subject [
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/Patient/HIVPatientExample>;
+     fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
+  ];
+  fhir:CarePlan.period [
+     fhir:Period.start [ fhir:value "2021-05-20"^^xsd:date ]
+  ];
+  fhir:CarePlan.activity [
+     fhir:index 0;
+     fhir:CarePlan.activity.detail [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-regimen-line" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "FIRST-LINE" ]
+           ]
+         ]
+       ];
+       fhir:CarePlan.activity.detail.kind [ fhir:value "MedicationRequest" ];
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           a loinc:45260-7;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ];
+           fhir:Coding.code [ fhir:value "45260-7" ];
+           fhir:Coding.display [ fhir:value "HIV ART medication" ]
+         ]
+       ];
+       fhir:CarePlan.activity.detail.status [ fhir:value "stopped" ];
+       fhir:CarePlan.activity.detail.productCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.code [ fhir:value "TDF/3TC/DTG" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/CarePlan/ARVTreatmentExample1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

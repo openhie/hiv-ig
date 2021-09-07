@@ -22,6 +22,13 @@
 <link href="assets/css/openhie.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+<!--
+  Questionnaire:
+-->
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,8 +47,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"13.20"}
-    h3,h4,h5,h6{--heading-prefix:"13.20"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.23"}
+    h3,h4,h5,h6{--heading-prefix:"3.23"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -96,60 +103,25 @@
 	<li>
 		<a href="toc.html">Table of Contents</a>
 	</li>
+<!--
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
 		</a>
-		<ul class="dropdown-menu">
-			<li>
-				<a href="methodology.html">Methodology</a>
-			</li>
-			<li>
-				<a href="references.html">References</a>
-			</li>
-		</ul>
 
 	</li>
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
 		</a>
-		<ul class="dropdown-menu">
-			<li>
-				<a href="use_case_overview.html">Use Case Overview</a>
-			</li>
-			<li>
-				<a href="case_reporting.html">Case Reporting</a>
-			</li>
-			<li>
-				<a href="case_record.html">Case Record</a>
-			</li>
-			<li>
-				<a href="analytics.html">Analytics</a>
-			</li>
-			<li>
-				<a href="follow-up.html">Follow-up</a>
-			</li>
-		</ul>
-	</li>
 
+	</li>
+-->
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="exchange.html">Data Exchange</a>
-			</li>
-			<li>
-				<a href="data_extraction.html">Data Extraction</a>
-			</li>
-			<li>
 				<a href="artifacts.html">Artifact Index</a>
 			</li>
-		</ul>
-	</li>
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
-		<ul class="dropdown-menu">
-			<li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
 </ul>      
@@ -160,12 +132,12 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
-
+    
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Key population</b></li>
-
+          
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -227,10 +199,10 @@
  <tr><td>Version:</td><td>0.2.0</td></tr>
  <tr><td>Name:</td><td>VSKeyPopulation</td></tr>
  <tr><td>Title:</td><td>Key population</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-07-19T12:37:06+00:00</td></tr>
+ <tr><td>Status:</td><td>Active as of 2021-09-07T07:37:47+00:00</td></tr>
  <tr><td>Definition:</td><td><p>A list of key population types</p>
 </td></tr>
- <tr><td>Publisher:</td><td>openHIE</td></tr>
+ <tr><td>Publisher:</td><td>OpenHIE</td></tr>
  <tr><td>Source Resource:</td><td><a href="ValueSet-vs-key-population.xml.html">XML</a> / <a href="ValueSet-vs-key-population.json.html">JSON</a> / <a href="ValueSet-vs-key-population.ttl.html">Turtle</a></td></tr>
 </tbody></table>
 
@@ -259,7 +231,7 @@
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 6 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-cs-key-population.html">Key population v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href="CodeSystem-cs-key-population.html"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSM"> </a><a href="CodeSystem-cs-key-population.html#cs-key-population-MSM">MSM</a></td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-FSW"> </a><a href="CodeSystem-cs-key-population.html#cs-key-population-FSW">FSW</a></td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSW"> </a><a href="CodeSystem-cs-key-population.html#cs-key-population-MSW">MSW</a></td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWID"> </a><a href="CodeSystem-cs-key-population.html#cs-key-population-PWID">PWID</a></td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWUD"> </a><a href="CodeSystem-cs-key-population.html#cs-key-population-PWUD">PWUD</a></td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-transgender"> </a><a href="CodeSystem-cs-key-population.html#cs-key-population-transgender">transgender</a></td><td/><td/></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 6 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-cs-key-population.html">Key population v0.2.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href="CodeSystem-cs-key-population.html"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSM"> </a><a href="CodeSystem-cs-key-population.html#cs-key-population-MSM">MSM</a></td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-FSW"> </a><a href="CodeSystem-cs-key-population.html#cs-key-population-FSW">FSW</a></td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSW"> </a><a href="CodeSystem-cs-key-population.html#cs-key-population-MSW">MSW</a></td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWID"> </a><a href="CodeSystem-cs-key-population.html#cs-key-population-PWID">PWID</a></td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWUD"> </a><a href="CodeSystem-cs-key-population.html#cs-key-population-PWUD">PWUD</a></td><td/><td/></tr><tr><td style="white-space:nowrap"><a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-transgender"> </a><a href="CodeSystem-cs-key-population.html#cs-key-population-transgender">transgender</a></td><td/><td/></tr></table></div>
 
   <hr/>
   <p>
@@ -316,16 +288,19 @@
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
+
+           
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 19, 2021 12:37+0000">2021-07-19</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://xxhl7.org/Special/committees/[something]">OpenHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 7, 2021 07:37+0000">2021-09-07</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
-                 <a style="color: #81BEF7" target="_blank" href="https://github.com/openhie/hiv-ig/projects/1">Issues</a> |
+                 
                  <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/hiv-casereporting/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
@@ -354,91 +329,6 @@ anchors.add()</script>
   
   <!-- feedback form - Google forms -->
 <!-- v0.1, 2021-01-09 -->
-
-
-  
-    
-    <script type="text/javascript">
-     /* <![CDATA[ */
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            
-
-            
-              var parameterFieldId = '';
-              var parameterVariableName = '';
-              var parameterValue = '';
-              parameterFieldId = 'entry.'+parseInt(1353807103).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
-              parameterVariableName = 'pageTitle';
-
-              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
-                default:
-                    console.log("Parameter value not supported");
-                    break;
-                  case "pageTitle":
-                    parameterValue = encodeURIComponent($(document).attr('title'));
-                    break;
-                  case "sectionId":
-                    parameterValue = id;
-                    break;
-                  case "sectionName":
-                    parameterValue = document.getElementById(id).textContent;
-                    break;
-              }
-/* <![CDATA[ */
-              feedbackurl = feedbackurl + '&';
-              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
-/* ]]> */
-            
-              var parameterFieldId = '';
-              var parameterVariableName = '';
-              var parameterValue = '';
-              parameterFieldId = 'entry.'+parseInt(247644557).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
-              parameterVariableName = 'sectionName';
-
-              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
-                default:
-                    console.log("Parameter value not supported");
-                    break;
-                  case "pageTitle":
-                    parameterValue = encodeURIComponent($(document).attr('title'));
-                    break;
-                  case "sectionId":
-                    parameterValue = id;
-                    break;
-                  case "sectionName":
-                    parameterValue = document.getElementById(id).textContent;
-                    break;
-              }
-/* <![CDATA[ */
-              feedbackurl = feedbackurl + '&';
-              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
-/* ]]> */
-            
-            
-          if (id) { //To make sure the element has an id
-            $(this).append(function () {
-              return $('<a/>', {
-                id,
-                href: feedbackurl,
-                text: feedbacklabel+' ' ,
-                class: 'feedback',
-                target: '_blank',
-                onclick: 'window.open('+feedbackurl+',\'newwindow\',\'width=300,height=250\');return false;'
-        
-              });
-            });
-          }
-        }) 
-/* ]]> */
-      </script>  
-    
-  
 
 
 

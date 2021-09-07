@@ -5,6 +5,14 @@
   "jurisdiction": "001",
   "extensions": [
     {
+      "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-regimen-line",
+      "title": "ART Regimen Line",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/gender-identity",
       "title": "Gender Identity",
       "types": [
@@ -19,27 +27,32 @@
         "CodeableConcept",
         "CodeableConcept"
       ]
+    },
+    {
+      "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/last-clinical-visit",
+      "title": "Last Clinical Visit",
+      "types": [
+        "dateTime"
+      ]
     }
   ],
   "profiles": {
+    "Observation": [
+      {
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression",
+        "title": "HIV viral load suppression"
+      }
+    ],
     "CarePlan": [
       {
         "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment",
         "title": "ARVCarePlan"
       }
     ],
-    "Observation": [
+    "Encounter": [
       {
-        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-test",
-        "title": "HIV Recency"
-      },
-      {
-        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-test",
-        "title": "HIV viral load"
-      },
-      {
-        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/marital-status",
-        "title": "MaritalStatus"
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-disgnosis-encounter",
+        "title": "HIV Diagnosis Encounter"
       }
     ],
     "Composition": [
@@ -54,22 +67,28 @@
         "title": "HIV Diagnosis"
       }
     ],
-    "Encounter": [
+    "EpisodeOfCare": [
       {
-        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-encounter",
-        "title": "HIV CR Encounter"
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-episode-of-care",
+        "title": "HIV Episode Of Care"
       }
     ],
     "Organization": [
       {
         "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-organization",
-        "title": "HIV CR Organization"
+        "title": "HIV Organization"
       }
     ],
     "Patient": [
       {
         "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient",
         "title": "HIV Patient"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-related-person",
+        "title": "HIV Related Person"
       }
     ]
   },
@@ -104,9 +123,6 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
-      "StructureDefinition.snapshot.element"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
     ],
@@ -119,6 +135,10 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-regimen-line": [
+      "Bundle.entry.resource.activity.detail",
+      "CarePlan.activity.detail"
+    ],
     "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/gender-identity": [
       "Bundle.entry.resource",
       "Patient"
@@ -126,6 +146,10 @@
     "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/key-population": [
       "Bundle.entry.resource",
       "Patient"
+    ],
+    "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/last-clinical-visit": [
+      "Bundle.entry.resource",
+      "Observation"
     ]
   }
 }

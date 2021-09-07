@@ -18,16 +18,16 @@
   "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-organization",
   "version": "0.2.0",
   "name": "HIVOrganization",
-  "title": "HIV CR Organization",
+  "title": "HIV Organization",
   "status": "active",
-  "date": "2021-07-19T12:37:06+00:00",
-  "publisher": "openHIE",
+  "date": "2021-09-07T07:37:47+00:00",
+  "publisher": "OpenHIE",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/[something]"
+          "value": "http://xxhl7.org/Special/committees/[something]"
         }
       ]
     }

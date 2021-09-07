@@ -6,10 +6,10 @@
     <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 95412-3}">COVID-19 case report</span></p><p><b>encounter</b>: <a href="Encounter-HIVEncounterExample.html">Generated Summary: status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode ACUTE}">inpatient acute</span>; period: 2021-05-20 --&gt; 2021-05-20</a></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href="Practitioner-HIVPractitionerExample.html">Generated Summary: Homer Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 95412-3}">COVID-19 case report</span></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href="Practitioner-HIVPractitionerExample.html">Generated Summary: Homer Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>
   </text>
   <identifier>
-    <system value="http://test.org/identifier/hiv-case-report"/>
+    <system value="http://openhie.org/fhir/hiv-casereporting/identifier/hiv-case-report"/>
     <value value="1111"/>
   </identifier>
   <status value="final"/>
@@ -19,84 +19,117 @@
       <code value="95412-3"/>
     </coding>
   </type>
-  <encounter>
-    <reference value="Encounter/HIVEncounterExample"/>
-  </encounter>
   <date value="2021-05-18"/>
   <author>
     <reference value="Practitioner/HIVPractitionerExample"/>
   </author>
   <title value="HIV Case Report"/>
   <section>
-    <title value="hivPatient"/>
+    <title value="Client registration"/>
     <code>
       <coding>
-        <system value="http://test.org/sectionCode"/>
-        <code value="hivPatient"/>
+        <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections"/>
+        <code value="CLIENT-REGISTRATION"/>
       </coding>
     </code>
     <entry>
       <reference value="Patient/HIVPatientExample"/>
     </entry>
-  </section>
-  <section>
-    <title value="maritalStatus"/>
-    <code>
-      <coding>
-        <system value="http://test.org/sectionCode"/>
-        <code value="maritalStatus"/>
-      </coding>
-    </code>
     <entry>
-      <reference value="Observation/MaritalStatusExample"/>
+      <reference value="RelatedPerson/GuardianExample"/>
     </entry>
   </section>
   <section>
-    <title value="hivDiagnosis"/>
+    <title value="HIV Diagnosis"/>
     <code>
       <coding>
-        <system value="http://test.org/sectionCode"/>
-        <code value="hivDiagnosis"/>
+        <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections"/>
+        <code value="HIV-DIAGNOSIS"/>
       </coding>
     </code>
     <entry>
       <reference value="Condition/HIVDiagnosisExample"/>
     </entry>
+    <entry>
+      <reference value="Encounter/HIVDiagnosisEncounterExample"/>
+    </entry>
+    <entry>
+      <reference value="Observation/HIVRecencyTestConductedExample"/>
+    </entry>
+    <entry>
+      <reference value="Observation/HIVRecencyResultExample"/>
+    </entry>
   </section>
   <section>
-    <title value="arvTherapySummary"/>
+    <title value="HIV Entry To Care"/>
     <code>
       <coding>
-        <system value="http://test.org/sectionCode"/>
+        <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections"/>
+        <code value="HIV-ENTRY-TO-CARE"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="EpisodeOfCare/HIVEpisodeOfCareExample"/>
+    </entry>
+    <entry>
+      <reference value="Encounter/HIVClinicalEncounterExample"/>
+    </entry>
+  </section>
+  <section>
+    <title value="ARV Treatment"/>
+    <code>
+      <coding>
+        <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections"/>
         <code value="arvTherapySummary"/>
       </coding>
     </code>
     <entry>
-      <reference value="ARVTherapySummaryExample"/>
+      <reference value="CarePlan/ARVTreatmentExample1"/>
+    </entry>
+    <entry>
+      <reference value="CarePlan/ARVTreatmentExample2"/>
     </entry>
   </section>
   <section>
-    <title value="viralLoad"/>
+    <title value="CD4"/>
     <code>
       <coding>
-        <system value="http://test.org/sectionCode"/>
-        <code value="viralLoad"/>
+        <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections"/>
+        <code value="CD4"/>
       </coding>
     </code>
     <entry>
-      <reference value="Observation/ViralLoadExample"/>
+      <reference value="Observation/CD4Example1"/>
+    </entry>
+    <entry>
+      <reference value="Observation/CD4Example2"/>
     </entry>
   </section>
   <section>
-    <title value="cd4"/>
+    <title value="Viral Suppression"/>
     <code>
       <coding>
-        <system value="http://test.org/sectionCode"/>
-        <code value="cd4"/>
+        <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections"/>
+        <code value="VIRAL-SUPPRESSION"/>
       </coding>
     </code>
     <entry>
-      <reference value="Observation/CD4Example"/>
+      <reference value="Observation/ViralLoadSuppressionExample1"/>
+    </entry>
+    <entry>
+      <reference value="Observation/ViralLoadSuppressionExample2"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Death"/>
+    <code>
+      <coding>
+        <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections"/>
+        <code value="DEATH"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/DeathExample"/>
     </entry>
   </section>
 </Composition>

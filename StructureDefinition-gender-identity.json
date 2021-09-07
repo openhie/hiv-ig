@@ -10,14 +10,14 @@
   "name": "GenderIdentity",
   "title": "Gender Identity",
   "status": "active",
-  "date": "2021-07-19T12:37:06+00:00",
-  "publisher": "openHIE",
+  "date": "2021-09-07T07:37:47+00:00",
+  "publisher": "OpenHIE",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/Special/committees/[something]"
+          "value": "http://xxhl7.org/Special/committees/[something]"
         }
       ]
     }

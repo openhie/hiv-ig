@@ -22,6 +22,13 @@
 <link href="assets/css/openhie.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+<!--
+  Questionnaire:
+-->
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,8 +47,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"13"}
-    h3,h4,h5,h6{--heading-prefix:"13.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -96,60 +103,25 @@
 	<li>
 		<a href="toc.html">Table of Contents</a>
 	</li>
+<!--
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
 		</a>
-		<ul class="dropdown-menu">
-			<li>
-				<a href="methodology.html">Methodology</a>
-			</li>
-			<li>
-				<a href="references.html">References</a>
-			</li>
-		</ul>
 
 	</li>
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
 		</a>
-		<ul class="dropdown-menu">
-			<li>
-				<a href="use_case_overview.html">Use Case Overview</a>
-			</li>
-			<li>
-				<a href="case_reporting.html">Case Reporting</a>
-			</li>
-			<li>
-				<a href="case_record.html">Case Record</a>
-			</li>
-			<li>
-				<a href="analytics.html">Analytics</a>
-			</li>
-			<li>
-				<a href="follow-up.html">Follow-up</a>
-			</li>
-		</ul>
-	</li>
 
+	</li>
+-->
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="exchange.html">Data Exchange</a>
-			</li>
-			<li>
-				<a href="data_extraction.html">Data Extraction</a>
-			</li>
-			<li>
 				<a href="artifacts.html">Artifact Index</a>
 			</li>
-		</ul>
-	</li>
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
-		<ul class="dropdown-menu">
-			<li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
 </ul>      
@@ -160,12 +132,12 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
-
+    
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
-
+          
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -194,34 +166,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">HIV Case Report</a>
+         <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">HIV Longitudinal Record</a>
+         <a href="#2">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#3">Structures: Logical Models</a>
+         <a href="#3">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#4">Structures: Resource Profiles</a>
+         <a href="#4">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#5">Structures: Extension Definitions</a>
+         <a href="#5">Example: Example Instances</a>
       </li>
       <li>
-         <a href="#6">Terminology: Value Sets</a>
-      </li>
-      <li>
-         <a href="#7">Terminology: Code Systems</a>
-      </li>
-      <li>
-         <a href="#8">Example: Example Scenarios</a>
-      </li>
-      <li>
-         <a href="#9">Example: Example Instances</a>
-      </li>
-      <li>
-         <a href="#10">Other</a>
+         <a href="#6">Other</a>
       </li>
    </ul>
 </div>
@@ -230,122 +190,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>HIV Case Report </h3>
-   <p>
-    <p>HIV Case Report artifacts</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-model-hiv-case-report.html"
-                     title="StructureDefinition/model-hiv-case-report">Case Report Logical Model</a>
-               </td>
-               <td>
-<p>Logical Model for a patient’s monthly case report</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="NamingSystem-ns-hiv-case-id.html"
-                     title="NamingSystem/ns-hiv-case-id">Naming System - Case ID</a>
-               </td>
-               <td>
-<p>A common naming system for case IDs</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="NamingSystem-ns-passport-id.html"
-                     title="NamingSystem/ns-passport-id">Naming System - Passport Numbers</a>
-               </td>
-               <td>
-<p>A naming system for passport numbers</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="NamingSystem-ns-insurance-id.html"
-                     title="NamingSystem/ns-insurance-id">Naming System - Insurance Numbers</a>
-               </td>
-               <td>
-<p>A naming system for insurance numbers</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="NamingSystem-ns-art-id.html" title="NamingSystem/ns-art-id">Naming System - ARV treatment IDs</a>
-               </td>
-               <td>
-<p>A naming system for ARV treatment IDs</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="2"> </a>
-   <h3>HIV Longitudinal Record </h3>
-   <p>
-    <p>HIV Longitudinal record</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-model-hiv-record.html"
-                     title="StructureDefinition/model-hiv-record">HIV Longitudinal Record Logical Model</a>
-               </td>
-               <td>
-<p>HIV Longitudinal record Logical Model</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-patient.html"
-                     title="StructureDefinition/hiv-patient">HIV patient</a>
-               </td>
-               <td>
-<p>Profile - HIV patient</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-viral-load-test.html"
-                     title="StructureDefinition/hiv-viral-load-test">Viral Load</a>
-               </td>
-               <td>
-<p>Profile - HIV viral load test result</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="3"> </a>
-   <h3>Structures: Logical Models </h3>
-   <p>
-    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-model-who-hiv-adaptation-kit.html"
-                     title="StructureDefinition/model-who-hiv-adaptation-kit">StructureDefinition/model-who-hiv-adaptation-kit</a>
-               </td>
-               <td>
-<p>This logical model reflects the WHO HIV Digital Accelerator Kit data dictionary</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="4"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
@@ -356,11 +200,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-encounter.html"
-                     title="StructureDefinition/hiv-encounter">HIV CR Encounter</a>
+                  <a href="StructureDefinition-hiv-patient.html"
+                     title="StructureDefinition/hiv-patient">HIV Patient</a>
                </td>
                <td>
-<p>HIV Encounter for a case report</p>
+<p>This Patient profile allows the exchange of patient information, including all the data associated with HIV patients</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-organization.html"
+                     title="StructureDefinition/hiv-organization">HIV Organization</a>
+               </td>
+               <td>
+<p>HIV Organization for case report - this represents a health facility</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-recency-result.html"
+                     title="StructureDefinition/hiv-recency-result">HIV Recency Result</a>
+               </td>
+               <td>
+<p>This profile allows the exchange of a patient’s hiv recency test</p>
 </td>
             </tr>
             <tr>
@@ -374,35 +236,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-composition.html"
-                     title="StructureDefinition/hiv-composition">HIV Case Reporting Composition</a>
+                  <a href="StructureDefinition-death-obs.html"
+                     title="StructureDefinition/death-obs">Death Obs</a>
                </td>
                <td>
-<p>HIV Case Reporting Composition</p>
+
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-marital-status.html"
-                     title="StructureDefinition/marital-status">MaritalStatus</a>
+                  <a href="StructureDefinition-hiv-episode-of-care.html"
+                     title="StructureDefinition/hiv-episode-of-care">HIV Episode Of Care</a>
                </td>
                <td>
-<p>This profile allows the exchange of a patient’s MaritalStatus</p>
+
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-organization.html"
-                     title="StructureDefinition/hiv-organization">HIV CR Organization</a>
-               </td>
-               <td>
-<p>HIV Organization for case report - this represents a health facility</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-recency-test.html"
-                     title="StructureDefinition/hiv-recency-test">HIV Recency</a>
+                  <a href="StructureDefinition-hiv-recency-test-conducted.html"
+                     title="StructureDefinition/hiv-recency-test-conducted">HIV Recency Test Conducted</a>
                </td>
                <td>
 <p>This profile allows the exchange of a patient’s hiv recency test</p>
@@ -410,11 +263,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-cd4-test.html"
-                     title="StructureDefinition/hiv-cd4-test">CD4Observation</a>
+                  <a href="StructureDefinition-hiv-viral-load-suppression.html"
+                     title="StructureDefinition/hiv-viral-load-suppression">HIV viral load suppression</a>
                </td>
                <td>
-<p>This profile allows the exchange of a patient’s CD$ test and results</p>
+<p>HIV viral load</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-clinical-encounter.html"
+                     title="StructureDefinition/hiv-clinical-encounter">HIV Clinical Encounter</a>
+               </td>
+               <td>
+<p>HIV Encounter for a case report</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-related-person.html"
+                     title="StructureDefinition/hiv-related-person">HIV Related Person</a>
+               </td>
+               <td>
+<p>HIV Related Person</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-disgnosis-encounter.html"
+                     title="StructureDefinition/hiv-disgnosis-encounter">HIV Diagnosis Encounter</a>
+               </td>
+               <td>
+<p>HIV Encounter for a case report</p>
 </td>
             </tr>
             <tr>
@@ -426,10 +306,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>This profile allows the exchange of a patient’s ARV treatment</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-cd4-test.html"
+                     title="StructureDefinition/hiv-cd4-test">CD4Observation</a>
+               </td>
+               <td>
+<p>This profile allows the exchange of a patient’s CD4 test and results</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-composition.html"
+                     title="StructureDefinition/hiv-composition">HIV Case Reporting Composition</a>
+               </td>
+               <td>
+<p>HIV Case Reporting Composition</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
-   <a name="5"> </a>
+   <a name="2"> </a>
    <h3>Structures: Extension Definitions </h3>
    <p>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
@@ -440,11 +338,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-gender-identity.html"
-                     title="StructureDefinition/gender-identity">Gender Identity</a>
+                  <a href="StructureDefinition-art-regimen-line.html"
+                     title="StructureDefinition/art-regimen-line">ART Regimen Line</a>
                </td>
                <td>
-<p>Gender identity</p>
+
 </td>
             </tr>
             <tr>
@@ -456,10 +354,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Key population</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-gender-identity.html"
+                     title="StructureDefinition/gender-identity">Gender Identity</a>
+               </td>
+               <td>
+<p>Gender identity</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-last-clinical-visit.html"
+                     title="StructureDefinition/last-clinical-visit">Last Clinical Visit</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
-   <a name="6"> </a>
+   <a name="3"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
     <p>These define sets of codes used by systems conforming to this implementation guide</p>
@@ -468,33 +384,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-vs-key-population.html"
-                     title="ValueSet/vs-key-population">Key population</a>
-               </td>
-               <td>
-<p>A list of key population types</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-vs-marital-status.html"
-                     title="ValueSet/vs-marital-status">Marital Status</a>
-               </td>
-               <td>
-<p>Valueset - marital statuses</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-VSHIVRapidTestResults.html"
-                     title="ValueSet/VSHIVRapidTestResults">HIVRapidTestResults</a>
-               </td>
-               <td>
-<p>HIV rapid test result codes</p>
-</td>
-            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-vs-gender-identity.html"
@@ -513,10 +402,55 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Valueset - Viral load Interpretations</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-vl-suppression.html"
+                     title="ValueSet/vs-vl-suppression">Viral load Suppression</a>
+               </td>
+               <td>
+<p>Valueset - Viral load Suppression</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-vl-causeofdeath.html"
+                     title="ValueSet/vs-vl-causeofdeath">Cause Of Death</a>
+               </td>
+               <td>
+<p>Valueset - CauseOfDeaths</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-key-population.html"
+                     title="ValueSet/vs-key-population">Key population</a>
+               </td>
+               <td>
+<p>A list of key population types</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-artregimen-lines.html"
+                     title="ValueSet/vs-artregimen-lines">VSART Regimen Lines</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-marital-status.html"
+                     title="ValueSet/vs-marital-status">Marital Status</a>
+               </td>
+               <td>
+<p>Valueset - marital statuses</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
-   <a name="7"> </a>
+   <a name="4"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
     <p>These define new code systems used by systems conforming to this implementation guide</p>
@@ -525,6 +459,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-vl-causeofdeath.html"
+                     title="CodeSystem/cs-vl-causeofdeath">Cause Of Death</a>
+               </td>
+               <td>
+<p>A list of CauseOfDeaths</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-case-report-sections.html"
+                     title="CodeSystem/cs-case-report-sections">HIV Case Report Sections codesystem</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-artregimen-lines.html"
+                     title="CodeSystem/cs-artregimen-lines">ART Regimen Lines</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CodeSystem-cs-key-population.html"
@@ -543,28 +504,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A list of Viral load Interpretations</p>
 </td>
             </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="8"> </a>
-   <h3>Example: Example Scenarios </h3>
-   <p>
-    <p>These define groups of interrelated examples that demonstrate one or more of the workflows supported by this implementation guide</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="ExampleScenario-hiv-case-reporting-scenario.html"
-                     title="ExampleScenario/hiv-case-reporting-scenario">ExampleScenario/hiv-case-reporting-scenario</a>
+                  <a href="CodeSystem-cs-hiv-obs-codes.html"
+                     title="CodeSystem/cs-hiv-obs-codes">HIV Case Report Observation codes</a>
                </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-vl-suppression.html"
+                     title="CodeSystem/cs-vl-suppression">Viral load Suppression</a>
+               </td>
+               <td>
+<p>A list of Viral load Suppression</p>
+</td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="9"> </a>
+   <a name="5"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -575,14 +536,88 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="Composition-HIVCompositionExample.html"
+                     title="Composition/HIVCompositionExample">HIV Case Report</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-ARVTreatmentExample2.html"
+                     title="CarePlan/ARVTreatmentExample2">Example CarePlan - ARVTreatmentExample2</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Organization-HIVOrganizationExample.html"
                      title="Organization/HIVOrganizationExample">Example Organization - HIVOrganizationExample</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CarePlan-ARVTreatmentExample.html"
-                     title="CarePlan/ARVTreatmentExample">Example CarePlan - ARVTreatmentExample</a>
+                  <a href="Observation-ViralLoadSuppressionExample1.html"
+                     title="Observation/ViralLoadSuppressionExample1">Example Observation - ViralLoadSuppressionExample1</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-CD4Example1.html" title="Observation/CD4Example1">Example Observation - CD4Example1</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-HIVClinicalEncounterExample.html"
+                     title="Encounter/HIVClinicalEncounterExample">Example Encounter - HIVClinicalEncounterExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ViralLoadSuppressionExample2.html"
+                     title="Observation/ViralLoadSuppressionExample2">Example Observation - ViralLoadSuppressionExample2</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RelatedPerson-GuardianExample.html"
+                     title="RelatedPerson/GuardianExample">Example RelatedPerson - GuardianExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-HIVDiagnosisEncounterExample.html"
+                     title="Encounter/HIVDiagnosisEncounterExample">Example Encounter - HIVDiagnosisEncounterExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-HIVPatientExample.html" title="Patient/HIVPatientExample">Example Patient - HIVPatientExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-CD4Example2.html" title="Observation/CD4Example2">Example Observation - CD4Example2</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-ARVTreatmentExample1.html"
+                     title="CarePlan/ARVTreatmentExample1">Example CarePlan - ARVTreatmentExample1</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HIVRecencyResultExample.html"
+                     title="Observation/HIVRecencyResultExample">Example Observation - HIVRecencyResultExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-HIVBundleExample.html" title="Bundle/HIVBundleExample">Example Bundle - HIVBundleExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EpisodeOfCare-HIVEpisodeOfCareExample.html"
+                     title="EpisodeOfCare/HIVEpisodeOfCareExample">Example EpisodeOfCare - HIVEpisodeOfCareExample</a>
                </td>
             </tr>
             <tr>
@@ -593,47 +628,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Encounter-HIVEncounterExample.html"
-                     title="Encounter/HIVEncounterExample">Example Encounter - HIVEncounterExample</a>
+                  <a href="Observation-HIVRecencyTestConductedExample.html"
+                     title="Observation/HIVRecencyTestConductedExample">Example Observation - HIVRecencyTestConductedExample</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-MaritalStatusExample.html"
-                     title="Observation/MaritalStatusExample">Example Observation - MaritalStatusExample</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Composition-HIVCompositionExample.html"
-                     title="Composition/HIVCompositionExample">HIV Case Report</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-ViralLoadExample.html"
-                     title="Observation/ViralLoadExample">Example Observation - ViralLoadExample</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-HIVPatientExample.html" title="Patient/HIVPatientExample">Example Patient - HIVPatientExample</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-CD4Example.html" title="Observation/CD4Example">Example Observation - CD4Example</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-HIVBundleExample.html" title="Bundle/HIVBundleExample">Example Bundle - HIVBundleExample</a>
+                  <a href="Observation-DeathExample.html" title="Observation/DeathExample">Example Observation - DeathExample</a>
                </td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="10"> </a>
+   <a name="6"> </a>
    <h3>Other </h3>
    <p>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories</p>
@@ -642,12 +649,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="RelatedPerson-GuardianExample.html"
-                     title="RelatedPerson/GuardianExample">RelatedPerson/GuardianExample</a>
-               </td>
-            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Practitioner-HIVPractitionerExample.html"
@@ -675,16 +676,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
+
+           
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">openHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 19, 2021 12:37+0000">2021-07-19</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://xxhl7.org/Special/committees/[something]">OpenHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 7, 2021 07:37+0000">2021-09-07</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
-                 <a style="color: #81BEF7" target="_blank" href="https://github.com/openhie/hiv-ig/projects/1">Issues</a> |
+                 
                  <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/hiv-casereporting/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
@@ -713,91 +717,6 @@ anchors.add()</script>
   
   <!-- feedback form - Google forms -->
 <!-- v0.1, 2021-01-09 -->
-
-
-  
-    
-    <script type="text/javascript">
-     /* <![CDATA[ */
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            
-
-            
-              var parameterFieldId = '';
-              var parameterVariableName = '';
-              var parameterValue = '';
-              parameterFieldId = 'entry.'+parseInt(1353807103).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
-              parameterVariableName = 'pageTitle';
-
-              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
-                default:
-                    console.log("Parameter value not supported");
-                    break;
-                  case "pageTitle":
-                    parameterValue = encodeURIComponent($(document).attr('title'));
-                    break;
-                  case "sectionId":
-                    parameterValue = id;
-                    break;
-                  case "sectionName":
-                    parameterValue = document.getElementById(id).textContent;
-                    break;
-              }
-/* <![CDATA[ */
-              feedbackurl = feedbackurl + '&';
-              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
-/* ]]> */
-            
-              var parameterFieldId = '';
-              var parameterVariableName = '';
-              var parameterValue = '';
-              parameterFieldId = 'entry.'+parseInt(247644557).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
-              parameterVariableName = 'sectionName';
-
-              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
-                default:
-                    console.log("Parameter value not supported");
-                    break;
-                  case "pageTitle":
-                    parameterValue = encodeURIComponent($(document).attr('title'));
-                    break;
-                  case "sectionId":
-                    parameterValue = id;
-                    break;
-                  case "sectionName":
-                    parameterValue = document.getElementById(id).textContent;
-                    break;
-              }
-/* <![CDATA[ */
-              feedbackurl = feedbackurl + '&';
-              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
-/* ]]> */
-            
-            
-          if (id) { //To make sure the element has an id
-            $(this).append(function () {
-              return $('<a/>', {
-                id,
-                href: feedbackurl,
-                text: feedbacklabel+' ' ,
-                class: 'feedback',
-                target: '_blank',
-                onclick: 'window.open('+feedbackurl+',\'newwindow\',\'width=300,height=250\');return false;'
-        
-              });
-            });
-          }
-        }) 
-/* ]]> */
-      </script>  
-    
-  
 
 
 
