@@ -27,7 +27,7 @@
   fhir:StructureDefinition.name [ fhir:value "ARVTreatment"];
   fhir:StructureDefinition.title [ fhir:value "ARVCarePlan"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-09-07T07:37:47+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-09-07T11:28:37+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "OpenHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
