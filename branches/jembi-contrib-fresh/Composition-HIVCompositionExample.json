@@ -1,0 +1,171 @@
+{
+  "resourceType": "Composition",
+  "id": "HIVCompositionExample",
+  "meta": {
+    "profile": [
+      "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 95412-3}\">COVID-19 case report</span></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href=\"Practitioner-HIVPractitionerExample.html\">Generated Summary: Homer Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>"
+  },
+  "identifier": {
+    "system": "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-case-report",
+    "value": "1111"
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "95412-3"
+      }
+    ]
+  },
+  "date": "2021-05-18",
+  "author": [
+    {
+      "reference": "Practitioner/HIVPractitionerExample"
+    }
+  ],
+  "title": "HIV Case Report",
+  "section": [
+    {
+      "title": "Client registration",
+      "code": {
+        "coding": [
+          {
+            "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+            "code": "CLIENT-REGISTRATION"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Patient/HIVPatientExample"
+        },
+        {
+          "reference": "RelatedPerson/GuardianExample"
+        }
+      ]
+    },
+    {
+      "title": "HIV Diagnosis",
+      "code": {
+        "coding": [
+          {
+            "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+            "code": "HIV-DIAGNOSIS"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Condition/HIVDiagnosisExample"
+        },
+        {
+          "reference": "Encounter/HIVDiagnosisEncounterExample"
+        },
+        {
+          "reference": "Observation/HIVRecencyTestConductedExample"
+        },
+        {
+          "reference": "Observation/HIVRecencyResultExample"
+        }
+      ]
+    },
+    {
+      "title": "HIV Entry To Care",
+      "code": {
+        "coding": [
+          {
+            "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+            "code": "HIV-ENTRY-TO-CARE"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "EpisodeOfCare/HIVEpisodeOfCareExample"
+        },
+        {
+          "reference": "Encounter/HIVClinicalEncounterExample"
+        }
+      ]
+    },
+    {
+      "title": "ARV Treatment",
+      "code": {
+        "coding": [
+          {
+            "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+            "code": "arvTherapySummary"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "CarePlan/ARVTreatmentExample1"
+        },
+        {
+          "reference": "CarePlan/ARVTreatmentExample2"
+        }
+      ]
+    },
+    {
+      "title": "CD4",
+      "code": {
+        "coding": [
+          {
+            "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+            "code": "CD4"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/CD4Example1"
+        },
+        {
+          "reference": "Observation/CD4Example2"
+        }
+      ]
+    },
+    {
+      "title": "Viral Suppression",
+      "code": {
+        "coding": [
+          {
+            "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+            "code": "VIRAL-SUPPRESSION"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/ViralLoadSuppressionExample1"
+        },
+        {
+          "reference": "Observation/ViralLoadSuppressionExample2"
+        }
+      ]
+    },
+    {
+      "title": "Death",
+      "code": {
+        "coding": [
+          {
+            "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+            "code": "DEATH"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/DeathExample"
+        }
+      ]
+    }
+  ]
+}

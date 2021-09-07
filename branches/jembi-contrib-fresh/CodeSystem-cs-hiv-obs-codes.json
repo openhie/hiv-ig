@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-hiv-obs-codes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">HIV-RECENCY-TEST-CONDUCTED<a name=\"cs-hiv-obs-codes-HIV-RECENCY-TEST-CONDUCTED\"> </a></td><td>HIV recency test conducted</td></tr><tr><td style=\"white-space:nowrap\">HIV-RECENCY-RESULT<a name=\"cs-hiv-obs-codes-HIV-RECENCY-RESULT\"> </a></td><td>HIV recency result</td></tr><tr><td style=\"white-space:nowrap\">CD4-RESULT<a name=\"cs-hiv-obs-codes-CD4-RESULT\"> </a></td><td>CD4 result</td></tr><tr><td style=\"white-space:nowrap\">VL-RESULT<a name=\"cs-hiv-obs-codes-VL-RESULT\"> </a></td><td>Viral load result</td></tr><tr><td style=\"white-space:nowrap\">CAUSE-OF-DEATH<a name=\"cs-hiv-obs-codes-CAUSE-OF-DEATH\"> </a></td><td>Cause of death</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes",
+  "version": "0.2.0",
+  "name": "CSHIVObsCodes",
+  "title": "HIV Case Report Observation codes",
+  "status": "active",
+  "date": "2021-09-07T07:37:47+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://xxhl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "HIV-RECENCY-TEST-CONDUCTED",
+      "display": "HIV recency test conducted"
+    },
+    {
+      "code": "HIV-RECENCY-RESULT",
+      "display": "HIV recency result"
+    },
+    {
+      "code": "CD4-RESULT",
+      "display": "CD4 result"
+    },
+    {
+      "code": "VL-RESULT",
+      "display": "Viral load result"
+    },
+    {
+      "code": "CAUSE-OF-DEATH",
+      "display": "Cause of death"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "url": "http://openhie.org/fhir/hiv-casereporting/ImplementationGuide/hiv-casereporting",
+  "name": "HIVCaseReporting",
+  "package-id": "openhie.fhir.hiv",
+  "ig-ver": "0.2.0",
+  "date": "Tue, 07 Sep, 2021 07:37:47 +0000",
+  "errs": 150,
+  "warnings": 63,
+  "hints": 25,
+  "version": "4.0.1",
+  "tool": "4.6.0 (3)"
+}

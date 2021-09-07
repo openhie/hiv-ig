@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-marital-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/ValueSet/marital-status</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>S</td><td>Never Married</td></tr><tr><td>M</td><td>Married</td></tr><tr><td>P</td><td>Polygamous</td></tr><tr><td>T</td><td>Domestic partner</td></tr><tr><td>D</td><td>Divorced</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-marital-status"/>
+  <version value="0.2.0"/>
+  <name value="VSMaritalStatus"/>
+  <title value="Marital Status"/>
+  <status value="active"/>
+  <date value="2021-09-07T07:37:47+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://xxhl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="Valueset - marital statuses"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/ValueSet/marital-status"/>
+      <concept>
+        <code value="S"/>
+        <display value="Never Married"/>
+      </concept>
+      <concept>
+        <code value="M"/>
+        <display value="Married"/>
+      </concept>
+      <concept>
+        <code value="P"/>
+        <display value="Polygamous"/>
+      </concept>
+      <concept>
+        <code value="T"/>
+        <display value="Domestic partner"/>
+      </concept>
+      <concept>
+        <code value="D"/>
+        <display value="Divorced"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

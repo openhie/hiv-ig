@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-vl-suppression"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">SUP<a name="cs-vl-suppression-SUP"> </a></td><td>Suppressed</td></tr><tr><td style="white-space:nowrap">UNSUP<a name="cs-vl-suppression-UNSUP"> </a></td><td>Unsuppressed</td></tr><tr><td style="white-space:nowrap">UNK<a name="cs-vl-suppression-UNK"> </a></td><td>Unknown</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression"/>
+  <version value="0.2.0"/>
+  <name value="CSVLSuppression"/>
+  <title value="Viral load Suppression"/>
+  <status value="active"/>
+  <date value="2021-09-07T07:37:47+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://xxhl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="A list of Viral load Suppression"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="SUP"/>
+    <display value="Suppressed"/>
+  </concept>
+  <concept>
+    <code value="UNSUP"/>
+    <display value="Unsuppressed"/>
+  </concept>
+  <concept>
+    <code value="UNK"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

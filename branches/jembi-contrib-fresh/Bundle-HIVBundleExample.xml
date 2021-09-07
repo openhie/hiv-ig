@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="HIVBundleExample"/>
+  <type value="document"/>
+  <entry>
+    <fullUrl value="Composition/HIVCompositionExample"/>
+    <resource>
+      <Composition>
+        <id value="HIVCompositionExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 95412-3}">COVID-19 case report</span></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href="Practitioner-HIVPractitionerExample.html">Generated Summary: Homer Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>
+        </text>
+        <identifier>
+          <system value="http://openhie.org/fhir/hiv-casereporting/identifier/hiv-case-report"/>
+          <value value="1111"/>
+        </identifier>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="95412-3"/>
+          </coding>
+        </type>
+        <date value="2021-05-18"/>
+        <author>
+          <reference value="Practitioner/HIVPractitionerExample"/>
+        </author>
+        <title value="HIV Case Report"/>
+        <section>
+          <title value="Client registration"/>
+          <code>
+            <coding>
+              <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections"/>
+              <code value="CLIENT-REGISTRATION"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Patient/HIVPatientExample"/>
+          </entry>
+          <entry>
+            <reference value="RelatedPerson/GuardianExample"/>
+          </entry>
+        </section>
+        <section>
+          <title value="HIV Diagnosis"/>
+          <code>
+            <coding>
+              <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections"/>
+              <code value="HIV-DIAGNOSIS"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Condition/HIVDiagnosisExample"/>
+          </entry>
+          <entry>
+            <reference value="Encounter/HIVDiagnosisEncounterExample"/>
+          </entry>
+          <entry>
+            <reference value="Observation/HIVRecencyTestConductedExample"/>
+          </entry>
+          <entry>
+            <reference value="Observation/HIVRecencyResultExample"/>
+          </entry>
+        </section>
+        <section>
+          <title value="HIV Entry To Care"/>
+          <code>
+            <coding>
+              <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections"/>
+              <code value="HIV-ENTRY-TO-CARE"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="EpisodeOfCare/HIVEpisodeOfCareExample"/>
+          </entry>
+          <entry>
+            <reference value="Encounter/HIVClinicalEncounterExample"/>
+          </entry>
+        </section>
+        <section>
+          <title value="ARV Treatment"/>
+          <code>
+            <coding>
+              <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections"/>
+              <code value="arvTherapySummary"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="CarePlan/ARVTreatmentExample1"/>
+          </entry>
+          <entry>
+            <reference value="CarePlan/ARVTreatmentExample2"/>
+          </entry>
+        </section>
+        <section>
+          <title value="CD4"/>
+          <code>
+            <coding>
+              <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections"/>
+              <code value="CD4"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/CD4Example1"/>
+          </entry>
+          <entry>
+            <reference value="Observation/CD4Example2"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Viral Suppression"/>
+          <code>
+            <coding>
+              <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections"/>
+              <code value="VIRAL-SUPPRESSION"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/ViralLoadSuppressionExample1"/>
+          </entry>
+          <entry>
+            <reference value="Observation/ViralLoadSuppressionExample2"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Death"/>
+          <code>
+            <coding>
+              <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections"/>
+              <code value="DEATH"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/DeathExample"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Encounter/HIVDiagnosisEncounterExample"/>
+    <resource>
+      <Encounter>
+        <id value="HIVDiagnosisEncounterExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-disgnosis-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: finished</p><p><b>class</b>: <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode PRENC}">pre-admission</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>serviceProvider</b>: <a href="Organization-HIVOrganizationExample.html">Generated Summary: id: facility1; name: HIV Organization</a></p></div>
+        </text>
+        <status value="finished"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="PRENC"/>
+        </class>
+        <subject>
+          <reference value="Patient/HIVPatientExample"/>
+        </subject>
+        <serviceProvider>
+          <reference value="Organization/HIVOrganizationExample"/>
+        </serviceProvider>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Encounter/HIVClinicalEncounterExample"/>
+    <resource>
+      <Encounter>
+        <id value="HIVClinicalEncounterExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-clinical-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: finished</p><p><b>class</b>: <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode OBSENC}">observation encounter</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>period</b>: 2021-07-22 --&gt; (ongoing)</p></div>
+        </text>
+        <status value="finished"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="OBSENC"/>
+        </class>
+        <subject>
+          <reference value="Patient/HIVPatientExample"/>
+        </subject>
+        <period>
+          <start value="2021-07-22"/>
+        </period>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Patient/HIVPatientExample"/>
+    <resource>
+      <Patient>
+        <id value="HIVPatientExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Gender Identity</b>: <span title="Codes: ">male</span></p><p><b>Key population</b>: <span title="Codes: ">transgender</span></p><p><b>identifier</b>: id: ART1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane Smith (OFFICIAL)</p><p><b>telecom</b>: <a href="tel:+27825556666">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><p><b>maritalStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></p><p><b>managingOrganization</b>: <a href="Organization-HIVOrganizationExample.html">Generated Summary: id: facility1; name: HIV Organization</a></p></div>
+        </text>
+        <extension url="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/gender-identity">
+          <valueCodeableConcept>
+            <coding>
+              <code value="male"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/key-population">
+          <valueCodeableConcept>
+            <coding>
+              <code value="transgender"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <identifier>
+          <value value="ART1234567"/>
+        </identifier>
+        <identifier>
+          <value value="NAT1234567"/>
+        </identifier>
+        <identifier>
+          <value value="EMR1234567"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <family value="Smith"/>
+          <given value="Jane"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="+27825556666"/>
+        </telecom>
+        <gender value="female"/>
+        <birthDate value="1986-06-04"/>
+        <address>
+          <city value="Cape Town"/>
+          <district value="City of Cape Town"/>
+          <state value="Western Province"/>
+          <country value="South Africa"/>
+        </address>
+        <maritalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="M"/>
+          </coding>
+        </maritalStatus>
+        <managingOrganization>
+          <reference value="Organization/HIVOrganizationExample"/>
+        </managingOrganization>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="RelatedPerson/GuardianExample"/>
+    <resource>
+      <RelatedPerson>
+        <id value="GuardianExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-related-person"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>patient</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>name</b>: Peter Loo </p></div>
+        </text>
+        <patient>
+          <reference value="Patient/HIVPatientExample"/>
+        </patient>
+        <name>
+          <family value="Loo"/>
+          <given value="Peter"/>
+        </name>
+      </RelatedPerson>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Condition/HIVDiagnosisExample"/>
+    <resource>
+      <Condition>
+        <id value="HIVDiagnosisExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-diagnosis"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: abc</p><p><b>clinicalStatus</b>: <span title="Codes: ">active</span></p><p><b>verificationStatus</b>: <span title="Codes: ">confirmed</span></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 86406008}">Human immunodeficiency virus infection</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>recordedDate</b>: 2021-05-18</p></div>
+        </text>
+        <identifier>
+          <system value="http://openhie.org/fhir/hiv-casereporting/identifier/hiv-diagnosis"/>
+          <value value="abc"/>
+        </identifier>
+        <clinicalStatus>
+          <coding>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="86406008"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/HIVPatientExample"/>
+        </subject>
+        <recordedDate value="2021-05-18"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/HIVRecencyTestConductedExample"/>
+    <resource>
+      <Observation>
+        <id value="HIVRecencyTestConductedExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-test-conducted"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes HIV-RECENCY-TEST-CONDUCTED}">HIV recency test conducted</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href="#Encounter_HIVClinicalEncounterExample">See above (Encounter/HIVClinicalEncounterExample)</a></p><p><b>value</b>: true</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes"/>
+            <code value="HIV-RECENCY-TEST-CONDUCTED"/>
+            <display value="HIV recency test conducted"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/HIVPatientExample"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/HIVClinicalEncounterExample"/>
+        </encounter>
+        <valueBoolean value="true"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/HIVRecencyResultExample"/>
+    <resource>
+      <Observation>
+        <id value="HIVRecencyResultExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-result"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes HIV-RECENCY-RESULT}">HIV recency test conducted</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href="#Encounter_HIVClinicalEncounterExample">See above (Encounter/HIVClinicalEncounterExample)</a></p><p><b>value</b>: false</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes"/>
+            <code value="HIV-RECENCY-RESULT"/>
+            <display value="HIV recency test conducted"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/HIVPatientExample"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/HIVClinicalEncounterExample"/>
+        </encounter>
+        <valueBoolean value="false"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="EpisodeOfCare/HIVEpisodeOfCareExample"/>
+    <resource>
+      <EpisodeOfCare>
+        <id value="HIVEpisodeOfCareExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-episode-of-care"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 123456789</p><p><b>status</b>: active</p><h3>Diagnoses</h3><table class="grid"><tr><td>-</td><td><b>Condition</b></td></tr><tr><td>*</td><td><a href="#Condition_HIVDiagnosisExample">See above (Condition/HIVDiagnosisExample)</a></td></tr></table><p><b>patient</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>managingOrganization</b>: <a href="Organization-HIVOrganizationExample.html">Generated Summary: id: facility1; name: HIV Organization</a></p><p><b>period</b>: 2021-08-25 --&gt; (ongoing)</p></div>
+        </text>
+        <identifier>
+          <system value="http://example.org/enrollmentUniqueID"/>
+          <value value="123456789"/>
+        </identifier>
+        <status value="active"/>
+        <diagnosis>
+          <condition>
+            <reference value="Condition/HIVDiagnosisExample"/>
+          </condition>
+        </diagnosis>
+        <patient>
+          <reference value="Patient/HIVPatientExample"/>
+        </patient>
+        <managingOrganization>
+          <reference value="Organization/HIVOrganizationExample"/>
+        </managingOrganization>
+        <period>
+          <start value="2021-08-25"/>
+        </period>
+      </EpisodeOfCare>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="CarePlan/ARVTreatmentExample1"/>
+    <resource>
+      <CarePlan>
+        <id value="ARVTreatmentExample1"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>period</b>: 2021-05-20 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td></td><td>MedicationRequest</td><td><span title="Codes: {http://loinc.org 45260-7}">HIV ART medication</span></td><td>stopped</td><td><span title="Codes: ">TDF/3TC/DTG</span></td></tr></table></blockquote></div>
+        </text>
+        <status value="active"/>
+        <intent value="plan"/>
+        <subject>
+          <reference value="Patient/HIVPatientExample"/>
+        </subject>
+        <period>
+          <start value="2021-05-20"/>
+        </period>
+        <activity>
+          <detail>
+            <extension url="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-regimen-line">
+              <valueCodeableConcept>
+                <coding>
+                  <code value="FIRST-LINE"/>
+                </coding>
+              </valueCodeableConcept>
+            </extension>
+            <kind value="MedicationRequest"/>
+            <code>
+              <coding>
+                <system value="http://loinc.org"/>
+                <code value="45260-7"/>
+                <display value="HIV ART medication"/>
+              </coding>
+            </code>
+            <status value="stopped"/>
+            <productCodeableConcept>
+              <coding>
+                <code value="TDF/3TC/DTG"/>
+              </coding>
+            </productCodeableConcept>
+          </detail>
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="CarePlan/ARVTreatmentExample2"/>
+    <resource>
+      <CarePlan>
+        <id value="ARVTreatmentExample2"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>period</b>: 2021-07-20 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td></td><td>MedicationRequest</td><td><span title="Codes: {http://loinc.org 45260-7}">HIV ART medication</span></td><td>in-progress</td><td><span title="Codes: ">TDF/3TC/EFV</span></td></tr></table></blockquote></div>
+        </text>
+        <status value="active"/>
+        <intent value="plan"/>
+        <subject>
+          <reference value="Patient/HIVPatientExample"/>
+        </subject>
+        <period>
+          <start value="2021-07-20"/>
+        </period>
+        <activity>
+          <detail>
+            <extension url="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-regimen-line">
+              <valueCodeableConcept>
+                <coding>
+                  <code value="SECOND-LINE"/>
+                </coding>
+              </valueCodeableConcept>
+            </extension>
+            <kind value="MedicationRequest"/>
+            <code>
+              <coding>
+                <system value="http://loinc.org"/>
+                <code value="45260-7"/>
+                <display value="HIV ART medication"/>
+              </coding>
+            </code>
+            <status value="in-progress"/>
+            <productCodeableConcept>
+              <coding>
+                <code value="TDF/3TC/EFV"/>
+              </coding>
+            </productCodeableConcept>
+          </detail>
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/CD4Example1"/>
+    <resource>
+      <Observation>
+        <id value="CD4Example1"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-test"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes CD4-RESULT}">CD4 result</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>effective</b>: 2020-06-09</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 113056008}">CD4 result</span></p><p><b>value</b>: 500</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 313938009}">CD4 percentage</span></p><p><b>value</b>: 50</p></blockquote></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes"/>
+            <code value="CD4-RESULT"/>
+            <display value="CD4 result"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/HIVPatientExample"/>
+        </subject>
+        <effectiveDateTime value="2020-06-09"/>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="113056008"/>
+              <display value="CD4 result"/>
+            </coding>
+          </code>
+          <valueInteger value="500"/>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="313938009"/>
+              <display value="CD4 percentage"/>
+            </coding>
+          </code>
+          <valueInteger value="50"/>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/CD4Example2"/>
+    <resource>
+      <Observation>
+        <id value="CD4Example2"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-test"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes CD4-RESULT}">CD4 result</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>effective</b>: 2021-08-26</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 113056008}">CD4 result</span></p><p><b>value</b>: 200</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 313938009}">CD4 percentage</span></p><p><b>value</b>: 30</p></blockquote></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes"/>
+            <code value="CD4-RESULT"/>
+            <display value="CD4 result"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/HIVPatientExample"/>
+        </subject>
+        <effectiveDateTime value="2021-08-26"/>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="113056008"/>
+              <display value="CD4 result"/>
+            </coding>
+          </code>
+          <valueInteger value="200"/>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="313938009"/>
+              <display value="CD4 percentage"/>
+            </coding>
+          </code>
+          <valueInteger value="30"/>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/ViralLoadSuppressionExample1"/>
+    <resource>
+      <Observation>
+        <id value="ViralLoadSuppressionExample1"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes VL-RESULT}">Viral load result</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>effective</b>: 2020-06-09</p><p><b>value</b>: 1000</p><p><b>interpretation</b>: <span title="Codes: {http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation D}">Detectable</span>, <span title="Codes: {http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression UNSUP}">Unsuppressed</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes"/>
+            <code value="VL-RESULT"/>
+            <display value="Viral load result"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/HIVPatientExample"/>
+        </subject>
+        <effectiveDateTime value="2020-06-09"/>
+        <valueInteger value="1000"/>
+        <interpretation>
+          <coding>
+            <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation"/>
+            <code value="D"/>
+            <display value="Detectable"/>
+          </coding>
+        </interpretation>
+        <interpretation>
+          <coding>
+            <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression"/>
+            <code value="UNSUP"/>
+            <display value="Unsuppressed"/>
+          </coding>
+        </interpretation>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/ViralLoadSuppressionExample2"/>
+    <resource>
+      <Observation>
+        <id value="ViralLoadSuppressionExample2"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes VL-RESULT}">Viral load result</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>effective</b>: 2021-06-21</p><p><b>value</b>: 200</p><p><b>interpretation</b>: <span title="Codes: {http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation ND}">Non Detectable</span>, <span title="Codes: {http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression SUP}">Suppressed</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes"/>
+            <code value="VL-RESULT"/>
+            <display value="Viral load result"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/HIVPatientExample"/>
+        </subject>
+        <effectiveDateTime value="2021-06-21"/>
+        <valueInteger value="200"/>
+        <interpretation>
+          <coding>
+            <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation"/>
+            <code value="ND"/>
+            <display value="Non Detectable"/>
+          </coding>
+        </interpretation>
+        <interpretation>
+          <coding>
+            <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression"/>
+            <code value="SUP"/>
+            <display value="Suppressed"/>
+          </coding>
+        </interpretation>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/DeathExample"/>
+    <resource>
+      <Observation>
+        <id value="DeathExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/death-obs"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Last Clinical Visit</b>: 2021-08-26</p><p></p><p><b>code</b>: <span title="Codes: {http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes CAUSE-OF-DEATH}">Cause of death</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>effective</b>: 2021-08-26</p><p><b>value</b>: <span title="Codes: {http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath HIV}">HIV Related</span></p></div>
+        </text>
+        <extension url="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/last-clinical-visit">
+          <valueDateTime value="2021-08-26"/>
+        </extension>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes"/>
+            <code value="CAUSE-OF-DEATH"/>
+            <display value="Cause of death"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/HIVPatientExample"/>
+        </subject>
+        <effectiveDateTime value="2021-08-26"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath"/>
+            <code value="HIV"/>
+            <display value="HIV Related"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>
