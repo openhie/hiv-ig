@@ -88,7 +88,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 95412-3}\">COVID-19 case report</span></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href=\"Practitioner-HIVPractitionerExample.html\">Generated Summary: Homer Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 95412-3}\">COVID-19 case report</span></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href=\"Organization-HIVOrganizationExample.html\">Generated Summary: id: facility1; name: HIV Organization</a></p><p><b>title</b>: HIV Case Report</p></div>"
   ];
   fhir:Composition.identifier [
      fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-case-report" ];
@@ -106,8 +106,8 @@
   fhir:Composition.date [ fhir:value "2021-05-18"^^xsd:date];
   fhir:Composition.author [
      fhir:index 0;
-     fhir:link <http://openhie.org/fhir/hiv-casereporting/Practitioner/HIVPractitionerExample>;
-     fhir:Reference.reference [ fhir:value "Practitioner/HIVPractitionerExample" ]
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/Organization/HIVOrganizationExample>;
+     fhir:Reference.reference [ fhir:value "Organization/HIVOrganizationExample" ]
   ];
   fhir:Composition.title [ fhir:value "HIV Case Report"];
   fhir:Composition.section [
@@ -313,11 +313,11 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Gender Identity</b>: <span title=\"Codes: \">male</span></p><p><b>Key population</b>: <span title=\"Codes: \">transgender</span></p><p><b>identifier</b>: id: ART1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane Smith (OFFICIAL)</p><p><b>telecom</b>: <a href=\"tel:+27825556666\">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><p><b>maritalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></p><p><b>managingOrganization</b>: <a href=\"Organization-HIVOrganizationExample.html\">Generated Summary: id: facility1; name: HIV Organization</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>genderIdentity</b>: <span title=\"Codes: \">male</span></p><p><b>Key population</b>: <span title=\"Codes: \">transgender</span></p><p><b>identifier</b>: id: ART1234567, id: PASSPORT1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane Smith (OFFICIAL)</p><p><b>telecom</b>: <a href=\"tel:+27825556666\">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><p><b>maritalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></p><p><b>managingOrganization</b>: <a href=\"Organization-HIVOrganizationExample.html\">Generated Summary: id: facility1; name: HIV Organization</a></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/gender-identity" ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
@@ -336,12 +336,19 @@
   ];
   fhir:Patient.identifier [
      fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/identifier/art" ];
      fhir:Identifier.value [ fhir:value "ART1234567" ]
   ], [
      fhir:index 1;
-     fhir:Identifier.value [ fhir:value "NAT1234567" ]
+     fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/identifier/passport" ];
+     fhir:Identifier.value [ fhir:value "PASSPORT1234567" ]
   ], [
      fhir:index 2;
+     fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/identifier/nid" ];
+     fhir:Identifier.value [ fhir:value "NAT1234567" ]
+  ], [
+     fhir:index 3;
+     fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/identifier/facility1" ];
      fhir:Identifier.value [ fhir:value "EMR1234567" ]
   ];
   fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
@@ -529,7 +536,7 @@
   ];
   fhir:EpisodeOfCare.identifier [
      fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://example.org/enrollmentUniqueID" ];
+     fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/identifier/enrollment-unique-id" ];
      fhir:Identifier.value [ fhir:value "123456789" ]
   ];
   fhir:EpisodeOfCare.status [ fhir:value "active"];

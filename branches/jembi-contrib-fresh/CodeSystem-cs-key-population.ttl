@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "cs-key-population"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">MSM<a name=\"cs-key-population-MSM\"> </a></td></tr><tr><td style=\"white-space:nowrap\">FSW<a name=\"cs-key-population-FSW\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MSW<a name=\"cs-key-population-MSW\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PWID<a name=\"cs-key-population-PWID\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PWUD<a name=\"cs-key-population-PWUD\"> </a></td></tr><tr><td style=\"white-space:nowrap\">transgender<a name=\"cs-key-population-transgender\"> </a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">GENERAL-POPULATION<a name=\"cs-key-population-GENERAL-POPULATION\"> </a></td><td>General Population</td></tr><tr><td style=\"white-space:nowrap\">MSM<a name=\"cs-key-population-MSM\"> </a></td><td>MSM</td></tr><tr><td style=\"white-space:nowrap\">FSW<a name=\"cs-key-population-FSW\"> </a></td><td>FSW</td></tr><tr><td style=\"white-space:nowrap\">MSW<a name=\"cs-key-population-MSW\"> </a></td><td>MSW</td></tr><tr><td style=\"white-space:nowrap\">PWID<a name=\"cs-key-population-PWID\"> </a></td><td>PWID</td></tr><tr><td style=\"white-space:nowrap\">PWUD<a name=\"cs-key-population-PWUD\"> </a></td><td>PWUD</td></tr><tr><td style=\"white-space:nowrap\">TRANSGENDER<a name=\"cs-key-population-TRANSGENDER\"> </a></td><td>Transgender</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population"];
   fhir:CodeSystem.version [ fhir:value "0.2.0"];
   fhir:CodeSystem.name [ fhir:value "CSKeyPopulation"];
   fhir:CodeSystem.title [ fhir:value "Key population"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-09-07T11:28:37+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-09-16T07:55:33+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -37,25 +37,35 @@
      ]
   ];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "6"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "MSM" ]
+     fhir:CodeSystem.concept.code [ fhir:value "GENERAL-POPULATION" ];
+     fhir:CodeSystem.concept.display [ fhir:value "General Population" ]
   ], [
      fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "FSW" ]
+     fhir:CodeSystem.concept.code [ fhir:value "MSM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "MSM" ]
   ], [
      fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "MSW" ]
+     fhir:CodeSystem.concept.code [ fhir:value "FSW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "FSW" ]
   ], [
      fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "PWID" ]
+     fhir:CodeSystem.concept.code [ fhir:value "MSW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "MSW" ]
   ], [
      fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "PWUD" ]
+     fhir:CodeSystem.concept.code [ fhir:value "PWID" ];
+     fhir:CodeSystem.concept.display [ fhir:value "PWID" ]
   ], [
      fhir:index 5;
-     fhir:CodeSystem.concept.code [ fhir:value "transgender" ]
+     fhir:CodeSystem.concept.code [ fhir:value "PWUD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "PWUD" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "TRANSGENDER" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transgender" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

@@ -6,7 +6,7 @@
     <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-disgnosis-encounter"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: finished</p><p><b>class</b>: <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode PRENC}">pre-admission</span></p><p><b>subject</b>: <a href="Patient-HIVPatientExample.html">Generated Summary: id: ART1234567, id: NAT1234567, id: EMR1234567; active; Jane Smith (OFFICIAL); Phone: +27825556666; gender: female; birthDate: 1986-06-04; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></a></p><p><b>serviceProvider</b>: <a href="Organization-HIVOrganizationExample.html">Generated Summary: id: facility1; name: HIV Organization</a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: finished</p><p><b>class</b>: <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode PRENC}">pre-admission</span></p><p><b>subject</b>: <a href="Patient-HIVPatientExample.html">Generated Summary: id: ART1234567, id: PASSPORT1234567, id: NAT1234567, id: EMR1234567; active; Jane Smith (OFFICIAL); Phone: +27825556666; gender: female; birthDate: 1986-06-04; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></a></p><p><b>serviceProvider</b>: <a href="Organization-HIVOrganizationExample.html">Generated Summary: id: facility1; name: HIV Organization</a></p></div>
   </text>
   <status value="finished"/>
   <class>

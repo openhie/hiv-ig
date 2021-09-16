@@ -11,7 +11,7 @@
   "title": "HIV Case Reporting and Monitoring",
   "status": "draft",
   "experimental": false,
-  "date": "2021-09-07T11:28:37+00:00",
+  "date": "2021-09-16T07:55:33+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -354,19 +354,6 @@
         },
         "name": "HIV Case Report",
         "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-gender-identity"
-        },
-        "name": "Gender Identity",
-        "description": "Valueset - Gender Identities"
       },
       {
         "extension": [
@@ -744,19 +731,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/gender-identity"
-        },
-        "name": "Gender Identity",
-        "description": "Gender identity"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -778,17 +752,6 @@
         },
         "name": "Viral load Interpretation",
         "description": "A list of Viral load Interpretations"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Practitioner"
-          }
-        ],
-        "reference": {
-          "reference": "Practitioner/HIVPractitionerExample"
-        }
       },
       {
         "extension": [

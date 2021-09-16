@@ -18,7 +18,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 95412-3}\">COVID-19 case report</span></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href=\"Practitioner-HIVPractitionerExample.html\">Generated Summary: Homer Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 95412-3}\">COVID-19 case report</span></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href=\"Organization-HIVOrganizationExample.html\">Generated Summary: id: facility1; name: HIV Organization</a></p><p><b>title</b>: HIV Case Report</p></div>"
   ];
   fhir:Composition.identifier [
      fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-case-report" ];
@@ -36,8 +36,8 @@
   fhir:Composition.date [ fhir:value "2021-05-18"^^xsd:date];
   fhir:Composition.author [
      fhir:index 0;
-     fhir:link <http://openhie.org/fhir/hiv-casereporting/Practitioner/HIVPractitionerExample>;
-     fhir:Reference.reference [ fhir:value "Practitioner/HIVPractitionerExample" ]
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/Organization/HIVOrganizationExample>;
+     fhir:Reference.reference [ fhir:value "Organization/HIVOrganizationExample" ]
   ];
   fhir:Composition.title [ fhir:value "HIV Case Report"];
   fhir:Composition.section [

@@ -12,7 +12,7 @@
           <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 95412-3}">COVID-19 case report</span></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href="Practitioner-HIVPractitionerExample.html">Generated Summary: Homer Simpson </a></p><p><b>title</b>: HIV Case Report</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 95412-3}">COVID-19 case report</span></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href="Organization-HIVOrganizationExample.html">Generated Summary: id: facility1; name: HIV Organization</a></p><p><b>title</b>: HIV Case Report</p></div>
         </text>
         <identifier>
           <system value="http://openhie.org/fhir/hiv-casereporting/identifier/hiv-case-report"/>
@@ -27,7 +27,7 @@
         </type>
         <date value="2021-05-18"/>
         <author>
-          <reference value="Practitioner/HIVPractitionerExample"/>
+          <reference value="Organization/HIVOrganizationExample"/>
         </author>
         <title value="HIV Case Report"/>
         <section>
@@ -200,9 +200,9 @@
           <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"/>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Gender Identity</b>: <span title="Codes: ">male</span></p><p><b>Key population</b>: <span title="Codes: ">transgender</span></p><p><b>identifier</b>: id: ART1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane Smith (OFFICIAL)</p><p><b>telecom</b>: <a href="tel:+27825556666">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><p><b>maritalStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></p><p><b>managingOrganization</b>: <a href="Organization-HIVOrganizationExample.html">Generated Summary: id: facility1; name: HIV Organization</a></p></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>genderIdentity</b>: <span title="Codes: ">male</span></p><p><b>Key population</b>: <span title="Codes: ">transgender</span></p><p><b>identifier</b>: id: ART1234567, id: PASSPORT1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane Smith (OFFICIAL)</p><p><b>telecom</b>: <a href="tel:+27825556666">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><p><b>maritalStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></p><p><b>managingOrganization</b>: <a href="Organization-HIVOrganizationExample.html">Generated Summary: id: facility1; name: HIV Organization</a></p></div>
         </text>
-        <extension url="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/gender-identity">
+        <extension url="http://hl7.org/fhir/StructureDefinition/patient-genderIdentity">
           <valueCodeableConcept>
             <coding>
               <code value="male"/>
@@ -217,12 +217,19 @@
           </valueCodeableConcept>
         </extension>
         <identifier>
+          <system value="http://openhie.org/fhir/hiv-casereporting/identifier/art"/>
           <value value="ART1234567"/>
         </identifier>
         <identifier>
+          <system value="http://openhie.org/fhir/hiv-casereporting/identifier/passport"/>
+          <value value="PASSPORT1234567"/>
+        </identifier>
+        <identifier>
+          <system value="http://openhie.org/fhir/hiv-casereporting/identifier/nid"/>
           <value value="NAT1234567"/>
         </identifier>
         <identifier>
+          <system value="http://openhie.org/fhir/hiv-casereporting/identifier/facility1"/>
           <value value="EMR1234567"/>
         </identifier>
         <active value="true"/>
@@ -384,7 +391,7 @@
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 123456789</p><p><b>status</b>: active</p><h3>Diagnoses</h3><table class="grid"><tr><td>-</td><td><b>Condition</b></td></tr><tr><td>*</td><td><a href="#Condition_HIVDiagnosisExample">See above (Condition/HIVDiagnosisExample)</a></td></tr></table><p><b>patient</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>managingOrganization</b>: <a href="Organization-HIVOrganizationExample.html">Generated Summary: id: facility1; name: HIV Organization</a></p><p><b>period</b>: 2021-08-25 --&gt; (ongoing)</p></div>
         </text>
         <identifier>
-          <system value="http://example.org/enrollmentUniqueID"/>
+          <system value="http://openhie.org/fhir/hiv-casereporting/identifier/enrollment-unique-id"/>
           <value value="123456789"/>
         </identifier>
         <status value="active"/>

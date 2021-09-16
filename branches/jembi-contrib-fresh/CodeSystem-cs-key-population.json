@@ -3,14 +3,14 @@
   "id": "cs-key-population",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">MSM<a name=\"cs-key-population-MSM\"> </a></td></tr><tr><td style=\"white-space:nowrap\">FSW<a name=\"cs-key-population-FSW\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MSW<a name=\"cs-key-population-MSW\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PWID<a name=\"cs-key-population-PWID\"> </a></td></tr><tr><td style=\"white-space:nowrap\">PWUD<a name=\"cs-key-population-PWUD\"> </a></td></tr><tr><td style=\"white-space:nowrap\">transgender<a name=\"cs-key-population-transgender\"> </a></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">GENERAL-POPULATION<a name=\"cs-key-population-GENERAL-POPULATION\"> </a></td><td>General Population</td></tr><tr><td style=\"white-space:nowrap\">MSM<a name=\"cs-key-population-MSM\"> </a></td><td>MSM</td></tr><tr><td style=\"white-space:nowrap\">FSW<a name=\"cs-key-population-FSW\"> </a></td><td>FSW</td></tr><tr><td style=\"white-space:nowrap\">MSW<a name=\"cs-key-population-MSW\"> </a></td><td>MSW</td></tr><tr><td style=\"white-space:nowrap\">PWID<a name=\"cs-key-population-PWID\"> </a></td><td>PWID</td></tr><tr><td style=\"white-space:nowrap\">PWUD<a name=\"cs-key-population-PWUD\"> </a></td><td>PWUD</td></tr><tr><td style=\"white-space:nowrap\">TRANSGENDER<a name=\"cs-key-population-TRANSGENDER\"> </a></td><td>Transgender</td></tr></table></div>"
   },
   "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
   "version": "0.2.0",
   "name": "CSKeyPopulation",
   "title": "Key population",
   "status": "active",
-  "date": "2021-09-07T11:28:37+00:00",
+  "date": "2021-09-16T07:55:33+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -34,25 +34,35 @@
     }
   ],
   "content": "complete",
-  "count": 6,
+  "count": 7,
   "concept": [
     {
-      "code": "MSM"
+      "code": "GENERAL-POPULATION",
+      "display": "General Population"
     },
     {
-      "code": "FSW"
+      "code": "MSM",
+      "display": "MSM"
     },
     {
-      "code": "MSW"
+      "code": "FSW",
+      "display": "FSW"
     },
     {
-      "code": "PWID"
+      "code": "MSW",
+      "display": "MSW"
     },
     {
-      "code": "PWUD"
+      "code": "PWID",
+      "display": "PWID"
     },
     {
-      "code": "transgender"
+      "code": "PWUD",
+      "display": "PWUD"
+    },
+    {
+      "code": "TRANSGENDER",
+      "display": "Transgender"
     }
   ]
 }
