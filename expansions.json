@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "5f5525ba-3816-4bde-86af-3fa97d581174",
+  "id" : "511a60d0-3b60-4744-ba61-0bdf1e95a4a0",
   "meta" : {
-    "lastUpdated" : "2021-09-07T11:28:37.954+00:00"
+    "lastUpdated" : "2021-09-16T07:55:33.515+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "VSVLInterpretation",
       "title" : "Viral load Interpretation",
       "status" : "active",
-      "date" : "2021-09-07T11:28:37+00:00",
+      "date" : "2021-09-16T07:55:33+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -35,8 +35,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bcef485d-b41c-42a1-b742-7bb0ec221251",
-        "timestamp" : "2021-09-07T11:28:56+00:00",
+        "identifier" : "urn:uuid:3cd969ca-ab78-49db-80ce-3b758b55737c",
+        "timestamp" : "2021-09-16T07:55:51+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -78,7 +78,7 @@
       "name" : "VSVLSuppression",
       "title" : "Viral load Suppression",
       "status" : "active",
-      "date" : "2021-09-07T11:28:37+00:00",
+      "date" : "2021-09-16T07:55:33+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -94,8 +94,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:60270d31-3c1f-41c8-95c4-922311b9e4f1",
-        "timestamp" : "2021-09-07T11:28:57+00:00",
+        "identifier" : "urn:uuid:875580db-e87a-4231-9785-7bd5ca1d0bea",
+        "timestamp" : "2021-09-16T07:55:51+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -137,7 +137,7 @@
       "name" : "VSVLCauseOfDeath",
       "title" : "Cause Of Death",
       "status" : "active",
-      "date" : "2021-09-07T11:28:37+00:00",
+      "date" : "2021-09-16T07:55:33+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -153,8 +153,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3fcd85a4-ee0e-438a-bdc3-700fd66f2fa0",
-        "timestamp" : "2021-09-07T11:28:58+00:00",
+        "identifier" : "urn:uuid:5ed71b76-f84e-4543-971b-23e3026fba79",
+        "timestamp" : "2021-09-16T07:55:53+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -184,14 +184,14 @@
       "id" : "vs-key-population",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-key-population.html\">Key population v0.2.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cs-key-population.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSM\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-MSM\">MSM</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-FSW\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-FSW\">FSW</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSW\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-MSW\">MSW</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWID\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-PWID\">PWID</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWUD\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-PWUD\">PWUD</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-transgender\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-transgender\">transgender</a></td><td/><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-key-population.html\">Key population v0.2.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cs-key-population.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-GENERAL-POPULATION\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-GENERAL-POPULATION\">GENERAL-POPULATION</a></td><td>General Population</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSM\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-MSM\">MSM</a></td><td>MSM</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-FSW\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-FSW\">FSW</a></td><td>FSW</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSW\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-MSW\">MSW</a></td><td>MSW</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWID\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-PWID\">PWID</a></td><td>PWID</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWUD\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-PWUD\">PWUD</a></td><td>PWUD</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-TRANSGENDER\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-TRANSGENDER\">TRANSGENDER</a></td><td>Transgender</td><td/></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-key-population",
       "version" : "0.2.0",
       "name" : "VSKeyPopulation",
       "title" : "Key population",
       "status" : "active",
-      "date" : "2021-09-07T11:28:37+00:00",
+      "date" : "2021-09-16T07:55:33+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -207,9 +207,9 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:55fc046d-1265-4da4-80f9-02085ef227e9",
-        "timestamp" : "2021-09-07T11:28:59+00:00",
-        "total" : 6,
+        "identifier" : "urn:uuid:4cef1c22-1319-4409-b6aa-77d16f9c6433",
+        "timestamp" : "2021-09-16T07:55:54+00:00",
+        "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -220,27 +220,38 @@
         }],
         "contains" : [{
           "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
-          "code" : "MSM"
+          "code" : "GENERAL-POPULATION",
+          "display" : "General Population"
         },
         {
           "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
-          "code" : "FSW"
+          "code" : "MSM",
+          "display" : "MSM"
         },
         {
           "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
-          "code" : "MSW"
+          "code" : "FSW",
+          "display" : "FSW"
         },
         {
           "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
-          "code" : "PWID"
+          "code" : "MSW",
+          "display" : "MSW"
         },
         {
           "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
-          "code" : "PWUD"
+          "code" : "PWID",
+          "display" : "PWID"
         },
         {
           "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
-          "code" : "transgender"
+          "code" : "PWUD",
+          "display" : "PWUD"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "TRANSGENDER",
+          "display" : "Transgender"
         }]
       }
     }
@@ -259,7 +270,7 @@
       "name" : "VSARTRegimenLines",
       "title" : "VSART Regimen Lines",
       "status" : "active",
-      "date" : "2021-09-07T11:28:37+00:00",
+      "date" : "2021-09-16T07:55:33+00:00",
       "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
@@ -274,8 +285,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1471cc4f-dc70-4b97-b139-e85db6581b48",
-        "timestamp" : "2021-09-07T11:29:02+00:00",
+        "identifier" : "urn:uuid:827aa787-ca36-483c-8901-df9a1ccbf2f0",
+        "timestamp" : "2021-09-16T07:55:56+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",

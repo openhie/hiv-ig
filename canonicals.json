@@ -70,13 +70,6 @@
     "name": "DeathObs"
   },
   {
-    "id": "gender-identity",
-    "type": "StructureDefinition",
-    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/gender-identity",
-    "version": "0.2.0",
-    "name": "GenderIdentity"
-  },
-  {
     "id": "hiv-arv-treatment",
     "type": "StructureDefinition",
     "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment",
@@ -187,13 +180,6 @@
     "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-artregimen-lines",
     "version": "0.2.0",
     "name": "VSARTRegimenLines"
-  },
-  {
-    "id": "vs-gender-identity",
-    "type": "ValueSet",
-    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-gender-identity",
-    "version": "0.2.0",
-    "name": "VSGenderIdentity"
   },
   {
     "id": "vs-key-population",

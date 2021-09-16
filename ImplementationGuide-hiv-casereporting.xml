@@ -12,7 +12,7 @@
   <title value="HIV Case Reporting and Monitoring"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-09-07T11:28:37+00:00"/>
+  <date value="2021-09-16T07:55:33+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -226,16 +226,6 @@
       </reference>
       <name value="HIV Case Report"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-gender-identity"/>
-      </reference>
-      <name value="Gender Identity"/>
-      <description value="Valueset - Gender Identities"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -524,16 +514,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/gender-identity"/>
-      </reference>
-      <name value="Gender Identity"/>
-      <description value="Gender identity"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -551,14 +531,6 @@
       </reference>
       <name value="Viral load Interpretation"/>
       <description value="A list of Viral load Interpretations"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/HIVPractitionerExample"/>
-      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
