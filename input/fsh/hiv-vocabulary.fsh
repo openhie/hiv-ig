@@ -1,30 +1,24 @@
 Alias: $SCT = http://snomed.info/sct
 Alias: $LNC = http://loinc.org
-Alias: $GenderIdentity = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity
 Alias: $MaritalStatus = http://hl7.org/fhir/ValueSet/marital-status
 
 CodeSystem: CSKeyPopulation
 Id: cs-key-population
 Title: "Key population"
 Description: "A list of key population types"
-* #MSM
-* #FSW
-* #MSW
-* #PWID
-* #PWUD
-* #transgender
+* #GENERAL-POPULATION "General Population"
+* #MSM "MSM"
+* #FSW "FSW"
+* #MSW "MSW"
+* #PWID "PWID"
+* #PWUD "PWUD"
+* #TRANSGENDER "Transgender"
 
 ValueSet: VSKeyPopulation
 Id: vs-key-population
 Title: "Key population"
 Description: "A list of key population types"
 * include codes from system CSKeyPopulation
-
-ValueSet: VSGenderIdentity
-Id: vs-gender-identity
-Title: "Gender Identity"
-Description:  "Valueset - Gender Identities"
-* include codes from system $GenderIdentity
 
 ValueSet: VSMaritalStatus
 Id: vs-marital-status

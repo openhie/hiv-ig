@@ -46,7 +46,7 @@ Description: "Basic Composition example"
 * identifier.system = "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-case-report"
 * identifier.value = "1111"
 * date = "2021-05-18"
-* author = Reference(HIVPractitionerExample)
+* author = Reference(HIVOrganizationExample)
 * title = "HIV Case Report"
 
 * section[+].title = "Client registration"
@@ -120,14 +120,6 @@ Description: "Organization example"
 * identifier[+].system = "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-organization"
 * identifier[=].value = "facility1"
 
-Instance: HIVPractitionerExample
-InstanceOf: Practitioner
-Usage: #example
-Title: "HIV Practitioner Example"
-Description: "Practitioner example"
-* name.given = "Homer"
-* name.family = "Simpson"
-
 Instance: HIVPatientExample
 InstanceOf: HIVPatient
 Usage: #example
@@ -148,8 +140,13 @@ Description: "."
 * address.district = "City of Cape Town"
 * address.city = "Cape Town"
 * identifier[art].value = "ART1234567"
+* identifier[art].system = "http://openhie.org/fhir/hiv-casereporting/identifier/art"
+* identifier[passport].value = "PASSPORT1234567"
+* identifier[passport].system = "http://openhie.org/fhir/hiv-casereporting/identifier/passport"
 * identifier[national].value = "NAT1234567"
+* identifier[national].system = "http://openhie.org/fhir/hiv-casereporting/identifier/nid"
 * identifier[pos].value = "EMR1234567"
+* identifier[pos].system = "http://openhie.org/fhir/hiv-casereporting/identifier/facility1"
 * managingOrganization = Reference(HIVOrganizationExample)
 * extension[genderIdentity].valueCodeableConcept = #male
 * extension[keyPopulation].valueCodeableConcept = #transgender
@@ -204,7 +201,7 @@ Description: ""
 * status = #active
 * patient = Reference(HIVPatientExample)
 * period.start = "2021-08-25"
-* identifier[+].system = "http://example.org/enrollmentUniqueID"
+* identifier[+].system = "http://openhie.org/fhir/hiv-casereporting/identifier/enrollment-unique-id"
 * identifier[=].value = "123456789"
 * managingOrganization = Reference(HIVOrganizationExample)
 * diagnosis.condition = Reference(HIVDiagnosisExample)

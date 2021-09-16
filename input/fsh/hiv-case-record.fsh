@@ -112,7 +112,6 @@ Id: hiv-patient
 Title: "HIV Patient"
 Description: "This Patient profile allows the exchange of patient information, including all the data associated with HIV patients"
 * extension contains
-    GenderIdentity named genderIdentity 0..1 MS and
     KeyPopulation named keyPopulation 0..1 MS
 
 * birthDate MS
@@ -144,8 +143,11 @@ Description: "This Patient profile allows the exchange of patient information, i
     pos 0..*
 
 * identifier[art].value 0..1
+* identifier[art].system = "http://openhie.org/fhir/hiv-casereporting/identifier/art"
 * identifier[passport].value 0..1
+* identifier[passport].system = "http://openhie.org/fhir/hiv-casereporting/identifier/passport"
 * identifier[national].value 0..1
+* identifier[national].system = "http://openhie.org/fhir/hiv-casereporting/identifier/nid"
 * identifier[pos].value 1..1
 
 * managingOrganization 1..1
@@ -156,13 +158,6 @@ Title: "Key population"
 Description: "Key population"
 * value[x] only CodeableConcept
 * valueCodeableConcept from VSKeyPopulation
-
-Extension: GenderIdentity
-Id: gender-identity
-Title: "Gender Identity"
-Description:  "Gender identity"
-* value[x] only CodeableConcept
-* valueCodeableConcept from VSGenderIdentity
 
 Profile: HIVRelatedPerson
 Parent: RelatedPerson
@@ -206,6 +201,7 @@ Title: "HIV Episode Of Care"
 Description: ""
 * period.start 1..1 MS
 * identifier 1..* MS
+* identifier.system = "http://openhie.org/fhir/hiv-casereporting/identifier/enrollment-unique-id"
 * managingOrganization 1..1 MS
 * diagnosis 1..1 MS
 
