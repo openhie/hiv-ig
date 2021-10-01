@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "DeathObs"];
   fhir:StructureDefinition.title [ fhir:value "Death Obs"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-10-01T07:57:23+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-10-01T08:08:42+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "OpenHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
