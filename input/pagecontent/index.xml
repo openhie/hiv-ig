@@ -19,8 +19,7 @@
   <a name="introduction"></a>
   <h3>Introduction</h3>
   <p>This FHIR IG describes how and submit HIV case reports to a central server conforming to the <a
-      href="https://docs.google.com/document/d/1Ping2hTszBfaRdbCHXCw6xs5riQ2gwF7fAzqSgeQ0ks/edit#heading=h.nfb6t6sppokf">DISI
-      DISI architecture</a>. The
+      href="https://docs.google.com/document/d/1Ping2hTszBfaRdbCHXCw6xs5riQ2gwF7fAzqSgeQ0ks/edit#heading=h.nfb6t6sppokf">DISI architecture</a>. The
     profiles created in this IG correspond to the minimum dataset for HIV case reporting defined for the DISI
     architecture. This minimum data
     set may be <a
