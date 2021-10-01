@@ -12,7 +12,7 @@
   <title value="HIV Case Reporting and Monitoring"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-09-16T07:55:33+00:00"/>
+  <date value="2021-10-01T07:57:23+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -209,218 +209,23 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-patient"/>
-      </reference>
-      <name value="HIV Patient"/>
-      <description value="This Patient profile allows the exchange of patient information, including all the data associated with HIV patients"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Composition"/>
-      </extension>
-      <reference>
-        <reference value="Composition/HIVCompositionExample"/>
-      </reference>
-      <name value="HIV Case Report"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CarePlan"/>
-      </extension>
-      <reference>
-        <reference value="CarePlan/ARVTreatmentExample2"/>
-      </reference>
-      <name value="Example CarePlan - ARVTreatmentExample2"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-vl-interpretation"/>
+        <reference value="ValueSet/vs-marital-status"/>
       </reference>
-      <name value="Viral load Interpretation"/>
-      <description value="Valueset - Viral load Interpretations"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-organization"/>
-      </reference>
-      <name value="HIV Organization"/>
-      <description value="HIV Organization for case report - this represents a health facility"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-vl-suppression"/>
-      </reference>
-      <name value="Viral load Suppression"/>
-      <description value="Valueset - Viral load Suppression"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-recency-result"/>
-      </reference>
-      <name value="HIV Recency Result"/>
-      <description value="This profile allows the exchange of a patient&#39;s hiv recency test"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/HIVOrganizationExample"/>
-      </reference>
-      <name value="Example Organization - HIVOrganizationExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-organization"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-vl-causeofdeath"/>
-      </reference>
-      <name value="Cause Of Death"/>
-      <description value="A list of CauseOfDeaths"/>
+      <name value="Marital Status"/>
+      <description value="Valueset - marital statuses"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ViralLoadSuppressionExample1"/>
+        <reference value="Observation/HIVRecencyResultExample"/>
       </reference>
-      <name value="Example Observation - ViralLoadSuppressionExample1"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/CD4Example1"/>
-      </reference>
-      <name value="Example Observation - CD4Example1"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-test"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Encounter"/>
-      </extension>
-      <reference>
-        <reference value="Encounter/HIVClinicalEncounterExample"/>
-      </reference>
-      <name value="Example Encounter - HIVClinicalEncounterExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-clinical-encounter"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-diagnosis"/>
-      </reference>
-      <name value="HIV Diagnosis"/>
-      <description value="This profile allows the exchange of a patient&#39;s hiv diagnosis"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-case-report-sections"/>
-      </reference>
-      <name value="HIV Case Report Sections codesystem"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/death-obs"/>
-      </reference>
-      <name value="Death Obs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-vl-causeofdeath"/>
-      </reference>
-      <name value="Cause Of Death"/>
-      <description value="Valueset - CauseOfDeaths"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-episode-of-care"/>
-      </reference>
-      <name value="HIV Episode Of Care"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ViralLoadSuppressionExample2"/>
-      </reference>
-      <name value="Example Observation - ViralLoadSuppressionExample2"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-artregimen-lines"/>
-      </reference>
-      <name value="ART Regimen Lines"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/art-regimen-line"/>
-      </reference>
-      <name value="ART Regimen Line"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="RelatedPerson"/>
-      </extension>
-      <reference>
-        <reference value="RelatedPerson/GuardianExample"/>
-      </reference>
-      <name value="Example RelatedPerson - GuardianExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-related-person"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-recency-test-conducted"/>
-      </reference>
-      <name value="HIV Recency Test Conducted"/>
-      <description value="This profile allows the exchange of a patient&#39;s hiv recency test"/>
+      <name value="Example Observation - HIVRecencyResultExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-result"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -434,33 +239,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="Composition"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/key-population"/>
+        <reference value="Composition/HIVCompositionExample"/>
       </reference>
-      <name value="Key population"/>
-      <description value="Key population"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-key-population"/>
-      </reference>
-      <name value="Key population"/>
-      <description value="A list of key population types"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-viral-load-suppression"/>
-      </reference>
-      <name value="HIV viral load suppression"/>
-      <description value="HIV viral load"/>
+      <name value="HIV Case Report"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -477,40 +262,9 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/cs-key-population"/>
+        <reference value="CodeSystem/cs-artregimen-lines"/>
       </reference>
-      <name value="Key population"/>
-      <description value="A list of key population types"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/HIVPatientExample"/>
-      </reference>
-      <name value="Example Patient - HIVPatientExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/CD4Example2"/>
-      </reference>
-      <name value="Example Observation - CD4Example2"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-test"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CarePlan"/>
-      </extension>
-      <reference>
-        <reference value="CarePlan/ARVTreatmentExample1"/>
-      </reference>
-      <name value="Example CarePlan - ARVTreatmentExample1"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment"/>
+      <name value="ART Regimen Lines"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -537,6 +291,36 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/hiv-recency-result"/>
+      </reference>
+      <name value="HIV Recency Result"/>
+      <description value="This profile allows the exchange of a patient&#39;s hiv recency test"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-vl-suppression"/>
+      </reference>
+      <name value="Viral load Suppression"/>
+      <description value="A list of Viral load Suppression"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-vl-suppression"/>
+      </reference>
+      <name value="Viral load Suppression"/>
+      <description value="Valueset - Viral load Suppression"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/hiv-disgnosis-encounter"/>
       </reference>
       <name value="HIV Diagnosis Encounter"/>
@@ -544,61 +328,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="Organization"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/hiv-arv-treatment"/>
+        <reference value="Organization/HIVOrganizationExample"/>
       </reference>
-      <name value="ARVCarePlan"/>
-      <description value="This profile allows the exchange of a patient&#39;s ARV treatment"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-cd4-test"/>
-      </reference>
-      <name value="CD4Observation"/>
-      <description value="This profile allows the exchange of a patient&#39;s CD4 test and results"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-artregimen-lines"/>
-      </reference>
-      <name value="VSART Regimen Lines"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/HIVRecencyResultExample"/>
-      </reference>
-      <name value="Example Observation - HIVRecencyResultExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-result"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-hiv-obs-codes"/>
-      </reference>
-      <name value="HIV Case Report Observation codes"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-marital-status"/>
-      </reference>
-      <name value="Marital Status"/>
-      <description value="Valueset - marital statuses"/>
+      <name value="Example Organization - HIVOrganizationExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -615,20 +351,29 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/hiv-composition"/>
+        <reference value="StructureDefinition/hiv-organization"/>
       </reference>
-      <name value="HIV Case Reporting Composition"/>
-      <description value="HIV Case Reporting Composition"/>
+      <name value="HIV Organization"/>
+      <description value="HIV Organization for case report - this represents a health facility"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="EpisodeOfCare"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="EpisodeOfCare/HIVEpisodeOfCareExample"/>
+        <reference value="StructureDefinition/art-regimen-line"/>
       </reference>
-      <name value="Example EpisodeOfCare - HIVEpisodeOfCareExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-episode-of-care"/>
+      <name value="ART Regimen Line"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-vl-causeofdeath"/>
+      </reference>
+      <name value="Cause Of Death"/>
+      <description value="A list of CauseOfDeaths"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -645,10 +390,76 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/cs-vl-suppression"/>
+        <reference value="CodeSystem/cs-hiv-obs-codes"/>
       </reference>
-      <name value="Viral load Suppression"/>
-      <description value="A list of Viral load Suppression"/>
+      <name value="HIV Case Report Observation codes"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-composition"/>
+      </reference>
+      <name value="HIV Case Reporting Composition"/>
+      <description value="HIV Case Reporting Composition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/ARVTreatmentExample2"/>
+      </reference>
+      <name value="Example CarePlan - ARVTreatmentExample2"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-case-report-sections"/>
+      </reference>
+      <name value="HIV Case Report Sections codesystem"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/ARVTreatmentExample1"/>
+      </reference>
+      <name value="Example CarePlan - ARVTreatmentExample1"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-recency-test-conducted"/>
+      </reference>
+      <name value="HIV Recency Test Conducted"/>
+      <description value="This profile allows the exchange of a patient&#39;s hiv recency test"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-episode-of-care"/>
+      </reference>
+      <name value="HIV Episode Of Care"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/death-obs"/>
+      </reference>
+      <name value="Death Obs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -662,6 +473,135 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-arv-treatment"/>
+      </reference>
+      <name value="ARVCarePlan"/>
+      <description value="This profile allows the exchange of a patient&#39;s ARV treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/last-clinical-visit"/>
+      </reference>
+      <name value="Last Clinical Visit"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-patient"/>
+      </reference>
+      <name value="HIV Patient"/>
+      <description value="This Patient profile allows the exchange of patient information, including all the data associated with HIV patients"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/key-population"/>
+      </reference>
+      <name value="Key population"/>
+      <description value="Key population"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ViralLoadSuppressionExample2"/>
+      </reference>
+      <name value="Example Observation - ViralLoadSuppressionExample2"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-key-population"/>
+      </reference>
+      <name value="Key population"/>
+      <description value="A list of key population types"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/GuardianExample"/>
+      </reference>
+      <name value="Example RelatedPerson - GuardianExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/CD4Example2"/>
+      </reference>
+      <name value="Example Observation - CD4Example2"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-test"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-vl-interpretation"/>
+      </reference>
+      <name value="Viral load Interpretation"/>
+      <description value="Valueset - Viral load Interpretations"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/HIVClinicalEncounterExample"/>
+      </reference>
+      <name value="Example Encounter - HIVClinicalEncounterExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-clinical-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/HIVPatientExample"/>
+      </reference>
+      <name value="Example Patient - HIVPatientExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ViralLoadSuppressionExample1"/>
+      </reference>
+      <name value="Example Observation - ViralLoadSuppressionExample1"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-key-population"/>
+      </reference>
+      <name value="Key population"/>
+      <description value="A list of key population types"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -672,12 +612,72 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/last-clinical-visit"/>
+        <reference value="ValueSet/vs-artregimen-lines"/>
       </reference>
-      <name value="Last Clinical Visit"/>
+      <name value="VSART Regimen Lines"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-vl-causeofdeath"/>
+      </reference>
+      <name value="Cause Of Death"/>
+      <description value="Valueset - CauseOfDeaths"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-viral-load-suppression"/>
+      </reference>
+      <name value="HIV viral load suppression"/>
+      <description value="HIV viral load"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/CD4Example1"/>
+      </reference>
+      <name value="Example Observation - CD4Example1"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-test"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EpisodeOfCare"/>
+      </extension>
+      <reference>
+        <reference value="EpisodeOfCare/HIVEpisodeOfCareExample"/>
+      </reference>
+      <name value="Example EpisodeOfCare - HIVEpisodeOfCareExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-episode-of-care"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-cd4-test"/>
+      </reference>
+      <name value="CD4Observation"/>
+      <description value="This profile allows the exchange of a patient&#39;s CD4 test and results"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-diagnosis"/>
+      </reference>
+      <name value="HIV Diagnosis"/>
+      <description value="This profile allows the exchange of a patient&#39;s hiv diagnosis"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
