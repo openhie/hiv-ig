@@ -1,33 +1,33 @@
 {
   "resourceType" : "Bundle",
-  "id" : "16865846-f3ad-4c4f-a379-510f9c98729e",
+  "id" : "826d9205-fb2d-479d-b04b-623c62f56701",
   "meta" : {
-    "lastUpdated" : "2021-06-23T11:39:00.492+00:00"
+    "lastUpdated" : "2021-10-01T07:57:23.311+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-occupations",
+    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-suppression",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "vs-hiv-occupations",
+      "id" : "vs-vl-suppression",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 12 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-hiv-occupations.html\">Occupations relevant for HIV v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-hiv-occupations.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-occupations-1\"> </a><a href=\"CodeSystem-cs-hiv-occupations.html#cs-hiv-occupations-1\">1</a></td><td>Sex workers</td><td>Employees of facilities providing services that are vulnerable to be abused to engage in prostitution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-occupations-2\"> </a><a href=\"CodeSystem-cs-hiv-occupations.html#cs-hiv-occupations-2\">2</a></td><td>Drivers</td><td>Drivers</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-occupations-3\"> </a><a href=\"CodeSystem-cs-hiv-occupations.html#cs-hiv-occupations-3\">3</a></td><td>Fishermen</td><td>Fishermen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-occupations-4\"> </a><a href=\"CodeSystem-cs-hiv-occupations.html#cs-hiv-occupations-4\">4</a></td><td>Agricultural workers</td><td>Agricultural workers</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-occupations-5\"> </a><a href=\"CodeSystem-cs-hiv-occupations.html#cs-hiv-occupations-5\">5</a></td><td>Workers</td><td>Workers</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-occupations-6\"> </a><a href=\"CodeSystem-cs-hiv-occupations.html#cs-hiv-occupations-6\">6</a></td><td>Officers and soldiers</td><td>Officers and soldiers</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-occupations-7\"> </a><a href=\"CodeSystem-cs-hiv-occupations.html#cs-hiv-occupations-7\">7</a></td><td>Public servants or workers with labor contracts</td><td>Public servants, officers, or workers with labor contracts under labor laws</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-occupations-8\"> </a><a href=\"CodeSystem-cs-hiv-occupations.html#cs-hiv-occupations-8\">8</a></td><td>Students</td><td>Pupils, students</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-occupations-9\"> </a><a href=\"CodeSystem-cs-hiv-occupations.html#cs-hiv-occupations-9\">9</a></td><td>Children</td><td>Children</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-occupations-10\"> </a><a href=\"CodeSystem-cs-hiv-occupations.html#cs-hiv-occupations-10\">10</a></td><td>Workers without labor contract</td><td>Workers without labor contract</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-occupations-11\"> </a><a href=\"CodeSystem-cs-hiv-occupations.html#cs-hiv-occupations-11\">11</a></td><td>Out of work</td><td>Out of work</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-occupations-12\"> </a><a href=\"CodeSystem-cs-hiv-occupations.html#cs-hiv-occupations-12\">12</a></td><td>Prisoners</td><td>Prisoners</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-vl-suppression.html\">Viral load Suppression v0.2.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cs-vl-suppression.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-suppression-SUP\"> </a><a href=\"CodeSystem-cs-vl-suppression.html#cs-vl-suppression-SUP\">SUP</a></td><td>Suppressed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-suppression-UNSUP\"> </a><a href=\"CodeSystem-cs-vl-suppression.html#cs-vl-suppression-UNSUP\">UNSUP</a></td><td>Unsuppressed</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-suppression-UNK\"> </a><a href=\"CodeSystem-cs-vl-suppression.html#cs-vl-suppression-UNK\">UNK</a></td><td>Unknown</td><td/></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-occupations",
+      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-suppression",
       "version" : "0.2.0",
-      "name" : "HIVOccupations",
-      "title" : "Occupations relevant for HIV",
+      "name" : "VSVLSuppression",
+      "title" : "Viral load Suppression",
       "status" : "active",
-      "date" : "2021-06-23T11:39:00+00:00",
-      "publisher" : "openHIE",
+      "date" : "2021-10-01T07:57:23+00:00",
+      "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
           "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
+          "value" : "http://xxhl7.org/Special/committees/[something]"
         }]
       }],
-      "description" : "Valueset - Occupations relevant for HIV",
+      "description" : "Valueset - Viral load Suppression",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -35,103 +35,58 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1e764a2d-3d95-49f3-83ca-d71d60c12c10",
-        "timestamp" : "2021-06-23T11:39:18+00:00",
-        "total" : 12,
+        "identifier" : "urn:uuid:221126fa-157d-4681-ba59-0fbe0343c188",
+        "timestamp" : "2021-10-01T07:57:53+00:00",
+        "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
           "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations|0.2.0"
+          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression|0.2.0"
         }],
         "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations",
-          "code" : "1",
-          "display" : "Sex workers"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression",
+          "code" : "SUP",
+          "display" : "Suppressed"
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations",
-          "code" : "2",
-          "display" : "Drivers"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression",
+          "code" : "UNSUP",
+          "display" : "Unsuppressed"
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations",
-          "code" : "3",
-          "display" : "Fishermen"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations",
-          "code" : "4",
-          "display" : "Agricultural workers"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations",
-          "code" : "5",
-          "display" : "Workers"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations",
-          "code" : "6",
-          "display" : "Officers and soldiers"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations",
-          "code" : "7",
-          "display" : "Public servants or workers with labor contracts"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations",
-          "code" : "8",
-          "display" : "Students"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations",
-          "code" : "9",
-          "display" : "Children"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations",
-          "code" : "10",
-          "display" : "Workers without labor contract"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations",
-          "code" : "11",
-          "display" : "Out of work"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-occupations",
-          "code" : "12",
-          "display" : "Prisoners"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression",
+          "code" : "UNK",
+          "display" : "Unknown"
         }]
       }
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-population",
+    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-key-population",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "vs-hiv-population",
+      "id" : "vs-key-population",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 9 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-hiv-population.html\">Population groups v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-hiv-population.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-population-1\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-1\">1</a></td><td>Injection drug users</td><td>Injecting drug users</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-population-2\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-2\">2</a></td><td>FSW</td><td>Female sex workers</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-population-3\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-3\">3</a></td><td>Pregnant women</td><td>Pregnant women</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-population-4\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-4\">4</a></td><td>Blood donors</td><td>Blood donors</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-population-5\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-5\">5</a></td><td>TB patients</td><td>TB patients</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-population-6\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-6\">6</a></td><td>People with STDs</td><td>People with sexually transmitted diseases</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-population-7\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-7\">7</a></td><td>Young recruits</td><td>Young recruits for military service</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-population-8\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-8\">8</a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-population-9\"> </a><a href=\"CodeSystem-cs-hiv-population.html#cs-hiv-population-9\">9</a></td><td>Others</td><td>Others</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-key-population.html\">Key population v0.2.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cs-key-population.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-GENERAL-POPULATION\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-GENERAL-POPULATION\">GENERAL-POPULATION</a></td><td>General Population</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSM\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-MSM\">MSM</a></td><td>MSM</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-FSW\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-FSW\">FSW</a></td><td>FSW</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSW\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-MSW\">MSW</a></td><td>MSW</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWID\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-PWID\">PWID</a></td><td>PWID</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWUD\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-PWUD\">PWUD</a></td><td>PWUD</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-TRANSGENDER\"> </a><a href=\"CodeSystem-cs-key-population.html#cs-key-population-TRANSGENDER\">TRANSGENDER</a></td><td>Transgender</td><td/></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-population",
+      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-key-population",
       "version" : "0.2.0",
-      "name" : "HIVPopulation",
-      "title" : "Occupations relevant for HIV",
+      "name" : "VSKeyPopulation",
+      "title" : "Key population",
       "status" : "active",
-      "date" : "2021-06-23T11:39:00+00:00",
-      "publisher" : "openHIE",
+      "date" : "2021-10-01T07:57:23+00:00",
+      "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
           "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
+          "value" : "http://xxhl7.org/Special/committees/[something]"
         }]
       }],
-      "description" : "Valueset - Occupations relevant for HIV",
+      "description" : "A list of key population types",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -139,495 +94,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8c69e00a-bb19-40fd-915a-b56a9f6a949a",
-        "timestamp" : "2021-06-23T11:39:18+00:00",
-        "total" : 9,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population|0.2.0"
-        }],
-        "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population",
-          "code" : "1",
-          "display" : "Injection drug users"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population",
-          "code" : "2",
-          "display" : "FSW"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population",
-          "code" : "3",
-          "display" : "Pregnant women"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population",
-          "code" : "4",
-          "display" : "Blood donors"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population",
-          "code" : "5",
-          "display" : "TB patients"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population",
-          "code" : "6",
-          "display" : "People with STDs"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population",
-          "code" : "7",
-          "display" : "Young recruits"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population",
-          "code" : "8",
-          "display" : "MSM"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-population",
-          "code" : "9",
-          "display" : "Others"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-gender",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-patient-gender",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-patient-gender.html\">Patient Gender v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-patient-gender.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-gender-male\"> </a><a href=\"CodeSystem-cs-patient-gender.html#cs-patient-gender-male\">male</a></td><td>Male</td><td>Client identifies as female</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-gender-female\"> </a><a href=\"CodeSystem-cs-patient-gender.html#cs-patient-gender-female\">female</a></td><td>Female</td><td>Client identifies as male</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-gender-transgender\"> </a><a href=\"CodeSystem-cs-patient-gender.html#cs-patient-gender-transgender\">transgender</a></td><td>Transgender</td><td>Client identifies as transgender</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-gender-non-binary\"> </a><a href=\"CodeSystem-cs-patient-gender.html#cs-patient-gender-non-binary\">non-binary</a></td><td>Non-binary</td><td>Client identifies in a non-binary way</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-gender",
-      "version" : "0.2.0",
-      "name" : "PatientGender",
-      "title" : "Patient Gender",
-      "status" : "active",
-      "date" : "2021-06-23T11:39:00+00:00",
-      "publisher" : "openHIE",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "description" : "Valueset - patient genders",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:8765bbae-3814-4680-a0bb-7a0870d4d406",
-        "timestamp" : "2021-06-23T11:39:18+00:00",
-        "total" : 4,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender|0.2.0"
-        }],
-        "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender",
-          "code" : "male",
-          "display" : "Male"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender",
-          "code" : "female",
-          "display" : "Female"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender",
-          "code" : "transgender",
-          "display" : "Transgender"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender",
-          "code" : "non-binary",
-          "display" : "Non-binary"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-risk-behavior",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-hiv-risk-behavior",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-hiv-risk-behavior.html\">Risk Behavior v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-hiv-risk-behavior.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-risk-behavior-1\"> </a><a href=\"CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-1\">1</a></td><td>Drug injection</td><td>Drug injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-risk-behavior-2\"> </a><a href=\"CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-2\">2</a></td><td>Sex workers</td><td>Sexual relationship with sex workers or with sex buyers/clients (for money or drug)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-risk-behavior-3\"> </a><a href=\"CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-3\">3</a></td><td>MSM</td><td>Men who have sex with men</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-risk-behavior-4\"> </a><a href=\"CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-4\">4</a></td><td>Multiple Sex Partners</td><td>Multiple Sex Partners (NOT for money or drugs)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-risk-behavior-5\"> </a><a href=\"CodeSystem-cs-hiv-risk-behavior.html#cs-hiv-risk-behavior-5\">5</a></td><td>Others</td><td>Other risks to oneself</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-risk-behavior",
-      "version" : "0.2.0",
-      "name" : "HIVRiskBehavior",
-      "title" : "Risk Behavior",
-      "status" : "active",
-      "date" : "2021-06-23T11:39:00+00:00",
-      "publisher" : "openHIE",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "description" : "ValueSet - Behavior associated with risk of HIV transmission",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:01efde44-e4f5-4a7e-96fd-2c9e8787738c",
-        "timestamp" : "2021-06-23T11:39:19+00:00",
-        "total" : 5,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior|0.2.0"
-        }],
-        "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior",
-          "code" : "1",
-          "display" : "Drug injection"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior",
-          "code" : "2",
-          "display" : "Sex workers"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior",
-          "code" : "3",
-          "display" : "MSM"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior",
-          "code" : "4",
-          "display" : "Multiple Sex Partners"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-risk-behavior",
-          "code" : "5",
-          "display" : "Others"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-type-of-contact",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-type-of-contact",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-type-of-contact.html\">Type of contact or relationship v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-type-of-contact.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/type-of-contact</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-type-of-contact-child\"> </a><a href=\"CodeSystem-type-of-contact.html#type-of-contact-child\">child</a></td><td>Biological child</td><td>Client is the biological child of the person that referred the client for family services</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-type-of-contact-drug-injecting-partner\"> </a><a href=\"CodeSystem-type-of-contact.html#type-of-contact-drug-injecting-partner\">drug-injecting-partner</a></td><td>Drug injecting partner</td><td>Client is a drug injecting partner of the person that referred the client for partner services</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-type-of-contact-sexual-partner\"> </a><a href=\"CodeSystem-type-of-contact.html#type-of-contact-sexual-partner\">sexual-partner</a></td><td>Sexual partner</td><td>Client is a sexual partner of the person that referred the client for partner services</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-type-of-contact-social-contact\"> </a><a href=\"CodeSystem-type-of-contact.html#type-of-contact-social-contact\">social-contact</a></td><td>Social contact</td><td>Client is a social contact of the person that referred the client for social-network services</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-type-of-contact",
-      "version" : "0.2.0",
-      "name" : "TypeOfContact",
-      "title" : "Type of contact or relationship",
-      "status" : "active",
-      "date" : "2021-06-23T11:39:00+00:00",
-      "publisher" : "openHIE",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "description" : "Type of contact or relationship",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:0a3670e4-ae8b-46a3-8ee4-b1fa3c8357bf",
-        "timestamp" : "2021-06-23T11:39:19+00:00",
-        "total" : 4,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/type-of-contact|0.2.0"
-        }],
-        "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/type-of-contact",
-          "code" : "child",
-          "display" : "Biological child"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/type-of-contact",
-          "code" : "drug-injecting-partner",
-          "display" : "Drug injecting partner"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/type-of-contact",
-          "code" : "sexual-partner",
-          "display" : "Sexual partner"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/type-of-contact",
-          "code" : "social-contact",
-          "display" : "Social contact"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-transmission-route",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-hiv-transmission-route",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-hiv-transmission-route.html\">HIV Transmission Route v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-hiv-transmission-route.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-transmission-route</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-transmission-route-1\"> </a><a href=\"CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-1\">1</a></td><td>Blood born</td><td>Blood born</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-transmission-route-2\"> </a><a href=\"CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-2\">2</a></td><td>Sexual Relationship</td><td>Sexual Relationship</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-transmission-route-3\"> </a><a href=\"CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-3\">3</a></td><td>Mother to child</td><td>Mother to child</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-hiv-transmission-route-4\"> </a><a href=\"CodeSystem-cs-hiv-transmission-route.html#cs-hiv-transmission-route-4\">4</a></td><td>Unidentified</td><td>Unidentified</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-transmission-route",
-      "version" : "0.2.0",
-      "name" : "HIVTransmissionRoute",
-      "title" : "HIV Transmission Route",
-      "status" : "active",
-      "date" : "2021-06-23T11:39:00+00:00",
-      "publisher" : "openHIE",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "description" : "Valueset - Route of HIV transmission",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:6780640e-44cb-457f-b173-320d1c7d3308",
-        "timestamp" : "2021-06-23T11:39:20+00:00",
-        "total" : 4,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-transmission-route|0.2.0"
-        }],
-        "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-transmission-route",
-          "code" : "1",
-          "display" : "Blood born"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-transmission-route",
-          "code" : "2",
-          "display" : "Sexual Relationship"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-transmission-route",
-          "code" : "3",
-          "display" : "Mother to child"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-transmission-route",
-          "code" : "4",
-          "display" : "Unidentified"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "PregnancyOutcomeCodes",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes",
-      "version" : "0.2.0",
-      "name" : "PregnancyOutcomeCodes",
-      "status" : "draft",
-      "expansion" : {
-        "identifier" : "urn:uuid:dc68c528-86c3-4c84-98f0-9614fc3e58fc",
-        "timestamp" : "2021-06-23T11:39:21+00:00",
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "PregnancyOutcomeCodes",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes",
-      "version" : "0.2.0",
-      "name" : "PregnancyOutcomeCodes",
-      "status" : "draft",
-      "expansion" : {
-        "identifier" : "urn:uuid:dc68c528-86c3-4c84-98f0-9614fc3e58fc",
-        "timestamp" : "2021-06-23T11:39:21+00:00",
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "PregnancyOutcomeCodes",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes",
-      "version" : "0.2.0",
-      "name" : "PregnancyOutcomeCodes",
-      "status" : "draft",
-      "expansion" : {
-        "identifier" : "urn:uuid:dc68c528-86c3-4c84-98f0-9614fc3e58fc",
-        "timestamp" : "2021-06-23T11:39:21+00:00",
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/HIVRapidTestResults",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "HIVRapidTestResults",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.69</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA11882-0\"> </a><a href=\"http://details.loinc.org/LOINC/LA11882-0.html\">LA11882-0</a></td><td>Detected</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA11883-8\"> </a><a href=\"http://details.loinc.org/LOINC/LA11883-8.html\">LA11883-8</a></td><td>Not detected</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA11885-3\"> </a><a href=\"http://details.loinc.org/LOINC/LA11885-3.html\">LA11885-3</a></td><td>Equivocal</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA9663-1\"> </a><a href=\"http://details.loinc.org/LOINC/LA9663-1.html\">LA9663-1</a></td><td>Inconclusive</td><td/></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/HIVRapidTestResults",
-      "version" : "0.2.0",
-      "name" : "HIVRapidTestResults",
-      "title" : "HIVRapidTestResults",
-      "status" : "draft",
-      "date" : "2021-06-23T11:39:00+00:00",
-      "publisher" : "openHIE",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "description" : "HIV rapid test result codes",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:b84133dc-ab09-4903-bd47-e75c1752d5f5",
-        "timestamp" : "2021-06-23T11:39:21+00:00",
-        "total" : 4,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueString" : "http://loinc.org|2.69"
-        }],
-        "contains" : [{
-          "system" : "http://loinc.org",
-          "code" : "LA11882-0",
-          "display" : "Detected"
-        },
-        {
-          "system" : "http://loinc.org",
-          "code" : "LA11883-8",
-          "display" : "Not detected"
-        },
-        {
-          "system" : "http://loinc.org",
-          "code" : "LA11885-3",
-          "display" : "Equivocal"
-        },
-        {
-          "system" : "http://loinc.org",
-          "code" : "LA9663-1",
-          "display" : "Inconclusive"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-gender-identity",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-patient-gender-identity",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-patient-gender-identity.html\">Patient Gender Identity v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-patient-gender-identity.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender-identity</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-gender-identity-transgender-to-female\"> </a><a href=\"CodeSystem-cs-patient-gender-identity.html#cs-patient-gender-identity-transgender-to-female\">transgender-to-female</a></td><td>Transgender female</td><td>Client identifies as transgender male-to-female</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-gender-identity-transgender-to-male\"> </a><a href=\"CodeSystem-cs-patient-gender-identity.html#cs-patient-gender-identity-transgender-to-male\">transgender-to-male</a></td><td>Transgender male</td><td>Client identifies as transgender female-to-male</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-gender-identity-non-binary\"> </a><a href=\"CodeSystem-cs-patient-gender-identity.html#cs-patient-gender-identity-non-binary\">non-binary</a></td><td>Non-binary</td><td>Client identifies with neither/both female and male</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-gender-identity-male\"> </a><a href=\"CodeSystem-cs-patient-gender-identity.html#cs-patient-gender-identity-male\">male</a></td><td>Male</td><td>Client identifies as male</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-gender-identity-female\"> </a><a href=\"CodeSystem-cs-patient-gender-identity.html#cs-patient-gender-identity-female\">female</a></td><td>Female</td><td>Client identifies as female</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-gender-identity-other\"> </a><a href=\"CodeSystem-cs-patient-gender-identity.html#cs-patient-gender-identity-other\">other</a></td><td>Other</td><td>Other gender identity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-gender-identity-not-disclosed\"> </a><a href=\"CodeSystem-cs-patient-gender-identity.html#cs-patient-gender-identity-not-disclosed\">not-disclosed</a></td><td>Does not wish to disclose</td><td>Client does not wish to disclose gender identity</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-gender-identity",
-      "version" : "0.2.0",
-      "name" : "PatientGenderIdentity",
-      "title" : "Patient Gender Identity",
-      "status" : "active",
-      "date" : "2021-06-23T11:39:00+00:00",
-      "publisher" : "openHIE",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "description" : "Valueset - patient gender identities",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:75d35732-dadb-47bf-b4a5-7394122383d1",
-        "timestamp" : "2021-06-23T11:39:21+00:00",
+        "identifier" : "urn:uuid:d805340c-49fc-4338-bcf1-04265b18dd71",
+        "timestamp" : "2021-10-01T07:57:58+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -635,138 +103,69 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender-identity|0.2.0"
+          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population|0.2.0"
         }],
         "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender-identity",
-          "code" : "transgender-to-female",
-          "display" : "Transgender female"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "GENERAL-POPULATION",
+          "display" : "General Population"
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender-identity",
-          "code" : "transgender-to-male",
-          "display" : "Transgender male"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "MSM",
+          "display" : "MSM"
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender-identity",
-          "code" : "non-binary",
-          "display" : "Non-binary"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "FSW",
+          "display" : "FSW"
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender-identity",
-          "code" : "male",
-          "display" : "Male"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "MSW",
+          "display" : "MSW"
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender-identity",
-          "code" : "female",
-          "display" : "Female"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "PWID",
+          "display" : "PWID"
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender-identity",
-          "code" : "other",
-          "display" : "Other"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "PWUD",
+          "display" : "PWUD"
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-gender-identity",
-          "code" : "not-disclosed",
-          "display" : "Does not wish to disclose"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "TRANSGENDER",
+          "display" : "Transgender"
         }]
       }
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes",
+    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-interpretation",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "PregnancyOutcomeCodes",
+      "id" : "vs-vl-interpretation",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-vl-interpretation.html\">Viral load Interpretation v0.2.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cs-vl-interpretation.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-interpretation-D\"> </a><a href=\"CodeSystem-cs-vl-interpretation.html#cs-vl-interpretation-D\">D</a></td><td>Detectable</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-interpretation-ND\"> </a><a href=\"CodeSystem-cs-vl-interpretation.html#cs-vl-interpretation-ND\">ND</a></td><td>Non Detectable</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-interpretation-UNK\"> </a><a href=\"CodeSystem-cs-vl-interpretation.html#cs-vl-interpretation-UNK\">UNK</a></td><td>Unknown</td><td/></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes",
+      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-interpretation",
       "version" : "0.2.0",
-      "name" : "PregnancyOutcomeCodes",
-      "status" : "draft",
-      "expansion" : {
-        "identifier" : "urn:uuid:dc68c528-86c3-4c84-98f0-9614fc3e58fc",
-        "timestamp" : "2021-06-23T11:39:21+00:00",
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "PregnancyOutcomeCodes",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes",
-      "version" : "0.2.0",
-      "name" : "PregnancyOutcomeCodes",
-      "status" : "draft",
-      "expansion" : {
-        "identifier" : "urn:uuid:dc68c528-86c3-4c84-98f0-9614fc3e58fc",
-        "timestamp" : "2021-06-23T11:39:21+00:00",
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "PregnancyOutcomeCodes",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/Questionnaire/vn-hiv-csv-import-questionnaire#PregnancyOutcomeCodes",
-      "version" : "0.2.0",
-      "name" : "PregnancyOutcomeCodes",
-      "status" : "draft",
-      "expansion" : {
-        "identifier" : "urn:uuid:dc68c528-86c3-4c84-98f0-9614fc3e58fc",
-        "timestamp" : "2021-06-23T11:39:21+00:00",
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-communication-preferences",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-patient-communication-preferences",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-patient-communication-preferences.html\">Patient Communication Preferences v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-cs-patient-communication-preferences.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-communication-preferences</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-communication-preferences-text-message\"> </a><a href=\"CodeSystem-cs-patient-communication-preferences.html#cs-patient-communication-preferences-text-message\">text-message</a></td><td>SMS or  Text message</td><td>The client would like to receive communications via Text Message/SMS</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-patient-communication-preferences-voice-call\"> </a><a href=\"CodeSystem-cs-patient-communication-preferences.html#cs-patient-communication-preferences-voice-call\">voice-call</a></td><td>Voice Call</td><td>Client would like to receive communications via Voice Calls</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-patient-communication-preferences",
-      "version" : "0.2.0",
-      "name" : "PatientCommunicationPreferences",
-      "title" : "Patient Communication Preferences",
+      "name" : "VSVLInterpretation",
+      "title" : "Viral load Interpretation",
       "status" : "active",
-      "date" : "2021-06-23T11:39:00+00:00",
-      "publisher" : "openHIE",
+      "date" : "2021-10-01T07:57:23+00:00",
+      "publisher" : "OpenHIE",
       "contact" : [{
         "telecom" : [{
           "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
+          "value" : "http://xxhl7.org/Special/committees/[something]"
         }]
       }],
-      "description" : "Valueset - Patient Communication Preferences",
+      "description" : "Valueset - Viral load Interpretations",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -774,8 +173,130 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a5f1377a-4bda-4357-b743-efc8263c7530",
-        "timestamp" : "2021-06-23T11:39:23+00:00",
+        "identifier" : "urn:uuid:db461bff-f4af-4729-b752-58c9f04d2f01",
+        "timestamp" : "2021-10-01T07:57:58+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation",
+          "code" : "D",
+          "display" : "Detectable"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation",
+          "code" : "ND",
+          "display" : "Non Detectable"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation",
+          "code" : "UNK",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-artregimen-lines",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-artregimen-lines",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-artregimen-lines.html\">ART Regimen Lines v0.2.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cs-artregimen-lines.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-artregimen-lines-FIRST-LINE\"> </a><a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-FIRST-LINE\">FIRST-LINE</a></td><td>First line ARTs</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-artregimen-lines-SECOND-LINE\"> </a><a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-SECOND-LINE\">SECOND-LINE</a></td><td>Second line ARTs</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-artregimen-lines-THIRD-LINE\"> </a><a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-THIRD-LINE\">THIRD-LINE</a></td><td>Third line ARTs</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-artregimen-lines-SPECIAL-UNKNOWN\"> </a><a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-SPECIAL-UNKNOWN\">SPECIAL-UNKNOWN</a></td><td>Special/Unknown</td><td/></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-artregimen-lines",
+      "version" : "0.2.0",
+      "name" : "VSARTRegimenLines",
+      "title" : "VSART Regimen Lines",
+      "status" : "active",
+      "date" : "2021-10-01T07:57:23+00:00",
+      "publisher" : "OpenHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://xxhl7.org/Special/committees/[something]"
+        }]
+      }],
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:e1ca2350-965f-48fa-998c-429ce95c0066",
+        "timestamp" : "2021-10-01T07:57:58+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines",
+          "code" : "FIRST-LINE",
+          "display" : "First line ARTs"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines",
+          "code" : "SECOND-LINE",
+          "display" : "Second line ARTs"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines",
+          "code" : "THIRD-LINE",
+          "display" : "Third line ARTs"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines",
+          "code" : "SPECIAL-UNKNOWN",
+          "display" : "Special/Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-causeofdeath",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-vl-causeofdeath",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-vl-causeofdeath.html\">Cause Of Death v0.2.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-cs-vl-causeofdeath.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-causeofdeath-HIV\"> </a><a href=\"CodeSystem-cs-vl-causeofdeath.html#cs-vl-causeofdeath-HIV\">HIV</a></td><td>HIV Related</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-causeofdeath-NON-HIV\"> </a><a href=\"CodeSystem-cs-vl-causeofdeath.html#cs-vl-causeofdeath-NON-HIV\">NON-HIV</a></td><td>Non HIV related</td><td/></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-causeofdeath",
+      "version" : "0.2.0",
+      "name" : "VSVLCauseOfDeath",
+      "title" : "Cause Of Death",
+      "status" : "active",
+      "date" : "2021-10-01T07:57:23+00:00",
+      "publisher" : "OpenHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://xxhl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "Valueset - CauseOfDeaths",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:2b9ec843-3b7a-4fc4-b4f7-1d64bb7a33af",
+        "timestamp" : "2021-10-01T07:57:58+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -783,17 +304,17 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-communication-preferences|0.2.0"
+          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath|0.2.0"
         }],
         "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-communication-preferences",
-          "code" : "text-message",
-          "display" : "SMS or  Text message"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath",
+          "code" : "HIV",
+          "display" : "HIV Related"
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-patient-communication-preferences",
-          "code" : "voice-call",
-          "display" : "Voice Call"
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath",
+          "code" : "NON-HIV",
+          "display" : "Non HIV related"
         }]
       }
     }

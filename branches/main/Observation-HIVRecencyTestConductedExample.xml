@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="HIVRecencyTestConductedExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-test-conducted"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes HIV-RECENCY-TEST-CONDUCTED}">HIV recency test conducted</span></p><p><b>subject</b>: <a href="Patient-HIVPatientExample.html">Generated Summary: id: ART1234567, id: PASSPORT1234567, id: NAT1234567, id: EMR1234567; active; Jane Smith (OFFICIAL); Phone: +27825556666; gender: female; birthDate: 1986-06-04; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></a></p><p><b>encounter</b>: <a href="Encounter-HIVClinicalEncounterExample.html">Generated Summary: status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode OBSENC}">observation encounter</span>; period: 2021-07-22 --&gt; (ongoing)</a></p><p><b>value</b>: true</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes"/>
+      <code value="HIV-RECENCY-TEST-CONDUCTED"/>
+      <display value="HIV recency test conducted"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/HIVPatientExample"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/HIVClinicalEncounterExample"/>
+  </encounter>
+  <valueBoolean value="true"/>
+</Observation>

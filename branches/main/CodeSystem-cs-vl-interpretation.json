@@ -1,0 +1,52 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-vl-interpretation",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"cs-vl-interpretation-D\"> </a></td><td>Detectable</td></tr><tr><td style=\"white-space:nowrap\">ND<a name=\"cs-vl-interpretation-ND\"> </a></td><td>Non Detectable</td></tr><tr><td style=\"white-space:nowrap\">UNK<a name=\"cs-vl-interpretation-UNK\"> </a></td><td>Unknown</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation",
+  "version": "0.2.0",
+  "name": "CSVLInterpretation",
+  "title": "Viral load Interpretation",
+  "status": "active",
+  "date": "2021-10-01T07:57:23+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://xxhl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "A list of Viral load Interpretations",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "D",
+      "display": "Detectable"
+    },
+    {
+      "code": "ND",
+      "display": "Non Detectable"
+    },
+    {
+      "code": "UNK",
+      "display": "Unknown"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-vl-causeofdeath",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">HIV<a name=\"cs-vl-causeofdeath-HIV\"> </a></td><td>HIV Related</td></tr><tr><td style=\"white-space:nowrap\">NON-HIV<a name=\"cs-vl-causeofdeath-NON-HIV\"> </a></td><td>Non HIV related</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath",
+  "version": "0.2.0",
+  "name": "CSVLCauseOfDeath",
+  "title": "Cause Of Death",
+  "status": "active",
+  "date": "2021-10-01T07:57:23+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://xxhl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "A list of CauseOfDeaths",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "HIV",
+      "display": "HIV Related"
+    },
+    {
+      "code": "NON-HIV",
+      "display": "Non HIV related"
+    }
+  ]
+}

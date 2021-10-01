@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ViralLoadSuppressionExample2"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes VL-RESULT}">Viral load result</span></p><p><b>subject</b>: <a href="Patient-HIVPatientExample.html">Generated Summary: id: ART1234567, id: PASSPORT1234567, id: NAT1234567, id: EMR1234567; active; Jane Smith (OFFICIAL); Phone: +27825556666; gender: female; birthDate: 1986-06-04; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></a></p><p><b>effective</b>: 2021-06-21</p><p><b>value</b>: 200</p><p><b>interpretation</b>: <span title="Codes: {http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation ND}">Non Detectable</span>, <span title="Codes: {http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression SUP}">Suppressed</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes"/>
+      <code value="VL-RESULT"/>
+      <display value="Viral load result"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/HIVPatientExample"/>
+  </subject>
+  <effectiveDateTime value="2021-06-21"/>
+  <valueInteger value="200"/>
+  <interpretation>
+    <coding>
+      <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation"/>
+      <code value="ND"/>
+      <display value="Non Detectable"/>
+    </coding>
+  </interpretation>
+  <interpretation>
+    <coding>
+      <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression"/>
+      <code value="SUP"/>
+      <display value="Suppressed"/>
+    </coding>
+  </interpretation>
+</Observation>

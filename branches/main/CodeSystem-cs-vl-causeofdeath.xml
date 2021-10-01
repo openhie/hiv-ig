@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-vl-causeofdeath"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">HIV<a name="cs-vl-causeofdeath-HIV"> </a></td><td>HIV Related</td></tr><tr><td style="white-space:nowrap">NON-HIV<a name="cs-vl-causeofdeath-NON-HIV"> </a></td><td>Non HIV related</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath"/>
+  <version value="0.2.0"/>
+  <name value="CSVLCauseOfDeath"/>
+  <title value="Cause Of Death"/>
+  <status value="active"/>
+  <date value="2021-10-01T07:57:23+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://xxhl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="A list of CauseOfDeaths"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="HIV"/>
+    <display value="HIV Related"/>
+  </concept>
+  <concept>
+    <code value="NON-HIV"/>
+    <display value="Non HIV related"/>
+  </concept>
+</CodeSystem>
