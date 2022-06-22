@@ -173,6 +173,7 @@ Title: "HIV Diagnosis"
 Description: "This profile allows the exchange of a patient's hiv diagnosis"
 * recordedDate 1..1
 * identifier 1..*
+* code 1..1
 
 Profile: HIVRecencyTestConducted
 Parent: Observation
@@ -183,6 +184,46 @@ Description: "This profile allows the exchange of a patient's hiv recency test"
 * code = CSHIVObsCodes#HIV-RECENCY-TEST-CONDUCTED "HIV recency test conducted"
 * valueBoolean 1..1
 * encounter 1..1
+
+Profile: HIVDateOfRecencyTest
+Parent: Observation
+Id: hiv-date-recency-test
+Title: "HIV Date Recency Test"
+Description: "This profile is to determine the data of the HIV Test"
+* subject 1..1
+* code = CSHIVObsCodes#HIV-RECENCY-TEST-CONDUCTED "HIV date recency rest"
+* valueDateTime 1..1
+* encounter 1..1
+
+Profile: HIVActualRecencyTestResult
+Parent: Observation
+Id: hiv-acutal-recency-test-result
+Title: "HIV Actual Recency Test Result"
+Description: "This profile is to determine the recent test result"
+* subject 1..1
+* code = CSHIVObsCodes#HIV-RECENCY-TEST-CONDUCTED "HIV actual recency test result"
+* valueString 1..1
+* encounter 1..1
+
+Profile: ViralLoadSuppressionMostRecentTestDate
+Parent: Observation
+Id: hiv-viral-load-suppression-most-recent-test-date
+Title: "HIV Viral Load Suppression Most Recent Test Date"
+Description: "This profile is to determine the date of the HIV Test"
+* subject 1..1
+* code = CSHIVObsCodes#HIV-RECENCY-TEST-CONDUCTED "VL most recent test date"
+* valueDateTime 1..1
+
+Profile: ViralLoadSuppressionMostRecentTestResult
+Parent: Observation
+Id: hiv-viral-load-suppression-most-recent-test-result
+Title: "HIV Viral Load Suppression Most Recent Test Result"
+Description: "This profile is to determine the result of the HIV Test"
+* subject 1..1
+* code = CSHIVObsCodes#HIV-RECENCY-TEST-CONDUCTED "VL most recent test result"
+* valueInteger 1..1
+* interpretation 1..1 
+* interpretation from VSVLInterpretation
 
 Profile: HIVRecencyResult
 Parent: Observation

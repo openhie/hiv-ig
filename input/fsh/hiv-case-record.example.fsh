@@ -67,7 +67,7 @@ Description: "Basic Composition example"
 * section[=].entry[+] = Reference(HIVClinicalEncounterExample)
 
 * section[+].title = "ARV Treatment"
-* section[=].code = CSCaseReportSections#arvTherapySummary
+* section[=].code = CSCaseReportSections#ARV-TREATMENT
 * section[=].entry[+] = Reference(ARVTreatmentExample1)
 * section[=].entry[+] = Reference(ARVTreatmentExample2)
 
@@ -182,6 +182,45 @@ Description: "."
 * subject = Reference(HIVPatientExample)
 * valueBoolean = true
 * encounter = Reference(HIVClinicalEncounterExample)
+
+Instance: HIVDateOfRecencyTestExample
+InstanceOf: HIVDateOfRecencyTest
+Usage: #example
+Title: "HIV Date Recency Test Example"
+Description: "."
+* status = #final
+* subject = Reference(HIVPatientExample)
+* valueDateTime = 2020-10-01
+* encounter = Reference(HIVClinicalEncounterExample)
+
+Instance: HIVActualRecencyTestResultExample
+InstanceOf: HIVActualRecencyTestResult
+Usage: #example
+Title: "HIV Actual Recency Test Result Example"
+Description: "."
+* status = #final
+* subject = Reference(HIVPatientExample)
+* valueString = "Test"
+* encounter = Reference(HIVClinicalEncounterExample)
+
+Instance: ViralLoadSuppressionMostRecentTestDateExample
+InstanceOf: ViralLoadSuppressionMostRecentTestDate
+Usage: #example
+Title: "HIV Viral Load Suppression Most Recent Test Date Example"
+Description: "."
+* status = #final
+* subject = Reference(HIVPatientExample)
+* valueDateTime = 2020-10-01
+
+Instance: ViralLoadSuppressionMostRecentTestResultExample
+InstanceOf: ViralLoadSuppressionMostRecentTestResult
+Usage: #example
+Title: "HIV Viral Load Suppression Most Recent Test Result Example"
+Description: "."
+* status = #final
+* subject = Reference(HIVPatientExample)
+* valueInteger = 29
+* interpretation = CSVLInterpretation#D
 
 Instance: HIVRecencyResultExample
 InstanceOf: HIVRecencyResult
