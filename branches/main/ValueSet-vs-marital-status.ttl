@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "VSMaritalStatus"];
   fhir:ValueSet.title [ fhir:value "Marital Status"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-10-01T08:12:33+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-06-22T18:40:24+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "OpenHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;
