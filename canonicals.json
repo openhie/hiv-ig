@@ -70,6 +70,13 @@
     "name": "DeathObs"
   },
   {
+    "id": "hiv-acutal-recency-test-result",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-acutal-recency-test-result",
+    "version": "0.2.0",
+    "name": "HIVActualRecencyTestResult"
+  },
+  {
     "id": "hiv-arv-treatment",
     "type": "StructureDefinition",
     "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment",
@@ -96,6 +103,13 @@
     "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition",
     "version": "0.2.0",
     "name": "HIVComposition"
+  },
+  {
+    "id": "hiv-date-recency-test",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-date-recency-test",
+    "version": "0.2.0",
+    "name": "HIVDateOfRecencyTest"
   },
   {
     "id": "hiv-diagnosis",
@@ -159,6 +173,20 @@
     "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression",
     "version": "0.2.0",
     "name": "ViralLoadSuppression"
+  },
+  {
+    "id": "hiv-viral-load-suppression-most-recent-test-date",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression-most-recent-test-date",
+    "version": "0.2.0",
+    "name": "ViralLoadSuppressionMostRecentTestDate"
+  },
+  {
+    "id": "hiv-viral-load-suppression-most-recent-test-result",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression-most-recent-test-result",
+    "version": "0.2.0",
+    "name": "ViralLoadSuppressionMostRecentTestResult"
   },
   {
     "id": "key-population",

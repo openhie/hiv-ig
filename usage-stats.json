@@ -33,6 +33,14 @@
       {
         "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression",
         "title": "HIV viral load suppression"
+      },
+      {
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression-most-recent-test-date",
+        "title": "HIV Viral Load Suppression Most Recent Test Date"
+      },
+      {
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression-most-recent-test-result",
+        "title": "HIV Viral Load Suppression Most Recent Test Result"
       }
     ],
     "CarePlan": [

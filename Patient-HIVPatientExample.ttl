@@ -16,8 +16,8 @@
      ]
   ];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>genderIdentity</b>: <span title=\"Codes: \">male</span></p><p><b>Key population</b>: <span title=\"Codes: \">transgender</span></p><p><b>identifier</b>: id: ART1234567, id: PASSPORT1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane Smith (OFFICIAL)</p><p><b>telecom</b>: <a href=\"tel:+27825556666\">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><p><b>maritalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></p><p><b>managingOrganization</b>: <a href=\"Organization-HIVOrganizationExample.html\">Generated Summary: id: facility1; name: HIV Organization</a></p></div>"
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Jane Smith (OFFICIAL)</b> female, DoB: 1986-06-04 ( id: ART1234567)</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;

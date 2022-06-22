@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "HIVOrganization"];
   fhir:StructureDefinition.title [ fhir:value "HIV Organization"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-10-01T08:12:33+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-06-22T18:40:24+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "OpenHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -822,7 +822,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "The telecom of an organization can never be of use 'home'" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "where(use = 'home').empty()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "count(f:use[@value='home']) = 0" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "count(f:use[@value='home']) = 0" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Organization";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+         ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];

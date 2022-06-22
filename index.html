@@ -152,6 +152,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <!-- ReleaseHeader --><p id="publish-box">HIV Case Reporting and Monitoring - Local Development build (v0.2.0). See the <a href="http://openhie.org/fhir/hiv-casereporting/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>HIV Case Reporting and Monitoring</h2>
   
+  
+
+  <table class="null">
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;"></span></td>
+    </tr>
+
+
+
+
+  </table>
+  
+  
+  
   <div lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#introduction">Introduction</a></li><li><a href="#submitting-case-reports">Submitting case reports</a></li><li><a href="#ip">Intellectual Property Considerations</a></li><li><a href="#disclaimer">Disclaimer</a></li></ul></div>
   <a name="scope"> </a>
   <p>
@@ -214,7 +245,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     resource which show the structure of each section and links to the other profiled resources: <a href="StructureDefinition-hiv-composition.html">Profiled Composition</a>
   </p>
   <p>The FHIR document is to be submitted to a <a href="https://www.hl7.org/fhir/http.html#transaction" target="_blank">FHIR transaction endpoint</a> using an HTTP POST conforming to the core FHIR specifications.</p>
-  <p><a name="l375">​</a>A full example of a case report bundle with all sentinel events filled in can be seen <a href=" Bundle-HIVBundleExample.json.html">here</a>.</p>
+  <p><a name="l390">​</a>A full example of a case report bundle with all sentinel events filled in can be seen <a href=" Bundle-HIVBundleExample.json.html">here</a>.</p>
 
   <a name="csv"> </a>
   <h4>CSV</h4>
@@ -273,7 +304,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="http://xxhl7.org/Special/committees/[something]">OpenHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 1, 2021 08:12+0000">2021-10-01</span>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="http://xxhl7.org/Special/committees/[something]">OpenHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 22, 2022 18:40+0000">2022-06-22</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -302,6 +333,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
   <script src="assets/js/respond.min.js" type="text/javascript"> </script>
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

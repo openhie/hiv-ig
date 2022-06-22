@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>patient</b>: <a href=\"Patient-HIVPatientExample.html\">Generated Summary: id: ART1234567, id: PASSPORT1234567, id: NAT1234567, id: EMR1234567; active; Jane Smith (OFFICIAL); Phone: +27825556666; gender: female; birthDate: 1986-06-04; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></a></p><p><b>name</b>: Peter Loo </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GuardianExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-related-person.html\">HIV Related Person</a></p></div><p><b>patient</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> \" SMITH\"</p><p><b>name</b>: Peter Loo </p></div>"
   ];
   fhir:RelatedPerson.patient [
      fhir:link <http://openhie.org/fhir/hiv-casereporting/Patient/HIVPatientExample>;
