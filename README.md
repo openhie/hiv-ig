@@ -2,7 +2,7 @@
 
 An HIV case reporting IG for the DISI architecture.
 
-## Publication
+## Publication 
 
 This ImplementationGuide is published in the following locations:
 
