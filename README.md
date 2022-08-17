@@ -26,3 +26,4 @@ Issues and change requests are managed here:
 # NB: 
 * you need to have java installed: sudo apt install default-jdk
 * you need Jekyll installed as well. Find guide here => https://jekyllrb.com/docs/installation/ubuntu/
+
