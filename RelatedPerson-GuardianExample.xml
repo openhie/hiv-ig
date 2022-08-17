@@ -6,7 +6,7 @@
     <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-related-person"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "GuardianExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-related-person.html">HIV Related Person</a></p></div><p><b>patient</b>: <a href="Patient-HIVPatientExample.html">Patient/HIVPatientExample</a> " SMITH"</p><p><b>name</b>: Peter Loo </p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: RelatedPerson</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource RelatedPerson "GuardianExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-related-person.html">HIV Related Person</a></p></div><p><b>patient</b>: <a href="Patient-HIVPatientExample.html">Patient/HIVPatientExample</a> " SMITH"</p><p><b>name</b>: Peter Loo </p></div>
   </text>
   <patient>
     <reference value="Patient/HIVPatientExample"/>

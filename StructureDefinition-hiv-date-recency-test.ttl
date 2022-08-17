@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "HIVDateOfRecencyTest"];
   fhir:StructureDefinition.title [ fhir:value "HIV Date Recency Test"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-06-22T18:40:24+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-17T09:42:33+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "OpenHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
