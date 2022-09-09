@@ -62,7 +62,16 @@ Title: "HIV Case Reporting Composition"
 
 * section[arvTreatmentSection].title = "ARV Treatment"
 * section[arvTreatmentSection].code = CSCaseReportSections#ARV-TREATMENT
-* section[arvTreatmentSection].entry only Reference(ARVTreatment)
+* section[arvTreatmentSection].entry only Reference(ARVTreatment or HIVCareMedicationRequest)
+* section[arvTreatmentSection].entry ^slicing.discriminator.type = #profile
+* section[arvTreatmentSection].entry ^slicing.discriminator.path = "item.resolve()"
+* section[arvTreatmentSection].entry ^slicing.rules = #closed
+* section[arvTreatmentSection].entry contains
+    arvTreatment 1..1 and
+    hivCareMedicationRequest 1..1
+* section[arvTreatmentSection].entry[arvTreatment] only Reference(ARVTreatment)
+* section[arvTreatmentSection].entry[hivCareMedicationRequest] only Reference(HIVCareMedicationRequest)
+
 
 * section[cd4Section].title = "CD4"
 * section[cd4Section].code = CSCaseReportSections#CD4
@@ -84,6 +93,7 @@ Description: "HIV Encounter for a case report"
 * serviceProvider 1..1
 * subject 1..1
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#PRENC
+* extension contains HIVCareNextAppointment named next-visit 0..1 MS //
 
 Profile: HIVClinicalEncounter
 Parent: Encounter
@@ -116,6 +126,7 @@ Description: "This Patient profile allows the exchange of patient information, i
 
 * birthDate MS
 * name 1..* MS
+* name.given MS // given name
 * gender 1..1 MS
 * maritalStatus 1..1 MS
 * maritalStatus from VSMaritalStatus
@@ -266,6 +277,8 @@ Description: "This profile allows the exchange of a patient's ARV treatment"
 * activity.detail.code = $LNC#45260-7 "HIV ART medication"
 * activity.detail.productCodeableConcept 1..1 MS
 * activity.detail.extension contains ARTRegimenLine named artRegimenLine 1..1 MS
+* extension contains ARTStatusExtension named artStatus 1..1 MS
+* activity.outcomeCodeableConcept 0..1 MS //
 
 Profile: CD4
 Parent: Observation
@@ -322,3 +335,24 @@ Description: ""
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSVLCauseOfDeath
 * extension contains LastClinicalVisit named lastClinicalVisit 1..1 MS
+
+Profile: HIVCareMedicationRequest
+Parent: MedicationRequest
+Id: hiv-med-req
+Title: "HIV Care Medication Request"
+Description: "HIV Care Medication Request"
+* dispenseRequest.quantity 1..1 MS //ARV Dispensing quantity in days
+* basedOn 1..1 MS // ARVTreatMent Careplan
+
+Extension: HIVCareNextAppointment
+Id: hiv-care-next-visit
+Title: "Next Appointment Date"
+Description: ""
+* value[x] only dateTime
+
+Extension: ARTStatusExtension
+Id: art-status
+Title: "ART Status"
+Description: ""
+* value[x] only CodeableConcept
+* valueCodeableConcept from VSARTStatus

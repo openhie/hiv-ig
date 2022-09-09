@@ -111,3 +111,41 @@ Description: ""
 * #HIV-ACTUAL-RECENCY-TEST-RESULT "HIV actual recency test result" 
 * #VL-MOST-RECENT-TEST-DATE "VL most recent test date" 
 * #VL-MOST-RECENT-TEST-RESULT "VL most recent test result" 
+
+CodeSystem: CSHIVVLReason
+Id: cs-hiv-vl-reason
+Title: "HIV VL Reason codes"
+Description: "A list of Viral Load test reasons"
+* #BASELINE-VL "Baseline Viral Load"
+* #CHANGE-REGIMEN "Change regimen"
+* #CLINICAL-failure "Clinical failure"
+* #CONFIRMATION-TREATMENT-FAILURE' "Confirmation of treatment failure"
+* #CURRENTLY-BREASTFEEDING-CHILD "Currently breastfeeding child"
+* #CURRENTLY-PREGNANT "Currently pregnant"
+* #PERSISTENT-LOW-LEVEL-VIREMIA "Persistent low-Level viremia"
+* #RECENCY-ASSAY "Recency Assay"
+* #REGIMEN-FAILURE "Regimen failure"
+* #REPEAT "Repeat"
+* #RESULTS-NOT-AVAILABLE "Results not available"
+* #ROUTINE-VIRAL-LOAD "Routine Viral Load"
+
+ValueSet: VSHIVVLReason
+Id: vs-hiv-vl-reason
+Title: "HIV VL Reason codes"
+Description: "Valueset - Viral Load test reasons"
+* include codes from system CSHIVVLReason
+
+CodeSystem: CSARTStatus
+Id: cs-art-status
+Title: "HIV VL Reason codes"
+Description: "A list of Viral Load test reasons"
+* #IIT "Interruption in Treatment"
+* #Active "Active"
+* #Dead "Dead"
+* #Transferred-OUT "Transferred-OUT"
+
+ValueSet: VSARTStatus
+Id: vs-art-status
+Title: "HIV VL Reason codes"
+Description: "Value-set for Viral Load test reasons"
+* include codes from system CSARTStatus

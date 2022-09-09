@@ -36,6 +36,9 @@ Description: "Example of a clinical bundle representing a case report"
 * entry[=].resource = ViralLoadSuppressionExample2
 * entry[+].fullUrl = "Observation/DeathExample"
 * entry[=].resource = DeathExample
+* entry[+].fullUrl = "Observation/HIVCareMedicationRequestExample"
+* entry[=].resource = HIVCareMedicationRequestExample
+
 
 Instance: HIVCompositionExample
 InstanceOf: HIVComposition
@@ -70,6 +73,7 @@ Description: "Basic Composition example"
 * section[=].code = CSCaseReportSections#ARV-TREATMENT
 * section[=].entry[+] = Reference(ARVTreatmentExample1)
 * section[=].entry[+] = Reference(ARVTreatmentExample2)
+* section[=].entry[+] = Reference(HIVCareMedicationRequest)
 
 * section[+].title = "CD4"
 * section[=].code = CSCaseReportSections#CD4
@@ -85,6 +89,12 @@ Description: "Basic Composition example"
 * section[=].code = CSCaseReportSections#DEATH
 * section[=].entry[+] = Reference(DeathExample)
 
+* section[+].title = "Death"
+* section[=].code = CSCaseReportSections#DEATH
+* section[=].entry[+] = Reference(DeathExample)
+
+
+
 Instance: HIVDiagnosisEncounterExample
 InstanceOf: HIVDiagnosisEncounter
 Usage: #example
@@ -93,6 +103,7 @@ Description: "HIV Diagnosis Encounter example"
 * serviceProvider = Reference(HIVOrganizationExample)
 * status = #finished
 * subject = Reference(HIVPatientExample)
+* extension[next-visit].valueDateTime = "2022-10-22"
 
 Instance: HIVClinicalEncounterExample
 InstanceOf: HIVClinicalEncounter
@@ -127,7 +138,8 @@ Title: "HIV Patient example"
 Description: "."
 * active = true
 * name.use = #official
-* name.given = "Jane"
+* name.given[0].value = "Jane Given Name" //given name
+* name.given[1].value = "Jane Middle Name" //middle name
 * name.family = "Smith"
 * maritalStatus.coding[0].code = #M
 * maritalStatus.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
@@ -145,8 +157,9 @@ Description: "."
 * identifier[passport].system = "http://openhie.org/fhir/hiv-casereporting/identifier/passport"
 * identifier[national].value = "NAT1234567"
 * identifier[national].system = "http://openhie.org/fhir/hiv-casereporting/identifier/nid"
-* identifier[pos].value = "EMR1234567"
+* identifier[pos].value = "100007G"
 * identifier[pos].system = "http://openhie.org/fhir/hiv-casereporting/identifier/facility1"
+* identifier[pos].type = #MR
 * managingOrganization = Reference(HIVOrganizationExample)
 * extension[genderIdentity].valueCodeableConcept = #male
 * extension[keyPopulation].valueCodeableConcept = #transgender
@@ -259,6 +272,7 @@ Description: ""
 * activity.detail.code = $LNC#45260-7 "HIV ART medication"
 * activity.detail.productCodeableConcept = #TDF/3TC/DTG
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = #FIRST-LINE
+* extension[artStatus].valueCodeableConcept = #Active
 
 Instance: ARVTreatmentExample2
 InstanceOf: ARVTreatment
@@ -274,6 +288,7 @@ Description: ""
 * activity.detail.code = $LNC#45260-7 "HIV ART medication"
 * activity.detail.productCodeableConcept = #TDF/3TC/EFV
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = #SECOND-LINE
+* extension[artStatus].valueCodeableConcept = #Active
 
 Instance: CD4Example1
 InstanceOf: CD4
@@ -340,3 +355,15 @@ Description: ""
 * effectiveDateTime = "2021-08-26"
 * valueCodeableConcept = CSVLCauseOfDeath#HIV "HIV Related"
 * extension[lastClinicalVisit].valueDateTime = "2021-08-26"
+
+Instance: HIVCareMedicationRequestExample
+InstanceOf: HIVCareMedicationRequest
+Usage: #example
+Title: "HIV Care Medication Request Example"
+Description: ""
+* status = #active
+* intent = #proposal
+* medicationCodeableConcept = $LNC#45260-7 "HIV ART medication"
+* dispenseRequest.quantity.value = 30
+* subject = Reference(HIVPatientExample)
+* basedOn = Reference(ARVTreatmentExample1)
