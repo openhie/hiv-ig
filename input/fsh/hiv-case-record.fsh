@@ -7,8 +7,8 @@ Title: "HIV Case Reporting Composition"
 * category = $LNC#75218-8
 * identifier.system = "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-case-report"
 
-* section ^slicing.discriminator.type = #value
-* section ^slicing.discriminator.path = "code.coding.code"
+* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #openAtEnd
 * section ^slicing.ordered = true
 * section ^slicing.description = "Slice of composition.section based on code"
