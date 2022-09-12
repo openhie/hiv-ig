@@ -149,3 +149,21 @@ Id: vs-art-status
 Title: "HIV VL Reason codes"
 Description: "Value-set for Viral Load test reasons"
 * include codes from system CSARTStatus
+
+CodeSystem: CSCarePlanActivityOutcome
+Id: cs-careplan-outcome
+Title: "ARV treatment outcomes"
+Description: "A list  for ARV treatment plan outcome"
+* #Refused    // indicates ART Stopped
+* #Contacted   //indicates lost to follow up
+
+ValueSet: VSCarePlanActivityOutcome
+Id: vs-careplan-outcome
+Title: "ARV treatment outcomes"
+Description: "Value-set for ARV treatment plan outcomes"
+//* include codes from system http://hl7.org/fhir/ValueSet/care-plan-activity-outcome 
+* include codes from system CSCarePlanActivityOutcome
+
+
+
+

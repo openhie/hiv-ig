@@ -38,6 +38,9 @@ Description: "Example of a clinical bundle representing a case report"
 * entry[=].resource = DeathExample
 * entry[+].fullUrl = "Observation/HIVCareMedicationRequestExample"
 * entry[=].resource = HIVCareMedicationRequestExample
+* entry[+].fullUrl = "Observation/HIVTransferOutExample"
+* entry[=].resource = HIVTransferOutExample
+
 
 
 Instance: HIVCompositionExample
@@ -68,6 +71,7 @@ Description: "Basic Composition example"
 * section[=].code = CSCaseReportSections#HIV-ENTRY-TO-CARE
 * section[=].entry[+] = Reference(HIVEpisodeOfCareExample)
 * section[=].entry[+] = Reference(HIVClinicalEncounterExample)
+* section[=].entry[+] = Reference(HIVTransferOutExample)
 
 * section[+].title = "ARV Treatment"
 * section[=].code = CSCaseReportSections#ARV-TREATMENT
@@ -158,7 +162,7 @@ Description: "."
 * identifier[national].value = "NAT1234567"
 * identifier[national].system = "http://openhie.org/fhir/hiv-casereporting/identifier/nid"
 * identifier[pos].value = "100007G"
-* identifier[pos].system = "http://openhie.org/fhir/hiv-casereporting/identifier/facility1"
+* identifier[pos].system = "http://openhie.org/fhir/hiv-casereporting/OpenMRSID"
 * identifier[pos].type = #MR
 * managingOrganization = Reference(HIVOrganizationExample)
 * extension[genderIdentity].valueCodeableConcept = #male
@@ -234,6 +238,7 @@ Description: "."
 * subject = Reference(HIVPatientExample)
 * valueInteger = 29
 * interpretation = CSVLInterpretation#D
+* interpretation.extension[hivVLReason].valueCodeableConcept = #BASELINE-VL
 
 Instance: HIVRecencyResultExample
 InstanceOf: HIVRecencyResult
@@ -257,6 +262,7 @@ Description: ""
 * identifier[=].value = "123456789"
 * managingOrganization = Reference(HIVOrganizationExample)
 * diagnosis.condition = Reference(HIVDiagnosisExample)
+* referralRequest = Reference(HIVTransferOutExample)
 
 Instance: ARVTreatmentExample1
 InstanceOf: ARVTreatment
@@ -272,7 +278,9 @@ Description: ""
 * activity.detail.code = $LNC#45260-7 "HIV ART medication"
 * activity.detail.productCodeableConcept = #TDF/3TC/DTG
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = #FIRST-LINE
-* extension[artStatus].valueCodeableConcept = #Active
+* extension[artStatus].valueCodeableConcept = #IIT 
+* activity.outcomeCodeableConcept.coding.code = #Refused
+* activity.detail.scheduledPeriod.end = "2021-05-22"
 
 Instance: ARVTreatmentExample2
 InstanceOf: ARVTreatment
@@ -367,3 +375,13 @@ Description: ""
 * dispenseRequest.quantity.value = 30
 * subject = Reference(HIVPatientExample)
 * basedOn = Reference(ARVTreatmentExample1)
+
+Instance: HIVTransferOutExample
+InstanceOf: HIVTransferOut
+Usage: #example
+Title: "HIV Transfer Out Request example"
+Description: "HIV Transfer Out Request example"
+* occurrenceDateTime = "2021-08-26"
+* status = #active
+* intent = #proposal
+* subject = Reference(HIVPatientExample)

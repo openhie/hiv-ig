@@ -50,15 +50,18 @@ Title: "HIV Case Reporting Composition"
 
 * section[hivEntryToCareSection].title = "HIV Entry To Care"
 * section[hivEntryToCareSection].code = CSCaseReportSections#HIV-ENTRY-TO-CARE
-* section[hivEntryToCareSection].entry only Reference(HIVEpisodeOfCare or HIVClinicalEncounter)
+* section[hivEntryToCareSection].entry only Reference(HIVEpisodeOfCare or HIVClinicalEncounter or HIVTransferOut)
 * section[hivEntryToCareSection].entry ^slicing.discriminator.type = #profile
 * section[hivEntryToCareSection].entry ^slicing.discriminator.path = "item.resolve()"
 * section[hivEntryToCareSection].entry ^slicing.rules = #closed
 * section[hivEntryToCareSection].entry contains
     hivEpisodeOfCare 1..1 and
-    hivClinicalEncounter 1..1
+    hivClinicalEncounter 1..1 and 
+    hivTransferOut 0..1
+
 * section[hivEntryToCareSection].entry[hivEpisodeOfCare] only Reference(HIVEpisodeOfCare)
 * section[hivEntryToCareSection].entry[hivClinicalEncounter] only Reference(HIVClinicalEncounter)
+* section[hivEntryToCareSection].entry[hivTransferOut] only Reference(HIVTransferOut)
 
 * section[arvTreatmentSection].title = "ARV Treatment"
 * section[arvTreatmentSection].code = CSCaseReportSections#ARV-TREATMENT
@@ -235,6 +238,7 @@ Description: "This profile is to determine the result of the HIV Test"
 * valueInteger 1..1
 * interpretation 1..1 
 * interpretation from VSVLInterpretation
+* interpretation.extension contains HIVVLReason named hivVLReason 1..1 MS  //Reason for Viral Load
 
 Profile: HIVRecencyResult
 Parent: Observation
@@ -256,6 +260,7 @@ Description: ""
 * identifier.system = "http://openhie.org/fhir/hiv-casereporting/identifier/enrollment-unique-id"
 * managingOrganization 1..1 MS
 * diagnosis 1..1 MS
+* referralRequest MS  //Transfer-Out
 
 Extension: ARTRegimenLine
 Id: art-regimen-line
@@ -277,8 +282,10 @@ Description: "This profile allows the exchange of a patient's ARV treatment"
 * activity.detail.code = $LNC#45260-7 "HIV ART medication"
 * activity.detail.productCodeableConcept 1..1 MS
 * activity.detail.extension contains ARTRegimenLine named artRegimenLine 1..1 MS
-* extension contains ARTStatusExtension named artStatus 1..1 MS
-* activity.outcomeCodeableConcept 0..1 MS //
+* extension contains ARTStatus named artStatus 1..1 MS
+* activity.outcomeCodeableConcept 0..1 MS //Indicates that patient refused HIV Treatment
+* activity.outcomeCodeableConcept from VSCarePlanActivityOutcome
+* activity.detail.scheduledPeriod.end MS //
 
 Profile: CD4
 Parent: Observation
@@ -350,9 +357,23 @@ Title: "Next Appointment Date"
 Description: ""
 * value[x] only dateTime
 
-Extension: ARTStatusExtension
+Extension: ARTStatus
 Id: art-status
 Title: "ART Status"
 Description: ""
 * value[x] only CodeableConcept
 * valueCodeableConcept from VSARTStatus
+
+Extension: HIVVLReason
+Id: hiv-vl-reason
+Title: "HIVVLReason"
+Description: ""
+* value[x] only CodeableConcept
+* valueCodeableConcept from VSHIVVLReason
+
+Profile: HIVTransferOut
+Parent: ServiceRequest
+Id: hiv-transfer-out
+Title: "HIV Transfer Out Request"
+Description: "HIV Transfer Out Request"
+* occurrenceDateTime 1..1 MS // Transfer-Out Date
