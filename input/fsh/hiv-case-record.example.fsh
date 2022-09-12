@@ -97,8 +97,6 @@ Description: "Basic Composition example"
 * section[=].code = CSCaseReportSections#DEATH
 * section[=].entry[+] = Reference(DeathExample)
 
-
-
 Instance: HIVDiagnosisEncounterExample
 InstanceOf: HIVDiagnosisEncounter
 Usage: #example
@@ -280,7 +278,9 @@ Description: ""
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = #FIRST-LINE
 * extension[artStatus].valueCodeableConcept = #IIT 
 * activity.outcomeCodeableConcept.coding.code = #Refused
+* activity.outcomeCodeableConcept.coding.system =  "http://openhie.org/fhir/hiv-casereporting/CodeSystem/art-outcome-codes"
 * activity.detail.scheduledPeriod.end = "2021-05-22"
+//system to use when  outcomeCodeableConcept.coding.code is "Contacted" http://openhie.org/fhir/hiv-casereporting/CodeSystem/contact-tracing-outcome-codes
 
 Instance: ARVTreatmentExample2
 InstanceOf: ARVTreatment

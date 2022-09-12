@@ -285,7 +285,7 @@ Description: "This profile allows the exchange of a patient's ARV treatment"
 * extension contains ARTStatus named artStatus 1..1 MS
 * activity.outcomeCodeableConcept 0..1 MS //Indicates that patient refused HIV Treatment
 * activity.outcomeCodeableConcept from VSCarePlanActivityOutcome
-* activity.detail.scheduledPeriod.end MS //
+* activity.detail.scheduledPeriod.end MS //Date Patient refused HIV treatment OR Contact Date 
 
 Profile: CD4
 Parent: Observation
