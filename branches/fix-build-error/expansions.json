@@ -1,0 +1,322 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "e1c50468-23cc-4df3-84d5-74124cf40a59",
+  "meta" : {
+    "lastUpdated" : "2022-09-13T13:24:33.967+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-suppression",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-vl-suppression",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-vl-suppression.html\">Viral load Suppression v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-suppression-SUP\"> </a>  <a href=\"CodeSystem-cs-vl-suppression.html#cs-vl-suppression-SUP\">SUP</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression</td><td>Suppressed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-suppression-UNSUP\"> </a>  <a href=\"CodeSystem-cs-vl-suppression.html#cs-vl-suppression-UNSUP\">UNSUP</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression</td><td>Unsuppressed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-suppression-UNK\"> </a>  <a href=\"CodeSystem-cs-vl-suppression.html#cs-vl-suppression-UNK\">UNK</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-suppression",
+      "version" : "0.2.0",
+      "name" : "VSVLSuppression",
+      "title" : "Viral load Suppression",
+      "status" : "active",
+      "date" : "2022-09-13T13:24:33+00:00",
+      "publisher" : "OpenHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://xxhl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "Valueset - Viral load Suppression",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:53e5a030-26e8-461f-9a86-5e14cdd6774a",
+        "timestamp" : "2022-09-13T13:25:07+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression",
+          "code" : "SUP",
+          "display" : "Suppressed"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression",
+          "code" : "UNSUP",
+          "display" : "Unsuppressed"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression",
+          "code" : "UNK",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-key-population",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-key-population",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-key-population.html\">Key population v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-GENERAL-POPULATION\"> </a>  <a href=\"CodeSystem-cs-key-population.html#cs-key-population-GENERAL-POPULATION\">GENERAL-POPULATION</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</td><td>General Population</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSM\"> </a>  <a href=\"CodeSystem-cs-key-population.html#cs-key-population-MSM\">MSM</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</td><td>MSM</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-FSW\"> </a>  <a href=\"CodeSystem-cs-key-population.html#cs-key-population-FSW\">FSW</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</td><td>FSW</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSW\"> </a>  <a href=\"CodeSystem-cs-key-population.html#cs-key-population-MSW\">MSW</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</td><td>MSW</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWID\"> </a>  <a href=\"CodeSystem-cs-key-population.html#cs-key-population-PWID\">PWID</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</td><td>PWID</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWUD\"> </a>  <a href=\"CodeSystem-cs-key-population.html#cs-key-population-PWUD\">PWUD</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</td><td>PWUD</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-TRANSGENDER\"> </a>  <a href=\"CodeSystem-cs-key-population.html#cs-key-population-TRANSGENDER\">TRANSGENDER</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</td><td>Transgender</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-key-population",
+      "version" : "0.2.0",
+      "name" : "VSKeyPopulation",
+      "title" : "Key population",
+      "status" : "active",
+      "date" : "2022-09-13T13:24:33+00:00",
+      "publisher" : "OpenHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://xxhl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "A list of key population types",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:9f099dda-460d-4cdf-b144-69d098870e7a",
+        "timestamp" : "2022-09-13T13:25:07+00:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "GENERAL-POPULATION",
+          "display" : "General Population"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "MSM",
+          "display" : "MSM"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "FSW",
+          "display" : "FSW"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "MSW",
+          "display" : "MSW"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "PWID",
+          "display" : "PWID"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "PWUD",
+          "display" : "PWUD"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+          "code" : "TRANSGENDER",
+          "display" : "Transgender"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-artregimen-lines",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-artregimen-lines",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-artregimen-lines.html\">ART Regimen Lines v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-artregimen-lines-FIRST-LINE\"> </a>  <a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-FIRST-LINE\">FIRST-LINE</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines</td><td>First line ARTs</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-artregimen-lines-SECOND-LINE\"> </a>  <a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-SECOND-LINE\">SECOND-LINE</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines</td><td>Second line ARTs</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-artregimen-lines-THIRD-LINE\"> </a>  <a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-THIRD-LINE\">THIRD-LINE</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines</td><td>Third line ARTs</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-artregimen-lines-SPECIAL-UNKNOWN\"> </a>  <a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-SPECIAL-UNKNOWN\">SPECIAL-UNKNOWN</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines</td><td>Special/Unknown</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-artregimen-lines",
+      "version" : "0.2.0",
+      "name" : "VSARTRegimenLines",
+      "title" : "VSART Regimen Lines",
+      "status" : "active",
+      "date" : "2022-09-13T13:24:33+00:00",
+      "publisher" : "OpenHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://xxhl7.org/Special/committees/[something]"
+        }]
+      }],
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:15372259-7a21-4795-a415-952e78ce5454",
+        "timestamp" : "2022-09-13T13:25:08+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines",
+          "code" : "FIRST-LINE",
+          "display" : "First line ARTs"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines",
+          "code" : "SECOND-LINE",
+          "display" : "Second line ARTs"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines",
+          "code" : "THIRD-LINE",
+          "display" : "Third line ARTs"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines",
+          "code" : "SPECIAL-UNKNOWN",
+          "display" : "Special/Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-interpretation",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-vl-interpretation",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-vl-interpretation.html\">Viral load Interpretation v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-interpretation-D\"> </a>  <a href=\"CodeSystem-cs-vl-interpretation.html#cs-vl-interpretation-D\">D</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation</td><td>Detectable</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-interpretation-ND\"> </a>  <a href=\"CodeSystem-cs-vl-interpretation.html#cs-vl-interpretation-ND\">ND</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation</td><td>Non Detectable</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-interpretation-UNK\"> </a>  <a href=\"CodeSystem-cs-vl-interpretation.html#cs-vl-interpretation-UNK\">UNK</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-interpretation",
+      "version" : "0.2.0",
+      "name" : "VSVLInterpretation",
+      "title" : "Viral load Interpretation",
+      "status" : "active",
+      "date" : "2022-09-13T13:24:33+00:00",
+      "publisher" : "OpenHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://xxhl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "Valueset - Viral load Interpretations",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:cc5e8d11-164b-4ade-93c9-541859a8ded8",
+        "timestamp" : "2022-09-13T13:25:10+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation",
+          "code" : "D",
+          "display" : "Detectable"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation",
+          "code" : "ND",
+          "display" : "Non Detectable"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation",
+          "code" : "UNK",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-causeofdeath",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-vl-causeofdeath",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-vl-causeofdeath.html\">Cause Of Death v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-causeofdeath-HIV\"> </a>  <a href=\"CodeSystem-cs-vl-causeofdeath.html#cs-vl-causeofdeath-HIV\">HIV</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath</td><td>HIV Related</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-causeofdeath-NON-HIV\"> </a>  <a href=\"CodeSystem-cs-vl-causeofdeath.html#cs-vl-causeofdeath-NON-HIV\">NON-HIV</a></td><td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath</td><td>Non HIV related</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-causeofdeath",
+      "version" : "0.2.0",
+      "name" : "VSVLCauseOfDeath",
+      "title" : "Cause Of Death",
+      "status" : "active",
+      "date" : "2022-09-13T13:24:33+00:00",
+      "publisher" : "OpenHIE",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://xxhl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "Valueset - CauseOfDeaths",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:50e53c5d-2246-4d5d-a818-208e7bd99c86",
+        "timestamp" : "2022-09-13T13:25:15+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath",
+          "code" : "HIV",
+          "display" : "HIV Related"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath",
+          "code" : "NON-HIV",
+          "display" : "Non HIV related"
+        }]
+      }
+    }
+  }]
+}

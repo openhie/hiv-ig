@@ -1,0 +1,887 @@
+{
+  "resourceType": "Bundle",
+  "id": "HIVBundleExample",
+  "type": "document",
+  "entry": [
+    {
+      "fullUrl": "Composition/HIVCompositionExample",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "HIVCompositionExample",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"HIVCompositionExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition \"HIVCompositionExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-composition.html\">HIV Case Reporting Composition</a></p></div><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: COVID-19 case report <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#95412-3)</span></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> \"HIV Organization\"</p><p><b>title</b>: HIV Case Report</p></div>"
+        },
+        "identifier": {
+          "system": "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-case-report",
+          "value": "1111"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "95412-3"
+            }
+          ]
+        },
+        "date": "2021-05-18",
+        "author": [
+          {
+            "reference": "Organization/HIVOrganizationExample"
+          }
+        ],
+        "title": "HIV Case Report",
+        "section": [
+          {
+            "title": "Client registration",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+                  "code": "CLIENT-REGISTRATION"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "Patient/HIVPatientExample"
+              },
+              {
+                "reference": "RelatedPerson/GuardianExample"
+              }
+            ]
+          },
+          {
+            "title": "HIV Diagnosis",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+                  "code": "HIV-DIAGNOSIS"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "Condition/HIVDiagnosisExample"
+              },
+              {
+                "reference": "Encounter/HIVDiagnosisEncounterExample"
+              },
+              {
+                "reference": "Observation/HIVRecencyTestConductedExample"
+              },
+              {
+                "reference": "Observation/HIVRecencyResultExample"
+              }
+            ]
+          },
+          {
+            "title": "HIV Entry To Care",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+                  "code": "HIV-ENTRY-TO-CARE"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "EpisodeOfCare/HIVEpisodeOfCareExample"
+              },
+              {
+                "reference": "Encounter/HIVClinicalEncounterExample"
+              }
+            ]
+          },
+          {
+            "title": "ARV Treatment",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+                  "code": "ARV-TREATMENT"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "CarePlan/ARVTreatmentExample1"
+              },
+              {
+                "reference": "CarePlan/ARVTreatmentExample2"
+              }
+            ]
+          },
+          {
+            "title": "CD4",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+                  "code": "CD4"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "Observation/CD4Example1"
+              },
+              {
+                "reference": "Observation/CD4Example2"
+              }
+            ]
+          },
+          {
+            "title": "Viral Suppression",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+                  "code": "VIRAL-SUPPRESSION"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "Observation/ViralLoadSuppressionExample1"
+              },
+              {
+                "reference": "Observation/ViralLoadSuppressionExample2"
+              }
+            ]
+          },
+          {
+            "title": "Death",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+                  "code": "DEATH"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "Observation/DeathExample"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Encounter/HIVDiagnosisEncounterExample",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "HIVDiagnosisEncounterExample",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-disgnosis-encounter"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"HIVDiagnosisEncounterExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter \"HIVDiagnosisEncounterExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-disgnosis-encounter.html\">HIV Diagnosis Encounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: pre-admission (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code PRENC = 'pre-admission', stated as 'null')</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>serviceProvider</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> \"HIV Organization\"</p></div>"
+        },
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "PRENC"
+        },
+        "subject": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "serviceProvider": {
+          "reference": "Organization/HIVOrganizationExample"
+        }
+      }
+    },
+    {
+      "fullUrl": "Encounter/HIVClinicalEncounterExample",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "HIVClinicalEncounterExample",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-clinical-encounter"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"HIVClinicalEncounterExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter \"HIVClinicalEncounterExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-clinical-encounter.html\">HIV Clinical Encounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: observation encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code OBSENC = 'observation encounter', stated as 'null')</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>period</b>: 2021-07-22 --&gt; (ongoing)</p></div>"
+        },
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "OBSENC"
+        },
+        "subject": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "period": {
+          "start": "2021-07-22"
+        }
+      }
+    },
+    {
+      "fullUrl": "Patient/HIVPatientExample",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "HIVPatientExample",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"
+          ]
+        },
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"HIVPatientExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient \"HIVPatientExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-patient.html\">HIV Patient</a></p></div><p><b>genderIdentity</b>: male <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#male)</span></p><p><b>Key population</b>: transgender <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#transgender)</span></p><p><b>identifier</b>: id: ART1234567, id: PASSPORT1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane Smith (OFFICIAL)</p><p><b>telecom</b>: <a href=\"tel:+27825556666\">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><p><b>maritalStatus</b>: Married <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html\">MaritalStatus</a>#M)</span></p><p><b>managingOrganization</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> \"HIV Organization\"</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "male"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/key-population",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "transgender"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://openhie.org/fhir/hiv-casereporting/identifier/art",
+            "value": "ART1234567"
+          },
+          {
+            "system": "http://openhie.org/fhir/hiv-casereporting/identifier/passport",
+            "value": "PASSPORT1234567"
+          },
+          {
+            "system": "http://openhie.org/fhir/hiv-casereporting/identifier/nid",
+            "value": "NAT1234567"
+          },
+          {
+            "system": "http://openhie.org/fhir/hiv-casereporting/identifier/facility1",
+            "value": "EMR1234567"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Smith",
+            "given": [
+              "Jane"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+27825556666"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1986-06-04",
+        "address": [
+          {
+            "city": "Cape Town",
+            "district": "City of Cape Town",
+            "state": "Western Province",
+            "country": "South Africa"
+          }
+        ],
+        "maritalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+              "code": "M"
+            }
+          ]
+        },
+        "managingOrganization": {
+          "reference": "Organization/HIVOrganizationExample"
+        }
+      }
+    },
+    {
+      "fullUrl": "RelatedPerson/GuardianExample",
+      "resource": {
+        "resourceType": "RelatedPerson",
+        "id": "GuardianExample",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-related-person"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"GuardianExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson \"GuardianExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-related-person.html\">HIV Related Person</a></p></div><p><b>patient</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>name</b>: Peter Loo </p></div>"
+        },
+        "patient": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "name": [
+          {
+            "family": "Loo",
+            "given": [
+              "Peter"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Condition/HIVDiagnosisExample",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "HIVDiagnosisExample",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-diagnosis"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"HIVDiagnosisExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition \"HIVDiagnosisExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-diagnosis.html\">HIV Diagnosis</a></p></div><p><b>identifier</b>: id: abc</p><p><b>clinicalStatus</b>: active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#active)</span></p><p><b>verificationStatus</b>: confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#confirmed)</span></p><p><b>code</b>: Human immunodeficiency virus infection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#86406008)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>recordedDate</b>: 2021-05-18</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-diagnosis",
+            "value": "abc"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "86406008"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "recordedDate": "2021-05-18"
+      }
+    },
+    {
+      "fullUrl": "Observation/HIVRecencyTestConductedExample",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "HIVRecencyTestConductedExample",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-test-conducted"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HIVRecencyTestConductedExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"HIVRecencyTestConductedExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-recency-test-conducted.html\">HIV Recency Test Conducted</a></p></div><p><b>status</b>: final</p><p><b>code</b>: HIV recency test conducted <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-hiv-obs-codes.html\">HIV Case Report Observation codes</a>#HIV-RECENCY-TEST-CONDUCTED)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href=\"#Encounter_HIVClinicalEncounterExample\">See above (Encounter/HIVClinicalEncounterExample)</a></p><p><b>value</b>: true</p></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes",
+              "code": "HIV-RECENCY-TEST-CONDUCTED",
+              "display": "HIV recency test conducted"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "encounter": {
+          "reference": "Encounter/HIVClinicalEncounterExample"
+        },
+        "valueBoolean": true
+      }
+    },
+    {
+      "fullUrl": "Observation/HIVRecencyResultExample",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "HIVRecencyResultExample",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-result"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HIVRecencyResultExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"HIVRecencyResultExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-recency-result.html\">HIV Recency Result</a></p></div><p><b>status</b>: final</p><p><b>code</b>: HIV recency test conducted <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-hiv-obs-codes.html\">HIV Case Report Observation codes</a>#HIV-RECENCY-RESULT)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href=\"#Encounter_HIVClinicalEncounterExample\">See above (Encounter/HIVClinicalEncounterExample)</a></p><p><b>value</b>: false</p></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes",
+              "code": "HIV-RECENCY-RESULT",
+              "display": "HIV recency test conducted"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "encounter": {
+          "reference": "Encounter/HIVClinicalEncounterExample"
+        },
+        "valueBoolean": false
+      }
+    },
+    {
+      "fullUrl": "EpisodeOfCare/HIVEpisodeOfCareExample",
+      "resource": {
+        "resourceType": "EpisodeOfCare",
+        "id": "HIVEpisodeOfCareExample",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-episode-of-care"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: EpisodeOfCare</b><a name=\"HIVEpisodeOfCareExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource EpisodeOfCare \"HIVEpisodeOfCareExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-episode-of-care.html\">HIV Episode Of Care</a></p></div><p><b>identifier</b>: id: 123456789</p><p><b>status</b>: active</p><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Condition</b></td></tr><tr><td>*</td><td><a href=\"#Condition_HIVDiagnosisExample\">See above (Condition/HIVDiagnosisExample)</a></td></tr></table><p><b>patient</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>managingOrganization</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> \"HIV Organization\"</p><p><b>period</b>: 2021-08-25 --&gt; (ongoing)</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "http://openhie.org/fhir/hiv-casereporting/identifier/enrollment-unique-id",
+            "value": "123456789"
+          }
+        ],
+        "status": "active",
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition/HIVDiagnosisExample"
+            }
+          }
+        ],
+        "patient": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "managingOrganization": {
+          "reference": "Organization/HIVOrganizationExample"
+        },
+        "period": {
+          "start": "2021-08-25"
+        }
+      }
+    },
+    {
+      "fullUrl": "CarePlan/ARVTreatmentExample1",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "ARVTreatmentExample1",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"ARVTreatmentExample1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan \"ARVTreatmentExample1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-arv-treatment.html\">ARVCarePlan</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>period</b>: 2021-05-20 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td></td><td>MedicationRequest</td><td>HIV ART medication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#45260-7)</span></td><td>stopped</td><td>TDF/3TC/DTG <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#TDF/3TC/DTG)</span></td></tr></table></blockquote></div>"
+        },
+        "status": "active",
+        "intent": "plan",
+        "subject": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "period": {
+          "start": "2021-05-20"
+        },
+        "activity": [
+          {
+            "detail": {
+              "extension": [
+                {
+                  "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-regimen-line",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "FIRST-LINE"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "kind": "MedicationRequest",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "45260-7",
+                    "display": "HIV ART medication"
+                  }
+                ]
+              },
+              "status": "stopped",
+              "productCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "TDF/3TC/DTG"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "CarePlan/ARVTreatmentExample2",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "ARVTreatmentExample2",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"ARVTreatmentExample2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan \"ARVTreatmentExample2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-arv-treatment.html\">ARVCarePlan</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>period</b>: 2021-07-20 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td></td><td>MedicationRequest</td><td>HIV ART medication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#45260-7)</span></td><td>in-progress</td><td>TDF/3TC/EFV <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#TDF/3TC/EFV)</span></td></tr></table></blockquote></div>"
+        },
+        "status": "active",
+        "intent": "plan",
+        "subject": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "period": {
+          "start": "2021-07-20"
+        },
+        "activity": [
+          {
+            "detail": {
+              "extension": [
+                {
+                  "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-regimen-line",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "SECOND-LINE"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "kind": "MedicationRequest",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "45260-7",
+                    "display": "HIV ART medication"
+                  }
+                ]
+              },
+              "status": "in-progress",
+              "productCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "TDF/3TC/EFV"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Observation/CD4Example1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CD4Example1",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-test"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"CD4Example1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"CD4Example1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-cd4-test.html\">CD4Observation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: CD4 result <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-hiv-obs-codes.html\">HIV Case Report Observation codes</a>#CD4-RESULT)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>effective</b>: 2020-06-09</p><blockquote><p><b>component</b></p><p><b>code</b>: CD4 result <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#113056008)</span></p><p><b>value</b>: 500</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: CD4 percentage <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#313938009)</span></p><p><b>value</b>: 50</p></blockquote></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes",
+              "code": "CD4-RESULT",
+              "display": "CD4 result"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "effectiveDateTime": "2020-06-09",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "113056008",
+                  "display": "CD4 result"
+                }
+              ]
+            },
+            "valueInteger": 500
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "313938009",
+                  "display": "CD4 percentage"
+                }
+              ]
+            },
+            "valueInteger": 50
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Observation/CD4Example2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CD4Example2",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-test"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"CD4Example2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"CD4Example2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-cd4-test.html\">CD4Observation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: CD4 result <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-hiv-obs-codes.html\">HIV Case Report Observation codes</a>#CD4-RESULT)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>effective</b>: 2021-08-26</p><blockquote><p><b>component</b></p><p><b>code</b>: CD4 result <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#113056008)</span></p><p><b>value</b>: 200</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: CD4 percentage <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#313938009)</span></p><p><b>value</b>: 30</p></blockquote></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes",
+              "code": "CD4-RESULT",
+              "display": "CD4 result"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "effectiveDateTime": "2021-08-26",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "113056008",
+                  "display": "CD4 result"
+                }
+              ]
+            },
+            "valueInteger": 200
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "313938009",
+                  "display": "CD4 percentage"
+                }
+              ]
+            },
+            "valueInteger": 30
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Observation/ViralLoadSuppressionExample1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ViralLoadSuppressionExample1",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ViralLoadSuppressionExample1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"ViralLoadSuppressionExample1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-viral-load-suppression.html\">HIV viral load suppression</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Viral load result <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-hiv-obs-codes.html\">HIV Case Report Observation codes</a>#VL-RESULT)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>effective</b>: 2020-06-09</p><p><b>value</b>: 1000</p><p><b>interpretation</b>: Detectable <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-vl-interpretation.html\">Viral load Interpretation</a>#D)</span>, Unsuppressed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-vl-suppression.html\">Viral load Suppression</a>#UNSUP)</span></p></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes",
+              "code": "VL-RESULT",
+              "display": "Viral load result"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "effectiveDateTime": "2020-06-09",
+        "valueInteger": 1000,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation",
+                "code": "D",
+                "display": "Detectable"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression",
+                "code": "UNSUP",
+                "display": "Unsuppressed"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Observation/ViralLoadSuppressionExample2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ViralLoadSuppressionExample2",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ViralLoadSuppressionExample2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"ViralLoadSuppressionExample2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-viral-load-suppression.html\">HIV viral load suppression</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Viral load result <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-hiv-obs-codes.html\">HIV Case Report Observation codes</a>#VL-RESULT)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>effective</b>: 2021-06-21</p><p><b>value</b>: 200</p><p><b>interpretation</b>: Non Detectable <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-vl-interpretation.html\">Viral load Interpretation</a>#ND)</span>, Suppressed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-vl-suppression.html\">Viral load Suppression</a>#SUP)</span></p></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes",
+              "code": "VL-RESULT",
+              "display": "Viral load result"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "effectiveDateTime": "2021-06-21",
+        "valueInteger": 200,
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation",
+                "code": "ND",
+                "display": "Non Detectable"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression",
+                "code": "SUP",
+                "display": "Suppressed"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Observation/DeathExample",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DeathExample",
+        "meta": {
+          "profile": [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/death-obs"
+          ]
+        },
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"DeathExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"DeathExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-death-obs.html\">Death Obs</a></p></div><p><b>Last Clinical Visit</b>: 2021-08-26</p><p><b>status</b>: final</p><p><b>code</b>: Cause of death <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-hiv-obs-codes.html\">HIV Case Report Observation codes</a>#CAUSE-OF-DEATH)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>effective</b>: 2021-08-26</p><p><b>value</b>: HIV Related <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-vl-causeofdeath.html\">Cause Of Death</a>#HIV)</span></p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/last-clinical-visit",
+            "valueDateTime": "2021-08-26"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes",
+              "code": "CAUSE-OF-DEATH",
+              "display": "Cause of death"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "effectiveDateTime": "2021-08-26",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath",
+              "code": "HIV",
+              "display": "HIV Related"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

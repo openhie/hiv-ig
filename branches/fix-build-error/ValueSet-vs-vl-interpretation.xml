@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-vl-interpretation"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-cs-vl-interpretation.html"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation</code></a></li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-interpretation"/>
+  <version value="0.2.0"/>
+  <name value="VSVLInterpretation"/>
+  <title value="Viral load Interpretation"/>
+  <status value="active"/>
+  <date value="2022-09-13T13:24:33+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://xxhl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="Valueset - Viral load Interpretations"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation"/>
+    </include>
+  </compose>
+</ValueSet>
