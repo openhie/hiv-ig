@@ -113,21 +113,21 @@ Description: ""
 * #VL-MOST-RECENT-TEST-RESULT "VL most recent test result" 
 
 CodeSystem: CSHIVVLReason
-Id: cs-hiv-vl-reason
+Id: vl-reason-codes
 Title: "HIV VL Reason codes"
 Description: "A list of Viral Load test reasons"
-* #BASELINE-VL "Baseline Viral Load"
-* #CHANGE-REGIMEN "Change regimen"
-* #CLINICAL-failure "Clinical failure"
-* #CONFIRMATION-TREATMENT-FAILURE' "Confirmation of treatment failure"
-* #CURRENTLY-BREASTFEEDING-CHILD "Currently breastfeeding child"
-* #CURRENTLY-PREGNANT "Currently pregnant"
-* #PERSISTENT-LOW-LEVEL-VIREMIA "Persistent low-Level viremia"
-* #RECENCY-ASSAY "Recency Assay"
-* #REGIMEN-FAILURE "Regimen failure"
-* #REPEAT "Repeat"
-* #RESULTS-NOT-AVAILABLE "Results not available"
-* #ROUTINE-VIRAL-LOAD "Routine Viral Load"
+* #5d4e13af-92ec-4b91-a8e4-97818810e577 "Baseline Viral Load"
+* #C1259 "Change regimen"
+* #163523 "Clinical failure"
+* #67143af5-c443-4a4f-a678-f3981b4fcb0f "Confirmation of treatment failure"
+* #5632 "Currently breastfeeding child"
+* #1434 "Currently pregnant"
+* #e185de1e-a9b3-4b10-86df-2300bf4476bb "Persistent low-Level viremia"
+* #c2aed192-73fc-405f-8cc2-776a4da81d59 "Recency Assay"
+* #843 "Regimen failure"
+* #162081 "Repeat"
+* #164369 "Results not available"
+* #be5d6a4a-4018-49dd-869f-273c9f5fec9e "Routine Viral Load"
 
 ValueSet: VSHIVVLReason
 Id: vs-hiv-vl-reason
@@ -137,17 +137,17 @@ Description: "Valueset - Viral Load test reasons"
 
 CodeSystem: CSARTStatus
 Id: cs-art-status
-Title: "HIV VL Reason codes"
-Description: "A list of Viral Load test reasons"
-* #IIT "Interruption in Treatment"
+Title: "ART Status code list"
+Description: "A list of ART status codes"
+* #164349 "Interruption in Treatment"
 * #Active "Active"
-* #Dead "Dead"
-* #Transferred-OUT "Transferred-OUT"
+* #159 "Dead"
+* #159492 "Transferred-OUT"
 
 ValueSet: VSARTStatus
 Id: vs-art-status
-Title: "HIV VL Reason codes"
-Description: "Value-set for Viral Load test reasons"
+Title: "Value-set for ART Status code"
+Description: "Value-set for ART status codes"
 * include codes from system CSARTStatus
 
 CodeSystem: CSCarePlanActivityOutcome

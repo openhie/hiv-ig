@@ -236,9 +236,6 @@ Description: "This profile is to determine the result of the HIV Test"
 * subject 1..1
 * code = CSHIVObsCodes#HIV-RECENCY-TEST-CONDUCTED "VL most recent test result"
 * valueInteger 1..1
-* interpretation 1..1 
-* interpretation from VSVLInterpretation
-* interpretation.extension contains HIVVLReason named hivVLReason 1..1 MS  //Reason for Viral Load
 
 Profile: HIVRecencyResult
 Parent: Observation
@@ -364,16 +361,18 @@ Description: ""
 * value[x] only CodeableConcept
 * valueCodeableConcept from VSARTStatus
 
-Extension: HIVVLReason
-Id: hiv-vl-reason
-Title: "HIVVLReason"
-Description: ""
-* value[x] only CodeableConcept
-* valueCodeableConcept from VSHIVVLReason
-
 Profile: HIVTransferOut
 Parent: ServiceRequest
 Id: hiv-transfer-out
 Title: "HIV Transfer Out Request"
 Description: "HIV Transfer Out Request"
 * occurrenceDateTime 1..1 MS // Transfer-Out Date
+
+//reason for viral load
+Profile: VLProcedureInfo
+Parent: Procedure
+Id: vl-procedure-info
+Title: "VL Procedure info"
+Description: "VL Procedure info"
+* reasonCode from VSHIVVLReason  
+* reasonCode 1..1 MS

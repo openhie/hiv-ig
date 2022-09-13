@@ -236,7 +236,6 @@ Description: "."
 * subject = Reference(HIVPatientExample)
 * valueInteger = 29
 * interpretation = CSVLInterpretation#D
-* interpretation.extension[hivVLReason].valueCodeableConcept = #BASELINE-VL
 
 Instance: HIVRecencyResultExample
 InstanceOf: HIVRecencyResult
@@ -385,3 +384,21 @@ Description: "HIV Transfer Out Request example"
 * status = #active
 * intent = #proposal
 * subject = Reference(HIVPatientExample)
+
+Instance: VLProcedureInfoExample
+InstanceOf: VLProcedureInfo
+Usage: #example
+Title: "VL Procedure info example"
+Description: "VL Procedure info example"
+* status = #final
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(HIVClinicalEncounter)
+* reasonReference = Reference(ViralLoadSuppressionExample1)
+* category  = $SCT#108252007
+* category.coding.display = "Laboratory procedure"
+* reasonCode.coding.code = #5d4e13af-92ec-4b91-a8e4-97818810e577
+* reasonCode.coding.system  = "http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-code"
+* reasonCode.coding.display = "Baseline Viral Load"
+* code = $SCT#315124004
+* code.coding.display = "Human immunodeficiency virus load"
+* code.text = "viral load"
