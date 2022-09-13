@@ -3,14 +3,14 @@
   "id": "cs-vl-causeofdeath",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">HIV<a name=\"cs-vl-causeofdeath-HIV\"> </a></td><td>HIV Related</td></tr><tr><td style=\"white-space:nowrap\">NON-HIV<a name=\"cs-vl-causeofdeath-NON-HIV\"> </a></td><td>Non HIV related</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">HIV<a name=\"cs-vl-causeofdeath-HIV\"> </a></td><td>HIV Related</td></tr><tr><td style=\"white-space:nowrap\">NON-HIV<a name=\"cs-vl-causeofdeath-NON-HIV\"> </a></td><td>Non HIV related</td></tr></table></div>"
   },
   "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath",
   "version": "0.2.0",
   "name": "CSVLCauseOfDeath",
   "title": "Cause Of Death",
   "status": "active",
-  "date": "2022-08-17T09:42:33+00:00",
+  "date": "2022-09-13T13:24:33+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {

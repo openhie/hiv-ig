@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="bd0a3242-abaa-48ec-a52a-afd7a4cd43d2"/>
+  <id value="e1c50468-23cc-4df3-84d5-74124cf40a59"/>
   <meta>
-    <lastUpdated value="2022-08-17T09:42:33.654+00:00"/>
+    <lastUpdated value="2022-09-13T13:24:33.967+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -18,15 +18,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-cs-vl-suppression.html">Viral load Suppression v0.2.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-cs-vl-suppression.html">
-                <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -37,6 +35,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-suppression-SUP"> </a>  
                   <a href="CodeSystem-cs-vl-suppression.html#cs-vl-suppression-SUP">SUP</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression</td>
                 <td>Suppressed</td>
               </tr>
               <tr>
@@ -44,6 +43,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-suppression-UNSUP"> </a>  
                   <a href="CodeSystem-cs-vl-suppression.html#cs-vl-suppression-UNSUP">UNSUP</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression</td>
                 <td>Unsuppressed</td>
               </tr>
               <tr>
@@ -51,6 +51,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-suppression-UNK"> </a>  
                   <a href="CodeSystem-cs-vl-suppression.html#cs-vl-suppression-UNK">UNK</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression</td>
                 <td>Unknown</td>
               </tr>
             </table>
@@ -61,7 +62,7 @@
         <name value="VSVLSuppression"/>
         <title value="Viral load Suppression"/>
         <status value="active"/>
-        <date value="2022-08-17T09:42:33+00:00"/>
+        <date value="2022-09-13T13:24:33+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -77,8 +78,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:95390ae3-868f-467a-a1af-ae126aa0e51f"/>
-          <timestamp value="2022-08-17T09:43:01+00:00"/>
+          <identifier value="urn:uuid:53e5a030-26e8-461f-9a86-5e14cdd6774a"/>
+          <timestamp value="2022-09-13T13:25:07+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -119,15 +120,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-cs-key-population.html">Key population v0.2.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-cs-key-population.html">
-                <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -138,6 +137,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-GENERAL-POPULATION"> </a>  
                   <a href="CodeSystem-cs-key-population.html#cs-key-population-GENERAL-POPULATION">GENERAL-POPULATION</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</td>
                 <td>General Population</td>
               </tr>
               <tr>
@@ -145,6 +145,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSM"> </a>  
                   <a href="CodeSystem-cs-key-population.html#cs-key-population-MSM">MSM</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</td>
                 <td>MSM</td>
               </tr>
               <tr>
@@ -152,6 +153,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-FSW"> </a>  
                   <a href="CodeSystem-cs-key-population.html#cs-key-population-FSW">FSW</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</td>
                 <td>FSW</td>
               </tr>
               <tr>
@@ -159,6 +161,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-MSW"> </a>  
                   <a href="CodeSystem-cs-key-population.html#cs-key-population-MSW">MSW</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</td>
                 <td>MSW</td>
               </tr>
               <tr>
@@ -166,6 +169,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWID"> </a>  
                   <a href="CodeSystem-cs-key-population.html#cs-key-population-PWID">PWID</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</td>
                 <td>PWID</td>
               </tr>
               <tr>
@@ -173,6 +177,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-PWUD"> </a>  
                   <a href="CodeSystem-cs-key-population.html#cs-key-population-PWUD">PWUD</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</td>
                 <td>PWUD</td>
               </tr>
               <tr>
@@ -180,6 +185,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-key-population-TRANSGENDER"> </a>  
                   <a href="CodeSystem-cs-key-population.html#cs-key-population-TRANSGENDER">TRANSGENDER</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</td>
                 <td>Transgender</td>
               </tr>
             </table>
@@ -190,7 +196,7 @@
         <name value="VSKeyPopulation"/>
         <title value="Key population"/>
         <status value="active"/>
-        <date value="2022-08-17T09:42:33+00:00"/>
+        <date value="2022-09-13T13:24:33+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -206,8 +212,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c8376d37-a573-4084-9950-c4e8ac293496"/>
-          <timestamp value="2022-08-17T09:43:01+00:00"/>
+          <identifier value="urn:uuid:9f099dda-460d-4cdf-b144-69d098870e7a"/>
+          <timestamp value="2022-09-13T13:25:07+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -268,15 +274,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-cs-artregimen-lines.html">ART Regimen Lines v0.2.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-cs-artregimen-lines.html">
-                <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -287,6 +291,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-artregimen-lines-FIRST-LINE"> </a>  
                   <a href="CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-FIRST-LINE">FIRST-LINE</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines</td>
                 <td>First line ARTs</td>
               </tr>
               <tr>
@@ -294,6 +299,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-artregimen-lines-SECOND-LINE"> </a>  
                   <a href="CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-SECOND-LINE">SECOND-LINE</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines</td>
                 <td>Second line ARTs</td>
               </tr>
               <tr>
@@ -301,6 +307,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-artregimen-lines-THIRD-LINE"> </a>  
                   <a href="CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-THIRD-LINE">THIRD-LINE</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines</td>
                 <td>Third line ARTs</td>
               </tr>
               <tr>
@@ -308,6 +315,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-artregimen-lines-SPECIAL-UNKNOWN"> </a>  
                   <a href="CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-SPECIAL-UNKNOWN">SPECIAL-UNKNOWN</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines</td>
                 <td>Special/Unknown</td>
               </tr>
             </table>
@@ -318,7 +326,7 @@
         <name value="VSARTRegimenLines"/>
         <title value="VSART Regimen Lines"/>
         <status value="active"/>
-        <date value="2022-08-17T09:42:33+00:00"/>
+        <date value="2022-09-13T13:24:33+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -333,8 +341,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a6d42404-97f9-464a-9099-6a3ef2854d32"/>
-          <timestamp value="2022-08-17T09:43:02+00:00"/>
+          <identifier value="urn:uuid:15372259-7a21-4795-a415-952e78ce5454"/>
+          <timestamp value="2022-09-13T13:25:08+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -380,15 +388,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-cs-vl-interpretation.html">Viral load Interpretation v0.2.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-cs-vl-interpretation.html">
-                <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -399,6 +405,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-interpretation-D"> </a>  
                   <a href="CodeSystem-cs-vl-interpretation.html#cs-vl-interpretation-D">D</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation</td>
                 <td>Detectable</td>
               </tr>
               <tr>
@@ -406,6 +413,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-interpretation-ND"> </a>  
                   <a href="CodeSystem-cs-vl-interpretation.html#cs-vl-interpretation-ND">ND</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation</td>
                 <td>Non Detectable</td>
               </tr>
               <tr>
@@ -413,6 +421,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-interpretation-UNK"> </a>  
                   <a href="CodeSystem-cs-vl-interpretation.html#cs-vl-interpretation-UNK">UNK</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation</td>
                 <td>Unknown</td>
               </tr>
             </table>
@@ -423,7 +432,7 @@
         <name value="VSVLInterpretation"/>
         <title value="Viral load Interpretation"/>
         <status value="active"/>
-        <date value="2022-08-17T09:42:33+00:00"/>
+        <date value="2022-09-13T13:24:33+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -439,8 +448,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:80546300-9245-4a2a-8b45-437a16a676b1"/>
-          <timestamp value="2022-08-17T09:43:04+00:00"/>
+          <identifier value="urn:uuid:cc5e8d11-164b-4ade-93c9-541859a8ded8"/>
+          <timestamp value="2022-09-13T13:25:10+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -481,15 +490,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-cs-vl-causeofdeath.html">Cause Of Death v0.2.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-cs-vl-causeofdeath.html">
-                <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -500,6 +507,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-causeofdeath-HIV"> </a>  
                   <a href="CodeSystem-cs-vl-causeofdeath.html#cs-vl-causeofdeath-HIV">HIV</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath</td>
                 <td>HIV Related</td>
               </tr>
               <tr>
@@ -507,6 +515,7 @@
                   <a name="http---openhie.org-fhir-hiv-casereporting-CodeSystem-cs-vl-causeofdeath-NON-HIV"> </a>  
                   <a href="CodeSystem-cs-vl-causeofdeath.html#cs-vl-causeofdeath-NON-HIV">NON-HIV</a>
                 </td>
+                <td>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath</td>
                 <td>Non HIV related</td>
               </tr>
             </table>
@@ -517,7 +526,7 @@
         <name value="VSVLCauseOfDeath"/>
         <title value="Cause Of Death"/>
         <status value="active"/>
-        <date value="2022-08-17T09:42:33+00:00"/>
+        <date value="2022-09-13T13:24:33+00:00"/>
         <publisher value="OpenHIE"/>
         <contact>
           <telecom>
@@ -533,8 +542,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f985a765-810e-42cc-88ef-f983122756d2"/>
-          <timestamp value="2022-08-17T09:43:08+00:00"/>
+          <identifier value="urn:uuid:50e53c5d-2246-4d5d-a818-208e7bd99c86"/>
+          <timestamp value="2022-09-13T13:25:15+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>

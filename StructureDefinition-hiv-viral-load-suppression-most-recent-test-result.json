@@ -20,7 +20,7 @@
   "name": "ViralLoadSuppressionMostRecentTestResult",
   "title": "HIV Viral Load Suppression Most Recent Test Result",
   "status": "active",
-  "date": "2022-08-17T09:42:33+00:00",
+  "date": "2022-09-13T13:24:33+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -213,7 +213,7 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-                "valueUrl": "string"
+                "valueUrl": "id"
               }
             ],
             "code": "http://hl7.org/fhirpath/System.String"

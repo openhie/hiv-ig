@@ -11,7 +11,7 @@
   "title": "HIV Case Reporting and Monitoring",
   "status": "draft",
   "experimental": false,
-  "date": "2022-08-17T09:42:33+00:00",
+  "date": "2022-09-13T13:24:33+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -952,7 +952,7 @@
           "reference": "Bundle/HIVBundleExample"
         },
         "name": "Example Bundle - HIVBundleExample",
-        "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-diagnosis"
+        "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/death-obs"
       },
       {
         "extension": [

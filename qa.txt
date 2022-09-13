@@ -2,8 +2,8 @@
 =========================================
 
 err = 137, warn = 77, info = 33
-IG Publisher Version: 1.1.128
-Generated Wed Aug 17 09:43:37 UTC 2022. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir/hiv-casereporting)
+IG Publisher Version: 1.2.1
+Generated Tue Sep 13 13:25:46 UTC 2022. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir/hiv-casereporting)
  Build Errors : 1 / 31 / 0
  /github/workspace/fsh-generated/resources/Bundle-HIVBundleExample : 70 / 13 / 53
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample1 : 1 / 2 / 1

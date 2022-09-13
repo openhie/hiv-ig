@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "HIV Case Reporting and Monitoring"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2022-08-17T09:42:33+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-09-13T13:24:33+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "OpenHIE"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -984,8 +984,8 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Bundle - HIVBundleExample" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-diagnosis";
-         fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-diagnosis>
+         fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/death-obs";
+         fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/death-obs>
        ]
      ], [
        fhir:index 45;
