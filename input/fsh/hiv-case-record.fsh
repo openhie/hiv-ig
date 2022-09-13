@@ -75,14 +75,22 @@ Title: "HIV Case Reporting Composition"
 * section[arvTreatmentSection].entry[arvTreatment] only Reference(ARVTreatment)
 * section[arvTreatmentSection].entry[hivCareMedicationRequest] only Reference(HIVCareMedicationRequest)
 
-
 * section[cd4Section].title = "CD4"
 * section[cd4Section].code = CSCaseReportSections#CD4
 * section[cd4Section].entry only Reference(CD4)
 
 * section[viralSuppressionSection].title = "Viral Suppression"
 * section[viralSuppressionSection].code = CSCaseReportSections#VIRAL-SUPPRESSION
-* section[viralSuppressionSection].entry only Reference(ViralLoadSuppression)
+* section[viralSuppressionSection].entry only Reference(ViralLoadSuppression or VLProcedureInfo)
+* section[viralSuppressionSection].entry ^slicing.discriminator.type = #profile
+* section[viralSuppressionSection].entry ^slicing.discriminator.path = "item.resolve()"
+* section[viralSuppressionSection].entry ^slicing.rules = #closed
+* section[viralSuppressionSection].entry contains
+    viralLoadSuppression 1..1 and
+    vlProcedureInfo 1..1
+* section[viralSuppressionSection].entry[viralLoadSuppression] only Reference(ViralLoadSuppression)
+* section[viralSuppressionSection].entry[vlProcedureInfo] only Reference(VLProcedureInfo)
+
 
 * section[deathSection].title = "Death"
 * section[deathSection].code = CSCaseReportSections#DEATH
@@ -128,8 +136,8 @@ Description: "This Patient profile allows the exchange of patient information, i
     KeyPopulation named keyPopulation 0..1 MS
 
 * birthDate MS
-* name 1..* MS
-* name.given MS // given name
+* name.family 1..1 MS
+* name.given  1..* MS 
 * gender 1..1 MS
 * maritalStatus 1..1 MS
 * maritalStatus from VSMaritalStatus
@@ -281,7 +289,7 @@ Description: "This profile allows the exchange of a patient's ARV treatment"
 * activity.detail.extension contains ARTRegimenLine named artRegimenLine 1..1 MS
 * extension contains ARTStatus named artStatus 1..1 MS
 * activity.outcomeCodeableConcept 0..1 MS //Indicates that patient refused HIV Treatment
-* activity.outcomeCodeableConcept from VSCarePlanActivityOutcome
+//* activity.outcomeCodeableConcept from VSCarePlanActivityOutcome
 * activity.detail.scheduledPeriod.end MS //Date Patient refused HIV treatment OR Contact Date 
 
 Profile: CD4

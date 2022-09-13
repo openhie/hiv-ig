@@ -40,7 +40,8 @@ Description: "Example of a clinical bundle representing a case report"
 * entry[=].resource = HIVCareMedicationRequestExample
 * entry[+].fullUrl = "Observation/HIVTransferOutExample"
 * entry[=].resource = HIVTransferOutExample
-
+* entry[+].fullUrl = "Observation/VLProcedureInfoExample"
+* entry[=].resource = VLProcedureInfoExample
 
 
 Instance: HIVCompositionExample
@@ -77,7 +78,7 @@ Description: "Basic Composition example"
 * section[=].code = CSCaseReportSections#ARV-TREATMENT
 * section[=].entry[+] = Reference(ARVTreatmentExample1)
 * section[=].entry[+] = Reference(ARVTreatmentExample2)
-* section[=].entry[+] = Reference(HIVCareMedicationRequest)
+* section[=].entry[+] = Reference(HIVCareMedicationRequest) 
 
 * section[+].title = "CD4"
 * section[=].code = CSCaseReportSections#CD4
@@ -88,6 +89,7 @@ Description: "Basic Composition example"
 * section[=].code = CSCaseReportSections#VIRAL-SUPPRESSION
 * section[=].entry[+] = Reference(ViralLoadSuppressionExample1)
 * section[=].entry[+] = Reference(ViralLoadSuppressionExample2)
+* section[=].entry[+] = Reference(VLProcedureInfoExample)
 
 * section[+].title = "Death"
 * section[=].code = CSCaseReportSections#DEATH
@@ -276,8 +278,8 @@ Description: ""
 * activity.detail.productCodeableConcept = #TDF/3TC/DTG
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = #FIRST-LINE
 * extension[artStatus].valueCodeableConcept = #IIT 
-* activity.outcomeCodeableConcept.coding.code = #Refused
-* activity.outcomeCodeableConcept.coding.system =  "http://openhie.org/fhir/hiv-casereporting/CodeSystem/art-outcome-codes"
+* activity.outcomeCodeableConcept = $CIEL#162572 
+* activity.outcomeCodeableConcept.coding.display = "Refused"
 * activity.detail.scheduledPeriod.end = "2021-05-22"
 //system to use when  outcomeCodeableConcept.coding.code is "Contacted" http://openhie.org/fhir/hiv-casereporting/CodeSystem/contact-tracing-outcome-codes
 
@@ -296,6 +298,8 @@ Description: ""
 * activity.detail.productCodeableConcept = #TDF/3TC/EFV
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = #SECOND-LINE
 * extension[artStatus].valueCodeableConcept = #Active
+* activity.outcomeCodeableConcept = $SCT#439771001 
+* activity.outcomeCodeableConcept.coding.display = "Contacted"
 
 Instance: CD4Example1
 InstanceOf: CD4

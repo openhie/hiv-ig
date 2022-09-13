@@ -1,5 +1,6 @@
 Alias: $SCT = http://snomed.info/sct
 Alias: $LNC = http://loinc.org
+Alias: $CIEL = http://https://openconceptlab.org
 Alias: $MaritalStatus = http://hl7.org/fhir/ValueSet/marital-status
 
 CodeSystem: CSKeyPopulation
@@ -150,20 +151,9 @@ Title: "Value-set for ART Status code"
 Description: "Value-set for ART status codes"
 * include codes from system CSARTStatus
 
-CodeSystem: CSCarePlanActivityOutcome
-Id: cs-careplan-outcome
-Title: "ARV treatment outcomes"
-Description: "A list  for ARV treatment plan outcome"
-* #Refused    // indicates ART Stopped
-* #Contacted   //indicates lost to follow up
-
 ValueSet: VSCarePlanActivityOutcome
 Id: vs-careplan-outcome
 Title: "ARV treatment outcomes"
 Description: "Value-set for ARV treatment plan outcomes"
-//* include codes from system http://hl7.org/fhir/ValueSet/care-plan-activity-outcome 
-* include codes from system CSCarePlanActivityOutcome
-
-
-
-
+* include codes from system $SCT where concept is-a #439771001 "Contacted" //indicates lost to follow up
+* include codes from system $CIEL where concept is-a #162572 "Refused"  //#162572 "Refused"  //CIEL Code indicates ART Stopped -->SNOMED CT : 105480006 maps to Refusal of treatment by patient
