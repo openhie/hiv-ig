@@ -115,7 +115,8 @@ Description: "This Patient profile allows the exchange of patient information, i
     KeyPopulation named keyPopulation 0..1 MS
 
 * birthDate MS
-* name 1..* MS
+* name.family 1..1 MS
+* name.given 1..* MS
 * gender 1..1 MS
 * maritalStatus 1..1 MS
 * maritalStatus from VSMaritalStatus
