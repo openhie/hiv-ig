@@ -7,8 +7,8 @@ Title: "HIV Case Reporting Composition"
 * category = $LNC#75218-8
 * identifier.system = "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-case-report"
 
-* section ^slicing.discriminator.type = #value
-* section ^slicing.discriminator.path = "code.coding.code"
+* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #openAtEnd
 * section ^slicing.ordered = true
 * section ^slicing.description = "Slice of composition.section based on code"
@@ -50,19 +50,30 @@ Title: "HIV Case Reporting Composition"
 
 * section[hivEntryToCareSection].title = "HIV Entry To Care"
 * section[hivEntryToCareSection].code = CSCaseReportSections#HIV-ENTRY-TO-CARE
-* section[hivEntryToCareSection].entry only Reference(HIVEpisodeOfCare or HIVClinicalEncounter)
+* section[hivEntryToCareSection].entry only Reference(HIVEpisodeOfCare or HIVClinicalEncounter or HIVTransferOut)
 * section[hivEntryToCareSection].entry ^slicing.discriminator.type = #profile
 * section[hivEntryToCareSection].entry ^slicing.discriminator.path = "item.resolve()"
 * section[hivEntryToCareSection].entry ^slicing.rules = #closed
 * section[hivEntryToCareSection].entry contains
     hivEpisodeOfCare 1..1 and
-    hivClinicalEncounter 1..1
+    hivClinicalEncounter 1..1 and 
+    hivTransferOut 0..1
+
 * section[hivEntryToCareSection].entry[hivEpisodeOfCare] only Reference(HIVEpisodeOfCare)
 * section[hivEntryToCareSection].entry[hivClinicalEncounter] only Reference(HIVClinicalEncounter)
+* section[hivEntryToCareSection].entry[hivTransferOut] only Reference(HIVTransferOut)
 
 * section[arvTreatmentSection].title = "ARV Treatment"
 * section[arvTreatmentSection].code = CSCaseReportSections#ARV-TREATMENT
-* section[arvTreatmentSection].entry only Reference(ARVTreatment)
+* section[arvTreatmentSection].entry only Reference(ARVTreatment or HIVCareMedicationRequest)
+* section[arvTreatmentSection].entry ^slicing.discriminator.type = #profile
+* section[arvTreatmentSection].entry ^slicing.discriminator.path = "item.resolve()"
+* section[arvTreatmentSection].entry ^slicing.rules = #closed
+* section[arvTreatmentSection].entry contains
+    arvTreatment 1..1 and
+    hivCareMedicationRequest 1..1
+* section[arvTreatmentSection].entry[arvTreatment] only Reference(ARVTreatment)
+* section[arvTreatmentSection].entry[hivCareMedicationRequest] only Reference(HIVCareMedicationRequest)
 
 * section[cd4Section].title = "CD4"
 * section[cd4Section].code = CSCaseReportSections#CD4
@@ -70,7 +81,16 @@ Title: "HIV Case Reporting Composition"
 
 * section[viralSuppressionSection].title = "Viral Suppression"
 * section[viralSuppressionSection].code = CSCaseReportSections#VIRAL-SUPPRESSION
-* section[viralSuppressionSection].entry only Reference(ViralLoadSuppression)
+* section[viralSuppressionSection].entry only Reference(ViralLoadSuppression or VLProcedureInfo)
+* section[viralSuppressionSection].entry ^slicing.discriminator.type = #profile
+* section[viralSuppressionSection].entry ^slicing.discriminator.path = "item.resolve()"
+* section[viralSuppressionSection].entry ^slicing.rules = #closed
+* section[viralSuppressionSection].entry contains
+    viralLoadSuppression 1..1 and
+    vlProcedureInfo 1..1
+* section[viralSuppressionSection].entry[viralLoadSuppression] only Reference(ViralLoadSuppression)
+* section[viralSuppressionSection].entry[vlProcedureInfo] only Reference(VLProcedureInfo)
+
 
 * section[deathSection].title = "Death"
 * section[deathSection].code = CSCaseReportSections#DEATH
@@ -84,6 +104,7 @@ Description: "HIV Encounter for a case report"
 * serviceProvider 1..1
 * subject 1..1
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#PRENC
+* extension contains HIVCareNextAppointment named next-visit 0..1 MS //
 
 Profile: HIVClinicalEncounter
 Parent: Encounter
@@ -115,7 +136,8 @@ Description: "This Patient profile allows the exchange of patient information, i
     KeyPopulation named keyPopulation 0..1 MS
 
 * birthDate MS
-* name 1..* MS
+* name.family 1..1 MS
+* name.given  1..* MS 
 * gender 1..1 MS
 * maritalStatus 1..1 MS
 * maritalStatus from VSMaritalStatus
@@ -222,8 +244,6 @@ Description: "This profile is to determine the result of the HIV Test"
 * subject 1..1
 * code = CSHIVObsCodes#HIV-RECENCY-TEST-CONDUCTED "VL most recent test result"
 * valueInteger 1..1
-* interpretation 1..1 
-* interpretation from VSVLInterpretation
 
 Profile: HIVRecencyResult
 Parent: Observation
@@ -245,6 +265,7 @@ Description: ""
 * identifier.system = "http://openhie.org/fhir/hiv-casereporting/identifier/enrollment-unique-id"
 * managingOrganization 1..1 MS
 * diagnosis 1..1 MS
+* referralRequest MS  //Transfer-Out
 
 Extension: ARTRegimenLine
 Id: art-regimen-line
@@ -266,6 +287,10 @@ Description: "This profile allows the exchange of a patient's ARV treatment"
 * activity.detail.code = $LNC#45260-7 "HIV ART medication"
 * activity.detail.productCodeableConcept 1..1 MS
 * activity.detail.extension contains ARTRegimenLine named artRegimenLine 1..1 MS
+* extension contains ARTStatus named artStatus 1..1 MS
+* activity.outcomeCodeableConcept 0..1 MS //Indicates that patient refused HIV Treatment
+//* activity.outcomeCodeableConcept from VSCarePlanActivityOutcome
+* activity.detail.scheduledPeriod.end MS //Date Patient refused HIV treatment OR Contact Date 
 
 Profile: CD4
 Parent: Observation
@@ -322,3 +347,40 @@ Description: ""
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from VSVLCauseOfDeath
 * extension contains LastClinicalVisit named lastClinicalVisit 1..1 MS
+
+Profile: HIVCareMedicationRequest
+Parent: MedicationRequest
+Id: hiv-med-req
+Title: "HIV Care Medication Request"
+Description: "HIV Care Medication Request"
+* dispenseRequest.quantity 1..1 MS //ARV Dispensing quantity in days
+* basedOn 1..1 MS // ARVTreatMent Careplan
+
+Extension: HIVCareNextAppointment
+Id: hiv-care-next-visit
+Title: "Next Appointment Date"
+Description: ""
+* value[x] only dateTime
+
+Extension: ARTStatus
+Id: art-status
+Title: "ART Status"
+Description: ""
+* value[x] only CodeableConcept
+* valueCodeableConcept from VSARTStatus
+
+Profile: HIVTransferOut
+Parent: ServiceRequest
+Id: hiv-transfer-out
+Title: "HIV Transfer Out Request"
+Description: "HIV Transfer Out Request"
+* occurrenceDateTime 1..1 MS // Transfer-Out Date
+
+//reason for viral load
+Profile: VLProcedureInfo
+Parent: Procedure
+Id: vl-procedure-info
+Title: "VL Procedure info"
+Description: "VL Procedure info"
+* reasonCode from VSHIVVLReason  
+* reasonCode 1..1 MS
