@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-art-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-art-status</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">164349<a name="cs-art-status-164349"> </a></td><td>Interruption in Treatment</td></tr><tr><td style="white-space:nowrap">Active<a name="cs-art-status-Active"> </a></td><td>Active</td></tr><tr><td style="white-space:nowrap">159<a name="cs-art-status-159"> </a></td><td>Dead</td></tr><tr><td style="white-space:nowrap">159492<a name="cs-art-status-159492"> </a></td><td>Transferred-OUT</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-art-status"/>
+  <version value="0.2.0"/>
+  <name value="CSARTStatus"/>
+  <title value="ART Status code list"/>
+  <status value="active"/>
+  <date value="2022-09-14T08:40:35+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://xxhl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="A list of ART status codes"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="164349"/>
+    <display value="Interruption in Treatment"/>
+  </concept>
+  <concept>
+    <code value="Active"/>
+    <display value="Active"/>
+  </concept>
+  <concept>
+    <code value="159"/>
+    <display value="Dead"/>
+  </concept>
+  <concept>
+    <code value="159492"/>
+    <display value="Transferred-OUT"/>
+  </concept>
+</CodeSystem>

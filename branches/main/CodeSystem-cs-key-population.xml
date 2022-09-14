@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="cs-key-population"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">GENERAL-POPULATION<a name="cs-key-population-GENERAL-POPULATION"> </a></td><td>General Population</td></tr><tr><td style="white-space:nowrap">MSM<a name="cs-key-population-MSM"> </a></td><td>MSM</td></tr><tr><td style="white-space:nowrap">FSW<a name="cs-key-population-FSW"> </a></td><td>FSW</td></tr><tr><td style="white-space:nowrap">MSW<a name="cs-key-population-MSW"> </a></td><td>MSW</td></tr><tr><td style="white-space:nowrap">PWID<a name="cs-key-population-PWID"> </a></td><td>PWID</td></tr><tr><td style="white-space:nowrap">PWUD<a name="cs-key-population-PWUD"> </a></td><td>PWUD</td></tr><tr><td style="white-space:nowrap">TRANSGENDER<a name="cs-key-population-TRANSGENDER"> </a></td><td>Transgender</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">GENERAL-POPULATION<a name="cs-key-population-GENERAL-POPULATION"> </a></td><td>General Population</td></tr><tr><td style="white-space:nowrap">MSM<a name="cs-key-population-MSM"> </a></td><td>MSM</td></tr><tr><td style="white-space:nowrap">FSW<a name="cs-key-population-FSW"> </a></td><td>FSW</td></tr><tr><td style="white-space:nowrap">MSW<a name="cs-key-population-MSW"> </a></td><td>MSW</td></tr><tr><td style="white-space:nowrap">PWID<a name="cs-key-population-PWID"> </a></td><td>PWID</td></tr><tr><td style="white-space:nowrap">PWUD<a name="cs-key-population-PWUD"> </a></td><td>PWUD</td></tr><tr><td style="white-space:nowrap">TRANSGENDER<a name="cs-key-population-TRANSGENDER"> </a></td><td>Transgender</td></tr></table></div>
   </text>
   <url value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population"/>
   <version value="0.2.0"/>
   <name value="CSKeyPopulation"/>
   <title value="Key population"/>
   <status value="active"/>
-  <date value="2022-08-17T09:42:33+00:00"/>
+  <date value="2022-09-14T08:40:35+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>

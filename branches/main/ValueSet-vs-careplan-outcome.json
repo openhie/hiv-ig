@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-careplan-outcome",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  439771001 (Date of event (observable entity))</li><li>Include codes from <code>https://openconceptlab.org</code> where concept  is-a  162572</li></ul></div>"
+  },
+  "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-careplan-outcome",
+  "version": "0.2.0",
+  "name": "VSCarePlanActivityOutcome",
+  "title": "ARV treatment outcomes",
+  "status": "active",
+  "date": "2022-09-14T08:40:35+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://xxhl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "Value-set for ARV treatment plan outcomes",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "439771001"
+          }
+        ]
+      },
+      {
+        "system": "https://openconceptlab.org",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "162572"
+          }
+        ]
+      }
+    ]
+  }
+}

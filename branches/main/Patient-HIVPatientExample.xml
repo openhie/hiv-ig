@@ -6,7 +6,7 @@
     <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Jane Smith (OFFICIAL)</b> female, DoB: 1986-06-04 ( id: ART1234567)</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Jane Smith (OFFICIAL)</b> female, DoB: 1986-06-04 ( id: ART1234567)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known Marital status of Patient">Marital Status:</td><td colspan="3"><span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></td></tr><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Ids:</td><td colspan="3"><ul><li>id: PASSPORT1234567</li><li>id: NAT1234567</li><li>MR: 100007G</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li><a href="tel:+27825556666">+27825556666</a></li><li>Cape Town Western Province South Africa </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: <a href="Organization-HIVOrganizationExample.html">Organization/HIVOrganizationExample</a> "HIV Organization"</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Key population"><a href="StructureDefinition-key-population.html">Key population:</a></td><td colspan="3"><ul><li><span title="Codes: ">transgender</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The gender the patient identifies with. The Patient's gender identity is used as guidance (e.g. for staff) about how to interact with the patient."><a href="http://hl7.org/fhir/R4/extension-patient-genderidentity.html">genderIdentity:</a></td><td colspan="3"><ul><li><span title="Codes: ">male</span></li></ul></td></tr></table></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/patient-genderIdentity">
     <valueCodeableConcept>
@@ -35,8 +35,13 @@
     <value value="NAT1234567"/>
   </identifier>
   <identifier>
-    <system value="http://openhie.org/fhir/hiv-casereporting/identifier/facility1"/>
-    <value value="EMR1234567"/>
+    <type>
+      <coding>
+        <code value="MR"/>
+      </coding>
+    </type>
+    <system value="http://openhie.org/fhir/hiv-casereporting/OpenMRSID"/>
+    <value value="100007G"/>
   </identifier>
   <active value="true"/>
   <name>

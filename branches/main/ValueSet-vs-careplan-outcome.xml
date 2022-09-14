@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-careplan-outcome"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  439771001 (Date of event (observable entity))</li><li>Include codes from <code>https://openconceptlab.org</code> where concept  is-a  162572</li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-careplan-outcome"/>
+  <version value="0.2.0"/>
+  <name value="VSCarePlanActivityOutcome"/>
+  <title value="ARV treatment outcomes"/>
+  <status value="active"/>
+  <date value="2022-09-14T08:40:35+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://xxhl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="Value-set for ARV treatment plan outcomes"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="439771001"/>
+      </filter>
+    </include>
+    <include>
+      <system value="https://openconceptlab.org"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="162572"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

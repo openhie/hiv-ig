@@ -3,14 +3,14 @@
   "id": "cs-case-report-sections",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">CLIENT-REGISTRATION<a name=\"cs-case-report-sections-CLIENT-REGISTRATION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HIV-DIAGNOSIS<a name=\"cs-case-report-sections-HIV-DIAGNOSIS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HIV-ENTRY-TO-CARE<a name=\"cs-case-report-sections-HIV-ENTRY-TO-CARE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ARV-TREATMENT<a name=\"cs-case-report-sections-ARV-TREATMENT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CD4<a name=\"cs-case-report-sections-CD4\"> </a></td></tr><tr><td style=\"white-space:nowrap\">VIRAL-SUPPRESSION<a name=\"cs-case-report-sections-VIRAL-SUPPRESSION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DEATH<a name=\"cs-case-report-sections-DEATH\"> </a></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">CLIENT-REGISTRATION<a name=\"cs-case-report-sections-CLIENT-REGISTRATION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HIV-DIAGNOSIS<a name=\"cs-case-report-sections-HIV-DIAGNOSIS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HIV-ENTRY-TO-CARE<a name=\"cs-case-report-sections-HIV-ENTRY-TO-CARE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ARV-TREATMENT<a name=\"cs-case-report-sections-ARV-TREATMENT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CD4<a name=\"cs-case-report-sections-CD4\"> </a></td></tr><tr><td style=\"white-space:nowrap\">VIRAL-SUPPRESSION<a name=\"cs-case-report-sections-VIRAL-SUPPRESSION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DEATH<a name=\"cs-case-report-sections-DEATH\"> </a></td></tr></table></div>"
   },
   "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
   "version": "0.2.0",
   "name": "CSCaseReportSections",
   "title": "HIV Case Report Sections codesystem",
   "status": "active",
-  "date": "2022-08-17T09:42:33+00:00",
+  "date": "2022-09-14T08:40:35+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
