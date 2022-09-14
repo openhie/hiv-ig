@@ -1,0 +1,68 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-key-population",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">GENERAL-POPULATION<a name=\"cs-key-population-GENERAL-POPULATION\"> </a></td><td>General Population</td></tr><tr><td style=\"white-space:nowrap\">MSM<a name=\"cs-key-population-MSM\"> </a></td><td>MSM</td></tr><tr><td style=\"white-space:nowrap\">FSW<a name=\"cs-key-population-FSW\"> </a></td><td>FSW</td></tr><tr><td style=\"white-space:nowrap\">MSW<a name=\"cs-key-population-MSW\"> </a></td><td>MSW</td></tr><tr><td style=\"white-space:nowrap\">PWID<a name=\"cs-key-population-PWID\"> </a></td><td>PWID</td></tr><tr><td style=\"white-space:nowrap\">PWUD<a name=\"cs-key-population-PWUD\"> </a></td><td>PWUD</td></tr><tr><td style=\"white-space:nowrap\">TRANSGENDER<a name=\"cs-key-population-TRANSGENDER\"> </a></td><td>Transgender</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+  "version": "0.2.0",
+  "name": "CSKeyPopulation",
+  "title": "Key population",
+  "status": "active",
+  "date": "2022-09-14T08:32:49+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://xxhl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "A list of key population types",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 7,
+  "concept": [
+    {
+      "code": "GENERAL-POPULATION",
+      "display": "General Population"
+    },
+    {
+      "code": "MSM",
+      "display": "MSM"
+    },
+    {
+      "code": "FSW",
+      "display": "FSW"
+    },
+    {
+      "code": "MSW",
+      "display": "MSW"
+    },
+    {
+      "code": "PWID",
+      "display": "PWID"
+    },
+    {
+      "code": "PWUD",
+      "display": "PWUD"
+    },
+    {
+      "code": "TRANSGENDER",
+      "display": "Transgender"
+    }
+  ]
+}

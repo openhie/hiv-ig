@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-hiv-obs-codes"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">HIV-RECENCY-TEST-CONDUCTED<a name=\"cs-hiv-obs-codes-HIV-RECENCY-TEST-CONDUCTED\"> </a></td><td>HIV recency test conducted</td></tr><tr><td style=\"white-space:nowrap\">HIV-RECENCY-RESULT<a name=\"cs-hiv-obs-codes-HIV-RECENCY-RESULT\"> </a></td><td>HIV recency result</td></tr><tr><td style=\"white-space:nowrap\">CD4-RESULT<a name=\"cs-hiv-obs-codes-CD4-RESULT\"> </a></td><td>CD4 result</td></tr><tr><td style=\"white-space:nowrap\">VL-RESULT<a name=\"cs-hiv-obs-codes-VL-RESULT\"> </a></td><td>Viral load result</td></tr><tr><td style=\"white-space:nowrap\">CAUSE-OF-DEATH<a name=\"cs-hiv-obs-codes-CAUSE-OF-DEATH\"> </a></td><td>Cause of death</td></tr><tr><td style=\"white-space:nowrap\">HIV-DATE-RECENCY-TEST<a name=\"cs-hiv-obs-codes-HIV-DATE-RECENCY-TEST\"> </a></td><td>HIV date recency rest</td></tr><tr><td style=\"white-space:nowrap\">HIV-ACTUAL-RECENCY-TEST-RESULT<a name=\"cs-hiv-obs-codes-HIV-ACTUAL-RECENCY-TEST-RESULT\"> </a></td><td>HIV actual recency test result</td></tr><tr><td style=\"white-space:nowrap\">VL-MOST-RECENT-TEST-DATE<a name=\"cs-hiv-obs-codes-VL-MOST-RECENT-TEST-DATE\"> </a></td><td>VL most recent test date</td></tr><tr><td style=\"white-space:nowrap\">VL-MOST-RECENT-TEST-RESULT<a name=\"cs-hiv-obs-codes-VL-MOST-RECENT-TEST-RESULT\"> </a></td><td>VL most recent test result</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "CSHIVObsCodes"];
+  fhir:CodeSystem.title [ fhir:value "HIV Case Report Observation codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-09-14T08:32:49+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://xxhl7.org/Special/committees/[something]" ]
+     ]
+  ];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "9"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV-RECENCY-TEST-CONDUCTED" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HIV recency test conducted" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV-RECENCY-RESULT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HIV recency result" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "CD4-RESULT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CD4 result" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "VL-RESULT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Viral load result" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "CAUSE-OF-DEATH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cause of death" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV-DATE-RECENCY-TEST" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HIV date recency rest" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV-ACTUAL-RECENCY-TEST-RESULT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HIV actual recency test result" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "VL-MOST-RECENT-TEST-DATE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VL most recent test date" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "VL-MOST-RECENT-TEST-RESULT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VL most recent test result" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

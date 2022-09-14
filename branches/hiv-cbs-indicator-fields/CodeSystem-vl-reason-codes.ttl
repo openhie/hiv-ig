@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-codes> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "vl-reason-codes"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">5d4e13af-92ec-4b91-a8e4-97818810e577<a name=\"vl-reason-codes-5d4e13af-92ec-4b91-a8e4-97818810e577\"> </a></td><td>Baseline Viral Load</td></tr><tr><td style=\"white-space:nowrap\">C1259<a name=\"vl-reason-codes-C1259\"> </a></td><td>Change regimen</td></tr><tr><td style=\"white-space:nowrap\">163523<a name=\"vl-reason-codes-163523\"> </a></td><td>Clinical failure</td></tr><tr><td style=\"white-space:nowrap\">67143af5-c443-4a4f-a678-f3981b4fcb0f<a name=\"vl-reason-codes-67143af5-c443-4a4f-a678-f3981b4fcb0f\"> </a></td><td>Confirmation of treatment failure</td></tr><tr><td style=\"white-space:nowrap\">5632<a name=\"vl-reason-codes-5632\"> </a></td><td>Currently breastfeeding child</td></tr><tr><td style=\"white-space:nowrap\">1434<a name=\"vl-reason-codes-1434\"> </a></td><td>Currently pregnant</td></tr><tr><td style=\"white-space:nowrap\">e185de1e-a9b3-4b10-86df-2300bf4476bb<a name=\"vl-reason-codes-e185de1e-a9b3-4b10-86df-2300bf4476bb\"> </a></td><td>Persistent low-Level viremia</td></tr><tr><td style=\"white-space:nowrap\">c2aed192-73fc-405f-8cc2-776a4da81d59<a name=\"vl-reason-codes-c2aed192-73fc-405f-8cc2-776a4da81d59\"> </a></td><td>Recency Assay</td></tr><tr><td style=\"white-space:nowrap\">843<a name=\"vl-reason-codes-843\"> </a></td><td>Regimen failure</td></tr><tr><td style=\"white-space:nowrap\">162081<a name=\"vl-reason-codes-162081\"> </a></td><td>Repeat</td></tr><tr><td style=\"white-space:nowrap\">164369<a name=\"vl-reason-codes-164369\"> </a></td><td>Results not available</td></tr><tr><td style=\"white-space:nowrap\">be5d6a4a-4018-49dd-869f-273c9f5fec9e<a name=\"vl-reason-codes-be5d6a4a-4018-49dd-869f-273c9f5fec9e\"> </a></td><td>Routine Viral Load</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-codes"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "CSHIVVLReason"];
+  fhir:CodeSystem.title [ fhir:value "HIV VL Reason codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-09-14T08:32:49+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://xxhl7.org/Special/committees/[something]" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "A list of Viral Load test reasons"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "12"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "5d4e13af-92ec-4b91-a8e4-97818810e577" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Baseline Viral Load" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "C1259" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Change regimen" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "163523" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Clinical failure" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "67143af5-c443-4a4f-a678-f3981b4fcb0f" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Confirmation of treatment failure" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "5632" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Currently breastfeeding child" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "1434" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Currently pregnant" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "e185de1e-a9b3-4b10-86df-2300bf4476bb" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Persistent low-Level viremia" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "c2aed192-73fc-405f-8cc2-776a4da81d59" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Recency Assay" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "843" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Regimen failure" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "162081" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Repeat" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "164369" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Results not available" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "be5d6a4a-4018-49dd-869f-273c9f5fec9e" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Routine Viral Load" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-codes.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

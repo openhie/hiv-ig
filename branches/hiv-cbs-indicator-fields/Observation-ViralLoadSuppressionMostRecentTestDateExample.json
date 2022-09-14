@@ -1,0 +1,27 @@
+{
+  "resourceType": "Observation",
+  "id": "ViralLoadSuppressionMostRecentTestDateExample",
+  "meta": {
+    "profile": [
+      "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression-most-recent-test-date"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ViralLoadSuppressionMostRecentTestDateExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"ViralLoadSuppressionMostRecentTestDateExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-viral-load-suppression-most-recent-test-date.html\">HIV Viral Load Suppression Most Recent Test Date</a></p></div><p><b>status</b>: final</p><p><b>code</b>: VL most recent test date <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-hiv-obs-codes.html\">HIV Case Report Observation codes</a>#HIV-RECENCY-TEST-CONDUCTED)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> \" SMITH\"</p><p><b>value</b>: 2020-10-01</p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes",
+        "code": "HIV-RECENCY-TEST-CONDUCTED",
+        "display": "VL most recent test date"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/HIVPatientExample"
+  },
+  "valueDateTime": "2020-10-01"
+}
