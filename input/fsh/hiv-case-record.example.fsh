@@ -397,7 +397,6 @@ Description: "VL Procedure info example"
 * status = #final
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(HIVClinicalEncounter)
-* reasonReference = Reference(ViralLoadSuppressionExample1)
 * category  = $SCT#108252007
 * category.coding.display = "Laboratory procedure"
 * reasonCode.coding.code = #5d4e13af-92ec-4b91-a8e4-97818810e577
