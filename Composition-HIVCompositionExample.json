@@ -91,6 +91,9 @@
         },
         {
           "reference": "Encounter/HIVClinicalEncounterExample"
+        },
+        {
+          "reference": "ServiceRequest/HIVTransferOutExample"
         }
       ]
     },
@@ -110,6 +113,9 @@
         },
         {
           "reference": "CarePlan/ARVTreatmentExample2"
+        },
+        {
+          "reference": "HIVCareMedicationRequest"
         }
       ]
     },
@@ -148,6 +154,25 @@
         },
         {
           "reference": "Observation/ViralLoadSuppressionExample2"
+        },
+        {
+          "reference": "Procedure/VLProcedureInfoExample"
+        }
+      ]
+    },
+    {
+      "title": "Death",
+      "code": {
+        "coding": [
+          {
+            "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+            "code": "DEATH"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/DeathExample"
         }
       ]
     },

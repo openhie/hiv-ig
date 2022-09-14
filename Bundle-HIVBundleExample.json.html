@@ -49,8 +49,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.52"}
-    h3,h4,h5,h6{--heading-prefix:"3.52"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.65"}
+    h3,h4,h5,h6{--heading-prefix:"3.65"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -319,6 +319,9 @@
               },
               {
                 "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Encounter/HIVClinicalEncounterExample"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ServiceRequest/HIVTransferOutExample"
               }
             ]
           },
@@ -338,6 +341,9 @@
               },
               {
                 "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CarePlan/ARVTreatmentExample2"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "HIVCareMedicationRequest"
               }
             ]
           },
@@ -376,6 +382,25 @@
               },
               {
                 "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/ViralLoadSuppressionExample2"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Procedure/VLProcedureInfoExample"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Death",
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "DEATH"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/DeathExample"
               }
             ]
           },
@@ -409,9 +434,15 @@
           ]
         },
         "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Encounter&lt;/b&gt;&lt;a name=\&quot;HIVDiagnosisEncounterExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Encounter \&quot;HIVDiagnosisEncounterExample\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-disgnosis-encounter.html\&quot;&gt;HIV Diagnosis Encounter&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: pre-admission (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code PRENC = 'pre-admission', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=\&quot;Organization-HIVOrganizationExample.html\&quot;&gt;Organization/HIVOrganizationExample&lt;/a&gt; \&quot;HIV Organization\&quot;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Encounter&lt;/b&gt;&lt;a name=\&quot;HIVDiagnosisEncounterExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Encounter \&quot;HIVDiagnosisEncounterExample\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-disgnosis-encounter.html\&quot;&gt;HIV Diagnosis Encounter&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Next Appointment Date&lt;/b&gt;: 2022-10-22&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: pre-admission (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code PRENC = 'pre-admission', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=\&quot;Organization-HIVOrganizationExample.html\&quot;&gt;Organization/HIVOrganizationExample&lt;/a&gt; \&quot;HIV Organization\&quot;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-care-next-visit",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDateTime</a>" : "2022-10-22"
+          }
+        ],
         "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a>" : "finished",
         "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -464,7 +495,7 @@
         },
         "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Patient&lt;/b&gt;&lt;a name=\&quot;HIVPatientExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Patient \&quot;HIVPatientExample\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-patient.html\&quot;&gt;HIV Patient&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;genderIdentity&lt;/b&gt;: male &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ([not stated]#male)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Key population&lt;/b&gt;: transgender &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ([not stated]#transgender)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ART1234567, id: PASSPORT1234567, id: NAT1234567, id: EMR1234567&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Jane Smith (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: &lt;a href=\&quot;tel:+27825556666\&quot;&gt;+27825556666&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: female&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1986-06-04&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Cape Town Western Province South Africa &lt;/p&gt;&lt;p&gt;&lt;b&gt;maritalStatus&lt;/b&gt;: Married &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html\&quot;&gt;MaritalStatus&lt;/a&gt;#M)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=\&quot;Organization-HIVOrganizationExample.html\&quot;&gt;Organization/HIVOrganizationExample&lt;/a&gt; \&quot;HIV Organization\&quot;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Patient&lt;/b&gt;&lt;a name=\&quot;HIVPatientExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Patient \&quot;HIVPatientExample\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-patient.html\&quot;&gt;HIV Patient&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;genderIdentity&lt;/b&gt;: male &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ([not stated]#male)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Key population&lt;/b&gt;: transgender &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ([not stated]#transgender)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ART1234567, id: PASSPORT1234567, id: NAT1234567, MR: 100007G&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Jane Smith (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: &lt;a href=\&quot;tel:+27825556666\&quot;&gt;+27825556666&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: female&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1986-06-04&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Cape Town Western Province South Africa &lt;/p&gt;&lt;p&gt;&lt;b&gt;maritalStatus&lt;/b&gt;: Married &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html\&quot;&gt;MaritalStatus&lt;/a&gt;#M)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=\&quot;Organization-HIVOrganizationExample.html\&quot;&gt;Organization/HIVOrganizationExample&lt;/a&gt; \&quot;HIV Organization\&quot;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>" : [
           {
@@ -502,8 +533,15 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "NAT1234567"
           },
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://openhie.org/fhir/hiv-casereporting/identifier/facility1",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "EMR1234567"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "MR"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://openhie.org/fhir/hiv-casereporting/OpenMRSID",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "100007G"
           }
         ],
         "<a href="http://hl7.org/fhir/R4/patient.html#Patient.active">active</a>" : true,
@@ -698,7 +736,7 @@
         },
         "<a href="http://hl7.org/fhir/R4/episodeofcare.html#EpisodeOfCare.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: EpisodeOfCare&lt;/b&gt;&lt;a name=\&quot;HIVEpisodeOfCareExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource EpisodeOfCare \&quot;HIVEpisodeOfCareExample\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-episode-of-care.html\&quot;&gt;HIV Episode Of Care&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 123456789&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;h3&gt;Diagnoses&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Condition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Condition_HIVDiagnosisExample\&quot;&gt;See above (Condition/HIVDiagnosisExample)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=\&quot;Organization-HIVOrganizationExample.html\&quot;&gt;Organization/HIVOrganizationExample&lt;/a&gt; \&quot;HIV Organization\&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2021-08-25 --&amp;gt; (ongoing)&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: EpisodeOfCare&lt;/b&gt;&lt;a name=\&quot;HIVEpisodeOfCareExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource EpisodeOfCare \&quot;HIVEpisodeOfCareExample\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-episode-of-care.html\&quot;&gt;HIV Episode Of Care&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 123456789&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;h3&gt;Diagnoses&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Condition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Condition_HIVDiagnosisExample\&quot;&gt;See above (Condition/HIVDiagnosisExample)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=\&quot;Organization-HIVOrganizationExample.html\&quot;&gt;Organization/HIVOrganizationExample&lt;/a&gt; \&quot;HIV Organization\&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2021-08-25 --&amp;gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;referralRequest&lt;/b&gt;: &lt;a href=\&quot;#ServiceRequest_HIVTransferOutExample\&quot;&gt;See above (ServiceRequest/HIVTransferOutExample)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/episodeofcare.html#EpisodeOfCare.identifier">identifier</a>" : [
           {
@@ -722,7 +760,12 @@
         },
         "<a href="http://hl7.org/fhir/R4/episodeofcare.html#EpisodeOfCare.period">period</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2021-08-25"
-        }
+        },
+        "<a href="http://hl7.org/fhir/R4/episodeofcare.html#EpisodeOfCare.referralRequest">referralRequest</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ServiceRequest/HIVTransferOutExample"
+          }
+        ]
       }
     },
     {
@@ -736,9 +779,21 @@
           ]
         },
         "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: CarePlan&lt;/b&gt;&lt;a name=\&quot;ARVTreatmentExample1\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource CarePlan \&quot;ARVTreatmentExample1\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-arv-treatment.html\&quot;&gt;ARVCarePlan&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2021-05-20 --&amp;gt; (ongoing)&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Details&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Extension&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Kind&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Product[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;MedicationRequest&lt;/td&gt;&lt;td&gt;HIV ART medication &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#45260-7)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;stopped&lt;/td&gt;&lt;td&gt;TDF/3TC/DTG &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ([not stated]#TDF/3TC/DTG)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: CarePlan&lt;/b&gt;&lt;a name=\&quot;ARVTreatmentExample1\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource CarePlan \&quot;ARVTreatmentExample1\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-arv-treatment.html\&quot;&gt;ARVCarePlan&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;ART Status&lt;/b&gt;: IIT &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ([not stated]#IIT)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2021-05-20 --&amp;gt; (ongoing)&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;outcomeCodeableConcept&lt;/b&gt;: Refused &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (openconceptlab.org#162572)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Details&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Extension&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Kind&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scheduled[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Product[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;MedicationRequest&lt;/td&gt;&lt;td&gt;HIV ART medication &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#45260-7)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;stopped&lt;/td&gt;&lt;td&gt;?? --&amp;gt; 2021-05-22&lt;/td&gt;&lt;td&gt;TDF/3TC/DTG &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ([not stated]#TDF/3TC/DTG)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-status",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "IIT"
+                }
+              ]
+            }
+          }
+        ],
         "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.status">status</a>" : "active",
         "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.intent">intent</a>" : "plan",
         "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.subject">subject</a>" : {
@@ -749,6 +804,17 @@
         },
         "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity">activity</a>" : [
           {
+            "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.outcomeCodeableConcept">outcomeCodeableConcept</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://openconceptlab.org",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "162572",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Refused"
+                  }
+                ]
+              }
+            ],
             "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail">detail</a>" : {
               "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.extension">extension</a>" : [
                 {
@@ -773,6 +839,9 @@
                 ]
               },
               "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.status">status</a>" : "stopped",
+              "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.scheduled[x]">scheduledPeriod</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2021-05-22"
+              },
               "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.product[x]">productCodeableConcept</a>" : {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                   {
@@ -796,9 +865,21 @@
           ]
         },
         "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: CarePlan&lt;/b&gt;&lt;a name=\&quot;ARVTreatmentExample2\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource CarePlan \&quot;ARVTreatmentExample2\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-arv-treatment.html\&quot;&gt;ARVCarePlan&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2021-07-20 --&amp;gt; (ongoing)&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Details&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Extension&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Kind&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Product[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;MedicationRequest&lt;/td&gt;&lt;td&gt;HIV ART medication &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#45260-7)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;in-progress&lt;/td&gt;&lt;td&gt;TDF/3TC/EFV &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ([not stated]#TDF/3TC/EFV)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: CarePlan&lt;/b&gt;&lt;a name=\&quot;ARVTreatmentExample2\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource CarePlan \&quot;ARVTreatmentExample2\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-arv-treatment.html\&quot;&gt;ARVCarePlan&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;ART Status&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ([not stated]#Active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: plan&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2021-07-20 --&amp;gt; (ongoing)&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;outcomeCodeableConcept&lt;/b&gt;: Contacted &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#439771001)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Details&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Extension&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Kind&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Product[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;MedicationRequest&lt;/td&gt;&lt;td&gt;HIV ART medication &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#45260-7)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;in-progress&lt;/td&gt;&lt;td&gt;TDF/3TC/EFV &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ([not stated]#TDF/3TC/EFV)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
+        "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-status",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "Active"
+                }
+              ]
+            }
+          }
+        ],
         "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.status">status</a>" : "active",
         "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.intent">intent</a>" : "plan",
         "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.subject">subject</a>" : {
@@ -809,6 +890,17 @@
         },
         "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity">activity</a>" : [
           {
+            "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.outcomeCodeableConcept">outcomeCodeableConcept</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "439771001",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Contacted"
+                  }
+                ]
+              }
+            ],
             "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail">detail</a>" : {
               "<a href="http://hl7.org/fhir/R4/careplan.html#CarePlan.activity.detail.extension">extension</a>" : [
                 {
@@ -1103,6 +1195,121 @@
           ]
         }
       }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "Observation/HIVCareMedicationRequestExample",
+      "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html">resourceType</a>" : "MedicationRequest",
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.id">id</a>" : "HIVCareMedicationRequestExample",
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-med-req"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: MedicationRequest&lt;/b&gt;&lt;a name=\&quot;HIVCareMedicationRequestExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource MedicationRequest \&quot;HIVCareMedicationRequestExample\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-med-req.html\&quot;&gt;HIV Care Medication Request&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: proposal&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: HIV ART medication &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#45260-7)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\&quot;#CarePlan_ARVTreatmentExample1\&quot;&gt;See above (CarePlan/ARVTreatmentExample1)&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;DispenseRequests&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Quantity&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.status">status</a>" : "active",
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.intent">intent</a>" : "proposal",
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.medication[x]">medicationCodeableConcept</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "45260-7",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "HIV ART medication"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.subject">subject</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/HIVPatientExample"
+        },
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.basedOn">basedOn</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CarePlan/ARVTreatmentExample1"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.dispenseRequest">dispenseRequest</a>" : {
+          "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.dispenseRequest.quantity">quantity</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 30
+          }
+        }
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "Observation/HIVTransferOutExample",
+      "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html">resourceType</a>" : "ServiceRequest",
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.id">id</a>" : "HIVTransferOutExample",
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-transfer-out"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: ServiceRequest&lt;/b&gt;&lt;a name=\&quot;HIVTransferOutExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource ServiceRequest \&quot;HIVTransferOutExample\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-transfer-out.html\&quot;&gt;HIV Transfer Out Request&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: proposal&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: 2021-08-26&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.status">status</a>" : "active",
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.intent">intent</a>" : "proposal",
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.subject">subject</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/HIVPatientExample"
+        },
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.occurrence[x]">occurrenceDateTime</a>" : "2021-08-26"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "Observation/VLProcedureInfoExample",
+      "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/procedure.html">resourceType</a>" : "Procedure",
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.id">id</a>" : "VLProcedureInfoExample",
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/vl-procedure-info"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Procedure&lt;/b&gt;&lt;a name=\&quot;VLProcedureInfoExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Procedure \&quot;VLProcedureInfoExample\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-vl-procedure-info.html\&quot;&gt;VL Procedure info&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Laboratory procedure &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#108252007)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: viral load &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#315124004 \&quot;Human immunodeficiency virus load\&quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;HIVClinicalEncounter\&quot;&gt;HIVClinicalEncounter&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonCode&lt;/b&gt;: Baseline Viral Load &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (vl-reason-code#5d4e13af-92ec-4b91-a8e4-97818810e577)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.status">status</a>" : "final",
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.category">category</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "108252007",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Laboratory procedure"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.code">code</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "315124004",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Human immunodeficiency virus load"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "viral load"
+        },
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.subject">subject</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/HIVPatientExample"
+        },
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.encounter">encounter</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "HIVClinicalEncounter"
+        },
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.reasonCode">reasonCode</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-code",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "5d4e13af-92ec-4b91-a8e4-97818810e577",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Baseline Viral Load"
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }</code></pre>
@@ -1136,7 +1343,7 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://xxhl7.org/Special/committees/[something]">OpenHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 13, 2022 13:24+0000">2022-09-13</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://xxhl7.org/Special/committees/[something]">OpenHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 14, 2022 08:32+0000">2022-09-14</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

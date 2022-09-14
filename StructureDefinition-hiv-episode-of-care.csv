@@ -133,7 +133,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./high"
-"EpisodeOfCare.referralRequest","EpisodeOfCare.referralRequest","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ServiceRequest]]}
+"EpisodeOfCare.referralRequest","EpisodeOfCare.referralRequest","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ServiceRequest]]}
 ","Originating Referral Request(s)","Referral Request(s) that are fulfilled by this EpisodeOfCare, incoming referrals.","","","","","","","","","",,,,,"",,,,"EpisodeOfCare.referralRequest",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.basedOn"
 "EpisodeOfCare.careManager","EpisodeOfCare.careManager","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole]]}

@@ -75,6 +75,18 @@
      fhir:index 15;
      fhir:Bundle.entry.fullUrl [ fhir:value "Observation/DeathExample" ];
      fhir:Bundle.entry.resource <Observation/DeathExample>
+  ], [
+     fhir:index 16;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/HIVCareMedicationRequestExample" ];
+     fhir:Bundle.entry.resource <Observation/HIVCareMedicationRequestExample>
+  ], [
+     fhir:index 17;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/HIVTransferOutExample" ];
+     fhir:Bundle.entry.resource <Observation/HIVTransferOutExample>
+  ], [
+     fhir:index 18;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/VLProcedureInfoExample" ];
+     fhir:Bundle.entry.resource <Observation/VLProcedureInfoExample>
   ] .
 
 <Composition/HIVCompositionExample> a fhir:Composition;
@@ -174,6 +186,10 @@
        fhir:index 1;
        fhir:link <http://openhie.org/fhir/hiv-casereporting/Encounter/HIVClinicalEncounterExample>;
        fhir:Reference.reference [ fhir:value "Encounter/HIVClinicalEncounterExample" ]
+     ], [
+       fhir:index 2;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/ServiceRequest/HIVTransferOutExample>;
+       fhir:Reference.reference [ fhir:value "ServiceRequest/HIVTransferOutExample" ]
      ]
   ], [
      fhir:index 3;
@@ -193,6 +209,9 @@
        fhir:index 1;
        fhir:link <http://openhie.org/fhir/hiv-casereporting/CarePlan/ARVTreatmentExample2>;
        fhir:Reference.reference [ fhir:value "CarePlan/ARVTreatmentExample2" ]
+     ], [
+       fhir:index 2;
+       fhir:Reference.reference [ fhir:value "HIVCareMedicationRequest" ]
      ]
   ], [
      fhir:index 4;
@@ -231,9 +250,28 @@
        fhir:index 1;
        fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/ViralLoadSuppressionExample2>;
        fhir:Reference.reference [ fhir:value "Observation/ViralLoadSuppressionExample2" ]
+     ], [
+       fhir:index 2;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Procedure/VLProcedureInfoExample>;
+       fhir:Reference.reference [ fhir:value "Procedure/VLProcedureInfoExample" ]
      ]
   ], [
      fhir:index 6;
+     fhir:Composition.section.title [ fhir:value "Death" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections" ];
+         fhir:Coding.code [ fhir:value "DEATH" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/DeathExample>;
+       fhir:Reference.reference [ fhir:value "Observation/DeathExample" ]
+     ]
+  ], [
+     fhir:index 7;
      fhir:Composition.section.title [ fhir:value "Death" ];
      fhir:Composition.section.code [
        fhir:CodeableConcept.coding [
@@ -259,8 +297,13 @@
      ]
   ];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"HIVDiagnosisEncounterExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter \"HIVDiagnosisEncounterExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-disgnosis-encounter.html\">HIV Diagnosis Encounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: pre-admission (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code PRENC = 'pre-admission', stated as 'null')</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>serviceProvider</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> \"HIV Organization\"</p></div>"
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"HIVDiagnosisEncounterExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter \"HIVDiagnosisEncounterExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-disgnosis-encounter.html\">HIV Diagnosis Encounter</a></p></div><p><b>Next Appointment Date</b>: 2022-10-22</p><p><b>status</b>: finished</p><p><b>class</b>: pre-admission (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code PRENC = 'pre-admission', stated as 'null')</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>serviceProvider</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> \"HIV Organization\"</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-care-next-visit" ];
+     fhir:Extension.valueDateTime [ fhir:value "2022-10-22"^^xsd:date ]
   ];
   fhir:Encounter.status [ fhir:value "finished"];
   fhir:Encounter.class [
@@ -313,7 +356,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"HIVPatientExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient \"HIVPatientExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-patient.html\">HIV Patient</a></p></div><p><b>genderIdentity</b>: male <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#male)</span></p><p><b>Key population</b>: transgender <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#transgender)</span></p><p><b>identifier</b>: id: ART1234567, id: PASSPORT1234567, id: NAT1234567, id: EMR1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane Smith (OFFICIAL)</p><p><b>telecom</b>: <a href=\"tel:+27825556666\">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><p><b>maritalStatus</b>: Married <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html\">MaritalStatus</a>#M)</span></p><p><b>managingOrganization</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> \"HIV Organization\"</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"HIVPatientExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient \"HIVPatientExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-patient.html\">HIV Patient</a></p></div><p><b>genderIdentity</b>: male <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#male)</span></p><p><b>Key population</b>: transgender <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#transgender)</span></p><p><b>identifier</b>: id: ART1234567, id: PASSPORT1234567, id: NAT1234567, MR: 100007G</p><p><b>active</b>: true</p><p><b>name</b>: Jane Smith (OFFICIAL)</p><p><b>telecom</b>: <a href=\"tel:+27825556666\">+27825556666</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-06-04</p><p><b>address</b>: Cape Town Western Province South Africa </p><p><b>maritalStatus</b>: Married <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html\">MaritalStatus</a>#M)</span></p><p><b>managingOrganization</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> \"HIV Organization\"</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -348,8 +391,14 @@
      fhir:Identifier.value [ fhir:value "NAT1234567" ]
   ], [
      fhir:index 3;
-     fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/identifier/facility1" ];
-     fhir:Identifier.value [ fhir:value "EMR1234567" ]
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "MR" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/OpenMRSID" ];
+     fhir:Identifier.value [ fhir:value "100007G" ]
   ];
   fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
   fhir:Patient.name [
@@ -532,7 +581,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: EpisodeOfCare</b><a name=\"HIVEpisodeOfCareExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource EpisodeOfCare \"HIVEpisodeOfCareExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-episode-of-care.html\">HIV Episode Of Care</a></p></div><p><b>identifier</b>: id: 123456789</p><p><b>status</b>: active</p><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Condition</b></td></tr><tr><td>*</td><td><a href=\"#Condition_HIVDiagnosisExample\">See above (Condition/HIVDiagnosisExample)</a></td></tr></table><p><b>patient</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>managingOrganization</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> \"HIV Organization\"</p><p><b>period</b>: 2021-08-25 --&gt; (ongoing)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: EpisodeOfCare</b><a name=\"HIVEpisodeOfCareExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource EpisodeOfCare \"HIVEpisodeOfCareExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-episode-of-care.html\">HIV Episode Of Care</a></p></div><p><b>identifier</b>: id: 123456789</p><p><b>status</b>: active</p><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Condition</b></td></tr><tr><td>*</td><td><a href=\"#Condition_HIVDiagnosisExample\">See above (Condition/HIVDiagnosisExample)</a></td></tr></table><p><b>patient</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>managingOrganization</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> \"HIV Organization\"</p><p><b>period</b>: 2021-08-25 --&gt; (ongoing)</p><p><b>referralRequest</b>: <a href=\"#ServiceRequest_HIVTransferOutExample\">See above (ServiceRequest/HIVTransferOutExample)</a></p></div>"
   ];
   fhir:EpisodeOfCare.identifier [
      fhir:index 0;
@@ -557,6 +606,11 @@
   ];
   fhir:EpisodeOfCare.period [
      fhir:Period.start [ fhir:value "2021-08-25"^^xsd:date ]
+  ];
+  fhir:EpisodeOfCare.referralRequest [
+     fhir:index 0;
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/ServiceRequest/HIVTransferOutExample>;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/HIVTransferOutExample" ]
   ] .
 
 <CarePlan/ARVTreatmentExample1> a fhir:CarePlan;
@@ -569,8 +623,18 @@
      ]
   ];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"ARVTreatmentExample1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan \"ARVTreatmentExample1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-arv-treatment.html\">ARVCarePlan</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>period</b>: 2021-05-20 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td></td><td>MedicationRequest</td><td>HIV ART medication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#45260-7)</span></td><td>stopped</td><td>TDF/3TC/DTG <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#TDF/3TC/DTG)</span></td></tr></table></blockquote></div>"
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"ARVTreatmentExample1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan \"ARVTreatmentExample1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-arv-treatment.html\">ARVCarePlan</a></p></div><p><b>ART Status</b>: IIT <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#IIT)</span></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>period</b>: 2021-05-20 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><p><b>outcomeCodeableConcept</b>: Refused <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (openconceptlab.org#162572)</span></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td></td><td>MedicationRequest</td><td>HIV ART medication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#45260-7)</span></td><td>stopped</td><td>?? --&gt; 2021-05-22</td><td>TDF/3TC/DTG <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#TDF/3TC/DTG)</span></td></tr></table></blockquote></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-status" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "IIT" ]
+       ]
+     ]
   ];
   fhir:CarePlan.status [ fhir:value "active"];
   fhir:CarePlan.intent [ fhir:value "plan"];
@@ -583,6 +647,15 @@
   ];
   fhir:CarePlan.activity [
      fhir:index 0;
+     fhir:CarePlan.activity.outcomeCodeableConcept [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://openconceptlab.org" ];
+         fhir:Coding.code [ fhir:value "162572" ];
+         fhir:Coding.display [ fhir:value "Refused" ]
+       ]
+     ];
      fhir:CarePlan.activity.detail [
        fhir:Element.extension [
          fhir:index 0;
@@ -605,6 +678,9 @@
          ]
        ];
        fhir:CarePlan.activity.detail.status [ fhir:value "stopped" ];
+       fhir:CarePlan.activity.detail.scheduledPeriod [
+         fhir:Period.end [ fhir:value "2021-05-22"^^xsd:date ]
+       ];
        fhir:CarePlan.activity.detail.productCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
@@ -624,8 +700,18 @@
      ]
   ];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"ARVTreatmentExample2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan \"ARVTreatmentExample2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-arv-treatment.html\">ARVCarePlan</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>period</b>: 2021-07-20 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td></td><td>MedicationRequest</td><td>HIV ART medication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#45260-7)</span></td><td>in-progress</td><td>TDF/3TC/EFV <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#TDF/3TC/EFV)</span></td></tr></table></blockquote></div>"
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"ARVTreatmentExample2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan \"ARVTreatmentExample2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-arv-treatment.html\">ARVCarePlan</a></p></div><p><b>ART Status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Active)</span></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>period</b>: 2021-07-20 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><p><b>outcomeCodeableConcept</b>: Contacted <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#439771001)</span></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td></td><td>MedicationRequest</td><td>HIV ART medication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#45260-7)</span></td><td>in-progress</td><td>TDF/3TC/EFV <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#TDF/3TC/EFV)</span></td></tr></table></blockquote></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-status" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "Active" ]
+       ]
+     ]
   ];
   fhir:CarePlan.status [ fhir:value "active"];
   fhir:CarePlan.intent [ fhir:value "plan"];
@@ -638,6 +724,16 @@
   ];
   fhir:CarePlan.activity [
      fhir:index 0;
+     fhir:CarePlan.activity.outcomeCodeableConcept [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:439771001;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "439771001" ];
+         fhir:Coding.display [ fhir:value "Contacted" ]
+       ]
+     ];
      fhir:CarePlan.activity.detail [
        fhir:Element.extension [
          fhir:index 0;
@@ -905,6 +1001,116 @@
        fhir:Coding.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath" ];
        fhir:Coding.code [ fhir:value "HIV" ];
        fhir:Coding.display [ fhir:value "HIV Related" ]
+     ]
+  ] .
+
+<Observation/HIVCareMedicationRequestExample> a fhir:MedicationRequest;
+  fhir:Resource.id [ fhir:value "HIVCareMedicationRequestExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-med-req";
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-med-req>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"HIVCareMedicationRequestExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest \"HIVCareMedicationRequestExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-med-req.html\">HIV Care Medication Request</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>medication</b>: HIV ART medication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#45260-7)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>basedOn</b>: <a href=\"#CarePlan_ARVTreatmentExample1\">See above (CarePlan/ARVTreatmentExample1)</a></p><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>30</td></tr></table></div>"
+  ];
+  fhir:MedicationRequest.status [ fhir:value "active"];
+  fhir:MedicationRequest.intent [ fhir:value "proposal"];
+  fhir:MedicationRequest.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:45260-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "45260-7" ];
+       fhir:Coding.display [ fhir:value "HIV ART medication" ]
+     ]
+  ];
+  fhir:MedicationRequest.subject [
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/Patient/HIVPatientExample>;
+     fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
+  ];
+  fhir:MedicationRequest.basedOn [
+     fhir:index 0;
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/CarePlan/ARVTreatmentExample1>;
+     fhir:Reference.reference [ fhir:value "CarePlan/ARVTreatmentExample1" ]
+  ];
+  fhir:MedicationRequest.dispenseRequest [
+     fhir:MedicationRequest.dispenseRequest.quantity [
+       fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ]
+     ]
+  ] .
+
+<Observation/HIVTransferOutExample> a fhir:ServiceRequest;
+  fhir:Resource.id [ fhir:value "HIVTransferOutExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-transfer-out";
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-transfer-out>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"HIVTransferOutExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest \"HIVTransferOutExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-transfer-out.html\">HIV Transfer Out Request</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>occurrence</b>: 2021-08-26</p></div>"
+  ];
+  fhir:ServiceRequest.status [ fhir:value "active"];
+  fhir:ServiceRequest.intent [ fhir:value "proposal"];
+  fhir:ServiceRequest.subject [
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/Patient/HIVPatientExample>;
+     fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
+  ];
+  fhir:ServiceRequest.occurrenceDateTime [ fhir:value "2021-08-26"^^xsd:date] .
+
+<Observation/VLProcedureInfoExample> a fhir:Procedure;
+  fhir:Resource.id [ fhir:value "VLProcedureInfoExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/vl-procedure-info";
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/vl-procedure-info>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"VLProcedureInfoExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure \"VLProcedureInfoExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vl-procedure-info.html\">VL Procedure info</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#108252007)</span></p><p><b>code</b>: viral load <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#315124004 \"Human immunodeficiency virus load\")</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href=\"HIVClinicalEncounter\">HIVClinicalEncounter</a></p><p><b>reasonCode</b>: Baseline Viral Load <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (vl-reason-code#5d4e13af-92ec-4b91-a8e4-97818810e577)</span></p></div>"
+  ];
+  fhir:Procedure.status [ fhir:value "final"];
+  fhir:Procedure.category [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:108252007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "108252007" ];
+       fhir:Coding.display [ fhir:value "Laboratory procedure" ]
+     ]
+  ];
+  fhir:Procedure.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:315124004;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "315124004" ];
+       fhir:Coding.display [ fhir:value "Human immunodeficiency virus load" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "viral load" ]
+  ];
+  fhir:Procedure.subject [
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/Patient/HIVPatientExample>;
+     fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
+  ];
+  fhir:Procedure.encounter [
+     fhir:Reference.reference [ fhir:value "HIVClinicalEncounter" ]
+  ];
+  fhir:Procedure.reasonCode [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-code" ];
+       fhir:Coding.code [ fhir:value "5d4e13af-92ec-4b91-a8e4-97818810e577" ];
+       fhir:Coding.display [ fhir:value "Baseline Viral Load" ]
      ]
   ] .
 

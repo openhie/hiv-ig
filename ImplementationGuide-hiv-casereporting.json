@@ -11,7 +11,7 @@
   "title": "HIV Case Reporting and Monitoring",
   "status": "draft",
   "experimental": false,
-  "date": "2022-09-13T13:24:33+00:00",
+  "date": "2022-09-14T08:32:49+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -380,6 +380,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cs-art-status"
+        },
+        "name": "ART Status code list",
+        "description": "A list of ART status codes"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -585,6 +598,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Procedure"
+          }
+        ],
+        "reference": {
+          "reference": "Procedure/VLProcedureInfoExample"
+        },
+        "name": "Example Procedure - VLProcedureInfoExample",
+        "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/vl-procedure-info"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Encounter"
           }
         ],
@@ -610,6 +636,18 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-care-next-visit"
+        },
+        "name": "Next Appointment Date"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
           }
         ],
@@ -618,6 +656,19 @@
         },
         "name": "Example Observation - HIVActualRecencyTestResultExample",
         "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-acutal-recency-test-result"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vl-procedure-info"
+        },
+        "name": "VL Procedure info",
+        "description": "VL Procedure info"
       },
       {
         "extension": [
@@ -670,6 +721,19 @@
         },
         "name": "Example Observation - ViralLoadSuppressionExample2",
         "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-hiv-vl-reason"
+        },
+        "name": "HIV VL Reason codes",
+        "description": "Valueset - Viral Load test reasons"
       },
       {
         "extension": [
@@ -770,9 +834,35 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/hiv-transfer-out"
+        },
+        "name": "HIV Transfer Out Request",
+        "description": "HIV Transfer Out Request"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/hiv-episode-of-care"
         },
         "name": "HIV Episode Of Care"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-med-req"
+        },
+        "name": "HIV Care Medication Request",
+        "description": "HIV Care Medication Request"
       },
       {
         "extension": [
@@ -798,6 +888,19 @@
           "reference": "CodeSystem/cs-artregimen-lines"
         },
         "name": "ART Regimen Lines"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/HIVCareMedicationRequestExample"
+        },
+        "name": "Example MedicationRequest - HIVCareMedicationRequestExample",
+        "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-med-req"
       },
       {
         "extension": [
@@ -837,6 +940,19 @@
         },
         "name": "HIV Diagnosis",
         "description": "This profile allows the exchange of a patient's hiv diagnosis"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/HIVTransferOutExample"
+        },
+        "name": "Example ServiceRequest - HIVTransferOutExample",
+        "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-transfer-out"
       },
       {
         "extension": [
@@ -971,6 +1087,18 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/art-status"
+        },
+        "name": "ART Status"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -1061,6 +1189,32 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-art-status"
+        },
+        "name": "Value-set for ART Status code",
+        "description": "Value-set for ART status codes"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-careplan-outcome"
+        },
+        "name": "ARV treatment outcomes",
+        "description": "Value-set for ARV treatment plan outcomes"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -1069,6 +1223,19 @@
         },
         "name": "HIV Organization",
         "description": "HIV Organization for case report - this represents a health facility"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/vl-reason-codes"
+        },
+        "name": "HIV VL Reason codes",
+        "description": "A list of Viral Load test reasons"
       },
       {
         "extension": [

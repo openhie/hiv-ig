@@ -13,6 +13,21 @@
       ]
     },
     {
+      "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-status",
+      "title": "ART Status",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-care-next-visit",
+      "title": "Next Appointment Date",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
       "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/key-population",
       "title": "Key population",
       "types": [
@@ -73,6 +88,12 @@
         "title": "HIV Episode Of Care"
       }
     ],
+    "MedicationRequest": [
+      {
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-med-req",
+        "title": "HIV Care Medication Request"
+      }
+    ],
     "Organization": [
       {
         "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-organization",
@@ -89,6 +110,18 @@
       {
         "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-related-person",
         "title": "HIV Related Person"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-transfer-out",
+        "title": "HIV Transfer Out Request"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/vl-procedure-info",
+        "title": "VL Procedure info"
       }
     ]
   },
@@ -142,6 +175,14 @@
     "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-regimen-line": [
       "Bundle.entry.resource.activity.detail",
       "CarePlan.activity.detail"
+    ],
+    "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-status": [
+      "Bundle.entry.resource",
+      "CarePlan"
+    ],
+    "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-care-next-visit": [
+      "Bundle.entry.resource",
+      "Encounter"
     ],
     "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/key-population": [
       "Bundle.entry.resource",

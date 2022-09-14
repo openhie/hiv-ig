@@ -12,7 +12,7 @@
   <title value="HIV Case Reporting and Monitoring"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-09-13T13:24:33+00:00"/>
+  <date value="2022-09-14T08:32:49+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -238,6 +238,16 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-art-status"/>
+      </reference>
+      <name value="ART Status code list"/>
+      <description value="A list of ART status codes"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -395,6 +405,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/VLProcedureInfoExample"/>
+      </reference>
+      <name value="Example Procedure - VLProcedureInfoExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/vl-procedure-info"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Encounter"/>
       </extension>
       <reference>
@@ -414,6 +434,15 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-care-next-visit"/>
+      </reference>
+      <name value="Next Appointment Date"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -421,6 +450,16 @@
       </reference>
       <name value="Example Observation - HIVActualRecencyTestResultExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-acutal-recency-test-result"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vl-procedure-info"/>
+      </reference>
+      <name value="VL Procedure info"/>
+      <description value="VL Procedure info"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -461,6 +500,16 @@
       </reference>
       <name value="Example Observation - ViralLoadSuppressionExample2"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-hiv-vl-reason"/>
+      </reference>
+      <name value="HIV VL Reason codes"/>
+      <description value="Valueset - Viral Load test reasons"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -537,9 +586,29 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/hiv-transfer-out"/>
+      </reference>
+      <name value="HIV Transfer Out Request"/>
+      <description value="HIV Transfer Out Request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/hiv-episode-of-care"/>
       </reference>
       <name value="HIV Episode Of Care"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-med-req"/>
+      </reference>
+      <name value="HIV Care Medication Request"/>
+      <description value="HIV Care Medication Request"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -559,6 +628,16 @@
         <reference value="CodeSystem/cs-artregimen-lines"/>
       </reference>
       <name value="ART Regimen Lines"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/HIVCareMedicationRequestExample"/>
+      </reference>
+      <name value="Example MedicationRequest - HIVCareMedicationRequestExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-med-req"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -589,6 +668,16 @@
       </reference>
       <name value="HIV Diagnosis"/>
       <description value="This profile allows the exchange of a patient's hiv diagnosis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/HIVTransferOutExample"/>
+      </reference>
+      <name value="Example ServiceRequest - HIVTransferOutExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-transfer-out"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -691,6 +780,15 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/art-status"/>
+      </reference>
+      <name value="ART Status"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -760,6 +858,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-art-status"/>
+      </reference>
+      <name value="Value-set for ART Status code"/>
+      <description value="Value-set for ART status codes"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-careplan-outcome"/>
+      </reference>
+      <name value="ARV treatment outcomes"/>
+      <description value="Value-set for ARV treatment plan outcomes"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -767,6 +885,16 @@
       </reference>
       <name value="HIV Organization"/>
       <description value="HIV Organization for case report - this represents a health facility"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/vl-reason-codes"/>
+      </reference>
+      <name value="HIV VL Reason codes"/>
+      <description value="A list of Viral Load test reasons"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ARTRegimenLine"];
   fhir:StructureDefinition.title [ fhir:value "ART Regimen Line"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-09-13T13:24:33+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-09-14T08:32:49+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "OpenHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

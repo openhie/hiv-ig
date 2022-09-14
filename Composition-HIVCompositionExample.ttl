@@ -104,6 +104,10 @@
        fhir:index 1;
        fhir:link <http://openhie.org/fhir/hiv-casereporting/Encounter/HIVClinicalEncounterExample>;
        fhir:Reference.reference [ fhir:value "Encounter/HIVClinicalEncounterExample" ]
+     ], [
+       fhir:index 2;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/ServiceRequest/HIVTransferOutExample>;
+       fhir:Reference.reference [ fhir:value "ServiceRequest/HIVTransferOutExample" ]
      ]
   ], [
      fhir:index 3;
@@ -123,6 +127,9 @@
        fhir:index 1;
        fhir:link <http://openhie.org/fhir/hiv-casereporting/CarePlan/ARVTreatmentExample2>;
        fhir:Reference.reference [ fhir:value "CarePlan/ARVTreatmentExample2" ]
+     ], [
+       fhir:index 2;
+       fhir:Reference.reference [ fhir:value "HIVCareMedicationRequest" ]
      ]
   ], [
      fhir:index 4;
@@ -161,9 +168,28 @@
        fhir:index 1;
        fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/ViralLoadSuppressionExample2>;
        fhir:Reference.reference [ fhir:value "Observation/ViralLoadSuppressionExample2" ]
+     ], [
+       fhir:index 2;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Procedure/VLProcedureInfoExample>;
+       fhir:Reference.reference [ fhir:value "Procedure/VLProcedureInfoExample" ]
      ]
   ], [
      fhir:index 6;
+     fhir:Composition.section.title [ fhir:value "Death" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections" ];
+         fhir:Coding.code [ fhir:value "DEATH" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/DeathExample>;
+       fhir:Reference.reference [ fhir:value "Observation/DeathExample" ]
+     ]
+  ], [
+     fhir:index 7;
      fhir:Composition.section.title [ fhir:value "Death" ];
      fhir:Composition.section.code [
        fhir:CodeableConcept.coding [

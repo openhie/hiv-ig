@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="VLProcedureInfoExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/vl-procedure-info"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Procedure</b><a name="VLProcedureInfoExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Procedure "VLProcedureInfoExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-vl-procedure-info.html">VL Procedure info</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory procedure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#108252007)</span></p><p><b>code</b>: viral load <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#315124004 "Human immunodeficiency virus load")</span></p><p><b>subject</b>: <a href="Patient-HIVPatientExample.html">Patient/HIVPatientExample</a> " SMITH"</p><p><b>encounter</b>: <a href="HIVClinicalEncounter">HIVClinicalEncounter</a></p><p><b>reasonCode</b>: Baseline Viral Load <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (vl-reason-code#5d4e13af-92ec-4b91-a8e4-97818810e577)</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="108252007"/>
+      <display value="Laboratory procedure"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="315124004"/>
+      <display value="Human immunodeficiency virus load"/>
+    </coding>
+    <text value="viral load"/>
+  </code>
+  <subject>
+    <reference value="Patient/HIVPatientExample"/>
+  </subject>
+  <encounter>
+    <reference value="HIVClinicalEncounter"/>
+  </encounter>
+  <reasonCode>
+    <coding>
+      <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-code"/>
+      <code value="5d4e13af-92ec-4b91-a8e4-97818810e577"/>
+      <display value="Baseline Viral Load"/>
+    </coding>
+  </reasonCode>
+</Procedure>

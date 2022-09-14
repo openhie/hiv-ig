@@ -74,6 +74,9 @@
     <entry>
       <reference value="Encounter/HIVClinicalEncounterExample"/>
     </entry>
+    <entry>
+      <reference value="ServiceRequest/HIVTransferOutExample"/>
+    </entry>
   </section>
   <section>
     <title value="ARV Treatment"/>
@@ -88,6 +91,9 @@
     </entry>
     <entry>
       <reference value="CarePlan/ARVTreatmentExample2"/>
+    </entry>
+    <entry>
+      <reference value="HIVCareMedicationRequest"/>
     </entry>
   </section>
   <section>
@@ -118,6 +124,21 @@
     </entry>
     <entry>
       <reference value="Observation/ViralLoadSuppressionExample2"/>
+    </entry>
+    <entry>
+      <reference value="Procedure/VLProcedureInfoExample"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Death"/>
+    <code>
+      <coding>
+        <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections"/>
+        <code value="DEATH"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/DeathExample"/>
     </entry>
   </section>
   <section>
