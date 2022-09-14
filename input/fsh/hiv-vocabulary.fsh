@@ -1,6 +1,6 @@
 Alias: $SCT = http://snomed.info/sct
 Alias: $LNC = http://loinc.org
-Alias: $CIEL = http://https://openconceptlab.org
+Alias: $CIEL = https://openconceptlab.org
 Alias: $MaritalStatus = http://hl7.org/fhir/ValueSet/marital-status
 
 CodeSystem: CSKeyPopulation

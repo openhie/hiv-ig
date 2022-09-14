@@ -142,8 +142,7 @@ Title: "HIV Patient example"
 Description: "."
 * active = true
 * name.use = #official
-* name.given[0].value = "Jane Given Name" //given name
-* name.given[1].value = "Jane Middle Name" //middle name
+* name.given = "Jane" 
 * name.family = "Smith"
 * maritalStatus.coding[0].code = #M
 * maritalStatus.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
