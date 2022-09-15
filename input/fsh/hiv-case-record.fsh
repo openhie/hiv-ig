@@ -329,6 +329,7 @@ Description: "HIV viral load"
     vlSuppression 1..1
 * interpretation[vlResult] from VSVLInterpretation
 * interpretation[vlSuppression] from VSVLSuppression
+* note MS 
 
 Extension: LastClinicalVisit
 Id: last-clinical-visit
