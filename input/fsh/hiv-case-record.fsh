@@ -114,6 +114,7 @@ Description: "HIV Encounter for a case report"
 * subject 1..1
 * period.start 1..1
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#OBSENC
+* extension contains HIVCareNextAppointment named next-visit 0..1 MS 
 
 Profile: HIVOrganization
 Parent: Organization

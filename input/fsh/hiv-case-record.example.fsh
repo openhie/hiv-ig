@@ -117,6 +117,7 @@ Description: "HIV Clinical Encounter example"
 * status = #finished
 * period.start = "2021-07-22"
 * subject = Reference(HIVPatientExample)
+* extension[next-visit].valueDateTime = "2022-10-22"
 
 Instance: HIVOrganizationExample
 InstanceOf: HIVOrganization
@@ -299,6 +300,7 @@ Description: ""
 * extension[artStatus].valueCodeableConcept = #Active
 * activity.outcomeCodeableConcept = $SCT#439771001 
 * activity.outcomeCodeableConcept.coding.display = "Contacted"
+* activity.detail.scheduledPeriod.end = "2022-10-22"
 
 Instance: CD4Example1
 InstanceOf: CD4
