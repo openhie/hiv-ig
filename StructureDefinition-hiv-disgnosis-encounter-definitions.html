@@ -51,8 +51,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.7"}
-    h3,h4,h5,h6{--heading-prefix:"3.7"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.9"}
+    h3,h4,h5,h6{--heading-prefix:"3.9"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -234,7 +234,7 @@
         
           Active
           
-            as of 2022-09-14
+            as of 2022-09-16
           
         
       </td>
@@ -423,7 +423,7 @@ Current state of the encounter.</p>
   <tr><td>Definition</td><td><p>Concepts representing classification of patient encounter such as ambulatory (outpatient), inpatient, emergency, home health or others due to local variations.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://terminology.hl7.org/3.1.0/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a>; other codes may be used where these codes are not suitable
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://terminology.hl7.org/4.0.0/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a>; other codes may be used where these codes are not suitable
 Classification of the encounter.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
@@ -470,7 +470,7 @@ Classification of the encounter.</p>
   <tr><td>Definition</td><td><p>inpatient | outpatient | ambulatory | emergency +.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://terminology.hl7.org/3.1.0/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a>; other codes may be used where these codes are not suitable
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://terminology.hl7.org/4.0.0/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a>; other codes may be used where these codes are not suitable
 Classification of the encounter.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
@@ -509,7 +509,7 @@ Broad categorization of the service that is to be provided.</p>
   <tr><td>Definition</td><td><p>Indicates the urgency of the encounter.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://terminology.hl7.org/3.1.0/ValueSet-v3-ActPriority.html">ActPriority</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://terminology.hl7.org/4.0.0/ValueSet-v3-ActPriority.html">ActPriority</a>
 Indicates the urgency of the encounter.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
@@ -789,7 +789,7 @@ From where the patient was admitted.</p>
   <tr><td>Definition</td><td><p>Whether this hospitalization is a readmission and why if known.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://terminology.hl7.org/3.1.0/ValueSet-v2-0092.html">hl7VS-re-admissionIndicator</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://terminology.hl7.org/4.0.0/ValueSet-v2-0092.html">hl7VS-re-admissionIndicator</a>
 The reason for re-admission of this hospitalization encounter.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
@@ -995,7 +995,7 @@ Physical form of the location.</p>
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://xxhl7.org/Special/committees/[something]">OpenHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 14, 2022 09:10+0000">2022-09-14</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://xxhl7.org/Special/committees/[something]">OpenHIE</a>.  Package openhie.fhir.hiv#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 16, 2022 12:02+0000">2022-09-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

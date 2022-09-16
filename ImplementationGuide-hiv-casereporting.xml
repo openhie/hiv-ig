@@ -12,7 +12,7 @@
   <title value="HIV Case Reporting and Monitoring"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-09-14T09:10:35+00:00"/>
+  <date value="2022-09-16T12:02:49+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -33,7 +33,7 @@
   <dependsOn id="hl7tx">
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="3.1.0"/>
+    <version value="4.0.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -326,6 +326,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/VLSpecimenExample"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -363,6 +371,16 @@
       </reference>
       <name value="Key population"/>
       <description value="A list of key population types"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/viral-load-specimen"/>
+      </reference>
+      <name value="Viral Load Specimen"/>
+      <description value="Viral Load Specimen"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -422,6 +440,16 @@
       </reference>
       <name value="Example Encounter - HIVClinicalEncounterExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-clinical-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-service-request"/>
+      </reference>
+      <name value="HIV Service Request"/>
+      <description value="HIV Service Request"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -648,6 +676,14 @@
       </reference>
       <name value="Example Observation - CD4Example1"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-test"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/HIVServiceRequestExample"/>
+      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

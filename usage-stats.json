@@ -114,8 +114,18 @@
     ],
     "ServiceRequest": [
       {
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-service-request",
+        "title": "HIV Service Request"
+      },
+      {
         "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-transfer-out",
         "title": "HIV Transfer Out Request"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/viral-load-specimen",
+        "title": "Viral Load Specimen"
       }
     ],
     "Procedure": [

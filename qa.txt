@@ -1,11 +1,11 @@
 ﻿HIVCaseReporting : Validation Results
 =========================================
 
-err = 143, warn = 97, info = 68
+err = 145, warn = 102, info = 70
 IG Publisher Version: 1.2.1
-Generated Wed Sep 14 09:11:53 UTC 2022. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir/hiv-casereporting)
- Build Errors : 2 / 36 / 0
- /github/workspace/fsh-generated/resources/Bundle-HIVBundleExample : 77 / 22 / 80
+Generated Fri Sep 16 12:05:04 UTC 2022. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir/hiv-casereporting)
+ Build Errors : 4 / 38 / 0
+ /github/workspace/fsh-generated/resources/Bundle-HIVBundleExample : 77 / 23 / 84
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample1 : 2 / 3 / 2
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample2 : 2 / 4 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-art-status : 0 / 0 / 2
@@ -38,7 +38,9 @@ Generated Wed Sep 14 09:11:53 UTC 2022. FHIR version 4.0.1 for openhie.fhir.hiv#
  /github/workspace/fsh-generated/resources/Patient-HIVPatientExample : 6 / 3 / 1
  /github/workspace/fsh-generated/resources/Procedure-VLProcedureInfoExample : 3 / 1 / 2
  /github/workspace/fsh-generated/resources/RelatedPerson-GuardianExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-HIVServiceRequestExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-HIVTransferOutExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Specimen-VLSpecimenExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-art-regimen-line : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-art-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-death-obs : 0 / 0 / 1
@@ -58,12 +60,14 @@ Generated Wed Sep 14 09:11:53 UTC 2022. FHIR version 4.0.1 for openhie.fhir.hiv#
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-recency-result : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-recency-test-conducted : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-related-person : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-service-request : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-transfer-out : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-viral-load-suppression : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-viral-load-suppression-most-recent-test-date : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-viral-load-suppression-most-recent-test-result : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-key-population : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-last-clinical-visit : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-viral-load-specimen : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-vl-procedure-info : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-art-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines : 0 / 0 / 1
@@ -81,6 +85,8 @@ WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/death-obs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-case-report-sections.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ViralLoadSuppressionExample1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Specimen/VLSpecimenExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Specimen/VLSpecimenExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/HIVRecencyResultExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/ARVTreatmentExample2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource EpisodeOfCare/HIVEpisodeOfCareExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -102,6 +108,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-artregimen-lines.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/HIVCareMedicationRequestExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/CD4Example1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ServiceRequest/HIVServiceRequestExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/HIVServiceRequestExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/HIVTransferOutExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/HIVPatientExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/DeathExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -253,9 +261,12 @@ ERROR: Bundle/HIVBundleExample: Bundle.entry[18].resource.ofType(Procedure).enco
 ERROR: Bundle/HIVBundleExample: Bundle.entry[18].resource.ofType(Procedure).encounter: Unable to resolve resource with reference 'HIVClinicalEncounter'
 INFORMATION: Bundle/HIVBundleExample: Bundle.entry[18].resource.ofType(Procedure).reasonCode[0].coding[0]: Code System URI 'http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-code' is unknown so the code cannot be validated
 ERROR: Bundle/HIVBundleExample: Bundle.entry[18].resource.ofType(Procedure).reasonCode[0]: None of the codings provided are in the value set 'HIV VL Reason codes' (http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-vl-reason), and a coding from this value set is required) (codes = http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-code#5d4e13af-92ec-4b91-a8e4-97818810e577)
+INFORMATION: Bundle/HIVBundleExample: Bundle.entry[19].resource.ofType(ServiceRequest).subject: Details for Patient/HIVPatientExample matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/HIVBundleExample: Bundle.entry[20].resource.ofType(Specimen).subject: Details for Patient/HIVPatientExample matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
 ERROR: Bundle/HIVBundleExample: Bundle.entry[1].resource.author[1].reference: Can't find 'Organization/HIVOrganizationExample' in the bundle (Composition.author)
 ERROR: Bundle/HIVBundleExample: Bundle.entry[1].resource.section[4].entry[3].reference: Can't find 'HIVCareMedicationRequest' in the bundle (Section Entry)
-WARNING: Bundle/HIVBundleExample: Bundle.entry[20]: Entry 'Observation/HIVCareMedicationRequestExample' isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
+WARNING: Bundle/HIVBundleExample: Bundle.entry[22]: Entry 'Observation/HIVCareMedicationRequestExample' isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
+WARNING: Bundle/HIVBundleExample: Bundle.entry[22]: Entry 'ServiceRequest/HIVServiceRequestExample' isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
 == fsh-generated/resources/CarePlan-ARVTreatmentExample1.json ==
 ERROR: CarePlan/ARVTreatmentExample1: CarePlan.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Value-set for ART Status code' (http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-art-status), and a coding from this value set is required) (codes = null#IIT)
 WARNING: CarePlan/ARVTreatmentExample1: CarePlan.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -402,7 +413,9 @@ ERROR: Procedure/VLProcedureInfoExample: Procedure.encounter: Unable to resolve 
 ERROR: Procedure/VLProcedureInfoExample: Procedure.reasonCode[0]: None of the codings provided are in the value set 'HIV VL Reason codes' (http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-vl-reason), and a coding from this value set is required) (codes = http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-code#5d4e13af-92ec-4b91-a8e4-97818810e577)
 INFORMATION: Procedure/VLProcedureInfoExample: Procedure.reasonCode[0].coding[0]: Code System URI 'http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-code' is unknown so the code cannot be validated
 == fsh-generated/resources/RelatedPerson-GuardianExample.json ==
+== fsh-generated/resources/ServiceRequest-HIVServiceRequestExample.json ==
 == fsh-generated/resources/ServiceRequest-HIVTransferOutExample.json ==
+== fsh-generated/resources/Specimen-VLSpecimenExample.json ==
 == fsh-generated/resources/StructureDefinition-art-regimen-line.json ==
 == fsh-generated/resources/StructureDefinition-art-status.json ==
 == fsh-generated/resources/StructureDefinition-death-obs.json ==
@@ -433,6 +446,8 @@ WARNING: StructureDefinition/hiv-recency-result: StructureDefinition.snapshot.el
 WARNING: StructureDefinition/hiv-recency-result: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: Display Name for http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes#HIV-RECENCY-RESULT should be one of 'HIV recency result' instead of 'HIV recency test conducted' for 'http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes#HIV-RECENCY-RESULT'
 == fsh-generated/resources/StructureDefinition-hiv-recency-test-conducted.json ==
 == fsh-generated/resources/StructureDefinition-hiv-related-person.json ==
+== fsh-generated/resources/StructureDefinition-hiv-service-request.json ==
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-service-request'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-hiv-transfer-out.json ==
 == fsh-generated/resources/StructureDefinition-hiv-viral-load-suppression.json ==
 == fsh-generated/resources/StructureDefinition-hiv-viral-load-suppression-most-recent-test-date.json ==
@@ -443,6 +458,8 @@ WARNING: StructureDefinition/hiv-viral-load-suppression-most-recent-test-result:
 WARNING: StructureDefinition/hiv-viral-load-suppression-most-recent-test-result: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: Display Name for http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes#HIV-RECENCY-TEST-CONDUCTED should be one of 'HIV recency test conducted' instead of 'VL most recent test result' for 'http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes#HIV-RECENCY-TEST-CONDUCTED'
 == fsh-generated/resources/StructureDefinition-key-population.json ==
 == fsh-generated/resources/StructureDefinition-last-clinical-visit.json ==
+== fsh-generated/resources/StructureDefinition-viral-load-specimen.json ==
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/hiv-casereporting/StructureDefinition/viral-load-specimen'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-vl-procedure-info.json ==
 == fsh-generated/resources/ValueSet-vs-art-status.json ==
 == fsh-generated/resources/ValueSet-vs-artregimen-lines.json ==
