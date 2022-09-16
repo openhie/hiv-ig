@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="HIVCareMedicationRequestExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-med-req"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationRequest</b><a name="HIVCareMedicationRequestExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationRequest "HIVCareMedicationRequestExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-med-req.html">HIV Care Medication Request</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>medication</b>: HIV ART medication <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#45260-7)</span></p><p><b>subject</b>: <a href="Patient-HIVPatientExample.html">Patient/HIVPatientExample</a> " SMITH"</p><p><b>basedOn</b>: <a href="CarePlan-ARVTreatmentExample1.html">CarePlan/ARVTreatmentExample1</a></p><h3>DispenseRequests</h3><table class="grid"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>30</td></tr></table></div>
+  </text>
+  <status value="active"/>
+  <intent value="proposal"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="45260-7"/>
+      <display value="HIV ART medication"/>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/HIVPatientExample"/>
+  </subject>
+  <basedOn>
+    <reference value="CarePlan/ARVTreatmentExample1"/>
+  </basedOn>
+  <dispenseRequest>
+    <quantity>
+      <value value="30"/>
+    </quantity>
+  </dispenseRequest>
+</MedicationRequest>

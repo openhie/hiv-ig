@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="HIVActualRecencyTestResultExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-acutal-recency-test-result"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="HIVActualRecencyTestResultExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation "HIVActualRecencyTestResultExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-acutal-recency-test-result.html">HIV Actual Recency Test Result</a></p></div><p><b>status</b>: final</p><p><b>code</b>: HIV actual recency test result <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cs-hiv-obs-codes.html">HIV Case Report Observation codes</a>#HIV-RECENCY-TEST-CONDUCTED)</span></p><p><b>subject</b>: <a href="Patient-HIVPatientExample.html">Patient/HIVPatientExample</a> " SMITH"</p><p><b>encounter</b>: <a href="Encounter-HIVClinicalEncounterExample.html">Encounter/HIVClinicalEncounterExample</a></p><p><b>value</b>: Test</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes"/>
+      <code value="HIV-RECENCY-TEST-CONDUCTED"/>
+      <display value="HIV actual recency test result"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/HIVPatientExample"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/HIVClinicalEncounterExample"/>
+  </encounter>
+  <valueString value="Test"/>
+</Observation>

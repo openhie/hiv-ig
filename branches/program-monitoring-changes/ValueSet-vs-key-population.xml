@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-key-population"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-cs-key-population.html"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population</code></a></li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-key-population"/>
+  <version value="0.2.0"/>
+  <name value="VSKeyPopulation"/>
+  <title value="Key population"/>
+  <status value="active"/>
+  <date value="2022-09-16T12:02:49+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://xxhl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="A list of key population types"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population"/>
+    </include>
+  </compose>
+</ValueSet>

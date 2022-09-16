@@ -1,0 +1,19 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "HIVServiceRequestExample",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"HIVServiceRequestExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest \"HIVServiceRequestExample\" </p></div><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> \" SMITH\"</p><p><b>occurrence</b>: 2022-08-26</p><p><b>specimen</b>: <a href=\"Specimen-VLSpecimenExample.html\">Specimen/VLSpecimenExample</a></p></div>"
+  },
+  "status": "active",
+  "intent": "order",
+  "subject": {
+    "reference": "Patient/HIVPatientExample"
+  },
+  "occurrenceDateTime": "2022-08-26",
+  "specimen": [
+    {
+      "reference": "Specimen/VLSpecimenExample"
+    }
+  ]
+}

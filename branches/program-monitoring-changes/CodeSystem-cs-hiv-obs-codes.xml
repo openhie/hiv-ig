@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-hiv-obs-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">HIV-RECENCY-TEST-CONDUCTED<a name="cs-hiv-obs-codes-HIV-RECENCY-TEST-CONDUCTED"> </a></td><td>HIV recency test conducted</td></tr><tr><td style="white-space:nowrap">HIV-RECENCY-RESULT<a name="cs-hiv-obs-codes-HIV-RECENCY-RESULT"> </a></td><td>HIV recency result</td></tr><tr><td style="white-space:nowrap">CD4-RESULT<a name="cs-hiv-obs-codes-CD4-RESULT"> </a></td><td>CD4 result</td></tr><tr><td style="white-space:nowrap">VL-RESULT<a name="cs-hiv-obs-codes-VL-RESULT"> </a></td><td>Viral load result</td></tr><tr><td style="white-space:nowrap">CAUSE-OF-DEATH<a name="cs-hiv-obs-codes-CAUSE-OF-DEATH"> </a></td><td>Cause of death</td></tr><tr><td style="white-space:nowrap">HIV-DATE-RECENCY-TEST<a name="cs-hiv-obs-codes-HIV-DATE-RECENCY-TEST"> </a></td><td>HIV date recency rest</td></tr><tr><td style="white-space:nowrap">HIV-ACTUAL-RECENCY-TEST-RESULT<a name="cs-hiv-obs-codes-HIV-ACTUAL-RECENCY-TEST-RESULT"> </a></td><td>HIV actual recency test result</td></tr><tr><td style="white-space:nowrap">VL-MOST-RECENT-TEST-DATE<a name="cs-hiv-obs-codes-VL-MOST-RECENT-TEST-DATE"> </a></td><td>VL most recent test date</td></tr><tr><td style="white-space:nowrap">VL-MOST-RECENT-TEST-RESULT<a name="cs-hiv-obs-codes-VL-MOST-RECENT-TEST-RESULT"> </a></td><td>VL most recent test result</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes"/>
+  <version value="0.2.0"/>
+  <name value="CSHIVObsCodes"/>
+  <title value="HIV Case Report Observation codes"/>
+  <status value="active"/>
+  <date value="2022-09-16T12:02:49+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://xxhl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="HIV-RECENCY-TEST-CONDUCTED"/>
+    <display value="HIV recency test conducted"/>
+  </concept>
+  <concept>
+    <code value="HIV-RECENCY-RESULT"/>
+    <display value="HIV recency result"/>
+  </concept>
+  <concept>
+    <code value="CD4-RESULT"/>
+    <display value="CD4 result"/>
+  </concept>
+  <concept>
+    <code value="VL-RESULT"/>
+    <display value="Viral load result"/>
+  </concept>
+  <concept>
+    <code value="CAUSE-OF-DEATH"/>
+    <display value="Cause of death"/>
+  </concept>
+  <concept>
+    <code value="HIV-DATE-RECENCY-TEST"/>
+    <display value="HIV date recency rest"/>
+  </concept>
+  <concept>
+    <code value="HIV-ACTUAL-RECENCY-TEST-RESULT"/>
+    <display value="HIV actual recency test result"/>
+  </concept>
+  <concept>
+    <code value="VL-MOST-RECENT-TEST-DATE"/>
+    <display value="VL most recent test date"/>
+  </concept>
+  <concept>
+    <code value="VL-MOST-RECENT-TEST-RESULT"/>
+    <display value="VL most recent test result"/>
+  </concept>
+</CodeSystem>

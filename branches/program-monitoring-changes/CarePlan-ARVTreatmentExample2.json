@@ -1,0 +1,83 @@
+{
+  "resourceType": "CarePlan",
+  "id": "ARVTreatmentExample2",
+  "meta": {
+    "profile": [
+      "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"ARVTreatmentExample2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan \"ARVTreatmentExample2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-arv-treatment.html\">ARVCarePlan</a></p></div><p><b>ART Status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Active)</span></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> \" SMITH\"</p><p><b>period</b>: 2021-07-20 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><p><b>outcomeCodeableConcept</b>: Contacted <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#439771001)</span></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td></td><td>MedicationRequest</td><td>HIV ART medication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#45260-7)</span></td><td>in-progress</td><td>?? --&gt; 2022-10-22</td><td>TDF/3TC/EFV <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#TDF/3TC/EFV)</span></td></tr></table></blockquote></div>"
+  },
+  "extension": [
+    {
+      "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-status",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Active"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "plan",
+  "subject": {
+    "reference": "Patient/HIVPatientExample"
+  },
+  "period": {
+    "start": "2021-07-20"
+  },
+  "activity": [
+    {
+      "outcomeCodeableConcept": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "439771001",
+              "display": "Contacted"
+            }
+          ]
+        }
+      ],
+      "detail": {
+        "extension": [
+          {
+            "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-regimen-line",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "SECOND-LINE"
+                }
+              ]
+            }
+          }
+        ],
+        "kind": "MedicationRequest",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "45260-7",
+              "display": "HIV ART medication"
+            }
+          ]
+        },
+        "status": "in-progress",
+        "scheduledPeriod": {
+          "end": "2022-10-22"
+        },
+        "productCodeableConcept": {
+          "coding": [
+            {
+              "code": "TDF/3TC/EFV"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

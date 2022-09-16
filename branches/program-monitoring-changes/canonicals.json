@@ -1,0 +1,331 @@
+[
+  {
+    "id": "cs-art-status",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-art-status",
+    "version": "0.2.0",
+    "name": "CSARTStatus"
+  },
+  {
+    "id": "cs-artregimen-lines",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines",
+    "version": "0.2.0",
+    "name": "CSARTRegimenLines"
+  },
+  {
+    "id": "cs-case-report-sections",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections",
+    "version": "0.2.0",
+    "name": "CSCaseReportSections"
+  },
+  {
+    "id": "cs-hiv-obs-codes",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes",
+    "version": "0.2.0",
+    "name": "CSHIVObsCodes"
+  },
+  {
+    "id": "cs-key-population",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-key-population",
+    "version": "0.2.0",
+    "name": "CSKeyPopulation"
+  },
+  {
+    "id": "cs-vl-causeofdeath",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath",
+    "version": "0.2.0",
+    "name": "CSVLCauseOfDeath"
+  },
+  {
+    "id": "cs-vl-interpretation",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-interpretation",
+    "version": "0.2.0",
+    "name": "CSVLInterpretation"
+  },
+  {
+    "id": "cs-vl-suppression",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-suppression",
+    "version": "0.2.0",
+    "name": "CSVLSuppression"
+  },
+  {
+    "id": "vl-reason-codes",
+    "type": "CodeSystem",
+    "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-codes",
+    "version": "0.2.0",
+    "name": "CSHIVVLReason"
+  },
+  {
+    "id": "hiv-casereporting",
+    "type": "ImplementationGuide",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ImplementationGuide/hiv-casereporting",
+    "version": "0.2.0",
+    "name": "HIVCaseReporting"
+  },
+  {
+    "id": "art-regimen-line",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-regimen-line",
+    "version": "0.2.0",
+    "name": "ARTRegimenLine"
+  },
+  {
+    "id": "art-status",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/art-status",
+    "version": "0.2.0",
+    "name": "ARTStatus"
+  },
+  {
+    "id": "death-obs",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/death-obs",
+    "version": "0.2.0",
+    "name": "DeathObs"
+  },
+  {
+    "id": "hiv-acutal-recency-test-result",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-acutal-recency-test-result",
+    "version": "0.2.0",
+    "name": "HIVActualRecencyTestResult"
+  },
+  {
+    "id": "hiv-arv-treatment",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-arv-treatment",
+    "version": "0.2.0",
+    "name": "ARVTreatment"
+  },
+  {
+    "id": "hiv-care-next-visit",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-care-next-visit",
+    "version": "0.2.0",
+    "name": "HIVCareNextAppointment"
+  },
+  {
+    "id": "hiv-cd4-test",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-test",
+    "version": "0.2.0",
+    "name": "CD4"
+  },
+  {
+    "id": "hiv-clinical-encounter",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-clinical-encounter",
+    "version": "0.2.0",
+    "name": "HIVClinicalEncounter"
+  },
+  {
+    "id": "hiv-composition",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition",
+    "version": "0.2.0",
+    "name": "HIVComposition"
+  },
+  {
+    "id": "hiv-date-recency-test",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-date-recency-test",
+    "version": "0.2.0",
+    "name": "HIVDateOfRecencyTest"
+  },
+  {
+    "id": "hiv-diagnosis",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-diagnosis",
+    "version": "0.2.0",
+    "name": "HIVDiagnosis"
+  },
+  {
+    "id": "hiv-disgnosis-encounter",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-disgnosis-encounter",
+    "version": "0.2.0",
+    "name": "HIVDiagnosisEncounter"
+  },
+  {
+    "id": "hiv-episode-of-care",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-episode-of-care",
+    "version": "0.2.0",
+    "name": "HIVEpisodeOfCare"
+  },
+  {
+    "id": "hiv-med-req",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-med-req",
+    "version": "0.2.0",
+    "name": "HIVCareMedicationRequest"
+  },
+  {
+    "id": "hiv-organization",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-organization",
+    "version": "0.2.0",
+    "name": "HIVOrganization"
+  },
+  {
+    "id": "hiv-patient",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-patient",
+    "version": "0.2.0",
+    "name": "HIVPatient"
+  },
+  {
+    "id": "hiv-recency-result",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-result",
+    "version": "0.2.0",
+    "name": "HIVRecencyResult"
+  },
+  {
+    "id": "hiv-recency-test-conducted",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-recency-test-conducted",
+    "version": "0.2.0",
+    "name": "HIVRecencyTestConducted"
+  },
+  {
+    "id": "hiv-related-person",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-related-person",
+    "version": "0.2.0",
+    "name": "HIVRelatedPerson"
+  },
+  {
+    "id": "hiv-service-request",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-service-request",
+    "version": "0.2.0",
+    "name": "HIVServiceRequest"
+  },
+  {
+    "id": "hiv-transfer-out",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-transfer-out",
+    "version": "0.2.0",
+    "name": "HIVTransferOut"
+  },
+  {
+    "id": "hiv-viral-load-suppression",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression",
+    "version": "0.2.0",
+    "name": "ViralLoadSuppression"
+  },
+  {
+    "id": "hiv-viral-load-suppression-most-recent-test-date",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression-most-recent-test-date",
+    "version": "0.2.0",
+    "name": "ViralLoadSuppressionMostRecentTestDate"
+  },
+  {
+    "id": "hiv-viral-load-suppression-most-recent-test-result",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression-most-recent-test-result",
+    "version": "0.2.0",
+    "name": "ViralLoadSuppressionMostRecentTestResult"
+  },
+  {
+    "id": "key-population",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/key-population",
+    "version": "0.2.0",
+    "name": "KeyPopulation"
+  },
+  {
+    "id": "last-clinical-visit",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/last-clinical-visit",
+    "version": "0.2.0",
+    "name": "LastClinicalVisit"
+  },
+  {
+    "id": "viral-load-specimen",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/viral-load-specimen",
+    "version": "0.2.0",
+    "name": "VLSpecimen"
+  },
+  {
+    "id": "vl-procedure-info",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/vl-procedure-info",
+    "version": "0.2.0",
+    "name": "VLProcedureInfo"
+  },
+  {
+    "id": "vs-art-status",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-art-status",
+    "version": "0.2.0",
+    "name": "VSARTStatus"
+  },
+  {
+    "id": "vs-artregimen-lines",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-artregimen-lines",
+    "version": "0.2.0",
+    "name": "VSARTRegimenLines"
+  },
+  {
+    "id": "vs-careplan-outcome",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-careplan-outcome",
+    "version": "0.2.0",
+    "name": "VSCarePlanActivityOutcome"
+  },
+  {
+    "id": "vs-hiv-vl-reason",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-hiv-vl-reason",
+    "version": "0.2.0",
+    "name": "VSHIVVLReason"
+  },
+  {
+    "id": "vs-key-population",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-key-population",
+    "version": "0.2.0",
+    "name": "VSKeyPopulation"
+  },
+  {
+    "id": "vs-marital-status",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-marital-status",
+    "version": "0.2.0",
+    "name": "VSMaritalStatus"
+  },
+  {
+    "id": "vs-vl-causeofdeath",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-causeofdeath",
+    "version": "0.2.0",
+    "name": "VSVLCauseOfDeath"
+  },
+  {
+    "id": "vs-vl-interpretation",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-interpretation",
+    "version": "0.2.0",
+    "name": "VSVLInterpretation"
+  },
+  {
+    "id": "vs-vl-suppression",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-vl-suppression",
+    "version": "0.2.0",
+    "name": "VSVLSuppression"
+  }
+]

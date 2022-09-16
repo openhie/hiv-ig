@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-artregimen-lines"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">FIRST-LINE<a name=\"cs-artregimen-lines-FIRST-LINE\"> </a></td><td>First line ARTs</td></tr><tr><td style=\"white-space:nowrap\">SECOND-LINE<a name=\"cs-artregimen-lines-SECOND-LINE\"> </a></td><td>Second line ARTs</td></tr><tr><td style=\"white-space:nowrap\">THIRD-LINE<a name=\"cs-artregimen-lines-THIRD-LINE\"> </a></td><td>Third line ARTs</td></tr><tr><td style=\"white-space:nowrap\">SPECIAL-UNKNOWN<a name=\"cs-artregimen-lines-SPECIAL-UNKNOWN\"> </a></td><td>Special/Unknown</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "CSARTRegimenLines"];
+  fhir:CodeSystem.title [ fhir:value "ART Regimen Lines"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-09-16T12:02:49+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://xxhl7.org/Special/committees/[something]" ]
+     ]
+  ];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "FIRST-LINE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "First line ARTs" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "SECOND-LINE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Second line ARTs" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "THIRD-LINE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Third line ARTs" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "SPECIAL-UNKNOWN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Special/Unknown" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
