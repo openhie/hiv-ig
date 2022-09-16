@@ -385,3 +385,25 @@ Title: "VL Procedure info"
 Description: "VL Procedure info"
 * reasonCode from VSHIVVLReason  
 * reasonCode 1..1 MS
+
+Profile: HIVServiceRequest
+Parent: ServiceRequest
+Id: hiv-service-request
+Title: "HIV Service Request"
+Description: "HIV Service Request"
+* occurrenceDateTime 1..1 MS
+* specimen MS 
+
+Profile: VLSpecimen
+Parent: Specimen
+Id: viral-load-specimen
+Title: "Viral Load Specimen"
+Description: "Viral Load Specimen"
+* identifier 1..1 MS
+* type MS
+* subject MS
+* collection.collectedDateTime MS
+
+
+
+
