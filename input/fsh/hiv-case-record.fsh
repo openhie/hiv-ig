@@ -403,7 +403,3 @@ Description: "Viral Load Specimen"
 * type MS
 * subject MS
 * collection.collectedDateTime MS
-
-
-
-
