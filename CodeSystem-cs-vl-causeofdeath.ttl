@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "CSVLCauseOfDeath"];
   fhir:CodeSystem.title [ fhir:value "Cause Of Death"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-09-19T10:13:53+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-09-19T11:28:39+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
   fhir:CodeSystem.contact [
      fhir:index 0;

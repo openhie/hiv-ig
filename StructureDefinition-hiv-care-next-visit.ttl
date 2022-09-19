@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "HIVCareNextAppointment"];
   fhir:StructureDefinition.title [ fhir:value "Next Appointment Date"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-09-19T10:13:53+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-09-19T11:28:39+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "OpenHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
