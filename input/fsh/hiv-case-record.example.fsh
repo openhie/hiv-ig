@@ -340,6 +340,9 @@ Description: ""
 * valueInteger = 1000
 * interpretation[+] = CSVLInterpretation#D "Detectable"
 * interpretation[+] = CSVLSuppression#UNSUP "Unsuppressed"
+* note.authorReference = Reference(HIVOrganizationExample))
+* note.text = "some comment"
+* note.time      = "2020-06-09"
 
 Instance: ViralLoadSuppressionExample2
 InstanceOf: ViralLoadSuppression
@@ -353,6 +356,9 @@ Description: ""
 * valueInteger = 200
 * interpretation[+] = CSVLInterpretation#ND "Non Detectable"
 * interpretation[+] = CSVLSuppression#SUP "Suppressed"
+* note.authorReference = Reference(HIVOrganizationExample))
+* note.text = "some comment"
+* note.time      = "2020-06-09"
 
 Instance: DeathExample
 InstanceOf: DeathObs
