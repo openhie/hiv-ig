@@ -114,6 +114,7 @@ Description: "HIV Encounter for a case report"
 * subject 1..1
 * period.start 1..1
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#OBSENC
+* extension contains HIVCareNextAppointment named next-visit 0..1 MS 
 
 Profile: HIVOrganization
 Parent: Organization
@@ -385,3 +386,21 @@ Title: "VL Procedure info"
 Description: "VL Procedure info"
 * reasonCode from VSHIVVLReason  
 * reasonCode 1..1 MS
+
+Profile: HIVServiceRequest
+Parent: ServiceRequest
+Id: hiv-service-request
+Title: "HIV Service Request"
+Description: "HIV Service Request"
+* occurrenceDateTime 1..1 MS
+* specimen MS 
+
+Profile: VLSpecimen
+Parent: Specimen
+Id: viral-load-specimen
+Title: "Viral Load Specimen"
+Description: "Viral Load Specimen"
+* identifier 1..1 MS
+* type MS
+* subject MS
+* collection.collectedDateTime MS

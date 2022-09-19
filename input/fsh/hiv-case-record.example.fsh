@@ -42,7 +42,10 @@ Description: "Example of a clinical bundle representing a case report"
 * entry[=].resource = HIVTransferOutExample
 * entry[+].fullUrl = "Observation/VLProcedureInfoExample"
 * entry[=].resource = VLProcedureInfoExample
-
+* entry[+].fullUrl = "ServiceRequest/HIVServiceRequestExample"
+* entry[=].resource = HIVServiceRequestExample
+* entry[+].fullUrl = "Specimen/VLSpecimenExample"
+* entry[=].resource = VLSpecimenExample
 
 Instance: HIVCompositionExample
 InstanceOf: HIVComposition
@@ -117,6 +120,7 @@ Description: "HIV Clinical Encounter example"
 * status = #finished
 * period.start = "2021-07-22"
 * subject = Reference(HIVPatientExample)
+* extension[next-visit].valueDateTime = "2022-10-22"
 
 Instance: HIVOrganizationExample
 InstanceOf: HIVOrganization
@@ -299,6 +303,7 @@ Description: ""
 * extension[artStatus].valueCodeableConcept = #Active
 * activity.outcomeCodeableConcept = $SCT#439771001 
 * activity.outcomeCodeableConcept.coding.display = "Contacted"
+* activity.detail.scheduledPeriod.end = "2022-10-22"
 
 Instance: CD4Example1
 InstanceOf: CD4
@@ -410,3 +415,25 @@ Description: "VL Procedure info example"
 * code = $SCT#315124004
 * code.coding.display = "Human immunodeficiency virus load"
 * code.text = "viral load"
+
+Instance: HIVServiceRequestExample
+InstanceOf: ServiceRequest
+Usage: #example
+Title: "HIV Service Request example"
+Description: "HIV Service Request example"
+* occurrenceDateTime = "2022-08-26"
+* specimen = Reference(VLSpecimenExample)
+* status = #active
+* intent = #order
+* subject = Reference(HIVPatientExample) 
+
+Instance: VLSpecimenExample
+InstanceOf: Specimen
+Usage: #example
+Title: "Viral Load Specimen example"
+Description: "Viral Load Specimen example"
+* identifier.system = $SCT
+* identifier.value  = "395058002"
+* type = $SCT#395058002  
+* subject = Reference(HIVPatientExample)  
+* collection.collectedDateTime =  "2022-08-26"                        
