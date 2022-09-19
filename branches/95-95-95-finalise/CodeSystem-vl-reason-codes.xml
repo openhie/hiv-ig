@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="vl-reason-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-codes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">5d4e13af-92ec-4b91-a8e4-97818810e577<a name="vl-reason-codes-5d4e13af-92ec-4b91-a8e4-97818810e577"> </a></td><td>Baseline Viral Load</td></tr><tr><td style="white-space:nowrap">1259<a name="vl-reason-codes-1259"> </a></td><td>Change regimen</td></tr><tr><td style="white-space:nowrap">163523<a name="vl-reason-codes-163523"> </a></td><td>Clinical failure</td></tr><tr><td style="white-space:nowrap">67143af5-c443-4a4f-a678-f3981b4fcb0f<a name="vl-reason-codes-67143af5-c443-4a4f-a678-f3981b4fcb0f"> </a></td><td>Confirmation of treatment failure</td></tr><tr><td style="white-space:nowrap">5632<a name="vl-reason-codes-5632"> </a></td><td>Currently breastfeeding child</td></tr><tr><td style="white-space:nowrap">1434<a name="vl-reason-codes-1434"> </a></td><td>Currently pregnant</td></tr><tr><td style="white-space:nowrap">e185de1e-a9b3-4b10-86df-2300bf4476bb<a name="vl-reason-codes-e185de1e-a9b3-4b10-86df-2300bf4476bb"> </a></td><td>Persistent low-Level viremia</td></tr><tr><td style="white-space:nowrap">c2aed192-73fc-405f-8cc2-776a4da81d59<a name="vl-reason-codes-c2aed192-73fc-405f-8cc2-776a4da81d59"> </a></td><td>Recency Assay</td></tr><tr><td style="white-space:nowrap">843<a name="vl-reason-codes-843"> </a></td><td>Regimen failure</td></tr><tr><td style="white-space:nowrap">162081<a name="vl-reason-codes-162081"> </a></td><td>Repeat</td></tr><tr><td style="white-space:nowrap">164369<a name="vl-reason-codes-164369"> </a></td><td>Results not available</td></tr><tr><td style="white-space:nowrap">be5d6a4a-4018-49dd-869f-273c9f5fec9e<a name="vl-reason-codes-be5d6a4a-4018-49dd-869f-273c9f5fec9e"> </a></td><td>Routine Viral Load</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-codes"/>
+  <version value="0.2.0"/>
+  <name value="CSHIVVLReason"/>
+  <title value="HIV VL Reason codes"/>
+  <status value="active"/>
+  <date value="2022-09-19T10:13:53+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://xxhl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="A list of Viral Load test reasons"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="12"/>
+  <concept>
+    <code value="5d4e13af-92ec-4b91-a8e4-97818810e577"/>
+    <display value="Baseline Viral Load"/>
+  </concept>
+  <concept>
+    <code value="1259"/>
+    <display value="Change regimen"/>
+  </concept>
+  <concept>
+    <code value="163523"/>
+    <display value="Clinical failure"/>
+  </concept>
+  <concept>
+    <code value="67143af5-c443-4a4f-a678-f3981b4fcb0f"/>
+    <display value="Confirmation of treatment failure"/>
+  </concept>
+  <concept>
+    <code value="5632"/>
+    <display value="Currently breastfeeding child"/>
+  </concept>
+  <concept>
+    <code value="1434"/>
+    <display value="Currently pregnant"/>
+  </concept>
+  <concept>
+    <code value="e185de1e-a9b3-4b10-86df-2300bf4476bb"/>
+    <display value="Persistent low-Level viremia"/>
+  </concept>
+  <concept>
+    <code value="c2aed192-73fc-405f-8cc2-776a4da81d59"/>
+    <display value="Recency Assay"/>
+  </concept>
+  <concept>
+    <code value="843"/>
+    <display value="Regimen failure"/>
+  </concept>
+  <concept>
+    <code value="162081"/>
+    <display value="Repeat"/>
+  </concept>
+  <concept>
+    <code value="164369"/>
+    <display value="Results not available"/>
+  </concept>
+  <concept>
+    <code value="be5d6a4a-4018-49dd-869f-273c9f5fec9e"/>
+    <display value="Routine Viral Load"/>
+  </concept>
+</CodeSystem>

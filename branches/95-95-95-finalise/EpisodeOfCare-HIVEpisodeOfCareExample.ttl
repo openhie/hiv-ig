@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/EpisodeOfCare/HIVEpisodeOfCareExample> a fhir:EpisodeOfCare;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HIVEpisodeOfCareExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-episode-of-care";
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-episode-of-care>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: EpisodeOfCare</b><a name=\"HIVEpisodeOfCareExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource EpisodeOfCare \"HIVEpisodeOfCareExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-episode-of-care.html\">HIV Episode Of Care</a></p></div><p><b>identifier</b>: id: 123456789</p><p><b>status</b>: active</p><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Condition</b></td></tr><tr><td>*</td><td><a href=\"Condition-HIVDiagnosisExample.html\">Condition/HIVDiagnosisExample</a></td></tr></table><p><b>patient</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> \" SMITH\"</p><p><b>managingOrganization</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> \"HIV Organization\"</p><p><b>period</b>: 2021-08-25 --&gt; (ongoing)</p><p><b>referralRequest</b>: <a href=\"ServiceRequest-HIVTransferOutExample.html\">ServiceRequest/HIVTransferOutExample</a></p></div>"
+  ];
+  fhir:EpisodeOfCare.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/identifier/enrollment-unique-id" ];
+     fhir:Identifier.value [ fhir:value "123456789" ]
+  ];
+  fhir:EpisodeOfCare.status [ fhir:value "active"];
+  fhir:EpisodeOfCare.diagnosis [
+     fhir:index 0;
+     fhir:EpisodeOfCare.diagnosis.condition [
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Condition/HIVDiagnosisExample>;
+       fhir:Reference.reference [ fhir:value "Condition/HIVDiagnosisExample" ]
+     ]
+  ];
+  fhir:EpisodeOfCare.patient [
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/Patient/HIVPatientExample>;
+     fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
+  ];
+  fhir:EpisodeOfCare.managingOrganization [
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/Organization/HIVOrganizationExample>;
+     fhir:Reference.reference [ fhir:value "Organization/HIVOrganizationExample" ]
+  ];
+  fhir:EpisodeOfCare.period [
+     fhir:Period.start [ fhir:value "2021-08-25"^^xsd:date ]
+  ];
+  fhir:EpisodeOfCare.referralRequest [
+     fhir:index 0;
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/ServiceRequest/HIVTransferOutExample>;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/HIVTransferOutExample" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/EpisodeOfCare/HIVEpisodeOfCareExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

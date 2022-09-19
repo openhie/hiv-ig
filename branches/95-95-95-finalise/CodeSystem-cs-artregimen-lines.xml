@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-artregimen-lines"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">FIRST-LINE<a name="cs-artregimen-lines-FIRST-LINE"> </a></td><td>First line ARTs</td></tr><tr><td style="white-space:nowrap">SECOND-LINE<a name="cs-artregimen-lines-SECOND-LINE"> </a></td><td>Second line ARTs</td></tr><tr><td style="white-space:nowrap">THIRD-LINE<a name="cs-artregimen-lines-THIRD-LINE"> </a></td><td>Third line ARTs</td></tr><tr><td style="white-space:nowrap">SPECIAL-UNKNOWN<a name="cs-artregimen-lines-SPECIAL-UNKNOWN"> </a></td><td>Special/Unknown</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines"/>
+  <version value="0.2.0"/>
+  <name value="CSARTRegimenLines"/>
+  <title value="ART Regimen Lines"/>
+  <status value="active"/>
+  <date value="2022-09-19T10:13:53+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://xxhl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="FIRST-LINE"/>
+    <display value="First line ARTs"/>
+  </concept>
+  <concept>
+    <code value="SECOND-LINE"/>
+    <display value="Second line ARTs"/>
+  </concept>
+  <concept>
+    <code value="THIRD-LINE"/>
+    <display value="Third line ARTs"/>
+  </concept>
+  <concept>
+    <code value="SPECIAL-UNKNOWN"/>
+    <display value="Special/Unknown"/>
+  </concept>
+</CodeSystem>

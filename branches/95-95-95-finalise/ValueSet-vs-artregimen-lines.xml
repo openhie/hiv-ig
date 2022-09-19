@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-artregimen-lines"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-cs-artregimen-lines.html"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines</code></a></li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-artregimen-lines"/>
+  <version value="0.2.0"/>
+  <name value="VSARTRegimenLines"/>
+  <title value="VSART Regimen Lines"/>
+  <status value="active"/>
+  <date value="2022-09-19T10:13:53+00:00"/>
+  <publisher value="OpenHIE"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://xxhl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines"/>
+    </include>
+  </compose>
+</ValueSet>
