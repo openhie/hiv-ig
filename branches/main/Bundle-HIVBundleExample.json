@@ -246,9 +246,15 @@
           ]
         },
         "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"HIVClinicalEncounterExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter \"HIVClinicalEncounterExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-clinical-encounter.html\">HIV Clinical Encounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: observation encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code OBSENC = 'observation encounter', stated as 'null')</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>period</b>: 2021-07-22 --&gt; (ongoing)</p></div>"
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"HIVClinicalEncounterExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter \"HIVClinicalEncounterExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-clinical-encounter.html\">HIV Clinical Encounter</a></p></div><p><b>Next Appointment Date</b>: 2022-10-22</p><p><b>status</b>: finished</p><p><b>class</b>: observation encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code OBSENC = 'observation encounter', stated as 'null')</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>period</b>: 2021-07-22 --&gt; (ongoing)</p></div>"
         },
+        "extension": [
+          {
+            "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-care-next-visit",
+            "valueDateTime": "2022-10-22"
+          }
+        ],
         "status": "finished",
         "class": {
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -645,7 +651,7 @@
         },
         "text": {
           "status": "extensions",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"ARVTreatmentExample2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan \"ARVTreatmentExample2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-arv-treatment.html\">ARVCarePlan</a></p></div><p><b>ART Status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Active)</span></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>period</b>: 2021-07-20 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><p><b>outcomeCodeableConcept</b>: Contacted <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#439771001)</span></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td></td><td>MedicationRequest</td><td>HIV ART medication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#45260-7)</span></td><td>in-progress</td><td>TDF/3TC/EFV <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#TDF/3TC/EFV)</span></td></tr></table></blockquote></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"ARVTreatmentExample2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan \"ARVTreatmentExample2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-arv-treatment.html\">ARVCarePlan</a></p></div><p><b>ART Status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Active)</span></p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>period</b>: 2021-07-20 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><p><b>outcomeCodeableConcept</b>: Contacted <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#439771001)</span></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td></td><td>MedicationRequest</td><td>HIV ART medication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#45260-7)</span></td><td>in-progress</td><td>?? --&gt; 2022-10-22</td><td>TDF/3TC/EFV <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#TDF/3TC/EFV)</span></td></tr></table></blockquote></div>"
         },
         "extension": [
           {
@@ -704,6 +710,9 @@
                 ]
               },
               "status": "in-progress",
+              "scheduledPeriod": {
+                "end": "2022-10-22"
+              },
               "productCodeableConcept": {
                 "coding": [
                   {
@@ -1106,6 +1115,59 @@
             ]
           }
         ]
+      }
+    },
+    {
+      "fullUrl": "ServiceRequest/HIVServiceRequestExample",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "HIVServiceRequestExample",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"HIVServiceRequestExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest \"HIVServiceRequestExample\" </p></div><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>occurrence</b>: 2022-08-26</p><p><b>specimen</b>: <a href=\"#Specimen_VLSpecimenExample\">See above (Specimen/VLSpecimenExample)</a></p></div>"
+        },
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "occurrenceDateTime": "2022-08-26",
+        "specimen": [
+          {
+            "reference": "Specimen/VLSpecimenExample"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Specimen/VLSpecimenExample",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "VLSpecimenExample",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"VLSpecimenExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen \"VLSpecimenExample\" </p></div><p><b>identifier</b>: id: 395058002</p><p><b>type</b>: Viral load (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#395058002)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td></tr><tr><td>*</td><td>2022-08-26</td></tr></table></div>"
+        },
+        "identifier": [
+          {
+            "system": "http://snomed.info/sct",
+            "value": "395058002"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "395058002"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/HIVPatientExample"
+        },
+        "collection": {
+          "collectedDateTime": "2022-08-26"
+        }
       }
     }
   ]

@@ -11,7 +11,7 @@
   "title": "HIV Case Reporting and Monitoring",
   "status": "draft",
   "experimental": false,
-  "date": "2022-09-19T11:28:39+00:00",
+  "date": "2022-09-19T11:47:22+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -495,6 +495,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Specimen"
+          }
+        ],
+        "reference": {
+          "reference": "Specimen/VLSpecimenExample"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
           }
         ],
@@ -542,6 +553,19 @@
         },
         "name": "Key population",
         "description": "A list of key population types"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/viral-load-specimen"
+        },
+        "name": "Viral Load Specimen",
+        "description": "Viral Load Specimen"
       },
       {
         "extension": [
@@ -619,6 +643,19 @@
         },
         "name": "Example Encounter - HIVClinicalEncounterExample",
         "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-clinical-encounter"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/hiv-service-request"
+        },
+        "name": "HIV Service Request",
+        "description": "HIV Service Request"
       },
       {
         "extension": [
@@ -914,6 +951,17 @@
         },
         "name": "Example Observation - CD4Example1",
         "exampleCanonical": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-cd4-test"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/HIVServiceRequestExample"
+        }
       },
       {
         "extension": [

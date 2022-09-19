@@ -203,6 +203,13 @@
     "name": "HIVRelatedPerson"
   },
   {
+    "id": "hiv-service-request",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-service-request",
+    "version": "0.2.0",
+    "name": "HIVServiceRequest"
+  },
+  {
     "id": "hiv-transfer-out",
     "type": "StructureDefinition",
     "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-transfer-out",
@@ -243,6 +250,13 @@
     "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/last-clinical-visit",
     "version": "0.2.0",
     "name": "LastClinicalVisit"
+  },
+  {
+    "id": "viral-load-specimen",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/viral-load-specimen",
+    "version": "0.2.0",
+    "name": "VLSpecimen"
   },
   {
     "id": "vl-procedure-info",
