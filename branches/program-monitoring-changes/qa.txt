@@ -1,11 +1,11 @@
 ﻿HIVCaseReporting : Validation Results
 =========================================
 
-err = 145, warn = 102, info = 70
-IG Publisher Version: 1.2.1
-Generated Fri Sep 16 12:05:04 UTC 2022. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir/hiv-casereporting)
+err = 151, warn = 102, info = 70
+IG Publisher Version: 1.2.2
+Generated Mon Sep 19 11:40:56 UTC 2022. FHIR version 4.0.1 for openhie.fhir.hiv#0.2.0 (canonical = http://openhie.org/fhir/hiv-casereporting)
  Build Errors : 4 / 38 / 0
- /github/workspace/fsh-generated/resources/Bundle-HIVBundleExample : 77 / 23 / 84
+ /github/workspace/fsh-generated/resources/Bundle-HIVBundleExample : 81 / 23 / 84
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample1 : 2 / 3 / 2
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample2 : 2 / 4 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-art-status : 0 / 0 / 2
@@ -30,8 +30,8 @@ Generated Fri Sep 16 12:05:04 UTC 2022. FHIR version 4.0.1 for openhie.fhir.hiv#
  /github/workspace/fsh-generated/resources/Observation-HIVDateOfRecencyTestExample : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Observation-HIVRecencyResultExample : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Observation-HIVRecencyTestConductedExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-ViralLoadSuppressionExample1 : 4 / 0 / 3
- /github/workspace/fsh-generated/resources/Observation-ViralLoadSuppressionExample2 : 4 / 0 / 3
+ /github/workspace/fsh-generated/resources/Observation-ViralLoadSuppressionExample1 : 5 / 0 / 3
+ /github/workspace/fsh-generated/resources/Observation-ViralLoadSuppressionExample2 : 5 / 0 / 3
  /github/workspace/fsh-generated/resources/Observation-ViralLoadSuppressionMostRecentTestDateExample : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Observation-ViralLoadSuppressionMostRecentTestResultExample : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Organization-HIVOrganizationExample : 0 / 0 / 1
@@ -237,6 +237,8 @@ INFORMATION: Bundle/HIVBundleExample: Bundle.entry[12].resource.ofType(Observati
 WARNING: Bundle/HIVBundleExample: Bundle.entry[12].resource.ofType(Observation).component[0].code.coding[0]: The display "CD4 result" is not a valid display for the code {http://snomed.info/sct}113056008 - should be one of ['Helper suppressor typing T-cell subsets measurement', 'T cells, T4/T8 ratio', 'Helper suppressor ratio determination', 'Cluster of differentiation 4/Cluster of differentiation 8 ratio', 'Helper suppressor ratio determination (procedure)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#113056008'
 WARNING: Bundle/HIVBundleExample: Bundle.entry[12].resource.ofType(Observation).component[1].code.coding[0]: The display "CD4 percentage" is not a valid display for the code {http://snomed.info/sct}313938009 - should be one of ['Percentage CD4 count', 'CD4 percent count', 'CD4 percent count (procedure)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#313938009'
 INFORMATION: Bundle/HIVBundleExample: Bundle.entry[13].resource.ofType(Observation).subject: Details for Patient/HIVPatientExample matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/HIVBundleExample: Bundle.entry[13].resource.ofType(Observation).note[0].author.ofType(Reference): Relative URLs must be of the format [ResourceName]/[id].  Encountered HIVOrganizationExample)
+ERROR: Bundle/HIVBundleExample: Bundle.entry[13].resource.ofType(Observation).note[0].author.ofType(Reference): Unable to resolve resource with reference 'HIVOrganizationExample)'
 ERROR: Bundle/HIVBundleExample: Bundle.entry[13].resource.ofType(Observation).interpretation[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: system in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression on element Observation.interpretation:vlResult, looking in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression (@char 1)
 ERROR: Bundle/HIVBundleExample: Bundle.entry[13].resource.ofType(Observation).interpretation[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: system in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression on element Observation.interpretation:vlResult, looking in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression (@char 1)
 ERROR: Bundle/HIVBundleExample: Bundle.entry[13].resource.ofType(Observation).interpretation[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: system in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression on element Observation.interpretation:vlSuppression, looking in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression (@char 1)
@@ -244,6 +246,8 @@ ERROR: Bundle/HIVBundleExample: Bundle.entry[13].resource.ofType(Observation).in
 INFORMATION: Bundle/HIVBundleExample: Bundle.entry[13].resource.ofType(Observation): Observation.interpretation:vlResult: Unable to check minimum required (Observation.interpretation) due to lack of slicing validation (from http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression)
 INFORMATION: Bundle/HIVBundleExample: Bundle.entry[13].resource.ofType(Observation): Observation.interpretation:vlSuppression: Unable to check minimum required (Observation.interpretation) due to lack of slicing validation (from http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression)
 INFORMATION: Bundle/HIVBundleExample: Bundle.entry[14].resource.ofType(Observation).subject: Details for Patient/HIVPatientExample matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/HIVBundleExample: Bundle.entry[14].resource.ofType(Observation).note[0].author.ofType(Reference): Relative URLs must be of the format [ResourceName]/[id].  Encountered HIVOrganizationExample)
+ERROR: Bundle/HIVBundleExample: Bundle.entry[14].resource.ofType(Observation).note[0].author.ofType(Reference): Unable to resolve resource with reference 'HIVOrganizationExample)'
 ERROR: Bundle/HIVBundleExample: Bundle.entry[14].resource.ofType(Observation).interpretation[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: system in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression on element Observation.interpretation:vlResult, looking in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression (@char 1)
 ERROR: Bundle/HIVBundleExample: Bundle.entry[14].resource.ofType(Observation).interpretation[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: system in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression on element Observation.interpretation:vlResult, looking in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression (@char 1)
 ERROR: Bundle/HIVBundleExample: Bundle.entry[14].resource.ofType(Observation).interpretation[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: system in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression on element Observation.interpretation:vlSuppression, looking in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression (@char 1)
@@ -384,6 +388,7 @@ ERROR: Observation/ViralLoadSuppressionExample1: Observation.interpretation[0]: 
 ERROR: Observation/ViralLoadSuppressionExample1: Observation.interpretation[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: system in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression on element Observation.interpretation:vlSuppression, looking in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression (@char 1)
 INFORMATION: Observation/ViralLoadSuppressionExample1: Observation: Observation.interpretation:vlResult: Unable to check minimum required (Observation.interpretation) due to lack of slicing validation (from http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression)
 INFORMATION: Observation/ViralLoadSuppressionExample1: Observation: Observation.interpretation:vlSuppression: Unable to check minimum required (Observation.interpretation) due to lack of slicing validation (from http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression)
+ERROR: Observation/ViralLoadSuppressionExample1: Observation.note[0].author.ofType(Reference): Unable to resolve resource with reference 'HIVOrganizationExample)'
 == fsh-generated/resources/Observation-ViralLoadSuppressionExample2.json ==
 ERROR: Observation/ViralLoadSuppressionExample2: Observation.interpretation[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: system in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression on element Observation.interpretation:vlResult, looking in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression (@char 1)
 ERROR: Observation/ViralLoadSuppressionExample2: Observation.interpretation[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: system in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression on element Observation.interpretation:vlResult, looking in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression (@char 1)
@@ -391,6 +396,7 @@ ERROR: Observation/ViralLoadSuppressionExample2: Observation.interpretation[0]: 
 ERROR: Observation/ViralLoadSuppressionExample2: Observation.interpretation[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: system in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression on element Observation.interpretation:vlSuppression, looking in profile http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression (@char 1)
 INFORMATION: Observation/ViralLoadSuppressionExample2: Observation: Observation.interpretation:vlResult: Unable to check minimum required (Observation.interpretation) due to lack of slicing validation (from http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression)
 INFORMATION: Observation/ViralLoadSuppressionExample2: Observation: Observation.interpretation:vlSuppression: Unable to check minimum required (Observation.interpretation) due to lack of slicing validation (from http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-viral-load-suppression)
+ERROR: Observation/ViralLoadSuppressionExample2: Observation.note[0].author.ofType(Reference): Unable to resolve resource with reference 'HIVOrganizationExample)'
 == fsh-generated/resources/Observation-ViralLoadSuppressionMostRecentTestDateExample.json ==
 WARNING: Observation/ViralLoadSuppressionMostRecentTestDateExample: Observation.code.coding[0]: Display Name for http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes#HIV-RECENCY-TEST-CONDUCTED should be one of 'HIV recency test conducted' instead of 'VL most recent test date' for 'http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes#HIV-RECENCY-TEST-CONDUCTED'
 == fsh-generated/resources/Observation-ViralLoadSuppressionMostRecentTestResultExample.json ==
