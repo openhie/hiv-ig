@@ -98,10 +98,6 @@ Description: "Basic Composition example"
 * section[=].code = CSCaseReportSections#DEATH
 * section[=].entry[+] = Reference(DeathExample)
 
-* section[+].title = "Death"
-* section[=].code = CSCaseReportSections#DEATH
-* section[=].entry[+] = Reference(DeathExample)
-
 Instance: HIVDiagnosisEncounterExample
 InstanceOf: HIVDiagnosisEncounter
 Usage: #example

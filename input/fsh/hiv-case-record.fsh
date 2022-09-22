@@ -87,10 +87,9 @@ Title: "HIV Case Reporting Composition"
 * section[viralSuppressionSection].entry ^slicing.rules = #closed
 * section[viralSuppressionSection].entry contains
     viralLoadSuppression 1..1 and
-    vlProcedureInfo 1..1
+    vlProcedureInfo 1..1 
 * section[viralSuppressionSection].entry[viralLoadSuppression] only Reference(ViralLoadSuppression)
 * section[viralSuppressionSection].entry[vlProcedureInfo] only Reference(VLProcedureInfo)
-
 
 * section[deathSection].title = "Death"
 * section[deathSection].code = CSCaseReportSections#DEATH
