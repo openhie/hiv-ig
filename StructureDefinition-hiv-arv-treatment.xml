@@ -37,7 +37,7 @@
   <name value="ARVTreatment"/>
   <title value="ARVCarePlan"/>
   <status value="active"/>
-  <date value="2022-09-19T11:47:22+00:00"/>
+  <date value="2022-10-06T11:53:08+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -2257,7 +2257,7 @@
           <path value="$this"/>
         </discriminator>
         <ordered value="false"/>
-        <rules value="closed"/>
+        <rules value="open"/>
       </slicing>
       <short value="When activity is to occur"/>
       <definition value="The period, timing or frequency upon which the described activity is to occur."/>
@@ -2270,7 +2270,13 @@
         <max value="1"/>
       </base>
       <type>
+        <code value="Timing"/>
+      </type>
+      <type>
         <code value="Period"/>
+      </type>
+      <type>
+        <code value="string"/>
       </type>
       <constraint>
         <key value="ele-1"/>

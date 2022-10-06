@@ -22,7 +22,7 @@
   <name value="VLSpecimen"/>
   <title value="Viral Load Specimen"/>
   <status value="active"/>
-  <date value="2022-09-19T11:47:22+00:00"/>
+  <date value="2022-10-06T11:53:08+00:00"/>
   <publisher value="OpenHIE"/>
   <contact>
     <telecom>
@@ -889,7 +889,7 @@
           <path value="$this"/>
         </discriminator>
         <ordered value="false"/>
-        <rules value="closed"/>
+        <rules value="open"/>
       </slicing>
       <short value="Collection time"/>
       <definition value="Time when specimen was collected from subject - the physiologically relevant time."/>
@@ -902,6 +902,9 @@
       </base>
       <type>
         <code value="dateTime"/>
+      </type>
+      <type>
+        <code value="Period"/>
       </type>
       <constraint>
         <key value="ele-1"/>

@@ -72,6 +72,9 @@
         },
         {
           "reference": "Observation/HIVRecencyResultExample"
+        },
+        {
+          "reference": "Observation/HIVTestDateExample"
         }
       ]
     },

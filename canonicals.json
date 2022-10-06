@@ -84,6 +84,13 @@
     "name": "ARTStatus"
   },
   {
+    "id": "date-tested-for-hiv",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/date-tested-for-hiv",
+    "version": "0.2.0",
+    "name": "HIVTestDate"
+  },
+  {
     "id": "death-obs",
     "type": "StructureDefinition",
     "url": "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/death-obs",

@@ -59,6 +59,9 @@
     <entry>
       <reference value="Observation/HIVRecencyResultExample"/>
     </entry>
+    <entry>
+      <reference value="Observation/HIVTestDateExample"/>
+    </entry>
   </section>
   <section>
     <title value="HIV Entry To Care"/>

@@ -20,7 +20,7 @@
   "name": "VLSpecimen",
   "title": "Viral Load Specimen",
   "status": "active",
-  "date": "2022-09-19T11:47:22+00:00",
+  "date": "2022-10-06T11:53:08+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -1082,7 +1082,7 @@
             }
           ],
           "ordered": false,
-          "rules": "closed"
+          "rules": "open"
         },
         "short": "Collection time",
         "definition": "Time when specimen was collected from subject - the physiologically relevant time.",
@@ -1096,6 +1096,9 @@
         "type": [
           {
             "code": "dateTime"
+          },
+          {
+            "code": "Period"
           }
         ],
         "constraint": [

@@ -20,7 +20,7 @@
   "name": "ARVTreatment",
   "title": "ARVCarePlan",
   "status": "active",
-  "date": "2022-09-19T11:47:22+00:00",
+  "date": "2022-10-06T11:53:08+00:00",
   "publisher": "OpenHIE",
   "contact": [
     {
@@ -2768,7 +2768,7 @@
             }
           ],
           "ordered": false,
-          "rules": "closed"
+          "rules": "open"
         },
         "short": "When activity is to occur",
         "definition": "The period, timing or frequency upon which the described activity is to occur.",
@@ -2782,7 +2782,13 @@
         },
         "type": [
           {
+            "code": "Timing"
+          },
+          {
             "code": "Period"
+          },
+          {
+            "code": "string"
           }
         ],
         "constraint": [

@@ -72,8 +72,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Who collected the specimen","Person who collected the specimen.","","","","","","","","","",,,,,"",,,,"Specimen.collection.collector",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".participation[typeCode=PFM].role","FiveWs.actor","PRT"
 "Specimen.collection.collected[x]","Specimen.collection.collected[x]","","","",0,1,"","","Y","dateTime {[]} {[]}
-","Collection time","Time when specimen was collected from subject - the physiologically relevant time.","","","","","","","","","",,,,,"","type:$this}
-","",,"closed","Specimen.collection.collected[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+Period {[]} {[]}","Collection time","Time when specimen was collected from subject - the physiologically relevant time.","","","","","","","","","",,,,,"","type:$this}
+","",,"open","Specimen.collection.collected[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".effectiveTime","FiveWs.init","SPM-17"
 "Specimen.collection.collected[x]:collectedDateTime","Specimen.collection.collected[x]","collectedDateTime","","",0,1,"Y","","Y","dateTime {[]} {[]}
 ","Collection time","Time when specimen was collected from subject - the physiologically relevant time.","","","","","","","","","",,,,,"",,,,"Specimen.collection.collected[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

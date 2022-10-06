@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "VLSpecimen"];
   fhir:StructureDefinition.title [ fhir:value "Viral Load Specimen"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-09-19T11:47:22+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-06T11:53:08+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "OpenHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1164,7 +1164,7 @@
            fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
          ];
          fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "closed" ]
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
        fhir:ElementDefinition.short [ fhir:value "Collection time" ];
        fhir:ElementDefinition.definition [ fhir:value "Time when specimen was collected from subject - the physiologically relevant time." ];
@@ -1178,6 +1178,9 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Period" ]
        ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;

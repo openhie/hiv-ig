@@ -85,6 +85,10 @@
        fhir:index 3;
        fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/HIVRecencyResultExample>;
        fhir:Reference.reference [ fhir:value "Observation/HIVRecencyResultExample" ]
+     ], [
+       fhir:index 4;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/HIVTestDateExample>;
+       fhir:Reference.reference [ fhir:value "Observation/HIVTestDateExample" ]
      ]
   ], [
      fhir:index 2;
