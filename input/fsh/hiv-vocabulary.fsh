@@ -112,6 +112,7 @@ Description: ""
 * #HIV-ACTUAL-RECENCY-TEST-RESULT "HIV actual recency test result" 
 * #VL-MOST-RECENT-TEST-DATE "VL most recent test date" 
 * #VL-MOST-RECENT-TEST-RESULT "VL most recent test result" 
+* #DATE-TESTED-FOR-HIV "Date tested for HIV"
 
 CodeSystem: CSHIVVLReason
 Id: vl-reason-codes

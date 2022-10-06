@@ -34,7 +34,7 @@ Title: "HIV Case Reporting Composition"
 
 * section[hivDiagnosisSection].title = "HIV Diagnosis"
 * section[hivDiagnosisSection].code = CSCaseReportSections#HIV-DIAGNOSIS
-* section[hivDiagnosisSection].entry only Reference(HIVDiagnosis or HIVDiagnosisEncounter or HIVRecencyTestConducted or HIVRecencyResult)
+* section[hivDiagnosisSection].entry only Reference(HIVDiagnosis or HIVDiagnosisEncounter or HIVRecencyTestConducted or HIVRecencyResult or HIVTestDate)
 * section[hivDiagnosisSection].entry ^slicing.discriminator.type = #profile
 * section[hivDiagnosisSection].entry ^slicing.discriminator.path = "item.resolve()"
 * section[hivDiagnosisSection].entry ^slicing.rules = #closed
@@ -42,11 +42,14 @@ Title: "HIV Case Reporting Composition"
     hivDiagnosis 1..1 and
     hivDiagnosisEncounter 1..1 and
     hivRecencyTestConducted 1..1 and
-    hivRecencyResult 1..1
+    hivRecencyResult 1..1 and
+    hivTestDate 1..1
+
 * section[hivDiagnosisSection].entry[hivDiagnosis] only Reference(HIVDiagnosis)
 * section[hivDiagnosisSection].entry[hivDiagnosisEncounter] only Reference(HIVDiagnosisEncounter)
 * section[hivDiagnosisSection].entry[hivRecencyTestConducted] only Reference(HIVRecencyTestConducted)
 * section[hivDiagnosisSection].entry[hivRecencyResult] only Reference(HIVRecencyResult)
+* section[hivDiagnosisSection].entry[hivTestDate] only Reference(HIVTestDate)
 
 * section[hivEntryToCareSection].title = "HIV Entry To Care"
 * section[hivEntryToCareSection].code = CSCaseReportSections#HIV-ENTRY-TO-CARE
@@ -404,3 +407,13 @@ Description: "Viral Load Specimen"
 * type MS
 * subject MS
 * collection.collectedDateTime MS
+
+Profile: HIVTestDate
+Parent: Observation
+Id: date-tested-for-hiv
+Title: "HIVTestDateObservation"
+Description: "This profile allows the exchange of a patient's test date"
+* subject 1..1 MS
+* encounter 1..1 MS 
+* code = CSHIVObsCodes#DATE-TESTED-FOR-HIV "Date tested for HIV"
+* valueDateTime 1..1 MS
