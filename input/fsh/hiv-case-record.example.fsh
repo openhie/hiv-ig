@@ -20,6 +20,8 @@ Description: "Example of a clinical bundle representing a case report"
 * entry[=].resource = HIVRecencyTestConductedExample
 * entry[+].fullUrl = "Observation/HIVRecencyResultExample"
 * entry[=].resource = HIVRecencyResultExample
+* entry[+].fullUrl = "Observation/HIVTestDateExample"
+* entry[=].resource = HIVTestDateExample
 * entry[+].fullUrl = "EpisodeOfCare/HIVEpisodeOfCareExample"
 * entry[=].resource = HIVEpisodeOfCareExample
 * entry[+].fullUrl = "CarePlan/ARVTreatmentExample1"
@@ -70,6 +72,7 @@ Description: "Basic Composition example"
 * section[=].entry[+] = Reference(HIVDiagnosisEncounterExample)
 * section[=].entry[+] = Reference(HIVRecencyTestConductedExample)
 * section[=].entry[+] = Reference(HIVRecencyResultExample)
+* section[=].entry[+] = Reference(HIVTestDateExample)
 
 * section[+].title = "HIV Entry To Care"
 * section[=].code = CSCaseReportSections#HIV-ENTRY-TO-CARE
@@ -437,3 +440,13 @@ Description: "Viral Load Specimen example"
 * type = $SCT#395058002  
 * subject = Reference(HIVPatientExample)  
 * collection.collectedDateTime =  "2022-08-26"                        
+
+Instance: HIVTestDateExample
+InstanceOf: HIVTestDate
+Usage: #example
+Title: "HIV Test Date Observation"
+Description: "This profile allows the exchange of a patient's test date"
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(HIVClinicalEncounter)
+* valueDateTime = "2022-08-26" 
+* status = #final
