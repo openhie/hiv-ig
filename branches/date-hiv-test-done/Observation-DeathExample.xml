@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="DeathExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/death-obs"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="DeathExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation "DeathExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-death-obs.html">Death Obs</a></p></div><p><b>Last Clinical Visit</b>: 2021-08-26</p><p><b>status</b>: final</p><p><b>code</b>: Cause of death <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cs-hiv-obs-codes.html">HIV Case Report Observation codes</a>#CAUSE-OF-DEATH)</span></p><p><b>subject</b>: <a href="Patient-HIVPatientExample.html">Patient/HIVPatientExample</a> " SMITH"</p><p><b>effective</b>: 2021-08-26</p><p><b>value</b>: HIV Related <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cs-vl-causeofdeath.html">Cause Of Death</a>#HIV)</span></p></div>
+  </text>
+  <extension url="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/last-clinical-visit">
+    <valueDateTime value="2021-08-26"/>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes"/>
+      <code value="CAUSE-OF-DEATH"/>
+      <display value="Cause of death"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/HIVPatientExample"/>
+  </subject>
+  <effectiveDateTime value="2021-08-26"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-vl-causeofdeath"/>
+      <code value="HIV"/>
+      <display value="HIV Related"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

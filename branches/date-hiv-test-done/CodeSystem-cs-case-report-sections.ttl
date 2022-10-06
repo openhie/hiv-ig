@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cs-case-report-sections"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">CLIENT-REGISTRATION<a name=\"cs-case-report-sections-CLIENT-REGISTRATION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HIV-DIAGNOSIS<a name=\"cs-case-report-sections-HIV-DIAGNOSIS\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HIV-ENTRY-TO-CARE<a name=\"cs-case-report-sections-HIV-ENTRY-TO-CARE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ARV-TREATMENT<a name=\"cs-case-report-sections-ARV-TREATMENT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">CD4<a name=\"cs-case-report-sections-CD4\"> </a></td></tr><tr><td style=\"white-space:nowrap\">VIRAL-SUPPRESSION<a name=\"cs-case-report-sections-VIRAL-SUPPRESSION\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DEATH<a name=\"cs-case-report-sections-DEATH\"> </a></td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "CSCaseReportSections"];
+  fhir:CodeSystem.title [ fhir:value "HIV Case Report Sections codesystem"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-10-06T11:53:08+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "OpenHIE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://xxhl7.org/Special/committees/[something]" ]
+     ]
+  ];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "CLIENT-REGISTRATION" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV-DIAGNOSIS" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV-ENTRY-TO-CARE" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "ARV-TREATMENT" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "CD4" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "VIRAL-SUPPRESSION" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "DEATH" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,34 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/ServiceRequest/HIVServiceRequestExample> a fhir:ServiceRequest;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HIVServiceRequestExample"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"HIVServiceRequestExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest \"HIVServiceRequestExample\" </p></div><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> \" SMITH\"</p><p><b>occurrence</b>: 2022-08-26</p><p><b>specimen</b>: <a href=\"Specimen-VLSpecimenExample.html\">Specimen/VLSpecimenExample</a></p></div>"
+  ];
+  fhir:ServiceRequest.status [ fhir:value "active"];
+  fhir:ServiceRequest.intent [ fhir:value "order"];
+  fhir:ServiceRequest.subject [
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/Patient/HIVPatientExample>;
+     fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
+  ];
+  fhir:ServiceRequest.occurrenceDateTime [ fhir:value "2022-08-26"^^xsd:date];
+  fhir:ServiceRequest.specimen [
+     fhir:index 0;
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/Specimen/VLSpecimenExample>;
+     fhir:Reference.reference [ fhir:value "Specimen/VLSpecimenExample" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/ServiceRequest/HIVServiceRequestExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

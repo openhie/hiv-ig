@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-art-status",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-art-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">164349<a name=\"cs-art-status-164349\"> </a></td><td>Interruption in Treatment</td></tr><tr><td style=\"white-space:nowrap\">Active<a name=\"cs-art-status-Active\"> </a></td><td>Active</td></tr><tr><td style=\"white-space:nowrap\">159<a name=\"cs-art-status-159\"> </a></td><td>Dead</td></tr><tr><td style=\"white-space:nowrap\">159492<a name=\"cs-art-status-159492\"> </a></td><td>Transferred-OUT</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-art-status",
+  "version": "0.2.0",
+  "name": "CSARTStatus",
+  "title": "ART Status code list",
+  "status": "active",
+  "date": "2022-10-06T11:53:08+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://xxhl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "A list of ART status codes",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "164349",
+      "display": "Interruption in Treatment"
+    },
+    {
+      "code": "Active",
+      "display": "Active"
+    },
+    {
+      "code": "159",
+      "display": "Dead"
+    },
+    {
+      "code": "159492",
+      "display": "Transferred-OUT"
+    }
+  ]
+}

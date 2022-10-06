@@ -1,0 +1,218 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/Composition/HIVCompositionExample> a fhir:Composition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HIVCompositionExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition";
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/StructureDefinition/hiv-composition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"HIVCompositionExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition \"HIVCompositionExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-composition.html\">HIV Case Reporting Composition</a></p></div><p><b>identifier</b>: id: 1111</p><p><b>status</b>: final</p><p><b>type</b>: COVID-19 case report <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#95412-3)</span></p><p><b>date</b>: 2021-05-18</p><p><b>author</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> \"HIV Organization\"</p><p><b>title</b>: HIV Case Report</p></div>"
+  ];
+  fhir:Composition.identifier [
+     fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-case-report" ];
+     fhir:Identifier.value [ fhir:value "1111" ]
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:95412-3;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "95412-3" ]
+     ]
+  ];
+  fhir:Composition.date [ fhir:value "2021-05-18"^^xsd:date];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:link <http://openhie.org/fhir/hiv-casereporting/Organization/HIVOrganizationExample>;
+     fhir:Reference.reference [ fhir:value "Organization/HIVOrganizationExample" ]
+  ];
+  fhir:Composition.title [ fhir:value "HIV Case Report"];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "Client registration" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections" ];
+         fhir:Coding.code [ fhir:value "CLIENT-REGISTRATION" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Patient/HIVPatientExample>;
+       fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
+     ], [
+       fhir:index 1;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/RelatedPerson/GuardianExample>;
+       fhir:Reference.reference [ fhir:value "RelatedPerson/GuardianExample" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.title [ fhir:value "HIV Diagnosis" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections" ];
+         fhir:Coding.code [ fhir:value "HIV-DIAGNOSIS" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Condition/HIVDiagnosisExample>;
+       fhir:Reference.reference [ fhir:value "Condition/HIVDiagnosisExample" ]
+     ], [
+       fhir:index 1;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Encounter/HIVDiagnosisEncounterExample>;
+       fhir:Reference.reference [ fhir:value "Encounter/HIVDiagnosisEncounterExample" ]
+     ], [
+       fhir:index 2;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/HIVRecencyTestConductedExample>;
+       fhir:Reference.reference [ fhir:value "Observation/HIVRecencyTestConductedExample" ]
+     ], [
+       fhir:index 3;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/HIVRecencyResultExample>;
+       fhir:Reference.reference [ fhir:value "Observation/HIVRecencyResultExample" ]
+     ], [
+       fhir:index 4;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/HIVTestDateExample>;
+       fhir:Reference.reference [ fhir:value "Observation/HIVTestDateExample" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Composition.section.title [ fhir:value "HIV Entry To Care" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections" ];
+         fhir:Coding.code [ fhir:value "HIV-ENTRY-TO-CARE" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/EpisodeOfCare/HIVEpisodeOfCareExample>;
+       fhir:Reference.reference [ fhir:value "EpisodeOfCare/HIVEpisodeOfCareExample" ]
+     ], [
+       fhir:index 1;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Encounter/HIVClinicalEncounterExample>;
+       fhir:Reference.reference [ fhir:value "Encounter/HIVClinicalEncounterExample" ]
+     ], [
+       fhir:index 2;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/ServiceRequest/HIVTransferOutExample>;
+       fhir:Reference.reference [ fhir:value "ServiceRequest/HIVTransferOutExample" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Composition.section.title [ fhir:value "ARV Treatment" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections" ];
+         fhir:Coding.code [ fhir:value "ARV-TREATMENT" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/CarePlan/ARVTreatmentExample1>;
+       fhir:Reference.reference [ fhir:value "CarePlan/ARVTreatmentExample1" ]
+     ], [
+       fhir:index 1;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/CarePlan/ARVTreatmentExample2>;
+       fhir:Reference.reference [ fhir:value "CarePlan/ARVTreatmentExample2" ]
+     ], [
+       fhir:index 2;
+       fhir:Reference.reference [ fhir:value "HIVCareMedicationRequest" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Composition.section.title [ fhir:value "CD4" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections" ];
+         fhir:Coding.code [ fhir:value "CD4" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/CD4Example1>;
+       fhir:Reference.reference [ fhir:value "Observation/CD4Example1" ]
+     ], [
+       fhir:index 1;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/CD4Example2>;
+       fhir:Reference.reference [ fhir:value "Observation/CD4Example2" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Composition.section.title [ fhir:value "Viral Suppression" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections" ];
+         fhir:Coding.code [ fhir:value "VIRAL-SUPPRESSION" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/ViralLoadSuppressionExample1>;
+       fhir:Reference.reference [ fhir:value "Observation/ViralLoadSuppressionExample1" ]
+     ], [
+       fhir:index 1;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/ViralLoadSuppressionExample2>;
+       fhir:Reference.reference [ fhir:value "Observation/ViralLoadSuppressionExample2" ]
+     ], [
+       fhir:index 2;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Procedure/VLProcedureInfoExample>;
+       fhir:Reference.reference [ fhir:value "Procedure/VLProcedureInfoExample" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:Composition.section.title [ fhir:value "Death" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections" ];
+         fhir:Coding.code [ fhir:value "DEATH" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/DeathExample>;
+       fhir:Reference.reference [ fhir:value "Observation/DeathExample" ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:Composition.section.title [ fhir:value "Death" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-case-report-sections" ];
+         fhir:Coding.code [ fhir:value "DEATH" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-casereporting/Observation/DeathExample>;
+       fhir:Reference.reference [ fhir:value "Observation/DeathExample" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-casereporting/Composition/HIVCompositionExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

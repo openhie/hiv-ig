@@ -1,0 +1,8 @@
+{
+  "version": "0.2.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "date": "20221006115231",
+  "name": "openhie.fhir.hiv"
+}

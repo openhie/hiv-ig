@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-art-status",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-art-status.html\"><code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-art-status</code></a></li></ul></div>"
+  },
+  "url": "http://openhie.org/fhir/hiv-casereporting/ValueSet/vs-art-status",
+  "version": "0.2.0",
+  "name": "VSARTStatus",
+  "title": "Value-set for ART Status code",
+  "status": "active",
+  "date": "2022-10-06T11:53:08+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://xxhl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "Value-set for ART status codes",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-art-status"
+      }
+    ]
+  }
+}

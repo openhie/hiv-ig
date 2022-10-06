@@ -1,0 +1,88 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "vl-reason-codes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">5d4e13af-92ec-4b91-a8e4-97818810e577<a name=\"vl-reason-codes-5d4e13af-92ec-4b91-a8e4-97818810e577\"> </a></td><td>Baseline Viral Load</td></tr><tr><td style=\"white-space:nowrap\">1259<a name=\"vl-reason-codes-1259\"> </a></td><td>Change regimen</td></tr><tr><td style=\"white-space:nowrap\">163523<a name=\"vl-reason-codes-163523\"> </a></td><td>Clinical failure</td></tr><tr><td style=\"white-space:nowrap\">67143af5-c443-4a4f-a678-f3981b4fcb0f<a name=\"vl-reason-codes-67143af5-c443-4a4f-a678-f3981b4fcb0f\"> </a></td><td>Confirmation of treatment failure</td></tr><tr><td style=\"white-space:nowrap\">5632<a name=\"vl-reason-codes-5632\"> </a></td><td>Currently breastfeeding child</td></tr><tr><td style=\"white-space:nowrap\">1434<a name=\"vl-reason-codes-1434\"> </a></td><td>Currently pregnant</td></tr><tr><td style=\"white-space:nowrap\">e185de1e-a9b3-4b10-86df-2300bf4476bb<a name=\"vl-reason-codes-e185de1e-a9b3-4b10-86df-2300bf4476bb\"> </a></td><td>Persistent low-Level viremia</td></tr><tr><td style=\"white-space:nowrap\">c2aed192-73fc-405f-8cc2-776a4da81d59<a name=\"vl-reason-codes-c2aed192-73fc-405f-8cc2-776a4da81d59\"> </a></td><td>Recency Assay</td></tr><tr><td style=\"white-space:nowrap\">843<a name=\"vl-reason-codes-843\"> </a></td><td>Regimen failure</td></tr><tr><td style=\"white-space:nowrap\">162081<a name=\"vl-reason-codes-162081\"> </a></td><td>Repeat</td></tr><tr><td style=\"white-space:nowrap\">164369<a name=\"vl-reason-codes-164369\"> </a></td><td>Results not available</td></tr><tr><td style=\"white-space:nowrap\">be5d6a4a-4018-49dd-869f-273c9f5fec9e<a name=\"vl-reason-codes-be5d6a4a-4018-49dd-869f-273c9f5fec9e\"> </a></td><td>Routine Viral Load</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/vl-reason-codes",
+  "version": "0.2.0",
+  "name": "CSHIVVLReason",
+  "title": "HIV VL Reason codes",
+  "status": "active",
+  "date": "2022-10-06T11:53:08+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://xxhl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "A list of Viral Load test reasons",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 12,
+  "concept": [
+    {
+      "code": "5d4e13af-92ec-4b91-a8e4-97818810e577",
+      "display": "Baseline Viral Load"
+    },
+    {
+      "code": "1259",
+      "display": "Change regimen"
+    },
+    {
+      "code": "163523",
+      "display": "Clinical failure"
+    },
+    {
+      "code": "67143af5-c443-4a4f-a678-f3981b4fcb0f",
+      "display": "Confirmation of treatment failure"
+    },
+    {
+      "code": "5632",
+      "display": "Currently breastfeeding child"
+    },
+    {
+      "code": "1434",
+      "display": "Currently pregnant"
+    },
+    {
+      "code": "e185de1e-a9b3-4b10-86df-2300bf4476bb",
+      "display": "Persistent low-Level viremia"
+    },
+    {
+      "code": "c2aed192-73fc-405f-8cc2-776a4da81d59",
+      "display": "Recency Assay"
+    },
+    {
+      "code": "843",
+      "display": "Regimen failure"
+    },
+    {
+      "code": "162081",
+      "display": "Repeat"
+    },
+    {
+      "code": "164369",
+      "display": "Results not available"
+    },
+    {
+      "code": "be5d6a4a-4018-49dd-869f-273c9f5fec9e",
+      "display": "Routine Viral Load"
+    }
+  ]
+}

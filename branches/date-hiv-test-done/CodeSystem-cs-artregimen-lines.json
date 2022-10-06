@@ -1,0 +1,55 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-artregimen-lines",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">FIRST-LINE<a name=\"cs-artregimen-lines-FIRST-LINE\"> </a></td><td>First line ARTs</td></tr><tr><td style=\"white-space:nowrap\">SECOND-LINE<a name=\"cs-artregimen-lines-SECOND-LINE\"> </a></td><td>Second line ARTs</td></tr><tr><td style=\"white-space:nowrap\">THIRD-LINE<a name=\"cs-artregimen-lines-THIRD-LINE\"> </a></td><td>Third line ARTs</td></tr><tr><td style=\"white-space:nowrap\">SPECIAL-UNKNOWN<a name=\"cs-artregimen-lines-SPECIAL-UNKNOWN\"> </a></td><td>Special/Unknown</td></tr></table></div>"
+  },
+  "url": "http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-artregimen-lines",
+  "version": "0.2.0",
+  "name": "CSARTRegimenLines",
+  "title": "ART Regimen Lines",
+  "status": "active",
+  "date": "2022-10-06T11:53:08+00:00",
+  "publisher": "OpenHIE",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://xxhl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "FIRST-LINE",
+      "display": "First line ARTs"
+    },
+    {
+      "code": "SECOND-LINE",
+      "display": "Second line ARTs"
+    },
+    {
+      "code": "THIRD-LINE",
+      "display": "Third line ARTs"
+    },
+    {
+      "code": "SPECIAL-UNKNOWN",
+      "display": "Special/Unknown"
+    }
+  ]
+}
