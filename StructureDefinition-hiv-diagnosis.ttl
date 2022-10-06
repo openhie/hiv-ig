@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "HIVDiagnosis"];
   fhir:StructureDefinition.title [ fhir:value "HIV Diagnosis"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-10-06T13:57:21+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-06T14:49:57+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "OpenHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
