@@ -65,6 +65,9 @@
           <entry>
             <reference value="Observation/HIVRecencyResultExample"/>
           </entry>
+          <entry>
+            <reference value="Observation/HIVTestDateExample"/>
+          </entry>
         </section>
         <section>
           <title value="HIV Entry To Care"/>
@@ -408,6 +411,35 @@
           <reference value="Encounter/HIVClinicalEncounterExample"/>
         </encounter>
         <valueBoolean value="false"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/HIVTestDateExample"/>
+    <resource>
+      <Observation>
+        <id value="HIVTestDateExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/hiv-casereporting/StructureDefinition/date-tested-for-hiv"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="HIVTestDateExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation "HIVTestDateExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-date-tested-for-hiv.html">HIVTestDateObservation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Date tested for HIV <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cs-hiv-obs-codes.html">HIV Case Report Observation codes</a>#DATE-TESTED-FOR-HIV)</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href="HIVClinicalEncounter">HIVClinicalEncounter</a></p><p><b>value</b>: 2022-08-26</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://openhie.org/fhir/hiv-casereporting/CodeSystem/cs-hiv-obs-codes"/>
+            <code value="DATE-TESTED-FOR-HIV"/>
+            <display value="Date tested for HIV"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/HIVPatientExample"/>
+        </subject>
+        <encounter>
+          <reference value="HIVClinicalEncounter"/>
+        </encounter>
+        <valueDateTime value="2022-08-26"/>
       </Observation>
     </resource>
   </entry>

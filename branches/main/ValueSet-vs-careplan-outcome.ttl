@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "VSCarePlanActivityOutcome"];
   fhir:ValueSet.title [ fhir:value "ARV treatment outcomes"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-09-19T11:47:22+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-10-06T14:49:57+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "OpenHIE"];
   fhir:ValueSet.contact [
      fhir:index 0;

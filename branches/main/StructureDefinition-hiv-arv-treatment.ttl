@@ -27,7 +27,7 @@
   fhir:StructureDefinition.name [ fhir:value "ARVTreatment"];
   fhir:StructureDefinition.title [ fhir:value "ARVCarePlan"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-09-19T11:47:22+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-06T14:49:57+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "OpenHIE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -3007,7 +3007,7 @@
            fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
          ];
          fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "closed" ]
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
        fhir:ElementDefinition.short [ fhir:value "When activity is to occur" ];
        fhir:ElementDefinition.definition [ fhir:value "The period, timing or frequency upon which the described activity is to occur." ];
@@ -3021,7 +3021,13 @@
        ];
        fhir:ElementDefinition.type [
          fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Timing" ]
+       ], [
+         fhir:index 1;
          fhir:ElementDefinition.type.code [ fhir:value "Period" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
        ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
