@@ -28,6 +28,8 @@ Description: "Example of a clinical bundle representing a case report"
 * entry[=].resource = ARVTreatmentExample1
 * entry[+].fullUrl = "CarePlan/ARVTreatmentExample2"
 * entry[=].resource = ARVTreatmentExample2
+* entry[+].fullUrl = "CarePlan/ARVTreatmentRestartedExample"
+* entry[=].resource = ARVTreatmentRestartedExample
 * entry[+].fullUrl = "Observation/CD4Example1"
 * entry[=].resource = CD4Example1
 * entry[+].fullUrl = "Observation/CD4Example2"
@@ -84,7 +86,8 @@ Description: "Basic Composition example"
 * section[=].code = CSCaseReportSections#ARV-TREATMENT
 * section[=].entry[+] = Reference(ARVTreatmentExample1)
 * section[=].entry[+] = Reference(ARVTreatmentExample2)
-* section[=].entry[+] = Reference(HIVCareMedicationRequest) 
+* section[=].entry[+] = Reference(HIVCareMedicationRequest)
+* section[=].entry[+] = Reference(ARVTreatmentRestartedExample)  
 
 * section[+].title = "CD4"
 * section[=].code = CSCaseReportSections#CD4
@@ -268,6 +271,7 @@ Description: ""
 * managingOrganization = Reference(HIVOrganizationExample)
 * diagnosis.condition = Reference(HIVDiagnosisExample)
 * referralRequest = Reference(HIVTransferOutExample)
+* type = $OMRS#164144  //"New client" 
 
 Instance: ARVTreatmentExample1
 InstanceOf: ARVTreatment
@@ -450,3 +454,13 @@ Description: "This profile allows the exchange of a patient's test date"
 * encounter = Reference(HIVClinicalEncounter)
 * valueDateTime = "2022-08-26" 
 * status = #final
+
+Instance: ARVTreatmentRestartedExample
+InstanceOf: ARVTreatmentRestarted
+Usage: #example
+Title: "ARVCarePlanRestarted"
+Description: "This profile allows the exchange of a patient's ARV treatment restarted"
+* status = #active
+* intent = #plan
+* subject = Reference(HIVPatientExample)
+* period.start = "2022-12-26"  //artRestartedDate

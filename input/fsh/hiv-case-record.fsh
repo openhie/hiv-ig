@@ -68,15 +68,17 @@ Title: "HIV Case Reporting Composition"
 
 * section[arvTreatmentSection].title = "ARV Treatment"
 * section[arvTreatmentSection].code = CSCaseReportSections#ARV-TREATMENT
-* section[arvTreatmentSection].entry only Reference(ARVTreatment or HIVCareMedicationRequest)
+* section[arvTreatmentSection].entry only Reference(ARVTreatment or HIVCareMedicationRequest or ARVTreatmentRestarted)
 * section[arvTreatmentSection].entry ^slicing.discriminator.type = #profile
 * section[arvTreatmentSection].entry ^slicing.discriminator.path = "item.resolve()"
 * section[arvTreatmentSection].entry ^slicing.rules = #closed
 * section[arvTreatmentSection].entry contains
     arvTreatment 1..1 and
-    hivCareMedicationRequest 1..1
+    hivCareMedicationRequest 1..1 and
+    arvTreatmentRestarted 0..1
 * section[arvTreatmentSection].entry[arvTreatment] only Reference(ARVTreatment)
 * section[arvTreatmentSection].entry[hivCareMedicationRequest] only Reference(HIVCareMedicationRequest)
+* section[arvTreatmentSection].entry[arvTreatmentRestarted] only Reference(ARVTreatmentRestarted)
 
 * section[cd4Section].title = "CD4"
 * section[cd4Section].code = CSCaseReportSections#CD4
@@ -270,6 +272,8 @@ Description: ""
 * managingOrganization 1..1 MS
 * diagnosis 1..1 MS
 * referralRequest MS  //Transfer-Out
+* type 1..1 MS  
+* type from VSPatientTypeEnrolment
 
 Extension: ARTRegimenLine
 Id: art-regimen-line
@@ -417,3 +421,10 @@ Description: "This profile allows the exchange of a patient's test date"
 * encounter 1..1 MS 
 * code = CSHIVObsCodes#DATE-TESTED-FOR-HIV "Date tested for HIV"
 * valueDateTime 1..1 MS
+
+Profile: ARVTreatmentRestarted
+Parent: CarePlan
+Id: hiv-arv-treatment-restarted
+Title: "ARVCarePlanRestarted"
+Description: "This profile allows the exchange of a patient's ARV treatment restarted"
+* period.start 1..1 MS //artRestartedDate

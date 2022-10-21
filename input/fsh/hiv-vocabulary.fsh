@@ -1,6 +1,7 @@
 Alias: $SCT = http://snomed.info/sct
 Alias: $LNC = http://loinc.org
 Alias: $CIEL = https://openconceptlab.org
+Alias: $OMRS = https://openmrs.org
 Alias: $MaritalStatus = http://hl7.org/fhir/ValueSet/marital-status
 
 CodeSystem: CSKeyPopulation
@@ -158,3 +159,12 @@ Title: "ARV treatment outcomes"
 Description: "Value-set for ARV treatment plan outcomes"
 * include codes from system $SCT where concept is-a #439771001 "Contacted" //indicates lost to follow up
 * include codes from system $CIEL where concept is-a #162572 "Refused"  //#162572 "Refused"  //CIEL Code indicates ART Stopped -->SNOMED CT : 105480006 maps to Refusal of treatment by patient
+
+ValueSet: VSPatientTypeEnrolment
+Id: vs-patient-enrolment-type
+Title: "Patient Type at Enrolment"
+Description: "Value-set for Patient Type at Enrolment"
+* include codes from system $OMRS where concept is-a #163532 "Mother enrolled in PMTCT program" 
+* include codes from system $OMRS where concept is-a #159833 "Re-enroll"  
+* include codes from system $OMRS where concept is-a #160563 "Transfer in"  
+* include codes from system $OMRS where concept is-a #164144 "New client" 
