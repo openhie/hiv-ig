@@ -378,6 +378,7 @@ Description: ""
 * value[x] only CodeableConcept
 * valueCodeableConcept from VSARTStatus
 
+//This is wrong needs to be CarePlan.activity.detail.scheduledPeriod
 Profile: HIVTransferOut
 Parent: ServiceRequest
 Id: hiv-transfer-out
@@ -428,3 +429,10 @@ Id: hiv-arv-treatment-restarted
 Title: "ARVCarePlanRestarted"
 Description: "This profile allows the exchange of a patient's ARV treatment restarted"
 * period.start 1..1 MS //artRestartedDate
+
+Profile: HIVTransferIn
+Parent: ServiceRequest
+Id: hiv-transfer-in
+Title: "HIV Transfer In Request"
+Description: "HIV Transfer In Request"
+* requester 1..1 MS //transferring facility

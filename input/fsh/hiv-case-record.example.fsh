@@ -270,7 +270,7 @@ Description: ""
 * identifier[=].value = "123456789"
 * managingOrganization = Reference(HIVOrganizationExample)
 * diagnosis.condition = Reference(HIVDiagnosisExample)
-* referralRequest = Reference(HIVTransferOutExample)
+* referralRequest = Reference(HIVTransferInExample)
 * type = $OMRS#164144  //"New client" 
 
 Instance: ARVTreatmentExample1
@@ -464,3 +464,13 @@ Description: "This profile allows the exchange of a patient's ARV treatment rest
 * intent = #plan
 * subject = Reference(HIVPatientExample)
 * period.start = "2022-12-26"  //artRestartedDate
+
+Instance: HIVTransferInExample
+InstanceOf: HIVTransferIn
+Usage: #example
+Title: "HIV Transfer In Request"
+Description: "HIV Transfer In Request"
+* requester = Reference(HIVOrganizationExample) 
+* status = #active
+* intent = #order
+* subject = Reference(HIVPatientExample)
